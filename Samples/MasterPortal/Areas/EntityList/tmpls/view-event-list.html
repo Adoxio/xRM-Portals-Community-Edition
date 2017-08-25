@@ -1,0 +1,28 @@
+﻿<% if(events.length > 0) { %>
+	<div class="cal-event-list list-group">
+		<% _.each(events, function(event){ %>
+		<a class="list-group-item event-item" href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>" data-event-class="<%= event['class'] %>">
+			<div class="media">
+				<div class="pull-left">
+					<div class="media-object">
+						<span class="label label-default <%= event['class'] %>">
+							<span class="icon-calendar fa fa-calendar-o" aria-hidden="true"></span>
+						</span>
+					</div>
+				</div>
+				<div class="media-body">
+					<h4 class="list-group-item-heading"><%= event.title %></h4>
+					<div class="list-group-item-text">
+						<% var start = moment(event.start); %>
+						<% var end = event.end ? moment(event.end) : null; %>
+						<p class="calendar-event-datetime"><%= start.format('MMMM D, YYYY h:mm A') %><%= end && event.end > event.start ? ' &ndash; ' + (end.isSame(start, 'day') ? end.format('h:mm A') : end.format('MMMM D, YYYY h:mm A')) : '' %></p>
+						<% if (event.description) { %>
+						<div class="calendar-event-description list-group-item-text"><%= event.description %></div>
+						<% } %>
+					</div>
+				</div>
+			</div>
+		</a>
+		<% }) %>
+	</div>
+<% } %>

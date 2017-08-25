@@ -1,0 +1,1072 @@
+﻿/*adx.annotations.crm.css*/
+div.ms-crm-grid-viewSelectorContainer-subgrid-lite {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, sans-serif;
+}
+
+span.ms-crm-View-Name,
+span.ms-crm-View-Name-hover,
+span.ms-crm-View-Name-select {
+    font-family: 'Leelawadee UI', Segoe\000020UI,Tahoma,Arial;
+}
+
+span.ms-crm-ViewSelector-title-subGrid-lite {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, sans-serif;
+}
+
+span.ms-crm-ViewSelector-title-associated-lite,
+span.ms-crm-ViewSelector-title-Document {
+    font-family: 'Leelawadee UI', 'Segoe UI', Tahoma, Arial;
+}
+
+span.ms-crm-ViewSelector-subGrid-title-associated-lite {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, sans-serif;
+}
+
+.ms-crm-processing-title {
+    font-family: 'Leelawadee UI', Segoe UI;
+}
+
+TD.ms-crm-Dialog-Error-Title {
+    font-family: 'Leelawadee UI', Segoe\000020UI,Tahoma,Arial;
+}
+
+TABLE.visualizationImageTable {
+    font-family: 'Leelawadee UI', Tahoma,Verdana,Arial;
+}
+
+DIV.editor {
+    font-family: 'Leelawadee UI', Tahoma,Verdana,Arial;
+    font-size: 10px;
+}
+
+DIV.ms-crm-IL-MRU-Header,
+DIV.ms-crm-IL-Header,
+DIV.ms-crm-IL-MRU-Footer,
+.ms-crm-Inline-Value,
+.ms-crm-Inline-Edit input.ms-crm-InlineInput,
+.ms-crm-Inline-Edit input.ms-crm-Input,
+.processStep.emptyValue .bit .ms-crm-Inline-Value,
+.ms-crm-Inline-Validation {
+    font-family: 'Leelawadee UI', Segoe UI, Arial, sans-serif;
+}
+
+.ms-crm-InlineTimerControl-Time {
+    font-family: 'Leelawadee UI', "SegoeUI\00002DSemibold","Segoe\000020UI\000020SemiBold";
+}
+
+.TimerControlTimerRow {
+    font-family: 'Leelawadee UI',Segoe\000020UI,Tahoma,Arial;
+}
+
+.NotesV2OnlyText,
+.notesWall .text {
+    font-family: 'Leelawadee UI', Segoe UI, Tahoma, Arial; /* _locID_css@font-family="notesWall_text_FontFamily" _locComment="Font Family" */
+}
+
+.notesWall .notesTextBoxDiv .notesTextBox,
+.notesWall .notesTextBoxDiv .notesTitleBox {
+    font-family: 'Leelawadee UI', Segoe UI, Tahoma, Arial; /* _locID_css@font-family="notesWall_noteTextBoxDiv_FontFamily" _locComment="Font Family" */
+}
+
+.notesWall .footer a {
+    font-family: 'Leelawadee UI', Segoe UI, Tahoma, Arial; /* _locID_css@font-family="notesWall_footer_FontFamily" _locComment="Font Family" */
+}
+
+LABEL.ms-crm-Dialog-Lookup-QuickFindHint {
+    font-style: normal !important;
+}
+
+.processStepValue .ms-crm-Inline-EmptyValue {
+    font-style: normal;
+}
+
+.processStep.emptyValue .ms-crm-Inline-Value {
+    font-style: normal;
+}
+
+.notesWall .watermark {
+    font-style: normal; /* _locID_css@font-style="notesWall_watermark_FontStyle" _locComment="Font Style {ValidStrings=normal,bold,normal}" */
+}
+
+h4.ms-crm-Form {
+    font-size: 12px;
+}
+
+h3.ms-crm-Form {
+    font-size: 12px;
+}
+
+/*****************
+fonts.css.aspx
+******************/
+span.ms-crm-Form-Title {
+    font-size: 12px;
+}
+
+span.ms-crm-solution-title {
+    font-size: 12px;
+}
+
+TD.ms-crm-Dialog-Error-Body {
+    font-size: 12px;
+    font-family: 'Leelawadee UI', Segoe\000020UI,Tahoma,Arial;
+}
+
+A.ms-crm-Dialog-Error-Link,
+A.ms-crm-Dialog-Error-Link:hover {
+    font-size: 12px;
+    font-family: 'Leelawadee UI', Segoe\000020UI,Tahoma,Arial;
+}
+
+table.ms-crm-ViewForm-Header {
+    font-size: 12px;
+}
+
+SELECT.ms-crm-SelectBox-WorkflowDesigner {
+    font-size: 12px;
+}
+
+TD.RelatedInformationTitle {
+    font-size: 12px;
+}
+
+span.norm {
+    font-size: 12px;
+}
+
+body.ms-crm-Cal-Body {
+    font-size: 12px;
+}
+
+TABLE.gridheader {
+    font-size: 12px;
+}
+
+tr.gridheader {
+    font-size: 12px;
+}
+
+div.ms-crm-ViewManager {
+    font-size: 12px;
+}
+/*****************
+fonts.css.aspx
+******************/
+body {
+    font-family: 'Leelawadee UI',Segoe\000020UI,Tahoma,Arial;
+}
+
+table.ms-crm-Loading,
+DIV.ms-crm-Grid-Title {
+    font-family: 'Leelawadee UI',Segoe\000020UI,Tahoma,Arial;
+    font-size: 12px;
+}
+
+.ms-crm-Menu-Text {
+    font-size: 12px;
+}
+
+TABLE.popupMenu {
+    font-size: 12px;
+}
+
+li.ms-crm-Tab {
+    font-size: 12px;
+}
+
+TD.ms-crm-MastHead-SignIn {
+    font-size: 12px;
+}
+
+TH.ms-crm-Group-Links,
+TH.ms-crm-Group,
+A.ms-crm-Nav-Group-Heading,
+A.ms-crm-Nav-Group-Heading:link,
+A.ms-crm-Nav-Group-Heading:visited,
+A.ms-crm-Nav-Group-Heading:active,
+A.ms-crm-Nav-Group-Heading:hover,
+NOBR.ms-crm-Nav-Group-Heading {
+    font-size: 12px;
+}
+
+A.ms-crm-Nav-Area,
+A.ms-crm-Nav-Area:link,
+A.ms-crm-Nav-Area:visited,
+A.ms-crm-Nav-Area:active,
+A.ms-crm-Nav-Area:hover {
+    font-size: 12px;
+}
+
+input.ms-crm-SelectBox {
+    font-size: 12px;
+}
+
+A.linktitlesm,
+A.linktitlesm:link,
+A.linktitlesm:visited,
+A.linktitlesm:active,
+A.linktitlesm:hover {
+    font-size: 12px;
+}
+
+div.linkhelp {
+    font-size: 12px;
+}
+
+div.secTitle {
+    font-size: 12px;
+}
+
+div.WizardTitle {
+    font-size: 12px;
+}
+
+DIV.ms-crm-IL-MRU-Header,
+DIV.ms-crm-IL-Header {
+    height: 12px;
+    font-size: 12px;
+}
+
+DIV.ms-crm-IL-MRU-Footer {
+    height: 12px;
+    font-size: 12px;
+}
+
+span.recnav-dropdown {
+    font-family: 'Leelawadee UI',Segoe\000020UI,Tahoma,Arial;
+    font-size: 12px;
+}
+
+a.recnav-up,
+a.recnav-down,
+a.recnav-dropdown {
+    font-size: 12px;
+}
+
+.homeChartListHeaderText {
+    font-family: 'Leelawadee UI', Tahoma;
+    font-size: 12px;
+}
+
+.homeChartListLinkText {
+    font-family: 'Leelawadee UI', Tahoma;
+    font-size: 12px;
+}
+
+.ms-crm-flyout {
+    font-family: 'Leelawadee UI', Tahoma;
+    font-size: 12px;
+}
+
+/*bootstrap.theme.css*/
+
+h5,
+.h5 {
+    font-size: 12px;
+}
+
+h6,
+.h6 {
+    font-size: 10px;
+}
+
+pre {
+    font-size: 12px;
+}
+
+.input-sm {
+    font-size: 12px;
+}
+
+.btn-sm {
+    font-size: 12px;
+}
+
+.btn-xs {
+    font-size: 12px;
+}
+
+.dropdown-header {
+    font-size: 12px;
+}
+
+.btn-group-xs > .btn {
+    font-size: 12px;
+}
+
+.btn-group-sm > .btn {
+    font-size: 12px;
+}
+
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn {
+    font-size: 12px;
+}
+
+.input-group-addon.input-sm {
+    font-size: 12px;
+}
+
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+    font-size: 12px;
+}
+
+.badge {
+    font-size: 12px;
+}
+
+.progress-bar {
+    font-size: 12px;
+}
+
+.tooltip {
+    font-size: 12px;
+}
+
+/*map.css*/
+
+#messages .message,
+button {
+    font-family: 'Leelawadee UI', Segoe UI, Tahoma, Arial, Sans-Serif;
+    font-size: 12px;
+}
+
+#adx-map-options .actions input[type=button] {
+    font-family: 'Leelawadee UI', Arial;
+    font-size: 12px;
+}
+
+#adx-map-options select {
+    font-size: 12px;
+}
+
+#ui-datepicker-div {
+    font-size: 12px;
+}
+
+.adx-overlay {
+    font-size: 12px;
+}
+
+.infobox-content {
+    font-size: 12px;
+}
+/*common.css*/
+.CADefaultTab {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+    font-size: 12px;
+}
+
+.CADefaultTabHover {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+    font-size: 12px;
+}
+
+.CASelectedTab {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+    font-size: 12px;
+}
+
+SELECT {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+TEXTAREA {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+INPUT {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+BUTTON {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonJumpArea {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonFeedArea {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonPagingArea {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonSortArea {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonBreadCrumbArea {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonFilterArea {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonSearchResults {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonTreeFormNode {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonTreeFormNodeSelected {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonTreeFormNodeHover {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/*
+Copyright
+*/
+.Copyright {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+    font-size: 12px;
+}
+
+.calendar td {
+    font-size: 12px;
+}
+
+.CommonPaneTabSet {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+    font-size: 12px;
+}
+/*adxstudio.css*/
+.masthead .toolbar .nav,
+.masthead .toolbar .toolbar-text {
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .footer-bottom h4 {
+        font-size: 12px;
+    }
+}
+
+.panel-product .panel-title small {
+    font-size: 12px;
+}
+/*prettyPhoto.css*/
+div.pp_default .pp_nav .currentTextHolder {
+    font-family: 'Leelawadee UI', Georgia;
+    font-style: normal;
+    font-size: 12px;
+}
+
+div.pp_default .pp_description {
+    font-size: 12px;
+}
+/*311.css*/
+#ui-datepicker-div {
+    font-size: 12px;
+}
+
+.infobox-content {
+    font-size: 12px;
+}
+/*editor.css*/
+/* Styles the color panel displayed by the color buttons. */
+.cke_colorblock {
+    font-size: 12px;
+    font-family: 'Leelawadee UI', 'Microsoft Sans Serif', Tahoma, Arial, Verdana, Sans-Serif;
+}
+
+a.cke_path_item,
+span.cke_path_empty {
+    font-size: 12px;
+}
+/*editor_gecko.css*/
+.cke_colorblock {
+    font-size: 12px;
+    font-family: 'Leelawadee UI', 'Microsoft Sans Serif', Tahoma, Arial, Verdana, Sans-Serif;
+}
+
+a.cke_path_item,
+span.cke_path_empty {
+    font-size: 12px;
+}
+/*editor_ie.css*/
+.cke_colorblock {
+    font-size: 12px;
+    font-family: 'Leelawadee UI', 'Microsoft Sans Serif', Tahoma, Arial, Verdana, Sans-Serif;
+}
+
+a.cke_path_item,
+span.cke_path_empty {
+    font-size: 12px;
+}
+/*metadata.css*/
+SELECT.ms-crm-SelectBox {
+    font-size: 12px;
+}
+
+SPAN.ms-crm-Lookup-Item {
+    font-size: 12px;
+}
+/*adx.search.css*/
+#results .result .info {
+    font-size: 12px;
+}
+/*elfinder.css*/
+.el-finder-cwd label {
+    font-size: 12px;
+}
+
+.el-finder-stat,
+.el-finder-path,
+.el-finder-sel {
+    font-size: 12px;
+}
+/*school_book.css*/
+.hljs {
+    font-size: 12px !important;
+}
+
+/*samples.css*/
+.content blockquote {
+    font-style: normal;
+    font-family: 'Leelawadee UI', Georgia, Times, "Times New Roman", serif;
+}
+
+.content em {
+    font-style: normal;
+}
+
+/*sample.css*/
+
+.beta {
+    font-style: normal;
+}
+
+blockquote {
+    font-style: normal;
+    font-family: 'Leelawadee UI', Georgia, Times, "Times New Roman", serif;
+}
+
+/*contents.css*/
+
+span[lang] {
+    font-style: normal;
+}
+
+/*foundation.css*/
+
+.hljs-emphasis {
+    font-style: normal;
+}
+
+.hljs-blockquote,
+.hljs-comment {
+    color: #998;
+    font-style: normal;
+}
+
+/*idea.css*/
+
+.hljs-comment,
+.hljs-template_comment,
+.hljs-javadoc,
+.diff .hljs-header {
+    font-style: normal;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-char,
+.tex .hljs-formula {
+    font-style: normal;
+}
+/*sunburst.css*/
+.hljs-comment,
+.hljs-template_comment,
+.hljs-javadoc {
+    font-style: normal;
+}
+
+.diff .hljs-header,
+.hljs-chunk,
+.tex .hljs-formula {
+    font-style: normal;
+}
+
+/********************** FONT-FAMILY**************************/
+
+/* 
+Title Bar Styles
+*/
+.CommonTitleBarSearchArea {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonTitleBarTitle {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonTitleBarDescription {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonUserArea {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonFormTitle {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonFormDescription {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+TD.CommonFormFieldName {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+DIV.CommonFormFieldName {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+TD.CommonFormFieldDescription {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+DIV.CommonFormFieldDescription {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+TD.CommonFormField {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+DIV.CommonFormField {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonFormActionButtons {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+/*
+Join Form Styles
+*/
+
+.JoinTitle {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.JoinArea {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/*
+Message Styles
+*/
+.CommonMessageContent {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonInlineMessageTitle {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonInlineMessageContent {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonInlineTidbit, .CommonInlineTidbit A {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonMessageSuccess {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonLicenseMessageSuccess {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonSmallMessageSuccess {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonMessageError {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonLicenseMessageError {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonSmallMessageError {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+/*
+Content
+*/
+.CommonSubTitle {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonDescription {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/*
+Text Button
+*/
+
+.CommonTextButton {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonTextButtonHighlight {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonImageTextButton {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonImageTextButtonHighlight {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/*
+Options Styles
+*/
+.CommonOptionsListTitle {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonOptionsListItem {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+/*
+List 
+*/
+.CommonListHeaderLeftMost {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonListHeader {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonListCellLeftMost {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonListCell {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+/* 
+Simple Tab Strip Styles 
+*/
+
+.CommonSimpleTabStripTab {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonSimpleTabStripTabHover {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonSimpleTabStripSelectedTab {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonTopLevelTab {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonTopLevelTabHover {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonSelectedTopLevelTab {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/*
+Search Results
+*/
+.CommonSearchResult {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonSearchResultName {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonSearchResultDetails {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/*
+Validation Styles
+*/
+
+.CommonValidationWarning {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/***** CA ************/
+.CADefaultTab {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CADisabledTab {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CAPageContent {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+/*
+Context Menu Styles
+*/
+.CommonContextMenuItem {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonContextMenuItemHover {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonContextMenuItemExpanded {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/* Modal Styles */
+#popupTitleBar {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/*
+Video styles
+*/
+.CommonVideoDuration {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonVideoDetails {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonVideoDownloadButton {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/*
+Content Selector Styles 
+*/
+.CommonContentSelectorTreeNode {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonContentSelectorTreeNodeSelected {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonContentSelectorTreeNodeHover {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonContentSelectorItem {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonContentSelectorItemSelected {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonContentSelectorItemName {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonContentSelectorItemNameSelected {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonContentSelectorButtonArea {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+/*
+ThreePanelResizeableControl Styles
+*/
+
+.CommonCollapseButton {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+#CommonCommentForm h3, #CommonContactForm h3 {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+#comments h3 {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/* BEGIN ComponentArt Date Picker & Popup Calendar */
+
+.picker {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/* Poll Styles */
+
+.CommonPollMoveUpButton {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonPollMoveDownButton {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonPollDeleteButton {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/* End Tag Styles */
+.CommonSidebar .RssCtrl .RssCtrlContainer .RssCtrlHeader {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.CommonSidebar .RssCtrl .RssCtrlContainer .RssCtrlContent {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+.BlogPostFooter {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+/*
+TabPane Styles
+*/
+
+.CommonPane {
+    font-family: 'Leelawadee UI', 'Segoe UI', Arial, Helvetica;
+}
+
+/* ADX_FORMS  */
+.adx_forms_font_calibri {
+    font-family: 'Leelawadee UI', Calibri;
+}
+
+.adx_forms_font_new_roman {
+    font-family: 'Leelawadee UI', 'Times New Roman';
+}
+
+.adx_forms_font_helvetica {
+    font-family: 'Leelawadee UI', 'Helvetica', sans-serif;
+}
+
+/*
+ PRM theme
+*/
+.navbar-fixed-top.navbar .menu-bar > .navbar-nav > li > a {
+    font-family: 'Leelawadee UI', "Segoe UI Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar-static-top.navbar .menu-bar > .navbar-nav > li > a {
+    font-family: 'Leelawadee UI', "Segoe UI Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.navbar-fixed-top .navbar-brand {
+    font-family: 'Leelawadee UI', "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar-static-top .navbar-brand {
+    font-family: 'Leelawadee UI', "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.menu-bar .shopping_link .cart_amount {
+    font-size: 12px;
+}
+
+/*
+ ESS theme + Community
+*/
+
+.page_section h3 {
+    font-family: 'Leelawadee UI', "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.content-home .title {
+    font-family: 'Leelawadee UI', "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sidebar-home .panel-title {
+    font-family: 'Leelawadee UI', "Segoe UI Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*
+	Bootstrap.css
+*/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Leelawadee UI', "Segoe UI Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.label {
+    font-size: 80%;
+}
+
+/*
+	Skin.css
+*/
+.yui-skin-sam .yui-button button, .yui-skin-sam .yui-button a, .yui-skin-sam .yui-button a:visited {
+    font-size: 100% !important;
+}
+
+.yui-skin-sam .yuimenu {
+    font-size: 100% !important;
+}
+
+.yui-skin-sam .yui-panel .hd {
+    font-size: 100% !important;
+}
+
+/*
+	Editable.css
+*/
+
+body .xrm-editable-panel label {
+    font-size: 12px;
+}
+
+body .xrm-editable-dialog .ui-autocomplete {
+    font-size: 12px;
+}
+
+body .xrm-editable-dialog ul.tagit li.tagit-choice a.tagit-close {
+    font-size: 12px;
+}
+
+body .xrm-editable-select2 {
+    font-size: 12px;
+}
+
+body .xrm-editable-select2-with-descriptions .select2-results small {
+    font-size: 100%;
+}
+
+.xrm-editable-dialog textarea.cke_source {
+    font-size: small !important;
+}
+
+.xrm-editable-panel, .xrm-editable-panel input, .xrm-editable-panel select, .xrm-editable-panel select option, .xrm-editable-dialog textarea, .xrm-editable-controls a.xrm-editable-edit {
+    font-family: 'Leelawadee UI', Segoe UI, Sans-Serif !important;
+    font-size: 12px !important;
+}
+
+body .ui-widget button {
+    font-family: 'Leelawadee UI', Verdana,Arial, sans-serif;
+    font-size: 1em;
+}
+
+/*
+	portal.css
+*/
+
+.highcharts-title, .highcharts-yaxis-title, .highcharts-xaxis-title {
+    font-family: 'Leelawadee UI', 'SegoeUI-Light-final', 'Segoe UI Light', 'Segoe UI', Segoe, Tahoma, Helvetica, Arial, sans-serif !important;
+}

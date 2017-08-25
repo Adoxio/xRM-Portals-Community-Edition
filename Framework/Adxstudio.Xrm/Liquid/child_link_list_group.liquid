@@ -1,0 +1,69 @@
+﻿{% assign title_only = title_only | default: false %}
+{% assign image_width = image_width | default: "64px" %}
+{% assign image_height = image_height | default: "64px" %}
+
+{% if page.children.size > 0 %}
+<div class="child-navigation content-panel panel panel-default">
+	<div class="panel-heading">
+		<h4>
+			{{ snippets["Child Link List Group Heading"] | default: resx['In_This_Section_DefaultText_With_Span'] }}
+		</h4>
+	</div>
+	{% if title_only %}
+	<div class="list-group">
+		{% for child in page.children %}
+		<a class="list-group-item" href="{{ child.url | h }}">
+			{% if child.entity.logical_name == 'adx_shortcut' %}
+			<div class="pull-right"><span class="fa fa-external-link" aria-hidden="true"></span></div>
+			{% endif %}
+			{{ child.title | h }}
+		</a>
+		{% endfor %}
+	</div>
+	{% else %}
+	<ul class="list-group">
+		{% for child in page.children %}
+		<li class="list-group-item">
+			{% if child.entity.adx_image or child.entity.adx_imageurl %}
+			<div class="media">
+				<div class="media-left">
+					<a href="{{ child.url | h }}">
+						{% if child.entity.adx_image %}
+						{% assign found = false %}
+						{% assign webfile = entities.adx_webfile[child.entity.adx_image.id] %}
+						{% for note in webfile.notes reversed %}
+						  {% unless found %}
+							{% if note.isdocument %}
+							  <img class="media-object" src="{{ note.url | h }}" alt="{{ webfile.adx_title | default: note.notetext | h }}" style="object-fit: contain; object-position: 50% 0; width: {{ image_width }}; height: {{ image_height }};" />
+							  {% assign found = true %}
+							{% endif %}
+						  {% endunless %}
+						{% endfor %}
+						{% else %}
+						<img class="media-object" alt="" src="{{ child.entity.adx_imageurl | h }}" style="object-fit: contain; object-position: 50% 0; width: {{ image_width }}; height: {{ image_height }};" />
+						{% endif %}
+					</a>
+				</div>
+				<div class="media-body">
+			{% endif %}
+					<h4 class="list-group-item-heading">
+						<a href="{{ child.url | h }}">
+							{% if child.entity.logical_name == 'adx_shortcut' %}
+							<div class="pull-right"><span class="fa fa-external-link" aria-hidden="true"></span></div>
+							{% endif %}
+							{{ child.title | h }}
+						</a>
+					</h4>
+					<div class="list-group-item-text">
+						{{ child.description }}
+					</div>
+			{% if child.entity.adx_image or child.entity.adx_imageurl %}
+				</div>
+			</div>
+			{% endif %}
+		</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+</div>
+{% endif %}

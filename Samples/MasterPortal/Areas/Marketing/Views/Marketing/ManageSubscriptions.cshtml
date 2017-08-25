@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Adxstudio.Xrm.Marketing.IMarketingList>
+@using Adxstudio.Xrm.Web.Mvc.Html
+
+@{
+	Layout = "~/Areas/Marketing/Views/Shared/_Layout.cshtml";
+}
+@if (Model.Any())
+{
+	<p>@Html.Raw(Html.SnippetLiteral("Unsubscribe/Manage/InstructionMessage", "Please select the marketing lists from which you wish to <strong>unsubscribe</strong>."))</p>
+    <form method="POST">
+        @Html.AntiForgeryToken()
+        <table class="table table-responsive table-hover list-unsubscribe">
+            <thead>
+            <tr>
+                <th><span class='sr-only'>Select List</span></th>
+                <th>List</th>
+                <th>Purpose</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var list in Model)
+            {
+                <tr>
+                    <td class="input-label"><label><input type="checkbox" name="lists" id="list_{@list.Id.ToString("N")}" value="@list.Id.ToString("D")" aria-labelledby="list_{@list.Id.ToString("N")}_List list_{@list.Id.ToString("N")}_Purpose"/></label></td>
+                    <td class="input-label"><label id="list_{@list.Id.ToString("N")}_List" for="list_{@list.Id.ToString("N")}">@list.Name</label></td>
+                    <td class="input-label"><label id="list_{@list.Id.ToString("N")}_Purpose" for="list_{@list.Id.ToString("N")}">@Html.Raw(string.IsNullOrEmpty(list.Purpose) ? "&nbsp;" : list.Purpose)</label></td>
+                </tr>
+            }
+            </tbody>
+        </table>
+        <button type="submit" class="btn btn-primary" name="fromList">@Html.Raw(Html.SnippetLiteral("UnsubscribeButtonText", "Unsubscribe"))</button>
+        <button type="submit" class="btn btn-info" name="all">@Html.Raw(Html.SnippetLiteral("UnsubscribeAllButtonText", "Unsubscribe All"))</button>
+    </form>
+}
+else
+{
+	<p class="alert alert-warning">@Html.Raw(Html.SnippetLiteral("Unsubscribe/Manage/NoListsMessage", "There are no marketing lists."))</p>
+}

@@ -1,0 +1,898 @@
+﻿
+.crmEntityFormView {
+}
+
+.crmEntityFormView .form-actions {
+	margin-top: 20px;
+}
+
+span.crmEntityFormView {
+	display: block;
+}
+
+.crmEntityFormView .tab {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.crmEntityFormView .tab-title {
+	border-bottom: 1px solid #EEEEEE;
+	-ms-text-rendering: optimizelegibility;
+	    text-rendering: optimizelegibility;
+}
+
+.crmEntityFormView .section:first-child {
+	margin: 0;
+}
+
+.crmEntityFormView .section {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.crmEntityFormView .section-title {
+	border-bottom-width: 0;
+	margin-bottom: 5px;
+}
+
+.crmEntityFormView .section-title.show-bar {
+	border-bottom-width: 1px;
+	padding-bottom: 4px;
+}
+
+.crmEntityFormView .cell {
+	padding: 0 0 20px 20px;
+}
+
+.crmEntityFormView .cell.zero-cell {
+	display: none;
+}
+
+.crmEntityFormView .cell:first-child {
+	padding-left: 0;
+}
+
+.crmEntityFormView .tab .tab-column {
+	padding-left: 20px;
+    float: left;
+}
+
+.crmEntityFormView .tab .tab-column:first-child {
+	padding-left: 0;
+}
+
+.crmEntityFormView table.table td {
+	padding: 8px;
+}
+
+.crmEntityFormView table.table td:first-child {
+	padding: 8px;
+}
+
+@media (max-width: 767px) {
+	.crmEntityFormView table.section,
+	.crmEntityFormView table.section > thead,
+	.crmEntityFormView table.section > thead > tr,
+	.crmEntityFormView table.section > thead > tr > th,
+	.crmEntityFormView table.section > thead > tr > td,
+	.crmEntityFormView table.section > tbody,
+	.crmEntityFormView table.section > tbody > tr,
+	.crmEntityFormView table.section > tbody > tr > th,
+	.crmEntityFormView table.section > tbody > tr > td,
+	.crmEntityFormView table.section > tfoot,
+	.crmEntityFormView table.section > tfoot > tr,
+	.crmEntityFormView table.section > tfoot > tr > th,
+	.crmEntityFormView table.section > tfoot > tr > td {
+		display: block;
+	}
+
+	.crmEntityFormView table.section {
+		width: 100%;
+		overflow: auto;
+	}
+	
+	.crmEntityFormView .cell {
+		margin-bottom: 15px;
+		padding: 0;
+		width: 100%;
+	}
+	
+	.crmEntityFormView .cell.empty-cell {
+		margin-bottom: 0;
+	}
+
+	.crmEntityFormView .tab .tab-column {
+		display: block;
+		margin-bottom: 15px;
+		padding: 0;
+		width: 100%;
+	}
+
+	.crmEntityFormView .tab:last-child,
+	.crmEntityFormView .tab fieldset:last-child,
+	.crmEntityFormView .tab .tab-column:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.crmEntityFormView .cell div.control {
+	clear: both;
+}
+
+.crmEntityFormView .cell div.info.required label:after {
+	content: ' *';
+	color: red;
+}
+
+.crmEntityFormView .cell div.info.required div.validators {
+	display: none;
+}
+
+.crmEntityFormView .cell div.info div.validators {
+	margin: 0 0 0 3px;
+	float: left;
+	color: Red;
+}
+
+.crmEntityFormView td.cell {
+	vertical-align: top;
+}
+
+.crmEntityFormView .cell label {
+	float: left;
+	display: inline;
+}
+
+.crmEntityFormView .cell label > label {
+	margin-bottom: 0;
+}
+
+.crmEntityFormView .cell input[type=text], .crmEntityFormView .cell select, .crmEntityFormView .cell textarea {
+	float:left;
+	width: 100%;
+}
+
+.control .input-group .form-control.lookup {
+	float: none;
+}
+
+.crmEntityFormView .cell div.control span.checkbox {
+	float: left;
+	margin: 0;
+}
+
+.crmEntityFormView .cell div.control span.checkbox input[type="checkbox"] {
+	margin-left: 0;
+}
+
+.crmEntityFormView .datetime-cell input.date {
+	width: 75px;
+}
+
+.crmEntityFormView .datetime-cell select.time {
+	width: 100px;
+}
+
+.crmEntityFormView .empty-cell {
+	padding: 0;
+}
+
+.crmEntityFormView .empty-cell:only-child {
+	display: none;
+}
+
+.crmEntityFormView .state, .crmEntityFormView .status {
+	padding: 6px 12px;
+}
+
+.crmEntityFormView .web-resource-cell {}
+
+.crmEntityFormView .web-resource-cell iframe {}
+
+.crmEntityFormView .cell .picklist input[type="radio"] {
+	margin: 2px 5px 5px 0;
+	vertical-align: top;
+}
+
+.crmEntityFormView .cell .picklist.horizontal input[type="radio"] {
+	margin-left: 10px;
+}
+
+.crmEntityFormView .cell .picklist input[type="radio"]:first-child {
+	margin-left: 0;
+}
+
+.crmEntityFormView .cell .picklist.horizontal span:not(:first-child) input[type="radio"] {
+	margin-left: 10px;
+}
+
+.crmEntityFormView .cell .picklist label {
+	float: none;
+	font-weight: normal;
+}
+
+/* Align checkbox to the left of the label */
+.crmEntityFormView .cell.checkbox-cell div.info {
+	float: none;
+	clear: none;
+	display: inline-block;
+	*display: inline; /* IE7 */
+	padding-left: 20px;
+}
+.crmEntityFormView .cell.checkbox-cell div.control {
+	clear: none;
+	float: left;
+	display: inline;
+}
+.crmEntityFormView .cell.checkbox-cell div.info div.validators {
+	display:inline;
+	float: left;
+	clear: none;
+}
+.crmEntityFormView .cell.checkbox-cell label {
+	clear: none;
+	float: none;
+	display: inline;
+}
+/* End - Align checkbox to the left of the label */
+
+.crmEntityFormView .cell.checkbox-cell:first-child {
+	padding: 0 10px 0 0;
+}
+
+/* Boolean formatted as radio button list */
+.crmEntityFormView .cell.boolean-radio-cell input[type="radio"] {
+	margin: 2px 5px 5px 10px;
+	vertical-align: top;
+}
+.crmEntityFormView .cell.boolean-radio-cell input[type="radio"]:first-child {
+	margin-left: 0;
+}
+
+.crmEntityFormView .cell.boolean-radio-cell .boolean-radio span:nth-child(2) input[type="radio"] {
+	margin-left: 10px;
+}
+
+.crmEntityFormView .cell.boolean-radio-cell label {
+	float: none;
+	display: inline;
+}
+
+.crmEntityFormView .boolean-radio label {
+	font-weight: normal;
+}
+
+/* End Boolean formatted as radio button list */
+
+.crmEntityFormView .validation-summary h2 {
+	margin: 0 0 1em 0;
+	padding: 0;
+	font-size: 1.2em;
+}
+
+.crmEntityFormView .validation-summary ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.crmEntityFormView .validator-text {
+	color: red;
+	margin: 0 0 0 3px;
+}
+
+.crmEntityFormView fieldset {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	border: 0 none;
+}
+
+.crmEntityFormView fieldset:empty {
+	margin: 0;
+}
+
+.crmEntityFormView fieldset legend + .well {
+	margin-top: 0;
+}
+
+.crmEntityFormView div.row.full div.cell {
+	width: 100%;
+}
+
+.crmEntityFormView .actions {
+	border-top: 1px solid #e5e5e5;
+	margin: 20px 0;
+	padding: 19px 0 0 0;
+}
+
+.crmEntityFormView .actions:empty {
+	display: none;
+}
+
+.crmEntityFormView .actions .btn:first-child {
+	margin-right: 5px;
+}
+
+.crmEntityFormView .actions:after {
+	content: "."; display: block; height: 0; clear: both; visibility: hidden;
+}
+
+div.message.success {
+	background-color: #DFF0D8;
+	border-color: #D6E9C6;
+	color: #468847;
+	-ms-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	margin-bottom: 18px;
+	padding: 9px 39px 9px 14px;
+	-ms-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+div.message.error {
+	background-color: #F2DEDE;
+	border-color: #EED3D7;
+	color: #B94A48;
+	-ms-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	margin-bottom: 20px;
+	padding: 9px 39px 9px 14px;
+	-ms-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Multiple Choice Matrix */
+.crmEntityFormView .cell.picklist-matrix-cell {
+	padding: 0;
+}
+.crmEntityFormView .picklist.horizontal.labels-top label {
+	display: block;
+}
+.crmEntityFormView .picklist.horizontal.labels-top td {
+	padding-right: 20px;
+	text-align: center;
+}
+.crmEntityFormView .picklist-matrix-cell .picklist.horizontal.labels-top input[type="radio"] {
+	margin-left: 0px;
+}
+.crmEntityFormView .picklist-matrix-cell div.info {
+	width: 250px;
+	float: left;
+}
+.crmEntityFormView .picklist-matrix-cell div.control {
+	clear: none;
+	float: left;
+}
+.crmEntityFormView .picklist-matrix-cell div.control .picklist label {
+	height: 1px;
+	padding-top: 1px;
+	overflow: hidden;
+	display: block;
+}
+.crmEntityFormView table.section tr:first-child .picklist-matrix-cell div.control .picklist label {
+	height: auto;
+	padding-top: 0;
+	display: block;
+}
+.crmEntityFormView table.section tr:first-child .picklist-matrix-cell div.info {
+	padding-top: 18px;
+	vertical-align: bottom;
+}
+.crmEntityFormView table.section tr:first-child .picklist-matrix-cell div.control {
+	margin-top: -10px;
+	padding-top: 10px;
+}
+/* End - Multiple Choice Matrix */
+
+/* Description */
+.crmEntityFormView div.description {
+	margin-top: -2px;
+	margin-bottom: 2px;
+}
+.crmEntityFormView div.description.below {
+	margin: 0;
+}
+.crmEntityFormView div.description.above {
+	clear: both;
+}
+.crmEntityFormView div.description.right {
+	float: right;
+}
+/* End - Description */
+
+/* Rank Order */
+.crmEntityFormView .cell.rank-order-cell {
+	padding: 0 0 3px 0;
+}
+.crmEntityFormView .rank-order-cell div.info {
+	padding-top: 3px;
+	width: 150px;
+}
+.crmEntityFormView .rank-order-cell div.control {
+	clear: none;
+	float: left;
+	width: 100px;
+}
+.crmEntityFormView .rank-order-cell .validator-text {
+	color: red;
+	padding: 0 0 0 3px;
+}
+/* End - Rank Order */
+
+/* Constant Sum */
+.crmEntityFormView .cell.constant-sum-cell {
+	padding: 0 0 3px 0;
+}
+.crmEntityFormView .constant-sum-cell div.info {
+	padding-top: 3px;
+	width: 150px;
+}
+.crmEntityFormView .constant-sum-cell div.control {
+	clear: none;
+	float: left;
+	width: 100px;
+}
+.crmEntityFormView .constant-sum-cell div.control input.integer {
+	text-align: center;
+}
+.crmEntityFormView .constant-sum-cell .validator-text {
+	color: red;
+	float: left;
+	margin: 7px 0 0 3px;
+}
+.crmEntityFormView .constant-sum-cell div.control input.total {
+	clear: both;
+	border: none;
+	background-color: transparent;
+	color: black;
+	border-top: solid 1px #555;
+	font-weight: bold;
+	text-align: center;
+	width: 30px;
+	margin: 3px 0 0 0;
+}
+/* End - Constant Sum */
+
+/* Stack Rank */
+.crmEntityFormView .cell.stack-rank-cell {
+	padding: 0 0 3px 0;
+}
+.crmEntityFormView .stack-rank-cell div.info {
+	margin-top: 9px;
+	width: 150px;
+}
+.crmEntityFormView .stack-rank-cell div.control {
+	clear: none;
+	float: left;
+	width: 100px;
+}
+.crmEntityFormView .stack-rank-cell .validator-text {
+	color: red;
+	padding: 0 0 0 3px;
+}
+.crmEntityFormView .sr-cell {
+	padding: 2px 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 1px solid black;
+	float: left;
+	line-height: 1.8em;
+}
+.crmEntityFormView .sr-cell:hover {
+	cursor: pointer;
+	background: #36566b;
+	color: white;
+}
+.crmEntityFormView .selected-cell {
+	background: #014083;
+	color: white;
+}
+/* End - Stack Rank */
+
+/* Progress Indicator */
+
+ol.progress {
+	height: auto;
+}
+
+ol.progress.left,
+ol.progress.right {
+	margin-top: 20px;
+}
+
+ol.progress li span.number {
+	padding-right: 10px;
+}
+
+ol.progress li span.glyphicon.glyphicon-ok {
+	padding-left: 10px;
+}
+
+ol.progress.top li,
+ol.progress.bottom li {
+	float: left;
+}
+
+ol.progress li.incomplete {
+	background: transparent;
+	border: none;
+}
+
+ol.progress.top li:first-child,
+ol.progress.bottom li:first-child,
+ol.progress.top li:last-child,
+ol.progress.bottom li:last-child {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+@media (max-width: 767px) {
+	ol.progress.left,
+	ol.progress.right {
+		margin-top: 0;
+	}
+
+	ol.progress.left li,
+	ol.progress.right li {
+		float: left;
+	}
+
+	
+	ol.progress.left li:first-child,
+	ol.progress.right li:first-child,
+	ol.progress.left li:last-child,
+	ol.progress.right li:last-child {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+	}
+}
+
+/* Progress Bar Style */
+
+div.progress {
+	background-color: #F5F5F5;
+	-ms-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	-ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	height: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding: 0;
+}
+
+div.progress .bar.zero {
+	color: #0f0f0f;
+	text-shadow: none;
+	text-indent: 10px;
+}
+
+/* Numeric (Step x of N) */
+
+div.progress-numeric {
+	margin: 20px 0 20px 0;
+	padding: 10px;
+	list-style: none;
+	background: #fdfefd;
+	border: solid 1px #f0f0f0;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 3px 3px 3px 0 #CCCCCC;
+	-moz-box-shadow: 3px 3px 3px 0 #CCCCCC;
+	box-shadow: 3px 3px 3px 0 #CCCCCC;
+	font-weight: bold;
+}
+
+div.progress-numeric span.number {
+	background-color: #E0E0E0; /* background-color: #014083; */
+	border-radius: 20px 20px 20px 20px;
+	color: white;
+	display: inline-block;
+	font-size: 1.6em;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	width: 40px;
+}
+
+div.progress-numeric span.number.total {
+	background-color: #E0E0E0;
+}
+
+/* End - Progress Indicator */
+
+/* ReadOnly */
+
+.crmEntityFormView.readonly {
+	padding-left: 0;
+}
+
+.crmEntityFormView.readonly .cell input:disabled,
+.crmEntityFormView.readonly .cell select:disabled,
+.crmEntityFormView.readonly .cell textarea:disabled {
+	background: none;
+	border: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	padding: 0;
+}
+
+/* to override the style on the object from leagacy webtemplates */
+.crmEntityFormView textarea[readonly] {
+    display: block !important;
+}
+
+.crmEntityFormView.readonly .cell div.info.required label:after {
+	content: none;
+}
+
+.crmEntityFormView.readonly .cell div.info label {
+	font-weight: bold;
+}
+
+/* Centered */
+
+.crmEntityFormView.centered .cell div.info {
+	width: 100%;
+}
+
+.crmEntityFormView.centered .cell div.info label {
+	width: 100%;
+	text-align: center;
+}
+
+.crmEntityFormView.centered .cell input[type="text"], .crmEntityFormView.centered .cell select, .crmEntityFormView.centered .cell textarea {
+	text-align: center;
+}
+
+/* Web Form Purchase
+------------------------------------------------------------*/
+.payment,
+.purchase-summary {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.purchase-summary .grand-total {
+	font-weight: bold;
+}
+
+.purchase-summary .total,
+.purchase-summary table.line-items .price,
+.purchase-summary table.line-items .qty {
+	text-align: right;
+}
+
+.purchase-summary .discount {
+	color: red;
+	vertical-align: top;
+}
+
+.purchase-summary .discount-name {
+	color: orange;
+}
+
+.purchase-summary table.line-items .price del {
+	color: #666;
+}
+
+.purchase-summary .line-item {
+	border-bottom: 1px solid #e3e3e3;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.purchase-summary .line-item .column {
+	vertical-align: text-top;
+}
+
+.purchase-summary .line-item .column.selection {
+	float: left;
+	width: 20px;
+}
+
+.purchase-summary .line-item .column.selection + .column.title {
+	margin-left: 30px;
+}
+
+.purchase-summary .line-item .column input[type="checkbox"],
+.purchase-summary table.line-items input[type="checkbox"] {
+	margin: 0 10px 0 0;
+}
+
+.purchase-summary .line-item .quantity input {
+	width: 30px;
+}
+
+.purchase-summary legend + .well {
+	margin-top: 20px;
+}
+
+.purchase-summary table.line-items {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.purchase-summary table.line-items td.title {
+	width: 100%;
+}
+
+.purchase-summary table.line-items td.qty {
+	white-space: nowrap;
+	padding-right:5px;
+}
+
+.purchase-summary table.line-items td.price {
+	white-space: nowrap;
+}
+
+.purchase-summary table.totals {
+	width: 100%;
+}
+
+.purchase-summary table.totals tr.total td:first-child {
+	width: 100%;
+}
+
+.purchase-summary table.totals tr.total td {
+	padding-left: 10px;
+}
+
+.purchase-summary table.line-items th,
+.purchase-summary table.line-items td {
+	border-bottom: 1px solid #e3e3e3;
+	line-height: 20px;
+	padding: 9px 0;
+	text-align: left;
+	vertical-align: top;
+}
+
+@media (max-width: 991px) {
+	.payment .form-horizontal .control-label {
+		float: none;
+		text-align: left;
+	}
+
+	.payment .form-horizontal .controls {
+		margin-left: 0;
+	}
+}
+
+/* Entity List Filter
+------------------------------------------------------------*/
+.entitylist-filter-option-group ul li[aria-hidden=true] {
+	display: none;
+}
+
+.entitylist-filter-option-group {
+	vertical-align: top;
+}
+
+.entitylist-filter-option-group .h4 {
+	display: block;
+}
+
+.entitylist-filter-option-text {
+	width: 180px;
+}
+
+.filter-vertical .entitylist-filter-option-text {
+	width: 100%;
+}
+
+/* Quick Form
+------------------------------------------------------------*/
+
+iframe.quickform {
+	display: block;
+	border: none;
+	height: 0;
+	width: 100%;
+}
+
+.container.quickform {
+	margin: 0;
+	padding: 0;
+}
+
+/* Entity Form Actions
+	--------------------------------------------------------*/
+
+.submit-btn-link {
+	background: none !important;
+	border: none;
+	padding: 3px 20px;
+}
+
+.submit-btn-link:hover {
+	color:#262626;
+	text-decoration:none;
+	background-color:#f5f5f5
+}
+
+/* Readonly
+	--------------------------------------------------------*/
+
+.form-readonly .form-control, .crmEntityFormView .form-control[readonly][disabled], .crmEntityFormView .form-control.readonly {
+	background: none;
+	border: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	cursor: auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Restore focus ring to readonly fields */
+.form-readonly .form-control:focus,
+.crmEntityFormView .form-control[readonly][disabled]:focus,
+.crmEntityFormView .form-control.readonly:focus {
+	outline: 1px dotted #212121;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form-readonly textarea.form-control, .crmEntityFormView textarea.form-control[readonly][disabled], .crmEntityFormView textarea.form-control.readonly {
+	resize: none;
+}
+
+.form-readonly select.form-control, .crmEntityFormView select.form-control.readonly {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.form-readonly select.form-control::-ms-expand, .crmEntityFormView select.form-control.readonly::-ms-expand {
+	display: none;
+}
+
+.form-readonly select.form-control option, .crmEntityFormView select.form-control.readonly option {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.form-readonly .money .input-group > .input-group-addon,
+.crmEntityFormView .money .input-group.readonly > .input-group-addon {
+	background: none;
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.form-custom-actions {
+	margin-bottom: 20px;
+}
+
+.form-custom-actions .btn {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.form-custom-actions .dropdown-menu {
+	margin-top: -3px;
+}
+
+@media screen and (min-width: 768px) {
+	.form-action-container-right {
+		float: right;
+	}
+
+	.form-action-container-left {
+		float: left;
+	}
+}
+
+/* Popover */
+
+.popover input {
+    margin-bottom: 10px;
+}
+
+/* End - Description */

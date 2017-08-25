@@ -1,0 +1,5 @@
+﻿{
+  "title": "Liquid_Template_Ad_Title",
+  "description": "Liquid_Template_Ad_Description",
+  "default_arguments": "ad_placement_name: "
+}

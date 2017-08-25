@@ -1,0 +1,218 @@
+﻿/* Permits Home Page
+------------------------------------------------------------*/
+
+.permits a.permit {
+	-webkit-box-shadow: none;
+	    -ms-box-shadow: none;
+	        box-shadow: none;
+	color: #333333;
+	display: block;
+	text-decoration: none;
+	padding-left: 9px;
+	padding-right: 9px;
+	margin-bottom: 20px;
+	height: 120px;
+}
+
+.permits a.permit h6 {
+	font-weight: bold;
+}
+
+.permits a.permit img {
+	height: 32px;
+	margin-bottom: 20px;
+	width: 32px;
+}
+
+.permits a.permit:hover, #permits a.permit:focus {
+    color: #3A87AD;
+}
+
+.permits a.permit:hover, #permits a.permit:focus {
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    box-shadow: 0 0 4px #BCE8F1;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Help Desk (temporary until there is time to clean up)
+------------------------------------------------------------*/
+.cases {
+	margin: 40px 0;
+}
+
+.cases table {
+	margin-bottom: 0;
+}
+
+.cases .controls .create-case {
+	float: right;
+}
+
+.case .case-controls {
+	margin-top: 0;
+}
+
+.case .ticket-number {
+	white-space: nowrap;
+}
+
+.case .case-info {
+	line-height: 40px;
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+.case .case-info .user-avatar {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.case .case-description {
+	margin-bottom: 40px;
+}
+
+.case .resolution + .resolution,
+.case .note + .note {
+	border-top: 1px solid #EEE;
+	padding-top: 19px;
+}
+
+.case .resolution .description,
+.case .note .text,
+.case .note .attachment,
+.case .resolution .metadata,
+.case .note .metadata {
+	margin-bottom: 20px;
+}
+
+.case .resolution .metadata,
+.case .note .metadata {
+	text-align: right;
+}
+
+.case .crmEntityFormView.readonly {
+	padding-left: 0;
+}
+
+.case .crmEntityFormView .cell.picklist-cell .control > span,
+.case .crmEntityFormView .cell.lookup-cell .control > span {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.case .crmEntityFormView .cell input:disabled,
+.case .crmEntityFormView .cell select:disabled {
+	background: none;
+	border: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	padding: 0;
+}
+
+.case .crmEntityFormView.readonly .cell div.info.required label:after {
+	content: none;
+}
+
+.case .crmEntityFormView .cell div.info label {
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	.case .resolution .metadata,
+	.case .note .metadata {
+		text-align: left;
+	}
+
+	.cases .controls .btn,
+	.cases .controls input.btn[type="submit"] {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.case .case-controls,
+	.case .status {
+		float: none;
+		margin-bottom: 20px;
+	}
+	
+	.case .case-controls .btn {
+		display: block;
+		float: none;
+	}
+	
+	.case .case-controls .btn-group {
+		display: block;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+}
+
+/* Help Desk
+------------------------------------------------------------*/
+.case-deflection .product {
+	margin-bottom: 10px;
+}
+
+.case-deflection .panel-footer .alert:last-child {
+	margin-bottom: 0;
+}
+
+/* Misc.
+------------------------------------------------------------*/
+.commerce-status,
+.commerce-details {
+	margin-bottom: 20px;
+}
+
+.commerce-details .note + .note {
+	border-top: 1px solid #EEE;
+	padding-top: 19px;
+}
+
+.commerce-details .note .metadata,
+.commerce-details .note .text,
+.commerce-details .note .attachment {
+	margin-bottom: 20px;
+}
+
+.commerce-details .note .metadata {
+	text-align: right;
+}
+
+.input-checkbox-inline input[type="checkbox"] {
+	margin: 0;
+}
+
+.input-checkbox-inline label {
+	display: inline-block;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+}
+
+/*********service request panel**/
+
+.serviceheader input:disabled {
+	background-color: white;
+	border: none;
+    color: #4f4b4b;
+	outline:none;
+}
+
+.serviceheader input {
+	background-color: white;
+    border: none;
+    color: #4f4b4b;
+	outline:none;
+}
+
+.serviceheader tr {
+	vertical-align: top;
+}
+
+.crmEntityFormView td.cell {
+	vertical-align: top;
+}

@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/WebForms.master" AutoEventWireup="true" CodeBehind="Products.master.cs" Inherits="Site.Areas.Products.MasterPages.Products" %>
+<%@ Import Namespace="System.Web.Mvc.Html" %>
+<%@ Import Namespace="Adxstudio.Xrm.Web.Mvc.Html" %>
+
+<asp:Content ContentPlaceHolderID="Head" runat="server">
+	<link rel="stylesheet" href="<%: Url.Content("~/Areas/Products/css/products.css") %>">
+	<asp:ContentPlaceHolder ID="Head" runat="server"/>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="Scripts">
+	<asp:ContentPlaceHolder ID="Scripts" runat="server"/>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="Breadcrumbs" runat="server">
+	<asp:ContentPlaceHolder ID="Breadcrumbs" runat="server">
+		<% Html.RenderPartial("Breadcrumbs"); %>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="PageHeader" runat="server">
+	<asp:ContentPlaceHolder ID="PageHeader" runat="server">
+		<crm:CrmEntityDataSource ID="CurrentEntity" DataItem="<%$ CrmSiteMap: Current %>" runat="server" />
+		<div class="page-header">
+			<h1>
+				<adx:Property DataSourceID="CurrentEntity" PropertyName="adx_title,adx_name" EditType="text" runat="server" />
+			</h1>
+		</div>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="nav-product-filter">
+				<asp:ListView ID="Collections" runat="server">
+					<LayoutTemplate>
+						<div class="content-panel panel panel-default">
+							<div class="list-group">
+								<asp:PlaceHolder ID="itemPlaceholder" runat="server"/>
+							</div>
+						</div>
+					</LayoutTemplate>
+					<ItemTemplate>
+						<asp:HyperLink CssClass="list-group-item" NavigateUrl='<%#: Eval("Url") %>' Text='<%#: Eval("Title") %>' ToolTip='<%#: Eval("Title") %>' runat="server"/>
+					</ItemTemplate>
+				</asp:ListView>
+				<asp:ContentPlaceHolder ID="Filters" runat="server"/>
+				<asp:ListView ID="RelatedLinks" runat="server">
+					<LayoutTemplate>
+						<div class="content-panel panel panel-default">
+							<div class="list-group">
+								<asp:PlaceHolder ID="itemPlaceholder" runat="server"/>
+							</div>
+						</div>
+					</LayoutTemplate>
+					<ItemTemplate>
+						<asp:HyperLink CssClass="list-group-item" NavigateUrl='<%#: Eval("Url") %>' Text='<%#: Eval("Title") %>' ToolTip='<%#: Eval("Title") %>' runat="server"/>
+					</ItemTemplate>
+				</asp:ListView>
+			</div>
+		</div>
+		<div class="col-sm-9">
+			<%: Html.HtmlAttribute("adx_copy", cssClass: "page-copy") %>
+				<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+			</div>
+		</div>
+</asp:Content>

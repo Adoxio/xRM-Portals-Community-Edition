@@ -1,0 +1,25 @@
+﻿
+.public-profile .activity-list {
+	list-style: none;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+}
+
+.public-profile .activity-list > li {
+	list-style: none;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.public-profile .activity-list > li > h3 {
+	margin: 0;
+}
+
+.public-profile .activity-list > li > .metadata {
+	margin-bottom: 10px;
+}
+
+.public-profile .metadata .badges {
+	margin-bottom: 10px;
+}

@@ -1,0 +1,153 @@
+﻿
+#EntityListControl {
+	display: block;
+}
+
+.event-info {
+	background-color: #428BCA;
+}
+
+.badge-important,
+.event-danger,
+.event-important {
+	background-color: #D9534F;
+}
+
+.event-success {
+	background-color: #5CB85C;
+}
+
+.event-warning {
+	background-color: #F0AD4E;
+}
+
+.cal-cell {
+	background-color: white;
+}
+
+.calendar-loading {
+	background: url('../img/loading-bar.gif') no-repeat 50% 50%;
+	display: block;
+	height: 19px;
+	margin-top: 20px;
+}
+
+.calendar-title {
+	margin: 0;
+}
+
+.calendar-title-container {
+	text-align: center;
+}
+
+.calendar-views {
+	text-align: right;
+}
+
+.calendar-error {
+	display: none;
+}
+
+#cal-slide-content,
+#cal-slide-content:hover {
+	background-color: #f5f5f5;
+	background-image: none;
+	-webkit-box-shadow: none;
+	-ms-box-shadow: none;
+	box-shadow: none;
+	padding: 15px;
+}
+
+#cal-slide-content > .list-group {
+	margin: 0;
+}
+
+.cal-month-day span[data-cal-date],
+.cal-month-box .cal-day-today span[data-cal-date] {
+	font-size: 1.2em;
+	margin: 2px 5px 5px 5px;
+}
+
+.cal-month-day > .badge {
+	float: left;
+	margin: 5px;
+}
+
+.cal-month-day .events-list {
+	height: 65px;
+	max-height: 65px;
+	padding: 0 2px;
+	width: 100%;
+}
+
+.cal-month-day .events-list:after {
+	display: block;
+	content: ' ';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 10px;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+}
+
+.cal-month-day .events-list > a {
+	display: block;
+	line-height: 1.2em;
+	margin-bottom: 1px;
+	overflow: hidden;
+	padding: 2px;
+	text-align: left; 
+	white-space: normal;
+}
+
+.calendar-event-datetime {
+	font-size: 85%;
+}
+
+.calendar-small {
+	font-size: 85%;
+}
+
+.calendar-small .cal-events-num {
+	margin-top: 4px;
+}
+
+.calendar-small .cal-year-box [class*="span"],
+.calendar-small .cal-month-box [class*="cal-cell"] {
+	min-height: 40px;
+}
+
+.calendar-small .cal-month-day {
+	height: 40px;
+}
+
+.calendar-small span[data-cal-date] {
+	font-size: 1em;
+	margin-top: 2px;
+	margin-right: 4px;
+}
+
+.calendar-small .cal-month-box .cal-day-today span[data-cal-date] {
+	font-size: 1em;
+}
+
+.calendar-small .cal-month-day.calendar-hasevents {
+	background-color: #d9edf7;
+	color: #3a87ad;
+}
+
+.cal-year-box .row-fluid [class*="span"]:first-child {
+	padding-left: 2.5641%;
+}
+
+@media (max-width: 767px) {
+	.calendar-title-container {
+		margin: 20px 0;
+	}
+
+	.calendar-navs, .calendar-views {
+		text-align: center;
+	}
+}

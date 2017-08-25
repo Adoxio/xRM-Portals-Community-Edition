@@ -1,0 +1,119 @@
+﻿#opportunities-details-form-views a.Edit {
+	padding-left: 5px;
+}
+
+#opportunities-contacts a.Edit {
+	padding-left: 5px;
+}
+
+#opportunity-assigned-to {
+	float: right;
+	position: relative;
+	bottom: 37px;
+	margin-top: 40px;
+}
+
+#opportunities-details-form-views div.validation-summary {
+	display: none;
+}
+
+#opportunities-history {
+	height: 533px;
+	overflow-y: auto;
+	-moz-overflow-y: auto;
+}
+
+#opportunities-contacts {
+	height: 533px;
+	overflow-y: auto;
+	-moz-overflow-y: auto;
+}
+
+#opportunities-history > div {
+	margin: 1em 0;
+	background-color: #F5F5F5;
+	border: 1px solid #E3E3E3;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+	margin-bottom: 20px;
+	min-height: 20px;
+	padding: 19px
+}
+
+#opportunities-contacts > div {
+	margin: 1em 0;
+	background-color: #F5F5F5;
+	border: 1px solid #E3E3E3;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+	margin-bottom: 20px;
+	min-height: 20px;
+	padding: 19px
+}
+
+#opportunities-history > div span.stage-date,
+#opportunities-history > div span.stage-name,
+#opportunities-history > div span.stage-assigned-to
+#opportunities-contacts > div span.contact-name,
+#opportunities-contacts > div span.contact-company-name {
+	color: #555;
+	display: inline-block;
+}
+
+#opportunities-history > div span.stage-date {
+	width: 160px;
+}
+
+#opportunities-history > div span.stage-name {
+	width: 160px;
+}
+
+#opportunities-contacts > div span.stage-assigned-to {
+	float: right;
+	text-align: right;
+}
+
+#opportunities-contacts > div span.contact-company-name {
+	float: right;
+}
+
+#opportunities-history > div div.stage-details {
+	margin: .5em 0;
+	padding: 1px 4px;
+	background-color: #FFF;
+	border: solid 1px #D1D4D4;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+#opportunities-notes textarea {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	height: 535px;
+	margin: 6px 0;
+}
+
+#opportunities-details-status select,
+#opportunities-details-status textarea {
+	clear: both;
+	margin: 2px 0 6px 0;
+	width: 250px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+#opportunities-details-status textarea {
+	height: 93px;
+}
+
+#opportunities-details-content-pane {
+	margin-top: 10px;
+}
+
+.checkbox > input[type="checkbox"],
+.radio > input[type="radio"] {
+	margin-left: 0;
+}

@@ -1,0 +1,5 @@
+﻿{
+	"title": "Liquid_Template_Weblink_List_Group_Title",
+    "description": "Liquid_Template_Weblink_List_Group_Description",
+    "default_arguments":  "weblink_set_name: ''"
+}

@@ -1,0 +1,37 @@
+﻿.search-view-results {
+}
+
+.entity-information {
+	padding: 10px;
+}
+
+.entity-logical-name {
+	font-size: 12px;
+}
+
+.entity-title {
+	font-size: 24px;
+	margin-top: -10px;
+	margin-left: -2px;
+	margin-bottom: -5px;
+}
+
+.entity-bread-crumb {
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.entity-date-modified {
+	font-size: 12px;
+	font-weight: lighter;
+	margin-top: -10px;
+}
+
+li.note-item {
+	padding: 0;
+	margin: 10px 0;
+}
+
+li a {
+	margin-left: 3px;
+}

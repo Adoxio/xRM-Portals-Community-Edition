@@ -1,0 +1,141 @@
+﻿
+.lb-image {
+	max-width: inherit;
+}
+
+#EntityListControl {
+	display: block;
+}
+
+.gallery {
+	margin-top: 20px;
+}
+
+.gallery-loading {
+	background: url('../img/loading-bar.gif') no-repeat 50% 50%;
+	display: block;
+	height: 19px;
+	margin-top: 20px;
+}
+
+.gallery-category-list a.list-group-item {
+	cursor: pointer;
+}
+
+.gallery-items > li > .media {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.gallery-items > li > .media > .media-left {
+	padding-right: 20px;
+	width: 60px;
+}
+
+.gallery-items > li > .media > .media-body {
+	width: auto;
+}
+
+.gallery-icon {
+	height: 40px;
+	width: 40px;
+}
+
+.page-header > h1 > .gallery-icon {
+	margin-right: 20px;
+}
+
+.gallery-icon.placeholder {
+	background-color: #fafafa;
+}
+
+.gallery-items .item {
+	margin-bottom: 20px;
+	padding: 19px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.gallery-items .item.featured {
+	background-color: #FAFDFE;
+	border-color: #BCE8F1;
+}
+
+.gallery-items .item .name {
+	margin-top: 0;
+}
+
+.gallery-items .item .summary {
+	margin-bottom: 10px;
+}
+
+.gallery-items .item .tags {
+	margin: 0;
+}
+
+.gallery-item-heading {
+	margin-bottom: 20px;
+}
+
+.gallery-detail .description {
+	margin-bottom: 20px;
+}
+
+.gallery-detail .thumbnails {
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.gallery-detail .panel-title > a {
+	display: block;
+}
+
+.repository-url,
+input[readonly].repository-url {
+	color: #666;
+	cursor: text;
+	background-color: white;
+	font-family: monospace;
+	font-size: 11px;
+}
+
+.zeroclipboard.hover {
+	background-color: #EBEBEB;
+}
+
+.modal .modal-body {
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.modal {
+	color: black;
+}
+
+@media (min-width: 768px) {
+	.gallery-item-heading {
+		display: table;
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	.gallery-item-heading > * {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	.gallery-item-heading > .metadata {
+		text-align: right;
+		white-space: nowrap;
+	}
+}

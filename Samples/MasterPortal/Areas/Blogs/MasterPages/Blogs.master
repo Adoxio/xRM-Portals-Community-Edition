@@ -1,0 +1,252 @@
+<%@ Master Language="C#" MasterPageFile="~/MasterPages/WebFormsContent.master" AutoEventWireup="true" CodeBehind="Blogs.master.cs" Inherits="Site.Areas.Blogs.MasterPages.Blogs" %>
+<%@ Import Namespace="Adxstudio.Xrm.Resources" %> 
+<%@ Import Namespace="System.Web.Mvc.Html" %>
+<%@ Import Namespace="Adxstudio.Xrm.Blogs" %>
+<%@ Import Namespace="Adxstudio.Xrm.Web.Mvc.Html" %>
+<%@ Import Namespace="Site.Helpers" %>
+
+<asp:Content ContentPlaceHolderID="Head" runat="server">
+	<link rel="stylesheet" href="<%: Url.Content("~/Areas/Blogs/css/blogs.css") %>">
+	<asp:ObjectDataSource ID="BlogFeedDataSource" TypeName="Adxstudio.Xrm.Blogs.IBlogDataAdapter" OnObjectCreating="CreateBlogDataAdapter" SelectMethod="Select" runat="server" />
+	<asp:ListView DataSourceID="BlogFeedDataSource" runat="server">
+		<LayoutTemplate>
+			<asp:PlaceHolder ID="itemPlaceholder" runat="server" />
+		</LayoutTemplate>
+		<ItemTemplate>
+			<link rel="alternate" type="application/atom+xml" title='<%# Eval("Title") %>' href='<%# Eval("FeedPath.AbsolutePath") %>' runat="server" />
+		</ItemTemplate>
+	</asp:ListView>
+	<asp:ContentPlaceHolder ID="Head" runat="server"/>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="Breadcrumbs" runat="server">
+	<asp:ContentPlaceHolder ID="Breadcrumbs" runat="server">
+		<% Html.RenderPartial("BlogBreadcrumbs"); %>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="PageHeader" runat="server">
+	<asp:ContentPlaceHolder ID="PageHeader" runat="server">
+		<asp:ObjectDataSource ID="BlogHeaderDataSource" TypeName="Adxstudio.Xrm.Blogs.IBlogDataAdapter" OnObjectCreating="CreateBlogDataAdapter" SelectMethod="Select" runat="server" />
+		<asp:ListView DataSourceID="BlogHeaderDataSource" runat="server">
+			<LayoutTemplate>
+				<asp:PlaceHolder ID="itemPlaceholder" runat="server" />
+			</LayoutTemplate>
+			<ItemTemplate>
+				<crm:CrmEntityDataSource ID="CurrentEntity" DataItem='<%# Eval("Entity") %>' runat="server" />
+				<div class="page-header">
+					<div class="pull-right">
+						<asp:HyperLink CssClass="feed-icon fa fa-rss-square" NavigateUrl='<%#: Eval("FeedPath.AbsolutePath") %>' ToolTip='<%$ Snippet: Blog Subscribe Heading, Blogs_Subscribe %>' runat="server" />
+					</div>
+					<h1><adx:Property DataSourceID="CurrentEntity" PropertyName="adx_name" EditType="text" runat="server" /></h1>
+				</div>
+			</ItemTemplate>
+		</asp:ListView>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+	<asp:ContentPlaceHolder ID="MainContent" runat="server">
+		<asp:ObjectDataSource ID="PostDataSource" TypeName="Adxstudio.Xrm.Blogs.IBlogDataAdapter" OnObjectCreating="CreateBlogDataAdapter" SelectMethod="SelectPosts" SelectCountMethod="SelectPostCount" EnablePaging="True" runat="server" />
+		<asp:ListView ID="Posts" DataSourceID="PostDataSource" runat="server">
+			<LayoutTemplate>
+				<ul class="list-unstyled">
+					<li id="itemPlaceholder" runat="server" />
+				</ul>
+				<adx:UnorderedListDataPager PageSize="10" PagedControlID="Posts" CssClass="pager" QueryStringField="page" runat="server">
+					<Fields>
+						<adx:ListItemNextPreviousPagerField ListItemCssClass="previous" ShowNextPageButton="False" PreviousPageText='<%$ Snippet: Blog Post Previous Page Text, Newer_ButtonText %>' />
+						<adx:ListItemNextPreviousPagerField ListItemCssClass="next" ShowPreviousPageButton="False" NextPageText='<%$ Snippet: Blog Post Next Page Text, Older_ButtonText %>' />
+					</Fields>
+				</adx:UnorderedListDataPager>
+			</LayoutTemplate>
+			<ItemTemplate>
+				<li class='<%# "blog-post" + ((bool)Eval("IsPublished") ? "" : " unpublished") %>' runat="server">
+					<crm:CrmEntityDataSource ID="Post" DataItem='<%# Eval("Entity") %>' runat="server" />
+					<asp:HyperLink CssClass="user-avatar" NavigateUrl='<%# Url.AuthorUrl(Eval("Author") as IBlogAuthor) %>' ImageUrl='<%# Url.UserImageUrl(Eval("Author.EmailAddress")) %>' ToolTip='<%# Eval("Author.Name") ?? "" %>' runat="server"/>
+					<h3 class="title">
+						<asp:HyperLink NavigateUrl='<%#: Eval("ApplicationPath.AppRelativePath") %>' runat="server">
+							<adx:Property DataSourceID="Post" PropertyName="adx_name" Literal="True" runat="server" />
+						</asp:HyperLink>
+					</h3>
+					<div class="metadata">
+						<asp:Label Visible='<%# !(bool)Eval("IsPublished") %>' CssClass="label label-info" Text='<%$ Snippet: Unpublished Post Label, Unpublished_DefaultText %>' runat="server"></asp:Label>
+						<asp:HyperLink NavigateUrl='<%# Url.AuthorUrl(Eval("Author") as IBlogAuthor) %>' Text='<%#: Eval("Author.Name") %>' ToolTip='<%# Eval("Author.Name") %>' runat="server" />
+						&ndash;
+						<abbr class="timeago"><%#: Eval("PublishDate", "{0:r}") %></abbr>
+						&ndash;
+						<asp:HyperLink NavigateUrl='<%#: string.Format("{0}#comments", Eval("ApplicationPath.AbsolutePath")) %>' ToolTip=' <%#: Eval("CommentCount") %>' runat="server">
+							<span class="fa fa-comment" aria-hidden="true"></span> <%#: Eval("CommentCount") %>
+							<span class="content-blog-count">comments</span>
+                        </asp:HyperLink>
+					</div>
+					<div>
+						<asp:Panel Visible='<%# Eval("HasExcerpt") %>' runat="server">
+							<adx:Property DataSourceID="Post" PropertyName="adx_summary" Editable="False" EditType="html" runat="server" />
+							<p>
+								<asp:HyperLink NavigateUrl='<%#: string.Format("{0}#extended", Eval("ApplicationPath.AbsolutePath")) %>' Text='<%$ Snippet: Blog Post Extended Content Link Text, ContinueReading_ButtonText %>' ToolTip='<%$ Snippet: Blog Post Extended Content Link Text, ContinueReading_ButtonText %>' runat="server" />
+							</p>
+						</asp:Panel>
+						<asp:Panel Visible='<%# !(bool)Eval("HasExcerpt") %>' runat="server">
+							<adx:Property DataSourceID="Post" PropertyName="adx_copy" Editable="False" EditType="html" CssClass="page-copy" runat="server" />
+						</asp:Panel>
+					</div>
+					<div>
+						<asp:ListView runat="server" DataSource='<%# Eval("Tags") %>'>
+							<LayoutTemplate>
+								<ul class="tags">
+									<li id="itemPlaceholder" runat="server" />
+								</ul>
+							</LayoutTemplate>
+							<ItemTemplate>
+								<li runat="server">
+									<asp:HyperLink CssClass="btn btn-default btn-xs" NavigateUrl='<%#: Eval("ApplicationPath.AppRelativePath") %>' ToolTip='<%# Eval("Name") %>' runat="server">
+										<span class="fa fa-tag" aria-hidden="true"></span>
+										<%#: Eval("Name") %>
+									</asp:HyperLink>
+								</li>
+							</ItemTemplate>
+						</asp:ListView>
+					</div>
+				</li>
+			</ItemTemplate>
+			<EmptyDataTemplate>
+				<asp:ContentPlaceHolder ID="Posts_EmptyDataTemplate" runat="server"></asp:ContentPlaceHolder>
+			</EmptyDataTemplate>
+		</asp:ListView>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="ContentBottom" runat="server"/>
+
+<asp:Content ContentPlaceHolderID="SidebarContent" runat="server">
+	<div class="sidebar">
+		<asp:ContentPlaceHolder ID="SidebarTop" runat="server"></asp:ContentPlaceHolder>
+		<asp:ObjectDataSource ID="BlogDataSource" TypeName="Adxstudio.Xrm.Blogs.IBlogDataAdapter" OnObjectCreating="CreateBlogDataAdapter" SelectMethod="Select" runat="server" />
+		<asp:ListView DataSourceID="BlogDataSource" runat="server">
+			<LayoutTemplate>
+				<asp:PlaceHolder ID="itemPlaceholder" runat="server" />
+			</LayoutTemplate>
+			<ItemTemplate>
+				<div class="content-panel panel panel-default" Visible='<%# !(bool)Eval("IsAggregation") %>' runat="server">
+					<crm:CrmEntityDataSource ID="CurrentEntity" DataItem='<%# Eval("Entity") %>' runat="server" />
+					<div class="panel-heading">
+						<h3><adx:Property DataSourceID="CurrentEntity" PropertyName="adx_name" EditType="text" runat="server" /></h3>
+					</div>
+					<div class="panel-body">
+						<adx:Property DataSourceID="CurrentEntity" PropertyName="adx_summary" EditType="html" runat="server" />
+					</div>
+				</div>
+			</ItemTemplate>
+		</asp:ListView>
+		<asp:ListView DataSourceID="BlogDataSource" runat="server">
+			<LayoutTemplate>
+				<div class="content-panel panel panel-default">
+					<div class="panel-heading">
+						<h4>
+							<span class="fa fa-cog" aria-hidden="true"></span>
+							<adx:Snippet SnippetName="Blog Options Heading" DefaultText="<%$ ResourceManager:Options_DefaultText %>" runat="server" />
+						</h4>
+					</div>
+					<asp:PlaceHolder ID="itemPlaceholder" runat="server" />
+				</div>
+			</LayoutTemplate>
+			<ItemTemplate>
+				<div class="list-group">
+					<asp:HyperLink CssClass="list-group-item" NavigateUrl='<%#: Eval("ApplicationPath.AbsolutePath") %>' ToolTip='<%# HttpUtility.HtmlDecode(ResourceManager.GetString("Blog_Home_DefaultText")).ToString() %>' runat="server">
+						<span class="fa fa-fw fa-home" aria-hidden="true"></span>
+						<adx:Snippet SnippetName="Blog Home Link Text" DefaultText="<%$ ResourceManager:Blog_Home_DefaultText %>" Literal="True" runat="server"/>
+					</asp:HyperLink>
+					<asp:HyperLink CssClass="list-group-item" NavigateUrl='<%#: Eval("FeedPath.AbsolutePath") %>' ToolTip='<%# HttpUtility.HtmlDecode(ResourceManager.GetString("Feed_DefaultText")).ToString() %>' runat="server">
+						<span class="feed-icon fa fa-fw fa-rss-square" aria-hidden="true"></span>
+						<adx:Snippet SnippetName="Blog Posts Feed Link Text" DefaultText="<%$ ResourceManager:Feed_DefaultText %>" Literal="True" runat="server"/>
+					</asp:HyperLink>
+				</div>
+			</ItemTemplate>
+		</asp:ListView>
+		<asp:Panel ID="BlogSearch" runat="server" CssClass="content-panel panel panel-default">
+			<div class="panel-heading">
+				<h4>
+					<span class="fa fa-search" aria-hidden="true"></span>
+					<adx:Snippet SnippetName="Blog Search Heading" DefaultText="<%$ ResourceManager:Search_Blogs_DefaultText %>" runat="server" />
+				</h4>
+			</div>
+			<div class="panel-body">
+				<div class="input-group">
+					<asp:PlaceHolder ID="BlogSearchFilters" runat="server">
+						<div class="btn-group btn-select input-group-btn dropdown-submenu" data-target="#BlogSearchFilterOptions" data-focus="#QueryText">
+							<button type="button" id="search-filter" class="btn btn-default" data-toggle="dropdown"  aria-expanded="false">
+								<span class="selected"><%: Html.SnippetLiteral("Search Current Blog Option Text", ResourceManager.GetString("This_Blog")) %></span>
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="listbox">
+								<li role="presentation">
+									<a href="#" role="option" data-value="blog" aria-selected="false" tabindex="-1" aria-label="<%: Html.SnippetLiteral("Search Current Blog Option Text", ResourceManager.GetString("This_Blog")) %>"><%: Html.SnippetLiteral("Search Current Blog Option Text", ResourceManager.GetString("This_Blog")) %></a>
+								</li>
+								<li role="presentation">
+									<a href="#" role="option" data-value="all" aria-selected="false" tabindex="-1" aria-label="<%: Html.SnippetLiteral("Search All Blogs Option Text", ResourceManager.GetString("All_Blogs_DefaultText")) %>"><%: Html.SnippetLiteral("Search All Blogs Option Text", ResourceManager.GetString("All_Blogs_DefaultText")) %></a>
+								</li>
+							</ul>
+						</div>
+						<asp:DropDownList ID="BlogSearchFilterOptions" ClientIDMode="Static" CssClass="btn-select" runat="server">
+							<Items>
+								<asp:ListItem Selected="True" Value="blog" Text='<%$ Snippet: Search Current Blog Option Text, This_Blog%>'></asp:ListItem>
+								<asp:ListItem Value="all" Text='<%$ Snippet: Search All Blogs Option Text, All_Blogs_DefaultText %>'></asp:ListItem>
+							</Items>
+						</asp:DropDownList>
+					</asp:PlaceHolder>
+					<asp:TextBox ID="QueryText" ToolTip="<%$ Snippet: Search Blogs, Search_Blogs_DefaultText %>" CssClass="form-control" runat="server" />
+					<div class="input-group-btn">
+						<asp:LinkButton ID="SearchButton" CssClass="btn btn-default" OnClick="SearchButton_Click" runat="server" role="button" ToolTip="<%$ ResourceManager:Search_DefaultText %>" >
+							<span class="hidden-tooltip">search</span>
+							<span class="fa fa-search" aria-hidden="true"></span>
+						</asp:LinkButton>
+					</div>
+				</div>
+			</div>
+		</asp:Panel>
+		<asp:ObjectDataSource ID="TagDataSource" TypeName="Adxstudio.Xrm.Blogs.IBlogDataAdapter" OnObjectCreating="CreateBlogDataAdapter" SelectMethod="SelectWeightedTags" runat="server">
+			<SelectParameters>
+				<asp:Parameter Name="weights" DefaultValue="8"/>
+			</SelectParameters>
+		</asp:ObjectDataSource>
+		<asp:ListView ID="Tags" DataSourceID="TagDataSource" runat="server">
+			<LayoutTemplate>
+				<div class="content-panel panel panel-default">
+					<div class="panel-heading">
+						<h4>
+							<span class="fa fa-tags" aria-hidden="true"></span>
+							<adx:Snippet SnippetName="Blog Tags Heading" DefaultText="<%$ ResourceManager:Tags_DefaultText %>" runat="server" />
+						</h4>
+					</div>
+					<div class="list-group">
+						<asp:PlaceHolder ID="itemPlaceholder" runat="server" />
+					</div>
+				</div>
+			</LayoutTemplate>
+			<ItemTemplate>
+				<a class='list-group-item <%#: Eval("Weight", "tag-weight-{0}") %>' href="<%#: Eval("ApplicationPath.AbsolutePath") %>" rel="tag"><%#: Eval("Name") %> <span class="badge"><%#: Eval("PostCount") %></span></a>
+			</ItemTemplate>
+		</asp:ListView>
+		<asp:ObjectDataSource ID="ArchiveDataSource" TypeName="Adxstudio.Xrm.Blogs.IBlogDataAdapter" OnObjectCreating="CreateBlogDataAdapter" SelectMethod="SelectArchiveMonths" runat="server" />
+		<asp:ListView ID="Archive" DataSourceID="ArchiveDataSource" runat="server">
+			<LayoutTemplate>
+				<div class="content-panel panel panel-default">
+					<div class="panel-heading">
+						<h4>
+							<span class="fa fa-calendar" aria-hidden="true"></span>
+							<adx:Snippet SnippetName="Blog Archive Heading" DefaultText="<%$ ResourceManager:Archive_DefaultText %>" runat="server" />
+						</h4>
+					</div>
+					<div class="list-group">
+						<asp:PlaceHolder ID="itemPlaceholder" runat="server" />
+					</div>
+				</div>
+			</LayoutTemplate>
+			<ItemTemplate>
+				<asp:HyperLink CssClass="list-group-item" NavigateUrl='<%#: Eval("ApplicationPath.AppRelativePath") %>' ToolTip='<%# Eval("Month", "{0:y}") + " " + Eval("PostCount")  %>' runat="server"><%# Eval("Month", "{0:y}") %> <span class="badge"><%#: Eval("PostCount")  %></span></asp:HyperLink>
+			</ItemTemplate>
+		</asp:ListView>
+		<asp:ContentPlaceHolder ID="SidebarBottom" runat="server"></asp:ContentPlaceHolder>
+	</div>
+</asp:Content>

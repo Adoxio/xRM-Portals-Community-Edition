@@ -1,0 +1,15 @@
+﻿{% case type %}
+	{% when 'profile-badges' %}
+		{% if userid %}
+			<div data-badge data-uri="{{user.profile_badges_url | replace_first: user.id, userid}}"></div>
+		{%else%}
+			<div data-badge data-uri="{{user.profile_badges_url }}"></div>
+		{% endif %}
+		
+	{% when 'basic-badges' %}
+		{% if userid %}
+			<div data-badge data-uri="{{user.basic_badges_url | replace_first: user.id, userid}}"></div>
+		{%else%}
+			<div data-badge data-uri="{{user.basic_badges_url }}"></div>
+		{% endif %}
+{% endcase %}

@@ -1,0 +1,29 @@
+﻿{% entitylist key:key %}
+
+<div class="entitylist">
+{% if entitylist.filter_enabled %}
+	{% if entitylist.is_filter_vertical %}
+	<div class="row">
+		<div class="col-md-3 filter-vertical">
+			{% include 'entity_list_filter' key:key %}
+		</div>
+		<div class="col-md-9">
+			{% include 'entity_list_grid' key:key %}
+		</div>
+	</div>
+	{% else %}
+		{% include 'entity_list_filter' key:key %}
+		{% include 'entity_list_grid' key:key %}
+	{% endif %}
+{% else %}
+	{% include 'entity_list_grid' key:key %}
+{% endif %}
+
+{% if entitylist.adx_registerstartupscript and entitylist.adx_registerstartupscript != empty %}
+    <script type="text/javascript">
+        {{ entitylist.adx_registerstartupscript }}
+    </script>
+{% endif %}
+</div>
+
+{% endentitylist %}

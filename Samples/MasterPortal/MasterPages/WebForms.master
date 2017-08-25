@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" AutoEventWireup="true" CodeBehind="WebForms.master.cs" Inherits="Site.MasterPages.WebForms" %>
+<%@ Import Namespace="Adxstudio.Xrm.Resources" %> 
+<%@ Import Namespace="System.Web.Mvc.Html" %>
+<%@ Import Namespace="Adxstudio.Xrm.Web.Mvc.Html" %>
+
+<asp:Content ContentPlaceHolderID="Title" runat="server"><asp:ContentPlaceHolder ID="Title" runat="server"><%: Html.AttributeLiteral("adx_title") ?? Html.AttributeLiteral("adx_name") %></asp:ContentPlaceHolder></asp:Content>
+
+<asp:Content ContentPlaceHolderID="Head" runat="server">
+	<asp:ContentPlaceHolder ID="Head" runat="server"/>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="ContentContainer" runat="server">
+	<form id="content_form" runat="server">
+		<asp:ScriptManager runat="server">
+			<Scripts>
+				<asp:ScriptReference Path="~/js/jquery.blockUI.js" />
+			</Scripts>
+		</asp:ScriptManager>
+		
+		<asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+			<div class="page-heading">
+				<div class="container">
+					<asp:ContentPlaceHolder ID="Breadcrumbs" runat="server">
+						<% Html.RenderPartial("Breadcrumbs"); %>
+					</asp:ContentPlaceHolder>
+					<crm:CrmEntityDataSource ID="CurrentEntity" DataItem="<%$ CrmSiteMap: Current %>" runat="server" />
+					<asp:ContentPlaceHolder ID="PageHeader" runat="server">
+						<div class="page-header">
+							<h1>
+								<adx:Property DataSourceID="CurrentEntity" PropertyName="adx_title,adx_name" EditType="text" runat="server" />
+							</h1>
+						</div>
+						<div class="notifications"></div>
+					</asp:ContentPlaceHolder>
+				</div>
+			</div>
+		</asp:ContentPlaceHolder>
+		
+		<div class="container">
+			<asp:ContentPlaceHolder ID="MainContent" runat="server">
+				<%: Html.HtmlAttribute("adx_copy", cssClass: "page-copy") %>
+				<asp:ContentPlaceHolder ID="EntityControls" runat="server" ViewStateMode="Enabled">
+					<script type="text/javascript">
+						function entityFormClientValidate() {
+							// Custom client side validation. Method is called by the submit button's onclick event.
+							// Must return true or false. Returning false will prevent the form from submitting.
+							return true;
+						}
+
+						function webFormClientValidate() {
+							// Custom client side validation. Method is called by the next/submit button's onclick event.
+							// Must return true or false. Returning false will prevent the form from submitting.
+							return true;
+						}
+					</script>
+					<adx:WebForm ID="WebFormControl" runat="server" FormCssClass="crmEntityFormView" PreviousButtonCssClass="btn btn-default" NextButtonCssClass="btn btn-primary" SubmitButtonCssClass="btn btn-primary" ClientIDMode="Static" LanguageCode="<%$ SiteSetting: Language Code, 0 %>" PortalName="<%$ SiteSetting: Language Code %>" />
+					<adx:EntityForm ID="EntityFormControl" runat="server" FormCssClass="crmEntityFormView" PreviousButtonCssClass="btn btn-default" NextButtonCssClass="btn btn-primary" SubmitButtonCssClass="btn btn-primary" ClientIDMode="Static" LanguageCode="<%$ SiteSetting: Language Code, 0 %>" PortalName="<%$ SiteSetting: Language Code %>" />
+					<adx:EntityList ID="EntityListControl" runat="server" ListCssClass="table table-striped" DefaultEmptyListText="<%$ ResourceManager:No_Items_To_Display %>" ClientIDMode="Static" LanguageCode="<%$ SiteSetting: Language Code, 0 %>" PortalName="<%$ SiteSetting: Language Code %>" />
+				</asp:ContentPlaceHolder>
+			</asp:ContentPlaceHolder>
+			<asp:ContentPlaceHolder ID="ContentBottom" runat="server"/>
+		</div>
+	</form>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="Scripts" runat="server">
+	<asp:ContentPlaceHolder ID="Scripts" runat="server"/>
+</asp:Content>

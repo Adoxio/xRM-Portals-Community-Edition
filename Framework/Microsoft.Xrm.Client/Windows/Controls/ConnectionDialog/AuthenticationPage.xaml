@@ -1,0 +1,296 @@
+﻿<PageFunction
+	x:Class="Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog.AuthenticationPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:ConnectionDialog="clr-namespace:Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog"
+	x:TypeArguments="ConnectionDialog:ConnectionResult"
+	KeepAlive="True"
+	FocusManager.FocusedElement="{Binding ElementName=txtServerUrl}"
+	mc:Ignorable="d"
+	d:DesignHeight="480"
+	d:DesignWidth="580"
+	Title="Connect to Server"
+	Background="#f0f0f0"
+	FontFamily="Verdana">
+	<Page.Resources>
+		<Style x:Key="controlHasError" TargetType="{x:Type Control}">
+			<Style.Triggers>
+				<Trigger Property="Validation.HasError" Value="true">
+					<Setter Property="ToolTip" Value="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=(Validation.Errors)[0].ErrorContent}"/>
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+	</Page.Resources>
+	<Grid>
+		<StackPanel Height="52" HorizontalAlignment="Right" Margin="0,428,14,0" VerticalAlignment="Top" Width="554" Orientation="Horizontal" FlowDirection="RightToLeft">
+			<Button Content="Cancel" Height="23" Name="btnCancel" Width="75" Margin="0" IsCancel="True" Click="btnCancel_Click" />
+			<Button Content="Next" Height="23" Name="btnConnect" Width="75" Margin="7" Click="btnConnect_Click">
+				<Button.Style>
+					<Style TargetType="{x:Type Button}">
+						<Style.Triggers>
+							<DataTrigger Binding="{Binding Path=(Validation.HasError), ElementName=txtServerUrl}" Value="True">
+								<Setter Property="IsEnabled" Value="False"/>
+							</DataTrigger>
+							<DataTrigger Binding="{Binding Path=(Validation.HasError), ElementName=txtAuthenticationType}" Value="True">
+								<Setter Property="IsEnabled" Value="False"/>
+							</DataTrigger>
+							<MultiDataTrigger>
+								<MultiDataTrigger.Conditions>
+									<Condition Binding="{Binding Path=IsChecked, ElementName=cbIntegrated}" Value="False" />
+									<Condition Binding="{Binding Path=(Validation.HasError), ElementName=txtDomain}" Value="True" />
+								</MultiDataTrigger.Conditions>
+								<Setter Property="IsEnabled" Value="False"/>
+							</MultiDataTrigger>
+							<MultiDataTrigger>
+								<MultiDataTrigger.Conditions>
+									<Condition Binding="{Binding Path=IsChecked, ElementName=cbIntegrated}" Value="False" />
+									<Condition Binding="{Binding Path=(Validation.HasError), ElementName=txtUsername}" Value="True" />
+								</MultiDataTrigger.Conditions>
+								<Setter Property="IsEnabled" Value="False"/>
+							</MultiDataTrigger>
+							<MultiDataTrigger>
+								<MultiDataTrigger.Conditions>
+									<Condition Binding="{Binding Path=IsChecked, ElementName=cbIntegrated}" Value="False" />
+									<Condition Binding="{Binding Path=(Validation.HasError), ElementName=pwbPassword}" Value="True" />
+								</MultiDataTrigger.Conditions>
+								<Setter Property="IsEnabled" Value="False"/>
+							</MultiDataTrigger>
+							<DataTrigger Binding="{Binding Path=(Validation.HasError), ElementName=txtDeviceId}" Value="True">
+								<Setter Property="IsEnabled" Value="False"/>
+							</DataTrigger>
+							<DataTrigger Binding="{Binding Path=(Validation.HasError), ElementName=txtDevicePassword}" Value="True">
+								<Setter Property="IsEnabled" Value="False"/>
+							</DataTrigger>
+						</Style.Triggers>
+					</Style>
+				</Button.Style>
+			</Button>
+		</StackPanel>
+		<Rectangle Height="75" HorizontalAlignment="Left" Name="header" Stroke="{x:Null}" VerticalAlignment="Top" Width="580" Fill="White" />
+		<Separator Height="40" HorizontalAlignment="Left" Margin="0,408,0,0" VerticalAlignment="Top" Width="580" />
+		<Label Content="Connect to Server" Height="28" HorizontalAlignment="Left" Margin="14,14,0,0" Name="pageTitle" VerticalAlignment="Top" FontWeight="Bold" />
+		<TextBlock Height="36" HorizontalAlignment="Left" Margin="28,36,0,0" Name="pageDescription" Text="Specify the Discovery Service URL and user credentials." VerticalAlignment="Top" TextWrapping="Wrap" />
+		<StackPanel Height="Auto" HorizontalAlignment="Left" Margin="14,89,0,0" VerticalAlignment="Top" Width="552" Orientation="Horizontal"></StackPanel>
+		<Separator Height="40" HorizontalAlignment="Left" Margin="0,55,0,0" VerticalAlignment="Top" Width="580" />
+		<StackPanel>
+			<StackPanel Width="auto" Margin="14,89,14,14">
+				<TextBlock Height="35" HorizontalAlignment="Left" Name="Instructions" Text="Please enter or select the Discovery Service URL for your Microsoft Dynamics CRM server. This can be found on the server under:" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" Width="552" TextWrapping="Wrap" Margin="0,7,0,0" />
+				<TextBlock Height="27" HorizontalAlignment="Left" Text="Settings &gt; Customizations &gt; Developer Resources &gt; Service Endpoints" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" Width="552" TextWrapping="Wrap" Margin="7,0,0,0" FontWeight="Bold" />
+				<StackPanel Orientation="Horizontal" Width="auto" DataContext="{Binding}">
+					<Label Content="Discovery URL:" Grid.Row="2" Height="28" HorizontalAlignment="Left" Margin="0" Name="lblServerUrl" VerticalAlignment="Center" Padding="0,5,5,0" Width="140" />
+					<ComboBox Height="23" HorizontalAlignment="Left" VerticalAlignment="Center" Width="350" Name="txtServerUrl" IsEditable="True" Validation.ErrorTemplate="{x:Null}" Style="{StaticResource controlHasError}">
+						<ComboBoxItem Name="CrmOnlineNA" ToolTip="Dynamics CRM Online (North America)">https://dev.crm.dynamics.com/</ComboBoxItem>
+						<ComboBoxItem Name="CrmOnlineEmea" ToolTip="Dynamics CRM Online (EMEA)">https://dev.crm4.dynamics.com/</ComboBoxItem>
+						<ComboBoxItem Name="CrmOnlineApac" ToolTip="Dynamics CRM Online (APAC)">https://dev.crm5.dynamics.com/</ComboBoxItem>
+						<ComboBoxItem Name="OsdpNA" ToolTip="Microsoft Online Services (North America)">https://disco.crm.dynamics.com/</ComboBoxItem>
+						<ComboBoxItem Name="OsdpEmea" ToolTip="Microsoft Online Services (EMEA)">https://disco.crm4.dynamics.com/</ComboBoxItem>
+						<ComboBoxItem Name="OsdpApac" ToolTip="Microsoft Online Services (APAC)">https://disco.crm5.dynamics.com/</ComboBoxItem>
+						<ComboBox.Text>
+							<Binding Path="ServerUrl" UpdateSourceTrigger="PropertyChanged">
+								<Binding.ValidationRules>
+									<DataErrorValidationRule />
+								</Binding.ValidationRules>
+							</Binding>
+						</ComboBox.Text>
+					</ComboBox>
+					<Button Content="Go" Height="23" Name="btnGo" Width="48" Margin="7,0,0,0" IsDefault="True" Click="btnGo_Click">
+						<Button.Style>
+							<Style TargetType="{x:Type Button}">
+								<Style.Triggers>
+									<DataTrigger Binding="{Binding Path=(Validation.HasError), ElementName=txtServerUrl}" Value="True">
+										<Setter Property="IsEnabled" Value="False"/>
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</Button.Style>
+					</Button>
+				</StackPanel>
+				<TextBlock Height="23" HorizontalAlignment="Left" Margin="140,0,0,0" Name="UrlExample" Text="Example: https://crmservername.domain.com/" VerticalAlignment="Center" Padding="0,5" />
+				<StackPanel Name="AuthenticationTypePanel" Orientation="Horizontal" Width="auto">
+					<StackPanel.Style>
+						<Style TargetType="{x:Type StackPanel}">
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding Path=(Validation.HasError), ElementName=txtAuthenticationType}" Value="True">
+									<Setter Property="Visibility" Value="Collapsed"/>
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</StackPanel.Style>
+					<Label Content="Authentication Type:" Height="28" HorizontalAlignment="Left" Margin="0" Name="lblAuthenticationType" VerticalAlignment="Center" Padding="0,5,5,0" Width="140" />
+					<Label Name="txtAuthenticationType" Width="250" Validation.ErrorTemplate="{x:Null}">
+						<Label.Content>
+							<Binding Path="AuthenticationType" UpdateSourceTrigger="PropertyChanged">
+								<Binding.ValidationRules>
+									<DataErrorValidationRule />
+								</Binding.ValidationRules>
+							</Binding>
+						</Label.Content>
+					</Label>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel Height="auto" HorizontalAlignment="Left" Margin="14,0,0,0" Name="OptionalInputsPanel" VerticalAlignment="Top" Width="552">
+				<StackPanel Height="Auto" Name="IntegratedPanel" Orientation="Horizontal" Width="Auto" VerticalAlignment="Center">
+					<StackPanel.Style>
+						<Style TargetType="{x:Type StackPanel}">
+							<Setter Property="Visibility" Value="Collapsed"/>
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding AuthenticationType}" Value="{x:Static ConnectionDialog:AuthenticationTypeCode.ActiveDirectory}">
+									<Setter Property="Visibility" Value="Visible"/>
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</StackPanel.Style>
+					<Label Height="27" Name="lblIntegrated" Width="140" Padding="0,5" />
+					<CheckBox Name="cbIntegrated" Height="23" Width="250" Content="Integrated Authentication" Validation.ErrorTemplate="{x:Null}">
+						<CheckBox.IsChecked>
+							<Binding Path="IntegratedEnabled" UpdateSourceTrigger="PropertyChanged">
+								<Binding.ValidationRules>
+									<DataErrorValidationRule />
+								</Binding.ValidationRules>
+							</Binding>
+						</CheckBox.IsChecked>
+					</CheckBox>
+				</StackPanel>
+				<StackPanel Height="Auto" Name="DomainPanel" Orientation="Horizontal" Width="Auto">
+					<StackPanel.Style>
+						<Style TargetType="{x:Type StackPanel}">
+							<Setter Property="Visibility" Value="Collapsed"/>
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding AuthenticationType}" Value="{x:Static ConnectionDialog:AuthenticationTypeCode.ActiveDirectory}">
+									<Setter Property="Visibility" Value="Visible"/>
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</StackPanel.Style>
+					<Label Content="Domain:" Height="27" Name="lblDomain" Width="140" Padding="0,5" />
+					<TextBox Height="23" Name="txtDomain" Width="250" Validation.ErrorTemplate="{x:Null}">
+						<TextBox.Text>
+							<Binding Path="Domain" UpdateSourceTrigger="PropertyChanged">
+								<Binding.ValidationRules>
+									<DataErrorValidationRule />
+								</Binding.ValidationRules>
+							</Binding>
+						</TextBox.Text>
+						<TextBox.Style>
+							<Style TargetType="{x:Type TextBox}">
+								<Style.Triggers>
+									<DataTrigger Binding="{Binding Path=IsChecked, ElementName=cbIntegrated}" Value="True">
+										<Setter Property="IsEnabled" Value="False"/>
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</TextBox.Style>
+					</TextBox>
+				</StackPanel>
+				<StackPanel Height="Auto" Name="UsernamePanel" Orientation="Horizontal" Width="Auto">
+					<StackPanel.Style>
+						<Style TargetType="{x:Type StackPanel}">
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding Path=(Validation.HasError), ElementName=txtAuthenticationType}" Value="True">
+									<Setter Property="Visibility" Value="Collapsed"/>
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</StackPanel.Style>
+					<Label Content="Username:" Height="28" Name="lblUsername" Padding="0,5" Width="140" />
+					<TextBox Height="23" Name="txtUsername" Width="250" Validation.ErrorTemplate="{x:Null}">
+						<TextBox.Text>
+							<Binding Path="Username" UpdateSourceTrigger="PropertyChanged">
+								<Binding.ValidationRules>
+									<DataErrorValidationRule />
+								</Binding.ValidationRules>
+							</Binding>
+						</TextBox.Text>
+						<TextBox.Style>
+							<Style TargetType="{x:Type TextBox}">
+								<Style.Triggers>
+									<DataTrigger Binding="{Binding Path=IsChecked, ElementName=cbIntegrated}" Value="True">
+										<Setter Property="IsEnabled" Value="False"/>
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</TextBox.Style>
+					</TextBox>
+				</StackPanel>
+				<StackPanel Height="Auto" Name="PasswordPanel" Width="Auto" Orientation="Horizontal">
+					<StackPanel.Style>
+						<Style TargetType="{x:Type StackPanel}">
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding Path=(Validation.HasError), ElementName=txtAuthenticationType}" Value="True">
+									<Setter Property="Visibility" Value="Collapsed"/>
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</StackPanel.Style>
+					<Label Content="Password:" Height="28" Name="lblPassword" Width="140" Padding="0,5" />
+					<PasswordBox Height="23" Name="pwbPassword" Width="250" Validation.ErrorTemplate="{x:Null}" ConnectionDialog:PasswordBoxAssistant.BindPassword="true">
+						<ConnectionDialog:PasswordBoxAssistant.BoundPassword>
+							<Binding Path="FormPassword" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+								<Binding.ValidationRules>
+									<DataErrorValidationRule />
+								</Binding.ValidationRules>
+							</Binding>
+						</ConnectionDialog:PasswordBoxAssistant.BoundPassword>
+						<PasswordBox.Style>
+							<Style TargetType="{x:Type PasswordBox}">
+								<Style.Triggers>
+									<DataTrigger Binding="{Binding Path=IsChecked, ElementName=cbIntegrated}" Value="True">
+										<Setter Property="IsEnabled" Value="False"/>
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</PasswordBox.Style>
+					</PasswordBox>
+				</StackPanel>
+				<StackPanel Height="Auto" Name="DeviceIdPanel" Width="Auto" Orientation="Horizontal">
+					<StackPanel.Style>
+						<Style TargetType="{x:Type StackPanel}">
+							<Setter Property="Visibility" Value="Collapsed"/>
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding AuthenticationType}" Value="{x:Static ConnectionDialog:AuthenticationTypeCode.LiveId}">
+									<Setter Property="Visibility" Value="Visible"/>
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</StackPanel.Style>
+					<Label Content="Device ID:" Height="28" Name="lblDeviceID" Width="140" Padding="0,5" />
+					<TextBox Height="23" Name="txtDeviceId" Width="250" Validation.ErrorTemplate="{x:Null}" Style="{StaticResource controlHasError}">
+						<TextBox.Text>
+							<Binding Path="DeviceId" UpdateSourceTrigger="PropertyChanged">
+								<Binding.ValidationRules>
+									<DataErrorValidationRule />
+								</Binding.ValidationRules>
+							</Binding>
+						</TextBox.Text>
+					</TextBox>
+					<Button Height="23" Width="90" Name="btnLoadOrRegisterDevice" Margin="7,0,0,0" Click="btnRegisterDevice_Click" ToolTip="Generate new Device ID and Device Password values" Content="Generate...">
+					</Button>
+				</StackPanel>
+				<StackPanel Height="Auto" Name="DevicePasswordPanel" Width="Auto" Orientation="Horizontal">
+					<StackPanel.Style>
+						<Style TargetType="{x:Type StackPanel}">
+							<Setter Property="Visibility" Value="Collapsed"/>
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding AuthenticationType}" Value="{x:Static ConnectionDialog:AuthenticationTypeCode.LiveId}">
+									<Setter Property="Visibility" Value="Visible"/>
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</StackPanel.Style>
+					<Label Content="Device Password:" Height="28" Name="lblDevicePassword" Width="140" Padding="0,5" />
+					<TextBox Height="23" Name="txtDevicePassword" Width="250" Validation.ErrorTemplate="{x:Null}" Style="{StaticResource controlHasError}">
+						<TextBox.Text>
+							<Binding Path="DevicePassword" UpdateSourceTrigger="PropertyChanged">
+								<Binding.ValidationRules>
+									<DataErrorValidationRule />
+								</Binding.ValidationRules>
+							</Binding>
+						</TextBox.Text>
+					</TextBox>
+				</StackPanel>
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</PageFunction>

@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/WebForms.master" AutoEventWireup="true" CodeBehind="WebFormsContent.master.cs" Inherits="Site.MasterPages.WebFormsContent" %>
+<%@ Import Namespace="Adxstudio.Xrm.Resources" %> 
+<%@ Import Namespace="System.Web.Mvc.Html" %>
+<%@ Import Namespace="Adxstudio.Xrm.Web.Mvc.Html" %>
+<%@ Register tagPrefix="site" tagName="ChildNavigation" Src="~/Controls/ChildNavigation.ascx" %>
+
+<asp:Content ContentPlaceHolderID="Head" runat="server">
+	<asp:ContentPlaceHolder ID="Head" runat="server"/>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="Breadcrumbs" runat="server">
+	<asp:ContentPlaceHolder ID="Breadcrumbs" runat="server">
+		<% Html.RenderPartial("Breadcrumbs"); %>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="PageHeader" runat="server">
+	<asp:ContentPlaceHolder ID="PageHeader" runat="server">
+		<crm:CrmEntityDataSource ID="CurrentEntity" DataItem="<%$ CrmSiteMap: Current %>" runat="server" />
+		<div class="page-header">
+			<h1>
+				<adx:Property DataSourceID="CurrentEntity" PropertyName="adx_title,adx_name" EditType="text" runat="server" />
+			</h1>
+		</div>
+		<div class="notifications"></div>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+	<div class="row">
+		<div class="col-md-8">
+			<asp:ContentPlaceHolder ID="MainContent" runat="server">
+				<adx:Snippet SnippetName="Social Share Widget Code Page Top" EditType="text" HtmlTag="Div" DefaultText="" runat="server"/>
+				<%: Html.HtmlAttribute("adx_copy", cssClass: "page-copy") %>
+			</asp:ContentPlaceHolder>
+			<asp:ContentPlaceHolder ID="EntityControls" runat="server" ViewStateMode="Enabled">
+				<script type="text/javascript">
+					function entityFormClientValidate() {
+						// Custom client side validation. Method is called by the submit button's onclick event.
+						// Must return true or false. Returning false will prevent the form from submitting.
+						return true;
+					}
+
+					function webFormClientValidate() {
+						// Custom client side validation. Method is called by the next/submit button's onclick event.
+						// Must return true or false. Returning false will prevent the form from submitting.
+						return true;
+					}
+				</script>
+				<adx:WebForm ID="WebFormControl" runat="server" FormCssClass="crmEntityFormView" PreviousButtonCssClass="btn btn-default" NextButtonCssClass="btn btn-primary" SubmitButtonCssClass="btn btn-primary" ClientIDMode="Static" LanguageCode="<%$ SiteSetting: Language Code, 0 %>" PortalName="<%$ SiteSetting: Language Code %>" />
+				<adx:EntityForm ID="EntityFormControl" runat="server" FormCssClass="crmEntityFormView" PreviousButtonCssClass="btn btn-default" NextButtonCssClass="btn btn-primary" SubmitButtonCssClass="btn btn-primary" ClientIDMode="Static" LanguageCode="<%$ SiteSetting: Language Code, 0 %>" PortalName="<%$ SiteSetting: Language Code %>" />
+				<adx:EntityList ID="EntityListControl" runat="server" ListCssClass="table table-striped" DefaultEmptyListText="<%$ ResourceManager:No_Items_To_Display %>" ClientIDMode="Static" LanguageCode="<%$ SiteSetting: Language Code, 0 %>" PortalName="<%$ SiteSetting: Language Code %>" />
+			</asp:ContentPlaceHolder>
+			<asp:ContentPlaceHolder ID="ContentBottom" runat="server"/>
+		</div>
+		<div class="col-md-4">
+			<asp:ContentPlaceHolder ID="SidebarContent" runat="server">
+				<div class="sidebar">
+					<asp:ContentPlaceHolder ID="SidebarTop" runat="server">
+						<site:ChildNavigation runat="server"/>
+					</asp:ContentPlaceHolder>
+					<%: Html.WebLinksListGroup("Secondary Navigation") %>
+					<asp:ContentPlaceHolder ID="SidebarBottom" runat="server">
+						<% Html.RenderAction("PollPlacement", "Poll", new {Area = "Cms", id = "Sidebar", __portalScopeId__ = Website.Id}); %>
+						<% Html.RenderAction("AdPlacement", "Ad", new { Area = "Cms", id = "Sidebar Bottom", __portalScopeId__ = Website.Id }); %>
+					</asp:ContentPlaceHolder>
+				</div>
+			</asp:ContentPlaceHolder>
+		</div>
+	</div>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="ContentBottom" runat="server"/>
+
+<asp:Content ContentPlaceHolderID="Scripts" runat="server">
+	<asp:ContentPlaceHolder ID="Scripts" runat="server"/>
+</asp:Content>

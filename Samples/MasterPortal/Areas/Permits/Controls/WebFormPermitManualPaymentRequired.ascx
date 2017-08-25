@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="WebFormPermitManualPaymentRequired.ascx.cs" Inherits="Site.Areas.Permits.Controls.WebFormPermitManualPaymentRequired" %>
+<adx:Snippet  runat="server" SnippetName="Permit Manual Payment Required Message" DefaultText="<%$ ResourceManager:Permit_Fee_Required_Message %>" Editable="true" EditType="html"/>

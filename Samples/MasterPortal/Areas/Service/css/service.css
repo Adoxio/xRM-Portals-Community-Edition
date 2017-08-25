@@ -1,0 +1,14 @@
+﻿
+.service-schedule .calendar {
+	float: left;
+	margin-right: 20px;
+}
+
+.service-schedule .calendar td,
+.service-schedule .calendar th {
+	padding: 5px;
+}
+
+.service-schedule .alert-block {
+	display: block;
+}

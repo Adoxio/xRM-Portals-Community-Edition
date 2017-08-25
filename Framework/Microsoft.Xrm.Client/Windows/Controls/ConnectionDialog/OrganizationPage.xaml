@@ -1,0 +1,41 @@
+﻿<PageFunction
+	x:Class="Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog.OrganizationPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:ConnectionDialog="clr-namespace:Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog" x:TypeArguments="ConnectionDialog:ConnectionResult"
+	KeepAlive="True"
+	FocusManager.FocusedElement="{Binding ElementName=cmbOrganizationName}"
+	mc:Ignorable="d"
+	d:DesignHeight="480"
+	d:DesignWidth="580"
+	Title="Name of Organization"
+	Background="#f0f0f0"
+	FontFamily="Verdana">
+	<Grid>
+		<StackPanel Height="52" HorizontalAlignment="Right" Margin="0,428,14,0" VerticalAlignment="Top" Width="554" Orientation="Horizontal" FlowDirection="RightToLeft">
+			<Button Content="Cancel" Height="23" Name="btnCancel" Width="75" Margin="0" IsCancel="True" Click="btnCancel_Click" />
+			<Button Content="Connect" Height="23" Name="btnConnect" Width="75" Margin="7" IsDefault="True" IsEnabled="True" Click="btnConnect_Click" />
+		</StackPanel>
+		<Rectangle Height="75" HorizontalAlignment="Left" Name="header" Stroke="{x:Null}" VerticalAlignment="Top" Width="580" Fill="White" />
+		<Separator Height="40" HorizontalAlignment="Left" Margin="0,408,0,0" VerticalAlignment="Top" Width="580" />
+		<Label Content="Name of Organization" Height="28" HorizontalAlignment="Left" Margin="14,14,0,0" Name="pageTitle" VerticalAlignment="Top" FontWeight="Bold" />
+		<TextBlock Height="36" HorizontalAlignment="Left" Margin="28,36,0,0" Name="pageDescription" Text="Select the name of your Microsoft Dynamics CRM organization." VerticalAlignment="Top" TextWrapping="Wrap" />
+		<StackPanel Height="Auto" HorizontalAlignment="Left" Margin="14,89,0,0" VerticalAlignment="Top" Width="552" Orientation="Horizontal"></StackPanel>
+		<Separator Height="40" HorizontalAlignment="Left" Margin="0,55,0,0" VerticalAlignment="Top" Width="580" />
+		<Grid Height="auto" HorizontalAlignment="Left" Margin="14,89,0,0" VerticalAlignment="Top" Width="552">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="140*" />
+				<ColumnDefinition Width="412" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="29" />
+				<RowDefinition Height="29" />
+			</Grid.RowDefinitions>
+			<Label Content="Server URL:" Height="28" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Padding="0,5,5,0" />
+			<ComboBox DisplayMemberPath="FriendlyName" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="0,3" Name="cmbOrganizationName" VerticalAlignment="Center" Width="Auto" MinWidth="120" Grid.Row="1" MaxWidth="412" SelectionChanged="cmbOrganizationName_SelectionChanged" />
+			<Label Content="Organization name:" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Padding="0,5,5,0" />
+			<TextBlock Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="0" Name="txtServerUrl" Text="{Binding Path=ServerUrl}" VerticalAlignment="Center" Padding="0,5" MinWidth="150" />
+		</Grid>
+	</Grid>
+</PageFunction>

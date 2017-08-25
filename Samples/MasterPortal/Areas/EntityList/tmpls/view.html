@@ -1,0 +1,53 @@
+﻿<div class="page-header">
+	<div class="row">
+		<div class="col-sm-4 calendar-navs">
+			<div class="btn-group">
+				<button class="btn btn-default btn-sm" data-calendar-nav="prev">&lsaquo;</button>
+				<button class="btn btn-default btn-sm" data-calendar-nav="next">&rsaquo;</button>
+			</div>
+			<div class="btn-group">
+				<button id="NavigateToToday" class="btn btn-default btn-sm" data-calendar-nav="today"></button>
+			</div>
+		</div>
+		<div class="col-sm-4 calendar-title-container">
+			<h4 class="calendar-title"></h4>
+		</div>
+		<div class="col-sm-4 calendar-views">
+			<div class="btn-group">
+				<button id="YearViewToggleButton" class="btn btn-default btn-sm" data-calendar-view="year"></button>
+				<button id="MonthViewToggleButton" class="btn btn-default btn-sm" data-calendar-view="month"></button>
+				<button id="WeekViewToggleButton" class="btn btn-default btn-sm" data-calendar-view="week"></button>
+			</div>
+			<div class="btn-group calendar-downloads">
+				<a class="btn btn-default btn-sm"><span id="DownloadTitleLink" class="fa fa-download" aria-hidden="true"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="calendar-error alert alert-block alert-danger">
+	<p id="LoadingError" class="message"></p>
+</div>
+<% if (_small_) { %>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="event-list"></div>
+	</div>
+	<div class="col-sm-6">
+		<div class="calendar"></div>
+	</div>
+</div>
+	
+<% } else { %>
+	<div class="calendar"></div>
+<% } %>
+
+<script type="text/javascript">
+	document.getElementById("NavigateToToday").innerHTML = window.ResourceManager["CalendarControl_Today_Button"];
+	document.getElementById("YearViewToggleButton").innerHTML = window.ResourceManager["CalendarControl_YearViewToggleButton"];
+	document.getElementById("MonthViewToggleButton").innerHTML = window.ResourceManager["CalendarControl_MonthViewToggleButton"];
+	document.getElementById("WeekViewToggleButton").innerHTML = window.ResourceManager["CalendarControl_WeekViewToggleButton"];
+	document.getElementById("DownloadTitleLink").title = window.ResourceManager["CalendarControl_DownloadTitleLink"];
+	document.getElementById("LoadingError").innerHTML = window.ResourceManager["CalendarControl_LoadingError"];	
+</script>
+
+

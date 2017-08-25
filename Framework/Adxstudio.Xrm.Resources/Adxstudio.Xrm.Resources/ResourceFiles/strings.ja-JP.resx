@@ -1,0 +1,5060 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Generic_Error_Message" xml:space="preserve">
+    <value>不明なエラーが発生しました。エラー ID [{0}]</value>
+  </data>
+  <data name="Syntax_Error_In_Tag_And_Valid_Syntax_Is" xml:space="preserve">
+    <value>"{0}" タグの構文エラー - 有効な構文: {0} </value>
+  </data>
+  <data name="Poll_Submission_For_Message" xml:space="preserve">
+    <value>アンケート送信</value>
+  </data>
+  <data name="Subscription_Added_Alert_Message" xml:space="preserve">
+    <value>{0}: {1} に購読が追加されました</value>
+  </data>
+  <data name="Adxstudio_Portals" xml:space="preserve">
+    <value>ポータル</value>
+  </data>
+  <data name="Default_Search_Provider_Not_Found" xml:space="preserve">
+    <value>既定の検索プロバイダーが見つかりませんでした。</value>
+  </data>
+  <data name="Workflow_Executed_Successfully_Message" xml:space="preserve">
+    <value>ワークフロー {0} が正常に実行されました。</value>
+  </data>
+  <data name="Entity_Permissions_Have_Not_Been_Defined_Message" xml:space="preserve">
+    <value>エンティティのアクセス許可が定義されていません。要求を完了できませんでした。</value>
+  </data>
+  <data name="ADX_View_Attribute_On_Entity_List_Contains_Invalid_Data_Exception" xml:space="preserve">
+    <value>エンティティ リスト (adx_entitylist) のビュー (adx_view) 属性に無効なデータが含まれています。この属性には、保存済みクエリ レコードの有効で一意な識別子のコンマ区切りリストを含める必要があります。</value>
+  </data>
+  <data name="Could_Not_Find_Workflow_With_Name_And_Target_EntityName_Message" xml:space="preserve">
+    <value>名前が {0}、ターゲット エンティティ名が {1} のワークフローが見つかりませんでした。</value>
+  </data>
+  <data name="Extension_Method_Expected_IsDifferent_Exception" xml:space="preserve">
+    <value>この拡張メソッドには型 {0} のエンティティ オブジェクトを渡す必要がありますが、型 {1} のエンティティ オブジェクトが渡されました。</value>
+  </data>
+  <data name="Invalid_Padding_Exception" xml:space="preserve">
+    <value>無効なパディングです</value>
+  </data>
+  <data name="Note_Created_On_DateTime_By_Message" xml:space="preserve">
+    <value>メモ作成日 {0}、作成者 {1} [{2}:{3}]</value>
+  </data>
+  <data name="Note_Created_On_Message" xml:space="preserve">
+    <value>メモ作成日 {0}</value>
+  </data>
+  <data name="Timeline_Modified_On_Message" xml:space="preserve">
+    <value>修正日 {0}</value>
+  </data>
+  <data name="Timeline_Created_By_Message" xml:space="preserve">
+    <value>作成者 {0}</value>
+  </data>
+  <data name="No_Bing_Maps_URL_Specified_InSetting_Exception" xml:space="preserve">
+    <value>設定 "{0}" で Bing マップの URL が指定されていません。</value>
+  </data>
+  <data name="Anonymous_Voting_Null_Exception" xml:space="preserve">
+    <value>匿名で投票する場合は、null または空にすることはできません。</value>
+  </data>
+  <data name="Application_ID_Cannot_Null_Empty_Exception" xml:space="preserve">
+    <value>AppId: アプリケーション ID を null または空の文字列にすることはできません。</value>
+  </data>
+  <data name="ApplicationID_Must_Be_Alphanumeric_Exception" xml:space="preserve">
+    <value>エラー: AppId: アプリケーション ID は英数字にする必要があります:</value>
+  </data>
+  <data name="Argument_Missing_Or_Empty_Exception" xml:space="preserve">
+    <value>引数を null または空の文字列にすることはできません。</value>
+  </data>
+  <data name="Attribute_Metadata_Fetchxml_Retrieve_Exception" xml:space="preserve">
+    <value>エンティティ "{1}" の FetchXML 結果フィールド "{0}" の属性メタデータを取得できません。</value>
+  </data>
+  <data name="Attribute_Update_Create_Exception" xml:space="preserve">
+    <value>属性 "{0}" に対して属性の更新を作成できません。</value>
+  </data>
+  <data name="BlogID_From_Request_Exception" xml:space="preserve">
+    <value>要求からブログ ID を特定できません。</value>
+  </data>
+  <data name="Calendar_View_Not_Enabled" xml:space="preserve">
+    <value>このエンティティ リスト ({0}:{1}) に対してカレンダー ビューが有効になっていません。</value>
+  </data>
+  <data name="Cannot_Delete" xml:space="preserve">
+    <value>{0} {1} はスレッド内の最初の投稿であるため、削除できません。代わりにスレッドを削除する必要があります。</value>
+  </data>
+  <data name="Cannot_Insert_Duplicate_Key" xml:space="preserve">
+    <value>重複したキーは挿入できません。</value>
+  </data>
+  <data name="Cloud_Drive_Path_For_Search_Provider_Retrieve_Exception" xml:space="preserve">
+    <value>検索プロバイダー "{0}" のクラウド ドライブ パスを取得できません。</value>
+  </data>
+  <data name="CloudDriveCacheSize_MustBe_Integer" xml:space="preserve">
+    <value>構成値 Adxstudio.Xrm.Search.WindowsAzure.CloudDriveCacheSize は有効な整数である必要があります。</value>
+  </data>
+  <data name="CloudDrivePageBlobAddress_CannotBeNullOrEmpty" xml:space="preserve">
+    <value>構成値 Adxstudio.Xrm.Search.WindowsAzure.CloudDrivePageBlobAddress を null または空にすることはできません。</value>
+  </data>
+  <data name="CloudDriveSize_MustBe_Integer" xml:space="preserve">
+    <value>構成値 Adxstudio.Xrm.Search.WindowsAzure.CloudDriveSize は有効な整数である必要があります。</value>
+  </data>
+  <data name="Consent_Invalid_Expiry_Time_Exception" xml:space="preserve">
+    <value>エラー: 同意: 無効な有効期限:</value>
+  </data>
+  <data name="ConsentToken_Null_Delegation_Token_Exception" xml:space="preserve">
+    <value>エラー: ConsentToken: 委任トークンが null です。</value>
+  </data>
+  <data name="ConsentToken_Null_Expiry_Time_Exception" xml:space="preserve">
+    <value>エラー: ConsentToken: 有効期限が null です。</value>
+  </data>
+  <data name="ConsentToken_Null_Offers_Exception" xml:space="preserve">
+    <value>エラー: ConsentToken: オファーが null です。</value>
+  </data>
+  <data name="ConsentToken_Null_Session_Key_Exception" xml:space="preserve">
+    <value>エラー: ConsentToken: セッション キーが null です。</value>
+  </data>
+  <data name="CurrentPollOption_Retrieval_Exception" xml:space="preserve">
+    <value>現在のアンケート オプションを取得できません。</value>
+  </data>
+  <data name="Customer_Value_Missing_Exception" xml:space="preserve">
+    <value>[顧客] の値を指定する必要があります。</value>
+  </data>
+  <data name="DecodeToken_Secret_Key_Was_Not_set_Aborting_Exception" xml:space="preserve">
+    <value>エラー: DecodeToken: シークレット キーが設定されていません。終了します。</value>
+  </data>
+  <data name="Delete_Permission_Denied_For_Target_Entity_Error" xml:space="preserve">
+    <value>ターゲット エンティティに対する削除アクセス許可が拒否されました。</value>
+  </data>
+  <data name="Deleting_File_Exception" xml:space="preserve">
+    <value>ファイル "{0}" の削除中に例外が発生しました: {1}</value>
+  </data>
+  <data name="Details_Value_Missing_Exception" xml:space="preserve">
+    <value>[詳細] の値を指定する必要があります。</value>
+  </data>
+  <data name="Email_Already_Used_Exception" xml:space="preserve">
+    <value>電子メール "{0}" は既に使用されています。</value>
+  </data>
+  <data name="Email_Field_Required_Exception" xml:space="preserve">
+    <value>”電子メール” フィールドは必須です。</value>
+  </data>
+  <data name="ResolutionSub_Field_Required_Exception" xml:space="preserve">
+    <value>”解決” フィールドは必須です。</value>
+  </data>
+  <data name="ResolutionDesc_Field_Required_Exception" xml:space="preserve">
+    <value>”解決の説明” フィールドは必須です。</value>
+  </data>
+  <data name="ResolutionSubNDesc_Field_Required_Exception" xml:space="preserve">
+    <value>”解決” フィールドと ”解決の説明” フィールドは必須です。</value>
+  </data>
+  <data name="Entity_List_Retrieve_Exception" xml:space="preserve">
+    <value>エンティティ リストを取得できません ({0}:{1})。</value>
+  </data>
+  <data name="ErrorInCreatingKnowledgeArticleComment_WithNullOrWhitespace" xml:space="preserve">
+    <value>サポート情報記事のコメントを匿名で作成する場合は、null または空にすることはできません。</value>
+  </data>
+  <data name="Failed_To_Add_Sort_Order_For_Field_Exception" xml:space="preserve">
+    <value>フィールド "{0}" の並べ替え順序を追加できませんでした。</value>
+  </data>
+  <data name="FetchXML_View_Retrieve_Exception" xml:space="preserve">
+    <value>ビュー FetchXML ({0}:{1}) を取得できません。</value>
+  </data>
+  <data name="Hostname_Not_Supported_By_Using_Site_Setting_Portal_Configuration" xml:space="preserve">
+    <value>サイトの設定によるポータル構成を使用する場合は、ホスト名/ポート ベースの Web サイト バインドがサポートされません。サイト名/仮想パス ベースの Web サイト バインドを指定するか、組織レベルの設定によってポータルを構成してください。</value>
+  </data>
+  <data name="Incorrect_Password_Exception" xml:space="preserve">
+    <value>パスワードが正しくありません。</value>
+  </data>
+  <data name="Invalid_Code_Exception" xml:space="preserve">
+    <value>無効なコードです。</value>
+  </data>
+  <data name="Invalid_Invitation_Code_Exception" xml:space="preserve">
+    <value>無効な招待コードです。</value>
+  </data>
+  <data name="Invalid_Rolename_Exception" xml:space="preserve">
+    <value>ロール名 "{0}" は無効です。</value>
+  </data>
+  <data name="Invalid_Token_Exception" xml:space="preserve">
+    <value>無効なトークンです。</value>
+  </data>
+  <data name="Invalid_User_ID_Exception" xml:space="preserve">
+    <value>無効なユーザー ID です。</value>
+  </data>
+  <data name="Knowledge_Article_With_EntityID_Load_Exception" xml:space="preserve">
+    <value>ID "{0}" の knowledgearticle エンティティを読み込めません。このレコードが存在し、現在のユーザーがこのレコードにアクセスできることを確認してください。</value>
+  </data>
+  <data name="Knowledge_Article_NotFound" xml:space="preserve">
+    <value>ID "{0}" の knowledgearticle が見つかりません。</value>
+  </data>
+  <data name="License_Does_Not_Match_StatusMessage" xml:space="preserve">
+    <value>このライセンスで指定された組織名が、組織と一致しません。</value>
+  </data>
+  <data name="License_Failed_To_Load_StatusMessage" xml:space="preserve">
+    <value>このライセンスの読み込みに失敗しました。</value>
+  </data>
+  <data name="License_Is_Expired_StatusMessage" xml:space="preserve">
+    <value>このライセンスは有効期限が切れています。</value>
+  </data>
+  <data name="License_Is_Not_Valid_For_ADXStudio_Current_Version_StatusMessage" xml:space="preserve">
+    <value>このライセンスは、ポータルの現在のバージョンに対して有効ではありません。</value>
+  </data>
+  <data name="License_Is_Not_Valid_For_ADXStudio_StatusMessage" xml:space="preserve">
+    <value>このライセンスは、ポータル製品に対して有効ではありません。</value>
+  </data>
+  <data name="License_Is_Not_Valid_For_Current_Date_StatusMessage" xml:space="preserve">
+    <value>これは現在の日付に対して有効ではありません。まだアクティブになっていません。</value>
+  </data>
+  <data name="License_Is_Not_Valid_StatusMessage" xml:space="preserve">
+    <value>このライセンスは有効ではありません。</value>
+  </data>
+  <data name="License_Is_Valid_StatusMessage" xml:space="preserve">
+    <value>このライセンスは有効です。</value>
+  </data>
+  <data name="Lockout_Is_Disabled_For_This_User" xml:space="preserve">
+    <value>このユーザーに対してロックアウトが有効になっていません。</value>
+  </data>
+  <data name="MaxDate_LessThan_MinDate_Exception" xml:space="preserve">
+    <value>最大日付は最小日付より大きい値にする必要があります。</value>
+  </data>
+  <data name="Maximum_Options_Selection_Exception" xml:space="preserve">
+    <value>選択できるオプションは {0} 個までです。</value>
+  </data>
+  <data name="Minimum_Most_Options_Selection_Exception" xml:space="preserve">
+    <value>{0} ～ {1} 個のオプションを選択する必要があります。</value>
+  </data>
+  <data name="Minimum_Options_Selection_Exception" xml:space="preserve">
+    <value>少なくとも {0} 個のオプションを選択する必要があります。</value>
+  </data>
+  <data name="Must_Be_Greater_Than_Zero_Exception" xml:space="preserve">
+    <value>レビューを作成する場合は、0 より大きい値にする必要があります</value>
+  </data>
+  <data name="Name_Must_Be_Bound_To_One_Data_Item_Exception" xml:space="preserve">
+    <value>{0} は 1 つのデータ アイテムにバインドされている必要があります。レコードが存在しないか、レコード ID が null です。</value>
+  </data>
+  <data name="Not_Associated_With_Connection_Exception" xml:space="preserve">
+    <value>"{1}" という名前の "{0}" は接続に関連付けられていません。</value>
+  </data>
+  <data name="Not_Found_Exception" xml:space="preserve">
+    <value>見つかりません。</value>
+  </data>
+  <data name="OldSecret_SecretKey_Is_Longer_Than_Expected_Exception" xml:space="preserve">
+    <value>エラー: OldSecret: シークレット キーは 17 文字以上にする必要があります:</value>
+  </data>
+  <data name="OldSecretExpiry_Invalid_Timestamp_Exception" xml:space="preserve">
+    <value>エラー: OldSecretExpiry: 無効なタイムスタンプ:</value>
+  </data>
+  <data name="Optimistic_Concurrency_Failure_Exception" xml:space="preserve">
+    <value>オプティミスティック同時実行が失敗しました。オブジェクトが変更されています。</value>
+  </data>
+  <data name="Page_Comment_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>ページ コメント エンティティを取得できませんでした。評価は保存されません。</value>
+  </data>
+  <data name="Password_Error_For_Characters" xml:space="preserve">
+    <value>パスワードは {0} 文字以上で指定する必要があります。</value>
+  </data>
+  <data name="PolicyURL_MustBe_Set_In_Delegated_Auth_NonProvisioned_Scenario_Aborting_Exception" xml:space="preserve">
+    <value>エラー: PolicyUrl: 委任された認証が準備されていないシナリオでは、ポリシー URL を設定する必要があります。中止しています。</value>
+  </data>
+  <data name="PrimaryIdAttribute_For_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>エンティティ {0} の PrimaryIdAttribute を取得できません。</value>
+  </data>
+  <data name="Retrieve_Service_Endpoint_RetrieveException" xml:space="preserve">
+    <value>サービス エンドポイント "{0}" を取得できません。</value>
+  </data>
+  <data name="RetrieveRelationshipRequest_Failed_For_Lookupfilterrelationshipname" xml:space="preserve">
+    <value>検索フィルターの関連付け名 {0} の RetrieveRelationshipRequest が失敗しました</value>
+  </data>
+  <data name="RetrieveRelationshipRequest_Failed_For_Viewrelationshipname" xml:space="preserve">
+    <value>表示関連付け名 {0} の RetrieveRelationshipRequest が失敗しました</value>
+  </data>
+  <data name="ReturnURL_MustBe_Set_In_Delegated_Auth_NonProvisioned_Scenario_Aborting_Exception" xml:space="preserve">
+    <value>エラー: ReturnUrl: 委任された認証が準備されていないシナリオでは、戻り先 URL を指定する必要があります。取り消しています。</value>
+  </data>
+  <data name="Role_Name_Already_Taken_Exception" xml:space="preserve">
+    <value>ロール名 "{0}" は既に使用されています。</value>
+  </data>
+  <data name="Role_Not_Found_Exception" xml:space="preserve">
+    <value>ロール {0} が見つかりませんでした。</value>
+  </data>
+  <data name="SecretKey_Longer_Than_Expected_Exception" xml:space="preserve">
+    <value>エラー: Secret: シークレット キーは 17 文字以上にする必要があります:</value>
+  </data>
+  <data name="SecretKey_NotSet_Aborting_Exception" xml:space="preserve">
+    <value>エラー: SignToken: シークレット キーが設定されていません。中止します。</value>
+  </data>
+  <data name="SharePoint_Settings_Missing_Exception" xml:space="preserve">
+    <value>サイトの設定 "SharePoint/URL" が見つからず、既定の SharePoint サイトも存在しません。サイトの設定 "SharePoint/URL" を定義するか、既定の SharePoint サイトを指定してください。</value>
+  </data>
+  <data name="Shopping_Cart_Not_Found" xml:space="preserve">
+    <value>ショッピング カートが見つかりませんでした。</value>
+  </data>
+  <data name="Shopping_Cart_Not_Found_On_Tombstone_Entity" xml:space="preserve">
+    <value>保持記録エンティティでショッピング カートが見つかりません。</value>
+  </data>
+  <data name="Start_Date_Field_Name_NotSpecified" xml:space="preserve">
+    <value>カレンダー ビューでは、このエンティティ リスト ({0}:{1}) に対して開始日フィールド名 (adx_calendar_startdatefieldname) が指定されている必要があります。</value>
+  </data>
+  <data name="StorageConnectionString_CannotBeNull" xml:space="preserve">
+    <value>構成値 Adxstudio.Xrm.Search.WindowsAzure.StorageConnectionString を null または空にすることはできません。</value>
+  </data>
+  <data name="Store_Not_Implement_IUserSecurityStampStore_Exception" xml:space="preserve">
+    <value>ストアは IUserSecurityStampStore&lt;TUser&gt; を実装していません。</value>
+  </data>
+  <data name="Summary_Value_Must_Be_Specified_Exception" xml:space="preserve">
+    <value>[概要] の値を指定する必要があります。</value>
+  </data>
+  <data name="Unable_To_Retrieve_Current_Directory_Error" xml:space="preserve">
+    <value>現在のディレクトリを取得できません。</value>
+  </data>
+  <data name="Unable_To_Retrieve_Target_Entity_For_Given_Hash_Error" xml:space="preserve">
+    <value>指定されたハッシュのターゲット エンティティを取得できません。</value>
+  </data>
+  <data name="Unable_To_Retrieve_View_Exception" xml:space="preserve">
+    <value>ビュー ({0}:{1}) を取得できません。</value>
+  </data>
+  <data name="Unique_And_Valid_Website_Binding" xml:space="preserve">
+    <value>一意で有効な Web サイト バインドを解決できません。Web サイト バインドを確認してください。</value>
+  </data>
+  <data name="Unspecified_Request_Body_Exception" xml:space="preserve">
+    <value>要求本文が指定されていません。</value>
+  </data>
+  <data name="Uploading_Files_Error" xml:space="preserve">
+    <value>ファイルのアップロード中にエラーが発生しました: {0}</value>
+  </data>
+  <data name="Use_Asterisk_Wildcard_Character_To_Search_Partial_Text" xml:space="preserve">
+    <value>部分一致検索を行うには、ワイルドカード文字のアスタリスク (*) を使用します。</value>
+  </data>
+  <data name="User_Account_Locked_Exception" xml:space="preserve">
+    <value>現在、ユーザー アカウントがロックされています。後でやり直してください。</value>
+  </data>
+  <data name="User_Already_Exists_Exception" xml:space="preserve">
+    <value>このサインイン情報を持つユーザーが既に存在します。</value>
+  </data>
+  <data name="User_Already_Has_Password_Set_Exception" xml:space="preserve">
+    <value>ユーザーのパスワードは既に設定されています。</value>
+  </data>
+  <data name="User_Alredy_In_Role_Exception" xml:space="preserve">
+    <value>ロール "{0}" には既にユーザーが存在します。</value>
+  </data>
+  <data name="User_Invalid_Flags_Exception" xml:space="preserve">
+    <value>エラー: ユーザー: 無効なフラグ:</value>
+  </data>
+  <data name="User_Invalid_Id_Exception" xml:space="preserve">
+    <value>エラー: ユーザー: 無効な ID:</value>
+  </data>
+  <data name="User_Invalid_TimeStamp_Exception" xml:space="preserve">
+    <value>エラー: ユーザー: 無効なタイムスタンプ:</value>
+  </data>
+  <data name="User_Name_Alredy_Taken_Exception" xml:space="preserve">
+    <value>ユーザー名 "{0}" は既に使用されています。</value>
+  </data>
+  <data name="User_Name_Field_Required_Exception" xml:space="preserve">
+    <value>ユーザー名 "{0}" は無効です。ユーザー名にはには文字と数字だけを使用できます。</value>
+  </data>
+  <data name="User_Name_Invalid_Can_Only_Contain_Letters_Digits_Exception" xml:space="preserve">
+    <value>ユーザー名 '{0}' は無効です。使用できるのは英数字だけです。</value>
+  </data>
+  <data name="User_Name_Invalid_Exception" xml:space="preserve">
+    <value>ユーザー名 "{0}" は無効です。</value>
+  </data>
+  <data name="User_Not_In_Role_Exception" xml:space="preserve">
+    <value>ユーザーはロール "{0}" に存在しません。</value>
+  </data>
+  <data name="User_Null_ID_In_Token_Exception" xml:space="preserve">
+    <value>エラー: ユーザー: トークンに null の ID があります。</value>
+  </data>
+  <data name="User_Null_Timestamp_Exception" xml:space="preserve">
+    <value>エラー: ユーザー: トークンに null のタイムスタンプがあります。</value>
+  </data>
+  <data name="Value_Must_Be_Greater_ThanOrEqualTo_One_Exception" xml:space="preserve">
+    <value>値は 1 以上である必要があります。</value>
+  </data>
+  <data name="Value_Null_In_Anonymous_Review_Exception" xml:space="preserve">
+    <value>レビューを匿名で作成する場合は、null または空にすることはできません。</value>
+  </data>
+  <data name="Value_Null_In_Create_Review_Exception" xml:space="preserve">
+    <value>レビューを作成する場合は、null または空にすることはできません。</value>
+  </data>
+  <data name="Value_Should_Be_Positive_Number_Exception" xml:space="preserve">
+    <value>値は正の整数である必要があります。</value>
+  </data>
+  <data name="Web_Page_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>Web ページ エンティティを取得できませんでした。評価は保存されません。</value>
+  </data>
+  <data name="Webform_StartStep_Missing_Exception" xml:space="preserve">
+    <value>Web フォームにはステップの開始が必要です。</value>
+  </data>
+  <data name="Website_Binding_Named_Exception" xml:space="preserve">
+    <value>Web サイトのバインド '{0}' に関連する Web サイトがありません。</value>
+  </data>
+  <data name="Website_Reference_Retrieval_Exception" xml:space="preserve">
+    <value>Web サイトの参照を取得できません。</value>
+  </data>
+  <data name="Website_With_Name_Find_Exception" xml:space="preserve">
+    <value>名前 '{0}' の Web サイトが見つかりません。</value>
+  </data>
+  <data name="Type_Name_Required_For_Provider_Exception" xml:space="preserve">
+    <value>このプロバイダーの種類名を指定する必要があります。</value>
+  </data>
+  <data name="Authentication_Error_Invalid_Login" xml:space="preserve">
+    <value>無効なサインインを実行しようとしました。</value>
+  </data>
+  <data name="Registration_Error_Password_Confirmation_Failure" xml:space="preserve">
+    <value>パスワードと確認用パスワードが一致しません。</value>
+  </data>
+  <data name="Search_Service_Client_Initialize_Exception" xml:space="preserve">
+    <value>検索サービス クライアントを初期化できません。構成を確認してください。</value>
+  </data>
+  <data name="Target_ADX_Search_Request_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>target adx_search_request エンティティを取得できません。</value>
+  </data>
+  <data name="Target_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>ターゲット エンティティを取得できません。</value>
+  </data>
+  <data name="UserName_Already_Exists_Message" xml:space="preserve">
+    <value>ユーザー名が既に存在します。別のユーザー名を入力してください。</value>
+  </data>
+  <data name="Username_Is_Required_Field_Error" xml:space="preserve">
+    <value>ユーザー名は必須です。</value>
+  </data>
+  <data name="User_Creation_Request_Has_Been_Canceled_Message" xml:space="preserve">
+    <value>ユーザー作成要求が取り消されました。入力内容を確認してからやり直してください。問題が解決しない場合は、システム管理者にお問い合わせください。</value>
+  </data>
+  <data name="Contact_System_Administrator_Required_Site_Marker_Missing_Exception" xml:space="preserve">
+    <value>システム管理者に問い合わせてください。必要なサイト マーカー "{0}" がありません。</value>
+  </data>
+  <data name="Answer_Is_Required_Field_Error" xml:space="preserve">
+    <value>[回答] は必須フィールドです。</value>
+  </data>
+  <data name="Authentication_Provider_Returned_Error_Message" xml:space="preserve">
+    <value>認証プロバイダーがエラーを返しました。入力内容を確認してからやり直してください。問題が解決しない場合は、システム管理者にお問い合わせください。</value>
+  </data>
+  <data name="Confirm_Password_Is_Required_Field_Error" xml:space="preserve">
+    <value>[パスワードの確認入力] は必須フィールドです。</value>
+  </data>
+  <data name="EmailId_Already_Exists_Message" xml:space="preserve">
+    <value>指定された電子メール アドレスにはユーザー名が既に存在します。別の電子メール アドレスを入力してください。</value>
+  </data>
+  <data name="Email_Is_Invalid_Error" xml:space="preserve">
+    <value>電子メールが無効です。</value>
+  </data>
+  <data name="Email_Is_Required_Field_Error" xml:space="preserve">
+    <value>[電子メール] は必須フィールドです。</value>
+  </data>
+  <data name="Invalid_Email_Address_Provided_Message" xml:space="preserve">
+    <value>指定された電子メール アドレスは無効です。値を確認して、やり直してください。</value>
+  </data>
+  <data name="Invalid_Password_Provided_Message" xml:space="preserve">
+    <value>入力されたパスワードは無効です。有効なパスワード値を入力してください。</value>
+  </data>
+  <data name="Invalid_Security_Answer_Error" xml:space="preserve">
+    <value>無効なセキュリティ返答です。</value>
+  </data>
+  <data name="Invalid_Username_Error" xml:space="preserve">
+    <value>無効なユーザー名です。</value>
+  </data>
+  <data name="Invalid_User_Name_Provided_Message" xml:space="preserve">
+    <value>ユーザー名が無効です。値を確認して、やり直してください。</value>
+  </data>
+  <data name="Password_Is_Required_Field_Error" xml:space="preserve">
+    <value>[パスワード] は必須フィールドです。</value>
+  </data>
+  <data name="Password_Retrieval_Answer_Provided_Is_Invalid_Message" xml:space="preserve">
+    <value>パスワードの回復用に指定された回答が無効です。値を確認してやり直してください。</value>
+  </data>
+  <data name="Failed_To_Create_New_User_Exception" xml:space="preserve">
+    <value>新しいユーザーを作成できませんでした。</value>
+  </data>
+  <data name="Missing_Permissions_For_Operation_Exception" xml:space="preserve">
+    <value>この操作を実行するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Oauth_Bearer_Token_Exception" xml:space="preserve">
+    <value>OAuth ベアラー トークンを取得できませんでした。</value>
+  </data>
+  <data name="Password_Recovery_Not_Configured_Exception" xml:space="preserve">
+    <value>パスワードの復元が構成されていません。"{0}" という名前のワークフローが存在しないか、アクティブ化されていません。正しいソリューションがインストールされ、認証の設定手順に従っていることを確認してください。</value>
+  </data>
+  <data name="Form_Heading_Forgot_Password" xml:space="preserve">
+    <value>パスワードを忘れた場合</value>
+  </data>
+  <data name="Microsoft_Dynamics_CRM_Website_Copy_Wizard_Title" xml:space="preserve">
+    <value>Web サイト コピー ウィザード</value>
+  </data>
+  <data name="Would_Like_To_Quit_This_Wizard_Message" xml:space="preserve">
+    <value>このウィザードを終了してもよろしいですか?</value>
+  </data>
+  <data name="Contact_Not_Created_Error" xml:space="preserve">
+    <value>取引先担当者を作成できませんでした:</value>
+  </data>
+  <data name="Entity_Not_Created_Error" xml:space="preserve">
+    <value>エンティティを作成できませんでした:</value>
+  </data>
+  <data name="Site_Could_Not_Create_Exception" xml:space="preserve">
+    <value>サイトを作成できませんでした:</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value> 時間</value>
+  </data>
+  <data name="Permission_Denied_You_Do_Not_Have_Entity_Permissions_To_Update_Notes" xml:space="preserve">
+    <value>メモを更新するための適切なエンティティ アクセス許可がありません。</value>
+  </data>
+  <data name="Select_Date_Range_That_Is_Not_Past" xml:space="preserve">
+    <value>過去ではない日付範囲を選択してください。</value>
+  </data>
+  <data name="Select_End_Date_That_Is_After_Start_Date" xml:space="preserve">
+    <value>開始日より後の終了日を選択してください。</value>
+  </data>
+  <data name="Select_End_Time_That_Is_Later_Than_Start_Time" xml:space="preserve">
+    <value>開始時刻より後の終了時刻を選択してください。</value>
+  </data>
+  <data name="Select_Your_Time_Zone" xml:space="preserve">
+    <value>タイム ゾーンを選択してください。</value>
+  </data>
+  <data name="SLA_Resolution_Time" xml:space="preserve">
+    <value>SLA 解決時間: {0} 時間</value>
+  </data>
+  <data name="SLA_Response_Time" xml:space="preserve">
+    <value>SLA 応答時間: {0} 時間</value>
+  </data>
+  <data name="SLA_Details" xml:space="preserve">
+    <value>SLA の詳細</value>
+  </data>
+  <data name="Passwords_Not_Meeting_Requirement" xml:space="preserve">
+    <value>パスワードには、次の 4 種類のうち少なくとも 3 種類の文字が含まれている必要があります: アルファベットの大文字、小文字、数字、および英数字以外 (特殊文字)。</value>
+  </data>
+  <data name="Confirm_DeleteMultiple_Entity" xml:space="preserve">
+    <value>これらのレコードを削除しますか?</value>
+  </data>
+  <data name="SitemapChildren_HiddenFrom_Sitemap_Tooltip" xml:space="preserve">
+    <value>アイテムはサイト マップに対して非表示になり、ナビゲーション要素には表示されません。それでも、アイテムに直接リンクすることはできます。</value>
+  </data>
+  <data name="SitemapChildren_Update_Tooltip" xml:space="preserve">
+    <value>このページの子レコードを編集します</value>
+  </data>
+  <data name="Address_Cannot_Found" xml:space="preserve">
+    <value>指定された住所が見つかりませんでした。</value>
+  </data>
+  <data name="Click_Stay_To_Save_Your_Changes" xml:space="preserve">
+    <value>変更は保存されていません。変更を保存するためにこのページに留まりますか?</value>
+  </data>
+  <data name="Enter_Address" xml:space="preserve">
+    <value>アドレスを入力してください</value>
+  </data>
+  <data name="Failed_Determine_RecordID" xml:space="preserve">
+    <value>レコード ID を特定できませんでした。</value>
+  </data>
+  <data name="Required_Regarding_EntityReference_Parameter_Was_Not_Provided" xml:space="preserve">
+    <value>必須の関連の EntityReference パラメーターが指定されていません。</value>
+  </data>
+  <data name="Required_Secure_ViewConfiguration_Not_Provided" xml:space="preserve">
+    <value>セキュリティで保護された必須の ViewConfiguration が指定されていません。</value>
+  </data>
+  <data name="Service_URL_Not_Provided" xml:space="preserve">
+    <value>必要なサービス URL が入力されていません。</value>
+  </data>
+  <data name="Service_URL_To_Associate_Request_Could_Determined" xml:space="preserve">
+    <value>この関連付け要求のサービスへの URL を特定できませんでした。</value>
+  </data>
+  <data name="UnKnown_Error_Occurred" xml:space="preserve">
+    <value>不明なエラーが発生しました。</value>
+  </data>
+  <data name="URL_Service_For_Add_Note_Request_Could_Not_Determined" xml:space="preserve">
+    <value>このメモ追加要求のサービスへの URL を特定できませんでした。</value>
+  </data>
+  <data name="URL_Service_For_Update_Note_Request_Could_Not_Determined" xml:space="preserve">
+    <value>このメモ更新要求のサービスへの URL を特定できませんでした。</value>
+  </data>
+  <data name="With_In" xml:space="preserve">
+    <value>以内</value>
+  </data>
+  <data name="Required_Field_Error" xml:space="preserve">
+    <value>{0} は必須フィールドです。</value>
+  </data>
+  <data name="Invalid_Error" xml:space="preserve">
+    <value>{0} が無効です。</value>
+  </data>
+  <data name="Invalid_Decimal_Value_Error" xml:space="preserve">
+    <value>{0} は有効な 10 進数値である必要があります。</value>
+  </data>
+  <data name="Invalid_Email_Address_Error" xml:space="preserve">
+    <value>{0} は有効な電子メール アドレスである必要があります。</value>
+  </data>
+  <data name="Invalid_Floating_Point_Value_Error" xml:space="preserve">
+    <value>{0} は有効な浮動小数点値である必要があります。</value>
+  </data>
+  <data name="Invalid_Integer_Value_Error" xml:space="preserve">
+    <value>{0} は有効な整数値である必要があります。</value>
+  </data>
+  <data name="Invalid_Date_Format_Error" xml:space="preserve">
+    <value>{0} は有効な日付形式にする必要があります。</value>
+  </data>
+  <data name="Invalid_Range_Error" xml:space="preserve">
+    <value>{0} の値は {1} ～ {2} にする必要があります。</value>
+  </data>
+  <data name="Access_Denied_Error" xml:space="preserve">
+    <value>適切なアクセス許可がありません。</value>
+  </data>
+  <data name="RankOrderNoTies_Validation_ErrorMessage" xml:space="preserve">
+    <value>同じ値を持つ別の応答が既にランク付けされています。連結は許可されていません。</value>
+  </data>
+  <data name="Event_Not_Found" xml:space="preserve">
+    <value>イベントが見つかりません。</value>
+  </data>
+  <data name="Get_Payment_Web_Response_Stream_Failed" xml:space="preserve">
+    <value>支払の Web 応答ストリームを取得できませんでした。</value>
+  </data>
+  <data name="Get_Payment_Web_Response_Failed" xml:space="preserve">
+    <value>支払の Web 応答を取得できませんでした。</value>
+  </data>
+  <data name="Geolocation_Query_Could_Not_Be_Completed" xml:space="preserve">
+    <value>次のサービス URL に関する位置情報のクエリを完了できませんでした ({0})。&lt;br/&gt;エラー: {1}</value>
+  </data>
+  <data name="Get_Directions_DefaultText" xml:space="preserve">
+    <value>方向の取得</value>
+  </data>
+  <data name="Invalid_Height_Parameter" xml:space="preserve">
+    <value>無効な高さパラメーター</value>
+  </data>
+  <data name="Invalid_Width_Parameter_Error" xml:space="preserve">
+    <value>無効な幅パラメーター</value>
+  </data>
+  <data name="PDT_Response_Not_Valid" xml:space="preserve">
+    <value>PayPal の支払データ転送 (PDT) 応答が無効です。支払を確認できませんでした。</value>
+  </data>
+  <data name="Null_PDT_Response" xml:space="preserve">
+    <value>PayPal の支払データ転送 (PDT) 応答が null でした。支払を確認できませんでした。</value>
+  </data>
+  <data name="PDT_Returned_Fail_Response" xml:space="preserve">
+    <value>PayPal の支払データ転送 (PDT) で、失敗の応答が返されました。支払を確認できませんでした。</value>
+  </data>
+  <data name="Entity_Permission_Denied" xml:space="preserve">
+    <value>ID ({1}) の "{0}" エンティティで、"{2}" 権限に関するアクセス許可が拒否されました。</value>
+  </data>
+  <data name="Entity_Permission_Granted" xml:space="preserve">
+    <value>ID ({1}) の "{0}" エンティティで、"{2}" 権限に関するアクセス許可が付与されました。</value>
+  </data>
+  <data name="Select_Customer_Error_Message" xml:space="preserve">
+    <value>顧客を選択してください。</value>
+  </data>
+  <data name="Select_Support_Plan_Error_Message" xml:space="preserve">
+    <value>サポート プランを選択してください。</value>
+  </data>
+  <data name="Search_For_Location_Near_DefaultText" xml:space="preserve">
+    <value>近くの場所の検索</value>
+  </data>
+  <data name="Support_Plan_For_Purchased" xml:space="preserve">
+    <value>{0} のサポート プランが {1} によって {2} に購入されました</value>
+  </data>
+  <data name="Required_Site_Setting_Not_Exist_Validation_Message" xml:space="preserve">
+    <value>必須のサイト設定 'Ecommerce/PayPal/PDTIdentityToken' が存在しないか、この設定に値が含まれていません。</value>
+  </data>
+  <data name="Constant_Sum_Validation_Error_Message" xml:space="preserve">
+    <value>合計が無効です。配布に使用できるポイントの数を確認してください。</value>
+  </data>
+  <data name="TransactionID_Parameter_Not_Provided_Validation_Message" xml:space="preserve">
+    <value>"tx" という名前のトランザクション ID パラメーターが指定されていません。PayPal マーチャント アカウント プロファイルの "Web サイトの支払設定" の設定で支払データ転送 (PDT) が有効になっていること、および、"Ecommerce/PayPal/PDTIdentityToken" という名前のサイト設定で ID トークンが指定されていることを確認してください。</value>
+  </data>
+  <data name="DoNot_Have_Appropriate_Permissions" xml:space="preserve">
+    <value>適切なアクセス許可がありません。</value>
+  </data>
+  <data name="Check_The_Box_Labeled" xml:space="preserve">
+    <value>続行するには、"{0}" というラベルのチェック ボックスをオンにします。</value>
+  </data>
+  <data name="Home_Twitter_Widget" xml:space="preserve">
+    <value>311 ホーム Twitter ウィジェット</value>
+  </data>
+  <data name="Create_Contact_Permission_Denied" xml:space="preserve">
+    <value>取引先企業の親会社が割り当てられていません。取引先担当者を作成するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>取引先企業の親会社が割り当てられていません。取引先担当者を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Permission_For_Edit_Contact_Permissions_Denied" xml:space="preserve">
+    <value>取引先企業の親会社が割り当てられていません。取引先担当者のアクセス許可を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Manage_Parent_Account_Permission_Denied" xml:space="preserve">
+    <value>取引先企業の親会社が割り当てられていません。取引先企業の親会社を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Create_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社が割り当てられていません。顧客取引先企業を作成するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Create_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社が割り当てられていません。顧客取引先担当者を作成するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Edit_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社が割り当てられていません。顧客取引先企業を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Edit_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社が割り当てられていません。顧客取引先担当者を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Manage_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社が割り当てられていません。顧客取引先企業を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Manage_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社が割り当てられていません。顧客取引先担当者を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Read_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社が割り当てられていません。顧客取引先企業を読み取るためのアクセス許可がありません。</value>
+  </data>
+  <data name="Read_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社が割り当てられていません。顧客取引先担当者を読み取るためのアクセス許可がありません。</value>
+  </data>
+  <data name="Continue_With_Selected_Service_Request_Error" xml:space="preserve">
+    <value>現在のサービス要求を破棄し、選択したサービス要求で続行します。</value>
+  </data>
+  <data name="Accepted_Opportunities_Legend" xml:space="preserve">
+    <value>承諾された営業案件/凡例</value>
+  </data>
+  <data name="Account_Contacts" xml:space="preserve">
+    <value>取引先企業の取引先担当者</value>
+  </data>
+  <data name="Account_Information_Updated_Success_Message" xml:space="preserve">
+    <value>取引先企業の情報が正常に更新されました。</value>
+  </data>
+  <data name="Active_Opportunities" xml:space="preserve">
+    <value>アクティブな営業案件</value>
+  </data>
+  <data name="Add_Note" xml:space="preserve">
+    <value>メモの追加</value>
+  </data>
+  <data name="Add_To_Calendar" xml:space="preserve">
+    <value>カレンダーに追加</value>
+  </data>
+  <data name="Add_To_My_Calendar" xml:space="preserve">
+    <value>マイ カレンダーに追加</value>
+  </data>
+  <data name="Address_DefaultText" xml:space="preserve">
+    <value>住所</value>
+  </data>
+  <data name="Address_Line_1_DefaultText" xml:space="preserve">
+    <value>住所 1</value>
+  </data>
+  <data name="Address_Line_1_Required_Field_Validation_Message" xml:space="preserve">
+    <value>[住所 1” は必須フィールドです。</value>
+  </data>
+  <data name="Address_Line_2_DefaultText" xml:space="preserve">
+    <value>住所 2</value>
+  </data>
+  <data name="Apply_For_Permit_Or_License_DefaultText" xml:space="preserve">
+    <value>許可またはライセンスを申請</value>
+  </data>
+  <data name="Archive_DefaultText" xml:space="preserve">
+    <value>アーカイブ</value>
+  </data>
+  <data name="Cancel_Case_Confirmation_Message" xml:space="preserve">
+    <value>このサポート案件を取り消しますか?</value>
+  </data>
+  <data name="Reopen_Case_Confirmation_Message" xml:space="preserve">
+    <value>このサポート案件を再オープンしますか?</value>
+  </data>
+  <data name="Assigned_To_DefaultText" xml:space="preserve">
+    <value>担当者</value>
+  </data>
+  <data name="Attach_A_File_DefaultText" xml:space="preserve">
+    <value>ファイルの添付</value>
+  </data>
+  <data name="Author_DefaultText" xml:space="preserve">
+    <value>作成者</value>
+  </data>
+  <data name="Billing_Address_DefaultText" xml:space="preserve">
+    <value>請求先住所</value>
+  </data>
+  <data name="Billing_Contact_DefaultText" xml:space="preserve">
+    <value>請求連絡先</value>
+  </data>
+  <data name="Blog_Home_DefaultText" xml:space="preserve">
+    <value>ブログ ホーム</value>
+  </data>
+  <data name="Brands_DefaultText" xml:space="preserve">
+    <value>ブランド</value>
+  </data>
+  <data name="By_DefaultText" xml:space="preserve">
+    <value>、投稿者 </value>
+  </data>
+  <data name="Cancel_DefaultText" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Ok_DefaultText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel_Case_DefaultText" xml:space="preserve">
+    <value>サポート案件の取り消し</value>
+  </data>
+  <data name="Card_Verification_Value_DefaultText" xml:space="preserve">
+    <value>カードのセキュリティ コード</value>
+  </data>
+  <data name="Change_Password_DefaultText" xml:space="preserve">
+    <value>パスワードの変更</value>
+  </data>
+  <data name="City_DefaultText" xml:space="preserve">
+    <value>市区町村</value>
+  </data>
+  <data name="City_Required_Field_Validation_Message" xml:space="preserve">
+    <value>[市区町村] は必須フィールドです。</value>
+  </data>
+  <data name="Close_DefaultText" xml:space="preserve">
+    <value>クローズ</value>
+  </data>
+  <data name="Closing_DefaultText" xml:space="preserve">
+    <value>クローズ</value>
+  </data>
+  <data name="New_Password_Confirmation_Message" xml:space="preserve">
+    <value>新しいパスワードの確認入力</value>
+  </data>
+  <data name="Confirm_NewPassword_Required_Field_Validation_Message" xml:space="preserve">
+    <value>[新しいパスワードの確認入力] は必須フィールドです。</value>
+  </data>
+  <data name="Confirmation_DefaultText" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Contact_Not_Found_Invalid_ContactID_Specified_Exception" xml:space="preserve">
+    <value>取引先担当者が見つかりませんでした。有効な取引先担当者 ID が指定されていることを確認してください。</value>
+  </data>
+  <data name="Contact_Invited_Successfully_Message" xml:space="preserve">
+    <value>取引先担当者が正常に招待されました。</value>
+  </data>
+  <data name="Contact_Information_Updated_Successfully_Message" xml:space="preserve">
+    <value>取引先担当者の情報が正常に更新されました。</value>
+  </data>
+  <data name="Content_Required_Field_Validation_Message" xml:space="preserve">
+    <value>[コンテンツ] は必須フィールドです。</value>
+  </data>
+  <data name="Continue_DefaultText" xml:space="preserve">
+    <value>続行</value>
+  </data>
+  <data name="Continue_With_Existing_Service_Request" xml:space="preserve">
+    <value>既存のサービス要求で続行します。</value>
+  </data>
+  <data name="Continue_With_My_Service_Request" xml:space="preserve">
+    <value>現在のサービス要求で続行します。</value>
+  </data>
+  <data name="Conversion_Of_Quote_To_Order_Failed" xml:space="preserve">
+    <value>見積もりを受注に変換できませんでした。サポートにお問い合わせください。</value>
+  </data>
+  <data name="Country_DefaultText" xml:space="preserve">
+    <value>国/地域</value>
+  </data>
+  <data name="CountryRegion_Required_Field_Validation_Message" xml:space="preserve">
+    <value>[国/地域] は必須フィールドです。</value>
+  </data>
+  <data name="Create_New_Service_Request_DefaultText" xml:space="preserve">
+    <value>新しいサービス要求の作成</value>
+  </data>
+  <data name="Create_New_Thread_DefaultText" xml:space="preserve">
+    <value>新しいスレッドの作成</value>
+  </data>
+  <data name="Create_New_DefaultText" xml:space="preserve">
+    <value>新規作成</value>
+  </data>
+  <data name="Created_DefaultText" xml:space="preserve">
+    <value>作成済み</value>
+  </data>
+  <data name="Credit_Card_Number_DefaultText" xml:space="preserve">
+    <value>クレジット カード番号</value>
+  </data>
+  <data name="Credit_Card_Verification_Value_DefaultText" xml:space="preserve">
+    <value>クレジット カードのセキュリティ コード</value>
+  </data>
+  <data name="Current_Opportunities_DefaultText" xml:space="preserve">
+    <value>最近の営業案件</value>
+  </data>
+  <data name="Current_Password_DefaultText" xml:space="preserve">
+    <value>現在のパスワード</value>
+  </data>
+  <data name="Current_Password_Required_Field_Validation_Message" xml:space="preserve">
+    <value>[現在のパスワード] は必須フィールドです。</value>
+  </data>
+  <data name="Customer_DefaultText" xml:space="preserve">
+    <value>顧客</value>
+  </data>
+  <data name="Customer_Account_Not_Found_Invalid_AccountID_Specified" xml:space="preserve">
+    <value>顧客取引先企業が見つかりませんでした。有効な顧客取引先企業 ID が指定されていることを確認してください。</value>
+  </data>
+  <data name="Customer_Contact_Not_Found_Invalid_ContactID_Specified" xml:space="preserve">
+    <value>顧客取引先担当者が見つかりませんでした。有効な顧客取引先担当者 ID が指定されていることを確認してください。</value>
+  </data>
+  <data name="Customer_Contact_Not_Found_Invalid_CustomerID_Specified" xml:space="preserve">
+    <value>顧客取引先担当者が見つかりませんでした。有効な顧客 ID が指定されていることを確認してください。</value>
+  </data>
+  <data name="Date_DefaultText" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="Description_DefaultText" xml:space="preserve">
+    <value>説明 (必須)</value>
+  </data>
+  <data name="Discount_Code_DefaultText" xml:space="preserve">
+    <value>割引コード</value>
+  </data>
+  <data name="Discount_DefaultText" xml:space="preserve">
+    <value>割引:</value>
+  </data>
+  <data name="Email_DefaultText" xml:space="preserve">
+    <value>電子メール</value>
+  </data>
+  <data name="End_Time_DefaultText" xml:space="preserve">
+    <value>終了時刻</value>
+  </data>
+  <data name="Expires_DefaultText" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="Addition_Of_External_Account_Failed" xml:space="preserve">
+    <value>外部の取引先企業を追加できませんでした。</value>
+  </data>
+  <data name="Change_Mobile_Phone_Number_Failed" xml:space="preserve">
+    <value>携帯電話番号を変更できませんでした。</value>
+  </data>
+  <data name="Confirm_Email_Failed" xml:space="preserve">
+    <value>電子メールを確認できませんでした</value>
+  </data>
+  <data name="Remove_External_Account_Failed" xml:space="preserve">
+    <value>外部の取引先企業を削除できませんでした。</value>
+  </data>
+  <data name="Fax_DefaultText" xml:space="preserve">
+    <value>FAX</value>
+  </data>
+  <data name="Featured_Products_DefaultText" xml:space="preserve">
+    <value>おすすめの製品</value>
+  </data>
+  <data name="Feed_DefaultText" xml:space="preserve">
+    <value>フィード</value>
+  </data>
+  <data name="First_Name_DefaultText" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="Forum_DefaultText" xml:space="preserve">
+    <value>フォーラム</value>
+  </data>
+  <data name="From_DefaultText" xml:space="preserve">
+    <value>開始</value>
+  </data>
+  <data name="Household_DefaultText" xml:space="preserve">
+    <value>世帯</value>
+  </data>
+  <data name="Household_Members_DefaultText" xml:space="preserve">
+    <value>家族</value>
+  </data>
+  <data name="How_May_We_Contact_You" xml:space="preserve">
+    <value>ご連絡方法&lt;small&gt;該当するものをすべて選択してください。&lt;/small&gt;</value>
+  </data>
+  <data name="Ignore_Existing_And_Submit_My_Service_Request" xml:space="preserve">
+    <value>既存のサービス要求を無視して新しいサービス要求を送信します。</value>
+  </data>
+  <data name="In_This_Section_DefaultText" xml:space="preserve">
+    <value>このセクションの内容</value>
+  </data>
+  <data name="Invalid_Request" xml:space="preserve">
+    <value>無効な要求です。</value>
+  </data>
+  <data name="Invoice_DefaultText" xml:space="preserve">
+    <value>請求書</value>
+  </data>
+  <data name="Joined_DefaultText" xml:space="preserve">
+    <value>参加日時:</value>
+  </data>
+  <data name="Last_Name_DefaultText" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="Last_Post_DefaultText" xml:space="preserve">
+    <value>最新の投稿</value>
+  </data>
+  <data name="Latest_Knowledge_Base_Articles" xml:space="preserve">
+    <value>最新のサポート情報記事</value>
+  </data>
+  <data name="Legend_DefaultText" xml:space="preserve">
+    <value>凡例</value>
+  </data>
+  <data name="Load_More_Timeline" xml:space="preserve">
+    <value>詳細表示</value>
+  </data>
+  <data name="Locked_DefaultText" xml:space="preserve">
+    <value>ロック済み</value>
+  </data>
+  <data name="Mail_DefaultText" xml:space="preserve">
+    <value>メール</value>
+  </data>
+  <data name="Mark_As_Answer_DefaultText" xml:space="preserve">
+    <value>回答としてマーク</value>
+  </data>
+  <data name="Month_DefaultText" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Most_Popular_Articles_DefaultText" xml:space="preserve">
+    <value>最も人気のある記事</value>
+  </data>
+  <data name="Name_DefaultText" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Name_Required_Field_Validation_Message" xml:space="preserve">
+    <value>[名前] は必須フィールドです。</value>
+  </data>
+  <data name="New_Opportunities_DefaultText" xml:space="preserve">
+    <value>新しい営業案件</value>
+  </data>
+  <data name="New_Password_DefaultText" xml:space="preserve">
+    <value>新しいパスワード</value>
+  </data>
+  <data name="New_Password_Required_Field_Validation_Message" xml:space="preserve">
+    <value>[新しいパスワード] は必須フィールドです。</value>
+  </data>
+  <data name="News_DefaultText" xml:space="preserve">
+    <value>ニュース</value>
+  </data>
+  <data name="No_Contacts_Exist_Create_Appropriate_Contact" xml:space="preserve">
+    <value>取引先担当者がまだ存在しません。取引先責任者を設定するには、この顧客取引先企業に対して適切な取引先担当者を作成してから、取引先担当者を割り当ててください。</value>
+  </data>
+  <data name="No_Managing_Partner_Customer_Accounts_Message" xml:space="preserve">
+    <value>管理対象のパートナー顧客取引先企業が存在しません。続行するには、新しい顧客を作成してください。</value>
+  </data>
+  <data name="No_Products_Message" xml:space="preserve">
+    <value>現在のフィルターに一致する製品がありません。</value>
+  </data>
+  <data name="Cancel_Confirmation_No" xml:space="preserve">
+    <value>いいえ、このサポート案件を取り消しません。</value>
+  </data>
+  <data name="Reopen_Confirmation_No" xml:space="preserve">
+    <value>いいえ、このサポート案件を再オープンしません。</value>
+  </data>
+  <data name="Note_DefaultText" xml:space="preserve">
+    <value>メモ</value>
+  </data>
+  <data name="Notes_DefaultText" xml:space="preserve">
+    <value>メモ</value>
+  </data>
+  <data name="Timeline_DefaultText" xml:space="preserve">
+    <value>タイムライン</value>
+  </data>
+  <data name="Opportunities_Awaiting_Acceptance" xml:space="preserve">
+    <value>承諾待ちの営業案件</value>
+  </data>
+  <data name="Opportunity_Contacts_DefaultText" xml:space="preserve">
+    <value>営業案件の取引先担当者</value>
+  </data>
+  <data name="Opportunity_Details_DefaultText" xml:space="preserve">
+    <value>営業案件の詳細</value>
+  </data>
+  <data name="Opportunity_History_DefaultText" xml:space="preserve">
+    <value>営業案件の履歴</value>
+  </data>
+  <data name="Opportunity_Notes_DefaultText" xml:space="preserve">
+    <value>営業案件のメモ</value>
+  </data>
+  <data name="Opportunity_Saved_Successfully_Message" xml:space="preserve">
+    <value>営業案件が正常に保存されました。</value>
+  </data>
+  <data name="Opportunity_Status_DefaultText" xml:space="preserve">
+    <value>営業案件の状態</value>
+  </data>
+  <data name="Options_DefaultText" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="Order_DefaultText" xml:space="preserve">
+    <value>受注</value>
+  </data>
+  <data name="Order_Notes_DefaultText" xml:space="preserve">
+    <value>受注のメモ</value>
+  </data>
+  <data name="Parent_Customer_DefaultText" xml:space="preserve">
+    <value>所属取引先企業/上司</value>
+  </data>
+  <data name="Past_DefaultText" xml:space="preserve">
+    <value>過去</value>
+  </data>
+  <data name="Pay_With_Credit_Card_Message" xml:space="preserve">
+    <value>クレジット カードで支払う</value>
+  </data>
+  <data name="Permissions_Updated_Successfully_Message" xml:space="preserve">
+    <value>アクセス許可は正常に更新されました。</value>
+  </data>
+  <data name="Permit_Fee_Required_Message" xml:space="preserve">
+    <value>許可手数料が必要です</value>
+  </data>
+  <data name="Permit_Number_DefaultText" xml:space="preserve">
+    <value>許可番号:</value>
+  </data>
+  <data name="Phone_DefaultText" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Select_Support_Package_Error_Message" xml:space="preserve">
+    <value>サポート パッケージを選択してください。</value>
+  </data>
+  <data name="Select_Available_Appointment_Times_From_List" xml:space="preserve">
+    <value>次の空いている予定時間の一覧から選択してください。</value>
+  </data>
+  <data name="Poll_DefaultText" xml:space="preserve">
+    <value>アンケート</value>
+  </data>
+  <data name="Post_A_Reply_DefaultText" xml:space="preserve">
+    <value>返信を投稿する</value>
+  </data>
+  <data name="Posted_DefaultText" xml:space="preserve">
+    <value>投稿済み</value>
+  </data>
+  <data name="Posts_DefaultText" xml:space="preserve">
+    <value>投稿</value>
+  </data>
+  <data name="Price_DefaultText" xml:space="preserve">
+    <value>価格</value>
+  </data>
+  <data name="Priority_DefaultText" xml:space="preserve">
+    <value>優先度</value>
+  </data>
+  <data name="Products_DefaultText" xml:space="preserve">
+    <value>製品</value>
+  </data>
+  <data name="Public_DefaultText" xml:space="preserve">
+    <value>パブリック</value>
+  </data>
+  <data name="Purchase_Summary_DefaultText" xml:space="preserve">
+    <value>購入の概要</value>
+  </data>
+  <data name="Quantity_DefaultText" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="Quote_Notes_DefaultText" xml:space="preserve">
+    <value>見積もりのメモ</value>
+  </data>
+  <data name="Rating_DefaultText" xml:space="preserve">
+    <value>評価</value>
+  </data>
+  <data name="Invalid_CAPTCHA" xml:space="preserve">
+    <value>CAPTCHA 値が無効です。やり直してください。</value>
+  </data>
+  <data name="Register_DefaultText" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="Event_Register_DefaultText" xml:space="preserve">
+    <value>このイベントに登録する</value>
+  </data>
+  <data name="Related_Topics_DefaultText" xml:space="preserve">
+    <value>関連トピック</value>
+  </data>
+  <data name="Remove_DefaultText" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Remove_External_Account" xml:space="preserve">
+    <value>外部の取引先企業 "{0}" を削除しますか?</value>
+  </data>
+  <data name="Reopen_Case_DefaultText" xml:space="preserve">
+    <value>サポート案件の再オープン</value>
+  </data>
+  <data name="Replies_DefaultText" xml:space="preserve">
+    <value>返信</value>
+  </data>
+  <data name="Resolution_DefaultText" xml:space="preserve">
+    <value>解決 (必須)</value>
+  </data>
+  <data name="Resolve_Case_DefaultText" xml:space="preserve">
+    <value>サポート案件の解決</value>
+  </data>
+  <data name="Satisfaction_DefaultText" xml:space="preserve">
+    <value>満足度 (必須)</value>
+  </data>
+  <data name="Schedule_New_Service" xml:space="preserve">
+    <value>新しいサービスのスケジュール設定</value>
+  </data>
+  <data name="Search_DefaultText" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Search_Blogs_DefaultText" xml:space="preserve">
+    <value>ブログの検索</value>
+  </data>
+  <data name="Select_Customer_Account_As_Potential_Client" xml:space="preserve">
+    <value>営業案件に対する潜在顧客として顧客取引先企業を選択してください:</value>
+  </data>
+  <data name="Service_DefaultText" xml:space="preserve">
+    <value>サービス</value>
+  </data>
+  <data name="Service_Appointment_Not_Found" xml:space="preserve">
+    <value>ID "{0}" のサービス予定が見つかりません。</value>
+  </data>
+  <data name="Service_Request_Not_Found_Error" xml:space="preserve">
+    <value>&lt;h4&gt;サービス要求が見つかりません&lt;/h4&gt;&lt;p&gt;入力した参照番号が正しいことを確認してください。サービス要求の状態についてのお問い合わせは、311 にいつでもお電話ください。&lt;/p&gt;</value>
+  </data>
+  <data name="Service_Request_Number_DefaultText" xml:space="preserve">
+    <value>サービス要求番号:</value>
+  </data>
+  <data name="Service_Requests_Searched_Rendered_On_Map" xml:space="preserve">
+    <value>サービス要求をマップ上で検索および表示できます。</value>
+  </data>
+  <data name="Service_Requests_Map_DefaultText" xml:space="preserve">
+    <value>サービス要求マップ</value>
+  </data>
+  <data name="Set_Primary_Contact_Message" xml:space="preserve">
+    <value>この取引先企業の取引先責任者を設定してください:</value>
+  </data>
+  <data name="Shipping_Address_DefaultText" xml:space="preserve">
+    <value>送付先住所</value>
+  </data>
+  <data name="Shipping_DefaultText" xml:space="preserve">
+    <value>発送:</value>
+  </data>
+  <data name="Show_Alerts_DefaultText" xml:space="preserve">
+    <value>通知の表示</value>
+  </data>
+  <data name="SignIn_To_Register_DefaultText" xml:space="preserve">
+    <value>サインインして登録する</value>
+  </data>
+  <data name="SignIn_Account" xml:space="preserve">
+    <value>{0} アカウントでサインインします。</value>
+  </data>
+  <data name="Service_Request_Resolve_Duplicates_Summary_Message" xml:space="preserve">
+    <value>類似のサービス要求が以前に送信されています。一覧からサービス要求を選択して今回の送信内容と置き換えますか? それとも、今回の送信内容で続行しますか?</value>
+  </data>
+  <data name="Payment_Error_Message" xml:space="preserve">
+    <value>要求中にエラーが発生しました。</value>
+  </data>
+  <data name="Speakers_DefaultText" xml:space="preserve">
+    <value>スピーカー</value>
+  </data>
+  <data name="Start_Time_DefaultText" xml:space="preserve">
+    <value>開始時刻</value>
+  </data>
+  <data name="State_Province_DefaultText" xml:space="preserve">
+    <value>都道府県</value>
+  </data>
+  <data name="State_Province_Required_Field_Validation_Message" xml:space="preserve">
+    <value>”都道府県” は必須フィールドです。</value>
+  </data>
+  <data name="Status_DefaultText" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="Sub_Total_DefaultText" xml:space="preserve">
+    <value>小計:</value>
+  </data>
+  <data name="Submit_New_Service_Request_DefaultText" xml:space="preserve">
+    <value>新しいサービス要求を送信する</value>
+  </data>
+  <data name="Subscribe_DefaultText" xml:space="preserve">
+    <value>購読</value>
+  </data>
+  <data name="Subscribe_To_Following_Email_Lists" xml:space="preserve">
+    <value>次の電子メール リストへの登録</value>
+  </data>
+  <data name="Subscribe_To_This_Thread" xml:space="preserve">
+    <value>このスレッドの購読</value>
+  </data>
+  <data name="Support_Plan_Purchase_Required_Message" xml:space="preserve">
+    <value>&lt;h3&gt;サポート プランの購入が必要&lt;/h3&gt;&lt;p&gt;サポート プランを購入するには、営業までお問い合わせください。&lt;/p&gt;&lt;p&gt;電話: 555-555-5555&lt;/p&gt;&lt;p&gt;営業時間: 月曜日～金曜日 午前 9 時～午後 5 時 (中部標準時)&lt;/p&gt;</value>
+  </data>
+  <data name="Tags_DefaultText" xml:space="preserve">
+    <value>タグ</value>
+  </data>
+  <data name="Tax_DefaultText" xml:space="preserve">
+    <value>税:</value>
+  </data>
+  <data name="Thank_You_For_Feedback" xml:space="preserve">
+    <value>フィードバックをいただき、ありがとうございます。</value>
+  </data>
+  <data name="Thank_You_DefaultText" xml:space="preserve">
+    <value>ありがとうございます。</value>
+  </data>
+  <data name="CVV_Help_Message" xml:space="preserve">
+    <value>&lt;p&gt;カードのセキュリティ コードは、インターネット上でのクレジット カード トランザクションにとって重要なセキュリティ機能です。&lt;/p&gt;&lt;p&gt;MasterCard、Visa、および Discover のクレジット カードでは、カード裏面に 3 桁のコードが印刷されています。American Express のカードでは、カード表面のカード番号の上に 4 桁のコードが印刷されています。&lt;/p&gt;</value>
+  </data>
+  <data name="Case_Not_Found" xml:space="preserve">
+    <value>サポート案件が見つかりませんでした。</value>
+  </data>
+  <data name="Post_Exceeds_Maximum_Length" xml:space="preserve">
+    <value>この投稿の内容が最大長を超えています。</value>
+  </data>
+  <data name="No_Primary_Contact_Create_Or_Edit_Existing" xml:space="preserve">
+    <value>管理対象の顧客取引先企業には取引先責任者が存在しません。続行するには、新しい顧客取引先企業を作成するか、[顧客の管理] をクリックして新しい営業案件に関連付ける既存の取引先企業を編集し、取引先責任者を割り当ててください。</value>
+  </data>
+  <data name="Discount_Code_Not_Applicable" xml:space="preserve">
+    <value>指定された割引コードは適用できません。</value>
+  </data>
+  <data name="Inavlid_Discount_Code" xml:space="preserve">
+    <value>指定された割引コードは無効です。</value>
+  </data>
+  <data name="Discount_Already_Applied" xml:space="preserve">
+    <value>割引は既に適用されています。</value>
+  </data>
+  <data name="Discount_Reached_Maximum_Number_Of_Redemptions" xml:space="preserve">
+    <value>割引が引き換えの最大数に達しました。</value>
+  </data>
+  <data name="Invalid_Discount" xml:space="preserve">
+    <value>割引が無効です。</value>
+  </data>
+  <data name="External_Account_Added_sucessfully" xml:space="preserve">
+    <value>外部の取引先企業が正常に追加されました。</value>
+  </data>
+  <data name="External_Account_Removed_sucessfully" xml:space="preserve">
+    <value>外部の取引先企業が正常に削除されました。</value>
+  </data>
+  <data name="File_Type_Not_Supported" xml:space="preserve">
+    <value>サポートされていないファイルの種類です。</value>
+  </data>
+  <data name="Following_Contacts_Associated_With_Account" xml:space="preserve">
+    <value>この取引先企業には次の取引先担当者が関連付けられています:</value>
+  </data>
+  <data name="New_Password_Confirm_Password_Must_Match" xml:space="preserve">
+    <value>[新しいパスワード] と [新しいパスワードの確認入力] が一致している必要があります。</value>
+  </data>
+  <data name="Permission_To_Create_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;割り当てられている顧客取引先企業の親会社の分類コードが無効です。顧客取引先企業を作成するためのアクセス許可がありません。&lt;/p&gt;&lt;p&gt;取引先企業の分類コードは "パートナー" に設定されている必要があります。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Create_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;割り当てられている顧客取引先企業の親会社の分類コードが無効です。顧客取引先担当者を作成するためのアクセス許可がありません。&lt;/p&gt;&lt;p&gt;取引先企業の分類コードは "パートナー" に設定されている必要があります。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Edit_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;割り当てられている顧客取引先企業の親会社の分類コードが無効です。顧客取引先企業を編集するためのアクセス許可がありません。&lt;/p&gt;&lt;p&gt;取引先企業の分類コードは "パートナー" に設定されている必要があります。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Edit_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;割り当てられている顧客取引先企業の親会社の分類コードが無効です。顧客取引先担当者を編集するためのアクセス許可がありません。&lt;/p&gt;&lt;p&gt;取引先企業の分類コードは "パートナー" に設定されている必要があります。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;割り当てられている顧客取引先企業の親会社の分類コードが無効です。顧客取引先企業を管理するためのアクセス許可がありません。&lt;/p&gt;&lt;p&gt;取引先企業の分類コードは "パートナー" に設定されている必要があります。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;割り当てられている顧客取引先企業の親会社の分類コードが無効です。顧客取引先担当者を管理するためのアクセス許可がありません。&lt;/p&gt;&lt;p&gt;取引先企業の分類コードは "パートナー" に設定されている必要があります。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Read_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;割り当てられている顧客取引先企業の親会社の分類コードが無効です。顧客取引先企業を読み取るためのアクセス許可がありません。&lt;/p&gt;&lt;p&gt;取引先企業の分類コードは "パートナー" に設定されている必要があります。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Read_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;割り当てられている顧客取引先企業の親会社の分類コードが無効です。顧客取引先担当者を読み取るためのアクセス許可がありません。&lt;/p&gt;&lt;p&gt;取引先企業の分類コードは "パートナー" に設定されている必要があります。&lt;/p&gt;</value>
+  </data>
+  <data name="Requested_Package_Not_Found" xml:space="preserve">
+    <value>要求されたパッケージが見つかりませんでした。</value>
+  </data>
+  <data name="Requested_Session_Schedule_Not_Found" xml:space="preserve">
+    <value>要求されたセッション スケジュールが見つかりませんでした。</value>
+  </data>
+  <data name="Discount_Code_Not_specified" xml:space="preserve">
+    <value>必要な割引コードが指定されていません。</value>
+  </data>
+  <data name="Amount_Zero_Discount_Not_Applied" xml:space="preserve">
+    <value>合計金額は 0 です。値引きは適用されませんでした。</value>
+  </data>
+  <data name="Total_Amount_Less_Than_Required_Amount" xml:space="preserve">
+    <value>合計金額が必要な最小金額を下回っています。</value>
+  </data>
+  <data name="Remember_Browser_Success_Message" xml:space="preserve">
+    <value>このブラウザーに対する 2 要素認証セッションが記憶されました。</value>
+  </data>
+  <data name="Tow_Factor_signIn_Required_For_Browser" xml:space="preserve">
+    <value>このブラウザーには 2 要素のサインイン検証が必要です。</value>
+  </data>
+  <data name="No_Alerts_Currently" xml:space="preserve">
+    <value>現在、通知はありません。</value>
+  </data>
+  <data name="No_Archived_Polls_Currently" xml:space="preserve">
+    <value>現時点でアーカイブ済みのアンケートはありません。</value>
+  </data>
+  <data name="No_Appointments_Available_Message" xml:space="preserve">
+    <value>選択されたサービスでは、その日時の予定が空いていません。別の日時を選択してやり直してください。</value>
+  </data>
+  <data name="No_Articles_To_Display" xml:space="preserve">
+    <value>表示する記事はありません。</value>
+  </data>
+  <data name="No_Cases_For_selected_Filter" xml:space="preserve">
+    <value>選択されたフィルターを適用するサポート案件がありません。</value>
+  </data>
+  <data name="No_Contact_Records_To_Display" xml:space="preserve">
+    <value>表示する取引先担当者レコードはありません。</value>
+  </data>
+  <data name="No_Contacts_To_Display" xml:space="preserve">
+    <value>表示する取引先担当者はありません。</value>
+  </data>
+  <data name="No_Items_To_Display" xml:space="preserve">
+    <value>表示するアイテムはありません。</value>
+  </data>
+  <data name="No_Case_Notes_Message" xml:space="preserve">
+    <value>このサポート案件に関連付けられているメモはありません。メモは非公開で、サポート案件に関連するプライベートな情報を投稿するのに便利な場所です。</value>
+  </data>
+  <data name="No_Responses_To_This_Poll" xml:space="preserve">
+    <value>このアンケートに対する回答はありません。</value>
+  </data>
+  <data name="No_Services_Available_To_schedule" xml:space="preserve">
+    <value>スケジュール設定できるサービスはありません。</value>
+  </data>
+  <data name="Error_Viewing_Order_Contact_Support" xml:space="preserve">
+    <value>申し訳ありませんが、ご注文を表示できません。サポートにお問い合わせください。</value>
+  </data>
+  <data name="Error_Viewing_Quote_Contact_Support" xml:space="preserve">
+    <value>申し訳ありませんが、お見積もりを表示できません。サポートにお問い合わせください。</value>
+  </data>
+  <data name="Declare_Opportunity_As_Won" xml:space="preserve">
+    <value>このアクションでは、営業案件を受注として宣言します。</value>
+  </data>
+  <data name="Contact_Not_Have_Channel_Permission_Record" xml:space="preserve">
+    <value>この取引先担当者にはチャネル アクセス許可レコードがありません。</value>
+  </data>
+  <data name="Contact_Not_Have_Opportunity_Permission_Record" xml:space="preserve">
+    <value>この取引先担当者には営業案件のアクセス許可レコードがありません。</value>
+  </data>
+  <data name="Contact_Not_Have_Channel_Opportunity_Permission_Record" xml:space="preserve">
+    <value>この取引先担当者にはチャネルまたは営業案件のアクセス許可レコードがありません。</value>
+  </data>
+  <data name="Thread_Locked" xml:space="preserve">
+    <value>このスレッドはロック済みとしてマークされています。</value>
+  </data>
+  <data name="Thread_DefaultText" xml:space="preserve">
+    <value>スレッド</value>
+  </data>
+  <data name="Thread_Title_Required_Field" xml:space="preserve">
+    <value>[スレッドのタイトル] は必須フィールドです。</value>
+  </data>
+  <data name="Thread_Type_Required_Field" xml:space="preserve">
+    <value>[スレッドの種類] は必須フィールドです。</value>
+  </data>
+  <data name="Threads_DefaultText" xml:space="preserve">
+    <value>スレッド</value>
+  </data>
+  <data name="To_DefaultText" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="Total_Votes_DefaultText" xml:space="preserve">
+    <value>合計票数:</value>
+  </data>
+  <data name="Total_DefaultText" xml:space="preserve">
+    <value>合計:</value>
+  </data>
+  <data name="Service_Request_Status_Tracker_Title" xml:space="preserve">
+    <value>サービス要求の追跡</value>
+  </data>
+  <data name="Twofactor_Authentication_Disabled_Successfully_Message" xml:space="preserve">
+    <value>2 要素認証を正常に無効にしました。</value>
+  </data>
+  <data name="Twofactor_Authentication_Enabled_Successfully_Message" xml:space="preserve">
+    <value>2 要素認証を正常に有効にしました。</value>
+  </data>
+  <data name="Type_DefaultText" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="Unable_To_Retrieve_Order_Information" xml:space="preserve">
+    <value>受注情報を取得できません。</value>
+  </data>
+  <data name="Unable_To_Retrieve_Purchase_Information" xml:space="preserve">
+    <value>購入情報を取得できません。</value>
+  </data>
+  <data name="UnMark_Answer" xml:space="preserve">
+    <value>回答のマークを解除</value>
+  </data>
+  <data name="Unregister_From_Event" xml:space="preserve">
+    <value>このイベントから登録を解除する</value>
+  </data>
+  <data name="Unsubscribe_DefaultText" xml:space="preserve">
+    <value>購読を中止する</value>
+  </data>
+  <data name="UpComing_DefaultText" xml:space="preserve">
+    <value>予定</value>
+  </data>
+  <data name="UpComing_Times_DefaultText" xml:space="preserve">
+    <value>予定回数</value>
+  </data>
+  <data name="Update_Post_DefaultText" xml:space="preserve">
+    <value>投稿の更新</value>
+  </data>
+  <data name="Value_Of_Active_Opportunities" xml:space="preserve">
+    <value>アクティブな営業案件の値</value>
+  </data>
+  <data name="Value_Of_New_Opportunities" xml:space="preserve">
+    <value>新しい営業案件の値</value>
+  </data>
+  <data name="View_Scheduled_Services" xml:space="preserve">
+    <value>スケジュールされたすべてのサービスを表示</value>
+  </data>
+  <data name="View_Map_DefaultText" xml:space="preserve">
+    <value>マップの表示</value>
+  </data>
+  <data name="Unknown_Error_Occured_Message" xml:space="preserve">
+    <value>不明なエラーが発生しました。</value>
+  </data>
+  <data name="What_Can_We_Help_You_With_Message" xml:space="preserve">
+    <value>何にお困りですか?</value>
+  </data>
+  <data name="Year_DefaultText" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="You_Are_Not_Registered_For_Events_Message" xml:space="preserve">
+    <value>現時点ではイベントに登録されていません。</value>
+  </data>
+  <data name="You_Registered_For_This_Conference_Message" xml:space="preserve">
+    <value>この会議に登録されています。</value>
+  </data>
+  <data name="You_Registered_For_This_Event_Message" xml:space="preserve">
+    <value>このイベントに登録されています。</value>
+  </data>
+  <data name="No_Permission_For_Parent_Account_Manage_Contact_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、取引先企業アクセス許可がありません。取引先担当者のアクセス許可を管理できません。</value>
+  </data>
+  <data name="No_Permission_For_Parent_Account_Manage_Parent_Account_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、取引先企業アクセス許可がありません。取引先企業の親会社を管理できません。</value>
+  </data>
+  <data name="Permission_To_Manage_Contact_Permissions_Denied" xml:space="preserve">
+    <value>取引先企業アクセス許可がありません。取引先担当者のアクセス許可を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Permission_To_Manage_Parent_Account_Denied" xml:space="preserve">
+    <value>取引先企業アクセス許可がありません。取引先企業の親会社を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Permission_To_Edit_ContactChannel_And_Opportunity_Permissions_Denied" xml:space="preserve">
+    <value>チャネル アクセス許可と営業案件アクセス許可がありません。取引先担当者のチャネル アクセス許可と営業案件アクセス許可を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Create_Customer_Account_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、チャネル アクセス許可がありません。顧客取引先企業を作成できません。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Create_Customer_Contacts_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、チャネル アクセス許可がありません。顧客取引先担当者を作成できません。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Edit_Customer_Accounts_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、チャネル アクセス許可がありません。顧客取引先企業を編集できません。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Edit_Customer_Contacts_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、チャネル アクセス許可がありません。顧客取引先担当者を編集できません。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Read_Customer_Accounts_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、チャネル アクセス許可がありません。顧客取引先企業を読み取れません。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Read_Customer_Contacts_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、チャネル アクセス許可がありません。顧客取引先担当者を読み取れません。</value>
+  </data>
+  <data name="No_Channel_Permissions_Create_Customer_Account_Denied" xml:space="preserve">
+    <value>チャネル アクセス許可がありません。顧客取引先企業を作成できません。</value>
+  </data>
+  <data name="No_Channel_Permissions_Create_Customer_Contacts_Denied" xml:space="preserve">
+    <value>チャネル アクセス許可がありません。顧客取引先担当者を作成できません。</value>
+  </data>
+  <data name="No_Channel_Permission_Edit_Contact_Channel_Permissions_Denied" xml:space="preserve">
+    <value>チャネル アクセス許可がありません。取引先担当者のチャネル アクセス許可を編集できません。</value>
+  </data>
+  <data name="No_Channel_Permission_Edit_Customer_Accounts_Denied" xml:space="preserve">
+    <value>チャネル アクセス許可がありません。顧客取引先企業を編集できません。</value>
+  </data>
+  <data name="No_Channel_Permission_Edit_Customer_Contacts_Denied" xml:space="preserve">
+    <value>チャネル アクセス許可がありません。顧客取引先担当者を編集できません。</value>
+  </data>
+  <data name="No_Channel_Permission_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>チャネル アクセス許可がありません。顧客取引先企業を管理できません。</value>
+  </data>
+  <data name="No_Channel_Permission_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>チャネル アクセス許可がありません。顧客取引先担当者を管理できません。</value>
+  </data>
+  <data name="No_Channel_Permission_Read_Customer_Accounts_Denied" xml:space="preserve">
+    <value>チャネル アクセス許可がありません。顧客取引先企業を読み取れません。</value>
+  </data>
+  <data name="No_Channel_Permission_Read_Customer_Contacts_Denied" xml:space="preserve">
+    <value>チャネル アクセス許可がありません。顧客取引先担当者を読み取れません。</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Create_Contact_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、スコープが取引先企業に設定された取引担当者アクセス許可がありません。取引先担当者を作成できません。</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Edit_Contact_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、スコープが取引先企業に設定された取引担当者アクセス許可がありません。取引先担当者を編集できません。</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、スコープが取引先企業に設定された取引担当者アクセス許可がありません。取引先担当者のアクセス許可を編集できません。</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Manage_Parent_Account_Contacts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業の親会社に対する、スコープが取引先企業に設定された取引担当者アクセス許可がありません。取引先企業の親会社の取引先担当者を管理できません。</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Create_Contact_Denied" xml:space="preserve">
+    <value>取引先担当者アクセス許可がありません。取引先担当者を作成できません。</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Edit_Contact_Denied" xml:space="preserve">
+    <value>取引先担当者アクセス許可がありません。取引先担当者を編集できません。</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>取引先担当者アクセス許可がありません。取引先担当者のアクセス許可を編集できません。</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Manage_Parent_Account_Contacts_Permission_Denied" xml:space="preserve">
+    <value>取引先担当者アクセス許可がありません。取引先企業の親会社の取引先担当者を管理できません。</value>
+  </data>
+  <data name="Dont_Have_Opportunity_Permissions" xml:space="preserve">
+    <value>営業案件へのアクセス許可がありません。</value>
+  </data>
+  <data name="Permission_To_Create_Opportunities_Denied" xml:space="preserve">
+    <value>営業案件アクセス許可がありません。営業案件を作成するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Permission_To_Edit_Contact_Opportunity_Permissions_Denied" xml:space="preserve">
+    <value>営業案件アクセス許可がありません。取引先担当者の営業案件アクセス許可を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="No_Permission_To_Create_Cases" xml:space="preserve">
+    <value>サポート案件を作成するためのアクセス許可がありません。</value>
+  </data>
+  <data name="No_Permission_To_View_Cases" xml:space="preserve">
+    <value>サポート案件を表示するためのアクセス許可がありません。</value>
+  </data>
+  <data name="No_Permission_To_View_This_Case" xml:space="preserve">
+    <value>このサポート案件を表示するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Add_Existing_Or_Create_New_Contact" xml:space="preserve">
+    <value>この営業案件に既存の取引先担当者を追加するか、または新しい取引先担当者を作成できます。</value>
+  </data>
+  <data name="Force_SignUp_Profile_Explanation" xml:space="preserve">
+    <value>この Web サイトの機能を使用する前に、プロファイルを入力する必要があります。</value>
+  </data>
+  <data name="SignIn_To_Open_New_Support_Requests" xml:space="preserve">
+    <value>新しいサポート要求をオープンするには、サインインする必要があります。</value>
+  </data>
+  <data name="SignIn_To_View_Your_Cases" xml:space="preserve">
+    <value>サポート案件を表示するには、サインインする必要があります。</value>
+  </data>
+  <data name="Account_Access_Manage_Permissions_Denied_Error" xml:space="preserve">
+    <value>取引先担当者のアクセス許可を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Account_Access_Permissions_Error" xml:space="preserve">
+    <value>取引先企業の親会社を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Account_Access_Write_Permission_Denied_Message" xml:space="preserve">
+    <value>取引先企業の親会社を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Case_Updated_Successfully" xml:space="preserve">
+    <value>サポート案件は正常に更新されました。</value>
+  </data>
+  <data name="Channel_Permissions_Deny_Create_Customer_Accounts_Denied" xml:space="preserve">
+    <value>顧客取引先企業を作成するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Channel_Permissions_Deny_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>顧客取引先企業を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Channel_Permissions_Deny_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>顧客取引先担当者を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Deny_Read_Write_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>顧客取引先企業を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Deny_Read_Write_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>顧客取引先担当者を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Deny_Read_View_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業を表示するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Deny_Read_View_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先担当者を表示するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Deny_Read_Edit_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先企業を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Deny_Read_Edit_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>顧客取引先担当者を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Deny_Create_Permission_To_Create_Contact_Denied" xml:space="preserve">
+    <value>取引先担当者を作成するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Deny_Read_Manage_Parent_Account_Contacts_Permission_Denied" xml:space="preserve">
+    <value>取引先企業の親会社の取引先担当者を管理するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Deny_Write_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>取引先担当者を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Deny_Write_Permission_To_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>取引先担当者のアクセス許可を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Contact_Access_Write_Permission_Denied_Message" xml:space="preserve">
+    <value>取引先担当者を編集するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Email_Changed_Successfully" xml:space="preserve">
+    <value>電子メールが正常に変更されました。</value>
+  </data>
+  <data name="Email_Confirmed_Successfully" xml:space="preserve">
+    <value>電子メールは正常に確認されました。</value>
+  </data>
+  <data name="Your_Information" xml:space="preserve">
+    <value>ご自身の情報</value>
+  </data>
+  <data name="Mobile_Phone_Number_Changed_Successfully" xml:space="preserve">
+    <value>携帯電話番号は正常に変更されました。</value>
+  </data>
+  <data name="Mobile_Phone_Number_Removed_Successfully" xml:space="preserve">
+    <value>携帯電話番号は正常に削除されました。</value>
+  </data>
+  <data name="Create_Opportunities_Permissions_Denied" xml:space="preserve">
+    <value>営業案件を作成するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Order_Updated_Successfully" xml:space="preserve">
+    <value>受注は正常に更新されました。</value>
+  </data>
+  <data name="Password_Changed_Successfully" xml:space="preserve">
+    <value>パスワードが正常に変更されました。</value>
+  </data>
+  <data name="Password_Set_Successfully" xml:space="preserve">
+    <value>パスワードが正常に設定されました。</value>
+  </data>
+  <data name="Profile_Updated_Successfully" xml:space="preserve">
+    <value>プロファイルは正常に更新されました。</value>
+  </data>
+  <data name="Quote_Updated_Successfully" xml:space="preserve">
+    <value>見積もりは正常に更新されました。</value>
+  </data>
+  <data name="Zip_Postal_Code" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="Zip_Postal_Code_Required" xml:space="preserve">
+    <value>[郵便番号] は必須フィールドです。</value>
+  </data>
+  <data name="Total_DefaultText_Label" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="Contact_Support_To_Pay_For_Application_Message" xml:space="preserve">
+    <value>このアプリケーションの代金の支払については、サポートにお問い合わせください。</value>
+  </data>
+  <data name="Entered_Correct_Reference_Number_Confirmation_Message" xml:space="preserve">
+    <value>入力した参照番号が正しいことを確認してください。サービス要求の状態についてのお問い合わせは、311 にいつでもお電話ください。</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>電話: 555-555-5555</value>
+  </data>
+  <data name="Support_Plan_Message" xml:space="preserve">
+    <value>サポート プラン</value>
+  </data>
+  <data name="Permit_Default_Success_Message" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;&lt;em&gt;ありがとうございます。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;許可の申請は正常に送信されました。&lt;/p&gt;&lt;p&gt;申請は 24 時間以内に確認され、確認とフォローアップのメッセージが送信されます。&lt;/p&gt;</value>
+  </data>
+  <data name="Select_Support_Package_You_Like_To_Purchase" xml:space="preserve">
+    <value>&lt;h3&gt;サポート プラン&lt;/h3&gt;&lt;p&gt;購入するサポート パッケージを選択してください:&lt;/p&gt;</value>
+  </data>
+  <data name="Service_Request_Default_Success_Message" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;&lt;em&gt;ありがとうございます。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;サービス要求は正常に送信されました。&lt;/p&gt;&lt;p&gt;要求は 24 時間以内に確認され、確認とフォローアップのメッセージが送信されます。&lt;/p&gt;</value>
+  </data>
+  <data name="ADX_BlogPost_ShortName" xml:space="preserve">
+    <value>ブログの投稿</value>
+  </data>
+  <data name="ADX_BlogPost_Update_Tooltip" xml:space="preserve">
+    <value>このブログの投稿を編集します</value>
+  </data>
+  <data name="ADX_Blog_ShortName" xml:space="preserve">
+    <value>ブログ</value>
+  </data>
+  <data name="ADX_Blog_Update_Tooltip" xml:space="preserve">
+    <value>このブログを編集します</value>
+  </data>
+  <data name="ADX_CommunityForumPost_ShortName" xml:space="preserve">
+    <value>投稿</value>
+  </data>
+  <data name="ADX_CommunityForumPost_DeleteEntireThread_Warning" xml:space="preserve">
+    <value>警告: 最初の投稿を削除すると、スレッド全体が削除されます。</value>
+  </data>
+  <data name="ADX_CommunityForumPost_Update_Tooltip" xml:space="preserve">
+    <value>この投稿を編集します</value>
+  </data>
+  <data name="ADX_CommunityForumThread_Update_Tooltip" xml:space="preserve">
+    <value>このスレッドを編集します</value>
+  </data>
+  <data name="ADX_CommunityForum_ShortName" xml:space="preserve">
+    <value>フォーラム</value>
+  </data>
+  <data name="ADX_CommunityForum_Update_Tooltip" xml:space="preserve">
+    <value>このフォーラムを編集します</value>
+  </data>
+  <data name="ADX_Community_Forum_Thread_ShortName" xml:space="preserve">
+    <value>スレッド</value>
+  </data>
+  <data name="ADX_EventSchedule_AcceptableDays" xml:space="preserve">
+    <value>受け入れ可能日</value>
+  </data>
+  <data name="ADX_EventSchedule_Recurrence" xml:space="preserve">
+    <value>パターン</value>
+  </data>
+  <data name="ADX_EventSchedule_ShortName" xml:space="preserve">
+    <value>イベント スケジュール</value>
+  </data>
+  <data name="ADX_EventSchedule_Update_Tooltip" xml:space="preserve">
+    <value>このイベント スケジュールを編集します</value>
+  </data>
+  <data name="ADX_Event_ShortName" xml:space="preserve">
+    <value>イベント</value>
+  </data>
+  <data name="ADX_Event_Update_Tooltip" xml:space="preserve">
+    <value>このイベントを編集します</value>
+  </data>
+  <data name="ADX_PageComment_ShortName" xml:space="preserve">
+    <value>コメント</value>
+  </data>
+  <data name="ADX_PageComment_Update_Tooltip" xml:space="preserve">
+    <value>このコメントを編集します</value>
+  </data>
+  <data name="ADX_Shortcut_ShortName" xml:space="preserve">
+    <value>ショートカット</value>
+  </data>
+  <data name="ADX_Shortcut_Target_Instructions" xml:space="preserve">
+    <value>ショートカットのターゲットを選択します。外部サイトを指すターゲット URL は、http:// または https:// で始める必要があります。</value>
+  </data>
+  <data name="ADX_Shortcut_Update_Tooltip" xml:space="preserve">
+    <value>このショートカットを編集します</value>
+  </data>
+  <data name="ADX_Weblink_DisplayPage_Childlinks_Tooltip" xml:space="preserve">
+    <value>この Web リンクはページの子リンクを表示するために設定されます。ここに示された子 Web リンクの子は表示されません。</value>
+  </data>
+  <data name="Editable_DeleteMultiple_Tooltip_Prefix" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Editable_DeleteMultiple_Tooltip_Suffix_Plural" xml:space="preserve">
+    <value>子レコード?</value>
+  </data>
+  <data name="Editable_DeleteMultiple_Tooltip_Suffix_Singular" xml:space="preserve">
+    <value>子レコード?</value>
+  </data>
+  <data name="Entity_Create_ADX_BlogPost_Tooltip" xml:space="preserve">
+    <value>ブログの新しい投稿を作成します</value>
+  </data>
+  <data name="Entity_Create_ADX_Blog_Label" xml:space="preserve">
+    <value>子ブログ</value>
+  </data>
+  <data name="Entity_Create_ADX_Blog_Tooltip" xml:space="preserve">
+    <value>新しい子ブログを作成します</value>
+  </data>
+  <data name="Entity_Create_ADX_CommunityForum_Label" xml:space="preserve">
+    <value>子フォーラム</value>
+  </data>
+  <data name="Entity_Create_ADX_CommunityForum_Tooltip" xml:space="preserve">
+    <value>新しい子フォーラムを作成します</value>
+  </data>
+  <data name="Entity_Create_ADX_EventSchedule_Label" xml:space="preserve">
+    <value>イベント スケジュール</value>
+  </data>
+  <data name="Entity_Create_ADX_EventSchedule_Tooltip" xml:space="preserve">
+    <value>新しいイベント スケジュールを作成します</value>
+  </data>
+  <data name="Entity_Create_ADX_Event_Label" xml:space="preserve">
+    <value>子イベント</value>
+  </data>
+  <data name="Entity_Create_ADX_Event_Tooltip" xml:space="preserve">
+    <value>新しい子イベントを作成します</value>
+  </data>
+  <data name="Entity_Create_ADX_Shortcut_Label" xml:space="preserve">
+    <value>子ショートカット</value>
+  </data>
+  <data name="Entity_Create_ADX_Shortcut_Tooltip" xml:space="preserve">
+    <value>新しい子ショートカットを作成します</value>
+  </data>
+  <data name="Entity_Create_ADX_Weblinkset_Tooltip" xml:space="preserve">
+    <value>新しい子 Web リンク セットを作成します</value>
+  </data>
+  <data name="Entity_Delete_ADX_BlogpostComment_Tooltip" xml:space="preserve">
+    <value>このコメントを削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_BlogPost_Tooltip" xml:space="preserve">
+    <value>このブログの投稿を削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_Blog_Tooltip" xml:space="preserve">
+    <value>このブログを削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_CommunityForumPost_Tooltip" xml:space="preserve">
+    <value>この投稿を削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_CommunityForumThread_Tooltip" xml:space="preserve">
+    <value>このスレッドを削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_CommunityForum_Tooltip" xml:space="preserve">
+    <value>このフォーラムを削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_EventSchedule_Tooltip" xml:space="preserve">
+    <value>このイベント スケジュールを削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_Event_Tooltip" xml:space="preserve">
+    <value>このイベントを削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_PageComment_Tooltip" xml:space="preserve">
+    <value>このコメントを削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_Shortcut_Tooltip" xml:space="preserve">
+    <value>このショートカットを削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_Webfile_Tooltip" xml:space="preserve">
+    <value>このファイルを削除します</value>
+  </data>
+  <data name="Entity_Delete_ADX_Webpage_Tooltip" xml:space="preserve">
+    <value>このページを削除します</value>
+  </data>
+  <data name="Entity_Form_Select_New" xml:space="preserve">
+    <value>+ 新規</value>
+  </data>
+  <data name="FileBrowser_Header_Label" xml:space="preserve">
+    <value>ファイルの選択…</value>
+  </data>
+  <data name="Cms_Sitemapchildren_Update_Label" xml:space="preserve">
+    <value>子</value>
+  </data>
+  <data name="Entity_Create_Adx_Webfile_Label" xml:space="preserve">
+    <value>子ファイル</value>
+  </data>
+  <data name="Entity_Create_Adx_Webfile_Tooltip" xml:space="preserve">
+    <value>新しい子ファイルを作成します</value>
+  </data>
+  <data name="Entity_Create_Adx_Weblink_Tooltip" xml:space="preserve">
+    <value>新しいリンクを追加します</value>
+  </data>
+  <data name="Entity_Create_Adx_Webpage_Label" xml:space="preserve">
+    <value>子ページ</value>
+  </data>
+  <data name="Entity_Create_Adx_Webpage_Tooltip" xml:space="preserve">
+    <value>新しい子ページを作成します</value>
+  </data>
+  <data name="Entity_Delete_Adx_Weblink_Tooltip" xml:space="preserve">
+    <value>このアイテムを削除します</value>
+  </data>
+  <data name="Adx_Webfile_Shortname" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="Adx_Webfile_Update_Tooltip" xml:space="preserve">
+    <value>このファイルを編集します</value>
+  </data>
+  <data name="Adx_Weblink_Update_Tooltip" xml:space="preserve">
+    <value>このリンクを編集します</value>
+  </data>
+  <data name="Adx_Webpage_Shortname" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="Adx_Webpage_Not_Yet_Created" xml:space="preserve">
+    <value>未作成</value>
+  </data>
+  <data name="Pagination_Shortname" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="Adx_Webpage_Update_Tooltip" xml:space="preserve">
+    <value>このページを編集します</value>
+  </data>
+  <data name="Datetimepicker_Datepicker_Label" xml:space="preserve">
+    <value>日付の選択</value>
+  </data>
+  <data name="Editable_Cancel_Label" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Editable_Delete_Label" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Editable_Delete_Tooltip_Prefix" xml:space="preserve">
+    <value>次のものを削除します: </value>
+  </data>
+  <data name="SiteMarker_WarningMessage" xml:space="preserve">
+    <value>この {0} は、サイトマーカー {1} と関連付けられています。サイト機能はこの関連付けに依存しています。</value>
+  </data>
+  <data name="SiteMarkers_WarningMessage" xml:space="preserve">
+    <value>この {0} は、サイトマーカー {1} と関連付けられています。サイト機能はこの関連付けに依存しています。</value>
+  </data>
+  <data name="Edit_Label" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="Edit_Label_Prefix" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="Editable_Loading" xml:space="preserve">
+    <value>読み込み中...</value>
+  </data>
+  <data name="Editable_Required_Label" xml:space="preserve">
+    <value>(必須)</value>
+  </data>
+  <data name="Editable_Save_Label" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Editable_Saving" xml:space="preserve">
+    <value>保存中...</value>
+  </data>
+  <data name="Editable_Sortable_Tooltip" xml:space="preserve">
+    <value>この項目を移動します</value>
+  </data>
+  <data name="Editable_Tooltip" xml:space="preserve">
+    <value>このコンテンツを編集します</value>
+  </data>
+  <data name="Error_Dataservice_Default" xml:space="preserve">
+    <value>コンテンツの保存中にエラーが発生しました。変更は保存されていません。</value>
+  </data>
+  <data name="Error_Dataservice_Loading" xml:space="preserve">
+    <value>この機能に必要なコンテンツの読み込み中にエラーが発生しました。</value>
+  </data>
+  <data name="Error_Dataservice_Loading_Field_Prefix" xml:space="preserve">
+    <value>次のものを読み込めません: </value>
+  </data>
+  <data name="Confirm_Delete_Entity_Prefix" xml:space="preserve">
+    <value>次のものを削除しますか: </value>
+  </data>
+  <data name="Confirm_No" xml:space="preserve">
+    <value>いいえ</value>
+  </data>
+  <data name="Confirm_Unsavedchanges" xml:space="preserve">
+    <value>保存していない変更があります。続行しますか?</value>
+  </data>
+  <data name="Confirm_Yes" xml:space="preserve">
+    <value>はい</value>
+  </data>
+  <data name="Validation_Required_Suffix" xml:space="preserve">
+    <value>{0} は必須フィールドです。</value>
+  </data>
+  <data name="Sitemapchildren_Header_Label" xml:space="preserve">
+    <value>子の編集</value>
+  </data>
+  <data name="Access_Denied_No_Permissions_To_View_Notes_Message" xml:space="preserve">
+    <value>メモを表示するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Access_Denied_No_Permissions_To_View_These_Folders_Message" xml:space="preserve">
+    <value>これらのフォルダーまたはファイルを表示するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Access_Denied_No_Permissions_To_View_These_Records_Message" xml:space="preserve">
+    <value>これらのレコードを表示するためのアクセス許可がありません。</value>
+  </data>
+  <data name="Activate_Button_Text" xml:space="preserve">
+    <value>アクティブ化</value>
+  </data>
+  <data name="Activate_Quote_Button_Text" xml:space="preserve">
+    <value>見積もりのアクティブ化</value>
+  </data>
+  <data name="Add_Button_Text" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="Add_Files" xml:space="preserve">
+    <value>ファイルの追加</value>
+  </data>
+  <data name="Calculate_Value_Button_Text" xml:space="preserve">
+    <value>値の計算</value>
+  </data>
+  <data name="Case_Cancellation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;このサポート案件を取り消しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Case_Closed_DefaultResolutionLabel_Text" xml:space="preserve">
+    <value>クローズされたサポート案件</value>
+  </data>
+  <data name="Case_Closed_Via_Web_Portal_LabelText" xml:space="preserve">
+    <value>Web ポータル経由でクローズされたサポート案件</value>
+  </data>
+  <data name="Close_As_Lost_Button_Label" xml:space="preserve">
+    <value>失注としてクローズ</value>
+  </data>
+  <data name="Close_As_Won_Button_Text" xml:space="preserve">
+    <value>受注としてクローズ</value>
+  </data>
+  <data name="Close_Case_Button_Text" xml:space="preserve">
+    <value>サポート案件のクローズ</value>
+  </data>
+  <data name="Close_Opportunity_As_Lost_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;営業案件を失注としてクローズしますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Close_Quote_Create_Order_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;この見積もりをクローズして受注を作成しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Create_Invoice_Button_Text" xml:space="preserve">
+    <value>請求書の作成</value>
+  </data>
+  <data name="Create_Invoice_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;この受注に基づいて請求書を作成しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Create_Order_Button_Text" xml:space="preserve">
+    <value>受注の作成</value>
+  </data>
+  <data name="Create_Text" xml:space="preserve">
+    <value>作成</value>
+  </data>
+  <data name="DataBinding_Not_Contain_Property_Message" xml:space="preserve">
+    <value>DataBinding: "{0}" には名前が {1} のプロパティは含まれていません。</value>
+  </data>
+  <data name="Deactivate_Button_Text" xml:space="preserve">
+    <value>非アクティブ化</value>
+  </data>
+  <data name="Default_AddFiles_ModalAttachFileLabel" xml:space="preserve">
+    <value>ファイルの選択</value>
+  </data>
+  <data name="Default_AddFolder_Button_Text" xml:space="preserve">
+    <value>フォルダーの作成</value>
+  </data>
+  <data name="Default_Delete_File_ModalTitle" xml:space="preserve">
+    <value>ファイルの削除</value>
+  </data>
+  <data name="Default_Delete_Folder_ModalTitle" xml:space="preserve">
+    <value>フォルダーの削除</value>
+  </data>
+  <data name="Default_Delete_Note_ModalTitle" xml:space="preserve">
+    <value>メモの削除</value>
+  </data>
+  <data name="Default_Edit_Note_ModalTitle" xml:space="preserve">
+    <value>メモの編集</value>
+  </data>
+  <data name="Default_Error_ModalTitle" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="Default_Grid_Empty_Message" xml:space="preserve">
+    <value>表示するレコードはありません。</value>
+  </data>
+  <data name="Default_Grid_Loading_Message" xml:space="preserve">
+    <value>読み込み中...</value>
+  </data>
+  <data name="Default_Modal_Processing_Text" xml:space="preserve">
+    <value>処理中...</value>
+  </data>
+  <data name="Default_Modified_Column_Title" xml:space="preserve">
+    <value>修正済み</value>
+  </data>
+  <data name="Default_Notes_List_Empty_Message" xml:space="preserve">
+    <value>表示するメモはありません。</value>
+  </data>
+  <data name="Default_Activities_List_Empty_Message" xml:space="preserve">
+    <value>表示する活動はありません。</value>
+  </data>
+  <data name="Default_SharePoint_Grid_Empty_Message" xml:space="preserve">
+    <value>表示するフォルダーまたはファイルはありません。</value>
+  </data>
+  <data name="DefaultCalculateBody_Message" xml:space="preserve">
+    <value>&lt;p&gt;これにより、この営業案件の実績値が計算されます。&lt;/p&gt;</value>
+  </data>
+  <data name="DefaultGenerateQuoteBody_Message" xml:space="preserve">
+    <value>&lt;p&gt;これにより、この営業案件に基づいて見積もりが生成されます。&lt;/p&gt;</value>
+  </data>
+  <data name="DefaultReopenCaseBody_Message" xml:space="preserve">
+    <value>&lt;p&gt;これにより、サポート案件が再オープンされます。&lt;/p&gt;</value>
+  </data>
+  <data name="Delete_Button_Text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Description_Of_Resolution_Label_Text" xml:space="preserve">
+    <value>解決の説明</value>
+  </data>
+  <data name="Description_Of_Update_Label_Text" xml:space="preserve">
+    <value>更新の説明</value>
+  </data>
+  <data name="Destination_Label_Text" xml:space="preserve">
+    <value>宛先</value>
+  </data>
+  <data name="Disassociate_Button_Text" xml:space="preserve">
+    <value>関連付け解除</value>
+  </data>
+  <data name="Document_Library_Title_Text" xml:space="preserve">
+    <value>ドキュメント ライブラリ</value>
+  </data>
+  <data name="Download_Button_Label" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="Download_Records_From_All_Pages" xml:space="preserve">
+    <value>すべてのページからレコードをダウンロードします。</value>
+  </data>
+  <data name="Download_Records_From_Current_Page_Label" xml:space="preserve">
+    <value>現在のページからレコードをダウンロードします。</value>
+  </data>
+  <data name="Email_Required_Error" xml:space="preserve">
+    <value>電子メールは必須です。これは表示されません。</value>
+  </data>
+  <data name="Error_Completing_Request_Error_Message" xml:space="preserve">
+    <value>要求の完了中にエラーが発生しました。&lt;span class='details'&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="Error_Occurred_Message" xml:space="preserve">
+    <value>&lt;p&gt;エラーが発生しました。&lt;/p&gt;</value>
+  </data>
+  <data name="File_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;このファイルを完全に削除しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Folder_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;このフォルダーとそのすべての内容を完全に削除しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Generate_Quote_Button_Label" xml:space="preserve">
+    <value>見積もりの生成</value>
+  </data>
+  <data name="Is_Private_Field_Label_Text" xml:space="preserve">
+    <value>プライベート &lt;span class='fa fa-eye-slash' aria-hidden='true'&gt;&lt;/span&gt; です</value>
+  </data>
+  <data name="Lookup_Records_Title_Text" xml:space="preserve">
+    <value>レコードの検索</value>
+  </data>
+  <data name="Myself_Text" xml:space="preserve">
+    <value>自分</value>
+  </data>
+  <data name="New_Folder_Button_Text" xml:space="preserve">
+    <value>新しいフォルダー</value>
+  </data>
+  <data name="New_Tag_Title_Text" xml:space="preserve">
+    <value>新しいタグ:</value>
+  </data>
+  <data name="Next_Button_Text" xml:space="preserve">
+    <value>次へ</value>
+  </data>
+  <data name="No_Of_Day_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 日</value>
+  </data>
+  <data name="No_Of_Days_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 日</value>
+  </data>
+  <data name="No_Of_Hour_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 時間</value>
+  </data>
+  <data name="No_Of_Hours_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 時間</value>
+  </data>
+  <data name="No_Of_Minute_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 分</value>
+  </data>
+  <data name="No_Of_Minutes_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 分</value>
+  </data>
+  <data name="Node_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;このメモを削除しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Overwrite_Existing_Files_Label_Text" xml:space="preserve">
+    <value>既存のファイルを上書きする</value>
+  </data>
+  <data name="Pipeline_Phase_Label_Text" xml:space="preserve">
+    <value>パイプライン フェーズ</value>
+  </data>
+  <data name="Previous_Button_Label" xml:space="preserve">
+    <value>前へ</value>
+  </data>
+  <data name="Private_Label_Text" xml:space="preserve">
+    <value>プライベート</value>
+  </data>
+  <data name="Qualify_Button_Label_Text" xml:space="preserve">
+    <value>見込みありと評価</value>
+  </data>
+  <data name="Qualify_Lead_As_Opportunity_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;このリードを営業案件として見込みありと評価しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Quote_Activation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;この見積もりをアクティブ化しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Record_Activation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;このレコードをアクティブ化しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Record_Deactivation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;このレコードを非アクティブ化しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Record_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>このレコードを削除しますか?</value>
+  </data>
+  <data name="Record_Disassociation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;このレコードの関連付けを解除しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Remove_Tag_Tool_Tip_Text" xml:space="preserve">
+    <value>タグの削除</value>
+  </data>
+  <data name="Remove_Value_Button_Text" xml:space="preserve">
+    <value>値の削除</value>
+  </data>
+  <data name="Reopen_Opportunity_Button_Text" xml:space="preserve">
+    <value>営業案件の再オープン</value>
+  </data>
+  <data name="Reopen_Opportunity_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;この営業案件を再オープンしますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Resolve_Case_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;このサポート案件を解決しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Run_Workflow_Button_Text" xml:space="preserve">
+    <value>ワークフローの実行</value>
+  </data>
+  <data name="Run_Workflow_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;このワークフローを実行しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Select_Column_Header_Text" xml:space="preserve">
+    <value>選択</value>
+  </data>
+  <data name="Select_Different_Customer_Button_Text" xml:space="preserve">
+    <value>別の顧客を選択</value>
+  </data>
+  <data name="Select_Different_Support_Plan_Butoon_Text" xml:space="preserve">
+    <value>別のサポート プランの選択</value>
+  </data>
+  <data name="Selected_Records_Title_Text" xml:space="preserve">
+    <value>選択したレコード</value>
+  </data>
+  <data name="Set_On_Hold_Button_Label_Text" xml:space="preserve">
+    <value>保留に設定</value>
+  </data>
+  <data name="Set_Opportunity_On_Hold_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;営業案件を保留に設定しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Set_Opportunity_To_Close_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;営業案件を、受注してクローズした営業案件に設定しますか?&lt;/p&gt;</value>
+  </data>
+  <data name="Submit_Button_Label_Text" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="Support_Plan_Name_Text" xml:space="preserve">
+    <value>サポート プラン</value>
+  </data>
+  <data name="Toggle_Filter_Text" xml:space="preserve">
+    <value>フィルターの切り替え</value>
+  </data>
+  <data name="Update_Note_Button_Text" xml:space="preserve">
+    <value>メモの更新</value>
+  </data>
+  <data name="Update_Pipeline_Phase_Button_Label_Text" xml:space="preserve">
+    <value>パイプライン フェーズの更新</value>
+  </data>
+  <data name="Upto_Text" xml:space="preserve">
+    <value>最大</value>
+  </data>
+  <data name="View_Details_Tooltip" xml:space="preserve">
+    <value>詳細を表示します</value>
+  </data>
+  <data name="Associate_Button_Text" xml:space="preserve">
+    <value>関連付け</value>
+  </data>
+  <data name="Entity_Create_ADX_BlogPost_Label" xml:space="preserve">
+    <value>ブログの投稿</value>
+  </data>
+  <data name="No_Entity_Permissions" xml:space="preserve">
+    <value>アクセス許可は拒否されました。{0} に対する適切なエンティティ アクセス許可がありません。</value>
+  </data>
+  <data name="Site_Setting_Recaptcha_PublicOrPrivate_Key_Is_Missing" xml:space="preserve">
+    <value>必須のサイト設定 "{0}" が見つかりません。</value>
+  </data>
+  <data name="Error_Creating_IdeaAndIssue_Comment_WithNullOrWhitespace" xml:space="preserve">
+    <value>{0} を匿名で作成する場合は、null または空にすることはできません。</value>
+  </data>
+  <data name="Help_Desk_Entitlement_Message" xml:space="preserve">
+    <value>ヘルプ デスクの権利 {0} </value>
+  </data>
+  <data name="Password_Errors" xml:space="preserve">
+    <value>パスワードには少なくとも 1 つの {0} が必要です。</value>
+  </data>
+  <data name="EntityList_Calendar_NoView" xml:space="preserve">
+    <value>カレンダー: ビュー {0} が見つかりません</value>
+  </data>
+  <data name="EntityList_Calendar_DateFormat" xml:space="preserve">
+    <value>カレンダー: 日付の形式 {0} が正しくありません。"今すぐ" または "yyyy-mm-dd" にする必要があります。</value>
+  </data>
+  <data name="EntityList_Calendar_LoadUrl" xml:space="preserve">
+    <value>カレンダー: イベント URL が設定されていません</value>
+  </data>
+  <data name="EntityList_Calendar_Where" xml:space="preserve">
+    <value>カレンダー: ナビゲーション方向が正しくありません {0}。"次へ"、"前"、または "今日" のみを設定できます。</value>
+  </data>
+  <data name="EntityList_Calendar_TimeDivide" xml:space="preserve">
+    <value>カレンダー: 時間分割パラメーターは 60 を小数点以下なしで分割する必要があります (10、15、30 など)。</value>
+  </data>
+  <data name="EntityList_Calendar_No_Events_In_Day" xml:space="preserve">
+    <value>この日にはイベントがありません。</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Year" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Month" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Week" xml:space="preserve">
+    <value>{1} 年第 {0} 週</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Day" xml:space="preserve">
+    <value>{0} {1} {2}、{3}</value>
+  </data>
+  <data name="EntityList_Calendar_Week" xml:space="preserve">
+    <value>週 {0}</value>
+  </data>
+  <data name="EntityList_Calendar_All_Day" xml:space="preserve">
+    <value>終日</value>
+  </data>
+  <data name="EntityList_Calendar_Time" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="EntityList_Calendar_Events" xml:space="preserve">
+    <value>イベント</value>
+  </data>
+  <data name="EntityList_Calendar_Before_Time" xml:space="preserve">
+    <value>タイムライン前に終了</value>
+  </data>
+  <data name="EntityList_Calendar_After_Time" xml:space="preserve">
+    <value>タイムライン後に開始</value>
+  </data>
+  <data name="Liquid_Template_Ad_Title" xml:space="preserve">
+    <value>広告</value>
+  </data>
+  <data name="Liquid_Template_Ad_Description" xml:space="preserve">
+    <value>このテンプレートは、名前を指定して広告を表示するか、広告の配置からランダムな広告を表示します。</value>
+  </data>
+  <data name="Events_Upcoming" xml:space="preserve">
+    <value>今後のイベント</value>
+  </data>
+  <data name="Events_Upcoming_All_Events" xml:space="preserve">
+    <value>すべてのイベント</value>
+  </data>
+  <data name="Entity_Create_Label" xml:space="preserve">
+    <value>新規</value>
+  </data>
+  <data name="Does_Not_Contain_Property_With_Name" xml:space="preserve">
+    <value>DataBinding: "{0}" には名前が {1} のプロパティは含まれていません。</value>
+  </data>
+  <data name="Clear_Lookup_Field" xml:space="preserve">
+    <value>検索フィールドのクリア</value>
+  </data>
+  <data name="ExecutionContext_OrganizationService_Retrieve_Exception" xml:space="preserve">
+    <value>実行コンテキストと組織サービスを取得できません。</value>
+  </data>
+  <data name="Invalid_SIM_Response_Validation_Message" xml:space="preserve">
+    <value>無効な SIM 応答: </value>
+  </data>
+  <data name="Process_Payment_Failed" xml:space="preserve">
+    <value>支払を処理できませんでした。</value>
+  </data>
+  <data name="Unable_To_Parsex_response_code" xml:space="preserve">
+    <value>x_response_code を解析できません: </value>
+  </data>
+  <data name="Template_Not_Found_Exception" xml:space="preserve">
+    <value>テンプレート "{0}" が見つかりません。</value>
+  </data>
+  <data name="Invalid_Username_Or_Password_Exception" xml:space="preserve">
+    <value>ユーザー名またはパスワードが無効です。</value>
+  </data>
+  <data name="Knowledge_Base_Article_Not_Found_Exception" xml:space="preserve">
+    <value>サポート情報記事 "{0}" が見つかりません。</value>
+  </data>
+  <data name="Cannot_Create_New_Website_As_Child_Website_Exception" xml:space="preserve">
+    <value>ソース インスタンスと宛先インスタンスが異なる場合は、新しい Web サイトを子 Web サイトとして作成できません。</value>
+  </data>
+  <data name="Must_Be_GreaterThan_Or_EqualTo_One_Exception" xml:space="preserve">
+    <value>1 以上の値にする必要があります。</value>
+  </data>
+  <data name="Permissions_Exception" xml:space="preserve">
+    <value>アクセス許可</value>
+  </data>
+  <data name="Payment_Always_Successful_Message" xml:space="preserve">
+    <value>支払は常に成功します - デモ モード</value>
+  </data>
+  <data name="Job_Postings_Text" xml:space="preserve">
+    <value>求人情報</value>
+  </data>
+  <data name="Failed_To_Configure_Cloud_Storage_Account" xml:space="preserve">
+    <value>見つかりません: クラウド ストレージ アカウントを構成できませんでした</value>
+  </data>
+  <data name="Unable_To_Retrieve_Current_Directory_For_Upload_Error" xml:space="preserve">
+    <value>現在のアップロード用ディレクトリを取得できません。</value>
+  </data>
+  <data name="Upload_Permission_Denied_For_Current_Directory_Error" xml:space="preserve">
+    <value>現在のディレクトリに対するアップロード アクセス許可が拒否されました</value>
+  </data>
+  <data name="Launch_Lookup_Modal" xml:space="preserve">
+    <value>検索モーダルの起動</value>
+  </data>
+  <data name="Create_Customer_Contact" xml:space="preserve">
+    <value>顧客取引先担当者の作成</value>
+  </data>
+  <data name="Unable_To_Parse_Parameter_In_Required_ToDate_Format_Exception" xml:space="preserve">
+    <value>"to" パラメーターを必要な日付形式に解析できません。</value>
+  </data>
+  <data name="Name_Required_Error" xml:space="preserve">
+    <value>名前は必須です。</value>
+  </data>
+  <data name="Comment_Required_Error" xml:space="preserve">
+    <value>コメントが必要です。</value>
+  </data>
+  <data name="Idea_Is_Required_Error" xml:space="preserve">
+    <value>アイデアは必須です。</value>
+  </data>
+  <data name="Issue_Required_Error" xml:space="preserve">
+    <value>問題は必須です。</value>
+  </data>
+  <data name="Website_Model_Error_Exception" xml:space="preserve">
+    <value>Web サイト</value>
+  </data>
+  <data name="UserName_Exception" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="Organization_Service_URL_IsInvalid_Exception" xml:space="preserve">
+    <value>組織サービスの URL が無効です。</value>
+  </data>
+  <data name="ModelErrorException_For_User_Name" xml:space="preserve">
+    <value>ユーザー名は "domain\\username" の形式にする必要があります。</value>
+  </data>
+  <data name="No_Active_Website_Found_Exception" xml:space="preserve">
+    <value>アクティブな Web サイトが見つかりません。続行するには Web サイトのデータ パッケージをインストールしてください。</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Web サイト</value>
+  </data>
+  <data name="Website_Message" xml:space="preserve">
+    <value>指定した組織には、このサイトを対象にしたアクティブな Web サイト バインドが既に存在します。</value>
+  </data>
+  <data name="Check_Connection" xml:space="preserve">
+    <value>接続の確認</value>
+  </data>
+  <data name="Apply_Button_Text" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="Question_Help_Text" xml:space="preserve">
+    <value>この内容</value>
+  </data>
+  <data name="Dynamics_365_Organization_Service_URL" xml:space="preserve">
+    <value>Dynamics 365 組織サービスの URL</value>
+  </data>
+  <data name="Microsoft_Dynamics_Title" xml:space="preserve">
+    <value>Microsoft Dynamics&lt;sup&gt;&lt;small&gt;® &lt;/small&gt;&lt;/sup&gt;365 に接続</value>
+  </data>
+  <data name="CRM_Organization_Service_URL" xml:space="preserve">
+    <value>{0} Dynamics 365 組織サービスの URL {1} は、Dynamics 365 インスタンスの次の場所にあります:</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Customizations" xml:space="preserve">
+    <value>カスタマイズ</value>
+  </data>
+  <data name="Developer_Resources" xml:space="preserve">
+    <value>開発者リソース</value>
+  </data>
+  <data name="Service_Endpoints" xml:space="preserve">
+    <value>サービス エンドポイント </value>
+  </data>
+  <data name="Organization_Service" xml:space="preserve">
+    <value>組織サービス</value>
+  </data>
+  <data name="Click_To_Delete_Your_Vote" xml:space="preserve">
+    <value>投票を削除するにはここをクリックします</value>
+  </data>
+  <data name="Liquid_Template_Blogs_Description" xml:space="preserve">
+    <value>このテンプレートは、リスト グループ内の最新のブログの投稿を表示します。</value>
+  </data>
+  <data name="Liquid_Template_Breadcrumbs_Title" xml:space="preserve">
+    <value>階層リンク</value>
+  </data>
+  <data name="Liquid_Template_Child_Link_List_Group_Title" xml:space="preserve">
+    <value>子リンク リスト グループ</value>
+  </data>
+  <data name="Liquid_Template_Entitylist_Description" xml:space="preserve">
+    <value>このテンプレートは、Web ページに関連付けられているエンティティ リストでの定義に従って並べ替え、改ページ、検索をサポートするグリッド内のレコードの一覧を表示します。</value>
+  </data>
+  <data name="Liquid_Template_Entitylist_Title" xml:space="preserve">
+    <value>エンティティ リスト</value>
+  </data>
+  <data name="Liquid_Template_Events_Upcoming_Description" xml:space="preserve">
+    <value>このテンプレートは、現在から 60 日後までに行われるイベントへのリンクを表示します。</value>
+  </data>
+  <data name="Liquid_Template_Events_Upcoming_Title" xml:space="preserve">
+    <value>イベント: 今後</value>
+  </data>
+  <data name="Liquid_Template_Forums_Description" xml:space="preserve">
+    <value>このテンプレートは、Web サイトのフォーラムの一覧を、それぞれのスレッド数および投稿数と共に表示します。</value>
+  </data>
+  <data name="Liquid_Template_Layout_One_Column_Description" xml:space="preserve">
+    <value>このテンプレートは、階層リンク、ページ タイトル、およびページ コピー コンテンツを含む 1 列のレイアウトを表示します。</value>
+  </data>
+  <data name="Liquid_Template_Layout_One_Column_Title" xml:space="preserve">
+    <value>1 列のレイアウト</value>
+  </data>
+  <data name="Liquid_Template_Layout_Three_Column_Wide_Middle_Description" xml:space="preserve">
+    <value>このテンプレートは、中央の列の幅が左右の列より広い 3 列のレイアウトを表示します。このレイアウトでは、ページの上部に階層リンクとページ タイトルが含まれ、中央の列にページ コピー コンテンツが配置されます。</value>
+  </data>
+  <data name="Liquid_Template_Layout_Three_Column_Wide_Middle_Title" xml:space="preserve">
+    <value>中央の列幅が広い 3 列のレイアウト</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Left_Description" xml:space="preserve">
+    <value>このテンプレートは、左の列の幅が右の列より広い 2 列のレイアウトを表示します。このレイアウトでは、ページの上部に階層リンクとページ タイトルが含まれ、左の列にページ コピー コンテンツが配置されます。</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Left_Title" xml:space="preserve">
+    <value>左の列幅が広い 2 列のレイアウト</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Right_Description" xml:space="preserve">
+    <value>このテンプレートは、右の列の幅が左の列より広い 2 列のレイアウトを表示します。このレイアウトでは、ページの上部に階層リンクとページ タイトルが含まれ、右の列にページ コピー コンテンツが配置されます。</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Right_Title" xml:space="preserve">
+    <value>右の列幅が広い 2 列のレイアウト</value>
+  </data>
+  <data name="Liquid_Template_Page_Copy_Description" xml:space="preserve">
+    <value>このテンプレートは、埋め込みの Liquid のサポートにより、編集可能なページ コピー コンテンツの HTML を表示します。</value>
+  </data>
+  <data name="Liquid_Template_Page_Copy_Title" xml:space="preserve">
+    <value>ページ コピー</value>
+  </data>
+  <data name="Liquid_Template_Page_Header_Description" xml:space="preserve">
+    <value>このテンプレートはページ タイトルを表示します。</value>
+  </data>
+  <data name="Liquid_Template_Page_Header_Title" xml:space="preserve">
+    <value>ページ ヘッダー</value>
+  </data>
+  <data name="Liquid_Template_Poll_Description" xml:space="preserve">
+    <value>このテンプレートは、名前を指定してアンケートを表示するか、アンケートの配置からランダムなアンケートを表示します。</value>
+  </data>
+  <data name="Liquid_Template_Search_Description" xml:space="preserve">
+    <value>このテンプレートは、1 つのテキスト入力と検索ボタンを含む基本的な検索フォームを表示します。</value>
+  </data>
+  <data name="Liquid_Template_Side_Navigation_Description" xml:space="preserve">
+    <value>このテンプレートは、縦型のツリー ビュー スタイルのナビゲーションを表示します。このテンプレートには、第 1 レベルへ戻る上位ページへのリンク、現在のページの兄弟ページへのリンク、および現在のページの子へのリンクが含まれます。</value>
+  </data>
+  <data name="Liquid_Template_Side_Navigation_Title" xml:space="preserve">
+    <value>サイド ナビゲーション</value>
+  </data>
+  <data name="Liquid_Template_Snippet_Title" xml:space="preserve">
+    <value>スニペット</value>
+  </data>
+  <data name="Liquid_Template_Top_Navigation_Title" xml:space="preserve">
+    <value>トップ ナビゲーション</value>
+  </data>
+  <data name="Liquid_Template_Weblink_List_Group_Title" xml:space="preserve">
+    <value>Web リンク リスト グループ</value>
+  </data>
+  <data name="Liquid_Template_Snippet_Description" xml:space="preserve">
+    <value>このテンプレートは、編集可能な HTML コンテンツ スニペットを名前を指定して表示します。</value>
+  </data>
+  <data name="Liquid_Template_Top_Navigation_Description" xml:space="preserve">
+    <value>このテンプレートは、プライマリ ナビゲーション Web リンク セット用のドロップ ダウン メニューを含む編集可能なナビゲーション バーを表示します。</value>
+  </data>
+  <data name="Liquid_Template_Weblink_List_Group_Description" xml:space="preserve">
+    <value>このテンプレートは、Web リンク セット用のリンクのリスト グループを表示します。</value>
+  </data>
+  <data name="Liquid_Template_Badges_Description" xml:space="preserve">
+    <value>このテンプレートは、取引先担当者のバッジを表示します。userid (既定のログイン ユーザー) と badge_type (profile-badges または basic-badges) を渡します。</value>
+  </data>
+  <data name="Liquid_Template_Badges_Title" xml:space="preserve">
+    <value>バッジ</value>
+  </data>
+  <data name="Poll_Archives_Heading" xml:space="preserve">
+    <value>アンケートのアーカイブ</value>
+  </data>
+  <data name="Authentication_Error_TooMany_Attempts" xml:space="preserve">
+    <value>サインインの回数が制限を超えています。しばらく待ってからやり直してください。</value>
+  </data>
+  <data name="Poll_Results_Label" xml:space="preserve">
+    <value>結果の表示</value>
+  </data>
+  <data name="Poll_Totals_Label" xml:space="preserve">
+    <value>合計票数:</value>
+  </data>
+  <data name="Poll_Return_Label" xml:space="preserve">
+    <value>アンケートに戻る</value>
+  </data>
+  <data name="All_Blogs_DefaultText" xml:space="preserve">
+    <value>すべてのブログ</value>
+  </data>
+  <data name="Forum_Activity_DefaultText" xml:space="preserve">
+    <value>フォーラム活動</value>
+  </data>
+  <data name="In_This_Section_DefaultText_With_Span" xml:space="preserve">
+    <value>&lt;span class="fa fa-folder-open" aria-hidden="true"&gt;&lt;/span&gt;&amp;nbsp;このセクションの内容</value>
+  </data>
+  <data name="Related_Links_DefaultText" xml:space="preserve">
+    <value>関連リンク</value>
+  </data>
+  <data name="Subscribe_To_Blogs_DefaultText" xml:space="preserve">
+    <value>ブログの購読</value>
+  </data>
+  <data name="Liquid_Template_Breadcrumbs_Description" xml:space="preserve">
+    <value>このテンプレートは、現在のページからホーム ページへ戻る上位ページのリンクを表示します。</value>
+  </data>
+  <data name="Liquid_Template_Child_Link_List_Group_Description" xml:space="preserve">
+    <value>このテンプレートは、リスト グループに含まれている現在のページの子ページへのリンクを表示します。</value>
+  </data>
+  <data name="All_Day_Event_Label" xml:space="preserve">
+    <value>終日イベント</value>
+  </data>
+  <data name="Answer_Label" xml:space="preserve">
+    <value>回答?</value>
+  </data>
+  <data name="Answered_Label" xml:space="preserve">
+    <value>回答済み</value>
+  </data>
+  <data name="Approved_Label" xml:space="preserve">
+    <value>承認済み?</value>
+  </data>
+  <data name="Archive_Template_Label" xml:space="preserve">
+    <value>アーカイブ テンプレート</value>
+  </data>
+  <data name="Cloud_Blob_Address_Label" xml:space="preserve">
+    <value>クラウド Blob アドレス</value>
+  </data>
+  <data name="Comment_Policy_Label" xml:space="preserve">
+    <value>コメント ポリシー</value>
+  </data>
+  <data name="Content_Label" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="Content_Disposition_Label" xml:space="preserve">
+    <value>コンテンツの配置</value>
+  </data>
+  <data name="Copy_Label" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="Custom_CSS_Label" xml:space="preserve">
+    <value>カスタム CSS</value>
+  </data>
+  <data name="Custom_JavaScript_Label" xml:space="preserve">
+    <value>カスタム JavaScript</value>
+  </data>
+  <data name="Disable_Page_Validation_Label" xml:space="preserve">
+    <value>ページの検証の無効化</value>
+  </data>
+  <data name="Disable_Target_Validation_Label" xml:space="preserve">
+    <value>ターゲットの検証の無効化</value>
+  </data>
+  <data name="Display_Date_Label" xml:space="preserve">
+    <value>日付の表示</value>
+  </data>
+  <data name="Display_Image_Only_Label" xml:space="preserve">
+    <value>画像のみを表示</value>
+  </data>
+  <data name="Display_Page_Child_Links" xml:space="preserve">
+    <value>ページの子リンクを表示</value>
+  </data>
+  <data name="Editorial_Comments_Label" xml:space="preserve">
+    <value>編集上のコメント</value>
+  </data>
+  <data name="Enable_Ratings_Label" xml:space="preserve">
+    <value>評価の有効化</value>
+  </data>
+  <data name="Enable_Tracking_Label" xml:space="preserve">
+    <value>追跡の有効化</value>
+  </data>
+  <data name="Entity_Form_Label" xml:space="preserve">
+    <value>エンティティ フォーム</value>
+  </data>
+  <data name="Entity_List_Label" xml:space="preserve">
+    <value>エンティティ リスト</value>
+  </data>
+  <data name="Exclude_From_Search_Label" xml:space="preserve">
+    <value>検索から除外</value>
+  </data>
+  <data name="Expiration_Date_Label" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="External_URL_Label" xml:space="preserve">
+    <value>外部 URL</value>
+  </data>
+  <data name="Forum_Template_Label" xml:space="preserve">
+    <value>フォーラム テンプレート</value>
+  </data>
+  <data name="Friday_Label" xml:space="preserve">
+    <value>金曜日</value>
+  </data>
+  <data name="General_Label" xml:space="preserve">
+    <value>全般</value>
+  </data>
+  <data name="Hidden_From_Sitemap_Label" xml:space="preserve">
+    <value>サイトマップに対して非表示</value>
+  </data>
+  <data name="Home_Template_Label" xml:space="preserve">
+    <value>ホーム テンプレート</value>
+  </data>
+  <data name="Image_Alternate_Text_Label" xml:space="preserve">
+    <value>画像の代替テキスト</value>
+  </data>
+  <data name="Image_Height_Label" xml:space="preserve">
+    <value>画像の高さ</value>
+  </data>
+  <data name="Image_URL_Label" xml:space="preserve">
+    <value>画像の URL</value>
+  </data>
+  <data name="Image_Width_Label" xml:space="preserve">
+    <value>画像の幅</value>
+  </data>
+  <data name="Interval_Label" xml:space="preserve">
+    <value>間隔</value>
+  </data>
+  <data name="Location_Name_Label" xml:space="preserve">
+    <value>場所の名前</value>
+  </data>
+  <data name="Max_Recurrences_Label" xml:space="preserve">
+    <value>最大繰り返し</value>
+  </data>
+  <data name="Monday_Label" xml:space="preserve">
+    <value>月曜日</value>
+  </data>
+  <data name="Open_In_New_Window_Label" xml:space="preserve">
+    <value>新しいウィンドウで開く</value>
+  </data>
+  <data name="Page_Label" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="Page_Template_Label" xml:space="preserve">
+    <value>ページ テンプレート</value>
+  </data>
+  <data name="Parent_Page_Label" xml:space="preserve">
+    <value>親ページ</value>
+  </data>
+  <data name="Partial_URL_Label" xml:space="preserve">
+    <value>部分 URL</value>
+  </data>
+  <data name="Post_Template_Label" xml:space="preserve">
+    <value>投稿テンプレート</value>
+  </data>
+  <data name="Preview_On_Label" xml:space="preserve">
+    <value>プレビューをオンにする</value>
+  </data>
+  <data name="Published_Label" xml:space="preserve">
+    <value>公開済み</value>
+  </data>
+  <data name="Publishing_Label" xml:space="preserve">
+    <value>公開</value>
+  </data>
+  <data name="Publishing_State_Label" xml:space="preserve">
+    <value>公開状況</value>
+  </data>
+  <data name="R_Label" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="Recurrence_End_Time_Label" xml:space="preserve">
+    <value>定期的なアイテムの終了時刻</value>
+  </data>
+  <data name="Registration_Content_Label" xml:space="preserve">
+    <value>登録内容</value>
+  </data>
+  <data name="Release_Date_Label" xml:space="preserve">
+    <value>リリース日</value>
+  </data>
+  <data name="Requires_Registration_Label" xml:space="preserve">
+    <value>登録が必要</value>
+  </data>
+  <data name="Robots_Follow_Link_Label" xml:space="preserve">
+    <value>ロボットのフォロー リンク</value>
+  </data>
+  <data name="Saturday_Label" xml:space="preserve">
+    <value>土曜日</value>
+  </data>
+  <data name="Sticky_Label" xml:space="preserve">
+    <value>先頭に固定表示</value>
+  </data>
+  <data name="Subject_Label" xml:space="preserve">
+    <value>情報カテゴリ</value>
+  </data>
+  <data name="Summary_Label" xml:space="preserve">
+    <value>概要</value>
+  </data>
+  <data name="Summary_Excerpt_Label" xml:space="preserve">
+    <value>概要/抜粋</value>
+  </data>
+  <data name="Sunday_Label" xml:space="preserve">
+    <value>日曜日</value>
+  </data>
+  <data name="Target_Event_Label" xml:space="preserve">
+    <value>ターゲット イベント</value>
+  </data>
+  <data name="Target_Forum_Label" xml:space="preserve">
+    <value>ターゲット フォーラム</value>
+  </data>
+  <data name="Target_URL_Label" xml:space="preserve">
+    <value>ターゲット URL</value>
+  </data>
+  <data name="Target_Web_File_Label" xml:space="preserve">
+    <value>ターゲット Web ファイル</value>
+  </data>
+  <data name="Target_Web_Page_Label" xml:space="preserve">
+    <value>ターゲット Web ページ</value>
+  </data>
+  <data name="Thread_Template_Label" xml:space="preserve">
+    <value>スレッド テンプレート</value>
+  </data>
+  <data name="Thread_Type_Label" xml:space="preserve">
+    <value>スレッドの種類</value>
+  </data>
+  <data name="Thursday_Label" xml:space="preserve">
+    <value>木曜日</value>
+  </data>
+  <data name="Title_Label" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="Tuesday_Label" xml:space="preserve">
+    <value>火曜日</value>
+  </data>
+  <data name="Upload_File_Label" xml:space="preserve">
+    <value>ファイルのアップロード</value>
+  </data>
+  <data name="Web_Form_Label" xml:space="preserve">
+    <value>Web フォーム</value>
+  </data>
+  <data name="Wednesday_Label" xml:space="preserve">
+    <value>水曜日</value>
+  </data>
+  <data name="Week_Label" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="Templates_Label" xml:space="preserve">
+    <value>テンプレート</value>
+  </data>
+  <data name="Listbox_Label" xml:space="preserve">
+    <value>listbox</value>
+  </data>
+  <data name="Insert_Label" xml:space="preserve">
+    <value>挿入</value>
+  </data>
+  <data name="Display_Page_Child_Links_Label" xml:space="preserve">
+    <value>ページの子リンクを表示</value>
+  </data>
+  <data name="Keywords_Label" xml:space="preserve">
+    <value>キーワード</value>
+  </data>
+  <data name="Image_List_Label" xml:space="preserve">
+    <value>画像の一覧</value>
+  </data>
+  <data name="Anchors_Label" xml:space="preserve">
+    <value>アンカー</value>
+  </data>
+  <data name="Source_Label" xml:space="preserve">
+    <value>ソース</value>
+  </data>
+  <data name="Find_Label" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Style_Label" xml:space="preserve">
+    <value>スタイル</value>
+  </data>
+  <data name="Previous_Edit_Point_Label" xml:space="preserve">
+    <value>前の編集ポイント</value>
+  </data>
+  <data name="Encoding_Label" xml:space="preserve">
+    <value>エンコード</value>
+  </data>
+  <data name="Robots_Label" xml:space="preserve">
+    <value>ロボット</value>
+  </data>
+  <data name="Author_Label" xml:space="preserve">
+    <value>作成者</value>
+  </data>
+  <data name="Class_Label" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="Image_Description_Label" xml:space="preserve">
+    <value>画像の説明</value>
+  </data>
+  <data name="Image_Title_Label" xml:space="preserve">
+    <value>画像のタイトル</value>
+  </data>
+  <data name="Dimensions_Label" xml:space="preserve">
+    <value>寸法</value>
+  </data>
+  <data name="Vertical_Space_Label" xml:space="preserve">
+    <value>上下の間隔</value>
+  </data>
+  <data name="Horizontal_Space_Label" xml:space="preserve">
+    <value>左右の間隔</value>
+  </data>
+  <data name="Border_Label" xml:space="preserve">
+    <value>枠線</value>
+  </data>
+  <data name="Text_To_Display_Label" xml:space="preserve">
+    <value>表示するテキスト</value>
+  </data>
+  <data name="Link_List_Label" xml:space="preserve">
+    <value>リンク リスト</value>
+  </data>
+  <data name="Target_Label" xml:space="preserve">
+    <value>ターゲット</value>
+  </data>
+  <data name="Alternative_Source_Label" xml:space="preserve">
+    <value>代替ソース</value>
+  </data>
+  <data name="Poster_Label" xml:space="preserve">
+    <value>投稿者</value>
+  </data>
+  <data name="Replace_With_Label" xml:space="preserve">
+    <value>置き換え</value>
+  </data>
+  <data name="Border_Color_Label" xml:space="preserve">
+    <value>枠線の色</value>
+  </data>
+  <data name="Background_Color_Label" xml:space="preserve">
+    <value>背景色</value>
+  </data>
+  <data name="Cols_Label" xml:space="preserve">
+    <value>列</value>
+  </data>
+  <data name="Rows_Label" xml:space="preserve">
+    <value>行</value>
+  </data>
+  <data name="Width_Label" xml:space="preserve">
+    <value>幅</value>
+  </data>
+  <data name="Height_Label" xml:space="preserve">
+    <value>高さ</value>
+  </data>
+  <data name="Cell_Spacing_Label" xml:space="preserve">
+    <value>セル間のスペース</value>
+  </data>
+  <data name="Cell_Padding_Label" xml:space="preserve">
+    <value>セル内のスペース</value>
+  </data>
+  <data name="Caption_Label" xml:space="preserve">
+    <value>キャプション</value>
+  </data>
+  <data name="Alignment_Label" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="Scope_Label" xml:space="preserve">
+    <value>スコープ</value>
+  </data>
+  <data name="HAlign_Label" xml:space="preserve">
+    <value>水平方向の配置</value>
+  </data>
+  <data name="VAlign_Label" xml:space="preserve">
+    <value>垂直方向の配置</value>
+  </data>
+  <data name="Row_Type_Label" xml:space="preserve">
+    <value>行の種類</value>
+  </data>
+  <data name="Form_Label" xml:space="preserve">
+    <value>フォーム</value>
+  </data>
+  <data name="Required_Nick_Name" xml:space="preserve">
+    <value>ニックネームは必須です。</value>
+  </data>
+  <data name="Required_Email" xml:space="preserve">
+    <value>電子メールは必須です。これは表示されません。</value>
+  </data>
+  <data name="Required_Title" xml:space="preserve">
+    <value>タイトルは必須です。</value>
+  </data>
+  <data name="Required_Rating" xml:space="preserve">
+    <value>評価は必須です。</value>
+  </data>
+  <data name="Delete_Permission_Denied_For_Current_Directory_Error" xml:space="preserve">
+    <value>現在のディレクトリに対する削除アクセス許可が拒否されました</value>
+  </data>
+  <data name="Account_Classification_Code_Must_Set_To_Partner_Message" xml:space="preserve">
+    <value>取引先企業の分類コードは "パートナー" に設定されている必要があります。</value>
+  </data>
+  <data name="Edit_Customer_Account" xml:space="preserve">
+    <value>顧客取引先企業の編集</value>
+  </data>
+  <data name="Unable_To_Parse_From_Parameter_Error" xml:space="preserve">
+    <value>""from" パラメーターを必要な日付形式に解析できません。"</value>
+  </data>
+  <data name="Must_Be_GreaterThan_One_Exception" xml:space="preserve">
+    <value>1 より大きい値にする必要があります</value>
+  </data>
+  <data name="Expected_Entity_Object_Argument_Exception" xml:space="preserve">
+    <value>このメソッドには型 {0} のエンティティ オブジェクトを渡す必要がありますが、型 {1} のエンティティ オブジェクトが渡されました。</value>
+  </data>
+  <data name="License_Failed_To_Load_Exception" xml:space="preserve">
+    <value>このライセンスの読み込みに失敗しました。{0}</value>
+  </data>
+  <data name="License_DoesNot_Include_Support_Exception" xml:space="preserve">
+    <value>このライセンスには {0} のサポートが含まれていません。要求されたページでは、この機能が必要です。</value>
+  </data>
+  <data name="Preview_Off_Label" xml:space="preserve">
+    <value>プレビューをオフにする</value>
+  </data>
+  <data name="Published_UnPublished_Entities_Title" xml:space="preserve">
+    <value>クリックしてプレビュー モードを切り替えます。オンにすると、公開済みのエンティティと非公開のエンティティが表示されます。オフにすると、公開済みのエンティティのみが表示されます。</value>
+  </data>
+  <data name="Confirmed_Email_Required_Message" xml:space="preserve">
+    <value>2 要素認証には確認済みの電子メールが必要です。</value>
+  </data>
+  <data name="Change_Email_Defaulttext" xml:space="preserve">
+    <value>電子メールの変更</value>
+  </data>
+  <data name="Change_Mobile_Phone_Defaulttext" xml:space="preserve">
+    <value>携帯電話の変更</value>
+  </data>
+  <data name="Change_Two_Factor_Authentication" xml:space="preserve">
+    <value>2 要素認証の変更</value>
+  </data>
+  <data name="Child_Categories_Defaulttext" xml:space="preserve">
+    <value>子カテゴリ</value>
+  </data>
+  <data name="Code_Defaulttext" xml:space="preserve">
+    <value>コード</value>
+  </data>
+  <data name="Confirm_Email_Defaulttext" xml:space="preserve">
+    <value>電子メールの確認</value>
+  </data>
+  <data name="Confirm_Password" xml:space="preserve">
+    <value>パスワードの確認入力</value>
+  </data>
+  <data name="Confirm_Remove" xml:space="preserve">
+    <value>削除の確認</value>
+  </data>
+  <data name="Enter_Security_Code" xml:space="preserve">
+    <value>セキュリティ コードの入力</value>
+  </data>
+  <data name="Enter_Email_Address_For_Password_Reset" xml:space="preserve">
+    <value>パスワードのリセットを要求する電子メール アドレスを入力してください。</value>
+  </data>
+  <data name="Account_Already_Exist_Message" xml:space="preserve">
+    <value>既存のアカウントがあります</value>
+  </data>
+  <data name="Instructions_Defaulttext" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="Invitation_Code_Defaulttext" xml:space="preserve">
+    <value>招待コード</value>
+  </data>
+  <data name="Keywords_Defaulttext" xml:space="preserve">
+    <value>キーワード:</value>
+  </data>
+  <data name="Manage_External_Authentication" xml:space="preserve">
+    <value>外部認証の管理</value>
+  </data>
+  <data name="Mobile_Phone_Defaulttext" xml:space="preserve">
+    <value>携帯電話</value>
+  </data>
+  <data name="Old_Password_Defaulttext" xml:space="preserve">
+    <value>古いパスワード</value>
+  </data>
+  <data name="Password_Defaulttext" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="Check_Your_Email_For_Confirmation_Instructions" xml:space="preserve">
+    <value>電子メールで確認手順を確認してください。</value>
+  </data>
+  <data name="Check_Your_Email_For_Security_Code" xml:space="preserve">
+    <value>電子メールでセキュリティ コードを確認してください。</value>
+  </data>
+  <data name="Check_Your_Mobile_For_Security_Code" xml:space="preserve">
+    <value>携帯電話でセキュリティ コードを確認してください。</value>
+  </data>
+  <data name="Check_Your_Phone_For_Security_Code" xml:space="preserve">
+    <value>電話でセキュリティ コードを確認してください。</value>
+  </data>
+  <data name="Print_Defaulttext" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="Provide_Email_Address" xml:space="preserve">
+    <value>外部の取引先企業の登録を完了するには、電子メール アドレスを入力してください。</value>
+  </data>
+  <data name="Rate_This_Defaulttext" xml:space="preserve">
+    <value>これを評価</value>
+  </data>
+  <data name="Register_For_New_Local_Account" xml:space="preserve">
+    <value>新しいローカル アカウントを登録する</value>
+  </data>
+  <data name="Register_Using_External_Account" xml:space="preserve">
+    <value>外部アカウントを使用して登録する</value>
+  </data>
+  <data name="Register_External_Account_Defaulttext" xml:space="preserve">
+    <value>外部の取引先企業を登録する</value>
+  </data>
+  <data name="Related_Articles_Defaulttext" xml:space="preserve">
+    <value>関連記事</value>
+  </data>
+  <data name="Related_Products_Defaulttext" xml:space="preserve">
+    <value>関連製品</value>
+  </data>
+  <data name="Remember_Me_Defaulttext" xml:space="preserve">
+    <value>このアカウントを記憶する</value>
+  </data>
+  <data name="Remember_This_Browser_Message" xml:space="preserve">
+    <value>このブラウザーを記憶する</value>
+  </data>
+  <data name="Remove_Mobile_Phone_Number_Message" xml:space="preserve">
+    <value>携帯電話番号を削除しますか?</value>
+  </data>
+  <data name="Reset_Password_Defaulttext" xml:space="preserve">
+    <value>パスワードのリセット</value>
+  </data>
+  <data name="Search_Ideas_Defaulttext" xml:space="preserve">
+    <value>アイデアの検索</value>
+  </data>
+  <data name="Search_Issues_Defaulttext" xml:space="preserve">
+    <value>問題の検索</value>
+  </data>
+  <data name="Search_Knowledge_Base" xml:space="preserve">
+    <value>サポート情報の検索</value>
+  </data>
+  <data name="Security_Defaulttext" xml:space="preserve">
+    <value>セキュリティ</value>
+  </data>
+  <data name="Send_Security_Code_Defaulttext" xml:space="preserve">
+    <value>セキュリティ コードの送信</value>
+  </data>
+  <data name="Set_Email_Defaulttext" xml:space="preserve">
+    <value>電子メールの設定</value>
+  </data>
+  <data name="Set_Password_Defaulttext" xml:space="preserve">
+    <value>パスワードの設定</value>
+  </data>
+  <data name="Signin_With_Local_Account" xml:space="preserve">
+    <value>ローカル アカウントでサインインする</value>
+  </data>
+  <data name="Signin_With_External_Account" xml:space="preserve">
+    <value>外部アカウントでサインインする</value>
+  </data>
+  <data name="Signup_With_Invitation_Code" xml:space="preserve">
+    <value>招待コードでサインアップする</value>
+  </data>
+  <data name="Subjects_Defaulttext" xml:space="preserve">
+    <value>情報カテゴリ</value>
+  </data>
+  <data name="Twofactor_Authentication_Session_Remembered_For_This_Browser" xml:space="preserve">
+    <value>このブラウザーに対する 2 要素認証セッションが記憶されました。</value>
+  </data>
+  <data name="Two_Factor_Authentication_Method" xml:space="preserve">
+    <value>2 要素認証方式</value>
+  </data>
+  <data name="Twofactor_Authentication_Currently_Disabled" xml:space="preserve">
+    <value>2 要素認証は現在無効になっています。</value>
+  </data>
+  <data name="Twofactor_Authentication_Currently_Enabled" xml:space="preserve">
+    <value>2 要素認証は現在有効になっています。</value>
+  </data>
+  <data name="Twofactor_Authentication_Waiting_For_Email_Confirmation" xml:space="preserve">
+    <value>2 要素認証は電子メールの確認の待機中です。</value>
+  </data>
+  <data name="Voting_Defaulttext" xml:space="preserve">
+    <value>投票</value>
+  </data>
+  <data name="Email_Confirmation_Message" xml:space="preserve">
+    <value>電子メールを確認する必要があります。</value>
+  </data>
+  <data name="Service_Request_Create_Button_Text" xml:space="preserve">
+    <value>311 サービス要求作成ボタンのテキスト</value>
+  </data>
+  <data name="Add_A_Comment" xml:space="preserve">
+    <value>コメントの追加</value>
+  </data>
+  <data name="Add_A_New_Issue" xml:space="preserve">
+    <value>新しい問題の追加</value>
+  </data>
+  <data name="Add_To_Cart" xml:space="preserve">
+    <value>カートに追加</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>すべて</value>
+  </data>
+  <data name="All_Articles" xml:space="preserve">
+    <value>すべての記事</value>
+  </data>
+  <data name="All_Blogs" xml:space="preserve">
+    <value>すべてのブログ</value>
+  </data>
+  <data name="All_Brands" xml:space="preserve">
+    <value>すべてのブランド</value>
+  </data>
+  <data name="Any_Rating" xml:space="preserve">
+    <value>すべての評価</value>
+  </data>
+  <data name="AttachFiles" xml:space="preserve">
+    <value>ファイルの添付</value>
+  </data>
+  <data name="Attach_Files" xml:space="preserve">
+    <value>ファイルの添付</value>
+  </data>
+  <data name="Be_The_First_To" xml:space="preserve">
+    <value>ぜひ最初に書き込んでください</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>カート</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>カテゴリ</value>
+  </data>
+  <data name="Change_And_Confirm_Number" xml:space="preserve">
+    <value>番号の変更と確認</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>コメント</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>コンポーネント</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>接続</value>
+  </data>
+  <data name="Copy_URL_To_Clipboard" xml:space="preserve">
+    <value>URL をクリップボードにコピー</value>
+  </data>
+  <data name="Create_A_New" xml:space="preserve">
+    <value>新規作成</value>
+  </data>
+  <data name="Current_Version" xml:space="preserve">
+    <value>現在のバージョン</value>
+  </data>
+  <data name="Customer_Reviews" xml:space="preserve">
+    <value>顧客レビュー</value>
+  </data>
+  <data name="Date_Posted" xml:space="preserve">
+    <value>投稿日:</value>
+  </data>
+  <data name="Dependencies" xml:space="preserve">
+    <value>依存関係</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>無効化</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>切断</value>
+  </data>
+  <data name="E-mail" xml:space="preserve">
+    <value>電子メール</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>有効化</value>
+  </data>
+  <data name="Enter_The_Reason_Content_Inappropriate" xml:space="preserve">
+    <value>コンテンツが不適切であるとお考えの理由を入力してください。</value>
+  </data>
+  <data name="Featured" xml:space="preserve">
+    <value>おすすめ</value>
+  </data>
+  <data name="Forget_Browser" xml:space="preserve">
+    <value>ブラウザー情報の削除</value>
+  </data>
+  <data name="Forgot_Your_Password" xml:space="preserve">
+    <value>パスワードを忘れた場合</value>
+  </data>
+  <data name="Gallery_Install_URL" xml:space="preserve">
+    <value>ギャラリーのインストール URL</value>
+  </data>
+  <data name="I_Would_Not_Recommend_To_A_Friend" xml:space="preserve">
+    <value>この製品を友人に勧めません。</value>
+  </data>
+  <data name="I_Would_Recommend_To_A_Friend" xml:space="preserve">
+    <value>この製品を友人に勧めます。</value>
+  </data>
+  <data name="Clicking_The_Button_Below" xml:space="preserve">
+    <value>このコンテンツが不適切であり、サイトから削除する必要があるとお考えの場合は、下のボタンをクリックしてお知らせください。コンテンツを不適切と判断された理由についてもコメントを添えていただけると幸いです。マイクロソフトでは情報を確認し、適切な措置を講じます。</value>
+  </data>
+  <data name="Install_Gallery" xml:space="preserve">
+    <value>ギャラリーのインストール</value>
+  </data>
+  <data name="Install_Package" xml:space="preserve">
+    <value>パッケージのインストール</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>場所:</value>
+  </data>
+  <data name="Nickname" xml:space="preserve">
+    <value>ニックネーム</value>
+  </data>
+  <data name="Package_Install_URL" xml:space="preserve">
+    <value>パッケージのインストール URL</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>保留中</value>
+  </data>
+  <data name="Feedback_For_This_Idea" xml:space="preserve">
+    <value>サインインして、このアイデアに対するフィードバックをお送りください。</value>
+  </data>
+  <data name="Provide_All_Types_Of_Feedback_For_This_Issue" xml:space="preserve">
+    <value>サインインして、この問題に対するフィードバックをお送りください。</value>
+  </data>
+  <data name="Feedback_In_This_Idea_Forum" xml:space="preserve">
+    <value>サインインして、このアイデア フォーラムにフィードバックをお送りください。</value>
+  </data>
+  <data name="Provide_All_Types_Of_Feedback_In_This_Issue_Forum" xml:space="preserve">
+    <value>サインインして、この問題フォーラムにフィードバックをお送りください。</value>
+  </data>
+  <data name="Post_Comment" xml:space="preserve">
+    <value>コメントを投稿する</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>プロファイル;</value>
+  </data>
+  <data name="Publisher" xml:space="preserve">
+    <value>公開元</value>
+  </data>
+  <data name="Redeem_Invitation" xml:space="preserve">
+    <value>招待状の引き換え</value>
+  </data>
+  <data name="Redeeming_code" xml:space="preserve">
+    <value>引き換えコード:</value>
+  </data>
+  <data name="Report_Abuse" xml:space="preserve">
+    <value>不正使用を報告する</value>
+  </data>
+  <data name="Report_As_Inappropriate" xml:space="preserve">
+    <value>不適切として報告する</value>
+  </data>
+  <data name="Report_This_Content_As_Inappropriate" xml:space="preserve">
+    <value>このコンテンツを不適切として報告する</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>レビュー</value>
+  </data>
+  <data name="Search_Filter" xml:space="preserve">
+    <value>検索フィルター</value>
+  </data>
+  <data name="Search_The_Knowledge_Base" xml:space="preserve">
+    <value>サポート情報の検索;</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="Sign_In" xml:space="preserve">
+    <value>サインイン</value>
+  </data>
+  <data name="Sign_In_To_Download" xml:space="preserve">
+    <value>ダウンロードするにはサインインしてください。</value>
+  </data>
+  <data name="Sign_In_To_Register_For_This_Event" xml:space="preserve">
+    <value>このイベントに登録するにはサインインしてください。</value>
+  </data>
+  <data name="Sign_Out" xml:space="preserve">
+    <value>サインアウト</value>
+  </data>
+  <data name="Specifications" xml:space="preserve">
+    <value>仕様</value>
+  </data>
+  <data name="Status_Details" xml:space="preserve">
+    <value>状態の詳細</value>
+  </data>
+  <data name="Stop_Tracking" xml:space="preserve">
+    <value>追跡の停止</value>
+  </data>
+  <data name="Submit_A_Review" xml:space="preserve">
+    <value>レビューを送信する</value>
+  </data>
+  <data name="Submit_Idea" xml:space="preserve">
+    <value>アイデアの送信</value>
+  </data>
+  <data name="Submit_Issue" xml:space="preserve">
+    <value>問題の送信</value>
+  </data>
+  <data name="Submit_Review" xml:space="preserve">
+    <value>レビューの送信</value>
+  </data>
+  <data name="Submitted_By" xml:space="preserve">
+    <value>送信者:</value>
+  </data>
+  <data name="Subscribe_To_Job_Postings" xml:space="preserve">
+    <value>求人情報の購読</value>
+  </data>
+  <data name="Suggest_A_New_Idea" xml:space="preserve">
+    <value>新しいアイデアの提案</value>
+  </data>
+  <data name="Suggested_By" xml:space="preserve">
+    <value>提案者</value>
+  </data>
+  <data name="Review_Has_Been_Submitted" xml:space="preserve">
+    <value>ありがとうございます。レビューが送信されました。</value>
+  </data>
+  <data name="No_Reviews_On_This_Product" xml:space="preserve">
+    <value>現在、この製品に対するレビューはありません。</value>
+  </data>
+  <data name="This_Blog" xml:space="preserve">
+    <value>このブログ</value>
+  </data>
+  <data name="Thread_Title" xml:space="preserve">
+    <value>スレッドのタイトル</value>
+  </data>
+  <data name="Track" xml:space="preserve">
+    <value>追跡</value>
+  </data>
+  <data name="Unconfirmed" xml:space="preserve">
+    <value>未確認</value>
+  </data>
+  <data name="Update_History" xml:space="preserve">
+    <value>履歴の更新</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="View_Upcoming_Events" xml:space="preserve">
+    <value>今後のイベントを表示</value>
+  </data>
+  <data name="Votes_Down_For_This_Idea" xml:space="preserve">
+    <value>このアイデアに対する反対票</value>
+  </data>
+  <data name="Votes_For_This_Idea" xml:space="preserve">
+    <value>このアイデアに対する投票</value>
+  </data>
+  <data name="Votes_Up_For_This_Idea" xml:space="preserve">
+    <value>このアイデアに対する賛成票</value>
+  </data>
+  <data name="Problem_Submitting_Your_Review" xml:space="preserve">
+    <value>申し訳ありませんが、レビューの送信中に問題が発生しました。もう一度やり直してください。問題が解決しない場合は、カスタマー サポートにお問い合わせください。</value>
+  </data>
+  <data name="Recommend_To_A_Friend" xml:space="preserve">
+    <value>この製品を友人に勧めますか?</value>
+  </data>
+  <data name="Write_A_Review" xml:space="preserve">
+    <value>レビューを書く</value>
+  </data>
+  <data name="Your_Number_Of_Votes_Left" xml:space="preserve">
+    <value>残っている投票数</value>
+  </data>
+  <data name="Change_Confirm_Email" xml:space="preserve">
+    <value>電子メールの変更と確認</value>
+  </data>
+  <data name="Issue_Search_Heading" xml:space="preserve">
+    <value>問題検索の見出し</value>
+  </data>
+  <data name="Enter_Reason_You_Find_Content_Inappropriate" xml:space="preserve">
+    <value>コンテンツが不適切であるとお考えの理由を入力してください (入力は任意です)。</value>
+  </data>
+  <data name="An_Email_Required_To_Set_Local_Account_Password" xml:space="preserve">
+    <value>ローカル アカウントのパスワードを設定するには電子メールが必要です。</value>
+  </data>
+  <data name="No_Information_Matching_Your_Query_Was_Found" xml:space="preserve">
+    <value>クエリに一致する情報が見つかりませんでした。</value>
+  </data>
+  <data name="No_Items_Were_Found_For_Current_View" xml:space="preserve">
+    <value>現在のビューのアイテムが見つかりませんでした。</value>
+  </data>
+  <data name="No_Published_Knowledge_Base_Articles_For_This_Subject" xml:space="preserve">
+    <value>&lt;p&gt;この情報カテゴリで公開されたサポート情報記事はありません。&lt;/p&gt;</value>
+  </data>
+  <data name="Please_Check_Email_To_Reset_Your_Password" xml:space="preserve">
+    <value>パスワードをリセットする電子メールを確認してください。</value>
+  </data>
+  <data name="There_Was_Error_Loading_Data_For_This_Gallery" xml:space="preserve">
+    <value>このギャラリーのデータの読み込み中にエラーが発生しました。</value>
+  </data>
+  <data name="Unable_To_Authenticate_External_Account_Provider" xml:space="preserve">
+    <value>外部アカウント プロバイダーによる認証ができません。</value>
+  </data>
+  <data name="Your_Password_Has_Been_Reset" xml:space="preserve">
+    <value>パスワードがリセットされました。</value>
+  </data>
+  <data name="Description_Label" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="Comments_Post_A_Comment" xml:space="preserve">
+    <value>コメントの投稿</value>
+  </data>
+  <data name="Comments_Post_This_Comment" xml:space="preserve">
+    <value>このコメントを投稿</value>
+  </data>
+  <data name="Required_Label" xml:space="preserve">
+    <value>必須</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Fullsource" xml:space="preserve">
+    <value>完全なソース</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Include" xml:space="preserve">
+    <value>含む</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Insertlabel" xml:space="preserve">
+    <value>挿入</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Previewlabel" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Templatelabel" xml:space="preserve">
+    <value>テンプレート</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Toolbar" xml:space="preserve">
+    <value>テンプレートの挿入</value>
+  </data>
+  <data name="Select2_Loading_More" xml:space="preserve">
+    <value>検索結果をさらに読み込んでいます…</value>
+  </data>
+  <data name="Select2_Many_Results_Available" xml:space="preserve">
+    <value> 件の結果があります。移動するには、上方向キーまたは下方向キーを使用してください。</value>
+  </data>
+  <data name="Select2_No_Matches_Found" xml:space="preserve">
+    <value>一致する項目が見つかりません</value>
+  </data>
+  <data name="Select2_One_Result_Available" xml:space="preserve">
+    <value>1 件の結果があります。選択するには Enter キーを押してください。</value>
+  </data>
+  <data name="Select2_Searching" xml:space="preserve">
+    <value>検索中...</value>
+  </data>
+  <data name="ElFinder_Access_Denied" xml:space="preserve">
+    <value>アクセスが拒否されました</value>
+  </data>
+  <data name="ElFinder_Add_Field" xml:space="preserve">
+    <value>フィールドの追加</value>
+  </data>
+  <data name="ElFinder_Adobe_Ps_Img" xml:space="preserve">
+    <value>Adobe Photoshop 画像</value>
+  </data>
+  <data name="ElFinder_Alias" xml:space="preserve">
+    <value>別名</value>
+  </data>
+  <data name="ElFinder_Application" xml:space="preserve">
+    <value>アプリケーション</value>
+  </data>
+  <data name="ElFinder_Authors" xml:space="preserve">
+    <value>作成者</value>
+  </data>
+  <data name="ElFinder_Avi_Vid" xml:space="preserve">
+    <value>AVI ビデオ</value>
+  </data>
+  <data name="ElFinder_Back" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="ElFinder_Bitt_File" xml:space="preserve">
+    <value>Bittorrent ファイル</value>
+  </data>
+  <data name="ElFinder_Bmp_Img" xml:space="preserve">
+    <value>BMP 画像</value>
+  </data>
+  <data name="ElFinder_Broken_Alias" xml:space="preserve">
+    <value>壊れた別名</value>
+  </data>
+  <data name="ElFinder_Bzip_Arch" xml:space="preserve">
+    <value>BZIP アーカイブ</value>
+  </data>
+  <data name="ElFinder_Cmd_Not_Allowed" xml:space="preserve">
+    <value>許可されていないコマンド</value>
+  </data>
+  <data name="ElFinder_Confirm_Rem_Files" xml:space="preserve">
+    <value>ファイルを削除しますか?&lt;br /&gt;この操作は元に戻せません。</value>
+  </data>
+  <data name="ElFinder_Confirm_Required" xml:space="preserve">
+    <value>確認が必要</value>
+  </data>
+  <data name="ElFinder_Contact_Elf_Int" xml:space="preserve">
+    <value>製品への elFinder の統合に関するヘルプが必要な場合はお問い合わせください</value>
+  </data>
+  <data name="ElFinder_Copy" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="ElFinder_Copy_Right_Std42Ltd" xml:space="preserve">
+    <value>Copyright: Studio 42 LTD</value>
+  </data>
+  <data name="ElFinder_Cpp_Src" xml:space="preserve">
+    <value>C++ ソース</value>
+  </data>
+  <data name="ElFinder_Create_Arch" xml:space="preserve">
+    <value>アーカイブの作成</value>
+  </data>
+  <data name="ElFinder_Create_New_Dir" xml:space="preserve">
+    <value>新しいディレクトリの作成</value>
+  </data>
+  <data name="ElFinder_Css_Ss" xml:space="preserve">
+    <value>CSS スタイル シート</value>
+  </data>
+  <data name="ElFinder_Ctrl_C_X_V_Files" xml:space="preserve">
+    <value>ファイルのコピー/切り取り/貼り付け</value>
+  </data>
+  <data name="ElFinder_Cut" xml:space="preserve">
+    <value>切り取り</value>
+  </data>
+  <data name="ElFinder_C_Src" xml:space="preserve">
+    <value>C ソース</value>
+  </data>
+  <data name="ElFinder_Day_Tday" xml:space="preserve">
+    <value>今日</value>
+  </data>
+  <data name="ElFinder_Day_Yday" xml:space="preserve">
+    <value>昨日</value>
+  </data>
+  <data name="ElFinder_Design" xml:space="preserve">
+    <value>設計: Valentin Razumnih</value>
+  </data>
+  <data name="ElFinder_Dimensions" xml:space="preserve">
+    <value>寸法</value>
+  </data>
+  <data name="ElFinder_Dock_Undock_Flmgr_Win" xml:space="preserve">
+    <value>filemanger ウィンドウのドッキング/ドッキング解除</value>
+  </data>
+  <data name="ElFinder_Donate_Supp_ProjDev" xml:space="preserve">
+    <value>プロジェクト開発をサポートするための寄付をお願いします</value>
+  </data>
+  <data name="ElFinder_Dup" xml:space="preserve">
+    <value>重複</value>
+  </data>
+  <data name="ElFinder_Dv_Vid" xml:space="preserve">
+    <value>DV ビデオ</value>
+  </data>
+  <data name="ElFinder_Edit_Txt_File" xml:space="preserve">
+    <value>テキスト ファイルの編集</value>
+  </data>
+  <data name="ElFinder_Elf_Doc" xml:space="preserve">
+    <value>elFinder ドキュメント</value>
+  </data>
+  <data name="ElFinder_Elf_Shortcut_Supp" xml:space="preserve">
+    <value>elFinder は次のショートカットをサポートしています</value>
+  </data>
+  <data name="ElFinder_Elf_Web_FileMgr" xml:space="preserve">
+    <value>elFinder: Web ファイル マネージャー</value>
+  </data>
+  <data name="ElFinder_Error_Connect_Backend" xml:space="preserve">
+    <value>バックエンドに接続できません</value>
+  </data>
+  <data name="ElFinder_Error_Copy_Files" xml:space="preserve">
+    <value>ファイルをコピーできません</value>
+  </data>
+  <data name="ElFinder_Error_Copy_Itself" xml:space="preserve">
+    <value>コピー元へのコピーはできません</value>
+  </data>
+  <data name="ElFinder_Error_Create_Archive" xml:space="preserve">
+    <value>アーカイブを作成できません</value>
+  </data>
+  <data name="ElFinder_Error_Create_File" xml:space="preserve">
+    <value>ファイルを作成できません</value>
+  </data>
+  <data name="ElFinder_Error_Create_Folder" xml:space="preserve">
+    <value>フォルダーを作成できません</value>
+  </data>
+  <data name="ElFinder_Error_Extract_Files_Archive" xml:space="preserve">
+    <value>アーカイブからファイルを抽出できません</value>
+  </data>
+  <data name="ElFinder_Error_FileCopy_Create" xml:space="preserve">
+    <value>ファイルのコピーを作成できません</value>
+  </data>
+  <data name="ElFinder_Error_Move_Files" xml:space="preserve">
+    <value>ファイルを移動できません</value>
+  </data>
+  <data name="ElFinder_Error_Open_Broken_Link" xml:space="preserve">
+    <value>壊れたリンクを開けません</value>
+  </data>
+  <data name="ElFinder_Error_Remove_File" xml:space="preserve">
+    <value>ファイルを削除できません</value>
+  </data>
+  <data name="ElFinder_Error_Rename_File" xml:space="preserve">
+    <value>ファイルの名前を変更できません</value>
+  </data>
+  <data name="ElFinder_Error_Resize_Image" xml:space="preserve">
+    <value>画像のサイズを変更できません</value>
+  </data>
+  <data name="ElFinder_Error_Save_Uploaded_File" xml:space="preserve">
+    <value>アップロードされたファイルを保存できません</value>
+  </data>
+  <data name="ElFinder_Error_Uploading_Files" xml:space="preserve">
+    <value>一部のファイルがアップロードされませんでした</value>
+  </data>
+  <data name="ElFinder_Error_Upload_File" xml:space="preserve">
+    <value>ファイルをアップロードできません</value>
+  </data>
+  <data name="ElFinder_Error_Upload_Files" xml:space="preserve">
+    <value>ファイルをアップロードできません</value>
+  </data>
+  <data name="ElFinder_Error_Write_File" xml:space="preserve">
+    <value>ファイルに書き込めません</value>
+  </data>
+  <data name="ElFinder_File_Folder_Name_Exist" xml:space="preserve">
+    <value>同じ名前のファイルまたはフォルダーが既に存在します</value>
+  </data>
+  <data name="ElFinder_File_Info" xml:space="preserve">
+    <value>ファイル情報</value>
+  </data>
+  <data name="ElFinder_File_Not_Found" xml:space="preserve">
+    <value>ファイルが見つかりません</value>
+  </data>
+  <data name="ElFinder_File_Not_Image" xml:space="preserve">
+    <value>ファイルが画像ではありません</value>
+  </data>
+  <data name="ElFinder_File_Type_Not_Allowed" xml:space="preserve">
+    <value>許可されていないファイルの種類</value>
+  </data>
+  <data name="ElFinder_Flash_App" xml:space="preserve">
+    <value>Flash アプリケーション</value>
+  </data>
+  <data name="ElFinder_Flash_Vid" xml:space="preserve">
+    <value>Flash ビデオ</value>
+  </data>
+  <data name="ElFinder_Folder" xml:space="preserve">
+    <value>フォルダー</value>
+  </data>
+  <data name="ElFinder_Folder_Info" xml:space="preserve">
+    <value>フォルダー情報</value>
+  </data>
+  <data name="ElFinder_Get_Info" xml:space="preserve">
+    <value>情報の取得</value>
+  </data>
+  <data name="ElFinder_Gif_Img" xml:space="preserve">
+    <value>GIF 画像</value>
+  </data>
+  <data name="ElFinder_Gzip_Arch" xml:space="preserve">
+    <value>GZIP アーカイブ</value>
+  </data>
+  <data name="ElFinder_Help" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="ElFinder_Help_Txt" xml:space="preserve">
+    <value>helpText</value>
+  </data>
+  <data name="ElFinder_Html_Doc" xml:space="preserve">
+    <value>HTML ドキュメント</value>
+  </data>
+  <data name="ElFinder_Icons" xml:space="preserve">
+    <value>アイコン</value>
+  </data>
+  <data name="ElFinder_Incr_Decr_File_Selection" xml:space="preserve">
+    <value>ファイル選択の増減</value>
+  </data>
+  <data name="ElFinder_Invalid_Bg_Config" xml:space="preserve">
+    <value>無効なバックエンド構成</value>
+  </data>
+  <data name="ElFinder_Invalid_Name" xml:space="preserve">
+    <value>無効な名前</value>
+  </data>
+  <data name="ElFinder_Invalid_Params" xml:space="preserve">
+    <value>無効なパラメーター</value>
+  </data>
+  <data name="ElFinder_Items" xml:space="preserve">
+    <value>項目</value>
+  </data>
+  <data name="ElFinder_Java_Src" xml:space="preserve">
+    <value>Java ソース</value>
+  </data>
+  <data name="ElFinder_Jpeg_Img" xml:space="preserve">
+    <value>JPEG 画像</value>
+  </data>
+  <data name="ElFinder_Js_App" xml:space="preserve">
+    <value>Javascript アプリケーション</value>
+  </data>
+  <data name="ElFinder_Js_Php_Prog" xml:space="preserve">
+    <value>Javascript/PHP プログラミング: Dmitry (dio) Levashov, dio@std42.ru</value>
+  </data>
+  <data name="ElFinder_Js_Src" xml:space="preserve">
+    <value>Javascript ソース</value>
+  </data>
+  <data name="ElFinder_Kind" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="ElFinder_License_Bsd" xml:space="preserve">
+    <value>ライセンス: BSD ライセンス</value>
+  </data>
+  <data name="ElFinder_Link_To" xml:space="preserve">
+    <value>リンク先</value>
+  </data>
+  <data name="ElFinder_Matr_Vid" xml:space="preserve">
+    <value>Matroska ビデオ</value>
+  </data>
+  <data name="ElFinder_Maximum_DataSize_Exceeded" xml:space="preserve">
+    <value>データが最大許容サイズを超えています</value>
+  </data>
+  <data name="ElFinder_Maximum_FileSize_Exceeded" xml:space="preserve">
+    <value>ファイルが最大許容ファイル サイズを超えています</value>
+  </data>
+  <data name="ElFinder_Max_Allowed_File_Size" xml:space="preserve">
+    <value>最大許容ファイル サイズ</value>
+  </data>
+  <data name="ElFinder_Midi_Aud" xml:space="preserve">
+    <value>MIDI オーディオ</value>
+  </data>
+  <data name="ElFinder_Modified" xml:space="preserve">
+    <value>修正済み</value>
+  </data>
+  <data name="ElFinder_Month_Apr" xml:space="preserve">
+    <value>4 月</value>
+  </data>
+  <data name="ElFinder_Month_Aug" xml:space="preserve">
+    <value>8 月</value>
+  </data>
+  <data name="ElFinder_Month_Dec" xml:space="preserve">
+    <value>12 月</value>
+  </data>
+  <data name="ElFinder_Month_Feb" xml:space="preserve">
+    <value>2 月</value>
+  </data>
+  <data name="ElFinder_Month_Jan" xml:space="preserve">
+    <value>1 月</value>
+  </data>
+  <data name="ElFinder_Month_Jul" xml:space="preserve">
+    <value>7 月</value>
+  </data>
+  <data name="ElFinder_Month_Jun" xml:space="preserve">
+    <value>6 月</value>
+  </data>
+  <data name="ElFinder_Month_Mar" xml:space="preserve">
+    <value>3 月</value>
+  </data>
+  <data name="ElFinder_Month_May" xml:space="preserve">
+    <value>5 月</value>
+  </data>
+  <data name="ElFinder_Month_Nov" xml:space="preserve">
+    <value>11 月</value>
+  </data>
+  <data name="ElFinder_Month_Oct" xml:space="preserve">
+    <value>10 月</value>
+  </data>
+  <data name="ElFinder_Month_Sep" xml:space="preserve">
+    <value>9 月</value>
+  </data>
+  <data name="ElFinder_Mp4_Aud" xml:space="preserve">
+    <value>MP4 オーディオ</value>
+  </data>
+  <data name="ElFinder_Mp4_Vid" xml:space="preserve">
+    <value>MP4 ビデオ</value>
+  </data>
+  <data name="ElFinder_Mpeg_Aud" xml:space="preserve">
+    <value>MPEG オーディオ</value>
+  </data>
+  <data name="ElFinder_Mpeg_Vid" xml:space="preserve">
+    <value>MPEG ビデオ</value>
+  </data>
+  <data name="ElFinder_MS_Excel_Doc" xml:space="preserve">
+    <value>Microsoft Excel ドキュメント</value>
+  </data>
+  <data name="ElFinder_MS_Off_doc" xml:space="preserve">
+    <value>Microsoft Office ドキュメント</value>
+  </data>
+  <data name="ElFinder_MS_PPT_Doc" xml:space="preserve">
+    <value>Microsoft PowerPoint プレゼンテーション</value>
+  </data>
+  <data name="ElFinder_MS_Word_Doc" xml:space="preserve">
+    <value>Microsoft Word 文書</value>
+  </data>
+  <data name="ElFinder_Name" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="ElFinder_New_Folder" xml:space="preserve">
+    <value>新しいフォルダー</value>
+  </data>
+  <data name="ElFinder_New_Txt_File" xml:space="preserve">
+    <value>新しいテキスト ファイル</value>
+  </data>
+  <data name="ElFinder_No_File_To_Upload" xml:space="preserve">
+    <value>アップロードするファイルがありません</value>
+  </data>
+  <data name="ElFinder_Ogg_Vrb_Aud" xml:space="preserve">
+    <value>Ogg Vorbis オーディオ</value>
+  </data>
+  <data name="ElFinder_Open" xml:space="preserve">
+    <value>開く</value>
+  </data>
+  <data name="ElFinder_Open_Close_Ql_Win" xml:space="preserve">
+    <value>QuickLook ウィンドウを開く/閉じる</value>
+  </data>
+  <data name="ElFinder_Open_Off_Doc" xml:space="preserve">
+    <value>Office ドキュメントを開く</value>
+  </data>
+  <data name="ElFinder_Open_Selected_File_Folder" xml:space="preserve">
+    <value>選択したファイル/フォルダーを開く</value>
+  </data>
+  <data name="ElFinder_Open_Upload_File_Form" xml:space="preserve">
+    <value>ファイルのアップロード フォームを開く</value>
+  </data>
+  <data name="ElFinder_Paste" xml:space="preserve">
+    <value>貼り付け</value>
+  </data>
+  <data name="ElFinder_Perl_Scr" xml:space="preserve">
+    <value>Perl スクリプト</value>
+  </data>
+  <data name="ElFinder_Permissions" xml:space="preserve">
+    <value>アクセス許可</value>
+  </data>
+  <data name="ElFinder_Php_Src" xml:space="preserve">
+    <value>PHP ソース</value>
+  </data>
+  <data name="ElFinder_Plain_Txt" xml:space="preserve">
+    <value>プレーン テキスト</value>
+  </data>
+  <data name="ElFinder_Png_Img" xml:space="preserve">
+    <value>PNG 画像</value>
+  </data>
+  <data name="ElFinder_PostScript_Doc" xml:space="preserve">
+    <value>Postscript ドキュメント</value>
+  </data>
+  <data name="ElFinder_Preview_Quick_Look" xml:space="preserve">
+    <value>Quick Look でプレビュー</value>
+  </data>
+  <data name="ElFinder_Priv_Read" xml:space="preserve">
+    <value>読み込み</value>
+  </data>
+  <data name="ElFinder_Priv_Remove" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="ElFinder_Priv_Write" xml:space="preserve">
+    <value>書き込み</value>
+  </data>
+  <data name="ElFinder_Python_Prg_Supp" xml:space="preserve">
+    <value>Python programming, techsupport: Troex Nevelin, troex@fury.scancode.ru</value>
+  </data>
+  <data name="ElFinder_Python_Src" xml:space="preserve">
+    <value>Python ソース</value>
+  </data>
+  <data name="ElFinder_Qt_Vid" xml:space="preserve">
+    <value>Quicktime ビデオ</value>
+  </data>
+  <data name="ElFinder_Rar_Arch" xml:space="preserve">
+    <value>RAR アーカイブ</value>
+  </data>
+  <data name="ElFinder_Reload" xml:space="preserve">
+    <value>再読み込み</value>
+  </data>
+  <data name="ElFinder_Rem" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="ElFinder_Rem_Selected_Files" xml:space="preserve">
+    <value>選択したファイルの削除</value>
+  </data>
+  <data name="ElFinder_Rename" xml:space="preserve">
+    <value>名前の変更</value>
+  </data>
+  <data name="ElFinder_Resize_Img" xml:space="preserve">
+    <value>画像サイズの変更</value>
+  </data>
+  <data name="ElFinder_Ret_Prev_Folder" xml:space="preserve">
+    <value>前のフォルダーに戻る</value>
+  </data>
+  <data name="ElFinder_Root_Dir_Not_Exist" xml:space="preserve">
+    <value>ルート ディレクトリが存在しません</value>
+  </data>
+  <data name="ElFinder_Ruby_Src" xml:space="preserve">
+    <value>Ruby ソース</value>
+  </data>
+  <data name="ElFinder_Selected_File_Dir_Info" xml:space="preserve">
+    <value>選択されたファイルまたは現在のディレクトリの情報</value>
+  </data>
+  <data name="ElFinder_Selected_Items" xml:space="preserve">
+    <value>選択されているアイテム</value>
+  </data>
+  <data name="ElFinder_Select_All_Files" xml:space="preserve">
+    <value>すべてのファイルを選択</value>
+  </data>
+  <data name="ElFinder_Select_File" xml:space="preserve">
+    <value>ファイルの選択</value>
+  </data>
+  <data name="ElFinder_Select_File_To_Upload" xml:space="preserve">
+    <value>アップロードするファイルを 1 つ以上選択してください</value>
+  </data>
+  <data name="ElFinder_Select_Next_File" xml:space="preserve">
+    <value>次のファイルを選択</value>
+  </data>
+  <data name="ElFinder_Select_Prev_File" xml:space="preserve">
+    <value>前のファイルを選択</value>
+  </data>
+  <data name="ElFinder_Sevenz_Archive" xml:space="preserve">
+    <value>7z アーカイブ</value>
+  </data>
+  <data name="ElFinder_Simple_Useful_Cms" xml:space="preserve">
+    <value>シンプルで便利なコンテンツ管理システム</value>
+  </data>
+  <data name="ElFinder_Size" xml:space="preserve">
+    <value>サイズ</value>
+  </data>
+  <data name="ElFinder_Spanish_Loc" xml:space="preserve">
+    <value>スペイン語のローカライズ</value>
+  </data>
+  <data name="ElFinder_Sponsors" xml:space="preserve">
+    <value>スポンサー</value>
+  </data>
+  <data name="ElFinder_Supp_Proj_Dev_info" xml:space="preserve">
+    <value>プロジェクトを応援してくださる方の情報をここに掲載します</value>
+  </data>
+  <data name="ElFinder_Tar_Arch" xml:space="preserve">
+    <value>TAR アーカイブ</value>
+  </data>
+  <data name="ElFinder_Tga_Img" xml:space="preserve">
+    <value>TGA 画像</value>
+  </data>
+  <data name="ElFinder_Tiff_Img" xml:space="preserve">
+    <value>TIFF 画像</value>
+  </data>
+  <data name="ElFinder_Uncompress_Arch" xml:space="preserve">
+    <value>アーカイブの解凍</value>
+  </data>
+  <data name="ElFinder_Unix_Ss" xml:space="preserve">
+    <value>Unix シェル スクリプト</value>
+  </data>
+  <data name="ElFinder_Unknown" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="ElFinder_Unknown_Cmd" xml:space="preserve">
+    <value>不明なコマンド</value>
+  </data>
+  <data name="ElFinder_Upload_Files" xml:space="preserve">
+    <value>ファイルのアップロード</value>
+  </data>
+  <data name="ElFinder_Url_Disabled_By_Config" xml:space="preserve">
+    <value>ファイルの URL がコネクタ構成で無効にされています</value>
+  </data>
+  <data name="ElFinder_Version" xml:space="preserve">
+    <value>バージョン</value>
+  </data>
+  <data name="ElFinder_View_As_Icon" xml:space="preserve">
+    <value>アイコンで表示</value>
+  </data>
+  <data name="ElFinder_View_As_List" xml:space="preserve">
+    <value>リストで表示</value>
+  </data>
+  <data name="ElFinder_Wav_Aud" xml:space="preserve">
+    <value>WAV オーディオ</value>
+  </data>
+  <data name="ElFinder_Wm_Vid" xml:space="preserve">
+    <value>WM ビデオ</value>
+  </data>
+  <data name="ElFinder_Xml_Doc" xml:space="preserve">
+    <value>XML ドキュメント</value>
+  </data>
+  <data name="ElFinder_Zip_Arch" xml:space="preserve">
+    <value>ZIP アーカイブ</value>
+  </data>
+  <data name="ElFinder_Chezh_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Chinese_Trad_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Dutch_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Greek_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Hungarian_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Italian_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Latvian_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Poland_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Add_Comment" xml:space="preserve">
+    <value>コメントの追加</value>
+  </data>
+  <data name="Default_Record_NotFound_Message" xml:space="preserve">
+    <value>お探しのレコードは見つかりませんでした。</value>
+  </data>
+  <data name="Search_No_Results_Found" xml:space="preserve">
+    <value>このクエリに該当する結果が見つかりませんでした: </value>
+  </data>
+  <data name="Search_Filter_Clear_All" xml:space="preserve">
+    <value>すべてクリア</value>
+  </data>
+  <data name="Search_Results_Format_String" xml:space="preserve">
+    <value>クエリの結果 {2} 件中 {0} - {1}: </value>
+  </data>
+  <data name="Submission_Already_Submitted_Message" xml:space="preserve">
+    <value>送信は既に完了しています。ありがとうございました。</value>
+  </data>
+  <data name="Submission_Successful_Message" xml:space="preserve">
+    <value>送信は正常に完了しました。</value>
+  </data>
+  <data name="Update_Button_Label_Text" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="URL_Default_Text" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="CalendarControl_DownloadTitleLink" xml:space="preserve">
+    <value>このカレンダーのダウンロード</value>
+  </data>
+  <data name="CalendarControl_LoadingError" xml:space="preserve">
+    <value>このカレンダーのデータの読み込み中に問題が発生しました。</value>
+  </data>
+  <data name="CalendarControl_MonthViewToggleButton" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="CalendarControl_Today_Button" xml:space="preserve">
+    <value>今日</value>
+  </data>
+  <data name="CalendarControl_WeekViewToggleButton" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="CalendarControl_YearViewToggleButton" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="CustomerService_Case_Invalid_Permission" xml:space="preserve">
+    <value>このサポート案件を表示するためのアクセス許可がありません。</value>
+  </data>
+  <data name="CustomerService_Case_Knowledge_Base_Article" xml:space="preserve">
+    <value>サポート情報の記事</value>
+  </data>
+  <data name="CustomerService_Case_Not_Found" xml:space="preserve">
+    <value>見つかりません</value>
+  </data>
+  <data name="CustomerService_Case_Not_Found_Sentence" xml:space="preserve">
+    <value>サポート案件が見つかりませんでした。</value>
+  </data>
+  <data name="CustomerService_Case_Resolution" xml:space="preserve">
+    <value>解決</value>
+  </data>
+  <data name="CustomerService_Case_Resolved" xml:space="preserve">
+    <value>解決済み</value>
+  </data>
+  <data name="CustomerService_CreateCase_Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="CustomerService_Portal_Login_To_View_Case" xml:space="preserve">
+    <value>新しいサポート案件をオープンするか既存のサポート案件の一覧を表示するには、サインインしてください。</value>
+  </data>
+  <data name="CustomerService_Support_A_Case" xml:space="preserve">
+    <value>サポート案件</value>
+  </data>
+  <data name="HomeTemplate_Search_Categories" xml:space="preserve">
+    <value>カテゴリの検索</value>
+  </data>
+  <data name="HomeTemplate_Search_Text" xml:space="preserve">
+    <value>文字の検索</value>
+  </data>
+  <data name="Most_Popular_Categories" xml:space="preserve">
+    <value>最も人気のあるカテゴリ</value>
+  </data>
+  <data name="Most_Recent_Categories" xml:space="preserve">
+    <value>最新のカテゴリ</value>
+  </data>
+  <data name="SearchResults_Found" xml:space="preserve">
+    <value>見つかりました</value>
+  </data>
+  <data name="SearchResults_Results_For_Query" xml:space="preserve">
+    <value>クエリの結果</value>
+  </data>
+  <data name="Blogs_Label" xml:space="preserve">
+    <value>ブログ</value>
+  </data>
+  <data name="CustomerService_Support_Case_Created" xml:space="preserve">
+    <value>が、送信された問題に対して作成されました。</value>
+  </data>
+  <data name="CustomerService_Support_ClearButton" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="CustomerService_Support_FailedLogin" xml:space="preserve">
+    <value>ユーザー ログインの失敗など</value>
+  </data>
+  <data name="CustomerService_Support_Help_Question" xml:space="preserve">
+    <value>何にお困りですか?</value>
+  </data>
+  <data name="CustomerService_Support_NoResults" xml:space="preserve">
+    <value>クエリに一致する情報が見つかりませんでした。</value>
+  </data>
+  <data name="CustomerService_Support_PleaseSignIn" xml:space="preserve">
+    <value>新しいサポート案件をオープンするか既存のサポート案件の一覧を表示するには、サインインしてください。</value>
+  </data>
+  <data name="CustomerService_Support_SearchButton" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="CustomerService_Support_ShowMore" xml:space="preserve">
+    <value>詳細表示...</value>
+  </data>
+  <data name="Events_Label" xml:space="preserve">
+    <value>イベント</value>
+  </data>
+  <data name="Forums_Label" xml:space="preserve">
+    <value>フォーラム</value>
+  </data>
+  <data name="Ideas_Label" xml:space="preserve">
+    <value>アイデア</value>
+  </data>
+  <data name="Idea_Label" xml:space="preserve">
+    <value>アイデア</value>
+  </data>
+  <data name="IdeaForum_Top" xml:space="preserve">
+    <value>上位</value>
+  </data>
+  <data name="IdeaForum_Hot" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="IdeaForum_New" xml:space="preserve">
+    <value>新規</value>
+  </data>
+  <data name="IdeaForum_All_Time" xml:space="preserve">
+    <value>すべての時間</value>
+  </data>
+  <data name="IdeaForum_Today" xml:space="preserve">
+    <value>今日</value>
+  </data>
+  <data name="IdeaForum_This_Week" xml:space="preserve">
+    <value>今週</value>
+  </data>
+  <data name="IdeaForum_This_Month" xml:space="preserve">
+    <value>今月</value>
+  </data>
+  <data name="IdeaForum_This_Year" xml:space="preserve">
+    <value>今年</value>
+  </data>
+  <data name="IdeaForum_Any" xml:space="preserve">
+    <value>指定なし</value>
+  </data>
+  <data name="IdeaForum_Status_New" xml:space="preserve">
+    <value>新規</value>
+  </data>
+  <data name="IdeaForum_Accepted" xml:space="preserve">
+    <value>承諾済み</value>
+  </data>
+  <data name="IdeaForum_Completed" xml:space="preserve">
+    <value>完了済み</value>
+  </data>
+  <data name="IdeaForum_Rejected" xml:space="preserve">
+    <value>拒否済み</value>
+  </data>
+  <data name="Issues_Label" xml:space="preserve">
+    <value>問題</value>
+  </data>
+  <data name="KnowledgeMgmt_Most_Popular_Articles" xml:space="preserve">
+    <value>最も人気のある記事</value>
+  </data>
+  <data name="KnowledgeMgmt_Most_Recent_Articles" xml:space="preserve">
+    <value>最新の記事</value>
+  </data>
+  <data name="KnowledgeMgmt_Search_Knowledge_Base" xml:space="preserve">
+    <value>サポート情報の検索</value>
+  </data>
+  <data name="Knowledge_Base_Label" xml:space="preserve">
+    <value>サポート情報</value>
+  </data>
+  <data name="Resolved_Cases_Label" xml:space="preserve">
+    <value>解決済みサポート案件</value>
+  </data>
+  <data name="SearchResults_None" xml:space="preserve">
+    <value>クエリで結果が返されませんでした。</value>
+  </data>
+  <data name="Click_Next_To_Purchase_Support_Text" xml:space="preserve">
+    <value>サポートを購入するには、[次へ] をクリックします。</value>
+  </data>
+  <data name="Form_Could_Not_Be_Submitted_For_The_Following_Reasons" xml:space="preserve">
+    <value>以下の理由により、フォームを送信できませんでした:</value>
+  </data>
+  <data name="Plan_Name_Text" xml:space="preserve">
+    <value>プラン名: {0}</value>
+  </data>
+  <data name="Please_Call_Text" xml:space="preserve">
+    <value>555-555-5555 までご連絡ください</value>
+  </data>
+  <data name="Please_Contact_Support_Text" xml:space="preserve">
+    <value>サポートにお問い合わせください</value>
+  </data>
+  <data name="Please_Select_Support_Plans_Text" xml:space="preserve">
+    <value>次のいずれかのサポート プランから選択し、[次へ] をクリックしてください。</value>
+  </data>
+  <data name="Prepaid_Incidents_Available_Text" xml:space="preserve">
+    <value>使用可能な前払いインシデント</value>
+  </data>
+  <data name="Prepaid_Incidents_Available_With_Parameter_Text" xml:space="preserve">
+    <value>使用可能な前払いインシデント: {0}</value>
+  </data>
+  <data name="Problem_With_Your_Account_Text" xml:space="preserve">
+    <value>申し訳ありません。アカウントに問題があります。</value>
+  </data>
+  <data name="Select_Customer_To_Assign_Support_Request_Text" xml:space="preserve">
+    <value>新しいサポート要求を割り当てる顧客を選択してください。</value>
+  </data>
+  <data name="To_Open_New_Support_Request_You_Must_Purchase_New_Support_Plan_Text" xml:space="preserve">
+    <value>新しいサポート要求をオープンするには、新しいサポート プランを購入する必要があります。</value>
+  </data>
+  <data name="Upon_Completion_Of_Opening_Support_Request" xml:space="preserve">
+    <value>この新しいサポート要求のオープンが完了すると、[{0}] が {1} だけ減少します。</value>
+    <comment>{0} - Prepaid Incidents Available</comment>
+  </data>
+  <data name="Working_Hours_Text" xml:space="preserve">
+    <value>営業時間: 月曜日～金曜日 午前 9 時～午後 5 時 (中部標準時)</value>
+  </data>
+  <data name="Your_Account_Does_Not_Have_Support_Plan_Text" xml:space="preserve">
+    <value>現在、ご使用のアカウントにはアクティブなサポート プランがありません。</value>
+  </data>
+  <data name="You_Do_Dot_Have_Permission_To_Open_Support_Request_Text" xml:space="preserve">
+    <value>申し訳ありません。新しいサポート要求をオープンするためのアクセス許可がありません。</value>
+  </data>
+  <data name="Page_500_Something_Went_Wrong_Text" xml:space="preserve">
+    <value>申し訳ありませんが、問題が発生しました。エラー ID [{0}]</value>
+  </data>
+  <data name="Page_500_Something_Went_Wrong_Title" xml:space="preserve">
+    <value>申し訳ありませんが、問題が発生しました (500)</value>
+  </data>
+  <data name="Page_500_We_Have_Been_Notified_Text" xml:space="preserve">
+    <value>この問題についての通知を受け取りました。すぐに調査しますので、しばらくお待ちください。</value>
+  </data>
+  <data name="Comment_DefaultText" xml:space="preserve">
+    <value>コメント</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="Timeline_Add_A_Comment" xml:space="preserve">
+    <value>コメントの追加</value>
+  </data>
+  <data name="Timeline_Attach_A_File_DefaultText" xml:space="preserve">
+    <value>ファイルの添付</value>
+  </data>
+  <data name="Feedback_Default_Title" xml:space="preserve">
+    <value>{0} {1} に関するポータルからのフィードバック</value>
+    <comment>{0} - Prepaid Incidents Available</comment>
+  </data>
+  <data name="Ess_User_Missing_License" xml:space="preserve">
+    <value>この Web サイトにアクセスするための適切なライセンスがありません。システム管理者にお問い合わせください</value>
+  </data>
+  <data name="Invalid_FileExtenstion_ErrorMessage" xml:space="preserve">
+    <value>拡張子 .{0} の添付ファイルはアップロードできません。別の拡張子を持つファイルをアップロードしてください。</value>
+  </data>
+  <data name="Max_FileSize_ErrorMessage" xml:space="preserve">
+    <value>アップロードされたファイルのサイズが最大許容サイズを超えています。</value>
+  </data>
+  <data name="Restricted_FileExtensions_ErrorMessage" xml:space="preserve">
+    <value>アップロードされたファイルのファイル拡張子は、制限されたファイル拡張子です。</value>
+  </data>
+  <data name="Restrict_FileTypes_ErrorMessage" xml:space="preserve">
+    <value>アップロードされたファイルが、必要な MIME の型と一致しません。</value>
+  </data>
+  <data name="Knowledge_Article_Views_DefaultText" xml:space="preserve">
+    <value>ビュー: </value>
+  </data>
+  <data name="Knowledge_Article_Unavailable" xml:space="preserve">
+    <value>記事は使用できません</value>
+  </data>
+  <data name="KnowledgeManagement_Article_Unavailable_Message" xml:space="preserve">
+    <value>要求されたサポート情報記事は利用できません。ポータル管理者にお問い合わせください。</value>
+  </data>
+  <data name="No_Results_Text" xml:space="preserve">
+    <value>結果なし</value>
+  </data>
+  <data name="Calculate_Text" xml:space="preserve">
+    <value>計算</value>
+  </data>
+  <data name="Confirm_Text" xml:space="preserve">
+    <value>確認</value>
+  </data>
+  <data name="Generate_Text" xml:space="preserve">
+    <value>生成</value>
+  </data>
+  <data name="Proceed_Text" xml:space="preserve">
+    <value>続行</value>
+  </data>
+  <data name="Qualify_Lead_Text" xml:space="preserve">
+    <value>リードを見込みありと評価</value>
+  </data>
+  <data name="Reopen_Text" xml:space="preserve">
+    <value>再オープン</value>
+  </data>
+  <data name="Resolve_Text" xml:space="preserve">
+    <value>解決</value>
+  </data>
+  <data name="Lookup_Form_Select_New" xml:space="preserve">
+    <value>新規</value>
+  </data>
+  <data name="New_Record_Message" xml:space="preserve">
+    <value>新しいレコードを作成します</value>
+  </data>
+  <data name="Blogs_Subscribe" xml:space="preserve">
+    <value>このブログの購読</value>
+  </data>
+  <data name="ContinueReading_ButtonText" xml:space="preserve">
+    <value>閲覧を続ける...</value>
+  </data>
+  <data name="Newer_ButtonText" xml:space="preserve">
+    <value>&amp;lsaquo; 新しい</value>
+  </data>
+  <data name="Older_ButtonText" xml:space="preserve">
+    <value>古い &amp;rsaquo;</value>
+  </data>
+  <data name="Unpublished_DefaultText" xml:space="preserve">
+    <value>非公開</value>
+  </data>
+  <data name="Become_A_Partner" xml:space="preserve">
+    <value>パートナーになる</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>よくあるご質問</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>続行</value>
+  </data>
+  <data name="Profile_Text" xml:space="preserve">
+    <value>プロファイル</value>
+  </data>
+  <data name="Program_Details" xml:space="preserve">
+    <value>プログラムの詳細</value>
+  </data>
+  <data name="Toggle_Navigation" xml:space="preserve">
+    <value>ナビゲーションの切り替え</value>
+  </data>
+  <data name="Welcome_To_Partner_Portal" xml:space="preserve">
+    <value>パートナー ポータルへようこそ!</value>
+  </data>
+  <data name="Required_Field_Text" xml:space="preserve">
+    <value>これは必須フィールドです</value>
+  </data>
+  <data name="Create_This_Thread" xml:space="preserve">
+    <value>このスレッドを作成します</value>
+  </data>
+  <data name="Post_This_Reply" xml:space="preserve">
+    <value>この返信を投稿</value>
+  </data>
+  <data name="Phone_Number_Required_Field_Validation_Message" xml:space="preserve">
+    <value>[電話番号] は必須フィールドです。</value>
+  </data>
+  <data name="Sort_Ascending_Order" xml:space="preserve">
+    <value>昇順に並べ替える場合にアクティブにします</value>
+  </data>
+  <data name="Sort_Descending_Order" xml:space="preserve">
+    <value>降順に並べ替える場合にアクティブにします</value>
+  </data>
+  <data name="Unexpected_Error_Occurred" xml:space="preserve">
+    <value>予期しないエラーが発生しました。</value>
+  </data>
+  <data name="Ratings_DefaultText" xml:space="preserve">
+    <value>評価</value>
+  </data>
+  <data name="Browse_The_KB" xml:space="preserve">
+    <value>サポート情報の参照</value>
+  </data>
+  <data name="CommunityPortal_Welcome" xml:space="preserve">
+    <value>コミュニティ ポータルへようこそ!</value>
+  </data>
+  <data name="CustomerPortal_Welcome" xml:space="preserve">
+    <value>顧客のセルフ サービス ポータルへようこそ!</value>
+  </data>
+  <data name="EmployeeSelfServicePortal_Welcome" xml:space="preserve">
+    <value>従業員セルフサービス ポータルへようこそ!</value>
+  </data>
+  <data name="Create_Case_DefaultText" xml:space="preserve">
+    <value>サポート案件の作成</value>
+  </data>
+  <data name="Need_More_Help" xml:space="preserve">
+    <value>詳細なヘルプ</value>
+  </data>
+  <data name="Popular_Topics" xml:space="preserve">
+    <value>よく読まれているトピック</value>
+  </data>
+  <data name="Related_Categories_DefaultText" xml:space="preserve">
+    <value>関連カテゴリ</value>
+  </data>
+  <data name="Get_Help_DefaultText" xml:space="preserve">
+    <value>ヘルプの参照</value>
+  </data>
+  <data name="Provisioning_Main_Header" xml:space="preserve">
+    <value>設定中です...</value>
+  </data>
+  <data name="Provisioning_Message" xml:space="preserve">
+    <value>この処理には時間がかかる場合があります。</value>
+  </data>
+  <data name="Provisioning_Title" xml:space="preserve">
+    <value>ポータルの準備中</value>
+  </data>
+  <data name="CKEditor_Alert_Danger_Style" xml:space="preserve">
+    <value>通知 (危険)</value>
+  </data>
+  <data name="CKEditor_Alert_Info_Style" xml:space="preserve">
+    <value>通知 (情報)</value>
+  </data>
+  <data name="CKEditor_Alert_Success_Style" xml:space="preserve">
+    <value>通知 (成功)</value>
+  </data>
+  <data name="CKEditor_Alert_Warning_Style" xml:space="preserve">
+    <value>通知 (警告)</value>
+  </data>
+  <data name="CKEditor_Label_Danger_Style" xml:space="preserve">
+    <value>ラベル (危険)</value>
+  </data>
+  <data name="CKEditor_Label_Info_Style" xml:space="preserve">
+    <value>ラベル (情報)</value>
+  </data>
+  <data name="CKEditor_Label_Style" xml:space="preserve">
+    <value>ラベル</value>
+  </data>
+  <data name="CKEditor_Label_Success_Style" xml:space="preserve">
+    <value>ラベル (成功)</value>
+  </data>
+  <data name="CKEditor_Label_Warning_Style" xml:space="preserve">
+    <value>ラベル (警告)</value>
+  </data>
+  <data name="CKEditor_Page_Header_style" xml:space="preserve">
+    <value>ページ ヘッダー</value>
+  </data>
+  <data name="CKEditor_Well_Large_Style" xml:space="preserve">
+    <value>Well (大)</value>
+  </data>
+  <data name="CKEditor_Well_Small_Style" xml:space="preserve">
+    <value>Well (小)</value>
+  </data>
+  <data name="CKEditor_Well_Style" xml:space="preserve">
+    <value>Well</value>
+  </data>
+  <data name="CKEditor_Code_Block_Style" xml:space="preserve">
+    <value>コード ブロック</value>
+  </data>
+  <data name="CKEditor_Code_Style" xml:space="preserve">
+    <value>コード</value>
+  </data>
+  <data name="Find_Your_Product" xml:space="preserve">
+    <value>製品の検索</value>
+  </data>
+  <data name="Invalid_Email_Message" xml:space="preserve">
+    <value>”電子メール” フィールドに有効な電子メール アドレスが入力されていません。</value>
+  </data>
+  <data name="InvitationCode_Required_Exception" xml:space="preserve">
+    <value>[招待コード] は必須フィールドです。</value>
+  </data>
+  <data name="StarterPortal_Welcome_Text" xml:space="preserve">
+    <value>カスタム ポータルへようこそ!</value>
+  </data>
+  <data name="Last_Post_In_Thread" xml:space="preserve">
+    <value>スレッド内の最新の投稿</value>
+  </data>
+  <data name="Opportunity_Product_Price_List_Required" xml:space="preserve">
+    <value>製品を追加する前に、価格表を選択し、変更を保存する必要があります。</value>
+  </data>
+  <data name="FileUpload_Browse_Button_Text" xml:space="preserve">
+    <value>ファイルの添付...</value>
+  </data>
+  <data name="InvalidEntitlementContacts" xml:space="preserve">
+    <value>指定された取引先担当者は、選択された顧客に関連付けられていません。</value>
+  </data>
+  <data name="InvalidEntitlementForSelectedCustomerOrProduct" xml:space="preserve">
+    <value>指定された顧客、取引先担当者、または製品に属するアクティブな権利を選択してから、やり直してください。</value>
+  </data>
+  <data name="InvalidPrimaryContactBasedOnAccount" xml:space="preserve">
+    <value>指定された取引先担当者は、顧客として選択された取引先企業に属していません。選択された取引先企業に属している取引先担当者を指定してから、やり直してください。</value>
+  </data>
+  <data name="InvalidPrimaryContactBasedOnContact" xml:space="preserve">
+    <value>指定された取引先担当者は、顧客フィールドに指定された取引先担当者に属していません。取引先担当者フィールドから値を削除するか、選択された顧客に関連付けられた取引先担当者を選択してから、やり直してください。</value>
+  </data>
+  <data name="Licenses" xml:space="preserve">
+    <value>ライセンス</value>
+  </data>
+  <data name="License_Expire_In_30_Days" xml:space="preserve">
+    <value>このライセンスは、あと 30 日未満で有効期限切れとなります。</value>
+  </data>
+  <data name="License_Id" xml:space="preserve">
+    <value>ライセンス ID</value>
+  </data>
+  <data name="License_Name" xml:space="preserve">
+    <value>ライセンス名</value>
+  </data>
+  <data name="License_Status" xml:space="preserve">
+    <value>ライセンスの状態</value>
+  </data>
+  <data name="Liquid_Template_Ad_Template_Description" xml:space="preserve">
+    <value>広告を表示します</value>
+  </data>
+  <data name="Liquid_Template_Ad_Template_Title" xml:space="preserve">
+    <value>広告テンプレート</value>
+  </data>
+  <data name="Liquid_Template_Poll_Template_Description" xml:space="preserve">
+    <value>アンケートを表示します</value>
+  </data>
+  <data name="Liquid_Template_Poll_Template_Title" xml:space="preserve">
+    <value>アンケート テンプレート</value>
+  </data>
+  <data name="Liquid_Template_Random_Ad_Description" xml:space="preserve">
+    <value>指定の配置からランダムな広告を表示します</value>
+  </data>
+  <data name="Liquid_Template_Random_Ad_Title" xml:space="preserve">
+    <value>ランダム広告</value>
+  </data>
+  <data name="Liquid_Template_Random_Poll_Description" xml:space="preserve">
+    <value>指定の配置からランダムなアンケートを表示します</value>
+  </data>
+  <data name="Liquid_Template_Random_Poll_Title" xml:space="preserve">
+    <value>ランダム アンケート</value>
+  </data>
+  <data name="Unapproved_Comment_Label" xml:space="preserve">
+    <value>未承認</value>
+  </data>
+  <data name="Unit_Id_Missing" xml:space="preserve">
+    <value>ユニット ID がありません。</value>
+  </data>
+  <data name="You_Can_Only_Add_Active_Products" xml:space="preserve">
+    <value>アクティブな製品のみを追加できます。</value>
+  </data>
+  <data name="Toggle_Filter_Display_Name" xml:space="preserve">
+    <value>関連する {0} でフィルター</value>
+  </data>
+  <data name="Home_DefaultText" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
+  <data name="Found_My_Answer" xml:space="preserve">
+    <value>回答が見つかりました</value>
+  </data>
+  <data name="Marked_As_Your_Answer" xml:space="preserve">
+    <value>自分の回答としてマーク</value>
+  </data>
+  <data name="Blogs_DefaultText" xml:space="preserve">
+    <value>ブログ</value>
+  </data>
+  <data name="Events_DefaultText" xml:space="preserve">
+    <value>イベント</value>
+  </data>
+  <data name="Forums_DefaultText" xml:space="preserve">
+    <value>フォーラム</value>
+  </data>
+  <data name="DropDown_DefaultText" xml:space="preserve">
+    <value>DropDown</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新規</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>承諾済み</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>却下</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>非アクティブ</value>
+  </data>
+  <data name="Portal_DefaultText" xml:space="preserve">
+    <value>ポータル</value>
+  </data>
+  <data name="View_More" xml:space="preserve">
+    <value>さらに表示</value>
+  </data>
+  <data name="Join_Us" xml:space="preserve">
+    <value>ぜひご参加ください</value>
+  </data>
+  <data name="Community_DefaultText" xml:space="preserve">
+    <value>コミュニティ</value>
+  </data>
+  <data name="Most_Popular" xml:space="preserve">
+    <value>大人気</value>
+  </data>
+  <data name="Top_Rated_Articles" xml:space="preserve">
+    <value>評価の高い記事</value>
+  </data>
+  <data name="Contact_Us" xml:space="preserve">
+    <value>お問い合わせ先</value>
+  </data>
+  <data name="Discover_Contoso" xml:space="preserve">
+    <value>Contoso の検出</value>
+  </data>
+  <data name="My_Subscriptions_Heading" xml:space="preserve">
+    <value>自分のサブスクリプション</value>
+  </data>
+  <data name="IdeaForum_From" xml:space="preserve">
+    <value>開始:</value>
+  </data>
+  <data name="IdeaForum_Status" xml:space="preserve">
+    <value>状態:</value>
+  </data>
+  <data name="IdeaForum_Vote" xml:space="preserve">
+    <value>投票</value>
+  </data>
+  <data name="Case_Deflection_Suggested_Topics" xml:space="preserve">
+    <value>推奨トピック</value>
+  </data>
+  <data name="Blog_Posts_Label" xml:space="preserve">
+    <value>ブログの投稿</value>
+  </data>
+  <data name="Forum_Posts_Label" xml:space="preserve">
+    <value>フォーラムの投稿</value>
+  </data>
+  <data name="Composite_Control_Done" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="ForumPost_AnsweredQuestion_Text" xml:space="preserve">
+    <value>回答</value>
+  </data>
+  <data name="Validation_PartialUrl_Suffix" xml:space="preserve">
+    <value>部分 URL に HTTP は使用できません</value>
+  </data>
+  <data name="Old_New_Password_Should_Not_Match_Exception" xml:space="preserve">
+    <value>新しいパスワードを前のパスワードと同じにすることはできません。</value>
+  </data>
+  <data name="Facet_Type_No_Handler_Defined_Exception" xml:space="preserve">
+    <value>このファセットの種類のハンドラーは定義されていません。</value>
+  </data>
+  <data name="Facet_Rating_And_Up" xml:space="preserve">
+    <value>以上</value>
+  </data>
+  <data name="Search_Results" xml:space="preserve">
+    <value>検索結果</value>
+  </data>
+  <data name="User_Avatar_Label" xml:space="preserve">
+    <value>{0} グラフィック/画像</value>
+    <comment>Placeholder stores Username</comment>
+  </data>
+  <data name="Label_For_ActionLink" xml:space="preserve">
+    <value>アクション メニュー</value>
+  </data>
+  <data name="CkEditor_iFrame_Title" xml:space="preserve">
+    <value>指定されたフィールドの種類を持つ、コンテンツが必要なフィールドです。</value>
+  </data>
+  <data name="CreateRelatedRecord_Text" xml:space="preserve">
+    <value>関連レコードの作成</value>
+  </data>
+  <data name="Address_Line_3_DefaultText" xml:space="preserve">
+    <value>住所 3</value>
+  </data>
+  <data name="Sorting_Rating" xml:space="preserve">
+    <value>平均ユーザー評価</value>
+  </data>
+  <data name="Sorting_Relevance" xml:space="preserve">
+    <value>関連性</value>
+  </data>
+  <data name="Sorting_ViewCount" xml:space="preserve">
+    <value>表示回数</value>
+  </data>
+  <data name="Facet_RecordType" xml:space="preserve">
+    <value>レコードの種類</value>
+  </data>
+  <data name="Facet_DateModified" xml:space="preserve">
+    <value>修正日</value>
+  </data>
+  <data name="Pagination_Current_Page" xml:space="preserve">
+    <value>現在のページ {0}</value>
+  </data>
+  <data name="Pagination_First_Page" xml:space="preserve">
+    <value>最初のページ</value>
+  </data>
+  <data name="Pagination_Last_Page" xml:space="preserve">
+    <value>最後のページ</value>
+  </data>
+  <data name="Pagination_Next_Page" xml:space="preserve">
+    <value>次のページ</value>
+  </data>
+  <data name="Pagination_Page" xml:space="preserve">
+    <value>{0} ページ</value>
+  </data>
+  <data name="Pagination_Previous_Page" xml:space="preserve">
+    <value>前のページ</value>
+  </data>
+  <data name="Facet_Show_Less" xml:space="preserve">
+    <value>簡易表示</value>
+  </data>
+  <data name="Facet_Show_More" xml:space="preserve">
+    <value>詳細表示</value>
+  </data>
+  <data name="Facet_All" xml:space="preserve">
+    <value>すべて</value>
+  </data>
+  <data name="Facet_Rating" xml:space="preserve">
+    <value>評価</value>
+  </data>
+  <data name="Facet_Today" xml:space="preserve">
+    <value>今日</value>
+  </data>
+  <data name="Facet_Past_Week" xml:space="preserve">
+    <value>過去 1 週間</value>
+  </data>
+  <data name="Facet_Past_Month" xml:space="preserve">
+    <value>過去 1 か月</value>
+  </data>
+  <data name="Facet_Past_Months_String_Format" xml:space="preserve">
+    <value>過去 {0} か月</value>
+  </data>
+  <data name="Facet_Rating_Four_And_Up" xml:space="preserve">
+    <value>星 4 つ以上</value>
+  </data>
+  <data name="Facet_Rating_One_And_Up" xml:space="preserve">
+    <value>星 1 つ以上</value>
+  </data>
+  <data name="Facet_Rating_Three_And_Up" xml:space="preserve">
+    <value>星 3 つ以上</value>
+  </data>
+  <data name="Facet_Rating_Two_And_Up" xml:space="preserve">
+    <value>星 2 つ以上</value>
+  </data>
+  <data name="Facet_Products" xml:space="preserve">
+    <value>製品</value>
+  </data>
+  <data name="Sorting_Options" xml:space="preserve">
+    <value>並べ替えのオプション</value>
+  </data>
+  <data name="Language_Label" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="Content_Language_Label" xml:space="preserve">
+    <value>言語コンテンツ</value>
+  </data>
+  <data name="Visualization_AxisTitle" xml:space="preserve">
+    <value>{0} ({1})</value>
+    <comment>{NumberedPlaceholder="{0}", "{1}"} Placeholder 0 is the name of an aggregate e.g Sum, Avg etc. Placeholder 1 is a display name of a column. Example: "Avg(Est. Revenue)". [Category="Application Infrastructure"]</comment>
+  </data>
+  <data name="Visualization_AxisTitle_AVG" xml:space="preserve">
+    <value>平均</value>
+  </data>
+  <data name="Visualization_AxisTitle_COUNT" xml:space="preserve">
+    <value>件数:すべて</value>
+  </data>
+  <data name="Visualization_AxisTitle_COUNTCOLUMN" xml:space="preserve">
+    <value>件数:空以外</value>
+  </data>
+  <data name="Visualization_AxisTitle_CurrencySymbol" xml:space="preserve">
+    <value>{0} ({1})</value>
+    <comment>{NumberedPlaceholder="{0}", "{1}"} Placeholder 0 is the label for the measure, Placeholder 1 is the currency symbol. Example: "SUM(Est. Revenue) ($)" [Category="Application Infrastructure"]</comment>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping" xml:space="preserve">
+    <value>{0} ({1})</value>
+    <comment>{NumberedPlaceholder="{0}", "{1}"} Placeholder 0 is the name of dategrouping e.g Day, Month etc. Placeholder 1 is a display name of a column. Example: "Day(Created On)". [Category="Application Infrastructure"]</comment>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_DAY" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_FISCALPERIOD" xml:space="preserve">
+    <value>会計期間</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_FISCALYEAR" xml:space="preserve">
+    <value>会計年度</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_MONTH" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_QUARTER" xml:space="preserve">
+    <value>四半期</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_WEEK" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_YEAR" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="Visualization_AxisTitle_MAX" xml:space="preserve">
+    <value>最大</value>
+  </data>
+  <data name="Visualization_AxisTitle_MIN" xml:space="preserve">
+    <value>最小</value>
+  </data>
+  <data name="Visualization_AxisTitle_NONE" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="Visualization_AxisTitle_SUM" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="Visualization_Chart_NoData_Message" xml:space="preserve">
+    <value>使用できるデータがありません。</value>
+  </data>
+  <data name="Visualization_EmptyAxisLabel" xml:space="preserve">
+    <value>(空)</value>
+  </data>
+  <data name="Visualization_SubjectEllipsesText" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="Visualization_Year_Quarter" xml:space="preserve">
+    <value>四半期</value>
+  </data>
+  <data name="Visualization_Year_Week" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="Visualization_Chart_Loading_Message" xml:space="preserve">
+    <value>読み込んでいます...</value>
+  </data>
+  <data name="Partner_Dashboard_Title" xml:space="preserve">
+    <value>ダッシュボード</value>
+  </data>
+  <data name="Update_Upload_File_Label" xml:space="preserve">
+    <value>ファイルのアップロード (既存のファイル コンテンツを置き換えます)</value>
+  </data>
+  <data name="Forum_Thread_Is_Answered" xml:space="preserve">
+    <value>このスレッドは回答済みとしてマークされています</value>
+  </data>
+  <data name="Forum_Thread_Requires_Answer" xml:space="preserve">
+    <value>このスレッドに回答が必要</value>
+  </data>
+  <data name="Receive_notifications" xml:space="preserve">
+    <value>このスレッドの新しい投稿について通知を受け取る</value>
+  </data>
+  <data name="Do_not_Receive_notifications" xml:space="preserve">
+    <value>このスレッドの新しい投稿について通知を受け取らない</value>
+  </data>
+  <data name="Language_Label_With_Language" xml:space="preserve">
+    <value> - 言語: {0}</value>
+    <comment>{0} is the language to display with the label</comment>
+  </data>
+  <data name="Narrator_Label_For_Composite_Controls" xml:space="preserve">
+    <value>Enter を押して編集できます。</value>
+  </data>
+  <data name="Crm_Connection_Error_Page_Text" xml:space="preserve">
+    <value>ポータルに Dynamics 365 組織を接続できません。Dynamics 365 組織にアクセスできないか、ポータルと Dynamics 365 の間のバインドが正しくありません。サポートが必要な場合は、システム管理者に問い合わせてください。エラー ID# {0} </value>
+  </data>
+  <data name="Page_500_Crm_Connection_Error" xml:space="preserve">
+    <value>つながりエラー</value>
+  </data>
+  <data name="CaptchaAudioLinkButtonText" xml:space="preserve">
+    <value>オーディオ コードの再生</value>
+  </data>
+  <data name="CaptchaDefaultErrorMessage" xml:space="preserve">
+    <value>CAPTCHA が正しくありません。もう一度やり直してください。</value>
+  </data>
+  <data name="CaptchaLinkButtonText" xml:space="preserve">
+    <value>新しいイメージの生成</value>
+  </data>
+  <data name="CaptchaTextBoxLabel" xml:space="preserve">
+    <value>イメージのコードを入力します</value>
+  </data>
+  <data name="InvalidEntitlementAssociationToCase" xml:space="preserve">
+    <value>この権利には利用可能な期間が存在しないため、サポート案件は作成できません。</value>
+  </data>
+  <data name="Validation_ChildPage_PartialUrl_NotSlash_Message" xml:space="preserve">
+    <value>子ページの部分 URL を '/' にすることはできません。文字、数字、ハイフンまたはアンダースコアだけを使用した有効な部分 URL を入力してください</value>
+  </data>
+  <data name="Validation_HomePage_PartialUrl_NotSlash_Message" xml:space="preserve">
+    <value>Web サイトのホーム ページにある [部分 URL] フィールドの値には、/ だけを使用できます。それ以外の値を使用すると、ポータルに問題が発生します。</value>
+  </data>
+  <data name="Validation_ChildPage_PartialUrl_NotUnique_Message" xml:space="preserve">
+    <value>同じ部分 URL を持つ Web ページが既に存在します。</value>
+  </data>
+  <data name="Related_Attachments_Defaulttext" xml:space="preserve">
+    <value>関連する添付ファイル</value>
+  </data>
+  <data name="Account_Register_Registration_Disabled_Message" xml:space="preserve">
+    <value>登録が無効になりました</value>
+  </data>
+  <data name="MaxLength_Validation_Error" xml:space="preserve">
+    <value>{0} が最大の長さである {1} 文字を超えています。</value>
+  </data>
+  <data name="External_Authentication_Failed" xml:space="preserve">
+    <value>サインインが失敗しました。</value>
+  </data>
+  <data name="External_Authentication_Failed_Access_Denied" xml:space="preserve">
+    <value>サインインがキャンセルされました。</value>
+  </data>
+  <data name="Configuration_Disclaimer" xml:space="preserve">
+    <value>このアプリケーションを構成すると、外部システムとのデータの共有に同意したことになります。外部システムから Microsoft Dynamics 365 Online からインポートしたデータには、Microsoft のプライバシーに関する声明が適用されす ({0}こちら{1}からアクセスできます)。{2}詳細{1}については、機能の技術文書を参照してください。</value>
+    <comment>Placeholders will be replaced with HTML a tags and appropriate hyperlinks at runtime.</comment>
+  </data>
+</root>

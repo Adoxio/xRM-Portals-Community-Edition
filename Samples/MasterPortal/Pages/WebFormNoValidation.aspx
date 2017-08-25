@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPages/WebForms.master" ValidateRequest="false" AutoEventWireup="true" CodeBehind="WebFormNoValidation.aspx.cs" Inherits="Site.Pages.WebFormNoValidation" %>

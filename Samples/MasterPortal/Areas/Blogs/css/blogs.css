@@ -1,0 +1,44 @@
+﻿
+.blog-post {
+	margin-bottom: 40px;
+}
+
+.blog-post .title {
+	margin: 0;
+}
+
+.blog-post .page-copy {
+	margin-bottom: 20px;
+}
+
+.blog-post-heading .user-avatar,
+.blog-post .user-avatar {
+	display: block;
+	float: right;
+	margin-left: 10px;
+}
+
+.blog-post .metadata {
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+.blog-post .metadata .rating {
+	float: right;
+	margin-left: 10px;
+}
+
+.blog-post .metadata .rating .rating-stars {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.blog-post .tags {
+	list-style-type: none;
+	margin: 20px 0;
+	padding: 0;
+}
+
+.blog-post .tags li {
+	display: inline;
+}

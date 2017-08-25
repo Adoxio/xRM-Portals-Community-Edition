@@ -1,0 +1,436 @@
+﻿/* 311 Home Page
+------------------------------------------------------------*/
+
+.service311 a.service {
+	-webkit-box-shadow: none;
+	    -ms-box-shadow: none;
+	        box-shadow: none;
+	color: #333333;
+	display: block;
+	text-decoration: none;
+	padding-left: 9px;
+	padding-right: 9px;
+	margin-bottom: 20px;
+	height: 120px;
+}
+
+.service311 a.service img {
+	height: 32px;
+	margin-bottom: 20px;
+	width: 32px;
+}
+
+.service311 a.service h6 {
+	font-weight: bold;
+}
+
+.service311 a.service:hover, #service311 a.service:focus {
+    color: #3A87AD;
+}
+
+.service311 a.service:hover, #service311 a.service:focus {
+	background-color: #D9EDF7;
+	border-color: #BCE8F1;
+	-webkit-box-shadow: 0 0 4px #BCE8F1;
+	    -ms-box-shadow: 0 0 4px #BCE8F1;
+	        box-shadow: 0 0 4px #BCE8F1;
+	-ms-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Service Requests Page
+------------------------------------------------------------*/
+
+#service-requests li h4 {
+	margin-top: 0;
+}
+
+#service-requests li p:last-child {
+	margin-bottom: 0;
+}
+
+/* Service Request Status Page
+------------------------------------------------------------*/
+
+#service-request-status table {
+	border: none;
+}
+
+#service-request-status td {
+	border: none;
+	line-height: 2em;
+}
+
+#service-request-status td:first-child {
+	font-weight: bold;
+	text-align: right;
+}
+
+#service-request-status td:last-child {
+	padding: 0 0 0 5px;
+}
+
+/* Service Requests Map Page
+------------------------------------------------------------*/
+
+#datesFilter {
+	display: none;
+}
+
+#mapContainer {
+	clear: both;
+	margin-bottom: 20px;
+}
+
+#serviceMap {
+	position: relative;
+	min-height: 100%;
+	border: solid 2px #EEEEEE;
+}
+
+#serviceMap.mobile {
+	position: absolute;
+	width: 85%;
+	height: 100%;
+}
+
+#ui-datepicker-div {
+	font-size: 11px;
+}
+
+.legend {
+	width: 33%;
+	float: left;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+	.legend {
+		width: 100%;
+	}
+}
+
+.legend img {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.legend h6 {
+	margin: 0;
+	line-height: 20px;
+	padding-left: 24px;
+}
+
+/* Infobox */
+
+.infobox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	width: 250px;
+}
+
+.infobox .title {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.infobox-content {
+	font-size: 11px;
+	color: #000;
+	text-shadow: 0 0 2px #ccc;
+	padding: 4px 8px;
+	border: 1px solid rgba(25,25,25,0.25);
+	background-color: #fff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0 0 3px #555;
+	-webkit-box-shadow: 0 0 3px #555;
+	-moz-box-shadow: 0 0 3px #555;
+}
+
+.infobox-content p {
+	margin: 0 0 5px 0;
+}
+
+.infobox.top {
+	padding-bottom: 5px;
+}
+
+.infobox.bottom {
+	padding-top: 5px;
+}
+
+.infobox.right {
+	padding-left: 5px;
+}
+
+.infobox.left {
+	padding-right: 5px;
+}
+
+.infobox-arrow, .infobox-arrow-inner {
+	position: absolute;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 12px;
+	height: 0;
+	width: 0;
+}
+
+.infobox.top .infobox-arrow {
+	margin-top: 96px;
+	margin-left: 38px;
+	border-top-color: #fff;
+	border-top-color: rgba(25,25,25,0.2);
+}
+
+.infobox.bottom .infobox-arrow {
+	margin-top: -23px;
+	margin-left: 38px;
+	border-bottom-color: #fff;
+	border-bottom-color: rgba(25,25,25,0.2);
+}
+
+.infobox.right .infobox-arrow {
+	margin-top: 12px;
+	margin-left: -25px;
+	border-right-color: #fff;
+	border-right-color: rgba(25,25,25,0.2);
+}
+
+.infobox.left .infobox-arrow {
+	margin-top: 16px;
+	margin-left: 200px;
+	border-left-color: #fff;
+	border-left-color: rgba(25,25,25,0.2);
+}
+
+.infobox.top .infobox-arrow-inner {
+	margin-top: -12px;
+	margin-left: -12px;
+	border-top-color: rgb(255,255,255);
+}
+
+.infobox.bottom .infobox-arrow-inner {
+	margin-top: -12px;
+	margin-left: -8px;
+	border-bottom-color: rgb(255,255,255);
+}
+
+.infobox.right .infobox-arrow-inner {
+	margin-top: -12px;
+	margin-left: -8px;
+	border-right-color: rgb(255,255,255);
+}
+
+.infobox.left .infobox-arrow-inner {
+	margin-top: -16px;
+	margin-left: -13px;
+	border-left-color: rgb(255,255,255);
+}
+
+.infobox-content .status {
+	padding: 1px 4px;
+	color: #333;
+	font-weight: bold;
+}
+
+.infobox-content .priority {
+	font-weight: bold;
+}
+
+/* Help Desk (temporary until there is time to clean up)
+------------------------------------------------------------*/
+.cases {
+	margin: 40px 0;
+}
+
+.cases table {
+	margin-bottom: 0;
+}
+
+.cases .controls .create-case {
+	float: right;
+}
+
+.case .case-controls {
+	margin-top: 0;
+}
+
+.case .ticket-number {
+	white-space: nowrap;
+}
+
+.case .case-info {
+	line-height: 40px;
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+.case .case-info .user-avatar {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.case .case-description {
+	margin-bottom: 40px;
+}
+
+.case .resolution + .resolution,
+.case .note + .note {
+	border-top: 1px solid #EEE;
+	padding-top: 19px;
+}
+
+.case .resolution .description,
+.case .note .text,
+.case .note .attachment,
+.case .resolution .metadata,
+.case .note .metadata {
+	margin-bottom: 20px;
+}
+
+.case .resolution .metadata,
+.case .note .metadata {
+	text-align: right;
+}
+
+.case .crmEntityFormView.readonly {
+	padding-left: 0;
+}
+
+.case .crmEntityFormView .cell.picklist-cell .control > span,
+.case .crmEntityFormView .cell.lookup-cell .control > span {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.case .crmEntityFormView .cell input:disabled,
+.case .crmEntityFormView .cell select:disabled {
+	background: none;
+	border: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	padding: 0;
+}
+
+.case .crmEntityFormView.readonly .cell div.info.required label:after {
+	content: none;
+}
+
+.case .crmEntityFormView .cell div.info label {
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	.case .resolution .metadata,
+	.case .note .metadata {
+		text-align: left;
+	}
+
+	.cases .controls .btn,
+	.cases .controls input.btn[type="submit"] {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.case .case-controls,
+	.case .status {
+		float: none;
+		margin-bottom: 20px;
+	}
+	
+	.case .case-controls .btn {
+		display: block;
+		float: none;
+	}
+	
+	.case .case-controls .btn-group {
+		display: block;
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+}
+
+/* Help Desk
+------------------------------------------------------------*/
+.case-deflection .product {
+	margin-bottom: 10px;
+}
+
+.case-deflection .panel-footer .alert:last-child {
+	margin-bottom: 0;
+}
+
+/* Misc.
+------------------------------------------------------------*/
+.commerce-status,
+.commerce-details {
+	margin-bottom: 20px;
+}
+
+.commerce-details .note + .note {
+	border-top: 1px solid #EEE;
+	padding-top: 19px;
+}
+
+.commerce-details .note .metadata,
+.commerce-details .note .text,
+.commerce-details .note .attachment {
+	margin-bottom: 20px;
+}
+
+.commerce-details .note .metadata {
+	text-align: right;
+}
+
+.input-checkbox-inline input[type="checkbox"] {
+	margin: 0;
+}
+
+.input-checkbox-inline label {
+	display: inline-block;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+}
+
+/*********service request panel**/
+
+.serviceheader input:disabled {
+	background-color: white;
+	border: none;
+    color: #4f4b4b;
+	outline:none;
+}
+
+.serviceheader input {
+	background-color: white;
+    border: none;
+    color: #4f4b4b;
+	outline:none;
+}
+
+.serviceheader tr {
+	vertical-align: top;
+}
+
+.serviceheader h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.serviceheader.crmEntityFormView td.cell {
+	vertical-align: top;
+	padding: 0 0 0 20px;
+}
+
+.serviceheader.crmEntityFormView table.tab {
+	margin-bottom: 0;
+}

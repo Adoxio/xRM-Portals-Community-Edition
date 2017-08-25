@@ -1,0 +1,84 @@
+<%@ Master Language="C#" MasterPageFile="~/MasterPages/WebForms.master" AutoEventWireup="true" CodeBehind="Profile.master.cs" Inherits="Site.MasterPages.Profile" %>
+<%@ Import Namespace="Adxstudio.Xrm.Resources" %> 
+<%@ Import Namespace="System.Web.Mvc.Html" %>
+<%@ Import namespace="Adxstudio.Xrm.Web.Mvc.Html" %>
+<%@ Import Namespace="Adxstudio.Xrm.Web.UI.WebForms" %>
+
+<asp:Content ContentPlaceHolderID="Head" runat="server">
+	<asp:ContentPlaceHolder ID="Head" runat="server">
+		<meta name="referrer" content="no-referrer"/>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="Breadcrumbs" runat="server">
+	<asp:ContentPlaceHolder ID="Breadcrumbs" runat="server">
+		<% Html.RenderPartial("Breadcrumbs"); %>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="PageHeader" runat="server">
+	<asp:ContentPlaceHolder ID="PageHeader" runat="server">
+		<crm:CrmEntityDataSource ID="CurrentEntity" DataItem="<%$ CrmSiteMap: Current %>" runat="server" />
+		<div class="page-header">
+			<h1>
+				<adx:Property DataSourceID="CurrentEntity" PropertyName="adx_title,adx_name" EditType="text" runat="server" />
+			</h1>
+		</div>
+		<div class="notifications"></div>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="well">
+				<a title="<%:  Localization.LocalizeFullName(Html.AttributeLiteral(Html.PortalUser(), "firstname"), Html.AttributeLiteral(Html.PortalUser(), "lastname")) %>" aria-label="<%: string.Format(ResourceManager.GetString("User_Avatar_Label"), Html.AttributeLiteral(Html.PortalUser(), "fullname") as string) %>" href="#"><img src="<%: Url.UserImageUrl(Contact) %>" alt="" /></a>
+				&nbsp;
+				<%: Localization.LocalizeFullName(Html.AttributeLiteral(Html.PortalUser(), "firstname"), Html.AttributeLiteral(Html.PortalUser(), "lastname")) %>
+			</div>
+			<%: Html.WebLinksListGroup("Profile Navigation", showDescriptions: false, showImages: true, currentSiteMapNodeCssClass: "active") %>
+            <% if ( !Adxstudio.Xrm.Configuration.PortalSettings.Instance.Ess.IsEss) { %>
+			    <% Html.RenderPartial("ProfileNavbar", ViewData); %>
+            <% } %>
+		</div>
+		<div class="col-md-8">
+			<asp:ContentPlaceHolder ID="MainContent" runat="server">
+				<%: Html.HtmlAttribute("adx_copy", cssClass: "page-copy") %>
+				<% Html.RenderPartial("ProfileMessage", Request["Message"] ?? string.Empty); %>
+				<% if (EmailConfirmationEnabled && !IsEmailConfirmed) { %>
+					<div class="alert alert-info clearfix">
+						<div class="pull-right">
+							<a class="btn btn-info btn-xs" title="<%: Html.SnippetLiteral("Profile/Alert/ConfirmEmailButtonText", ResourceManager.GetString("Confirm_Email_Defaulttext")) %>" href="<%: Url.Action("ConfirmEmailRequest", "Manage", new { area = "Account", region = Region }) %>">
+								<span class="fa fa-envelope-o" aria-hidden="true"></span> <%: Html.SnippetLiteral("Profile/Alert/ConfirmEmailButtonText", ResourceManager.GetString("Confirm_Email_Defaulttext")) %>
+							</a>
+						</div>
+						<span class="fa fa-exclamation-circle" aria-hidden="true"></span> <%: Html.TextSnippet("Profile/EmailConfirmation/WarningText", defaultValue: ResourceManager.GetString("Email_Confirmation_Message"), tagName: "span") %>
+					</div>
+				<% } %>
+				<asp:ContentPlaceHolder ID="EntityControls" runat="server" ViewStateMode="Enabled">
+					<script type="text/javascript">
+						function entityFormClientValidate() {
+							// Custom client side validation. Method is called by the submit button's onclick event.
+							// Must return true or false. Returning false will prevent the form from submitting.
+							return true;
+						}
+						
+						function webFormClientValidate() {
+							// Custom client side validation. Method is called by the next/submit button's onclick event.
+							// Must return true or false. Returning false will prevent the form from submitting.
+							return true;
+						}
+					</script>
+					<adx:WebForm ID="WebFormControl" runat="server" FormCssClass="crmEntityFormView" PreviousButtonCssClass="btn btn-default" NextButtonCssClass="btn btn-primary" SubmitButtonCssClass="btn btn-primary" ClientIDMode="Static" LanguageCode="<%$ SiteSetting: Language Code, 0 %>" PortalName="<%$ SiteSetting: Language Code %>" />
+					<adx:EntityForm ID="EntityFormControl" runat="server" FormCssClass="crmEntityFormView" PreviousButtonCssClass="btn btn-default" NextButtonCssClass="btn btn-primary" SubmitButtonCssClass="btn btn-primary" ClientIDMode="Static" LanguageCode="<%$ SiteSetting: Language Code, 0 %>" PortalName="<%$ SiteSetting: Language Code %>" />
+					<adx:EntityList ID="EntityListControl" runat="server" ListCssClass="table table-striped" DefaultEmptyListText="<%$ ResourceManager:No_Items_To_Display %>" ClientIDMode="Static" LanguageCode="<%$ SiteSetting: Language Code, 0 %>" PortalName="<%$ SiteSetting: Language Code %>" />
+				</asp:ContentPlaceHolder>
+				<asp:ContentPlaceHolder ID="ContentBottom" runat="server"/>
+			</asp:ContentPlaceHolder>
+		</div>
+	</div>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="Scripts" runat="server">
+	<asp:ContentPlaceHolder ID="Scripts" runat="server"/>
+</asp:Content>

@@ -1,0 +1,37 @@
+﻿@using Adxstudio.Xrm.Web.Mvc.Html
+@model IEnumerable<Adxstudio.Xrm.Marketing.IMarketingList>
+
+@{
+	Layout = "~/Areas/Marketing/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Any())
+{
+	<p class="alert alert-success">@Html.Raw(Html.SnippetLiteral("Unsubscribe/Success/SuccessMessage", "You have been successfully removed from the following list(s):"))</p>
+	<table class="table table-responsive table-striped">
+		<thead>
+			<tr>
+				<th><span class="sr-only">Success</span></th>
+				<th>List</th>
+				<th>Purpose</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var list in Model)
+			{
+				<tr>
+					<td><span class="fa fa-check-circle"></span></td>
+					<td>@list.Name</td>
+					<td>@list.Purpose</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+else
+{
+	<p class="alert alert-warning">@Html.Raw(Html.SnippetLiteral("Unsubscribe/Success/RemovedFromNoneMessage", "You have not been removed from any lists."))</p>
+}
+<p>
+	<a href="@Url.Action("ManageSubscriptions", "Marketing", ViewData["LinkRoute"])">@Html.Raw(Html.SnippetLiteral("Unsubscribe/Success/ManageSubscriptionLinkMessage", "Manage More Subscriptions..."))</a>
+</p>

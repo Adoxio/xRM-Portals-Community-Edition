@@ -1,0 +1,162 @@
+﻿#product-image-box img {
+	max-width: 360px;
+	text-align: center;
+}
+
+#product-image-box .thumbnail {
+	margin-bottom: 0;
+}
+
+#carousel a img {
+	width: 50px;
+	height: 50px;
+}
+
+#gallery .elastislide-wrapper {
+	box-shadow: none;
+}
+
+#gallery .elastislide-carousel ul li a img {
+	border: 1px solid #ddd;
+}
+
+#gallery .elastislide-horizontal ul li {
+	margin-right: 5px;
+}
+
+#product-name h1 {
+	margin: 0;
+}
+
+#product-shop {
+	clear: both;
+	vertical-align: middle;
+	margin: 20px 0 20px 0;
+}
+
+#product-shop:after {
+	content: "."; display: block; height: 0; clear: both; visibility: hidden;
+}
+
+#product-extended-info {
+	text-align: left;
+}
+
+#product-extended-info:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#add-to-cart-box {
+	margin: 20px 0;
+}
+
+#add-to-cart-box .form-control {
+	width: 4em;
+}
+
+#social {
+	clear: both;
+}
+
+#product-details {
+	margin-top: 20px;
+}
+
+.nav-product-filter {
+	margin-bottom: 40px;
+}
+
+#product-rating {
+	margin: 10px 10px 0 0;
+	margin-bottom: 5px;
+}
+
+#product-rating div.rateit {
+	height: 16px;
+}
+
+#product-rating .rating-info {
+	line-height: 16px;
+	padding: 0 10px 0 10px;
+	position: absolute;
+}
+
+#product-rating .rating-info span {
+	padding-right: 10px;
+}
+
+/* Reviews */
+
+#create-review-box {
+	margin-bottom: 15px;
+}
+
+.review {
+	margin: 0 0 20px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.review:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+.review .content {
+	margin: 15px 0 0 0;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+.nav-list a .rateit {
+	vertical-align: text-top;
+}
+
+#cancel-review:disabled {
+	color: gold;
+	font-weight: bold;
+}
+
+/* Product Grid
+------------------------------------------------------------*/
+.product-grid {
+	margin-bottom: 0;
+}
+
+.product-grid .thumbnail:hover {
+	text-decoration: none;
+}
+
+.product-grid .product-price {
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+	.product-grid .product-name {
+		line-height: 20px;
+		height: 40px;
+		overflow: hidden;
+	}
+
+	.product-grid .product-price {
+		line-height: 20px;
+		height: 20px;
+		overflow: hidden;
+	}
+
+	.product-grid .thumbnail > img {
+		height: 100px;
+		width: 100px;
+	}
+
+	.product-grid-lg .thumbnail > img {
+		height: 200px;
+		width: 200px;
+	}
+}

@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{051C8E28-130E-49AC-8538-A5E1B58A857E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adxstudio.Xrm.Files</RootNamespace>
+    <AssemblyName>Adxstudio.Xrm.Files</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Adxstudio.Xrm.Files.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\Solutions\MasterPortalSolution\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Build\BuildAssemblyInfo.cs">
+      <Link>BuildAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\css\editable.css" />
+    <EmbeddedResource Include="xrm-adx\images\add.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\attach.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\bell.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\calendar_add.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\cart.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\check2.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\checks.png" />
+    <EmbeddedResource Include="xrm-adx\images\delete.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\delete_faded.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\Discussion.png" />
+    <EmbeddedResource Include="xrm-adx\images\drag_handle.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\edit.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\feed-icon.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\feed.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\feed_add.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\id_card2.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\loader.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\LogoutDoor.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\microsoft-logo.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\next-button.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\note.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\note_add.png" />
+    <EmbeddedResource Include="xrm-adx\images\page_white_edit.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\powered-by-adx.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\PoweredByADX.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\printer.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\Problem.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\Question.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\question_and_answer.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\question_and_answer_16.png" />
+    <EmbeddedResource Include="xrm-adx\images\rel_interstitial_loading.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\RSS.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\signin.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\signout.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\star-empty.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\star-saved.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\star.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\star_yellow.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\step.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\tag_blue.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\tag_blue_add.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\tag_red.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\thumb_down.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\thumb_up.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\tile-2col-sidebar250.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\Title-Bar.gif" />
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_communityforum.js" />
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_event.js" />
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_webfile.js" />
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_weblinkset.js" />
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_webpage.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Adxstudio.Xrm.Files.snk" />
+    <EmbeddedResource Include="xrm-adx\fonts\adx-icon.eot" />
+    <None Include="Settings.StyleCop" />
+    <None Include="xrm-adx\js\elfinder-1.2\Changelog" />
+    <None Include="xrm-adx\js\elfinder-1.2\README" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\samples\images\key.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\language.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\blockquote.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\navigate_first.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\navigate_last.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\navigate_next.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\navigate_prev.png" />
+    <EmbeddedResource Include="xrm-adx\samples\images\spacer.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\tile-2col-970-sidebar250.gif" />
+    <EmbeddedResource Include="xrm-adx\samples\images\tile-2col-sidebar250b.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_eventschedule.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\entity_form.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\editable.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\samples\images\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\samples\images\ajax-loader-bar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\samples\images\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\attributes\textarea.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\entity.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\ajax-loader.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\asc.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\autocomplete.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\back-h.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\back-v.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\bar-h.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\bar-v.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\bg-h.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\bg-v.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\blankimage.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\button.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\calendar.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\carousel.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\check0.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\check1.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\check2.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\colorpicker.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\container.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\datatable.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\desc.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\dt-arrow-dn.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\dt-arrow-up.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\editor-knob.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\editor-sprite-active.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\editor-sprite.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\editor.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\header_background.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\hue_bg.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\imagecropper.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\layout.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\layout_sprite.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\loading.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\logger.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\menu-button-arrow-disabled.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\menu-button-arrow.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\menu.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\menubaritem_submenuindicator.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\menubaritem_submenuindicator_disabled.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\menuitem_checkbox.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\menuitem_checkbox_disabled.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\menuitem_submenuindicator.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\menuitem_submenuindicator_disabled.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\paginator.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\picker_mask.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\profilerviewer.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\progressbar.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\resize.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\simpleeditor.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\skin.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\slider.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\split-button-arrow-active.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\split-button-arrow-disabled.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\split-button-arrow-focus.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\split-button-arrow-hover.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\split-button-arrow.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\sprite.png" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\tabview.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\treeview-loading.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\treeview-sprite.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\treeview.css" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\wait.gif" />
+    <EmbeddedResource Include="xrm-adx\css\yui-skin-sam-2.9.0\yuitest.css" />
+    <EmbeddedResource Include="xrm-adx\js\yui-2.9.0-combo.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\crmentityformview.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\attribute.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\xrm-postload.js" />
+    <EmbeddedResource Include="xrm-adx\js\xrm-preload.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_shortcut.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\sitemapchildren.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\entity_handler.js" />
+    <EmbeddedResource Include="xrm-adx\js\editable\utilities.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\filebrowser.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\css\filebrowser.css" />
+    <EmbeddedResource Include="xrm-adx\js\editable\attributes\html.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\elfinder.css" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\css\smoothness\jquery-ui-1.8.13.custom.css" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\images\icons-big.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\images\icons-small.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\images\ql.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\images\spinner.gif" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\images\toolbar.png" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\elfinder.full.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\elfinder.min.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.cs.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.de.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.el.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.es.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.fr.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.hu.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.it.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.jp.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.lv.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.nl.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.pl.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.sk.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.th.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.tr.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.uk.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.vi.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\jquery-1.6.1.min.js" />
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\jquery-ui-1.8.13.custom.min.js" />
+    <EmbeddedResource Include="xrm-adx\js\filebrowser.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\crmentityformview-datetime.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\images\hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\datetimepicker.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\cmsentityservice.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_blog.js" />
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_blogpost.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_communityforumthread.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\adx_communityforumpost.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\webform.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\jquery.stackranking.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-icons_2e83ff_256x240.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-icons_454545_256x240.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-icons_888888_256x240.png" />
+    <EmbeddedResource Include="xrm-adx\css\images\ui-icons_cd0a0a_256x240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\jquery-ui-1.10.0.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\images\sitemap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\json2.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\entitylist-map.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\bingmap.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\source_js.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\editable\source_css.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrm-adx\js\elfinder-1.2\js\i18n\elfinder.localization.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\xrmsave\plugin.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\plugin.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\dialog.html" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ace.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-beautify.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-chromevox.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-elastic_tabstops_lite.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-emmet.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-error_marker.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-keybinding_menu.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-language_tools.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-modelist.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-old_ie.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-searchbox.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-settings_menu.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-spellcheck.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-split.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-static_highlight.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-statusbar.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-textarea.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-themelist.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\ext-whitespace.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\keybinding-emacs.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\keybinding-vim.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\LICENSE.txt" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-abap.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-actionscript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-ada.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-apache_conf.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-asciidoc.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-assembly_x86.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-autohotkey.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-batchfile.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-c_cpp.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-c9search.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-cirru.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-clojure.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-cobol.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-coffee.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-coldfusion.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-csharp.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-css.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-curly.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-d.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-dart.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-diff.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-django.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-dot.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-ejs.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-erlang.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-forth.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-ftl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-gherkin.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-glsl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-golang.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-groovy.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-haml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-handlebars.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-haskell.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-haxe.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-html.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-html_completions.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-html_ruby.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-ini.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-jack.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-jade.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-java.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-javascript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-json.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-jsoniq.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-jsp.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-jsx.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-julia.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-latex.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-less.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-liquid.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-lisp.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-livescript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-logiql.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-lsl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-lua.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-luapage.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-lucene.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-makefile.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-markdown.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-matlab.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-mel.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-mushcode.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-mushcode_high_rules.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-mysql.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-nix.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-objectivec.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-ocaml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-pascal.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-perl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-pgsql.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-php.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-plain_text.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-powershell.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-prolog.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-properties.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-protobuf.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-python.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-r.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-rdoc.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-rhtml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-ruby.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-rust.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-sass.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-scad.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-scala.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-scheme.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-scss.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-sh.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-sjs.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-smarty.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-snippets.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-soy_template.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-space.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-sql.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-stylus.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-svg.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-tcl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-tex.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-text.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-textile.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-toml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-twig.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-typescript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-vbscript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-velocity.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-verilog.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-vhdl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-xml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-xquery.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\mode-yaml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\abap.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\actionscript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\ada.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\apache_conf.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\asciidoc.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\assembly_x86.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\autohotkey.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\batchfile.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\c_cpp.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\c9search.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\cirru.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\clojure.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\cobol.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\coffee.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\coldfusion.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\csharp.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\css.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\curly.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\d.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\dart.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\diff.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\django.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\dot.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\ejs.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\erlang.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\forth.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\ftl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\gherkin.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\glsl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\golang.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\groovy.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\haml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\handlebars.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\haskell.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\haxe.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\html.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\html_completions.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\html_ruby.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\ini.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\jack.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\jade.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\java.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\javascript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\json.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\jsoniq.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\jsp.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\jsx.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\julia.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\latex.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\less.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\liquid.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\lisp.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\livescript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\logiql.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\lsl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\lua.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\luapage.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\lucene.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\makefile.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\markdown.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\matlab.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\mel.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\mushcode.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\mushcode_high_rules.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\mysql.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\nix.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\objectivec.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\ocaml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\pascal.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\perl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\pgsql.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\php.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\plain_text.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\powershell.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\prolog.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\properties.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\protobuf.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\python.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\r.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\rdoc.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\rhtml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\ruby.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\rust.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\sass.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\scad.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\scala.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\scheme.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\scss.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\sh.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\sjs.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\smarty.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\snippets.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\soy_template.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\space.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\sql.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\stylus.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\svg.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\tcl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\tex.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\text.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\textile.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\toml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\twig.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\typescript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\vbscript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\velocity.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\verilog.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\vhdl.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\xml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\xquery.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\snippets\yaml.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-ambiance.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-chaos.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-chrome.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-clouds.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-clouds_midnight.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-cobalt.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-crimson_editor.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-dawn.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-dreamweaver.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-eclipse.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-github.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-idle_fingers.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-katzenmilch.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-kr.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-kuroir.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-merbivore.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-merbivore_soft.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-mono_industrial.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-monokai.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-pastel_on_dark.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-solarized_dark.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-solarized_light.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-terminal.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-textmate.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-tomorrow.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-tomorrow_night.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-tomorrow_night_blue.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-tomorrow_night_bright.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-tomorrow_night_eighties.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-twilight.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-vibrant_ink.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\theme-xcode.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\worker-coffee.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\worker-css.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\worker-html.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\worker-javascript.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\worker-json.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\worker-lua.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\worker-php.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\ace\worker-xquery.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\emmet\emmet-min.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\emmet\LICENSE.txt" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\js-beautify\beautify-min.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\ace\js\js-beautify\LICENSE.txt" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\cmstemplate\plugin.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\cmstemplate\dialogs\cmstemplate.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\cmstemplate\dialogs\source.html" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\select2\plugin.js" />
+    <EmbeddedResource Include="xrm-adx\js\ckeditor_plugins\select2\styles\plugin.css" />
+    <EmbeddedResource Include="xrm-adx\js\editable\entities\feedback.js" />
+    <EmbeddedResource Include="xrm-adx\images\contact_photo.png" />
+    <Content Include="xrm-adx\js\elfinder-1.2\css\smoothness\license.txt" />
+    <EmbeddedResource Include="xrm-adx\js\radcaptcha.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\..\Build\StyleCop\StyleCop.Targets" />
+</Project>

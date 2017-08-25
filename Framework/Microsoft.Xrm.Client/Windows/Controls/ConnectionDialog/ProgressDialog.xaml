@@ -1,0 +1,22 @@
+﻿<Window
+	x:Class="Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog.ProgressDialog"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="Progress"
+	ShowInTaskbar="False"
+	ResizeMode="NoResize"
+	WindowStartupLocation="CenterOwner"
+	WindowStyle="ToolWindow"
+	SizeToContent="WidthAndHeight"
+	FontFamily="Verdana">
+	<Grid>
+		<StackPanel Margin="14">
+			<TextBlock HorizontalAlignment="Left" Margin="0" Name="txtCaption" Text="Status" Width="Auto" />
+			<Grid Margin="0,14,0,14">
+				<ProgressBar Height="24" HorizontalAlignment="Center" Margin="0" Name="progressBar" VerticalAlignment="Top" Width="452" Value="0" Maximum="1" />
+				<TextBlock Height="23" HorizontalAlignment="Center" Margin="0" Name="txtPercent" Text="" VerticalAlignment="Top" Padding="4" />
+			</Grid>
+			<Button Content="Cancel" Height="23" HorizontalAlignment="Right" Margin="0" Name="btnCancel" VerticalAlignment="Bottom" Width="75" IsCancel="True" IsDefault="True" Click="btnCancel_Click" />
+		</StackPanel>
+	</Grid>
+</Window>

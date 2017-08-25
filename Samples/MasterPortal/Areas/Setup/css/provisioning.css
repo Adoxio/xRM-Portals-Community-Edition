@@ -1,0 +1,21 @@
+﻿body {
+	font-family: "SegoeUI-Light-final", "Segoe UI Light", "Segoe UI", Segoe, Tahoma, Helvetica, Arial, sans-serif;
+}
+
+.progress-spinner {
+	width: 32px;
+	height: 80px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: auto;
+	background: url(../images/spinner_32x32.gif) no-repeat;
+	background-position: bottom center;
+}
+
+.main-header {
+	color: #444;
+	font-size: 56px;
+	font-weight: lighter;
+	margin-bottom: 20px;
+}

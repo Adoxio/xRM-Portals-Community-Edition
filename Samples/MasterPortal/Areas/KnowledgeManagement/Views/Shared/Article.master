@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="Title"><asp:ContentPlaceHolder ID="Title" runat="server"><%: Html.AttributeLiteral("title") %></asp:ContentPlaceHolder></asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="Head">
+	<link rel="stylesheet" href="<%: Url.Content("~/Areas/KnowledgeManagement/css/article.css") %>">
+	<asp:ContentPlaceHolder ID="Head" runat="server"/>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="ContentHeader">
+	<div class="page-heading">
+		<div class="container">
+			<asp:ContentPlaceHolder ID="ContentHeader" runat="server"/>
+		</div>
+	</div>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="MainContent">
+	<div class="row">
+		<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+		<asp:ContentPlaceHolder ID="SidebarContent" runat="server"/>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12">
+			<asp:ContentPlaceHolder ID="Notes" runat="server"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<asp:ContentPlaceHolder ID="Comments" runat="server"/>
+		</div>
+	</div>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="Scripts">
+</asp:Content>

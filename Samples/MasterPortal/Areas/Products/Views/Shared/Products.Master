@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="Adxstudio.Xrm.Web.Mvc.Html" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="Title"><asp:ContentPlaceHolder ID="Title" runat="server"><%: Html.AttributeLiteral("adx_name") %></asp:ContentPlaceHolder></asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="Head">
+	<link rel="stylesheet" href="<%: Url.Content("~/Areas/Products/css/products.css") %>">
+	<asp:ContentPlaceHolder ID="Head" runat="server"/>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="Scripts">
+	<asp:ContentPlaceHolder ID="Scripts" runat="server"/>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="ContentHeader">
+	<div class="page-heading">
+		<div class="container">
+			<asp:ContentPlaceHolder ID="PageHeader" runat="server"/>
+		</div>
+	</div>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="MainContent">
+	<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+</asp:Content>

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Edit HTML</title>
+		<style type="text/css" media="screen">
+			body {
+				overflow: hidden;
+			}
+
+			#editor {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				border: solid 1px #dadada;
+			}
+		</style>
+		<script src="js/emmet/emmet-min.js"></script>
+		<script src="js/js-beautify/beautify-min.js"></script>
+		<script src="js/ace/ace.js" type="text/javascript"></script>
+		<script src="js/ace/mode-liquid.js" type="text/javascript"></script>
+		<script src="js/ace/ext-emmet.js" type="text/javascript"></script>
+		<script src="js/ace/ext-language_tools.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			window.onDialogEvent = (function () {
+				"use strict";
+
+				var editor, aceEditor;
+
+				function load(evt) {
+					var caretCode = String.fromCharCode(0);
+
+					function beautify(content) {
+						return html_beautify(content, {
+							indent_size: 2
+						});
+					}
+
+					editor = evt.editor;
+
+					ace.require("ace/ext/emmet");
+					ace.require("ace/ext/language_tools");
+
+					aceEditor = ace.edit("editor");
+
+					aceEditor.setShowPrintMargin(false);
+
+					aceEditor.session.setMode("ace/mode/liquid");
+					aceEditor.session.setTabSize(2);
+					aceEditor.session.setUseWrapMode(true);
+
+					aceEditor.setTheme("ace/theme/chrome");
+
+					aceEditor.setOptions({
+						enableBasicAutocompletion: true,
+						enableSnippets: true,
+						enableLiveAutocomplete: false,
+						enableEmmet: true
+					});
+
+					aceEditor.commands.addCommands([
+						{
+							name: "formatDocument",
+							bindKey: { win: "Ctrl-Alt-b", mac: "Command-Option-b" },
+							exec: function (e) {
+								var cursor = e.getCursorPosition();
+								e.setValue(beautify(e.getValue()));
+								e.clearSelection();
+								e.moveCursorToPosition(cursor);
+							}
+						}
+					]);
+
+					var html = beautify(editor.getData());
+
+					aceEditor.setValue(html);
+					aceEditor.clearSelection();
+					aceEditor.focus();
+					aceEditor.navigateFileStart();
+				}
+
+				function ok(evt) {
+					editor.setData(aceEditor.getValue(), {
+						callback: function () {
+							editor.focus();
+						}
+					});
+				}
+
+				return function (evt) {
+					switch (evt.name) {
+					case 'load':
+						load(evt);
+						break;
+					case 'ok':
+						ok(evt);
+						break;
+					case 'cancel':
+						break;
+					}
+				}
+			})();
+		</script>
+	</head>
+	<body>
+		<div id="editor"></div>
+	</body>
+</html>

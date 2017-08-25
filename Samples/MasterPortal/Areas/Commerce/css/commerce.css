@@ -1,0 +1,110 @@
+﻿
+/* Product
+------------------------------------------------------------*/
+.products {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.products h4 {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/* Shopping Cart
+------------------------------------------------------------*/
+.shopping-cart {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.shopping-cart table td {
+	vertical-align: middle;
+}
+
+.shopping-cart table .input-append,
+.shopping-cart table .input-prepend {
+	margin-bottom: 0;
+}
+
+.shopping-cart table .description {
+	width: 100%;
+}
+
+.shopping-cart table .price,
+.shopping-cart table .quantity,
+.shopping-cart table .delete,
+.shopping-cart table .total {
+	padding-right: 40px;
+	white-space: nowrap;
+}
+
+
+.shopping-cart table .quantity input {
+	width: 4em;
+}
+
+.shopping-cart .grand-total {
+	border-top: 1px solid #DDDDDD;
+	font-weight: bold;
+	padding: 19px 0 0 20px;
+}
+
+.shopping-cart .grand-total,
+.shopping-cart .form-actions {
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+/* Shopping Cart Summary
+------------------------------------------------------------*/
+.shopping-cart-summary .total {
+	text-align: right;
+}
+
+.shopping-cart-item {
+	border-bottom: 1px solid #e3e3e3;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.shopping-cart-item .title {
+	padding-left: 0;
+}
+
+.shopping-cart-item .quantity input {
+	width: 30px;
+}
+
+/* Misc.
+------------------------------------------------------------*/
+.commerce-status,
+.commerce-details {
+	margin-bottom: 20px;
+}
+
+.commerce-details .note + .note {
+	border-top: 1px solid #EEE;
+	padding-top: 19px;
+}
+
+.commerce-details .note .metadata,
+.commerce-details .note .text,
+.commerce-details .note .attachment {
+	margin-bottom: 20px;
+}
+
+.commerce-details .note .metadata {
+	text-align: right;
+}
+
+.input-checkbox-inline input[type="checkbox"] {
+	margin: 0;
+}
+
+.input-checkbox-inline label {
+	display: inline-block;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+}

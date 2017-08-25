@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13AFFB25-EB0D-429E-B21D-AB40D7A19D51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adxstudio.Xrm.Resources</RootNamespace>
+    <AssemblyName>Adxstudio.Xrm.Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Adxstudio.Xrm.Resources.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Build\BuildAssemblyInfo.cs">
+      <Link>BuildAssemblyInfo.cs</Link>
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ResourceFiles\strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceManager.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ResourceFiles\strings.ja-JP.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.ko-KR.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.sr-Latn-RS.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.sr-Latn-CS.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.sr-Cyrl-RS.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.sr-Cyrl-CS.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.vi-VN.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.uk-UA.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.tr-TR.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.th-TH.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.sv-SE.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.sl-SI.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.sk-SK.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.ru-RU.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.ro-RO.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.pt-PT.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.pt-BR.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.pl-PL.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.nl-NL.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.nb-NO.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.ms-MY.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.lv-LV.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.lt-LT.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.kk-KZ.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.it-IT.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.id-ID.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.hu-HU.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.hr-HR.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.hi-IN.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.gl-ES.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.fi-FI.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.eu-ES.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.et-EE.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.es-ES.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.el-GR.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.de-DE.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.da-DK.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.cs-CZ.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.ca-ES.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.bg-BG.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.fr-FR.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceFiles\strings.zh-CN.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.zh-HK.resx" />
+    <EmbeddedResource Include="ResourceFiles\strings.zh-TW.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Adxstudio.Xrm.Resources.snk" />
+    <None Include="Settings.StyleCop" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="..\..\..\Build\StyleCop\StyleCop.Targets" />
+</Project>

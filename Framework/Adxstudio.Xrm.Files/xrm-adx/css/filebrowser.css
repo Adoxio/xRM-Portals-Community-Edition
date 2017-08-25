@@ -1,0 +1,31 @@
+﻿
+body {
+	background: #eee;
+	margin: 0;
+	padding: 0;
+}
+
+.el-finder-toolbar {
+	height: 34px;
+}
+
+.el-finder-statusbar {
+	height: 20px;
+}
+
+.el-finder-nav {
+	-moz-min-width: 200px;
+	-ms-min-width: 200px;
+	-o-min-width: 200px;
+	-webkit-min-width: 200px;
+	min-width: 200px;
+	width: 25%;
+}
+
+.el-finder {
+	border: none;
+	border-radius: 0 0 0 0;
+	height: 100%;
+	font-family: Segoe UI, Sans-Serif;
+	font-size: 12px;
+}

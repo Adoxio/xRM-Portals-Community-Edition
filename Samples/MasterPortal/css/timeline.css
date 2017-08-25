@@ -1,0 +1,145 @@
+﻿.entity-timeline
+{
+    padding-left: 0px;
+	padding-right: 0px;
+}
+
+.entity-timeline .note 
+{
+    margin-bottom: 0px;
+    border-top: 0px;
+    padding-top: 0px;
+	padding-left: 0px;
+}
+
+.entity-timeline div:nth-of-type(even).note 
+{
+    background-color:#F5F5F5;
+}
+
+.entity-timeline .note .metadata 
+{
+    text-align:left;    
+}
+
+.entity-timeline .note .row .col-sm-3
+{
+    padding-left:30px;
+    width:20%;
+}
+
+.entity-timeline .note .row .header
+{
+    text-align:left;
+    padding-top: 20px;
+}
+
+.entity-timeline .note .row .header .metadata .postedon,
+.entity-timeline .note .row .header .metadata .createdby,
+.entity-timeline .note .row .header .metadata .modifiedon{
+    text-align:left;
+    font-size: 12px;
+    padding-bottom:10px;
+}
+
+.entity-timeline .note .row .content{
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+
+.entity-timeline .note .row .content .from,
+.entity-timeline .note .row .content .requiredattendees,
+.entity-timeline .note .row .content .cc,
+.entity-timeline .note .row .content .scheduledstartandend
+ {
+    font-size: 15px;
+}
+
+.entity-timeline .note .row .content .subject{
+    font-size: 15px;
+    padding-top:16px;
+    padding-bottom: 16px;
+}
+
+.entity-timeline .note .row .content .description{
+    font-size: 15px;
+    word-wrap:break-word;
+}
+
+.entity-timeline .note-attachment .row .attachment {
+    padding-top: 16px;
+}
+
+.entity-timeline .glyphicon.glyphicon-calendar,
+.entity-timeline .glyphicon.glyphicon-envelope,
+.entity-timeline .glyphicon.glyphicon-earphone,
+.entity-timeline .glyphicon.glyphicon-user
+ {
+    font-size: x-large;
+}
+
+.entity-form .notes-cell .info
+{
+    font-size: 15px;
+	display:none;
+}
+
+.entity-timeline .timelineheader
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.entity-timeline .timelineheader .title
+{
+    font-size: 15px;
+    width : auto;
+	padding-left: 0px;
+}
+
+.entity-timeline .timelineheader .buttoncontainer
+{
+    width : auto;
+    float : right;
+    padding-right: 0px;
+}
+
+.entity-timeline .timelineheader .buttoncontainer .addnote 
+{
+    font-size: 15px;
+	float: right;
+}
+
+.entity-timeline .timelineheader .buttoncontainer .addnote.btn.btn-default
+{
+    white-space : nowrap;
+}
+
+.entity-timeline .notes-empty.message
+{
+	padding-top : 50px;
+}
+
+.entity-timeline .notes-error.message
+{
+	padding-top : 50px;
+}
+
+.entity-timeline .notes-access-denied.message 
+{
+	padding-top : 50px;
+}
+
+.entity-timeline a.loadmore {
+	float: right;
+	display: none;
+}
+
+.entity-timeline .message {
+	display: none;
+}
+
+.entity-timeline .attachment {
+	padding:0px;
+	margin-bottom:0px;
+}

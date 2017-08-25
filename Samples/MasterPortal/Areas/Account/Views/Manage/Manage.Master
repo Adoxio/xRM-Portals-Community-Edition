@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" Inherits="Site.MasterPages.PortalMasterPage" %>
+<%@ Import Namespace="Adxstudio.Xrm.Web.UI.WebForms" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="Head">
+	<link rel="stylesheet" href="<%: Url.Content("~/Areas/Account/css/account.css") %>">
+	<asp:ContentPlaceHolder ID="Head" runat="server">
+		<meta name="referrer" content="same-origin"/>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="ContentContainer" runat="server">
+		<div class="page-heading">
+			<div class="container">
+				<asp:ContentPlaceHolder ID="Breadcrumbs" runat="server"></asp:ContentPlaceHolder>
+				<div class="page-header">
+					<h1>
+						<asp:ContentPlaceHolder ID="PageTitle" runat="server"></asp:ContentPlaceHolder>
+					</h1>
+				</div>
+			</div>
+		</div>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="well">
+						<img src="<%: Url.UserImageUrl(Contact) %>" alt="<%: Localization.LocalizeFullName(Html.AttributeLiteral(Html.PortalUser(), "firstname"), Html.AttributeLiteral(Html.PortalUser(), "lastname")) %>" />
+						&nbsp;
+						<%: Localization.LocalizeFullName(Html.AttributeLiteral(Html.PortalUser(), "firstname"), Html.AttributeLiteral(Html.PortalUser(), "lastname")) %>
+					</div>
+					<%: Html.WebLinksListGroup("Profile Navigation", showDescriptions: false, showImages: true, currentSiteMapNodeCssClass: "active") %>
+					<asp:ContentPlaceHolder ID="ProfileNavbar" runat="server"/>
+				</div>
+				<div class="col-md-8">
+					<asp:ContentPlaceHolder ID="PageCopy" runat="server"/>
+					<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+				</div>
+			</div>
+		</div>
+</asp:Content>

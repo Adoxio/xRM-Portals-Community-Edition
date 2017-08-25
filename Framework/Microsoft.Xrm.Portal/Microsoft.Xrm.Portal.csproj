@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9293D3F9-A840-4D3C-98D9-AA0C7343DF6F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Xrm.Portal</RootNamespace>
+    <AssemblyName>Microsoft.Xrm.Portal</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Release\Microsoft.Xrm.Portal.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Microsoft.Xrm.Portal.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXssLibrary">
+      <HintPath>..\..\packages\AntiXSS.4.3.0\lib\net40\AntiXssLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\..\packages\AntiXSS.4.3.0\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Crm.Sdk.Proxy">
+      <HintPath>..\..\packages\Microsoft.CrmSdk.CoreAssemblies.8.2.0.2\lib\net452\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.6.1.7600.16394\lib\net35\Microsoft.IdentityModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ServiceBus">
+      <HintPath>..\..\DllImports\Microsoft.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xrm.Sdk">
+      <HintPath>..\..\packages\Microsoft.CrmSdk.CoreAssemblies.8.2.0.2\lib\net452\Microsoft.Xrm.Sdk.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Build\BuildAssemblyInfo.cs">
+      <Link>BuildAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Access\OrganizationServiceContextExtensions.cs" />
+    <Compile Include="Cms\CrmEntityInactiveInfo.cs" />
+    <Compile Include="Cms\OrganizationServiceContextExtensions.cs" />
+    <Compile Include="Cms\Security\CmsCrmEntitySecurityProvider.cs" />
+    <Compile Include="Cms\WebsiteSelectors\IWebsiteSelector.cs" />
+    <Compile Include="Cms\WebsiteSelectors\NameWebsiteSelector.cs" />
+    <Compile Include="Configuration\CrmEntitySecurityProviderElement.cs" />
+    <Compile Include="Configuration\DependencyProvider.cs" />
+    <Compile Include="Configuration\DependencyProviderElement.cs" />
+    <Compile Include="Configuration\HttpCachePolicyElement.cs" />
+    <Compile Include="Configuration\IDependencyProvider.cs" />
+    <Compile Include="Configuration\PortalCachePolicyElement.cs" />
+    <Compile Include="Configuration\PortalCrmConfigurationManager.cs" />
+    <Compile Include="Configuration\PortalCrmConfigurationProvider.cs" />
+    <Compile Include="Configuration\PortalCrmSection.cs" />
+    <Compile Include="Configuration\PortalContextElement.cs" />
+    <Compile Include="Configuration\PortalContextElementCollection.cs" />
+    <Compile Include="Configuration\PortalCrmSectionCreatedEventArgs.cs" />
+    <Compile Include="Configuration\WebsiteSelectorElement.cs" />
+    <Compile Include="Core\NoteExtensions.cs" />
+    <Compile Include="Core\OrganizationServiceContextExtensions.cs" />
+    <Compile Include="Core\PriceListExtensions.cs" />
+    <Compile Include="Data\EnumerableExtensions.cs" />
+    <Compile Include="IdentityModel\Configuration\IdentityModelSectionCreatedEventArgs.cs" />
+    <Compile Include="IdentityModel\Configuration\FederationCrmConfigurationManager.cs" />
+    <Compile Include="IdentityModel\Configuration\FederationCrmConfigurationProvider.cs" />
+    <Compile Include="IdentityModel\Configuration\IdentityModelSection.cs" />
+    <Compile Include="IdentityModel\Configuration\IUserRegistrationSettings.cs" />
+    <Compile Include="Configuration\IUserResolutionSettings.cs" />
+    <Compile Include="IdentityModel\Configuration\SignUpAttributeElement.cs" />
+    <Compile Include="IdentityModel\Configuration\SignUpAttributeElementCollection.cs" />
+    <Compile Include="IdentityModel\Configuration\UserRegistrationElement.cs" />
+    <Compile Include="IdentityModel\Extensions.cs" />
+    <Compile Include="IdentityModel\Web\ErrorDetails.cs" />
+    <Compile Include="IdentityModel\Web\Extensions.cs" />
+    <Compile Include="IdentityModel\Web\FederationRequestValidator.cs" />
+    <Compile Include="IdentityModel\Web\Handlers\FederationAuthenticationException.cs" />
+    <Compile Include="IdentityModel\Web\Handlers\FederationAuthenticationHandler.cs" />
+    <Compile Include="IdentityModel\Web\Handlers\LiveIdAccountTransferHandler.cs" />
+    <Compile Include="IdentityModel\Web\Modules\CrmFederationAuthenticationModule.cs" />
+    <Compile Include="IdentityModel\Web\Modules\WSFederationAuthenticationModuleExtensions.cs" />
+    <Compile Include="IPortalContext.cs" />
+    <Compile Include="OrganizationServiceContextFactory.cs" />
+    <Compile Include="PortalContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\MemberInfoExtensions.cs" />
+    <Compile Include="Runtime\ObjectExtensions.cs" />
+    <Compile Include="ServiceModel\Namespaces.cs" />
+    <Compile Include="Threading\HttpSingleton.cs" />
+    <Compile Include="Web\AlwaysInvalidCrmSiteMapNodeValidator.cs" />
+    <Compile Include="Web\AlwaysValidCrmSiteMapNodeValidator.cs" />
+    <Compile Include="Web\ApplicationPath.cs" />
+    <Compile Include="Web\Compilation\ContactExpressionBuilder.cs" />
+    <Compile Include="Web\Compilation\PortalContextExpressionBuilder.cs" />
+    <Compile Include="Web\Compilation\CrmSiteMapExpressionBuilder.cs" />
+    <Compile Include="Web\Compilation\IExpressionBuilderProvider.cs" />
+    <Compile Include="Web\Compilation\SiteSettingExpressionBuilder.cs" />
+    <Compile Include="Web\Compilation\SnippetExpressionBuilder.cs" />
+    <Compile Include="Web\Compilation\TimeZoneExpressionBuilder.cs" />
+    <Compile Include="Web\Compilation\WebSiteExpressionBuilder.cs" />
+    <Compile Include="Web\CompositeCrmSiteMapNodeValidator.cs" />
+    <Compile Include="Web\CrmEntityAttachmentInfo.cs" />
+    <Compile Include="Web\CrmSiteMapNode.cs" />
+    <Compile Include="Web\CrmSiteMapProvider.cs" />
+    <Compile Include="Web\CrmSiteMapProviderBase.cs" />
+    <Compile Include="Web\Data\Services\CmsDataService.cs" />
+    <Compile Include="Web\Data\Services\CmsDataServiceCrmDataContextExtensions.cs" />
+    <Compile Include="Web\Data\Services\CmsDataServiceProvider.cs" />
+    <Compile Include="Web\Data\Services\CmsDataServiceQueryInterceptorProvider.cs" />
+    <Compile Include="Web\Data\Services\ICmsDataServiceProvider.cs" />
+    <Compile Include="Web\Data\Services\ICmsDataServiceQueryInterceptor.cs" />
+    <Compile Include="Web\Data\Services\ICmsDataServiceQueryInterceptorProvider.cs" />
+    <Compile Include="Web\Data\Services\EntityExtensions.cs" />
+    <Compile Include="Web\Data\Services\SingleWebsiteCmsDataServiceQueryInterceptor.cs" />
+    <Compile Include="Web\Data\Services\SiteMapChildInfo.cs" />
+    <Compile Include="Web\Data\Services\TypeExtensions.cs" />
+    <Compile Include="Web\EmbeddedResourceNode.cs" />
+    <Compile Include="Web\Extensions.cs" />
+    <Compile Include="Web\Handlers\EmbeddedResourceHttpHandler.cs" />
+    <Compile Include="Web\Handlers\Utility.cs" />
+    <Compile Include="Web\Providers\PortalValidatorProvider.cs" />
+    <Compile Include="Web\Routing\CompositeEmbeddedResourceRouteHandler.cs" />
+    <Compile Include="Web\Routing\EntityRouteHandler.cs" />
+    <Compile Include="Web\Routing\PortalRouteHandler.cs" />
+    <Compile Include="Web\Routing\EmbeddedResourceRouteHandler.cs" />
+    <Compile Include="Web\EmbeddedResourceAssemblyAttribute.cs" />
+    <Compile Include="Web\EmbeddedResourceFileAttribute.cs" />
+    <Compile Include="Web\EmbeddedResourceVirtualPathProvider.cs" />
+    <Compile Include="Web\Handlers\AnnotationHandler.cs" />
+    <Compile Include="Web\Handlers\CacheInvalidationHandler.cs" />
+    <Compile Include="Web\Handlers\LiveIdWebAuthenticationHandler.cs" />
+    <Compile Include="Web\HiddenFromSiteMapCrmSiteMapNodeValidator.cs" />
+    <Compile Include="Web\ICrmEntityAttachmentInfo.cs" />
+    <Compile Include="Web\ICrmEntityContentFormatter.cs" />
+    <Compile Include="Web\ICrmEntityFileAttachmentProvider.cs" />
+    <Compile Include="Web\ICrmSiteMapNodeValidator.cs" />
+    <Compile Include="Web\Modules\EmbeddedResourceVirtualPathProviderModule.cs" />
+    <Compile Include="Web\Modules\PortalRoutingModule.cs" />
+    <Compile Include="Web\NotesFileAttachmentProvider.cs" />
+    <Compile Include="Web\Providers\ChildNodeValidatorProvider.cs" />
+    <Compile Include="Web\Providers\EntityUrlProvider.cs" />
+    <Compile Include="Web\Providers\EntityUrlProviderExtensions.cs" />
+    <Compile Include="Web\Providers\EntityWebsiteProvider.cs" />
+    <Compile Include="Web\Providers\IEntityUrlProvider.cs" />
+    <Compile Include="Web\Providers\IEntityWebsiteProvider.cs" />
+    <Compile Include="Web\Providers\INodeValidatorProvider.cs" />
+    <Compile Include="Web\Providers\NodeValidatorProvider.cs" />
+    <Compile Include="Web\Providers\SecurityTrimmingValidatorProvider.cs" />
+    <Compile Include="Web\QueryStringCollection.cs" />
+    <Compile Include="Web\Routing\IEmbeddedResourceRouteHandler.cs" />
+    <Compile Include="Web\SecurityCrmSiteMapNodeValidator.cs" />
+    <Compile Include="Web\Security\CrmContactRoleProvider.cs" />
+    <Compile Include="Web\Security\CrmRoleProvider.cs" />
+    <Compile Include="Web\Security\LiveIdMembershipProvider.cs" />
+    <Compile Include="Web\Security\LiveId\LiveIdUser.cs" />
+    <Compile Include="Web\Security\LiveId\WindowsLiveLogin.cs" />
+    <Compile Include="Web\Security\Utility.cs" />
+    <Compile Include="Web\UI\Adapters\FormRewriterControlAdapter.cs" />
+    <Compile Include="Web\UI\AsyncDataSource.cs" />
+    <Compile Include="Web\UI\CmsDataServiceCrmEntityEditingMetadataProvider.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\BooleanControlTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\CellBinding.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\CellContainerTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\CellMetadata.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\CellTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\CellTemplateFactory.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\CompositeTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\CrmEntityFormViewTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\DateTimeControlTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\EmailStringControlTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\EmptyCellTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\EmptyTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\FormXmlCellMetadata.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\FormXmlCellMetadataFactory.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\GridLayoutRowTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\ICellMetadata.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\ICellMetadataFactory.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\ICellTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\ICellTemplateFactory.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\IntegerControlTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\MemoControlTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\MoneyControlTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\PicklistControlTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\RowTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\RowTemplateFactory.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\SavedQueryCellMetadata.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\SavedQueryCellMetadataFactory.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\SavedQueryRowTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\SectionTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\StringControlTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\UnsupportedControlTemplate.cs" />
+    <Compile Include="Web\UI\CrmEntityFormView\XNodeUtility.cs" />
+    <Compile Include="Web\UI\CrmSavedQueryColumnsGenerator.cs" />
+    <Compile Include="Web\UI\ICrmEntityEditingMetadataProvider.cs" />
+    <Compile Include="Web\UI\IEditableCrmEntityControl.cs" />
+    <Compile Include="Web\UI\StateManagedCollection.cs" />
+    <Compile Include="Web\UI\WebControls\CacheItemParameter.cs" />
+    <Compile Include="Web\UI\WebControls\CacheKeyDependency.cs" />
+    <Compile Include="Web\UI\WebControls\CacheParameters.cs" />
+    <Compile Include="Web\UI\WebControls\CrmDataSource.cs" />
+    <Compile Include="Web\UI\WebControls\CrmDataSourceSelectingEventArgs.cs" />
+    <Compile Include="Web\UI\WebControls\CrmDataSourceStatusEventArgs.cs" />
+    <Compile Include="Web\UI\WebControls\CrmDataSourceView.cs" />
+    <Compile Include="Web\UI\WebControls\CrmEntityDataBoundControl.cs" />
+    <Compile Include="Web\UI\WebControls\CrmEntityDataSource.cs" />
+    <Compile Include="Web\UI\WebControls\CrmEntityEditingManager.cs" />
+    <Compile Include="Web\UI\WebControls\CrmEntityFormView.cs" />
+    <Compile Include="Web\UI\WebControls\CrmHyperLink.cs" />
+    <Compile Include="Web\UI\WebControls\CrmListView.cs" />
+    <Compile Include="Web\UI\WebControls\CrmMetadataDataSource.cs" />
+    <Compile Include="Web\UI\WebControls\CrmMetadataDataSourceSelectingEventArgs.cs" />
+    <Compile Include="Web\UI\WebControls\CrmMetadataDataSourceStatusEventArgs.cs" />
+    <Compile Include="Web\UI\WebControls\CrmMetadataDataSourceView.cs" />
+    <Compile Include="Web\UI\WebControls\CrmSiteMapChildView.cs" />
+    <Compile Include="Web\UI\WebControls\DateTimeLiteral.cs" />
+    <Compile Include="Web\UI\WebControls\EditableCrmEntityDataBoundControl.cs" />
+    <Compile Include="Web\UI\WebControls\EntityRightsView.cs" />
+    <Compile Include="Web\UI\WebControls\EntityRightsViewDesigner.cs" />
+    <Compile Include="Web\UI\WebControls\IRegisterClientSideDependenciesProvider.cs" />
+    <Compile Include="Web\UI\WebControls\LiveIdLoginStatus.cs" />
+    <Compile Include="Web\UI\WebControls\Property.cs" />
+    <Compile Include="Web\UI\WebControls\RegisterClientSideDependenciesProvider.cs" />
+    <Compile Include="Web\UI\WebControls\SavedQueryDataSource.cs" />
+    <Compile Include="Web\UI\WebControls\SavedQueryDataSourceView.cs" />
+    <Compile Include="Web\UI\WebControls\SiteEditingManager.cs" />
+    <Compile Include="Web\UI\WebControls\Snippet.cs" />
+    <Compile Include="Web\UI\WebControls\WebControlEditableExtensions.cs" />
+    <Compile Include="Web\UI\WebControls\WebLinkHyperLink.cs" />
+    <Compile Include="Web\UI\WebControls\WebLinks.cs" />
+    <Compile Include="Web\UrlBuilder.cs" />
+    <Compile Include="Web\UrlMapping.cs" />
+    <Compile Include="Web\Utility.cs" />
+    <Compile Include="Web\WebsitePathUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Xrm.Client\Microsoft.Xrm.Client.csproj">
+      <Project>{2CAE24B8-C584-43F6-B299-F93638446C6F}</Project>
+      <Name>Microsoft.Xrm.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Xrm.Portal.Files\Microsoft.Xrm.Portal.Files.csproj">
+      <Project>{444776B5-4638-4800-9466-0E6F19EA9B93}</Project>
+      <Name>Microsoft.Xrm.Portal.Files</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\UI\WebControls\EntityRightsView.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Microsoft.Xrm.Portal.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

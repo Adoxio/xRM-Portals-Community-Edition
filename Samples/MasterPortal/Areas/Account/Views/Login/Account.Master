@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="Head">
+	<% if (Adxstudio.Xrm.Web.CrmSiteMapProvider.IsNonMVC(HttpContext.Current))
+	   { %>
+		<link rel="stylesheet" href="<%: Page.ResolveUrl("~/Areas/Account/css/account.css") %>">
+	<% }
+	   else
+	   {
+	%>
+		<link rel="stylesheet" href="<%: Url.Content("~/Areas/Account/css/account.css") %>">
+	<% } %>
+	<asp:ContentPlaceHolder ID="Head" runat="server"/>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="MainContent">
+	<asp:ContentPlaceHolder ID="AccountNavBar" runat="server"/>
+	<div class="page-content">
+		<asp:ContentPlaceHolder ID="PageCopy" runat="server"/>
+		<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+	</div>
+</asp:Content>

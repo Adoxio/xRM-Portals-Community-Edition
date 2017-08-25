@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Template Source</title>
+		<style type="text/css" media="screen">
+			body {
+				overflow: hidden;
+			}
+
+			#editor {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="editor"></div>
+		<script src="../../ace/js/ace/ace.js" type="text/javascript"></script>
+		<script src="../../ace/js/ace/mode-liquid.js" type="text/javascript"></script>
+		<script>
+			window.cmstemplate = (function (ace) {
+				"use strict";
+
+				var aceEditor = ace.edit("editor");
+
+				aceEditor.setTheme("ace/theme/chrome");
+				aceEditor.setShowPrintMargin(false);
+				aceEditor.setReadOnly(false);
+
+				aceEditor.session.setMode("ace/mode/liquid");
+				aceEditor.session.setTabSize(2);
+				aceEditor.session.setUseWrapMode(true);
+
+				return {
+					on: function (event, handler) {
+						aceEditor.on(event, handler);
+					},
+
+					getSource: function () {
+						return aceEditor.getValue();
+					},
+
+					setSource: function (source) {
+						aceEditor.setValue(source);
+						aceEditor.navigateFileStart();
+					}
+				};
+			}(window.ace));
+		</script>
+	</body>
+</html>

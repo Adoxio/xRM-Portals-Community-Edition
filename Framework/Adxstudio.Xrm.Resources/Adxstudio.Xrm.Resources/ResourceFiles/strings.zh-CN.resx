@@ -1,0 +1,5060 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Generic_Error_Message" xml:space="preserve">
+    <value>发生未知错误。错误 ID 编号 [{0}]</value>
+  </data>
+  <data name="Syntax_Error_In_Tag_And_Valid_Syntax_Is" xml:space="preserve">
+    <value>“{0}”标记中有语法错误 - 有效语法: {0} </value>
+  </data>
+  <data name="Poll_Submission_For_Message" xml:space="preserve">
+    <value>民意调查对象</value>
+  </data>
+  <data name="Subscription_Added_Alert_Message" xml:space="preserve">
+    <value>{0}: 订阅已添加到 {1}</value>
+  </data>
+  <data name="Adxstudio_Portals" xml:space="preserve">
+    <value>门户</value>
+  </data>
+  <data name="Default_Search_Provider_Not_Found" xml:space="preserve">
+    <value>找不到默认搜索提供程序。</value>
+  </data>
+  <data name="Workflow_Executed_Successfully_Message" xml:space="preserve">
+    <value>已成功执行工作流 {0}。</value>
+  </data>
+  <data name="Entity_Permissions_Have_Not_Been_Defined_Message" xml:space="preserve">
+    <value>未定义实体权限。无法完成您的请求。</value>
+  </data>
+  <data name="ADX_View_Attribute_On_Entity_List_Contains_Invalid_Data_Exception" xml:space="preserve">
+    <value>实体列表(adx_entitylist)上的视图(adx_view)属性包含无效的数据。它应包含由已保存查询记录的有效唯一标识符组成的逗号分隔列表。</value>
+  </data>
+  <data name="Could_Not_Find_Workflow_With_Name_And_Target_EntityName_Message" xml:space="preserve">
+    <value>找不到名称为 {0} 并且目标实体名称为 {1} 的工作流。</value>
+  </data>
+  <data name="Extension_Method_Expected_IsDifferent_Exception" xml:space="preserve">
+    <value>扩展方法需要 {0} 类型的实体对象，但为其传递了 {1} 类型的实体对象。</value>
+  </data>
+  <data name="Invalid_Padding_Exception" xml:space="preserve">
+    <value>边距无效</value>
+  </data>
+  <data name="Note_Created_On_DateTime_By_Message" xml:space="preserve">
+    <value>注释在 {0} 由 {1} [{2}:{3}] 创建</value>
+  </data>
+  <data name="Note_Created_On_Message" xml:space="preserve">
+    <value>注释创建于 {0}</value>
+  </data>
+  <data name="Timeline_Modified_On_Message" xml:space="preserve">
+    <value>修改于 {0}</value>
+  </data>
+  <data name="Timeline_Created_By_Message" xml:space="preserve">
+    <value>由 {0} 创建</value>
+  </data>
+  <data name="No_Bing_Maps_URL_Specified_InSetting_Exception" xml:space="preserve">
+    <value>在设置“{0}”中未指定 Bing 映射 URL。</value>
+  </data>
+  <data name="Anonymous_Voting_Null_Exception" xml:space="preserve">
+    <value>以匿名方式投票时不能为 null 或为空白。</value>
+  </data>
+  <data name="Application_ID_Cannot_Null_Empty_Exception" xml:space="preserve">
+    <value>AppId: 应用程序 ID 不能为 null 或空字符串。</value>
+  </data>
+  <data name="ApplicationID_Must_Be_Alphanumeric_Exception" xml:space="preserve">
+    <value>错误: AppId: 应用程序 ID 必须为字母数字:</value>
+  </data>
+  <data name="Argument_Missing_Or_Empty_Exception" xml:space="preserve">
+    <value>参数不能为 null 或为空字符串。</value>
+  </data>
+  <data name="Attribute_Metadata_Fetchxml_Retrieve_Exception" xml:space="preserve">
+    <value>无法检索实体“{1}”的 FetchXML 结果字段“{0}”的属性元数据。</value>
+  </data>
+  <data name="Attribute_Update_Create_Exception" xml:space="preserve">
+    <value>无法为属性“{0}”创建属性更新。</value>
+  </data>
+  <data name="BlogID_From_Request_Exception" xml:space="preserve">
+    <value>无法确定请求中的博客 ID。</value>
+  </data>
+  <data name="Calendar_View_Not_Enabled" xml:space="preserve">
+    <value>未为此实体列表({0}:{1})启用日历视图。</value>
+  </data>
+  <data name="Cannot_Delete" xml:space="preserve">
+    <value>无法删除 {0} {1}，因为它是其执行绪中的第一个帖子。必须删除该执行绪。</value>
+  </data>
+  <data name="Cannot_Insert_Duplicate_Key" xml:space="preserve">
+    <value>无法插入重复键。</value>
+  </data>
+  <data name="Cloud_Drive_Path_For_Search_Provider_Retrieve_Exception" xml:space="preserve">
+    <value>无法检索搜索提供程序“{0}”的云驱动路径。</value>
+  </data>
+  <data name="CloudDriveCacheSize_MustBe_Integer" xml:space="preserve">
+    <value>配置值 Adxstudio.Xrm.Search.WindowsAzure.CloudDriveCacheSize 必须为有效的整数。</value>
+  </data>
+  <data name="CloudDrivePageBlobAddress_CannotBeNullOrEmpty" xml:space="preserve">
+    <value>配置值 Adxstudio.Xrm.Search.WindowsAzure.CloudDrivePageBlobAddress 不能为 null 或为空。</value>
+  </data>
+  <data name="CloudDriveSize_MustBe_Integer" xml:space="preserve">
+    <value>配置值 Adxstudio.Xrm.Search.WindowsAzure.CloudDriveSize 必须为有效的整数。</value>
+  </data>
+  <data name="Consent_Invalid_Expiry_Time_Exception" xml:space="preserve">
+    <value>错误: Consent: 过期时间无效:</value>
+  </data>
+  <data name="ConsentToken_Null_Delegation_Token_Exception" xml:space="preserve">
+    <value>错误: ConsentToken: 委派标记为 Null。</value>
+  </data>
+  <data name="ConsentToken_Null_Expiry_Time_Exception" xml:space="preserve">
+    <value>错误: ConsentToken: 过期时间为 Null。</value>
+  </data>
+  <data name="ConsentToken_Null_Offers_Exception" xml:space="preserve">
+    <value>错误: ConsentToken: 服务为 Null。</value>
+  </data>
+  <data name="ConsentToken_Null_Session_Key_Exception" xml:space="preserve">
+    <value>错误: ConsentToken: 会话密钥为 Null。</value>
+  </data>
+  <data name="CurrentPollOption_Retrieval_Exception" xml:space="preserve">
+    <value>无法检索当前民意调查选项。</value>
+  </data>
+  <data name="Customer_Value_Missing_Exception" xml:space="preserve">
+    <value>必须指定客户值。</value>
+  </data>
+  <data name="DecodeToken_Secret_Key_Was_Not_set_Aborting_Exception" xml:space="preserve">
+    <value>错误: DecodeToken: 未设置密钥。正在结束。</value>
+  </data>
+  <data name="Delete_Permission_Denied_For_Target_Entity_Error" xml:space="preserve">
+    <value>删除拒绝访问目标实体的权限。</value>
+  </data>
+  <data name="Deleting_File_Exception" xml:space="preserve">
+    <value>删除文件“{0}”时发生异常: {1}</value>
+  </data>
+  <data name="Details_Value_Missing_Exception" xml:space="preserve">
+    <value>必须指定“详细信息”值。</value>
+  </data>
+  <data name="Email_Already_Used_Exception" xml:space="preserve">
+    <value>电子邮件“{0}”已被使用。</value>
+  </data>
+  <data name="Email_Field_Required_Exception" xml:space="preserve">
+    <value>“电子邮件”字段为必填字段。</value>
+  </data>
+  <data name="ResolutionSub_Field_Required_Exception" xml:space="preserve">
+    <value>“解决方案”字段为必填字段。</value>
+  </data>
+  <data name="ResolutionDesc_Field_Required_Exception" xml:space="preserve">
+    <value>“解决方案说明”字段为必填字段。</value>
+  </data>
+  <data name="ResolutionSubNDesc_Field_Required_Exception" xml:space="preserve">
+    <value>“解决方案”和“解决方案说明”字段为必填字段。</value>
+  </data>
+  <data name="Entity_List_Retrieve_Exception" xml:space="preserve">
+    <value>无法检索实体列表({0}:{1})。</value>
+  </data>
+  <data name="ErrorInCreatingKnowledgeArticleComment_WithNullOrWhitespace" xml:space="preserve">
+    <value>以匿名方式创建知识文章评论时不能为 null 或为空白。</value>
+  </data>
+  <data name="Failed_To_Add_Sort_Order_For_Field_Exception" xml:space="preserve">
+    <value>无法对字段“{0}”添加排序顺序。</value>
+  </data>
+  <data name="FetchXML_View_Retrieve_Exception" xml:space="preserve">
+    <value>无法检索视图 FetchXML ({0}:{1})。</value>
+  </data>
+  <data name="Hostname_Not_Supported_By_Using_Site_Setting_Portal_Configuration" xml:space="preserve">
+    <value>使用站点设置门户配置时，不支持基于主机名/端口的网站绑定。请指定基于站点名称/虚拟路径的网站绑定，或者通过组织级别的设置配置门户。</value>
+  </data>
+  <data name="Incorrect_Password_Exception" xml:space="preserve">
+    <value>密码错误。</value>
+  </data>
+  <data name="Invalid_Code_Exception" xml:space="preserve">
+    <value>代码无效。</value>
+  </data>
+  <data name="Invalid_Invitation_Code_Exception" xml:space="preserve">
+    <value>邀请码无效。</value>
+  </data>
+  <data name="Invalid_Rolename_Exception" xml:space="preserve">
+    <value>角色名称“{0}”无效。</value>
+  </data>
+  <data name="Invalid_Token_Exception" xml:space="preserve">
+    <value>标记无效。</value>
+  </data>
+  <data name="Invalid_User_ID_Exception" xml:space="preserve">
+    <value>用户 ID 无效。</value>
+  </data>
+  <data name="Knowledge_Article_With_EntityID_Load_Exception" xml:space="preserve">
+    <value>无法加载 ID 为“{0}”的知识文章实体。请确保此记录存在，并且可以被当前用户访问。</value>
+  </data>
+  <data name="Knowledge_Article_NotFound" xml:space="preserve">
+    <value>找不到具有 ID“{0}”的知识文章。</value>
+  </data>
+  <data name="License_Does_Not_Match_StatusMessage" xml:space="preserve">
+    <value>此许可证中指定的组织名称与您的组织不匹配。</value>
+  </data>
+  <data name="License_Failed_To_Load_StatusMessage" xml:space="preserve">
+    <value>未能加载此许可证。</value>
+  </data>
+  <data name="License_Is_Expired_StatusMessage" xml:space="preserve">
+    <value>此许可证已过期。</value>
+  </data>
+  <data name="License_Is_Not_Valid_For_ADXStudio_Current_Version_StatusMessage" xml:space="preserve">
+    <value>此许可证不适用当前的门户版本。</value>
+  </data>
+  <data name="License_Is_Not_Valid_For_ADXStudio_StatusMessage" xml:space="preserve">
+    <value>此许可证不适用于门户产品。</value>
+  </data>
+  <data name="License_Is_Not_Valid_For_Current_Date_StatusMessage" xml:space="preserve">
+    <value>这不适用于当前日期。它尚不处于活动状态。</value>
+  </data>
+  <data name="License_Is_Not_Valid_StatusMessage" xml:space="preserve">
+    <value>此许可证无效。</value>
+  </data>
+  <data name="License_Is_Valid_StatusMessage" xml:space="preserve">
+    <value>此许可证有效。</value>
+  </data>
+  <data name="Lockout_Is_Disabled_For_This_User" xml:space="preserve">
+    <value>未对此用户启用锁定。</value>
+  </data>
+  <data name="MaxDate_LessThan_MinDate_Exception" xml:space="preserve">
+    <value>最长日期应晚于最短日期。</value>
+  </data>
+  <data name="Maximum_Options_Selection_Exception" xml:space="preserve">
+    <value>您最多只能选择 {0} 个选项。</value>
+  </data>
+  <data name="Minimum_Most_Options_Selection_Exception" xml:space="preserve">
+    <value>您必须选择至少 {0}、至多 {1} 个选项。</value>
+  </data>
+  <data name="Minimum_Options_Selection_Exception" xml:space="preserve">
+    <value>您必须选择至少 {0} 个选项。</value>
+  </data>
+  <data name="Must_Be_Greater_Than_Zero_Exception" xml:space="preserve">
+    <value>在创建审阅时必须大于零</value>
+  </data>
+  <data name="Name_Must_Be_Bound_To_One_Data_Item_Exception" xml:space="preserve">
+    <value>{0} 必须绑定到一个数据项目。该记录不存在，或者该记录 ID 为 null。</value>
+  </data>
+  <data name="Not_Associated_With_Connection_Exception" xml:space="preserve">
+    <value>名为“{1}”的“{0}”不与连接关联。</value>
+  </data>
+  <data name="Not_Found_Exception" xml:space="preserve">
+    <value>未发现。</value>
+  </data>
+  <data name="OldSecret_SecretKey_Is_Longer_Than_Expected_Exception" xml:space="preserve">
+    <value>错误: OldSecret: 密钥应多于 16 个字符:</value>
+  </data>
+  <data name="OldSecretExpiry_Invalid_Timestamp_Exception" xml:space="preserve">
+    <value>错误: OldSecretExpiry: 时间戳无效:</value>
+  </data>
+  <data name="Optimistic_Concurrency_Failure_Exception" xml:space="preserve">
+    <value>乐观并发失败，对象已被修改。</value>
+  </data>
+  <data name="Page_Comment_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>无法检索页面注释实体。将不会保存评级。</value>
+  </data>
+  <data name="Password_Error_For_Characters" xml:space="preserve">
+    <value>密码必须至少为 {0} 个字符。</value>
+  </data>
+  <data name="PolicyURL_MustBe_Set_In_Delegated_Auth_NonProvisioned_Scenario_Aborting_Exception" xml:space="preserve">
+    <value>错误: PolicyUrl: 策略 URL 必须在委派身份验证非配置情况下设置。正在中止。</value>
+  </data>
+  <data name="PrimaryIdAttribute_For_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>无法检索实体 {0} 的 PrimaryIdAttribute。</value>
+  </data>
+  <data name="Retrieve_Service_Endpoint_RetrieveException" xml:space="preserve">
+    <value>无法检索服务端点“{0}”。</value>
+  </data>
+  <data name="RetrieveRelationshipRequest_Failed_For_Lookupfilterrelationshipname" xml:space="preserve">
+    <value>查找筛选器关系名称 {0} 的 RetrieveRelationshipRequest 失败</value>
+  </data>
+  <data name="RetrieveRelationshipRequest_Failed_For_Viewrelationshipname" xml:space="preserve">
+    <value>视图关系名称 {0} 的 RetrieveRelationshipRequest 失败</value>
+  </data>
+  <data name="ReturnURL_MustBe_Set_In_Delegated_Auth_NonProvisioned_Scenario_Aborting_Exception" xml:space="preserve">
+    <value>错误: ReturnUrl: 必须在委派的身份验证非配置方案中指定返回 URL。正在取消。</value>
+  </data>
+  <data name="Role_Name_Already_Taken_Exception" xml:space="preserve">
+    <value>角色名称“{0}”已被使用。</value>
+  </data>
+  <data name="Role_Not_Found_Exception" xml:space="preserve">
+    <value>未找到角色 {0}。</value>
+  </data>
+  <data name="SecretKey_Longer_Than_Expected_Exception" xml:space="preserve">
+    <value>错误: 密钥: 密钥需要多于 16 个字符:</value>
+  </data>
+  <data name="SecretKey_NotSet_Aborting_Exception" xml:space="preserve">
+    <value>错误: SignToken: 未设置密钥。正在中止。</value>
+  </data>
+  <data name="SharePoint_Settings_Missing_Exception" xml:space="preserve">
+    <value>找不到“SharePoint/URL”站点设置，并且默认 SharePoint 站点不存在。请定义“SharePoint/URL”站点设置或者指定默认 SharePoint 站点。</value>
+  </data>
+  <data name="Shopping_Cart_Not_Found" xml:space="preserve">
+    <value>未找到购物车。</value>
+  </data>
+  <data name="Shopping_Cart_Not_Found_On_Tombstone_Entity" xml:space="preserve">
+    <value>在 tombstone 实体中未找到购物车。</value>
+  </data>
+  <data name="Start_Date_Field_Name_NotSpecified" xml:space="preserve">
+    <value>日历视图要求为此实体列表({0}:{1})指定开始日期字段名称(adx_calendar_startdatefieldname)。</value>
+  </data>
+  <data name="StorageConnectionString_CannotBeNull" xml:space="preserve">
+    <value>配置值 Adxstudio.Xrm.Search.WindowsAzure.StorageConnectionString 不能为 null 或为空。</value>
+  </data>
+  <data name="Store_Not_Implement_IUserSecurityStampStore_Exception" xml:space="preserve">
+    <value>存储未实现 IUserSecurityStampStore&lt;TUser&gt;。</value>
+  </data>
+  <data name="Summary_Value_Must_Be_Specified_Exception" xml:space="preserve">
+    <value>必须指定“摘要”值。</value>
+  </data>
+  <data name="Unable_To_Retrieve_Current_Directory_Error" xml:space="preserve">
+    <value>无法检索当前目录。</value>
+  </data>
+  <data name="Unable_To_Retrieve_Target_Entity_For_Given_Hash_Error" xml:space="preserve">
+    <value>无法检索给定哈希的目标实体。</value>
+  </data>
+  <data name="Unable_To_Retrieve_View_Exception" xml:space="preserve">
+    <value>无法检索视图({0}:{1})。</value>
+  </data>
+  <data name="Unique_And_Valid_Website_Binding" xml:space="preserve">
+    <value>无法解析唯一和有效的网站绑定。请检查您的网站绑定。</value>
+  </data>
+  <data name="Unspecified_Request_Body_Exception" xml:space="preserve">
+    <value>未指定请求正文。</value>
+  </data>
+  <data name="Uploading_Files_Error" xml:space="preserve">
+    <value>上传文件时出错: {0}</value>
+  </data>
+  <data name="Use_Asterisk_Wildcard_Character_To_Search_Partial_Text" xml:space="preserve">
+    <value>要基于部分文本搜索，请使用(*)通配符。</value>
+  </data>
+  <data name="User_Account_Locked_Exception" xml:space="preserve">
+    <value>该用户帐户当前被锁定。请稍后重试。</value>
+  </data>
+  <data name="User_Already_Exists_Exception" xml:space="preserve">
+    <value>已存在具有此登录信息的用户。</value>
+  </data>
+  <data name="User_Already_Has_Password_Set_Exception" xml:space="preserve">
+    <value>该用户已设置了密码。</value>
+  </data>
+  <data name="User_Alredy_In_Role_Exception" xml:space="preserve">
+    <value>已存在一个用户具有角色“{0}”。</value>
+  </data>
+  <data name="User_Invalid_Flags_Exception" xml:space="preserve">
+    <value>错误: 用户: 标志无效:</value>
+  </data>
+  <data name="User_Invalid_Id_Exception" xml:space="preserve">
+    <value>错误: 用户: ID 无效:</value>
+  </data>
+  <data name="User_Invalid_TimeStamp_Exception" xml:space="preserve">
+    <value>错误: 用户: 时间戳无效:</value>
+  </data>
+  <data name="User_Name_Alredy_Taken_Exception" xml:space="preserve">
+    <value>用户名“{0}”已被使用。</value>
+  </data>
+  <data name="User_Name_Field_Required_Exception" xml:space="preserve">
+    <value>用户名“{0}”无效。用户名只能包含字母或数字。</value>
+  </data>
+  <data name="User_Name_Invalid_Can_Only_Contain_Letters_Digits_Exception" xml:space="preserve">
+    <value>用户名“{0}”无效，只能包含字母或数字。</value>
+  </data>
+  <data name="User_Name_Invalid_Exception" xml:space="preserve">
+    <value>用户名“{0}”无效。</value>
+  </data>
+  <data name="User_Not_In_Role_Exception" xml:space="preserve">
+    <value>用户不具有角色“{0}”。</value>
+  </data>
+  <data name="User_Null_ID_In_Token_Exception" xml:space="preserve">
+    <value>错误: 用户: 标记中的 ID 为 Null。</value>
+  </data>
+  <data name="User_Null_Timestamp_Exception" xml:space="preserve">
+    <value>错误: 用户: 标记中的时间戳为 Null。</value>
+  </data>
+  <data name="Value_Must_Be_Greater_ThanOrEqualTo_One_Exception" xml:space="preserve">
+    <value>值必须大于或等于 1。</value>
+  </data>
+  <data name="Value_Null_In_Anonymous_Review_Exception" xml:space="preserve">
+    <value>以匿名方式创建视图时不能为 null 或为空白。</value>
+  </data>
+  <data name="Value_Null_In_Create_Review_Exception" xml:space="preserve">
+    <value>创建审阅时不能为 null 或为空白。</value>
+  </data>
+  <data name="Value_Should_Be_Positive_Number_Exception" xml:space="preserve">
+    <value>值必须为正整数。</value>
+  </data>
+  <data name="Web_Page_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>无法检索网页实体。未保存评级。</value>
+  </data>
+  <data name="Webform_StartStep_Missing_Exception" xml:space="preserve">
+    <value>Web 窗体必须有开始步骤。</value>
+  </data>
+  <data name="Website_Binding_Named_Exception" xml:space="preserve">
+    <value>名为“{0}”的网站绑定没有相关网站。</value>
+  </data>
+  <data name="Website_Reference_Retrieval_Exception" xml:space="preserve">
+    <value>无法获取网站引用。</value>
+  </data>
+  <data name="Website_With_Name_Find_Exception" xml:space="preserve">
+    <value>找不到名为“{0}”的网站。</value>
+  </data>
+  <data name="Type_Name_Required_For_Provider_Exception" xml:space="preserve">
+    <value>必须为此提供程序指定类型名称。</value>
+  </data>
+  <data name="Authentication_Error_Invalid_Login" xml:space="preserve">
+    <value>登录尝试无效。</value>
+  </data>
+  <data name="Registration_Error_Password_Confirmation_Failure" xml:space="preserve">
+    <value>密码和确认密码不匹配。</value>
+  </data>
+  <data name="Search_Service_Client_Initialize_Exception" xml:space="preserve">
+    <value>无法初始化搜索服务客户端。请检查您的配置。</value>
+  </data>
+  <data name="Target_ADX_Search_Request_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>无法检索 target adx_search_request 实体。</value>
+  </data>
+  <data name="Target_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>无法检索目标实体。</value>
+  </data>
+  <data name="UserName_Already_Exists_Message" xml:space="preserve">
+    <value>该用户名已存在。请输入一个其他用户名。</value>
+  </data>
+  <data name="Username_Is_Required_Field_Error" xml:space="preserve">
+    <value>需要用户名。</value>
+  </data>
+  <data name="User_Creation_Request_Has_Been_Canceled_Message" xml:space="preserve">
+    <value>用户创建请求已取消。请验证您的输入并重试。如果问题仍然存在，请与系统管理员联系。</value>
+  </data>
+  <data name="Contact_System_Administrator_Required_Site_Marker_Missing_Exception" xml:space="preserve">
+    <value>请与您的系统管理员联系。缺少必需的站点标记“{0}”。</value>
+  </data>
+  <data name="Answer_Is_Required_Field_Error" xml:space="preserve">
+    <value>“答案”为必填字段。</value>
+  </data>
+  <data name="Authentication_Provider_Returned_Error_Message" xml:space="preserve">
+    <value>身份验证提供程序返回错误。请验证您的输入，然后重试。如果问题仍然存在，请与系统管理员联系。</value>
+  </data>
+  <data name="Confirm_Password_Is_Required_Field_Error" xml:space="preserve">
+    <value>“确认密码”为必填字段。</value>
+  </data>
+  <data name="EmailId_Already_Exists_Message" xml:space="preserve">
+    <value>该电子邮件地址的用户名已存在。请输入其他电子邮件地址。</value>
+  </data>
+  <data name="Email_Is_Invalid_Error" xml:space="preserve">
+    <value>电子邮件无效。</value>
+  </data>
+  <data name="Email_Is_Required_Field_Error" xml:space="preserve">
+    <value>“电子邮件”为必填字段。</value>
+  </data>
+  <data name="Invalid_Email_Address_Provided_Message" xml:space="preserve">
+    <value>提供的电子邮件地址无效。请检查该值，然后重试。</value>
+  </data>
+  <data name="Invalid_Password_Provided_Message" xml:space="preserve">
+    <value>提供的密码无效。请输入有效的密码值。</value>
+  </data>
+  <data name="Invalid_Security_Answer_Error" xml:space="preserve">
+    <value>安全答案无效。</value>
+  </data>
+  <data name="Invalid_Username_Error" xml:space="preserve">
+    <value>用户无效。</value>
+  </data>
+  <data name="Invalid_User_Name_Provided_Message" xml:space="preserve">
+    <value>用户名无效。请检查该值，然后重试。</value>
+  </data>
+  <data name="Password_Is_Required_Field_Error" xml:space="preserve">
+    <value>“密码”为必填字段。</value>
+  </data>
+  <data name="Password_Retrieval_Answer_Provided_Is_Invalid_Message" xml:space="preserve">
+    <value>提供的密码检索答案无效。请检查该值，然后重试。</value>
+  </data>
+  <data name="Failed_To_Create_New_User_Exception" xml:space="preserve">
+    <value>无法创建新用户。</value>
+  </data>
+  <data name="Missing_Permissions_For_Operation_Exception" xml:space="preserve">
+    <value>您无权执行此操作。</value>
+  </data>
+  <data name="Oauth_Bearer_Token_Exception" xml:space="preserve">
+    <value>无法获取 OAuth 持有者标记。</value>
+  </data>
+  <data name="Password_Recovery_Not_Configured_Exception" xml:space="preserve">
+    <value>未配置密码恢复。名为“{0}”的工作流不存在或未激活。请确保已安装了正确的解决方案并按照身份验证设置说明执行了操作。</value>
+  </data>
+  <data name="Form_Heading_Forgot_Password" xml:space="preserve">
+    <value>忘记了密码?</value>
+  </data>
+  <data name="Microsoft_Dynamics_CRM_Website_Copy_Wizard_Title" xml:space="preserve">
+    <value>网站复制向导</value>
+  </data>
+  <data name="Would_Like_To_Quit_This_Wizard_Message" xml:space="preserve">
+    <value>是否确定要退出此向导?</value>
+  </data>
+  <data name="Contact_Not_Created_Error" xml:space="preserve">
+    <value>无法创建联系人:</value>
+  </data>
+  <data name="Entity_Not_Created_Error" xml:space="preserve">
+    <value>无法创建实体:</value>
+  </data>
+  <data name="Site_Could_Not_Create_Exception" xml:space="preserve">
+    <value>无法创建站点:</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value> 小时</value>
+  </data>
+  <data name="Permission_Denied_You_Do_Not_Have_Entity_Permissions_To_Update_Notes" xml:space="preserve">
+    <value>您没有更新注释的合适实体权限。</value>
+  </data>
+  <data name="Select_Date_Range_That_Is_Not_Past" xml:space="preserve">
+    <value>选择不属于过去的日期范围。</value>
+  </data>
+  <data name="Select_End_Date_That_Is_After_Start_Date" xml:space="preserve">
+    <value>请选择一个晚于开始日期的结束日期。</value>
+  </data>
+  <data name="Select_End_Time_That_Is_Later_Than_Start_Time" xml:space="preserve">
+    <value>请选择一个晚于开始时间的结束时间。</value>
+  </data>
+  <data name="Select_Your_Time_Zone" xml:space="preserve">
+    <value>请选择您的时区。</value>
+  </data>
+  <data name="SLA_Resolution_Time" xml:space="preserve">
+    <value>SLA 解决时间: {0} 小时</value>
+  </data>
+  <data name="SLA_Response_Time" xml:space="preserve">
+    <value>SLA 响应时间: {0} 小时</value>
+  </data>
+  <data name="SLA_Details" xml:space="preserve">
+    <value> SLA 详细信息</value>
+  </data>
+  <data name="Passwords_Not_Meeting_Requirement" xml:space="preserve">
+    <value>密码必须包含以下四类中的至少三类字符: 大写、小写、数字和非字母数字(特殊)。</value>
+  </data>
+  <data name="Confirm_DeleteMultiple_Entity" xml:space="preserve">
+    <value>是否确定要删除这些记录?</value>
+  </data>
+  <data name="SitemapChildren_HiddenFrom_Sitemap_Tooltip" xml:space="preserve">
+    <value>此项目在站点地图中处于隐藏状态，不会显示在导航元素中。但仍可以直接与其相链接。</value>
+  </data>
+  <data name="SitemapChildren_Update_Tooltip" xml:space="preserve">
+    <value>编辑此页面的子记录</value>
+  </data>
+  <data name="Address_Cannot_Found" xml:space="preserve">
+    <value>找不到该地址。</value>
+  </data>
+  <data name="Click_Stay_To_Save_Your_Changes" xml:space="preserve">
+    <value>尚未保存所做的更改。是否要停留在该页面上以便保存所做的更改?</value>
+  </data>
+  <data name="Enter_Address" xml:space="preserve">
+    <value>请输入一个地址</value>
+  </data>
+  <data name="Failed_Determine_RecordID" xml:space="preserve">
+    <value>无法确定记录 ID。</value>
+  </data>
+  <data name="Required_Regarding_EntityReference_Parameter_Was_Not_Provided" xml:space="preserve">
+    <value>未提供必需的相关 EntityReference 参数。</value>
+  </data>
+  <data name="Required_Secure_ViewConfiguration_Not_Provided" xml:space="preserve">
+    <value>未提供必需的安全 ViewConfiguration。</value>
+  </data>
+  <data name="Service_URL_Not_Provided" xml:space="preserve">
+    <value>未提供必需的服务 URL。</value>
+  </data>
+  <data name="Service_URL_To_Associate_Request_Could_Determined" xml:space="preserve">
+    <value>无法确定此关联请求的服务 URL。</value>
+  </data>
+  <data name="UnKnown_Error_Occurred" xml:space="preserve">
+    <value>发生未知错误。</value>
+  </data>
+  <data name="URL_Service_For_Add_Note_Request_Could_Not_Determined" xml:space="preserve">
+    <value>无法确定此“添加注释请求”的服务 URL。</value>
+  </data>
+  <data name="URL_Service_For_Update_Note_Request_Could_Not_Determined" xml:space="preserve">
+    <value>无法确定此“更新注释请求”的服务 URL。</value>
+  </data>
+  <data name="With_In" xml:space="preserve">
+    <value>内部</value>
+  </data>
+  <data name="Required_Field_Error" xml:space="preserve">
+    <value>{0} 为必填字段。</value>
+  </data>
+  <data name="Invalid_Error" xml:space="preserve">
+    <value>{0} 无效。</value>
+  </data>
+  <data name="Invalid_Decimal_Value_Error" xml:space="preserve">
+    <value>{0} 必须为有效的小数值。</value>
+  </data>
+  <data name="Invalid_Email_Address_Error" xml:space="preserve">
+    <value>{0} 必须为有效的电子邮件地址。</value>
+  </data>
+  <data name="Invalid_Floating_Point_Value_Error" xml:space="preserve">
+    <value>{0} 必须为有效的浮点值。</value>
+  </data>
+  <data name="Invalid_Integer_Value_Error" xml:space="preserve">
+    <value>{0} 必须为有效的整数值。</value>
+  </data>
+  <data name="Invalid_Date_Format_Error" xml:space="preserve">
+    <value>{0} 必须具有有效的日期格式。</value>
+  </data>
+  <data name="Invalid_Range_Error" xml:space="preserve">
+    <value>{0} 必须具有介于 {1} 和 {2} 之间的值。</value>
+  </data>
+  <data name="Access_Denied_Error" xml:space="preserve">
+    <value>您没有相应权限。</value>
+  </data>
+  <data name="RankOrderNoTies_Validation_ErrorMessage" xml:space="preserve">
+    <value>另一响应已经使用相同的值进行排序。不允许关联。</value>
+  </data>
+  <data name="Event_Not_Found" xml:space="preserve">
+    <value>未找到事件。</value>
+  </data>
+  <data name="Get_Payment_Web_Response_Stream_Failed" xml:space="preserve">
+    <value>未能获取支付 Web 响应流。</value>
+  </data>
+  <data name="Get_Payment_Web_Response_Failed" xml:space="preserve">
+    <value>未能获取支付 Web 响应。</value>
+  </data>
+  <data name="Geolocation_Query_Could_Not_Be_Completed" xml:space="preserve">
+    <value>无法对以下服务 URL ({0})完成地理位置查询。&lt;br/&gt;错误: {1}</value>
+  </data>
+  <data name="Get_Directions_DefaultText" xml:space="preserve">
+    <value>定位方向</value>
+  </data>
+  <data name="Invalid_Height_Parameter" xml:space="preserve">
+    <value>高度参数无效</value>
+  </data>
+  <data name="Invalid_Width_Parameter_Error" xml:space="preserve">
+    <value>宽度参数无效</value>
+  </data>
+  <data name="PDT_Response_Not_Valid" xml:space="preserve">
+    <value>PayPal 付款数据传送(PDT)响应无效。无法确认付款。</value>
+  </data>
+  <data name="Null_PDT_Response" xml:space="preserve">
+    <value>PayPal 付款数据传送(PDT)响应为 null。无法确认付款。</value>
+  </data>
+  <data name="PDT_Returned_Fail_Response" xml:space="preserve">
+    <value>PayPal 付款数据传送(PDT)返回了错误响应。无法确认付款。</value>
+  </data>
+  <data name="Entity_Permission_Denied" xml:space="preserve">
+    <value>对“{2}”权利的 ID 为({1})的“{0}”实体的权限被拒绝。</value>
+  </data>
+  <data name="Entity_Permission_Granted" xml:space="preserve">
+    <value>对“{2}”权利的 ID 为({1})的“{0}”实体授予了权限。</value>
+  </data>
+  <data name="Select_Customer_Error_Message" xml:space="preserve">
+    <value>选择一个客户。</value>
+  </data>
+  <data name="Select_Support_Plan_Error_Message" xml:space="preserve">
+    <value>请选择一个支持计划。</value>
+  </data>
+  <data name="Search_For_Location_Near_DefaultText" xml:space="preserve">
+    <value>搜索附近位置</value>
+  </data>
+  <data name="Support_Plan_For_Purchased" xml:space="preserve">
+    <value>{1} 于 {2} 购买了 {0} 支持计划</value>
+  </data>
+  <data name="Required_Site_Setting_Not_Exist_Validation_Message" xml:space="preserve">
+    <value>名为“Ecommerce/PayPal/PDTIdentityToken”的必需站点设置不存在或者不包含值。</value>
+  </data>
+  <data name="Constant_Sum_Validation_Error_Message" xml:space="preserve">
+    <value>总计无效。请检查可用于分配的点数。</value>
+  </data>
+  <data name="TransactionID_Parameter_Not_Provided_Validation_Message" xml:space="preserve">
+    <value>未提供名为“tx”的交易 ID 参数。请确保已在 PayPal 商户帐户资料“网站付款首选项”设置中启用了付款数据传送(PDT)，并且已在名为“Ecommerce/PayPal/PDTIdentityToken”的站点设置中指定了身份标记。</value>
+  </data>
+  <data name="DoNot_Have_Appropriate_Permissions" xml:space="preserve">
+    <value>您没有相应权限。</value>
+  </data>
+  <data name="Check_The_Box_Labeled" xml:space="preserve">
+    <value>要继续，请选中标记为“{0}”的复选框。</value>
+  </data>
+  <data name="Home_Twitter_Widget" xml:space="preserve">
+    <value>311 主页 Twitter 小组件</value>
+  </data>
+  <data name="Create_Contact_Permission_Denied" xml:space="preserve">
+    <value>尚未向您分派上级单位。您无权创建联系人。</value>
+  </data>
+  <data name="Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>尚未向您分派上级单位。您无权编辑该联系人。</value>
+  </data>
+  <data name="Permission_For_Edit_Contact_Permissions_Denied" xml:space="preserve">
+    <value>尚未向您分派上级单位。您无权编辑该联系人的权限。</value>
+  </data>
+  <data name="Manage_Parent_Account_Permission_Denied" xml:space="preserve">
+    <value>未向您分派上级单位。您无权管理该上级单位。</value>
+  </data>
+  <data name="Create_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>尚未向您分派上级客户帐户。您无权创建客户帐户。</value>
+  </data>
+  <data name="Create_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>尚未向您分派上级客户帐户。您无权创建客户联系人。</value>
+  </data>
+  <data name="Edit_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>尚未向您分派上级客户帐户。您无权编辑客户帐户。</value>
+  </data>
+  <data name="Edit_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>尚未向您分派上级客户帐户。您无权编辑客户联系人。</value>
+  </data>
+  <data name="Manage_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>未向您分派上级客户帐户。您无权管理客户帐户。</value>
+  </data>
+  <data name="Manage_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>未向您分派上级客户帐户。您无权管理客户客户联系人。</value>
+  </data>
+  <data name="Read_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>尚未向您分派上级客户帐户。您无权读取客户帐户。</value>
+  </data>
+  <data name="Read_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>尚未向您分派上级客户帐户。您无权读取客户联系人。</value>
+  </data>
+  <data name="Continue_With_Selected_Service_Request_Error" xml:space="preserve">
+    <value>放弃我的新服务请求并继续处理选定的服务请求。</value>
+  </data>
+  <data name="Accepted_Opportunities_Legend" xml:space="preserve">
+    <value>已接受的商机/图例</value>
+  </data>
+  <data name="Account_Contacts" xml:space="preserve">
+    <value>客户联系人</value>
+  </data>
+  <data name="Account_Information_Updated_Success_Message" xml:space="preserve">
+    <value>已成功更新客户信息。</value>
+  </data>
+  <data name="Active_Opportunities" xml:space="preserve">
+    <value>可用商机</value>
+  </data>
+  <data name="Add_Note" xml:space="preserve">
+    <value>添加注释</value>
+  </data>
+  <data name="Add_To_Calendar" xml:space="preserve">
+    <value>添加到日历</value>
+  </data>
+  <data name="Add_To_My_Calendar" xml:space="preserve">
+    <value>添加到我的日历</value>
+  </data>
+  <data name="Address_DefaultText" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="Address_Line_1_DefaultText" xml:space="preserve">
+    <value>地址行 1</value>
+  </data>
+  <data name="Address_Line_1_Required_Field_Validation_Message" xml:space="preserve">
+    <value>地址行 1 为必填字段。</value>
+  </data>
+  <data name="Address_Line_2_DefaultText" xml:space="preserve">
+    <value>地址行 2</value>
+  </data>
+  <data name="Apply_For_Permit_Or_License_DefaultText" xml:space="preserve">
+    <value>申请许可或许可证</value>
+  </data>
+  <data name="Archive_DefaultText" xml:space="preserve">
+    <value>存档</value>
+  </data>
+  <data name="Cancel_Case_Confirmation_Message" xml:space="preserve">
+    <value>是否确定要取消此案例?</value>
+  </data>
+  <data name="Reopen_Case_Confirmation_Message" xml:space="preserve">
+    <value>是否确定要重新开启此案例?</value>
+  </data>
+  <data name="Assigned_To_DefaultText" xml:space="preserve">
+    <value>分派对象</value>
+  </data>
+  <data name="Attach_A_File_DefaultText" xml:space="preserve">
+    <value>附加文件</value>
+  </data>
+  <data name="Author_DefaultText" xml:space="preserve">
+    <value>作者</value>
+  </data>
+  <data name="Billing_Address_DefaultText" xml:space="preserve">
+    <value>帐单地址</value>
+  </data>
+  <data name="Billing_Contact_DefaultText" xml:space="preserve">
+    <value>帐单联系人</value>
+  </data>
+  <data name="Blog_Home_DefaultText" xml:space="preserve">
+    <value>博客主页</value>
+  </data>
+  <data name="Brands_DefaultText" xml:space="preserve">
+    <value>品牌</value>
+  </data>
+  <data name="By_DefaultText" xml:space="preserve">
+    <value>依据</value>
+  </data>
+  <data name="Cancel_DefaultText" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Ok_DefaultText" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Cancel_Case_DefaultText" xml:space="preserve">
+    <value>取消案例</value>
+  </data>
+  <data name="Card_Verification_Value_DefaultText" xml:space="preserve">
+    <value>卡验证值</value>
+  </data>
+  <data name="Change_Password_DefaultText" xml:space="preserve">
+    <value>更改密码</value>
+  </data>
+  <data name="City_DefaultText" xml:space="preserve">
+    <value>市/县</value>
+  </data>
+  <data name="City_Required_Field_Validation_Message" xml:space="preserve">
+    <value>“市/县”是必填字段。</value>
+  </data>
+  <data name="Close_DefaultText" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Closing_DefaultText" xml:space="preserve">
+    <value>即将结束</value>
+  </data>
+  <data name="New_Password_Confirmation_Message" xml:space="preserve">
+    <value>确认新密码</value>
+  </data>
+  <data name="Confirm_NewPassword_Required_Field_Validation_Message" xml:space="preserve">
+    <value>“确认新密码”为必填字段。</value>
+  </data>
+  <data name="Confirmation_DefaultText" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="Contact_Not_Found_Invalid_ContactID_Specified_Exception" xml:space="preserve">
+    <value>找不到该联系人。请确保指定了有效的联系人 ID。</value>
+  </data>
+  <data name="Contact_Invited_Successfully_Message" xml:space="preserve">
+    <value>已成功邀请联系人。</value>
+  </data>
+  <data name="Contact_Information_Updated_Successfully_Message" xml:space="preserve">
+    <value>已成功更新联系人信息。</value>
+  </data>
+  <data name="Content_Required_Field_Validation_Message" xml:space="preserve">
+    <value>“内容”为必填字段。</value>
+  </data>
+  <data name="Continue_DefaultText" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="Continue_With_Existing_Service_Request" xml:space="preserve">
+    <value>继续处理现有的服务请求。</value>
+  </data>
+  <data name="Continue_With_My_Service_Request" xml:space="preserve">
+    <value>继续处理我的服务请求。</value>
+  </data>
+  <data name="Conversion_Of_Quote_To_Order_Failed" xml:space="preserve">
+    <value>将您的报价单转换为订单失败。请与技术支持联系。</value>
+  </data>
+  <data name="Country_DefaultText" xml:space="preserve">
+    <value>国家/地区</value>
+  </data>
+  <data name="CountryRegion_Required_Field_Validation_Message" xml:space="preserve">
+    <value>“国家/地区”为必填字段。</value>
+  </data>
+  <data name="Create_New_Service_Request_DefaultText" xml:space="preserve">
+    <value>创建新服务请求</value>
+  </data>
+  <data name="Create_New_Thread_DefaultText" xml:space="preserve">
+    <value>创建新执行绪</value>
+  </data>
+  <data name="Create_New_DefaultText" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="Created_DefaultText" xml:space="preserve">
+    <value>已创建</value>
+  </data>
+  <data name="Credit_Card_Number_DefaultText" xml:space="preserve">
+    <value>信用卡号</value>
+  </data>
+  <data name="Credit_Card_Verification_Value_DefaultText" xml:space="preserve">
+    <value>信用卡验证值</value>
+  </data>
+  <data name="Current_Opportunities_DefaultText" xml:space="preserve">
+    <value>当前商机</value>
+  </data>
+  <data name="Current_Password_DefaultText" xml:space="preserve">
+    <value>当前密码</value>
+  </data>
+  <data name="Current_Password_Required_Field_Validation_Message" xml:space="preserve">
+    <value>“当前密码”为必填字段。</value>
+  </data>
+  <data name="Customer_DefaultText" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="Customer_Account_Not_Found_Invalid_AccountID_Specified" xml:space="preserve">
+    <value>找不到该客户帐户。请确保指定了有效的客户帐户 ID。</value>
+  </data>
+  <data name="Customer_Contact_Not_Found_Invalid_ContactID_Specified" xml:space="preserve">
+    <value>找不到该客户联系人。请确保指定了有效的客户联系人 ID。</value>
+  </data>
+  <data name="Customer_Contact_Not_Found_Invalid_CustomerID_Specified" xml:space="preserve">
+    <value>找不到该客户联系人。请确保指定了有效的客户 ID。</value>
+  </data>
+  <data name="Date_DefaultText" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Description_DefaultText" xml:space="preserve">
+    <value>说明(必填)</value>
+  </data>
+  <data name="Discount_Code_DefaultText" xml:space="preserve">
+    <value>折扣代码</value>
+  </data>
+  <data name="Discount_DefaultText" xml:space="preserve">
+    <value>折扣:</value>
+  </data>
+  <data name="Email_DefaultText" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="End_Time_DefaultText" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="Expires_DefaultText" xml:space="preserve">
+    <value>到期</value>
+  </data>
+  <data name="Addition_Of_External_Account_Failed" xml:space="preserve">
+    <value>未能添加外部客户。</value>
+  </data>
+  <data name="Change_Mobile_Phone_Number_Failed" xml:space="preserve">
+    <value>无法更改手机号码。</value>
+  </data>
+  <data name="Confirm_Email_Failed" xml:space="preserve">
+    <value>无法确认该电子邮件</value>
+  </data>
+  <data name="Remove_External_Account_Failed" xml:space="preserve">
+    <value>无法删除该外部帐户。</value>
+  </data>
+  <data name="Fax_DefaultText" xml:space="preserve">
+    <value>传真</value>
+  </data>
+  <data name="Featured_Products_DefaultText" xml:space="preserve">
+    <value>特色产品</value>
+  </data>
+  <data name="Feed_DefaultText" xml:space="preserve">
+    <value>数据源</value>
+  </data>
+  <data name="First_Name_DefaultText" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="Forum_DefaultText" xml:space="preserve">
+    <value>论坛</value>
+  </data>
+  <data name="From_DefaultText" xml:space="preserve">
+    <value>来自</value>
+  </data>
+  <data name="Household_DefaultText" xml:space="preserve">
+    <value>家庭</value>
+  </data>
+  <data name="Household_Members_DefaultText" xml:space="preserve">
+    <value>家庭成员</value>
+  </data>
+  <data name="How_May_We_Contact_You" xml:space="preserve">
+    <value>我们如何联系您? &lt;small&gt;请选择所有适用选项。&lt;/small&gt;</value>
+  </data>
+  <data name="Ignore_Existing_And_Submit_My_Service_Request" xml:space="preserve">
+    <value>忽略现有的服务请求并提交我的新服务请求。</value>
+  </data>
+  <data name="In_This_Section_DefaultText" xml:space="preserve">
+    <value>本节内容</value>
+  </data>
+  <data name="Invalid_Request" xml:space="preserve">
+    <value>请求无效。</value>
+  </data>
+  <data name="Invoice_DefaultText" xml:space="preserve">
+    <value>发票</value>
+  </data>
+  <data name="Joined_DefaultText" xml:space="preserve">
+    <value>已加入: </value>
+  </data>
+  <data name="Last_Name_DefaultText" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="Last_Post_DefaultText" xml:space="preserve">
+    <value>上一篇帖子</value>
+  </data>
+  <data name="Latest_Knowledge_Base_Articles" xml:space="preserve">
+    <value>最新的知识库文章</value>
+  </data>
+  <data name="Legend_DefaultText" xml:space="preserve">
+    <value>图例</value>
+  </data>
+  <data name="Load_More_Timeline" xml:space="preserve">
+    <value>显示更多</value>
+  </data>
+  <data name="Locked_DefaultText" xml:space="preserve">
+    <value>已锁定</value>
+  </data>
+  <data name="Mail_DefaultText" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="Mark_As_Answer_DefaultText" xml:space="preserve">
+    <value>标记为答案</value>
+  </data>
+  <data name="Month_DefaultText" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Most_Popular_Articles_DefaultText" xml:space="preserve">
+    <value>最受欢迎的文章</value>
+  </data>
+  <data name="Name_DefaultText" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Name_Required_Field_Validation_Message" xml:space="preserve">
+    <value>“名称”为必填字段。</value>
+  </data>
+  <data name="New_Opportunities_DefaultText" xml:space="preserve">
+    <value>新商机</value>
+  </data>
+  <data name="New_Password_DefaultText" xml:space="preserve">
+    <value>新密码</value>
+  </data>
+  <data name="New_Password_Required_Field_Validation_Message" xml:space="preserve">
+    <value>“新密码”为必填字段。</value>
+  </data>
+  <data name="News_DefaultText" xml:space="preserve">
+    <value>新闻</value>
+  </data>
+  <data name="No_Contacts_Exist_Create_Appropriate_Contact" xml:space="preserve">
+    <value>联系人不存在。要设置主要联系人，请首先为此客户帐户创建合适的联系人，然后分派主要联系人。</value>
+  </data>
+  <data name="No_Managing_Partner_Customer_Accounts_Message" xml:space="preserve">
+    <value>不存在您管理的合作伙伴客户帐户。请创建新客户以继续。</value>
+  </data>
+  <data name="No_Products_Message" xml:space="preserve">
+    <value>没有产品与您的当前筛选器匹配。</value>
+  </data>
+  <data name="Cancel_Confirmation_No" xml:space="preserve">
+    <value>否，不取消此案例。</value>
+  </data>
+  <data name="Reopen_Confirmation_No" xml:space="preserve">
+    <value>否，不重新开启此案例。</value>
+  </data>
+  <data name="Note_DefaultText" xml:space="preserve">
+    <value>注释</value>
+  </data>
+  <data name="Notes_DefaultText" xml:space="preserve">
+    <value>注释</value>
+  </data>
+  <data name="Timeline_DefaultText" xml:space="preserve">
+    <value>日程表</value>
+  </data>
+  <data name="Opportunities_Awaiting_Acceptance" xml:space="preserve">
+    <value>等待接受的商机</value>
+  </data>
+  <data name="Opportunity_Contacts_DefaultText" xml:space="preserve">
+    <value>商机联系人</value>
+  </data>
+  <data name="Opportunity_Details_DefaultText" xml:space="preserve">
+    <value>商机详细信息</value>
+  </data>
+  <data name="Opportunity_History_DefaultText" xml:space="preserve">
+    <value>商机历史记录</value>
+  </data>
+  <data name="Opportunity_Notes_DefaultText" xml:space="preserve">
+    <value>商机注释</value>
+  </data>
+  <data name="Opportunity_Saved_Successfully_Message" xml:space="preserve">
+    <value>商机已成功保存。</value>
+  </data>
+  <data name="Opportunity_Status_DefaultText" xml:space="preserve">
+    <value>商机状态</value>
+  </data>
+  <data name="Options_DefaultText" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="Order_DefaultText" xml:space="preserve">
+    <value>订单</value>
+  </data>
+  <data name="Order_Notes_DefaultText" xml:space="preserve">
+    <value>订单注释</value>
+  </data>
+  <data name="Parent_Customer_DefaultText" xml:space="preserve">
+    <value>上级客户</value>
+  </data>
+  <data name="Past_DefaultText" xml:space="preserve">
+    <value>过去</value>
+  </data>
+  <data name="Pay_With_Credit_Card_Message" xml:space="preserve">
+    <value>使用信用卡支付</value>
+  </data>
+  <data name="Permissions_Updated_Successfully_Message" xml:space="preserve">
+    <value>权限已成功更新。</value>
+  </data>
+  <data name="Permit_Fee_Required_Message" xml:space="preserve">
+    <value>需要许可费</value>
+  </data>
+  <data name="Permit_Number_DefaultText" xml:space="preserve">
+    <value>许可编号:</value>
+  </data>
+  <data name="Phone_DefaultText" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="Select_Support_Package_Error_Message" xml:space="preserve">
+    <value>请选择一个支持包。</value>
+  </data>
+  <data name="Select_Available_Appointment_Times_From_List" xml:space="preserve">
+    <value>请从以下可用约会时间列表中选择。</value>
+  </data>
+  <data name="Poll_DefaultText" xml:space="preserve">
+    <value>投票</value>
+  </data>
+  <data name="Post_A_Reply_DefaultText" xml:space="preserve">
+    <value>发布答复</value>
+  </data>
+  <data name="Posted_DefaultText" xml:space="preserve">
+    <value>已发布</value>
+  </data>
+  <data name="Posts_DefaultText" xml:space="preserve">
+    <value>帖子</value>
+  </data>
+  <data name="Price_DefaultText" xml:space="preserve">
+    <value>价格</value>
+  </data>
+  <data name="Priority_DefaultText" xml:space="preserve">
+    <value>优先级</value>
+  </data>
+  <data name="Products_DefaultText" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="Public_DefaultText" xml:space="preserve">
+    <value>公共</value>
+  </data>
+  <data name="Purchase_Summary_DefaultText" xml:space="preserve">
+    <value>采购摘要</value>
+  </data>
+  <data name="Quantity_DefaultText" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="Quote_Notes_DefaultText" xml:space="preserve">
+    <value>报价单注释</value>
+  </data>
+  <data name="Rating_DefaultText" xml:space="preserve">
+    <value>评级</value>
+  </data>
+  <data name="Invalid_CAPTCHA" xml:space="preserve">
+    <value>该 CAPTCHA 值无效。请重试。</value>
+  </data>
+  <data name="Register_DefaultText" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="Event_Register_DefaultText" xml:space="preserve">
+    <value>为此事件注册</value>
+  </data>
+  <data name="Related_Topics_DefaultText" xml:space="preserve">
+    <value>相关主题</value>
+  </data>
+  <data name="Remove_DefaultText" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Remove_External_Account" xml:space="preserve">
+    <value>删除“{0}”外部帐户?</value>
+  </data>
+  <data name="Reopen_Case_DefaultText" xml:space="preserve">
+    <value>重新开启案例</value>
+  </data>
+  <data name="Replies_DefaultText" xml:space="preserve">
+    <value>答复</value>
+  </data>
+  <data name="Resolution_DefaultText" xml:space="preserve">
+    <value>解决方案(必需)</value>
+  </data>
+  <data name="Resolve_Case_DefaultText" xml:space="preserve">
+    <value>解决案例</value>
+  </data>
+  <data name="Satisfaction_DefaultText" xml:space="preserve">
+    <value>满意度(必需)</value>
+  </data>
+  <data name="Schedule_New_Service" xml:space="preserve">
+    <value>计划新服务</value>
+  </data>
+  <data name="Search_DefaultText" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Search_Blogs_DefaultText" xml:space="preserve">
+    <value>搜索博客</value>
+  </data>
+  <data name="Select_Customer_Account_As_Potential_Client" xml:space="preserve">
+    <value>选择客户帐户作为商机的潜在客户:</value>
+  </data>
+  <data name="Service_DefaultText" xml:space="preserve">
+    <value>服务</value>
+  </data>
+  <data name="Service_Appointment_Not_Found" xml:space="preserve">
+    <value>未找到 ID 为“{0}”的服务约会。</value>
+  </data>
+  <data name="Service_Request_Not_Found_Error" xml:space="preserve">
+    <value>&lt;h4&gt;未找到服务请求&lt;/h4&gt;&lt;p&gt;请确认您已正确输入了参考编号。您可以随时致电 311 咨询有关您的服务请求状态的信息。&lt;/p&gt;</value>
+  </data>
+  <data name="Service_Request_Number_DefaultText" xml:space="preserve">
+    <value>服务请求编号:</value>
+  </data>
+  <data name="Service_Requests_Searched_Rendered_On_Map" xml:space="preserve">
+    <value>可以在映射中搜索和显示服务请求。</value>
+  </data>
+  <data name="Service_Requests_Map_DefaultText" xml:space="preserve">
+    <value>服务请求映射</value>
+  </data>
+  <data name="Set_Primary_Contact_Message" xml:space="preserve">
+    <value>为此帐户设置主要联系人:</value>
+  </data>
+  <data name="Shipping_Address_DefaultText" xml:space="preserve">
+    <value>送货地址</value>
+  </data>
+  <data name="Shipping_DefaultText" xml:space="preserve">
+    <value>送货:</value>
+  </data>
+  <data name="Show_Alerts_DefaultText" xml:space="preserve">
+    <value>显示警报</value>
+  </data>
+  <data name="SignIn_To_Register_DefaultText" xml:space="preserve">
+    <value>登录以注册</value>
+  </data>
+  <data name="SignIn_Account" xml:space="preserve">
+    <value>使用带您的 {0} 帐户登录。</value>
+  </data>
+  <data name="Service_Request_Resolve_Duplicates_Summary_Message" xml:space="preserve">
+    <value>先前已提交了类似的服务请求。是否要通过从列表中选择服务请求来替换您的提交内容，或者继续执行您的提交?</value>
+  </data>
+  <data name="Payment_Error_Message" xml:space="preserve">
+    <value>很抱歉，请求过程中出错。</value>
+  </data>
+  <data name="Speakers_DefaultText" xml:space="preserve">
+    <value>扬声器</value>
+  </data>
+  <data name="Start_Time_DefaultText" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="State_Province_DefaultText" xml:space="preserve">
+    <value>省/直辖市/自治区</value>
+  </data>
+  <data name="State_Province_Required_Field_Validation_Message" xml:space="preserve">
+    <value>“省/市/自治区”为必填字段。</value>
+  </data>
+  <data name="Status_DefaultText" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Sub_Total_DefaultText" xml:space="preserve">
+    <value>小计:</value>
+  </data>
+  <data name="Submit_New_Service_Request_DefaultText" xml:space="preserve">
+    <value>提交新的服务请求</value>
+  </data>
+  <data name="Subscribe_DefaultText" xml:space="preserve">
+    <value>订阅</value>
+  </data>
+  <data name="Subscribe_To_Following_Email_Lists" xml:space="preserve">
+    <value>订阅以下电子邮件列表</value>
+  </data>
+  <data name="Subscribe_To_This_Thread" xml:space="preserve">
+    <value>订阅此执行绪</value>
+  </data>
+  <data name="Support_Plan_Purchase_Required_Message" xml:space="preserve">
+    <value>&lt;h3&gt;需要购买支持计划&lt;/h3&gt;&lt;p&gt;请与销售代表联系以购买支持计划。&lt;/p&gt;&lt;p&gt;电话: 555-555-5555&lt;/p&gt;&lt;p&gt;工作时间: 周一至周五上午 9 点到下午 5 点&lt;/p&gt;</value>
+  </data>
+  <data name="Tags_DefaultText" xml:space="preserve">
+    <value>标记</value>
+  </data>
+  <data name="Tax_DefaultText" xml:space="preserve">
+    <value>税:</value>
+  </data>
+  <data name="Thank_You_For_Feedback" xml:space="preserve">
+    <value>感谢您的反馈。</value>
+  </data>
+  <data name="Thank_You_DefaultText" xml:space="preserve">
+    <value>谢谢您。</value>
+  </data>
+  <data name="CVV_Help_Message" xml:space="preserve">
+    <value>&lt;p&gt;卡验证值对于 Internet 上的信用卡交易是重要的安全功能。&lt;/p&gt;&lt;p&gt;MasterCard、Visa 和 Discover 信用卡的背面标有 3 位数的代码，而 American Express 信用卡在卡正面的卡号上方标有 4 位数的代码。&lt;/p&gt;</value>
+  </data>
+  <data name="Case_Not_Found" xml:space="preserve">
+    <value>找不到该案例。</value>
+  </data>
+  <data name="Post_Exceeds_Maximum_Length" xml:space="preserve">
+    <value>此帖子的内容超过最大长度。</value>
+  </data>
+  <data name="No_Primary_Contact_Create_Or_Edit_Existing" xml:space="preserve">
+    <value>您管理的客户帐户没有主要联系人。请创建一个新的客户帐户，或者单击“管理客户”，编辑现有的帐户以使其与新商机关联，然后分派一个主要联系人以继续。</value>
+  </data>
+  <data name="Discount_Code_Not_Applicable" xml:space="preserve">
+    <value>指定的折扣代码不适用。</value>
+  </data>
+  <data name="Inavlid_Discount_Code" xml:space="preserve">
+    <value>指定的折扣代码无效。</value>
+  </data>
+  <data name="Discount_Already_Applied" xml:space="preserve">
+    <value>已应用该折扣。</value>
+  </data>
+  <data name="Discount_Reached_Maximum_Number_Of_Redemptions" xml:space="preserve">
+    <value>折扣已达到最大兑换次数。</value>
+  </data>
+  <data name="Invalid_Discount" xml:space="preserve">
+    <value>该折扣无效。</value>
+  </data>
+  <data name="External_Account_Added_sucessfully" xml:space="preserve">
+    <value>已成功添加了外部客户。</value>
+  </data>
+  <data name="External_Account_Removed_sucessfully" xml:space="preserve">
+    <value>已成功删除了外部客户。</value>
+  </data>
+  <data name="File_Type_Not_Supported" xml:space="preserve">
+    <value>不支持该文件类型。</value>
+  </data>
+  <data name="Following_Contacts_Associated_With_Account" xml:space="preserve">
+    <value>以下联系人与此帐户关联:</value>
+  </data>
+  <data name="New_Password_Confirm_Password_Must_Match" xml:space="preserve">
+    <value>“新密码”和“确认新密码”必须匹配。</value>
+  </data>
+  <data name="Permission_To_Create_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;分派给您的上级客户帐户具有无效的分类代码。您无权创建客户帐户。&lt;/p&gt;&lt;p&gt;帐户分类代码必须设置为“合作伙伴”。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Create_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;分派给您的上级客户帐户具有无效的分类代码。您无权创建客户联系人。&lt;/p&gt;&lt;p&gt;帐户分类代码必须设置为“合作伙伴”。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Edit_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;分派给您的上级客户帐户具有无效的分类代码。您无权编辑客户帐户。&lt;/p&gt;&lt;p&gt;帐户分类代码必须设置为“合作伙伴”。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Edit_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;分派给您的上级客户帐户具有无效的分类代码。您无权编辑客户联系人。&lt;/p&gt;&lt;p&gt;帐户分类代码必须设置为“合作伙伴”。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;分派给您的上级客户帐户具有无效的分类代码。您无权管理客户帐户。&lt;/p&gt;&lt;p&gt;帐户分类代码必须设置为“合作伙伴”。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;分派给您的上级客户帐户具有无效的分类代码。您无权管理客户联系人。&lt;/p&gt;&lt;p&gt;帐户分类代码必须设置为“合作伙伴”。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Read_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;分派给您的上级客户帐户具有无效的分类代码。您无权读取客户帐户。&lt;/p&gt;&lt;p&gt;帐户分类代码必须设置为“合作伙伴”。&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Read_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;分派给您的上级客户帐户具有无效的分类代码。您无权读取客户联系人。&lt;/p&gt;&lt;p&gt;帐户分类代码必须设置为“合作伙伴”。&lt;/p&gt;</value>
+  </data>
+  <data name="Requested_Package_Not_Found" xml:space="preserve">
+    <value>未找到请求的包。</value>
+  </data>
+  <data name="Requested_Session_Schedule_Not_Found" xml:space="preserve">
+    <value>未找到请求的会话计划。</value>
+  </data>
+  <data name="Discount_Code_Not_specified" xml:space="preserve">
+    <value>未指定需要的折扣代码。</value>
+  </data>
+  <data name="Amount_Zero_Discount_Not_Applied" xml:space="preserve">
+    <value>总金额为 0。未应用折扣。</value>
+  </data>
+  <data name="Total_Amount_Less_Than_Required_Amount" xml:space="preserve">
+    <value>总金额少于必需的最低金额。</value>
+  </data>
+  <data name="Remember_Browser_Success_Message" xml:space="preserve">
+    <value>现在已为此浏览器记住双重身份验证会话。</value>
+  </data>
+  <data name="Tow_Factor_signIn_Required_For_Browser" xml:space="preserve">
+    <value>此浏览器现在需要双重登录验证。</value>
+  </data>
+  <data name="No_Alerts_Currently" xml:space="preserve">
+    <value>当前没有警报。</value>
+  </data>
+  <data name="No_Archived_Polls_Currently" xml:space="preserve">
+    <value>当前没有已存档的投票。</value>
+  </data>
+  <data name="No_Appointments_Available_Message" xml:space="preserve">
+    <value>在这些日期和时间中没有可用于所选服务的约会。请选择其他日期或时间，然后重试。</value>
+  </data>
+  <data name="No_Articles_To_Display" xml:space="preserve">
+    <value>没有要显示的文章。</value>
+  </data>
+  <data name="No_Cases_For_selected_Filter" xml:space="preserve">
+    <value>没有与所选筛选器对应的案例。</value>
+  </data>
+  <data name="No_Contact_Records_To_Display" xml:space="preserve">
+    <value>没有要显示的联系人记录。</value>
+  </data>
+  <data name="No_Contacts_To_Display" xml:space="preserve">
+    <value>没有要显示的联系人。</value>
+  </data>
+  <data name="No_Items_To_Display" xml:space="preserve">
+    <value>没有要显示的项目。</value>
+  </data>
+  <data name="No_Case_Notes_Message" xml:space="preserve">
+    <value>没有与此案例关联的注释。注释是非公开的，并且不是发布与案例相关的私密信息的合适位置。</value>
+  </data>
+  <data name="No_Responses_To_This_Poll" xml:space="preserve">
+    <value>不存在对此民意调查的响应。</value>
+  </data>
+  <data name="No_Services_Available_To_schedule" xml:space="preserve">
+    <value>没有可进行计划的服务。</value>
+  </data>
+  <data name="Error_Viewing_Order_Contact_Support" xml:space="preserve">
+    <value>很抱歉，无法查看您的订单。请与技术支持联系。</value>
+  </data>
+  <data name="Error_Viewing_Quote_Contact_Support" xml:space="preserve">
+    <value>很抱歉，无法查看您的报价单。请与技术支持联系。</value>
+  </data>
+  <data name="Declare_Opportunity_As_Won" xml:space="preserve">
+    <value>此操作会将商机声明为赢单。</value>
+  </data>
+  <data name="Contact_Not_Have_Channel_Permission_Record" xml:space="preserve">
+    <value>此联系人没有渠道权限记录。</value>
+  </data>
+  <data name="Contact_Not_Have_Opportunity_Permission_Record" xml:space="preserve">
+    <value>此联系人没有商机权限记录。</value>
+  </data>
+  <data name="Contact_Not_Have_Channel_Opportunity_Permission_Record" xml:space="preserve">
+    <value>此联系人没有渠道或商机权限记录。</value>
+  </data>
+  <data name="Thread_Locked" xml:space="preserve">
+    <value>此执行绪已标记为已锁定。</value>
+  </data>
+  <data name="Thread_DefaultText" xml:space="preserve">
+    <value>执行绪</value>
+  </data>
+  <data name="Thread_Title_Required_Field" xml:space="preserve">
+    <value>“执行绪标题”为必填字段。</value>
+  </data>
+  <data name="Thread_Type_Required_Field" xml:space="preserve">
+    <value>“执行绪类型”为必填字段。</value>
+  </data>
+  <data name="Threads_DefaultText" xml:space="preserve">
+    <value>执行绪</value>
+  </data>
+  <data name="To_DefaultText" xml:space="preserve">
+    <value>至</value>
+  </data>
+  <data name="Total_Votes_DefaultText" xml:space="preserve">
+    <value>总票数:</value>
+  </data>
+  <data name="Total_DefaultText" xml:space="preserve">
+    <value>总计:</value>
+  </data>
+  <data name="Service_Request_Status_Tracker_Title" xml:space="preserve">
+    <value>跟踪您的服务请求</value>
+  </data>
+  <data name="Twofactor_Authentication_Disabled_Successfully_Message" xml:space="preserve">
+    <value>已成功禁用双重身份验证。</value>
+  </data>
+  <data name="Twofactor_Authentication_Enabled_Successfully_Message" xml:space="preserve">
+    <value>已成功启用双重身份验证。</value>
+  </data>
+  <data name="Type_DefaultText" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="Unable_To_Retrieve_Order_Information" xml:space="preserve">
+    <value>无法检索订单信息。</value>
+  </data>
+  <data name="Unable_To_Retrieve_Purchase_Information" xml:space="preserve">
+    <value>无法检索购买信息。</value>
+  </data>
+  <data name="UnMark_Answer" xml:space="preserve">
+    <value>取消标记为答案</value>
+  </data>
+  <data name="Unregister_From_Event" xml:space="preserve">
+    <value>取消注册此事件</value>
+  </data>
+  <data name="Unsubscribe_DefaultText" xml:space="preserve">
+    <value>取消订阅</value>
+  </data>
+  <data name="UpComing_DefaultText" xml:space="preserve">
+    <value>近期</value>
+  </data>
+  <data name="UpComing_Times_DefaultText" xml:space="preserve">
+    <value>近期时间</value>
+  </data>
+  <data name="Update_Post_DefaultText" xml:space="preserve">
+    <value>更新帖子</value>
+  </data>
+  <data name="Value_Of_Active_Opportunities" xml:space="preserve">
+    <value>可用商机的值</value>
+  </data>
+  <data name="Value_Of_New_Opportunities" xml:space="preserve">
+    <value>新商机的值</value>
+  </data>
+  <data name="View_Scheduled_Services" xml:space="preserve">
+    <value>查看计划的所有服务</value>
+  </data>
+  <data name="View_Map_DefaultText" xml:space="preserve">
+    <value>查看地图</value>
+  </data>
+  <data name="Unknown_Error_Occured_Message" xml:space="preserve">
+    <value>很抱歉，发生未知错误。</value>
+  </data>
+  <data name="What_Can_We_Help_You_With_Message" xml:space="preserve">
+    <value>我们可以帮您什么忙?</value>
+  </data>
+  <data name="Year_DefaultText" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="You_Are_Not_Registered_For_Events_Message" xml:space="preserve">
+    <value>您此时未注册任何事件。</value>
+  </data>
+  <data name="You_Registered_For_This_Conference_Message" xml:space="preserve">
+    <value>您已注册此会议。</value>
+  </data>
+  <data name="You_Registered_For_This_Event_Message" xml:space="preserve">
+    <value>您已注册此事件。</value>
+  </data>
+  <data name="No_Permission_For_Parent_Account_Manage_Contact_Permission_Denied" xml:space="preserve">
+    <value>您没有上级单位的帐户访问权限。您无法管理联系人权限。</value>
+  </data>
+  <data name="No_Permission_For_Parent_Account_Manage_Parent_Account_Denied" xml:space="preserve">
+    <value>您没有上级单位的帐户访问权限。您无法管理上级单位。</value>
+  </data>
+  <data name="Permission_To_Manage_Contact_Permissions_Denied" xml:space="preserve">
+    <value>您没有帐户访问权限。您无权管理联系人权限。</value>
+  </data>
+  <data name="Permission_To_Manage_Parent_Account_Denied" xml:space="preserve">
+    <value>您没有帐户访问权限。您无权管理上级单位。</value>
+  </data>
+  <data name="Permission_To_Edit_ContactChannel_And_Opportunity_Permissions_Denied" xml:space="preserve">
+    <value>您没有渠道权限和商机权限。您无权编辑联系人的渠道和商机权限。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Create_Customer_Account_Denied" xml:space="preserve">
+    <value>您没有上级客户帐户的渠道权限。您无法创建客户帐户。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Create_Customer_Contacts_Denied" xml:space="preserve">
+    <value>您没有上级客户帐户的渠道权限。您无法创建客户联系人。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Edit_Customer_Accounts_Denied" xml:space="preserve">
+    <value>您没有上级客户帐户的渠道权限。您无法编辑客户帐户。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Edit_Customer_Contacts_Denied" xml:space="preserve">
+    <value>您没有上级客户帐户的渠道权限。您无法编辑客户联系人。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Read_Customer_Accounts_Denied" xml:space="preserve">
+    <value>您没有上级客户帐户的渠道权限。您无法读取客户帐户。</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Read_Customer_Contacts_Denied" xml:space="preserve">
+    <value>您没有上级客户帐户的渠道权限。您无法读取客户联系人。</value>
+  </data>
+  <data name="No_Channel_Permissions_Create_Customer_Account_Denied" xml:space="preserve">
+    <value>您没有渠道权限。您无法创建客户帐户。</value>
+  </data>
+  <data name="No_Channel_Permissions_Create_Customer_Contacts_Denied" xml:space="preserve">
+    <value>您没有渠道权限。您无法创建客户联系人。</value>
+  </data>
+  <data name="No_Channel_Permission_Edit_Contact_Channel_Permissions_Denied" xml:space="preserve">
+    <value>您没有渠道权限。您无法编辑联系人的渠道权限。</value>
+  </data>
+  <data name="No_Channel_Permission_Edit_Customer_Accounts_Denied" xml:space="preserve">
+    <value>您没有渠道权限。您无法编辑客户帐户。</value>
+  </data>
+  <data name="No_Channel_Permission_Edit_Customer_Contacts_Denied" xml:space="preserve">
+    <value>您没有渠道权限。您无法编辑客户联系人。</value>
+  </data>
+  <data name="No_Channel_Permission_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>您没有渠道权限。您无法管理客户帐户。</value>
+  </data>
+  <data name="No_Channel_Permission_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>您没有渠道权限。您无法管理客户联系人。</value>
+  </data>
+  <data name="No_Channel_Permission_Read_Customer_Accounts_Denied" xml:space="preserve">
+    <value>您没有渠道权限。您无法读取客户帐户。</value>
+  </data>
+  <data name="No_Channel_Permission_Read_Customer_Contacts_Denied" xml:space="preserve">
+    <value>您没有渠道权限。您无法读取客户联系人。</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Create_Contact_Denied" xml:space="preserve">
+    <value>您对范围设置为“客户”的上级单位没有联系人访问权限。您无法创建联系人。</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Edit_Contact_Denied" xml:space="preserve">
+    <value>您对范围设置为“客户”的上级单位没有联系人访问权限。您无法编辑联系人。</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>您对范围设置为“客户”的上级单位没有联系人访问权限。您无法编辑联系人的权限。</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Manage_Parent_Account_Contacts_Permission_Denied" xml:space="preserve">
+    <value>您对范围设置为“客户”的上级单位没有联系人访问权限。您无法管理上级单位的联系人。</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Create_Contact_Denied" xml:space="preserve">
+    <value>您没有联系人访问权限。您无法创建联系人。</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Edit_Contact_Denied" xml:space="preserve">
+    <value>您没有联系人访问权限。您无法编辑联系人。</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>您没有联系人访问权限。您无法编辑联系人的权限。</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Manage_Parent_Account_Contacts_Permission_Denied" xml:space="preserve">
+    <value>您没有联系人访问权限。您无法管理上级单位的联系人。</value>
+  </data>
+  <data name="Dont_Have_Opportunity_Permissions" xml:space="preserve">
+    <value>您没有商机权限。</value>
+  </data>
+  <data name="Permission_To_Create_Opportunities_Denied" xml:space="preserve">
+    <value>您没有商机权限。您无权创建商机。</value>
+  </data>
+  <data name="Permission_To_Edit_Contact_Opportunity_Permissions_Denied" xml:space="preserve">
+    <value>您没有商机权限。您无权编辑联系人的商机权限。</value>
+  </data>
+  <data name="No_Permission_To_Create_Cases" xml:space="preserve">
+    <value>您无权创建案例。</value>
+  </data>
+  <data name="No_Permission_To_View_Cases" xml:space="preserve">
+    <value>您无权查看案例。</value>
+  </data>
+  <data name="No_Permission_To_View_This_Case" xml:space="preserve">
+    <value>您无权查看此案例。</value>
+  </data>
+  <data name="Add_Existing_Or_Create_New_Contact" xml:space="preserve">
+    <value>您可以将一个现有的联系人添加到此商机，也可以创建一个新联系人。</value>
+  </data>
+  <data name="Force_SignUp_Profile_Explanation" xml:space="preserve">
+    <value>使用此网站的功能之前，必须填写您的个人资料。</value>
+  </data>
+  <data name="SignIn_To_Open_New_Support_Requests" xml:space="preserve">
+    <value>必须登录才能开启新支持请求。</value>
+  </data>
+  <data name="SignIn_To_View_Your_Cases" xml:space="preserve">
+    <value>必须登录才能查看您的案例。</value>
+  </data>
+  <data name="Account_Access_Manage_Permissions_Denied_Error" xml:space="preserve">
+    <value>您无权编辑该联系人的权限。</value>
+  </data>
+  <data name="Account_Access_Permissions_Error" xml:space="preserve">
+    <value>您无权管理上级单位。</value>
+  </data>
+  <data name="Account_Access_Write_Permission_Denied_Message" xml:space="preserve">
+    <value>您无权编辑上级单位。</value>
+  </data>
+  <data name="Case_Updated_Successfully" xml:space="preserve">
+    <value>您的案例已成功更新。</value>
+  </data>
+  <data name="Channel_Permissions_Deny_Create_Customer_Accounts_Denied" xml:space="preserve">
+    <value>您无权创建客户帐户。</value>
+  </data>
+  <data name="Channel_Permissions_Deny_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>您无权管理客户帐户。</value>
+  </data>
+  <data name="Channel_Permissions_Deny_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>您无权管理客户联系人。</value>
+  </data>
+  <data name="Deny_Read_Write_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>您无权管理客户帐户。</value>
+  </data>
+  <data name="Deny_Read_Write_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>您无权管理客户联系人。</value>
+  </data>
+  <data name="Deny_Read_View_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>您无权查看客户帐户。</value>
+  </data>
+  <data name="Deny_Read_View_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>您无权查看客户联系人。</value>
+  </data>
+  <data name="Deny_Read_Edit_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>您无权编辑客户帐户。</value>
+  </data>
+  <data name="Deny_Read_Edit_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>您无权编辑客户联系人。</value>
+  </data>
+  <data name="Deny_Create_Permission_To_Create_Contact_Denied" xml:space="preserve">
+    <value>您无权创建联系人。</value>
+  </data>
+  <data name="Deny_Read_Manage_Parent_Account_Contacts_Permission_Denied" xml:space="preserve">
+    <value>您无权管理上级单位的联系人。</value>
+  </data>
+  <data name="Deny_Write_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>您无权编辑该联系人。</value>
+  </data>
+  <data name="Deny_Write_Permission_To_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>您无权编辑该联系人的权限。</value>
+  </data>
+  <data name="Contact_Access_Write_Permission_Denied_Message" xml:space="preserve">
+    <value>您无权编辑该联系人。</value>
+  </data>
+  <data name="Email_Changed_Successfully" xml:space="preserve">
+    <value>您的电子邮件已成功更改。</value>
+  </data>
+  <data name="Email_Confirmed_Successfully" xml:space="preserve">
+    <value>您的电子邮件已成功确认。</value>
+  </data>
+  <data name="Your_Information" xml:space="preserve">
+    <value>您的信息</value>
+  </data>
+  <data name="Mobile_Phone_Number_Changed_Successfully" xml:space="preserve">
+    <value>您的手机号码已成功更改。</value>
+  </data>
+  <data name="Mobile_Phone_Number_Removed_Successfully" xml:space="preserve">
+    <value>您的手机号码已成功删除。</value>
+  </data>
+  <data name="Create_Opportunities_Permissions_Denied" xml:space="preserve">
+    <value>您无权创建商机。</value>
+  </data>
+  <data name="Order_Updated_Successfully" xml:space="preserve">
+    <value>您的订单已成功更新。</value>
+  </data>
+  <data name="Password_Changed_Successfully" xml:space="preserve">
+    <value>您的密码已成功更改。</value>
+  </data>
+  <data name="Password_Set_Successfully" xml:space="preserve">
+    <value>您的密码已成功设置。</value>
+  </data>
+  <data name="Profile_Updated_Successfully" xml:space="preserve">
+    <value>您的个人资料已成功更新。</value>
+  </data>
+  <data name="Quote_Updated_Successfully" xml:space="preserve">
+    <value>您的报价单已成功更新。</value>
+  </data>
+  <data name="Zip_Postal_Code" xml:space="preserve">
+    <value>邮政编码</value>
+  </data>
+  <data name="Zip_Postal_Code_Required" xml:space="preserve">
+    <value>“邮政编码”为必填字段。</value>
+  </data>
+  <data name="Total_DefaultText_Label" xml:space="preserve">
+    <value>总计</value>
+  </data>
+  <data name="Contact_Support_To_Pay_For_Application_Message" xml:space="preserve">
+    <value>请与支持人员联系以对此应用程序付款。</value>
+  </data>
+  <data name="Entered_Correct_Reference_Number_Confirmation_Message" xml:space="preserve">
+    <value>请确认您已正确输入了参考编号。要获取有关您的服务请求状态的信息，请随时致电 311。</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>电话: 555-555-5555</value>
+  </data>
+  <data name="Support_Plan_Message" xml:space="preserve">
+    <value>支持计划</value>
+  </data>
+  <data name="Permit_Default_Success_Message" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;&lt;em&gt;谢谢您。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;已成功提交您的许可应用程序。&lt;/p&gt;&lt;p&gt;您的应用程序将会在 24 小时内进行审核，您将会收到确认和跟进消息。&lt;/p&gt;</value>
+  </data>
+  <data name="Select_Support_Package_You_Like_To_Purchase" xml:space="preserve">
+    <value>&lt;h3&gt;支持计划&lt;/h3&gt;&lt;p&gt;请选择您要购买的支持包:&lt;/p&gt;</value>
+  </data>
+  <data name="Service_Request_Default_Success_Message" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;&lt;em&gt;谢谢您。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;已成功提交您的服务请求。&lt;/p&gt;&lt;p&gt;您的请求将会在 24 小时内进行审核，您将会收到确认和跟进消息。&lt;/p&gt;</value>
+  </data>
+  <data name="ADX_BlogPost_ShortName" xml:space="preserve">
+    <value>博客帖子</value>
+  </data>
+  <data name="ADX_BlogPost_Update_Tooltip" xml:space="preserve">
+    <value>编辑此博客帖子</value>
+  </data>
+  <data name="ADX_Blog_ShortName" xml:space="preserve">
+    <value>博客</value>
+  </data>
+  <data name="ADX_Blog_Update_Tooltip" xml:space="preserve">
+    <value>编辑此博客</value>
+  </data>
+  <data name="ADX_CommunityForumPost_ShortName" xml:space="preserve">
+    <value>帖子</value>
+  </data>
+  <data name="ADX_CommunityForumPost_DeleteEntireThread_Warning" xml:space="preserve">
+    <value>警告: 删除第一个帖子将会删除整个执行绪。</value>
+  </data>
+  <data name="ADX_CommunityForumPost_Update_Tooltip" xml:space="preserve">
+    <value>编辑此帖子</value>
+  </data>
+  <data name="ADX_CommunityForumThread_Update_Tooltip" xml:space="preserve">
+    <value>编辑此执行绪</value>
+  </data>
+  <data name="ADX_CommunityForum_ShortName" xml:space="preserve">
+    <value>论坛</value>
+  </data>
+  <data name="ADX_CommunityForum_Update_Tooltip" xml:space="preserve">
+    <value>编辑此论坛</value>
+  </data>
+  <data name="ADX_Community_Forum_Thread_ShortName" xml:space="preserve">
+    <value>执行绪</value>
+  </data>
+  <data name="ADX_EventSchedule_AcceptableDays" xml:space="preserve">
+    <value>可接受的天数</value>
+  </data>
+  <data name="ADX_EventSchedule_Recurrence" xml:space="preserve">
+    <value>定期</value>
+  </data>
+  <data name="ADX_EventSchedule_ShortName" xml:space="preserve">
+    <value>事件计划</value>
+  </data>
+  <data name="ADX_EventSchedule_Update_Tooltip" xml:space="preserve">
+    <value>编辑此事件计划</value>
+  </data>
+  <data name="ADX_Event_ShortName" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="ADX_Event_Update_Tooltip" xml:space="preserve">
+    <value>编辑此事件</value>
+  </data>
+  <data name="ADX_PageComment_ShortName" xml:space="preserve">
+    <value>注释</value>
+  </data>
+  <data name="ADX_PageComment_Update_Tooltip" xml:space="preserve">
+    <value>编辑此注释</value>
+  </data>
+  <data name="ADX_Shortcut_ShortName" xml:space="preserve">
+    <value>快捷方式</value>
+  </data>
+  <data name="ADX_Shortcut_Target_Instructions" xml:space="preserve">
+    <value>选择一个快捷方式目标。外部站点的目标 URL 必须以 http:// 或 https:// 开头。</value>
+  </data>
+  <data name="ADX_Shortcut_Update_Tooltip" xml:space="preserve">
+    <value>编辑此快捷方式</value>
+  </data>
+  <data name="ADX_Weblink_DisplayPage_Childlinks_Tooltip" xml:space="preserve">
+    <value>此 Web 链接设置为显示页面子链接。将不会显示此处所示的任何子 Web 链接的子级。</value>
+  </data>
+  <data name="Editable_DeleteMultiple_Tooltip_Prefix" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Editable_DeleteMultiple_Tooltip_Suffix_Plural" xml:space="preserve">
+    <value>子记录?</value>
+  </data>
+  <data name="Editable_DeleteMultiple_Tooltip_Suffix_Singular" xml:space="preserve">
+    <value>子记录?</value>
+  </data>
+  <data name="Entity_Create_ADX_BlogPost_Tooltip" xml:space="preserve">
+    <value>新建博客帖子</value>
+  </data>
+  <data name="Entity_Create_ADX_Blog_Label" xml:space="preserve">
+    <value>子博客</value>
+  </data>
+  <data name="Entity_Create_ADX_Blog_Tooltip" xml:space="preserve">
+    <value>新建子博客</value>
+  </data>
+  <data name="Entity_Create_ADX_CommunityForum_Label" xml:space="preserve">
+    <value>子论坛</value>
+  </data>
+  <data name="Entity_Create_ADX_CommunityForum_Tooltip" xml:space="preserve">
+    <value>新建子论坛</value>
+  </data>
+  <data name="Entity_Create_ADX_EventSchedule_Label" xml:space="preserve">
+    <value>事件计划</value>
+  </data>
+  <data name="Entity_Create_ADX_EventSchedule_Tooltip" xml:space="preserve">
+    <value>新建事件计划</value>
+  </data>
+  <data name="Entity_Create_ADX_Event_Label" xml:space="preserve">
+    <value>子事件</value>
+  </data>
+  <data name="Entity_Create_ADX_Event_Tooltip" xml:space="preserve">
+    <value>新建子事件</value>
+  </data>
+  <data name="Entity_Create_ADX_Shortcut_Label" xml:space="preserve">
+    <value>子快捷方式</value>
+  </data>
+  <data name="Entity_Create_ADX_Shortcut_Tooltip" xml:space="preserve">
+    <value>新建子快捷方式</value>
+  </data>
+  <data name="Entity_Create_ADX_Weblinkset_Tooltip" xml:space="preserve">
+    <value>新建 Web 链接集</value>
+  </data>
+  <data name="Entity_Delete_ADX_BlogpostComment_Tooltip" xml:space="preserve">
+    <value>删除此评论</value>
+  </data>
+  <data name="Entity_Delete_ADX_BlogPost_Tooltip" xml:space="preserve">
+    <value>删除此博客帖子</value>
+  </data>
+  <data name="Entity_Delete_ADX_Blog_Tooltip" xml:space="preserve">
+    <value>删除此博客</value>
+  </data>
+  <data name="Entity_Delete_ADX_CommunityForumPost_Tooltip" xml:space="preserve">
+    <value>删除此帖子</value>
+  </data>
+  <data name="Entity_Delete_ADX_CommunityForumThread_Tooltip" xml:space="preserve">
+    <value>删除此执行绪</value>
+  </data>
+  <data name="Entity_Delete_ADX_CommunityForum_Tooltip" xml:space="preserve">
+    <value>删除此论坛</value>
+  </data>
+  <data name="Entity_Delete_ADX_EventSchedule_Tooltip" xml:space="preserve">
+    <value>删除此事件计划</value>
+  </data>
+  <data name="Entity_Delete_ADX_Event_Tooltip" xml:space="preserve">
+    <value>删除此事件</value>
+  </data>
+  <data name="Entity_Delete_ADX_PageComment_Tooltip" xml:space="preserve">
+    <value>删除此评论</value>
+  </data>
+  <data name="Entity_Delete_ADX_Shortcut_Tooltip" xml:space="preserve">
+    <value>删除此快捷方式</value>
+  </data>
+  <data name="Entity_Delete_ADX_Webfile_Tooltip" xml:space="preserve">
+    <value>删除此文件</value>
+  </data>
+  <data name="Entity_Delete_ADX_Webpage_Tooltip" xml:space="preserve">
+    <value>删除此页面</value>
+  </data>
+  <data name="Entity_Form_Select_New" xml:space="preserve">
+    <value>+ 新建</value>
+  </data>
+  <data name="FileBrowser_Header_Label" xml:space="preserve">
+    <value>选择文件…</value>
+  </data>
+  <data name="Cms_Sitemapchildren_Update_Label" xml:space="preserve">
+    <value>子级</value>
+  </data>
+  <data name="Entity_Create_Adx_Webfile_Label" xml:space="preserve">
+    <value>子文件</value>
+  </data>
+  <data name="Entity_Create_Adx_Webfile_Tooltip" xml:space="preserve">
+    <value>新建子文件</value>
+  </data>
+  <data name="Entity_Create_Adx_Weblink_Tooltip" xml:space="preserve">
+    <value>添加新链接</value>
+  </data>
+  <data name="Entity_Create_Adx_Webpage_Label" xml:space="preserve">
+    <value>子页</value>
+  </data>
+  <data name="Entity_Create_Adx_Webpage_Tooltip" xml:space="preserve">
+    <value>新建子页面</value>
+  </data>
+  <data name="Entity_Delete_Adx_Weblink_Tooltip" xml:space="preserve">
+    <value>删除此项目</value>
+  </data>
+  <data name="Adx_Webfile_Shortname" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="Adx_Webfile_Update_Tooltip" xml:space="preserve">
+    <value>编辑此文件</value>
+  </data>
+  <data name="Adx_Weblink_Update_Tooltip" xml:space="preserve">
+    <value>编辑此链接</value>
+  </data>
+  <data name="Adx_Webpage_Shortname" xml:space="preserve">
+    <value>页面</value>
+  </data>
+  <data name="Adx_Webpage_Not_Yet_Created" xml:space="preserve">
+    <value>尚未创建</value>
+  </data>
+  <data name="Pagination_Shortname" xml:space="preserve">
+    <value>页面</value>
+  </data>
+  <data name="Adx_Webpage_Update_Tooltip" xml:space="preserve">
+    <value>编辑此页面</value>
+  </data>
+  <data name="Datetimepicker_Datepicker_Label" xml:space="preserve">
+    <value>选择一个日期</value>
+  </data>
+  <data name="Editable_Cancel_Label" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Editable_Delete_Label" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Editable_Delete_Tooltip_Prefix" xml:space="preserve">
+    <value>删除此</value>
+  </data>
+  <data name="SiteMarker_WarningMessage" xml:space="preserve">
+    <value>此 {0} 与网站标记 {1} 关联。网站功能可能依赖于此关联。</value>
+  </data>
+  <data name="SiteMarkers_WarningMessage" xml:space="preserve">
+    <value>此 {0} 与网站标记 {1} 关联。网站功能可能依赖于此关联。</value>
+  </data>
+  <data name="Edit_Label" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="Edit_Label_Prefix" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="Editable_Loading" xml:space="preserve">
+    <value>正在加载...</value>
+  </data>
+  <data name="Editable_Required_Label" xml:space="preserve">
+    <value>(必需)</value>
+  </data>
+  <data name="Editable_Save_Label" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Editable_Saving" xml:space="preserve">
+    <value>正在保存...</value>
+  </data>
+  <data name="Editable_Sortable_Tooltip" xml:space="preserve">
+    <value>移动此项目</value>
+  </data>
+  <data name="Editable_Tooltip" xml:space="preserve">
+    <value>编辑此内容</value>
+  </data>
+  <data name="Error_Dataservice_Default" xml:space="preserve">
+    <value>保存内容时出错。未保存所做的更改。</value>
+  </data>
+  <data name="Error_Dataservice_Loading" xml:space="preserve">
+    <value>加载此功能需要的内容时出错。</value>
+  </data>
+  <data name="Error_Dataservice_Loading_Field_Prefix" xml:space="preserve">
+    <value>无法加载</value>
+  </data>
+  <data name="Confirm_Delete_Entity_Prefix" xml:space="preserve">
+    <value>是否确定要删除此</value>
+  </data>
+  <data name="Confirm_No" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="Confirm_Unsavedchanges" xml:space="preserve">
+    <value>您有未保存的更改。是否要继续?</value>
+  </data>
+  <data name="Confirm_Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="Validation_Required_Suffix" xml:space="preserve">
+    <value>{0} 为必填字段。</value>
+  </data>
+  <data name="Sitemapchildren_Header_Label" xml:space="preserve">
+    <value>编辑子级</value>
+  </data>
+  <data name="Access_Denied_No_Permissions_To_View_Notes_Message" xml:space="preserve">
+    <value>您无权查看注释。</value>
+  </data>
+  <data name="Access_Denied_No_Permissions_To_View_These_Folders_Message" xml:space="preserve">
+    <value>您无权查看这些文件夹或文件。</value>
+  </data>
+  <data name="Access_Denied_No_Permissions_To_View_These_Records_Message" xml:space="preserve">
+    <value>您无权查看这些记录。</value>
+  </data>
+  <data name="Activate_Button_Text" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="Activate_Quote_Button_Text" xml:space="preserve">
+    <value>激活报价单</value>
+  </data>
+  <data name="Add_Button_Text" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Add_Files" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="Calculate_Value_Button_Text" xml:space="preserve">
+    <value>计算值</value>
+  </data>
+  <data name="Case_Cancellation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要取消此案例?&lt;/p&gt;</value>
+  </data>
+  <data name="Case_Closed_DefaultResolutionLabel_Text" xml:space="preserve">
+    <value>案例已关闭</value>
+  </data>
+  <data name="Case_Closed_Via_Web_Portal_LabelText" xml:space="preserve">
+    <value>通过 Web 门户关闭的案例</value>
+  </data>
+  <data name="Close_As_Lost_Button_Label" xml:space="preserve">
+    <value>作为丢单结束</value>
+  </data>
+  <data name="Close_As_Won_Button_Text" xml:space="preserve">
+    <value>作为赢单结束</value>
+  </data>
+  <data name="Close_Case_Button_Text" xml:space="preserve">
+    <value>结束案例</value>
+  </data>
+  <data name="Close_Opportunity_As_Lost_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;将商机作为丢单结束?&lt;/p&gt;</value>
+  </data>
+  <data name="Close_Quote_Create_Order_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要关闭此报价单并创建订单?&lt;/p&gt;</value>
+  </data>
+  <data name="Create_Invoice_Button_Text" xml:space="preserve">
+    <value>创建发票</value>
+  </data>
+  <data name="Create_Invoice_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要基于此订单创建发票?&lt;/p&gt;</value>
+  </data>
+  <data name="Create_Order_Button_Text" xml:space="preserve">
+    <value>创建订单</value>
+  </data>
+  <data name="Create_Text" xml:space="preserve">
+    <value>创建</value>
+  </data>
+  <data name="DataBinding_Not_Contain_Property_Message" xml:space="preserve">
+    <value>DataBinding“{0}”不包含名称为 {1} 的属性。</value>
+  </data>
+  <data name="Deactivate_Button_Text" xml:space="preserve">
+    <value>停用</value>
+  </data>
+  <data name="Default_AddFiles_ModalAttachFileLabel" xml:space="preserve">
+    <value>选择文件</value>
+  </data>
+  <data name="Default_AddFolder_Button_Text" xml:space="preserve">
+    <value>创建文件夹</value>
+  </data>
+  <data name="Default_Delete_File_ModalTitle" xml:space="preserve">
+    <value>删除文件</value>
+  </data>
+  <data name="Default_Delete_Folder_ModalTitle" xml:space="preserve">
+    <value>删除文件夹</value>
+  </data>
+  <data name="Default_Delete_Note_ModalTitle" xml:space="preserve">
+    <value>删除注释</value>
+  </data>
+  <data name="Default_Edit_Note_ModalTitle" xml:space="preserve">
+    <value>编辑注释</value>
+  </data>
+  <data name="Default_Error_ModalTitle" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="Default_Grid_Empty_Message" xml:space="preserve">
+    <value>没有要显示的记录。</value>
+  </data>
+  <data name="Default_Grid_Loading_Message" xml:space="preserve">
+    <value>正在加载...</value>
+  </data>
+  <data name="Default_Modal_Processing_Text" xml:space="preserve">
+    <value>正在处理...</value>
+  </data>
+  <data name="Default_Modified_Column_Title" xml:space="preserve">
+    <value>已修改</value>
+  </data>
+  <data name="Default_Notes_List_Empty_Message" xml:space="preserve">
+    <value>没有要显示的注释。</value>
+  </data>
+  <data name="Default_Activities_List_Empty_Message" xml:space="preserve">
+    <value>没有可显示的活动。</value>
+  </data>
+  <data name="Default_SharePoint_Grid_Empty_Message" xml:space="preserve">
+    <value>没有要显示的文件夹或文件。</value>
+  </data>
+  <data name="DefaultCalculateBody_Message" xml:space="preserve">
+    <value>&lt;p&gt;这将会计算此商机的实际值。&lt;/p&gt;</value>
+  </data>
+  <data name="DefaultGenerateQuoteBody_Message" xml:space="preserve">
+    <value>&lt;p&gt;将基于此商机生成报价单。&lt;/p&gt;</value>
+  </data>
+  <data name="DefaultReopenCaseBody_Message" xml:space="preserve">
+    <value>&lt;p&gt;这会重新打开案例。&lt;/p&gt;</value>
+  </data>
+  <data name="Delete_Button_Text" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Description_Of_Resolution_Label_Text" xml:space="preserve">
+    <value>解决方案说明</value>
+  </data>
+  <data name="Description_Of_Update_Label_Text" xml:space="preserve">
+    <value>更新说明</value>
+  </data>
+  <data name="Destination_Label_Text" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="Disassociate_Button_Text" xml:space="preserve">
+    <value>解除关联</value>
+  </data>
+  <data name="Document_Library_Title_Text" xml:space="preserve">
+    <value>文档库</value>
+  </data>
+  <data name="Download_Button_Label" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="Download_Records_From_All_Pages" xml:space="preserve">
+    <value>下载所有页面中的记录。</value>
+  </data>
+  <data name="Download_Records_From_Current_Page_Label" xml:space="preserve">
+    <value>下载当前页面中的记录。</value>
+  </data>
+  <data name="Email_Required_Error" xml:space="preserve">
+    <value>必须提供电子邮件；它将不显示。</value>
+  </data>
+  <data name="Error_Completing_Request_Error_Message" xml:space="preserve">
+    <value>完成请求时出错。&lt;span class='details'&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="Error_Occurred_Message" xml:space="preserve">
+    <value>&lt;p&gt;很抱歉，出现了错误。&lt;/p&gt;</value>
+  </data>
+  <data name="File_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要永久删除此文件?&lt;/p&gt;</value>
+  </data>
+  <data name="Folder_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要永久删除此文件夹及其所有内容?&lt;/p&gt;</value>
+  </data>
+  <data name="Generate_Quote_Button_Label" xml:space="preserve">
+    <value>生成报价单</value>
+  </data>
+  <data name="Is_Private_Field_Label_Text" xml:space="preserve">
+    <value>是专用的 &lt;span class='fa fa-eye-slash' aria-hidden='true'&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="Lookup_Records_Title_Text" xml:space="preserve">
+    <value>查找记录</value>
+  </data>
+  <data name="Myself_Text" xml:space="preserve">
+    <value>我自己</value>
+  </data>
+  <data name="New_Folder_Button_Text" xml:space="preserve">
+    <value>新建文件夹</value>
+  </data>
+  <data name="New_Tag_Title_Text" xml:space="preserve">
+    <value>新标记:</value>
+  </data>
+  <data name="Next_Button_Text" xml:space="preserve">
+    <value>下一个</value>
+  </data>
+  <data name="No_Of_Day_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 天</value>
+  </data>
+  <data name="No_Of_Days_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 天</value>
+  </data>
+  <data name="No_Of_Hour_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 小时</value>
+  </data>
+  <data name="No_Of_Hours_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 小时</value>
+  </data>
+  <data name="No_Of_Minute_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 分钟</value>
+  </data>
+  <data name="No_Of_Minutes_Add_In_Listitem" xml:space="preserve">
+    <value>{0} 分钟</value>
+  </data>
+  <data name="Node_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要删除此注释?&lt;/p&gt;</value>
+  </data>
+  <data name="Overwrite_Existing_Files_Label_Text" xml:space="preserve">
+    <value>覆盖现有文件</value>
+  </data>
+  <data name="Pipeline_Phase_Label_Text" xml:space="preserve">
+    <value>准备阶段</value>
+  </data>
+  <data name="Previous_Button_Label" xml:space="preserve">
+    <value>上一个</value>
+  </data>
+  <data name="Private_Label_Text" xml:space="preserve">
+    <value>私有</value>
+  </data>
+  <data name="Qualify_Button_Label_Text" xml:space="preserve">
+    <value>授予资格</value>
+  </data>
+  <data name="Qualify_Lead_As_Opportunity_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要对此潜在顾客授予商机资格?&lt;/p&gt;</value>
+  </data>
+  <data name="Quote_Activation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要激活此报价单?&lt;/p&gt;</value>
+  </data>
+  <data name="Record_Activation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要激活此记录?&lt;/p&gt;</value>
+  </data>
+  <data name="Record_Deactivation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要停用此记录?&lt;/p&gt;</value>
+  </data>
+  <data name="Record_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>是否确定要删除此记录?</value>
+  </data>
+  <data name="Record_Disassociation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要解除关联此记录?&lt;/p&gt;</value>
+  </data>
+  <data name="Remove_Tag_Tool_Tip_Text" xml:space="preserve">
+    <value>删除标记</value>
+  </data>
+  <data name="Remove_Value_Button_Text" xml:space="preserve">
+    <value>删除值</value>
+  </data>
+  <data name="Reopen_Opportunity_Button_Text" xml:space="preserve">
+    <value>重新开启商机</value>
+  </data>
+  <data name="Reopen_Opportunity_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要重新开启此商机?&lt;/p&gt;</value>
+  </data>
+  <data name="Resolve_Case_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要解决此案例?&lt;/p&gt;</value>
+  </data>
+  <data name="Run_Workflow_Button_Text" xml:space="preserve">
+    <value>运行工作流</value>
+  </data>
+  <data name="Run_Workflow_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要运行此工作流?&lt;/p&gt;</value>
+  </data>
+  <data name="Select_Column_Header_Text" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="Select_Different_Customer_Button_Text" xml:space="preserve">
+    <value>选择其他客户</value>
+  </data>
+  <data name="Select_Different_Support_Plan_Butoon_Text" xml:space="preserve">
+    <value>选择其他支持计划</value>
+  </data>
+  <data name="Selected_Records_Title_Text" xml:space="preserve">
+    <value>选择的记录</value>
+  </data>
+  <data name="Set_On_Hold_Button_Label_Text" xml:space="preserve">
+    <value>设置暂候</value>
+  </data>
+  <data name="Set_Opportunity_On_Hold_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否确定要将商机设置为暂候?&lt;/p&gt;</value>
+  </data>
+  <data name="Set_Opportunity_To_Close_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;是否要将商机设置为作为赢单结束?&lt;/p&gt;</value>
+  </data>
+  <data name="Submit_Button_Label_Text" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Support_Plan_Name_Text" xml:space="preserve">
+    <value>支持计划</value>
+  </data>
+  <data name="Toggle_Filter_Text" xml:space="preserve">
+    <value>切换筛选器</value>
+  </data>
+  <data name="Update_Note_Button_Text" xml:space="preserve">
+    <value>更新注释</value>
+  </data>
+  <data name="Update_Pipeline_Phase_Button_Label_Text" xml:space="preserve">
+    <value>更新准备阶段</value>
+  </data>
+  <data name="Upto_Text" xml:space="preserve">
+    <value>最高达</value>
+  </data>
+  <data name="View_Details_Tooltip" xml:space="preserve">
+    <value>视图详细信息</value>
+  </data>
+  <data name="Associate_Button_Text" xml:space="preserve">
+    <value>关联</value>
+  </data>
+  <data name="Entity_Create_ADX_BlogPost_Label" xml:space="preserve">
+    <value>博客帖子</value>
+  </data>
+  <data name="No_Entity_Permissions" xml:space="preserve">
+    <value>权限被拒绝。您对 {0} 没有相应的实体权限。</value>
+  </data>
+  <data name="Site_Setting_Recaptcha_PublicOrPrivate_Key_Is_Missing" xml:space="preserve">
+    <value>缺少必需的站点设置“{0}”。</value>
+  </data>
+  <data name="Error_Creating_IdeaAndIssue_Comment_WithNullOrWhitespace" xml:space="preserve">
+    <value>以匿名方式创建  {0} 时不能为 null 或为空白。</value>
+  </data>
+  <data name="Help_Desk_Entitlement_Message" xml:space="preserve">
+    <value>帮助中心权利 {0}</value>
+  </data>
+  <data name="Password_Errors" xml:space="preserve">
+    <value>密码必须至少有一个 {0}。</value>
+  </data>
+  <data name="EntityList_Calendar_NoView" xml:space="preserve">
+    <value>日历: 未找到视图 {0}</value>
+  </data>
+  <data name="EntityList_Calendar_DateFormat" xml:space="preserve">
+    <value>日历: 日期格式 {0} 错误，应为“now”或“yyyy-mm-dd”</value>
+  </data>
+  <data name="EntityList_Calendar_LoadUrl" xml:space="preserve">
+    <value>日历: 未设置事件 URL</value>
+  </data>
+  <data name="EntityList_Calendar_Where" xml:space="preserve">
+    <value>日历: 导航方向 {0} 错误。只能为“下一天”、“上一天”或“今天”</value>
+  </data>
+  <data name="EntityList_Calendar_TimeDivide" xml:space="preserve">
+    <value>日历: 时间拆分参数作为除数在与 60 相除时应不带小数，例如 10、15、30 等。</value>
+  </data>
+  <data name="EntityList_Calendar_No_Events_In_Day" xml:space="preserve">
+    <value>这一天中没有事件。</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Year" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Month" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Week" xml:space="preserve">
+    <value>{1} 的第 {0} 周</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Day" xml:space="preserve">
+    <value>{0} {1} {2}，{3}</value>
+  </data>
+  <data name="EntityList_Calendar_Week" xml:space="preserve">
+    <value>第 {0} 周</value>
+  </data>
+  <data name="EntityList_Calendar_All_Day" xml:space="preserve">
+    <value>全天</value>
+  </data>
+  <data name="EntityList_Calendar_Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="EntityList_Calendar_Events" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="EntityList_Calendar_Before_Time" xml:space="preserve">
+    <value>在日程表前结束</value>
+  </data>
+  <data name="EntityList_Calendar_After_Time" xml:space="preserve">
+    <value>在日程表后启动</value>
+  </data>
+  <data name="Liquid_Template_Ad_Title" xml:space="preserve">
+    <value>广告</value>
+  </data>
+  <data name="Liquid_Template_Ad_Description" xml:space="preserve">
+    <value>此模板按名称显示广告，或显示广告位置的随机广告。</value>
+  </data>
+  <data name="Events_Upcoming" xml:space="preserve">
+    <value>近期事件</value>
+  </data>
+  <data name="Events_Upcoming_All_Events" xml:space="preserve">
+    <value>所有事件</value>
+  </data>
+  <data name="Entity_Create_Label" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="Does_Not_Contain_Property_With_Name" xml:space="preserve">
+    <value>DataBinding“{0}”不包含名称为 {1} 的属性。</value>
+  </data>
+  <data name="Clear_Lookup_Field" xml:space="preserve">
+    <value>清除查找字段</value>
+  </data>
+  <data name="ExecutionContext_OrganizationService_Retrieve_Exception" xml:space="preserve">
+    <value>无法检索执行上下文和组织服务。</value>
+  </data>
+  <data name="Invalid_SIM_Response_Validation_Message" xml:space="preserve">
+    <value>SIM 响应无效: </value>
+  </data>
+  <data name="Process_Payment_Failed" xml:space="preserve">
+    <value>无法处理该付款。</value>
+  </data>
+  <data name="Unable_To_Parsex_response_code" xml:space="preserve">
+    <value>无法解析 x_response_code: </value>
+  </data>
+  <data name="Template_Not_Found_Exception" xml:space="preserve">
+    <value>未找到模板“{0}”。</value>
+  </data>
+  <data name="Invalid_Username_Or_Password_Exception" xml:space="preserve">
+    <value>用户名或密码无效。</value>
+  </data>
+  <data name="Knowledge_Base_Article_Not_Found_Exception" xml:space="preserve">
+    <value>未找到知识库文章“{0}”。</value>
+  </data>
+  <data name="Cannot_Create_New_Website_As_Child_Website_Exception" xml:space="preserve">
+    <value>当源和目标实例不同时，无法将新网站作为子网站创建。</value>
+  </data>
+  <data name="Must_Be_GreaterThan_Or_EqualTo_One_Exception" xml:space="preserve">
+    <value>必须 &gt;=1。</value>
+  </data>
+  <data name="Permissions_Exception" xml:space="preserve">
+    <value>权限</value>
+  </data>
+  <data name="Payment_Always_Successful_Message" xml:space="preserve">
+    <value>付款始终成功 - 演示模式</value>
+  </data>
+  <data name="Job_Postings_Text" xml:space="preserve">
+    <value>工作发布</value>
+  </data>
+  <data name="Failed_To_Configure_Cloud_Storage_Account" xml:space="preserve">
+    <value>未找到: 未能配置云存储帐户</value>
+  </data>
+  <data name="Unable_To_Retrieve_Current_Directory_For_Upload_Error" xml:space="preserve">
+    <value>无法检索要上传的当前目录。</value>
+  </data>
+  <data name="Upload_Permission_Denied_For_Current_Directory_Error" xml:space="preserve">
+    <value>对当前目录的上传权限被拒绝</value>
+  </data>
+  <data name="Launch_Lookup_Modal" xml:space="preserve">
+    <value>启动查找模式</value>
+  </data>
+  <data name="Create_Customer_Contact" xml:space="preserve">
+    <value>创建客户联系人</value>
+  </data>
+  <data name="Unable_To_Parse_Parameter_In_Required_ToDate_Format_Exception" xml:space="preserve">
+    <value>无法以必需的日期格式解析“to”参数。</value>
+  </data>
+  <data name="Name_Required_Error" xml:space="preserve">
+    <value>必须填写您的姓名。</value>
+  </data>
+  <data name="Comment_Required_Error" xml:space="preserve">
+    <value>需要提供注释。</value>
+  </data>
+  <data name="Idea_Is_Required_Error" xml:space="preserve">
+    <value>需要提供观点。</value>
+  </data>
+  <data name="Issue_Required_Error" xml:space="preserve">
+    <value>“问题”为必填字段。</value>
+  </data>
+  <data name="Website_Model_Error_Exception" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="UserName_Exception" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="Organization_Service_URL_IsInvalid_Exception" xml:space="preserve">
+    <value>组织服务 URL 无效。</value>
+  </data>
+  <data name="ModelErrorException_For_User_Name" xml:space="preserve">
+    <value>用户名必须为“域\\用户名”格式。</value>
+  </data>
+  <data name="No_Active_Website_Found_Exception" xml:space="preserve">
+    <value>未找到可用的网站。请安装网站数据包以继续。</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="Website_Message" xml:space="preserve">
+    <value>指定的组织已具有此网站的可用网站绑定。</value>
+  </data>
+  <data name="Check_Connection" xml:space="preserve">
+    <value>检查连接</value>
+  </data>
+  <data name="Apply_Button_Text" xml:space="preserve">
+    <value>申请</value>
+  </data>
+  <data name="Question_Help_Text" xml:space="preserve">
+    <value>这是什么?</value>
+  </data>
+  <data name="Dynamics_365_Organization_Service_URL" xml:space="preserve">
+    <value>Dynamics 365 组织服务 URL</value>
+  </data>
+  <data name="Microsoft_Dynamics_Title" xml:space="preserve">
+    <value>连接到 Microsoft Dynamics&lt;sup&gt;&lt;small&gt;® &lt;/small&gt;&lt;/sup&gt;365</value>
+  </data>
+  <data name="CRM_Organization_Service_URL" xml:space="preserve">
+    <value>{0} Dynamics 365 组织服务 URL {1} 可在 Dynamics 365 实例中查找，位于:</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Customizations" xml:space="preserve">
+    <value>自定义项</value>
+  </data>
+  <data name="Developer_Resources" xml:space="preserve">
+    <value>开发人员资源</value>
+  </data>
+  <data name="Service_Endpoints" xml:space="preserve">
+    <value>服务端点</value>
+  </data>
+  <data name="Organization_Service" xml:space="preserve">
+    <value>组织服务</value>
+  </data>
+  <data name="Click_To_Delete_Your_Vote" xml:space="preserve">
+    <value>单击此处可删除您的投票</value>
+  </data>
+  <data name="Liquid_Template_Blogs_Description" xml:space="preserve">
+    <value>此模板显示列表组中最近的博客帖子。</value>
+  </data>
+  <data name="Liquid_Template_Breadcrumbs_Title" xml:space="preserve">
+    <value>导航痕迹</value>
+  </data>
+  <data name="Liquid_Template_Child_Link_List_Group_Title" xml:space="preserve">
+    <value>子链接列表组</value>
+  </data>
+  <data name="Liquid_Template_Entitylist_Description" xml:space="preserve">
+    <value>此模板显示网格中的记录列表，该网络支持按与网页关联的实体列表定义的方式排序、分页和搜索。</value>
+  </data>
+  <data name="Liquid_Template_Entitylist_Title" xml:space="preserve">
+    <value>实体列表</value>
+  </data>
+  <data name="Liquid_Template_Events_Upcoming_Description" xml:space="preserve">
+    <value>此模板显示从现在起 60 天内发生的事件的链接。</value>
+  </data>
+  <data name="Liquid_Template_Events_Upcoming_Title" xml:space="preserve">
+    <value>事件: 近期</value>
+  </data>
+  <data name="Liquid_Template_Forums_Description" xml:space="preserve">
+    <value>此模板显示具有其各自的执行绪和帖子数的网站论坛的列表。</value>
+  </data>
+  <data name="Liquid_Template_Layout_One_Column_Description" xml:space="preserve">
+    <value>此模板显示包含导航痕迹、页面标题和页面副本内容的单列布局。</value>
+  </data>
+  <data name="Liquid_Template_Layout_One_Column_Title" xml:space="preserve">
+    <value>布局 1 列</value>
+  </data>
+  <data name="Liquid_Template_Layout_Three_Column_Wide_Middle_Description" xml:space="preserve">
+    <value>模板显示三列布局。中间列比左右侧列宽。页面顶部的布局包含导航痕迹和页面标题，页面副本内容位于中间列。</value>
+  </data>
+  <data name="Liquid_Template_Layout_Three_Column_Wide_Middle_Title" xml:space="preserve">
+    <value>布局 3 列中间宽</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Left_Description" xml:space="preserve">
+    <value>此模板显示两列布局。左侧列比右侧列宽。页面顶部包含导航痕迹、页面标题，页面副本内容位于左侧列。</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Left_Title" xml:space="preserve">
+    <value>布局 2 列左宽</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Right_Description" xml:space="preserve">
+    <value>模板显示两列布局。右侧列比左侧列宽。页面顶部包含导航痕迹、页面标题，页面副本内容位于右侧列。</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Right_Title" xml:space="preserve">
+    <value>布局 2 列右侧宽</value>
+  </data>
+  <data name="Liquid_Template_Page_Copy_Description" xml:space="preserve">
+    <value>此模板显示支持嵌入式 Liquid 的可编辑页面副本内容 HTML。</value>
+  </data>
+  <data name="Liquid_Template_Page_Copy_Title" xml:space="preserve">
+    <value>页面副本</value>
+  </data>
+  <data name="Liquid_Template_Page_Header_Description" xml:space="preserve">
+    <value>此模板显示页面标题。</value>
+  </data>
+  <data name="Liquid_Template_Page_Header_Title" xml:space="preserve">
+    <value>页面标题</value>
+  </data>
+  <data name="Liquid_Template_Poll_Description" xml:space="preserve">
+    <value>此模板按名称显示民意调查，或者显示民意调查位置中的随机民意调查。</value>
+  </data>
+  <data name="Liquid_Template_Search_Description" xml:space="preserve">
+    <value>此模板显示具有单个文本输入和搜索按钮的基本搜索窗体。</value>
+  </data>
+  <data name="Liquid_Template_Side_Navigation_Description" xml:space="preserve">
+    <value>此模板显示垂直树视图样式的导航。它具有指向可返回第一级的上级页面的链接、指向当前页面的同级页面的链接，以及指向当前页面的下级页面的链接。</value>
+  </data>
+  <data name="Liquid_Template_Side_Navigation_Title" xml:space="preserve">
+    <value>侧导航</value>
+  </data>
+  <data name="Liquid_Template_Snippet_Title" xml:space="preserve">
+    <value>片段</value>
+  </data>
+  <data name="Liquid_Template_Top_Navigation_Title" xml:space="preserve">
+    <value>顶部导航</value>
+  </data>
+  <data name="Liquid_Template_Weblink_List_Group_Title" xml:space="preserve">
+    <value>Web 链接列表组</value>
+  </data>
+  <data name="Liquid_Template_Snippet_Description" xml:space="preserve">
+    <value>此模板按名称显示可编辑的 HTML 内容片段。</value>
+  </data>
+  <data name="Liquid_Template_Top_Navigation_Description" xml:space="preserve">
+    <value>此模板为主导航 Web 链接集显示带下拉菜单的可编辑导航栏。</value>
+  </data>
+  <data name="Liquid_Template_Weblink_List_Group_Description" xml:space="preserve">
+    <value>此模板显示 Web 链接集的链接列表组。</value>
+  </data>
+  <data name="Liquid_Template_Badges_Description" xml:space="preserve">
+    <value>此模板显示联系人的徽标。传入 userid (默认登录的用户)和 badge_type (个人资料徽标或基本徽标)。</value>
+  </data>
+  <data name="Liquid_Template_Badges_Title" xml:space="preserve">
+    <value>徽章</value>
+  </data>
+  <data name="Poll_Archives_Heading" xml:space="preserve">
+    <value>投票存档</value>
+  </data>
+  <data name="Authentication_Error_TooMany_Attempts" xml:space="preserve">
+    <value>登录尝试次数太多。请稍等一会，然后重试。</value>
+  </data>
+  <data name="Poll_Results_Label" xml:space="preserve">
+    <value>查看结果</value>
+  </data>
+  <data name="Poll_Totals_Label" xml:space="preserve">
+    <value>总票数:</value>
+  </data>
+  <data name="Poll_Return_Label" xml:space="preserve">
+    <value>返回到民意调查</value>
+  </data>
+  <data name="All_Blogs_DefaultText" xml:space="preserve">
+    <value>所有博客</value>
+  </data>
+  <data name="Forum_Activity_DefaultText" xml:space="preserve">
+    <value>论坛活动</value>
+  </data>
+  <data name="In_This_Section_DefaultText_With_Span" xml:space="preserve">
+    <value>&lt;span class="fa fa-folder-open" aria-hidden="true"&gt;&lt;/span&gt;&amp;nbsp;  本节内容</value>
+  </data>
+  <data name="Related_Links_DefaultText" xml:space="preserve">
+    <value>相关链接</value>
+  </data>
+  <data name="Subscribe_To_Blogs_DefaultText" xml:space="preserve">
+    <value>订阅博客</value>
+  </data>
+  <data name="Liquid_Template_Breadcrumbs_Description" xml:space="preserve">
+    <value>此模板显示从当前页回到主页的上级页面的链接。</value>
+  </data>
+  <data name="Liquid_Template_Child_Link_List_Group_Description" xml:space="preserve">
+    <value>此模板显示列表组中当前页面的任何子页面的链接。</value>
+  </data>
+  <data name="All_Day_Event_Label" xml:space="preserve">
+    <value>全天事件</value>
+  </data>
+  <data name="Answer_Label" xml:space="preserve">
+    <value>解答?</value>
+  </data>
+  <data name="Answered_Label" xml:space="preserve">
+    <value>已解答</value>
+  </data>
+  <data name="Approved_Label" xml:space="preserve">
+    <value>已批准?</value>
+  </data>
+  <data name="Archive_Template_Label" xml:space="preserve">
+    <value>存档模板</value>
+  </data>
+  <data name="Cloud_Blob_Address_Label" xml:space="preserve">
+    <value>云 Blob 地址</value>
+  </data>
+  <data name="Comment_Policy_Label" xml:space="preserve">
+    <value>评论政策</value>
+  </data>
+  <data name="Content_Label" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Content_Disposition_Label" xml:space="preserve">
+    <value>内容处置</value>
+  </data>
+  <data name="Copy_Label" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Custom_CSS_Label" xml:space="preserve">
+    <value>自定义 CSS</value>
+  </data>
+  <data name="Custom_JavaScript_Label" xml:space="preserve">
+    <value>自定义 JavaScript</value>
+  </data>
+  <data name="Disable_Page_Validation_Label" xml:space="preserve">
+    <value>禁用页面验证</value>
+  </data>
+  <data name="Disable_Target_Validation_Label" xml:space="preserve">
+    <value>禁用目标验证</value>
+  </data>
+  <data name="Display_Date_Label" xml:space="preserve">
+    <value>显示日期</value>
+  </data>
+  <data name="Display_Image_Only_Label" xml:space="preserve">
+    <value>仅显示图像</value>
+  </data>
+  <data name="Display_Page_Child_Links" xml:space="preserve">
+    <value>显示页面子链接</value>
+  </data>
+  <data name="Editorial_Comments_Label" xml:space="preserve">
+    <value>编辑的评论</value>
+  </data>
+  <data name="Enable_Ratings_Label" xml:space="preserve">
+    <value>启用评级</value>
+  </data>
+  <data name="Enable_Tracking_Label" xml:space="preserve">
+    <value>启用跟踪</value>
+  </data>
+  <data name="Entity_Form_Label" xml:space="preserve">
+    <value>实体窗体</value>
+  </data>
+  <data name="Entity_List_Label" xml:space="preserve">
+    <value>实体列表</value>
+  </data>
+  <data name="Exclude_From_Search_Label" xml:space="preserve">
+    <value>从搜索中排除</value>
+  </data>
+  <data name="Expiration_Date_Label" xml:space="preserve">
+    <value>到期日期</value>
+  </data>
+  <data name="External_URL_Label" xml:space="preserve">
+    <value>外部 URL</value>
+  </data>
+  <data name="Forum_Template_Label" xml:space="preserve">
+    <value>论坛模板</value>
+  </data>
+  <data name="Friday_Label" xml:space="preserve">
+    <value>星期五</value>
+  </data>
+  <data name="General_Label" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="Hidden_From_Sitemap_Label" xml:space="preserve">
+    <value>在站点地图中隐藏</value>
+  </data>
+  <data name="Home_Template_Label" xml:space="preserve">
+    <value>主页模板</value>
+  </data>
+  <data name="Image_Alternate_Text_Label" xml:space="preserve">
+    <value>图像替换文本</value>
+  </data>
+  <data name="Image_Height_Label" xml:space="preserve">
+    <value>图像高度</value>
+  </data>
+  <data name="Image_URL_Label" xml:space="preserve">
+    <value>图像 URL</value>
+  </data>
+  <data name="Image_Width_Label" xml:space="preserve">
+    <value>图像宽度</value>
+  </data>
+  <data name="Interval_Label" xml:space="preserve">
+    <value>时间间隔</value>
+  </data>
+  <data name="Location_Name_Label" xml:space="preserve">
+    <value>位置名称</value>
+  </data>
+  <data name="Max_Recurrences_Label" xml:space="preserve">
+    <value>最大重复出现次数</value>
+  </data>
+  <data name="Monday_Label" xml:space="preserve">
+    <value>星期一</value>
+  </data>
+  <data name="Open_In_New_Window_Label" xml:space="preserve">
+    <value>在新窗口中打开</value>
+  </data>
+  <data name="Page_Label" xml:space="preserve">
+    <value>页面</value>
+  </data>
+  <data name="Page_Template_Label" xml:space="preserve">
+    <value>页面模板</value>
+  </data>
+  <data name="Parent_Page_Label" xml:space="preserve">
+    <value>父页</value>
+  </data>
+  <data name="Partial_URL_Label" xml:space="preserve">
+    <value>部分 URL</value>
+  </data>
+  <data name="Post_Template_Label" xml:space="preserve">
+    <value>帖子模板</value>
+  </data>
+  <data name="Preview_On_Label" xml:space="preserve">
+    <value>预览打开</value>
+  </data>
+  <data name="Published_Label" xml:space="preserve">
+    <value>已发布</value>
+  </data>
+  <data name="Publishing_Label" xml:space="preserve">
+    <value>正在发布</value>
+  </data>
+  <data name="Publishing_State_Label" xml:space="preserve">
+    <value>发布状态</value>
+  </data>
+  <data name="R_Label" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="Recurrence_End_Time_Label" xml:space="preserve">
+    <value>定期结束时间</value>
+  </data>
+  <data name="Registration_Content_Label" xml:space="preserve">
+    <value>注册内容</value>
+  </data>
+  <data name="Release_Date_Label" xml:space="preserve">
+    <value>发布日期</value>
+  </data>
+  <data name="Requires_Registration_Label" xml:space="preserve">
+    <value>需要注册</value>
+  </data>
+  <data name="Robots_Follow_Link_Label" xml:space="preserve">
+    <value>机器人跟踪链接</value>
+  </data>
+  <data name="Saturday_Label" xml:space="preserve">
+    <value>星期六</value>
+  </data>
+  <data name="Sticky_Label" xml:space="preserve">
+    <value>置顶</value>
+  </data>
+  <data name="Subject_Label" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="Summary_Label" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="Summary_Excerpt_Label" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="Sunday_Label" xml:space="preserve">
+    <value>星球六</value>
+  </data>
+  <data name="Target_Event_Label" xml:space="preserve">
+    <value>目标事件</value>
+  </data>
+  <data name="Target_Forum_Label" xml:space="preserve">
+    <value>目标论坛</value>
+  </data>
+  <data name="Target_URL_Label" xml:space="preserve">
+    <value>目标 URL</value>
+  </data>
+  <data name="Target_Web_File_Label" xml:space="preserve">
+    <value>目标 Web 文件</value>
+  </data>
+  <data name="Target_Web_Page_Label" xml:space="preserve">
+    <value>目标网页</value>
+  </data>
+  <data name="Thread_Template_Label" xml:space="preserve">
+    <value>执行绪模板</value>
+  </data>
+  <data name="Thread_Type_Label" xml:space="preserve">
+    <value>执行绪类型</value>
+  </data>
+  <data name="Thursday_Label" xml:space="preserve">
+    <value>星期四</value>
+  </data>
+  <data name="Title_Label" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="Tuesday_Label" xml:space="preserve">
+    <value>星期二</value>
+  </data>
+  <data name="Upload_File_Label" xml:space="preserve">
+    <value>上传文件</value>
+  </data>
+  <data name="Web_Form_Label" xml:space="preserve">
+    <value>Web 窗体</value>
+  </data>
+  <data name="Wednesday_Label" xml:space="preserve">
+    <value>星期三</value>
+  </data>
+  <data name="Week_Label" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="Templates_Label" xml:space="preserve">
+    <value>模板</value>
+  </data>
+  <data name="Listbox_Label" xml:space="preserve">
+    <value>列表框</value>
+  </data>
+  <data name="Insert_Label" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="Display_Page_Child_Links_Label" xml:space="preserve">
+    <value>显示页面子链接</value>
+  </data>
+  <data name="Keywords_Label" xml:space="preserve">
+    <value>关键字</value>
+  </data>
+  <data name="Image_List_Label" xml:space="preserve">
+    <value>图像列表</value>
+  </data>
+  <data name="Anchors_Label" xml:space="preserve">
+    <value>锚点</value>
+  </data>
+  <data name="Source_Label" xml:space="preserve">
+    <value>来源</value>
+  </data>
+  <data name="Find_Label" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="Style_Label" xml:space="preserve">
+    <value>样式</value>
+  </data>
+  <data name="Previous_Edit_Point_Label" xml:space="preserve">
+    <value>上一个编辑点</value>
+  </data>
+  <data name="Encoding_Label" xml:space="preserve">
+    <value>编码</value>
+  </data>
+  <data name="Robots_Label" xml:space="preserve">
+    <value>机器人</value>
+  </data>
+  <data name="Author_Label" xml:space="preserve">
+    <value>作者</value>
+  </data>
+  <data name="Class_Label" xml:space="preserve">
+    <value>类</value>
+  </data>
+  <data name="Image_Description_Label" xml:space="preserve">
+    <value>图像说明</value>
+  </data>
+  <data name="Image_Title_Label" xml:space="preserve">
+    <value>图像标题</value>
+  </data>
+  <data name="Dimensions_Label" xml:space="preserve">
+    <value>维度</value>
+  </data>
+  <data name="Vertical_Space_Label" xml:space="preserve">
+    <value>垂直空间</value>
+  </data>
+  <data name="Horizontal_Space_Label" xml:space="preserve">
+    <value>水平空间</value>
+  </data>
+  <data name="Border_Label" xml:space="preserve">
+    <value>边框</value>
+  </data>
+  <data name="Text_To_Display_Label" xml:space="preserve">
+    <value>要显示的文本</value>
+  </data>
+  <data name="Link_List_Label" xml:space="preserve">
+    <value>链接列表</value>
+  </data>
+  <data name="Target_Label" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="Alternative_Source_Label" xml:space="preserve">
+    <value>替换源</value>
+  </data>
+  <data name="Poster_Label" xml:space="preserve">
+    <value>海报</value>
+  </data>
+  <data name="Replace_With_Label" xml:space="preserve">
+    <value>替换为</value>
+  </data>
+  <data name="Border_Color_Label" xml:space="preserve">
+    <value>边框颜色</value>
+  </data>
+  <data name="Background_Color_Label" xml:space="preserve">
+    <value>背景颜色</value>
+  </data>
+  <data name="Cols_Label" xml:space="preserve">
+    <value>列数</value>
+  </data>
+  <data name="Rows_Label" xml:space="preserve">
+    <value>行</value>
+  </data>
+  <data name="Width_Label" xml:space="preserve">
+    <value>宽度</value>
+  </data>
+  <data name="Height_Label" xml:space="preserve">
+    <value>高度</value>
+  </data>
+  <data name="Cell_Spacing_Label" xml:space="preserve">
+    <value>单元格间距</value>
+  </data>
+  <data name="Cell_Padding_Label" xml:space="preserve">
+    <value>单元格边距</value>
+  </data>
+  <data name="Caption_Label" xml:space="preserve">
+    <value>题注</value>
+  </data>
+  <data name="Alignment_Label" xml:space="preserve">
+    <value>对齐方式</value>
+  </data>
+  <data name="Scope_Label" xml:space="preserve">
+    <value>范围</value>
+  </data>
+  <data name="HAlign_Label" xml:space="preserve">
+    <value>水平对齐</value>
+  </data>
+  <data name="VAlign_Label" xml:space="preserve">
+    <value>垂直对齐</value>
+  </data>
+  <data name="Row_Type_Label" xml:space="preserve">
+    <value>行类型</value>
+  </data>
+  <data name="Form_Label" xml:space="preserve">
+    <value>窗体</value>
+  </data>
+  <data name="Required_Nick_Name" xml:space="preserve">
+    <value>必须填写昵称。</value>
+  </data>
+  <data name="Required_Email" xml:space="preserve">
+    <value>“电子邮件”为必填字段。它将不显示。</value>
+  </data>
+  <data name="Required_Title" xml:space="preserve">
+    <value>“标题”为必填字段。</value>
+  </data>
+  <data name="Required_Rating" xml:space="preserve">
+    <value>“评级”为必填字段。</value>
+  </data>
+  <data name="Delete_Permission_Denied_For_Current_Directory_Error" xml:space="preserve">
+    <value>删除拒绝访问当前目录的权限</value>
+  </data>
+  <data name="Account_Classification_Code_Must_Set_To_Partner_Message" xml:space="preserve">
+    <value>帐户分类代码必须设置为“合作伙伴”。</value>
+  </data>
+  <data name="Edit_Customer_Account" xml:space="preserve">
+    <value>标记客户帐户</value>
+  </data>
+  <data name="Unable_To_Parse_From_Parameter_Error" xml:space="preserve">
+    <value>无法以必需的日期格式解析“from”参数。</value>
+  </data>
+  <data name="Must_Be_GreaterThan_One_Exception" xml:space="preserve">
+    <value>必须 &gt; 1</value>
+  </data>
+  <data name="Expected_Entity_Object_Argument_Exception" xml:space="preserve">
+    <value>方法需要 {0} 类型的实体对象，但为其传递了 {1} 类型的实体对象。</value>
+  </data>
+  <data name="License_Failed_To_Load_Exception" xml:space="preserve">
+    <value>未能加载此许可证。{0}</value>
+  </data>
+  <data name="License_DoesNot_Include_Support_Exception" xml:space="preserve">
+    <value>此许可证不包括对 {0} 的支持。请求的页面需要此功能。</value>
+  </data>
+  <data name="Preview_Off_Label" xml:space="preserve">
+    <value>预览关闭</value>
+  </data>
+  <data name="Published_UnPublished_Entities_Title" xml:space="preserve">
+    <value>请单击以切换预览模式。打开时，将会显示已发布和未发布的实体。但关闭时，仅会显示已发布的实体。</value>
+  </data>
+  <data name="Confirmed_Email_Required_Message" xml:space="preserve">
+    <value>需要提供确认电子邮件以进行双重身份验证。</value>
+  </data>
+  <data name="Change_Email_Defaulttext" xml:space="preserve">
+    <value>更改电子邮件</value>
+  </data>
+  <data name="Change_Mobile_Phone_Defaulttext" xml:space="preserve">
+    <value>更改手机号码</value>
+  </data>
+  <data name="Change_Two_Factor_Authentication" xml:space="preserve">
+    <value>更改双重身份验证</value>
+  </data>
+  <data name="Child_Categories_Defaulttext" xml:space="preserve">
+    <value>子类别</value>
+  </data>
+  <data name="Code_Defaulttext" xml:space="preserve">
+    <value>代码</value>
+  </data>
+  <data name="Confirm_Email_Defaulttext" xml:space="preserve">
+    <value>确认电子邮件</value>
+  </data>
+  <data name="Confirm_Password" xml:space="preserve">
+    <value>确认密码</value>
+  </data>
+  <data name="Confirm_Remove" xml:space="preserve">
+    <value>确认删除</value>
+  </data>
+  <data name="Enter_Security_Code" xml:space="preserve">
+    <value>输入安全码</value>
+  </data>
+  <data name="Enter_Email_Address_For_Password_Reset" xml:space="preserve">
+    <value>输入您的电子邮件地址以请求密码重置。</value>
+  </data>
+  <data name="Account_Already_Exist_Message" xml:space="preserve">
+    <value>我已有帐户</value>
+  </data>
+  <data name="Instructions_Defaulttext" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="Invitation_Code_Defaulttext" xml:space="preserve">
+    <value>邀请码</value>
+  </data>
+  <data name="Keywords_Defaulttext" xml:space="preserve">
+    <value>关键字:</value>
+  </data>
+  <data name="Manage_External_Authentication" xml:space="preserve">
+    <value>管理外部身份验证</value>
+  </data>
+  <data name="Mobile_Phone_Defaulttext" xml:space="preserve">
+    <value>移动电话</value>
+  </data>
+  <data name="Old_Password_Defaulttext" xml:space="preserve">
+    <value>旧密码</value>
+  </data>
+  <data name="Password_Defaulttext" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Check_Your_Email_For_Confirmation_Instructions" xml:space="preserve">
+    <value>查看电子邮件中的确认说明。</value>
+  </data>
+  <data name="Check_Your_Email_For_Security_Code" xml:space="preserve">
+    <value>查看电子邮件中的安全码。</value>
+  </data>
+  <data name="Check_Your_Mobile_For_Security_Code" xml:space="preserve">
+    <value>查看手机中的安全码。</value>
+  </data>
+  <data name="Check_Your_Phone_For_Security_Code" xml:space="preserve">
+    <value>查看手机中的安全码。</value>
+  </data>
+  <data name="Print_Defaulttext" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="Provide_Email_Address" xml:space="preserve">
+    <value>请提供电子邮件地址以完成外部帐户注册。</value>
+  </data>
+  <data name="Rate_This_Defaulttext" xml:space="preserve">
+    <value>对此项评级</value>
+  </data>
+  <data name="Register_For_New_Local_Account" xml:space="preserve">
+    <value>注册新的本地帐户</value>
+  </data>
+  <data name="Register_Using_External_Account" xml:space="preserve">
+    <value>使用外部帐户注册</value>
+  </data>
+  <data name="Register_External_Account_Defaulttext" xml:space="preserve">
+    <value>注册您的外部帐户</value>
+  </data>
+  <data name="Related_Articles_Defaulttext" xml:space="preserve">
+    <value>相关文章</value>
+  </data>
+  <data name="Related_Products_Defaulttext" xml:space="preserve">
+    <value>相关产品</value>
+  </data>
+  <data name="Remember_Me_Defaulttext" xml:space="preserve">
+    <value>保存我的信息?</value>
+  </data>
+  <data name="Remember_This_Browser_Message" xml:space="preserve">
+    <value>记住此浏览器?</value>
+  </data>
+  <data name="Remove_Mobile_Phone_Number_Message" xml:space="preserve">
+    <value>删除手机号码?</value>
+  </data>
+  <data name="Reset_Password_Defaulttext" xml:space="preserve">
+    <value>重置密码</value>
+  </data>
+  <data name="Search_Ideas_Defaulttext" xml:space="preserve">
+    <value>搜索观点</value>
+  </data>
+  <data name="Search_Issues_Defaulttext" xml:space="preserve">
+    <value>搜索问题</value>
+  </data>
+  <data name="Search_Knowledge_Base" xml:space="preserve">
+    <value>搜索知识库</value>
+  </data>
+  <data name="Security_Defaulttext" xml:space="preserve">
+    <value>安全性</value>
+  </data>
+  <data name="Send_Security_Code_Defaulttext" xml:space="preserve">
+    <value>发送安全码</value>
+  </data>
+  <data name="Set_Email_Defaulttext" xml:space="preserve">
+    <value>设置电子邮件</value>
+  </data>
+  <data name="Set_Password_Defaulttext" xml:space="preserve">
+    <value>设置密码</value>
+  </data>
+  <data name="Signin_With_Local_Account" xml:space="preserve">
+    <value>使用本地帐户登录</value>
+  </data>
+  <data name="Signin_With_External_Account" xml:space="preserve">
+    <value>使用外部帐户登录</value>
+  </data>
+  <data name="Signup_With_Invitation_Code" xml:space="preserve">
+    <value>使用邀请码注册</value>
+  </data>
+  <data name="Subjects_Defaulttext" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="Twofactor_Authentication_Session_Remembered_For_This_Browser" xml:space="preserve">
+    <value>为此浏览器记住双重身份验证会话。</value>
+  </data>
+  <data name="Two_Factor_Authentication_Method" xml:space="preserve">
+    <value>双重身份验证方法</value>
+  </data>
+  <data name="Twofactor_Authentication_Currently_Disabled" xml:space="preserve">
+    <value>当前已禁用双重身份验证。</value>
+  </data>
+  <data name="Twofactor_Authentication_Currently_Enabled" xml:space="preserve">
+    <value>当前已启用双重身份验证。</value>
+  </data>
+  <data name="Twofactor_Authentication_Waiting_For_Email_Confirmation" xml:space="preserve">
+    <value>双重身份验证正在等待电子邮件确认。</value>
+  </data>
+  <data name="Voting_Defaulttext" xml:space="preserve">
+    <value>投票</value>
+  </data>
+  <data name="Email_Confirmation_Message" xml:space="preserve">
+    <value>您的电子邮件需要确认。</value>
+  </data>
+  <data name="Service_Request_Create_Button_Text" xml:space="preserve">
+    <value>311 服务请求创建按钮文本</value>
+  </data>
+  <data name="Add_A_Comment" xml:space="preserve">
+    <value>添加注释</value>
+  </data>
+  <data name="Add_A_New_Issue" xml:space="preserve">
+    <value>添加新问题</value>
+  </data>
+  <data name="Add_To_Cart" xml:space="preserve">
+    <value>添加到购物车</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="All_Articles" xml:space="preserve">
+    <value>所有文章</value>
+  </data>
+  <data name="All_Blogs" xml:space="preserve">
+    <value>所有博客</value>
+  </data>
+  <data name="All_Brands" xml:space="preserve">
+    <value>所有品牌</value>
+  </data>
+  <data name="Any_Rating" xml:space="preserve">
+    <value>任何评级</value>
+  </data>
+  <data name="AttachFiles" xml:space="preserve">
+    <value>附加文件</value>
+  </data>
+  <data name="Attach_Files" xml:space="preserve">
+    <value>附加文件</value>
+  </data>
+  <data name="Be_The_First_To" xml:space="preserve">
+    <value>成为第一个</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>购物车</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="Change_And_Confirm_Number" xml:space="preserve">
+    <value>更改并确认数字</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>组件</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>连接</value>
+  </data>
+  <data name="Copy_URL_To_Clipboard" xml:space="preserve">
+    <value>将 URL 复制到剪贴板</value>
+  </data>
+  <data name="Create_A_New" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="Current_Version" xml:space="preserve">
+    <value>当前版本</value>
+  </data>
+  <data name="Customer_Reviews" xml:space="preserve">
+    <value>客户审核</value>
+  </data>
+  <data name="Date_Posted" xml:space="preserve">
+    <value>发布日期:</value>
+  </data>
+  <data name="Dependencies" xml:space="preserve">
+    <value>依赖项</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>断开连接</value>
+  </data>
+  <data name="E-mail" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="Enter_The_Reason_Content_Inappropriate" xml:space="preserve">
+    <value>输入您认为内容不恰当的原因。</value>
+  </data>
+  <data name="Featured" xml:space="preserve">
+    <value>特色</value>
+  </data>
+  <data name="Forget_Browser" xml:space="preserve">
+    <value>忘记了浏览器</value>
+  </data>
+  <data name="Forgot_Your_Password" xml:space="preserve">
+    <value>忘记了密码?</value>
+  </data>
+  <data name="Gallery_Install_URL" xml:space="preserve">
+    <value>库安装 URL</value>
+  </data>
+  <data name="I_Would_Not_Recommend_To_A_Friend" xml:space="preserve">
+    <value>我不会向朋友推荐此产品。</value>
+  </data>
+  <data name="I_Would_Recommend_To_A_Friend" xml:space="preserve">
+    <value>我会向朋友推荐此产品。</value>
+  </data>
+  <data name="Clicking_The_Button_Below" xml:space="preserve">
+    <value>如果您认为此内容不恰当并且应从网站中删除，请单击下面的按钮告诉我们。您也可以添加有关该内容不恰当的原因的可选注释。我们将审核这些信息并采取相应的行动。</value>
+  </data>
+  <data name="Install_Gallery" xml:space="preserve">
+    <value>安装库</value>
+  </data>
+  <data name="Install_Package" xml:space="preserve">
+    <value>安装程序包</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>位置:</value>
+  </data>
+  <data name="Nickname" xml:space="preserve">
+    <value>昵称</value>
+  </data>
+  <data name="Package_Install_URL" xml:space="preserve">
+    <value>包安装 URL</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>待定</value>
+  </data>
+  <data name="Feedback_For_This_Idea" xml:space="preserve">
+    <value>请登录为此观点提供反馈。</value>
+  </data>
+  <data name="Provide_All_Types_Of_Feedback_For_This_Issue" xml:space="preserve">
+    <value>请登录以提供对此问题的反馈。</value>
+  </data>
+  <data name="Feedback_In_This_Idea_Forum" xml:space="preserve">
+    <value>请登录此观点论坛以提供反馈。</value>
+  </data>
+  <data name="Provide_All_Types_Of_Feedback_In_This_Issue_Forum" xml:space="preserve">
+    <value>请登录以在此问题论坛中提供反馈。</value>
+  </data>
+  <data name="Post_Comment" xml:space="preserve">
+    <value>发布注释</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>个人资料；</value>
+  </data>
+  <data name="Publisher" xml:space="preserve">
+    <value>发布程序</value>
+  </data>
+  <data name="Redeem_Invitation" xml:space="preserve">
+    <value>兑换邀请</value>
+  </data>
+  <data name="Redeeming_code" xml:space="preserve">
+    <value>兑换代码:</value>
+  </data>
+  <data name="Report_Abuse" xml:space="preserve">
+    <value>报表违规</value>
+  </data>
+  <data name="Report_As_Inappropriate" xml:space="preserve">
+    <value>报告为不恰当内容</value>
+  </data>
+  <data name="Report_This_Content_As_Inappropriate" xml:space="preserve">
+    <value>将此内容报告为不恰当内容</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>审阅</value>
+  </data>
+  <data name="Search_Filter" xml:space="preserve">
+    <value>搜索筛选器</value>
+  </data>
+  <data name="Search_The_Knowledge_Base" xml:space="preserve">
+    <value>搜索知识库；</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="Sign_In" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="Sign_In_To_Download" xml:space="preserve">
+    <value>登录以下载。</value>
+  </data>
+  <data name="Sign_In_To_Register_For_This_Event" xml:space="preserve">
+    <value>登录以注册此事件。</value>
+  </data>
+  <data name="Sign_Out" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="Specifications" xml:space="preserve">
+    <value>规格</value>
+  </data>
+  <data name="Status_Details" xml:space="preserve">
+    <value>状态详细信息</value>
+  </data>
+  <data name="Stop_Tracking" xml:space="preserve">
+    <value>停止跟踪</value>
+  </data>
+  <data name="Submit_A_Review" xml:space="preserve">
+    <value>提交审阅</value>
+  </data>
+  <data name="Submit_Idea" xml:space="preserve">
+    <value>提交观点</value>
+  </data>
+  <data name="Submit_Issue" xml:space="preserve">
+    <value>提交问题</value>
+  </data>
+  <data name="Submit_Review" xml:space="preserve">
+    <value>提交审阅</value>
+  </data>
+  <data name="Submitted_By" xml:space="preserve">
+    <value>提交者:</value>
+  </data>
+  <data name="Subscribe_To_Job_Postings" xml:space="preserve">
+    <value>订阅工作发布</value>
+  </data>
+  <data name="Suggest_A_New_Idea" xml:space="preserve">
+    <value>给出新观点建议</value>
+  </data>
+  <data name="Suggested_By" xml:space="preserve">
+    <value>建议者</value>
+  </data>
+  <data name="Review_Has_Been_Submitted" xml:space="preserve">
+    <value>谢谢! 您的审阅已提交。</value>
+  </data>
+  <data name="No_Reviews_On_This_Product" xml:space="preserve">
+    <value>当前没有对此产品的审阅。</value>
+  </data>
+  <data name="This_Blog" xml:space="preserve">
+    <value>此博客</value>
+  </data>
+  <data name="Thread_Title" xml:space="preserve">
+    <value>执行绪标题</value>
+  </data>
+  <data name="Track" xml:space="preserve">
+    <value>跟踪</value>
+  </data>
+  <data name="Unconfirmed" xml:space="preserve">
+    <value>未确认</value>
+  </data>
+  <data name="Update_History" xml:space="preserve">
+    <value>更新历史记录</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>验证</value>
+  </data>
+  <data name="View_Upcoming_Events" xml:space="preserve">
+    <value>查看近期事件</value>
+  </data>
+  <data name="Votes_Down_For_This_Idea" xml:space="preserve">
+    <value>为此观点投反对票</value>
+  </data>
+  <data name="Votes_For_This_Idea" xml:space="preserve">
+    <value>为此观点投票</value>
+  </data>
+  <data name="Votes_Up_For_This_Idea" xml:space="preserve">
+    <value>为此观点投赞成票</value>
+  </data>
+  <data name="Problem_Submitting_Your_Review" xml:space="preserve">
+    <value>很抱歉。提交您的审核时出现问题。请重试。如果问题仍然存在，请与客户支持联系。</value>
+  </data>
+  <data name="Recommend_To_A_Friend" xml:space="preserve">
+    <value>您是否会向朋友推荐此产品?</value>
+  </data>
+  <data name="Write_A_Review" xml:space="preserve">
+    <value>写入审阅</value>
+  </data>
+  <data name="Your_Number_Of_Votes_Left" xml:space="preserve">
+    <value>您的剩余投票次数</value>
+  </data>
+  <data name="Change_Confirm_Email" xml:space="preserve">
+    <value>更改并确认电子邮件</value>
+  </data>
+  <data name="Issue_Search_Heading" xml:space="preserve">
+    <value>问题搜索标题</value>
+  </data>
+  <data name="Enter_Reason_You_Find_Content_Inappropriate" xml:space="preserve">
+    <value>输入您认为内容不恰当的原因(可选)。</value>
+  </data>
+  <data name="An_Email_Required_To_Set_Local_Account_Password" xml:space="preserve">
+    <value>需要电子邮件才能设置本地帐户密码。</value>
+  </data>
+  <data name="No_Information_Matching_Your_Query_Was_Found" xml:space="preserve">
+    <value>未找到与您的查询匹配的信息。</value>
+  </data>
+  <data name="No_Items_Were_Found_For_Current_View" xml:space="preserve">
+    <value>未找到当前视图的项目。</value>
+  </data>
+  <data name="No_Published_Knowledge_Base_Articles_For_This_Subject" xml:space="preserve">
+    <value>&lt;p&gt;不存在针对此主题发布的知识库文章。&lt;/p&gt;</value>
+  </data>
+  <data name="Please_Check_Email_To_Reset_Your_Password" xml:space="preserve">
+    <value>请检查您的电子邮件以重置您的密码。</value>
+  </data>
+  <data name="There_Was_Error_Loading_Data_For_This_Gallery" xml:space="preserve">
+    <value>加载此库的数据时出错。</value>
+  </data>
+  <data name="Unable_To_Authenticate_External_Account_Provider" xml:space="preserve">
+    <value>无法通过外部帐户提供商的身份验证。</value>
+  </data>
+  <data name="Your_Password_Has_Been_Reset" xml:space="preserve">
+    <value>您的密码已重置。</value>
+  </data>
+  <data name="Description_Label" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="Comments_Post_A_Comment" xml:space="preserve">
+    <value>发布注释</value>
+  </data>
+  <data name="Comments_Post_This_Comment" xml:space="preserve">
+    <value>发布此注释</value>
+  </data>
+  <data name="Required_Label" xml:space="preserve">
+    <value>必需</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Fullsource" xml:space="preserve">
+    <value>完整源</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Include" xml:space="preserve">
+    <value>包括</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Insertlabel" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Previewlabel" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Templatelabel" xml:space="preserve">
+    <value>模板</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Toolbar" xml:space="preserve">
+    <value>插入模板</value>
+  </data>
+  <data name="Select2_Loading_More" xml:space="preserve">
+    <value>正在加载更多结果…</value>
+  </data>
+  <data name="Select2_Many_Results_Available" xml:space="preserve">
+    <value> 个结果可用，请使用向上和向下箭头键导航。</value>
+  </data>
+  <data name="Select2_No_Matches_Found" xml:space="preserve">
+    <value>未找到匹配项</value>
+  </data>
+  <data name="Select2_One_Result_Available" xml:space="preserve">
+    <value>一个结果可用。要选择该结果，请按 Enter 键。</value>
+  </data>
+  <data name="Select2_Searching" xml:space="preserve">
+    <value>正在搜索…</value>
+  </data>
+  <data name="ElFinder_Access_Denied" xml:space="preserve">
+    <value>访问被拒绝</value>
+  </data>
+  <data name="ElFinder_Add_Field" xml:space="preserve">
+    <value>添加字段</value>
+  </data>
+  <data name="ElFinder_Adobe_Ps_Img" xml:space="preserve">
+    <value>Adobe Photoshop 图像</value>
+  </data>
+  <data name="ElFinder_Alias" xml:space="preserve">
+    <value>别名</value>
+  </data>
+  <data name="ElFinder_Application" xml:space="preserve">
+    <value>应用程序</value>
+  </data>
+  <data name="ElFinder_Authors" xml:space="preserve">
+    <value>作者</value>
+  </data>
+  <data name="ElFinder_Avi_Vid" xml:space="preserve">
+    <value>AVI 视频</value>
+  </data>
+  <data name="ElFinder_Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="ElFinder_Bitt_File" xml:space="preserve">
+    <value>Bittorrent 文件</value>
+  </data>
+  <data name="ElFinder_Bmp_Img" xml:space="preserve">
+    <value>BMP 图像</value>
+  </data>
+  <data name="ElFinder_Broken_Alias" xml:space="preserve">
+    <value>破坏的别名</value>
+  </data>
+  <data name="ElFinder_Bzip_Arch" xml:space="preserve">
+    <value>BZIP 存档</value>
+  </data>
+  <data name="ElFinder_Cmd_Not_Allowed" xml:space="preserve">
+    <value>不允许的命令</value>
+  </data>
+  <data name="ElFinder_Confirm_Rem_Files" xml:space="preserve">
+    <value>是否确定要删除文件?&lt;br /&gt;此操作无法撤消!</value>
+  </data>
+  <data name="ElFinder_Confirm_Required" xml:space="preserve">
+    <value>需要确认</value>
+  </data>
+  <data name="ElFinder_Contact_Elf_Int" xml:space="preserve">
+    <value>如果您需要在产品中集成 elFinder 的帮助，请与我们联系</value>
+  </data>
+  <data name="ElFinder_Copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="ElFinder_Copy_Right_Std42Ltd" xml:space="preserve">
+    <value>版权: Studio 42 LTD</value>
+  </data>
+  <data name="ElFinder_Cpp_Src" xml:space="preserve">
+    <value>C++ 源代码</value>
+  </data>
+  <data name="ElFinder_Create_Arch" xml:space="preserve">
+    <value>创建存档</value>
+  </data>
+  <data name="ElFinder_Create_New_Dir" xml:space="preserve">
+    <value>创建新的目录</value>
+  </data>
+  <data name="ElFinder_Css_Ss" xml:space="preserve">
+    <value>CSS 样式表</value>
+  </data>
+  <data name="ElFinder_Ctrl_C_X_V_Files" xml:space="preserve">
+    <value>复制/剪切/粘贴文件</value>
+  </data>
+  <data name="ElFinder_Cut" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="ElFinder_C_Src" xml:space="preserve">
+    <value>C 源代码</value>
+  </data>
+  <data name="ElFinder_Day_Tday" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="ElFinder_Day_Yday" xml:space="preserve">
+    <value>昨天</value>
+  </data>
+  <data name="ElFinder_Design" xml:space="preserve">
+    <value>设计: Valentin Razumnih</value>
+  </data>
+  <data name="ElFinder_Dimensions" xml:space="preserve">
+    <value>维度</value>
+  </data>
+  <data name="ElFinder_Dock_Undock_Flmgr_Win" xml:space="preserve">
+    <value>停靠/取消停靠文件管理器窗口</value>
+  </data>
+  <data name="ElFinder_Donate_Supp_ProjDev" xml:space="preserve">
+    <value>捐赠以支持项目开发</value>
+  </data>
+  <data name="ElFinder_Dup" xml:space="preserve">
+    <value>重复</value>
+  </data>
+  <data name="ElFinder_Dv_Vid" xml:space="preserve">
+    <value>DV 视频</value>
+  </data>
+  <data name="ElFinder_Edit_Txt_File" xml:space="preserve">
+    <value>编辑文本文件</value>
+  </data>
+  <data name="ElFinder_Elf_Doc" xml:space="preserve">
+    <value>elFinder 文档</value>
+  </data>
+  <data name="ElFinder_Elf_Shortcut_Supp" xml:space="preserve">
+    <value>elFinder 支持以下快捷方式</value>
+  </data>
+  <data name="ElFinder_Elf_Web_FileMgr" xml:space="preserve">
+    <value>elFinder: Web 文件管理器</value>
+  </data>
+  <data name="ElFinder_Error_Connect_Backend" xml:space="preserve">
+    <value>无法连接到后端</value>
+  </data>
+  <data name="ElFinder_Error_Copy_Files" xml:space="preserve">
+    <value>无法复制文件</value>
+  </data>
+  <data name="ElFinder_Error_Copy_Itself" xml:space="preserve">
+    <value>无法复制到自身</value>
+  </data>
+  <data name="ElFinder_Error_Create_Archive" xml:space="preserve">
+    <value>无法创建存档</value>
+  </data>
+  <data name="ElFinder_Error_Create_File" xml:space="preserve">
+    <value>无法创建文件</value>
+  </data>
+  <data name="ElFinder_Error_Create_Folder" xml:space="preserve">
+    <value>无法创建文件夹</value>
+  </data>
+  <data name="ElFinder_Error_Extract_Files_Archive" xml:space="preserve">
+    <value>无法从存档中提取文件</value>
+  </data>
+  <data name="ElFinder_Error_FileCopy_Create" xml:space="preserve">
+    <value>无法创建文件副本</value>
+  </data>
+  <data name="ElFinder_Error_Move_Files" xml:space="preserve">
+    <value>无法移动文件</value>
+  </data>
+  <data name="ElFinder_Error_Open_Broken_Link" xml:space="preserve">
+    <value>无法打开破坏的链接</value>
+  </data>
+  <data name="ElFinder_Error_Remove_File" xml:space="preserve">
+    <value>无法删除文件</value>
+  </data>
+  <data name="ElFinder_Error_Rename_File" xml:space="preserve">
+    <value>无法重命名文件</value>
+  </data>
+  <data name="ElFinder_Error_Resize_Image" xml:space="preserve">
+    <value>无法调整图像大小</value>
+  </data>
+  <data name="ElFinder_Error_Save_Uploaded_File" xml:space="preserve">
+    <value>无法保存上传的文件</value>
+  </data>
+  <data name="ElFinder_Error_Uploading_Files" xml:space="preserve">
+    <value>未上传某些文件</value>
+  </data>
+  <data name="ElFinder_Error_Upload_File" xml:space="preserve">
+    <value>无法上传文件</value>
+  </data>
+  <data name="ElFinder_Error_Upload_Files" xml:space="preserve">
+    <value>无法上传文件</value>
+  </data>
+  <data name="ElFinder_Error_Write_File" xml:space="preserve">
+    <value>无法写入文件</value>
+  </data>
+  <data name="ElFinder_File_Folder_Name_Exist" xml:space="preserve">
+    <value>已存在具有相同名称的文件或文件夹</value>
+  </data>
+  <data name="ElFinder_File_Info" xml:space="preserve">
+    <value>文件信息</value>
+  </data>
+  <data name="ElFinder_File_Not_Found" xml:space="preserve">
+    <value>找不到文件</value>
+  </data>
+  <data name="ElFinder_File_Not_Image" xml:space="preserve">
+    <value>文件不是图像</value>
+  </data>
+  <data name="ElFinder_File_Type_Not_Allowed" xml:space="preserve">
+    <value>不允许的文件类型</value>
+  </data>
+  <data name="ElFinder_Flash_App" xml:space="preserve">
+    <value>Flash 应用程序</value>
+  </data>
+  <data name="ElFinder_Flash_Vid" xml:space="preserve">
+    <value>Flash 视频</value>
+  </data>
+  <data name="ElFinder_Folder" xml:space="preserve">
+    <value>文件夹</value>
+  </data>
+  <data name="ElFinder_Folder_Info" xml:space="preserve">
+    <value>文件夹信息</value>
+  </data>
+  <data name="ElFinder_Get_Info" xml:space="preserve">
+    <value>获取信息</value>
+  </data>
+  <data name="ElFinder_Gif_Img" xml:space="preserve">
+    <value>GIF 图像</value>
+  </data>
+  <data name="ElFinder_Gzip_Arch" xml:space="preserve">
+    <value>GZIP 存档</value>
+  </data>
+  <data name="ElFinder_Help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="ElFinder_Help_Txt" xml:space="preserve">
+    <value>helpText</value>
+  </data>
+  <data name="ElFinder_Html_Doc" xml:space="preserve">
+    <value>HTML 文档</value>
+  </data>
+  <data name="ElFinder_Icons" xml:space="preserve">
+    <value>图标</value>
+  </data>
+  <data name="ElFinder_Incr_Decr_File_Selection" xml:space="preserve">
+    <value>增加/减少选择的文件数</value>
+  </data>
+  <data name="ElFinder_Invalid_Bg_Config" xml:space="preserve">
+    <value>后端配置无效</value>
+  </data>
+  <data name="ElFinder_Invalid_Name" xml:space="preserve">
+    <value>名称无效</value>
+  </data>
+  <data name="ElFinder_Invalid_Params" xml:space="preserve">
+    <value>参数无效</value>
+  </data>
+  <data name="ElFinder_Items" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="ElFinder_Java_Src" xml:space="preserve">
+    <value>Java 源代码</value>
+  </data>
+  <data name="ElFinder_Jpeg_Img" xml:space="preserve">
+    <value>JPEG 图像</value>
+  </data>
+  <data name="ElFinder_Js_App" xml:space="preserve">
+    <value>Javascript 应用程序</value>
+  </data>
+  <data name="ElFinder_Js_Php_Prog" xml:space="preserve">
+    <value>Javascripts/PHP 编程: Dmitry (dio) Levashov、dio@std42.ru</value>
+  </data>
+  <data name="ElFinder_Js_Src" xml:space="preserve">
+    <value>Javascript 源代码</value>
+  </data>
+  <data name="ElFinder_Kind" xml:space="preserve">
+    <value>种类</value>
+  </data>
+  <data name="ElFinder_License_Bsd" xml:space="preserve">
+    <value>许可证: BSD 许可证</value>
+  </data>
+  <data name="ElFinder_Link_To" xml:space="preserve">
+    <value>​​链接至</value>
+  </data>
+  <data name="ElFinder_Matr_Vid" xml:space="preserve">
+    <value>Matroska 视频</value>
+  </data>
+  <data name="ElFinder_Maximum_DataSize_Exceeded" xml:space="preserve">
+    <value>数据超过了允许的最大大小</value>
+  </data>
+  <data name="ElFinder_Maximum_FileSize_Exceeded" xml:space="preserve">
+    <value>文件超过了允许的最大大小</value>
+  </data>
+  <data name="ElFinder_Max_Allowed_File_Size" xml:space="preserve">
+    <value>允许的最大文件大小</value>
+  </data>
+  <data name="ElFinder_Midi_Aud" xml:space="preserve">
+    <value>MIDI 音频</value>
+  </data>
+  <data name="ElFinder_Modified" xml:space="preserve">
+    <value>已修改</value>
+  </data>
+  <data name="ElFinder_Month_Apr" xml:space="preserve">
+    <value>四月</value>
+  </data>
+  <data name="ElFinder_Month_Aug" xml:space="preserve">
+    <value>八月</value>
+  </data>
+  <data name="ElFinder_Month_Dec" xml:space="preserve">
+    <value>十二月</value>
+  </data>
+  <data name="ElFinder_Month_Feb" xml:space="preserve">
+    <value>二月</value>
+  </data>
+  <data name="ElFinder_Month_Jan" xml:space="preserve">
+    <value>一月</value>
+  </data>
+  <data name="ElFinder_Month_Jul" xml:space="preserve">
+    <value>七月</value>
+  </data>
+  <data name="ElFinder_Month_Jun" xml:space="preserve">
+    <value>六月</value>
+  </data>
+  <data name="ElFinder_Month_Mar" xml:space="preserve">
+    <value>三月</value>
+  </data>
+  <data name="ElFinder_Month_May" xml:space="preserve">
+    <value>五月</value>
+  </data>
+  <data name="ElFinder_Month_Nov" xml:space="preserve">
+    <value>十一月</value>
+  </data>
+  <data name="ElFinder_Month_Oct" xml:space="preserve">
+    <value>十月</value>
+  </data>
+  <data name="ElFinder_Month_Sep" xml:space="preserve">
+    <value>九月</value>
+  </data>
+  <data name="ElFinder_Mp4_Aud" xml:space="preserve">
+    <value>MP4 音频</value>
+  </data>
+  <data name="ElFinder_Mp4_Vid" xml:space="preserve">
+    <value>MP4 视频</value>
+  </data>
+  <data name="ElFinder_Mpeg_Aud" xml:space="preserve">
+    <value>MPEG 音频</value>
+  </data>
+  <data name="ElFinder_Mpeg_Vid" xml:space="preserve">
+    <value>MPEG 视频</value>
+  </data>
+  <data name="ElFinder_MS_Excel_Doc" xml:space="preserve">
+    <value>Microsoft Excel 文档</value>
+  </data>
+  <data name="ElFinder_MS_Off_doc" xml:space="preserve">
+    <value>Microsoft Office 文档</value>
+  </data>
+  <data name="ElFinder_MS_PPT_Doc" xml:space="preserve">
+    <value>Microsoft Powerpoint 演示文稿</value>
+  </data>
+  <data name="ElFinder_MS_Word_Doc" xml:space="preserve">
+    <value>Microsoft Word 文档</value>
+  </data>
+  <data name="ElFinder_Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="ElFinder_New_Folder" xml:space="preserve">
+    <value>新文件夹</value>
+  </data>
+  <data name="ElFinder_New_Txt_File" xml:space="preserve">
+    <value>新文本文件</value>
+  </data>
+  <data name="ElFinder_No_File_To_Upload" xml:space="preserve">
+    <value>没有要上传的文件</value>
+  </data>
+  <data name="ElFinder_Ogg_Vrb_Aud" xml:space="preserve">
+    <value>Ogg Vorbis 音频</value>
+  </data>
+  <data name="ElFinder_Open" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="ElFinder_Open_Close_Ql_Win" xml:space="preserve">
+    <value>打开/关闭 QuickLook 窗口</value>
+  </data>
+  <data name="ElFinder_Open_Off_Doc" xml:space="preserve">
+    <value>打开 Office 文档</value>
+  </data>
+  <data name="ElFinder_Open_Selected_File_Folder" xml:space="preserve">
+    <value>打开选定的文件/文件夹</value>
+  </data>
+  <data name="ElFinder_Open_Upload_File_Form" xml:space="preserve">
+    <value>打开上传文件窗体</value>
+  </data>
+  <data name="ElFinder_Paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="ElFinder_Perl_Scr" xml:space="preserve">
+    <value>Perl 脚本</value>
+  </data>
+  <data name="ElFinder_Permissions" xml:space="preserve">
+    <value>权限</value>
+  </data>
+  <data name="ElFinder_Php_Src" xml:space="preserve">
+    <value>PHP 源代码</value>
+  </data>
+  <data name="ElFinder_Plain_Txt" xml:space="preserve">
+    <value>纯文本</value>
+  </data>
+  <data name="ElFinder_Png_Img" xml:space="preserve">
+    <value>PNG 图像</value>
+  </data>
+  <data name="ElFinder_PostScript_Doc" xml:space="preserve">
+    <value>Postscript 文档</value>
+  </data>
+  <data name="ElFinder_Preview_Quick_Look" xml:space="preserve">
+    <value>使用 Quick Look 预览</value>
+  </data>
+  <data name="ElFinder_Priv_Read" xml:space="preserve">
+    <value>读取</value>
+  </data>
+  <data name="ElFinder_Priv_Remove" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="ElFinder_Priv_Write" xml:space="preserve">
+    <value>写入</value>
+  </data>
+  <data name="ElFinder_Python_Prg_Supp" xml:space="preserve">
+    <value>Python 编程、技术支持: Troex Nevelin、troex@fury.scancode.ru</value>
+  </data>
+  <data name="ElFinder_Python_Src" xml:space="preserve">
+    <value>Python 源代码</value>
+  </data>
+  <data name="ElFinder_Qt_Vid" xml:space="preserve">
+    <value>Quicktime 视频</value>
+  </data>
+  <data name="ElFinder_Rar_Arch" xml:space="preserve">
+    <value>RAR 存档</value>
+  </data>
+  <data name="ElFinder_Reload" xml:space="preserve">
+    <value>重新加载</value>
+  </data>
+  <data name="ElFinder_Rem" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="ElFinder_Rem_Selected_Files" xml:space="preserve">
+    <value>删除选定文件</value>
+  </data>
+  <data name="ElFinder_Rename" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="ElFinder_Resize_Img" xml:space="preserve">
+    <value>调整图像大小</value>
+  </data>
+  <data name="ElFinder_Ret_Prev_Folder" xml:space="preserve">
+    <value>返回到上一文件夹</value>
+  </data>
+  <data name="ElFinder_Root_Dir_Not_Exist" xml:space="preserve">
+    <value>根目录不存在</value>
+  </data>
+  <data name="ElFinder_Ruby_Src" xml:space="preserve">
+    <value>Ruby 源代码</value>
+  </data>
+  <data name="ElFinder_Selected_File_Dir_Info" xml:space="preserve">
+    <value>选定的文件或当前目录信息</value>
+  </data>
+  <data name="ElFinder_Selected_Items" xml:space="preserve">
+    <value>选定的项目</value>
+  </data>
+  <data name="ElFinder_Select_All_Files" xml:space="preserve">
+    <value>选择所有文件</value>
+  </data>
+  <data name="ElFinder_Select_File" xml:space="preserve">
+    <value>选择文件</value>
+  </data>
+  <data name="ElFinder_Select_File_To_Upload" xml:space="preserve">
+    <value>请至少选择一个要上传的文件</value>
+  </data>
+  <data name="ElFinder_Select_Next_File" xml:space="preserve">
+    <value>选择下一个文件</value>
+  </data>
+  <data name="ElFinder_Select_Prev_File" xml:space="preserve">
+    <value>选择上一个文件</value>
+  </data>
+  <data name="ElFinder_Sevenz_Archive" xml:space="preserve">
+    <value>7z 存档</value>
+  </data>
+  <data name="ElFinder_Simple_Useful_Cms" xml:space="preserve">
+    <value>简单、有用的内容管理系统</value>
+  </data>
+  <data name="ElFinder_Size" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="ElFinder_Spanish_Loc" xml:space="preserve">
+    <value>西班牙语本地化</value>
+  </data>
+  <data name="ElFinder_Sponsors" xml:space="preserve">
+    <value>发起人</value>
+  </data>
+  <data name="ElFinder_Supp_Proj_Dev_info" xml:space="preserve">
+    <value>支持项目开发，我们将在此处放置您的相关信息</value>
+  </data>
+  <data name="ElFinder_Tar_Arch" xml:space="preserve">
+    <value>TAR 存档</value>
+  </data>
+  <data name="ElFinder_Tga_Img" xml:space="preserve">
+    <value>TGA 图像</value>
+  </data>
+  <data name="ElFinder_Tiff_Img" xml:space="preserve">
+    <value>TIFF 图像</value>
+  </data>
+  <data name="ElFinder_Uncompress_Arch" xml:space="preserve">
+    <value>解压缩存档</value>
+  </data>
+  <data name="ElFinder_Unix_Ss" xml:space="preserve">
+    <value>Unix shell 脚本</value>
+  </data>
+  <data name="ElFinder_Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="ElFinder_Unknown_Cmd" xml:space="preserve">
+    <value>未知命令</value>
+  </data>
+  <data name="ElFinder_Upload_Files" xml:space="preserve">
+    <value>上传文件</value>
+  </data>
+  <data name="ElFinder_Url_Disabled_By_Config" xml:space="preserve">
+    <value>文件 URL 被连接器配置禁用</value>
+  </data>
+  <data name="ElFinder_Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="ElFinder_View_As_Icon" xml:space="preserve">
+    <value>以图标形式查看</value>
+  </data>
+  <data name="ElFinder_View_As_List" xml:space="preserve">
+    <value>以列表形式查看</value>
+  </data>
+  <data name="ElFinder_Wav_Aud" xml:space="preserve">
+    <value>WAV 音频</value>
+  </data>
+  <data name="ElFinder_Wm_Vid" xml:space="preserve">
+    <value>WM 视频</value>
+  </data>
+  <data name="ElFinder_Xml_Doc" xml:space="preserve">
+    <value>XML 文档</value>
+  </data>
+  <data name="ElFinder_Zip_Arch" xml:space="preserve">
+    <value>ZIP 存档</value>
+  </data>
+  <data name="ElFinder_Chezh_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Chinese_Trad_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Dutch_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Greek_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Hungarian_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Italian_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Latvian_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Poland_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Add_Comment" xml:space="preserve">
+    <value>添加注释</value>
+  </data>
+  <data name="Default_Record_NotFound_Message" xml:space="preserve">
+    <value>找不到要寻找的记录。</value>
+  </data>
+  <data name="Search_No_Results_Found" xml:space="preserve">
+    <value>未找到此查询的结果: </value>
+  </data>
+  <data name="Search_Filter_Clear_All" xml:space="preserve">
+    <value>全部清除</value>
+  </data>
+  <data name="Search_Results_Format_String" xml:space="preserve">
+    <value>以下查询的结果 {0} - {1}/{2}: </value>
+  </data>
+  <data name="Submission_Already_Submitted_Message" xml:space="preserve">
+    <value>您已完成提交。谢谢!</value>
+  </data>
+  <data name="Submission_Successful_Message" xml:space="preserve">
+    <value>提交已成功完成。</value>
+  </data>
+  <data name="Update_Button_Label_Text" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="URL_Default_Text" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="CalendarControl_DownloadTitleLink" xml:space="preserve">
+    <value>下载此日历</value>
+  </data>
+  <data name="CalendarControl_LoadingError" xml:space="preserve">
+    <value>加载此日历的数据时出现问题。</value>
+  </data>
+  <data name="CalendarControl_MonthViewToggleButton" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="CalendarControl_Today_Button" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="CalendarControl_WeekViewToggleButton" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="CalendarControl_YearViewToggleButton" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="CustomerService_Case_Invalid_Permission" xml:space="preserve">
+    <value>您无权查看此案例。</value>
+  </data>
+  <data name="CustomerService_Case_Knowledge_Base_Article" xml:space="preserve">
+    <value>知识库文章</value>
+  </data>
+  <data name="CustomerService_Case_Not_Found" xml:space="preserve">
+    <value>未找到</value>
+  </data>
+  <data name="CustomerService_Case_Not_Found_Sentence" xml:space="preserve">
+    <value>找不到该案例。</value>
+  </data>
+  <data name="CustomerService_Case_Resolution" xml:space="preserve">
+    <value>解决方案</value>
+  </data>
+  <data name="CustomerService_Case_Resolved" xml:space="preserve">
+    <value>已解决</value>
+  </data>
+  <data name="CustomerService_CreateCase_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CustomerService_Portal_Login_To_View_Case" xml:space="preserve">
+    <value>请登录以打开一个新案例或者查看现有案例的列表。</value>
+  </data>
+  <data name="CustomerService_Support_A_Case" xml:space="preserve">
+    <value>一个案例</value>
+  </data>
+  <data name="HomeTemplate_Search_Categories" xml:space="preserve">
+    <value>搜索类别</value>
+  </data>
+  <data name="HomeTemplate_Search_Text" xml:space="preserve">
+    <value>搜索文本</value>
+  </data>
+  <data name="Most_Popular_Categories" xml:space="preserve">
+    <value>最受欢迎的类别</value>
+  </data>
+  <data name="Most_Recent_Categories" xml:space="preserve">
+    <value>最新的类别</value>
+  </data>
+  <data name="SearchResults_Found" xml:space="preserve">
+    <value>找到了</value>
+  </data>
+  <data name="SearchResults_Results_For_Query" xml:space="preserve">
+    <value>查询的结果</value>
+  </data>
+  <data name="Blogs_Label" xml:space="preserve">
+    <value>博客</value>
+  </data>
+  <data name="CustomerService_Support_Case_Created" xml:space="preserve">
+    <value>已针对您提交的问题进行了创建。</value>
+  </data>
+  <data name="CustomerService_Support_ClearButton" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="CustomerService_Support_FailedLogin" xml:space="preserve">
+    <value>例如，用户登录失败</value>
+  </data>
+  <data name="CustomerService_Support_Help_Question" xml:space="preserve">
+    <value>我们可以帮您什么忙?</value>
+  </data>
+  <data name="CustomerService_Support_NoResults" xml:space="preserve">
+    <value>未找到与您的查询匹配的信息。</value>
+  </data>
+  <data name="CustomerService_Support_PleaseSignIn" xml:space="preserve">
+    <value>请登录以打开一个新案例或者查看现有案例的列表。</value>
+  </data>
+  <data name="CustomerService_Support_SearchButton" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="CustomerService_Support_ShowMore" xml:space="preserve">
+    <value>显示更多...</value>
+  </data>
+  <data name="Events_Label" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="Forums_Label" xml:space="preserve">
+    <value>论坛</value>
+  </data>
+  <data name="Ideas_Label" xml:space="preserve">
+    <value>观点</value>
+  </data>
+  <data name="Idea_Label" xml:space="preserve">
+    <value>观点</value>
+  </data>
+  <data name="IdeaForum_Top" xml:space="preserve">
+    <value>主要</value>
+  </data>
+  <data name="IdeaForum_Hot" xml:space="preserve">
+    <value>热点</value>
+  </data>
+  <data name="IdeaForum_New" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="IdeaForum_All_Time" xml:space="preserve">
+    <value>所有时间</value>
+  </data>
+  <data name="IdeaForum_Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="IdeaForum_This_Week" xml:space="preserve">
+    <value>本周</value>
+  </data>
+  <data name="IdeaForum_This_Month" xml:space="preserve">
+    <value>本月</value>
+  </data>
+  <data name="IdeaForum_This_Year" xml:space="preserve">
+    <value>今年</value>
+  </data>
+  <data name="IdeaForum_Any" xml:space="preserve">
+    <value>任何</value>
+  </data>
+  <data name="IdeaForum_Status_New" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="IdeaForum_Accepted" xml:space="preserve">
+    <value>已接受</value>
+  </data>
+  <data name="IdeaForum_Completed" xml:space="preserve">
+    <value>已完成</value>
+  </data>
+  <data name="IdeaForum_Rejected" xml:space="preserve">
+    <value>已拒绝</value>
+  </data>
+  <data name="Issues_Label" xml:space="preserve">
+    <value>问题</value>
+  </data>
+  <data name="KnowledgeMgmt_Most_Popular_Articles" xml:space="preserve">
+    <value>最受欢迎的文章</value>
+  </data>
+  <data name="KnowledgeMgmt_Most_Recent_Articles" xml:space="preserve">
+    <value>最新文章</value>
+  </data>
+  <data name="KnowledgeMgmt_Search_Knowledge_Base" xml:space="preserve">
+    <value>搜索知识库</value>
+  </data>
+  <data name="Knowledge_Base_Label" xml:space="preserve">
+    <value>知识库</value>
+  </data>
+  <data name="Resolved_Cases_Label" xml:space="preserve">
+    <value>已解决的案例</value>
+  </data>
+  <data name="SearchResults_None" xml:space="preserve">
+    <value>您的查询未返回任何结果。</value>
+  </data>
+  <data name="Click_Next_To_Purchase_Support_Text" xml:space="preserve">
+    <value>单击“下一步”购买支持。</value>
+  </data>
+  <data name="Form_Could_Not_Be_Submitted_For_The_Following_Reasons" xml:space="preserve">
+    <value>由于以下原因，无法提交该窗体:</value>
+  </data>
+  <data name="Plan_Name_Text" xml:space="preserve">
+    <value>计划名称: {0}</value>
+  </data>
+  <data name="Please_Call_Text" xml:space="preserve">
+    <value>请致电 555-555-5555</value>
+  </data>
+  <data name="Please_Contact_Support_Text" xml:space="preserve">
+    <value>请与技术支持联系</value>
+  </data>
+  <data name="Please_Select_Support_Plans_Text" xml:space="preserve">
+    <value>请从以下支持计划中选择一项并单击“下一步”。</value>
+  </data>
+  <data name="Prepaid_Incidents_Available_Text" xml:space="preserve">
+    <value>可用预付费事件</value>
+  </data>
+  <data name="Prepaid_Incidents_Available_With_Parameter_Text" xml:space="preserve">
+    <value>可用的预付费事件: {0}</value>
+  </data>
+  <data name="Problem_With_Your_Account_Text" xml:space="preserve">
+    <value>非常抱歉，您的帐户出现了问题。</value>
+  </data>
+  <data name="Select_Customer_To_Assign_Support_Request_Text" xml:space="preserve">
+    <value>请选择要为其分派这条新支持请求的客户。</value>
+  </data>
+  <data name="To_Open_New_Support_Request_You_Must_Purchase_New_Support_Plan_Text" xml:space="preserve">
+    <value>要开启新支持请求，必须购买新支持计划。</value>
+  </data>
+  <data name="Upon_Completion_Of_Opening_Support_Request" xml:space="preserve">
+    <value>完成打开此新的支持请求时，您的 {0} 将降低 {1}。</value>
+    <comment>{0} - Prepaid Incidents Available</comment>
+  </data>
+  <data name="Working_Hours_Text" xml:space="preserve">
+    <value>服务时间: 中部标准时间周一至周五上午 9 点到下午 5 点</value>
+  </data>
+  <data name="Your_Account_Does_Not_Have_Support_Plan_Text" xml:space="preserve">
+    <value>您的帐户目前没有可用的支持计划。</value>
+  </data>
+  <data name="You_Do_Dot_Have_Permission_To_Open_Support_Request_Text" xml:space="preserve">
+    <value>非常抱歉，您无权开启新支持请求。</value>
+  </data>
+  <data name="Page_500_Something_Went_Wrong_Text" xml:space="preserve">
+    <value>很抱歉，出现错误。错误 ID 编号 [{0}]</value>
+  </data>
+  <data name="Page_500_Something_Went_Wrong_Title" xml:space="preserve">
+    <value>很抱歉，出现错误(500)</value>
+  </data>
+  <data name="Page_500_We_Have_Been_Notified_Text" xml:space="preserve">
+    <value>我们已获得有关此问题的通知，我们将很快会查看该问题。感谢您的耐心等待。</value>
+  </data>
+  <data name="Comment_DefaultText" xml:space="preserve">
+    <value>注释</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Timeline_Add_A_Comment" xml:space="preserve">
+    <value>添加注释</value>
+  </data>
+  <data name="Timeline_Attach_A_File_DefaultText" xml:space="preserve">
+    <value>附加文件</value>
+  </data>
+  <data name="Feedback_Default_Title" xml:space="preserve">
+    <value>来自门户对 {0} {1} 的反馈</value>
+    <comment>{0} - Prepaid Incidents Available</comment>
+  </data>
+  <data name="Ess_User_Missing_License" xml:space="preserve">
+    <value>您没有访问此网站的相应许可证。请与系统管理员联系</value>
+  </data>
+  <data name="Invalid_FileExtenstion_ErrorMessage" xml:space="preserve">
+    <value>不能上传具有 .{0} 扩展名的附件。请尝试上传具有其他扩展名的文件。</value>
+  </data>
+  <data name="Max_FileSize_ErrorMessage" xml:space="preserve">
+    <value>上传的文件大小超出了允许的最大大小。</value>
+  </data>
+  <data name="Restricted_FileExtensions_ErrorMessage" xml:space="preserve">
+    <value>上传的文件具有受限的文件扩展名。</value>
+  </data>
+  <data name="Restrict_FileTypes_ErrorMessage" xml:space="preserve">
+    <value>上传的文件与需要的 MIME 类型不匹配。</value>
+  </data>
+  <data name="Knowledge_Article_Views_DefaultText" xml:space="preserve">
+    <value>视图:</value>
+  </data>
+  <data name="Knowledge_Article_Unavailable" xml:space="preserve">
+    <value>文章不可用</value>
+  </data>
+  <data name="KnowledgeManagement_Article_Unavailable_Message" xml:space="preserve">
+    <value>请求的知识文章不可用。请联系您的门户管理员。</value>
+  </data>
+  <data name="No_Results_Text" xml:space="preserve">
+    <value>没有结果</value>
+  </data>
+  <data name="Calculate_Text" xml:space="preserve">
+    <value>计算</value>
+  </data>
+  <data name="Confirm_Text" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="Generate_Text" xml:space="preserve">
+    <value>生成</value>
+  </data>
+  <data name="Proceed_Text" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="Qualify_Lead_Text" xml:space="preserve">
+    <value>授予潜在顾客资格</value>
+  </data>
+  <data name="Reopen_Text" xml:space="preserve">
+    <value>重新开启</value>
+  </data>
+  <data name="Resolve_Text" xml:space="preserve">
+    <value>解决</value>
+  </data>
+  <data name="Lookup_Form_Select_New" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="New_Record_Message" xml:space="preserve">
+    <value>创建新记录</value>
+  </data>
+  <data name="Blogs_Subscribe" xml:space="preserve">
+    <value>订阅此博客</value>
+  </data>
+  <data name="ContinueReading_ButtonText" xml:space="preserve">
+    <value>继续读取...</value>
+  </data>
+  <data name="Newer_ButtonText" xml:space="preserve">
+    <value>&amp;lsaquo; 更新</value>
+  </data>
+  <data name="Older_ButtonText" xml:space="preserve">
+    <value>更早 &amp;rsaquo;</value>
+  </data>
+  <data name="Unpublished_DefaultText" xml:space="preserve">
+    <value>未发布</value>
+  </data>
+  <data name="Become_A_Partner" xml:space="preserve">
+    <value>成为合作伙伴</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>常见问题</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>前往</value>
+  </data>
+  <data name="Profile_Text" xml:space="preserve">
+    <value>个人资料</value>
+  </data>
+  <data name="Program_Details" xml:space="preserve">
+    <value>计划详细信息</value>
+  </data>
+  <data name="Toggle_Navigation" xml:space="preserve">
+    <value>切换导航</value>
+  </data>
+  <data name="Welcome_To_Partner_Portal" xml:space="preserve">
+    <value>欢迎使用合作伙伴门户!</value>
+  </data>
+  <data name="Required_Field_Text" xml:space="preserve">
+    <value>该字段是必填字段</value>
+  </data>
+  <data name="Create_This_Thread" xml:space="preserve">
+    <value>创建此执行绪</value>
+  </data>
+  <data name="Post_This_Reply" xml:space="preserve">
+    <value>发布此答复</value>
+  </data>
+  <data name="Phone_Number_Required_Field_Validation_Message" xml:space="preserve">
+    <value>“电话号码”为必填字段。</value>
+  </data>
+  <data name="Sort_Ascending_Order" xml:space="preserve">
+    <value>激活以按升序排序</value>
+  </data>
+  <data name="Sort_Descending_Order" xml:space="preserve">
+    <value>激活以按降序排序</value>
+  </data>
+  <data name="Unexpected_Error_Occurred" xml:space="preserve">
+    <value>发生意外错误。</value>
+  </data>
+  <data name="Ratings_DefaultText" xml:space="preserve">
+    <value>评级</value>
+  </data>
+  <data name="Browse_The_KB" xml:space="preserve">
+    <value>浏览知识库</value>
+  </data>
+  <data name="CommunityPortal_Welcome" xml:space="preserve">
+    <value>欢迎使用社区门户!</value>
+  </data>
+  <data name="CustomerPortal_Welcome" xml:space="preserve">
+    <value>欢迎使用客户自助门户!</value>
+  </data>
+  <data name="EmployeeSelfServicePortal_Welcome" xml:space="preserve">
+    <value>欢迎使用员工自助服务门户!</value>
+  </data>
+  <data name="Create_Case_DefaultText" xml:space="preserve">
+    <value>创建案例</value>
+  </data>
+  <data name="Need_More_Help" xml:space="preserve">
+    <value>需要更多帮助?</value>
+  </data>
+  <data name="Popular_Topics" xml:space="preserve">
+    <value>热门主题</value>
+  </data>
+  <data name="Related_Categories_DefaultText" xml:space="preserve">
+    <value>相关类别</value>
+  </data>
+  <data name="Get_Help_DefaultText" xml:space="preserve">
+    <value>获取帮助</value>
+  </data>
+  <data name="Provisioning_Main_Header" xml:space="preserve">
+    <value>正在设置…</value>
+  </data>
+  <data name="Provisioning_Message" xml:space="preserve">
+    <value>这可能需要一段时间。</value>
+  </data>
+  <data name="Provisioning_Title" xml:space="preserve">
+    <value>门户设置</value>
+  </data>
+  <data name="CKEditor_Alert_Danger_Style" xml:space="preserve">
+    <value>警报(危险)</value>
+  </data>
+  <data name="CKEditor_Alert_Info_Style" xml:space="preserve">
+    <value>警报(信息)</value>
+  </data>
+  <data name="CKEditor_Alert_Success_Style" xml:space="preserve">
+    <value>警报(成功)</value>
+  </data>
+  <data name="CKEditor_Alert_Warning_Style" xml:space="preserve">
+    <value>警报(警告)</value>
+  </data>
+  <data name="CKEditor_Label_Danger_Style" xml:space="preserve">
+    <value>标签(危险)</value>
+  </data>
+  <data name="CKEditor_Label_Info_Style" xml:space="preserve">
+    <value>标签(信息)</value>
+  </data>
+  <data name="CKEditor_Label_Style" xml:space="preserve">
+    <value>标签</value>
+  </data>
+  <data name="CKEditor_Label_Success_Style" xml:space="preserve">
+    <value>标签(成功)</value>
+  </data>
+  <data name="CKEditor_Label_Warning_Style" xml:space="preserve">
+    <value>标签(警告)</value>
+  </data>
+  <data name="CKEditor_Page_Header_style" xml:space="preserve">
+    <value>页面标题</value>
+  </data>
+  <data name="CKEditor_Well_Large_Style" xml:space="preserve">
+    <value>井号(大)</value>
+  </data>
+  <data name="CKEditor_Well_Small_Style" xml:space="preserve">
+    <value>井号(小)</value>
+  </data>
+  <data name="CKEditor_Well_Style" xml:space="preserve">
+    <value>井号</value>
+  </data>
+  <data name="CKEditor_Code_Block_Style" xml:space="preserve">
+    <value>代码块</value>
+  </data>
+  <data name="CKEditor_Code_Style" xml:space="preserve">
+    <value>代码</value>
+  </data>
+  <data name="Find_Your_Product" xml:space="preserve">
+    <value>查找您的产品</value>
+  </data>
+  <data name="Invalid_Email_Message" xml:space="preserve">
+    <value>“电子邮件”字段不包含有效的电子邮件地址。</value>
+  </data>
+  <data name="InvitationCode_Required_Exception" xml:space="preserve">
+    <value>“邀请码”为必填字段。</value>
+  </data>
+  <data name="StarterPortal_Welcome_Text" xml:space="preserve">
+    <value>欢迎使用自定义门户!</value>
+  </data>
+  <data name="Last_Post_In_Thread" xml:space="preserve">
+    <value>执行绪中的上一个帖子</value>
+  </data>
+  <data name="Opportunity_Product_Price_List_Required" xml:space="preserve">
+    <value>在尝试添加产品前，您必须选择价目表，然后保存所做的更改。</value>
+  </data>
+  <data name="FileUpload_Browse_Button_Text" xml:space="preserve">
+    <value>附加文件...</value>
+  </data>
+  <data name="InvalidEntitlementContacts" xml:space="preserve">
+    <value>指定的联系人未与选定客户关联。</value>
+  </data>
+  <data name="InvalidEntitlementForSelectedCustomerOrProduct" xml:space="preserve">
+    <value>选择属于指定客户、联系人或产品的可用权利，然后重试。</value>
+  </data>
+  <data name="InvalidPrimaryContactBasedOnAccount" xml:space="preserve">
+    <value>指定的联系人不属于选定为客户的帐户。指定属于选定帐户的联系人，然后重试。</value>
+  </data>
+  <data name="InvalidPrimaryContactBasedOnContact" xml:space="preserve">
+    <value>指定的联系人不属于客户字段中已指定的联系人。从联系人字段中移除该值，或选择与选定客户关联的联系人，然后重试。</value>
+  </data>
+  <data name="Licenses" xml:space="preserve">
+    <value>许可证</value>
+  </data>
+  <data name="License_Expire_In_30_Days" xml:space="preserve">
+    <value>此许可证离过期日期不足 30 天。</value>
+  </data>
+  <data name="License_Id" xml:space="preserve">
+    <value>许可证 ID</value>
+  </data>
+  <data name="License_Name" xml:space="preserve">
+    <value>许可证名称</value>
+  </data>
+  <data name="License_Status" xml:space="preserve">
+    <value>许可证状态</value>
+  </data>
+  <data name="Liquid_Template_Ad_Template_Description" xml:space="preserve">
+    <value>显示广告</value>
+  </data>
+  <data name="Liquid_Template_Ad_Template_Title" xml:space="preserve">
+    <value>广告模板</value>
+  </data>
+  <data name="Liquid_Template_Poll_Template_Description" xml:space="preserve">
+    <value>显示民意调查</value>
+  </data>
+  <data name="Liquid_Template_Poll_Template_Title" xml:space="preserve">
+    <value>民意调查模板</value>
+  </data>
+  <data name="Liquid_Template_Random_Ad_Description" xml:space="preserve">
+    <value>显示给定位置中的随机广告</value>
+  </data>
+  <data name="Liquid_Template_Random_Ad_Title" xml:space="preserve">
+    <value>随机广告</value>
+  </data>
+  <data name="Liquid_Template_Random_Poll_Description" xml:space="preserve">
+    <value>显示给定位置中的随机民意调查</value>
+  </data>
+  <data name="Liquid_Template_Random_Poll_Title" xml:space="preserve">
+    <value>随机民意调查</value>
+  </data>
+  <data name="Unapproved_Comment_Label" xml:space="preserve">
+    <value>未批准</value>
+  </data>
+  <data name="Unit_Id_Missing" xml:space="preserve">
+    <value>缺少单位 ID。</value>
+  </data>
+  <data name="You_Can_Only_Add_Active_Products" xml:space="preserve">
+    <value>您只能添加可用产品。</value>
+  </data>
+  <data name="Toggle_Filter_Display_Name" xml:space="preserve">
+    <value>按相关 {0} 筛选</value>
+  </data>
+  <data name="Home_DefaultText" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="Found_My_Answer" xml:space="preserve">
+    <value>找到了我的答案</value>
+  </data>
+  <data name="Marked_As_Your_Answer" xml:space="preserve">
+    <value>标记为您的答案</value>
+  </data>
+  <data name="Blogs_DefaultText" xml:space="preserve">
+    <value>博客</value>
+  </data>
+  <data name="Events_DefaultText" xml:space="preserve">
+    <value>事件</value>
+  </data>
+  <data name="Forums_DefaultText" xml:space="preserve">
+    <value>论坛</value>
+  </data>
+  <data name="DropDown_DefaultText" xml:space="preserve">
+    <value>下拉</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>已接受</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>已完成</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>已拒绝</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>停用</value>
+  </data>
+  <data name="Portal_DefaultText" xml:space="preserve">
+    <value>门户</value>
+  </data>
+  <data name="View_More" xml:space="preserve">
+    <value>查看更多</value>
+  </data>
+  <data name="Join_Us" xml:space="preserve">
+    <value>加入我们</value>
+  </data>
+  <data name="Community_DefaultText" xml:space="preserve">
+    <value>社区</value>
+  </data>
+  <data name="Most_Popular" xml:space="preserve">
+    <value>最受欢迎的</value>
+  </data>
+  <data name="Top_Rated_Articles" xml:space="preserve">
+    <value>评级最高的文章</value>
+  </data>
+  <data name="Contact_Us" xml:space="preserve">
+    <value>联系我们</value>
+  </data>
+  <data name="Discover_Contoso" xml:space="preserve">
+    <value>了解 Contoso</value>
+  </data>
+  <data name="My_Subscriptions_Heading" xml:space="preserve">
+    <value>我的订阅</value>
+  </data>
+  <data name="IdeaForum_From" xml:space="preserve">
+    <value>来自:</value>
+  </data>
+  <data name="IdeaForum_Status" xml:space="preserve">
+    <value>状态:</value>
+  </data>
+  <data name="IdeaForum_Vote" xml:space="preserve">
+    <value>投票</value>
+  </data>
+  <data name="Case_Deflection_Suggested_Topics" xml:space="preserve">
+    <value>建议的主题</value>
+  </data>
+  <data name="Blog_Posts_Label" xml:space="preserve">
+    <value>博客帖子</value>
+  </data>
+  <data name="Forum_Posts_Label" xml:space="preserve">
+    <value>论坛帖子</value>
+  </data>
+  <data name="Composite_Control_Done" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="ForumPost_AnsweredQuestion_Text" xml:space="preserve">
+    <value>答案</value>
+  </data>
+  <data name="Validation_PartialUrl_Suffix" xml:space="preserve">
+    <value>在部分 URL 中不允许 HTTP</value>
+  </data>
+  <data name="Old_New_Password_Should_Not_Match_Exception" xml:space="preserve">
+    <value>您的新密码不能与先前密码相同。</value>
+  </data>
+  <data name="Facet_Type_No_Handler_Defined_Exception" xml:space="preserve">
+    <value>没有为此分面类型定义处理程序。</value>
+  </data>
+  <data name="Facet_Rating_And_Up" xml:space="preserve">
+    <value>及更高</value>
+  </data>
+  <data name="Search_Results" xml:space="preserve">
+    <value>搜索结果</value>
+  </data>
+  <data name="User_Avatar_Label" xml:space="preserve">
+    <value>{0} 图形/图像</value>
+    <comment>Placeholder stores Username</comment>
+  </data>
+  <data name="Label_For_ActionLink" xml:space="preserve">
+    <value>操作菜单</value>
+  </data>
+  <data name="CkEditor_iFrame_Title" xml:space="preserve">
+    <value>带有字段类型的内容必填字段。</value>
+  </data>
+  <data name="CreateRelatedRecord_Text" xml:space="preserve">
+    <value>创建相关记录</value>
+  </data>
+  <data name="Address_Line_3_DefaultText" xml:space="preserve">
+    <value>地址行 3</value>
+  </data>
+  <data name="Sorting_Rating" xml:space="preserve">
+    <value>平均用户评分</value>
+  </data>
+  <data name="Sorting_Relevance" xml:space="preserve">
+    <value>相关性</value>
+  </data>
+  <data name="Sorting_ViewCount" xml:space="preserve">
+    <value>视图数量</value>
+  </data>
+  <data name="Facet_RecordType" xml:space="preserve">
+    <value>记录类型</value>
+  </data>
+  <data name="Facet_DateModified" xml:space="preserve">
+    <value>修改日期</value>
+  </data>
+  <data name="Pagination_Current_Page" xml:space="preserve">
+    <value>当前页 {0}</value>
+  </data>
+  <data name="Pagination_First_Page" xml:space="preserve">
+    <value>第一页</value>
+  </data>
+  <data name="Pagination_Last_Page" xml:space="preserve">
+    <value>最后一页</value>
+  </data>
+  <data name="Pagination_Next_Page" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="Pagination_Page" xml:space="preserve">
+    <value>第 {0} 页</value>
+  </data>
+  <data name="Pagination_Previous_Page" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="Facet_Show_Less" xml:space="preserve">
+    <value>显示更少</value>
+  </data>
+  <data name="Facet_Show_More" xml:space="preserve">
+    <value>显示更多</value>
+  </data>
+  <data name="Facet_All" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="Facet_Rating" xml:space="preserve">
+    <value>评级</value>
+  </data>
+  <data name="Facet_Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="Facet_Past_Week" xml:space="preserve">
+    <value>上周</value>
+  </data>
+  <data name="Facet_Past_Month" xml:space="preserve">
+    <value>上月</value>
+  </data>
+  <data name="Facet_Past_Months_String_Format" xml:space="preserve">
+    <value>过去 {0} 个月</value>
+  </data>
+  <data name="Facet_Rating_Four_And_Up" xml:space="preserve">
+    <value>四星及更高</value>
+  </data>
+  <data name="Facet_Rating_One_And_Up" xml:space="preserve">
+    <value>一星及更高</value>
+  </data>
+  <data name="Facet_Rating_Three_And_Up" xml:space="preserve">
+    <value>三星及更高</value>
+  </data>
+  <data name="Facet_Rating_Two_And_Up" xml:space="preserve">
+    <value>二星及更高</value>
+  </data>
+  <data name="Facet_Products" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="Sorting_Options" xml:space="preserve">
+    <value>排序选项</value>
+  </data>
+  <data name="Language_Label" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="Content_Language_Label" xml:space="preserve">
+    <value>语言内容</value>
+  </data>
+  <data name="Visualization_AxisTitle" xml:space="preserve">
+    <value>{0} ({1})</value>
+    <comment>{NumberedPlaceholder="{0}", "{1}"} Placeholder 0 is the name of an aggregate e.g Sum, Avg etc. Placeholder 1 is a display name of a column. Example: "Avg(Est. Revenue)". [Category="Application Infrastructure"]</comment>
+  </data>
+  <data name="Visualization_AxisTitle_AVG" xml:space="preserve">
+    <value>平均</value>
+  </data>
+  <data name="Visualization_AxisTitle_COUNT" xml:space="preserve">
+    <value>计数: 全部</value>
+  </data>
+  <data name="Visualization_AxisTitle_COUNTCOLUMN" xml:space="preserve">
+    <value>计数: 非空</value>
+  </data>
+  <data name="Visualization_AxisTitle_CurrencySymbol" xml:space="preserve">
+    <value>{0} ({1})</value>
+    <comment>{NumberedPlaceholder="{0}", "{1}"} Placeholder 0 is the label for the measure, Placeholder 1 is the currency symbol. Example: "SUM(Est. Revenue) ($)" [Category="Application Infrastructure"]</comment>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping" xml:space="preserve">
+    <value>{0} ({1})</value>
+    <comment>{NumberedPlaceholder="{0}", "{1}"} Placeholder 0 is the name of dategrouping e.g Day, Month etc. Placeholder 1 is a display name of a column. Example: "Day(Created On)". [Category="Application Infrastructure"]</comment>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_DAY" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_FISCALPERIOD" xml:space="preserve">
+    <value>会计期间</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_FISCALYEAR" xml:space="preserve">
+    <value>会计年度</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_MONTH" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_QUARTER" xml:space="preserve">
+    <value>季度</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_WEEK" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_YEAR" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="Visualization_AxisTitle_MAX" xml:space="preserve">
+    <value>最大值</value>
+  </data>
+  <data name="Visualization_AxisTitle_MIN" xml:space="preserve">
+    <value>最小值</value>
+  </data>
+  <data name="Visualization_AxisTitle_NONE" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="Visualization_AxisTitle_SUM" xml:space="preserve">
+    <value>总和</value>
+  </data>
+  <data name="Visualization_Chart_NoData_Message" xml:space="preserve">
+    <value>无可用数据。</value>
+  </data>
+  <data name="Visualization_EmptyAxisLabel" xml:space="preserve">
+    <value>(空白)</value>
+  </data>
+  <data name="Visualization_SubjectEllipsesText" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="Visualization_Year_Quarter" xml:space="preserve">
+    <value>季度</value>
+  </data>
+  <data name="Visualization_Year_Week" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="Visualization_Chart_Loading_Message" xml:space="preserve">
+    <value>正在加载...</value>
+  </data>
+  <data name="Partner_Dashboard_Title" xml:space="preserve">
+    <value>仪表板</value>
+  </data>
+  <data name="Update_Upload_File_Label" xml:space="preserve">
+    <value>上载文件(将替换现有文件内容)</value>
+  </data>
+  <data name="Forum_Thread_Is_Answered" xml:space="preserve">
+    <value>此执行绪已标记为已应答</value>
+  </data>
+  <data name="Forum_Thread_Requires_Answer" xml:space="preserve">
+    <value>此执行绪需要应答</value>
+  </data>
+  <data name="Receive_notifications" xml:space="preserve">
+    <value>获得此执行绪中任何新帖子的通知</value>
+  </data>
+  <data name="Do_not_Receive_notifications" xml:space="preserve">
+    <value>未收到此执行绪中的新帖子通知</value>
+  </data>
+  <data name="Language_Label_With_Language" xml:space="preserve">
+    <value> - 语言: {0}</value>
+    <comment>{0} is the language to display with the label</comment>
+  </data>
+  <data name="Narrator_Label_For_Composite_Controls" xml:space="preserve">
+    <value>用户可通过按 Enter 键进行编辑。</value>
+  </data>
+  <data name="Crm_Connection_Error_Page_Text" xml:space="preserve">
+    <value>您的门户无法与 Dynamics 365 组织连接。相应 Dynamics 365 组织不可访问或您的门户与 Dynamics 365 之间的绑定不正确。如果需要帮助，请与您的系统管理员联系。错误 ID 编号 {0}</value>
+  </data>
+  <data name="Page_500_Crm_Connection_Error" xml:space="preserve">
+    <value>连接错误</value>
+  </data>
+  <data name="CaptchaAudioLinkButtonText" xml:space="preserve">
+    <value>播放音频代码</value>
+  </data>
+  <data name="CaptchaDefaultErrorMessage" xml:space="preserve">
+    <value>CAPTCHA 不正确。请重试。</value>
+  </data>
+  <data name="CaptchaLinkButtonText" xml:space="preserve">
+    <value>生成新图像</value>
+  </data>
+  <data name="CaptchaTextBoxLabel" xml:space="preserve">
+    <value>输入图像中的代码</value>
+  </data>
+  <data name="InvalidEntitlementAssociationToCase" xml:space="preserve">
+    <value>无法为此权利创建案例，因为没有可用期限。</value>
+  </data>
+  <data name="Validation_ChildPage_PartialUrl_NotSlash_Message" xml:space="preserve">
+    <value>子页的部分 URL 不得为“/”。请输入包含字母、数字、连字符或下划线的有效部分 URL</value>
+  </data>
+  <data name="Validation_HomePage_PartialUrl_NotSlash_Message" xml:space="preserve">
+    <value>您网站的主页的“部分 URL”字段的值只能为 /。任何其他值均将导致您的门户中出错。</value>
+  </data>
+  <data name="Validation_ChildPage_PartialUrl_NotUnique_Message" xml:space="preserve">
+    <value>具有相同部分 URL 的网页已存在。</value>
+  </data>
+  <data name="Related_Attachments_Defaulttext" xml:space="preserve">
+    <value>相关的附件</value>
+  </data>
+  <data name="Account_Register_Registration_Disabled_Message" xml:space="preserve">
+    <value>注册已被禁用</value>
+  </data>
+  <data name="MaxLength_Validation_Error" xml:space="preserve">
+    <value>{0} 超出了 {1} 个字符的最大长度。</value>
+  </data>
+  <data name="External_Authentication_Failed" xml:space="preserve">
+    <value>登录失败。</value>
+  </data>
+  <data name="External_Authentication_Failed_Access_Denied" xml:space="preserve">
+    <value>登录已取消。</value>
+  </data>
+  <data name="Configuration_Disclaimer" xml:space="preserve">
+    <value>一旦配置此应用程序，即表示您同意与外部系统共享您的数据。从 Microsoft Dynamics 365 Online 导入的数据受我们的隐私声明约束，隐私声明可在{0}此处{1}访问。有关{2}更多信息{1}，请参考功能技术文档。</value>
+    <comment>Placeholders will be replaced with HTML a tags and appropriate hyperlinks at runtime.</comment>
+  </data>
+</root>

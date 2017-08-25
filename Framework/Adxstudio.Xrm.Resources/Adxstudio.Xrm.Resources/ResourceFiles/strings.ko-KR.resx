@@ -1,0 +1,5060 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Generic_Error_Message" xml:space="preserve">
+    <value>알 수 없는 오류가 발생했습니다. 오류 ID 번호 [{0}]</value>
+  </data>
+  <data name="Syntax_Error_In_Tag_And_Valid_Syntax_Is" xml:space="preserve">
+    <value>"{0}" 태그의 구문 오류 - 올바른 구문: {0} </value>
+  </data>
+  <data name="Poll_Submission_For_Message" xml:space="preserve">
+    <value>설문 조사 제출 대상</value>
+  </data>
+  <data name="Subscription_Added_Alert_Message" xml:space="preserve">
+    <value>{0}: {1}에 추가된 구독</value>
+  </data>
+  <data name="Adxstudio_Portals" xml:space="preserve">
+    <value>포털</value>
+  </data>
+  <data name="Default_Search_Provider_Not_Found" xml:space="preserve">
+    <value>기본 검색 공급자를 찾을 수 없습니다.</value>
+  </data>
+  <data name="Workflow_Executed_Successfully_Message" xml:space="preserve">
+    <value>워크플로 {0}이(가) 실행되었습니다.</value>
+  </data>
+  <data name="Entity_Permissions_Have_Not_Been_Defined_Message" xml:space="preserve">
+    <value>엔터티 권한이 거부되지 않았습니다. 요청을 완료할 수 없습니다.</value>
+  </data>
+  <data name="ADX_View_Attribute_On_Entity_List_Contains_Invalid_Data_Exception" xml:space="preserve">
+    <value>엔터티 목록(adx_entitylist)의 보기(adx_view) 특성에 잘못된 데이터가 있습니다. 저장된 쿼리 레코드에 대해 쉼표로 구분된 올바른 고유 식별자 목록이 있어야 합니다.</value>
+  </data>
+  <data name="Could_Not_Find_Workflow_With_Name_And_Target_EntityName_Message" xml:space="preserve">
+    <value>이름이 {0}이고 대상 엔터티 이름이 {1}인 워크플로를 찾을 수 없습니다.</value>
+  </data>
+  <data name="Extension_Method_Expected_IsDifferent_Exception" xml:space="preserve">
+    <value>확장 메서드에서 {0} 유형의 엔터티 개체를 예상했지만 대신 {1} 유형의 엔터티 개체가 전달되었습니다.</value>
+  </data>
+  <data name="Invalid_Padding_Exception" xml:space="preserve">
+    <value>잘못된 여백</value>
+  </data>
+  <data name="Note_Created_On_DateTime_By_Message" xml:space="preserve">
+    <value>{0}에 {1}에서 만든 메모[{2}:{3}]</value>
+  </data>
+  <data name="Note_Created_On_Message" xml:space="preserve">
+    <value>{0}에 만든 메모</value>
+  </data>
+  <data name="Timeline_Modified_On_Message" xml:space="preserve">
+    <value>수정한 날짜: {0}</value>
+  </data>
+  <data name="Timeline_Created_By_Message" xml:space="preserve">
+    <value>만든 사람: {0}</value>
+  </data>
+  <data name="No_Bing_Maps_URL_Specified_InSetting_Exception" xml:space="preserve">
+    <value>"{0}" 설정에 지정된 Bing 지도 URL이 없습니다.</value>
+  </data>
+  <data name="Anonymous_Voting_Null_Exception" xml:space="preserve">
+    <value>익명으로 투표할 때 null이거나 공백일 수 없습니다.</value>
+  </data>
+  <data name="Application_ID_Cannot_Null_Empty_Exception" xml:space="preserve">
+    <value>AppId: 응용 프로그램 ID는 null이거나 빈 문자열일 수 없습니다.</value>
+  </data>
+  <data name="ApplicationID_Must_Be_Alphanumeric_Exception" xml:space="preserve">
+    <value>오류: AppId: 응용 프로그램 ID는 영숫자 값이어야 함:</value>
+  </data>
+  <data name="Argument_Missing_Or_Empty_Exception" xml:space="preserve">
+    <value>인수는 null이거나 빈 문자열일 수 없습니다.</value>
+  </data>
+  <data name="Attribute_Metadata_Fetchxml_Retrieve_Exception" xml:space="preserve">
+    <value>"{1}" 엔터티에 대해 FetchXML 결과 필드 "{0}"의 특성 메타데이터를 검색할 수 없습니다.</value>
+  </data>
+  <data name="Attribute_Update_Create_Exception" xml:space="preserve">
+    <value>"{0}" 특성에 대한 특성 업데이트를 만들 수 없습니다.</value>
+  </data>
+  <data name="BlogID_From_Request_Exception" xml:space="preserve">
+    <value>요청에서 블로그 ID를 확인할 수 없습니다.</value>
+  </data>
+  <data name="Calendar_View_Not_Enabled" xml:space="preserve">
+    <value>이 엔터티 목록에 대해 일정 보기를 사용할 수 없습니다({0}:{1}).</value>
+  </data>
+  <data name="Cannot_Delete" xml:space="preserve">
+    <value>스레드의 첫 번째 게시물이므로 {0} {1}을(를) 삭제할 수 없습니다. 대신 스레드가 삭제되어야 합니다.</value>
+  </data>
+  <data name="Cannot_Insert_Duplicate_Key" xml:space="preserve">
+    <value>중복 키를 삽입할 수 없습니다.</value>
+  </data>
+  <data name="Cloud_Drive_Path_For_Search_Provider_Retrieve_Exception" xml:space="preserve">
+    <value>검색 공급자 "{0}"의 클라우드 드라이브 경로를 검색할 수 없습니다.</value>
+  </data>
+  <data name="CloudDriveCacheSize_MustBe_Integer" xml:space="preserve">
+    <value>구성 값 Adxstudio.Xrm.Search.WindowsAzure.CloudDriveCacheSize는 올바른 정수여야 합니다.</value>
+  </data>
+  <data name="CloudDrivePageBlobAddress_CannotBeNullOrEmpty" xml:space="preserve">
+    <value>구성 값 Adxstudio.Xrm.Search.WindowsAzure.CloudDrivePageBlobAddress는 null이거나 비어 있을 수 없습니다.</value>
+  </data>
+  <data name="CloudDriveSize_MustBe_Integer" xml:space="preserve">
+    <value>구성 값 Adxstudio.Xrm.Search.WindowsAzure.CloudDriveSize는 올바른 정수여야 합니다.</value>
+  </data>
+  <data name="Consent_Invalid_Expiry_Time_Exception" xml:space="preserve">
+    <value>오류: Consent: 잘못된 만료 시간입니다.</value>
+  </data>
+  <data name="ConsentToken_Null_Delegation_Token_Exception" xml:space="preserve">
+    <value>오류: ConsentToken: Null 위임 토큰입니다.</value>
+  </data>
+  <data name="ConsentToken_Null_Expiry_Time_Exception" xml:space="preserve">
+    <value>오류: ConsentToken: Null 만료 시간입니다.</value>
+  </data>
+  <data name="ConsentToken_Null_Offers_Exception" xml:space="preserve">
+    <value>오류: ConsentToken: Null이 나타납니다.</value>
+  </data>
+  <data name="ConsentToken_Null_Session_Key_Exception" xml:space="preserve">
+    <value>오류: ConsentToken: Null 세션 키입니다.</value>
+  </data>
+  <data name="CurrentPollOption_Retrieval_Exception" xml:space="preserve">
+    <value>현재 설문 조사 옵션을 검색할 수 없습니다.</value>
+  </data>
+  <data name="Customer_Value_Missing_Exception" xml:space="preserve">
+    <value>고객 값을 지정해야 합니다.</value>
+  </data>
+  <data name="DecodeToken_Secret_Key_Was_Not_set_Aborting_Exception" xml:space="preserve">
+    <value>오류: DecodeToken: 비밀 키가 설정되지 않았습니다. 종료합니다.</value>
+  </data>
+  <data name="Delete_Permission_Denied_For_Target_Entity_Error" xml:space="preserve">
+    <value>대상 엔터티에 거부된 삭제 권한입니다.</value>
+  </data>
+  <data name="Deleting_File_Exception" xml:space="preserve">
+    <value>파일 "{0}"을(를) 삭제하는 동안 예외 발생: {1}</value>
+  </data>
+  <data name="Details_Value_Missing_Exception" xml:space="preserve">
+    <value>자세히 값을 지정해야 합니다.</value>
+  </data>
+  <data name="Email_Already_Used_Exception" xml:space="preserve">
+    <value>전자 메일 "{0}"은(는) 이미 사용되고 있습니다.</value>
+  </data>
+  <data name="Email_Field_Required_Exception" xml:space="preserve">
+    <value>전자 메일 필드가 필요합니다.</value>
+  </data>
+  <data name="ResolutionSub_Field_Required_Exception" xml:space="preserve">
+    <value>해결 필드가 필요합니다.</value>
+  </data>
+  <data name="ResolutionDesc_Field_Required_Exception" xml:space="preserve">
+    <value>해결에 대한 설명 필드가 필요합니다.</value>
+  </data>
+  <data name="ResolutionSubNDesc_Field_Required_Exception" xml:space="preserve">
+    <value>해결 필드 및 해결에 대한 설명 필드가 필요합니다.</value>
+  </data>
+  <data name="Entity_List_Retrieve_Exception" xml:space="preserve">
+    <value>엔터티 목록({0}:{1})을 검색할 수 없습니다.</value>
+  </data>
+  <data name="ErrorInCreatingKnowledgeArticleComment_WithNullOrWhitespace" xml:space="preserve">
+    <value>참조 자료 문서 댓글을 익명으로 작성할 때 null이거나 공백일 수 없습니다.</value>
+  </data>
+  <data name="Failed_To_Add_Sort_Order_For_Field_Exception" xml:space="preserve">
+    <value>"{0}" 필드에 대해 정렬 순서를 추가할 수 없습니다.</value>
+  </data>
+  <data name="FetchXML_View_Retrieve_Exception" xml:space="preserve">
+    <value>보기 FetchXML({0}:{1})을 검색할 수 없습니다.</value>
+  </data>
+  <data name="Hostname_Not_Supported_By_Using_Site_Setting_Portal_Configuration" xml:space="preserve">
+    <value>사이트 설정 포털 구성을 사용할 때 호스트 이름/포트 기반 웹 사이트 바인딩이 지원되지 않습니다. 사이트 이름/가상 경로 기반 웹 사이트 바인딩을 지정하거나 대신 조직 수준 설정으로 포털을 구성하십시오.</value>
+  </data>
+  <data name="Incorrect_Password_Exception" xml:space="preserve">
+    <value>잘못된 암호입니다.</value>
+  </data>
+  <data name="Invalid_Code_Exception" xml:space="preserve">
+    <value>잘못된 코드입니다.</value>
+  </data>
+  <data name="Invalid_Invitation_Code_Exception" xml:space="preserve">
+    <value>초대 코드가 잘못되었습니다.</value>
+  </data>
+  <data name="Invalid_Rolename_Exception" xml:space="preserve">
+    <value>역할 이름 "{0}"이(가) 잘못되었습니다.</value>
+  </data>
+  <data name="Invalid_Token_Exception" xml:space="preserve">
+    <value>토큰이 잘못되었습니다.</value>
+  </data>
+  <data name="Invalid_User_ID_Exception" xml:space="preserve">
+    <value>사용자 ID가 잘못되었습니다.</value>
+  </data>
+  <data name="Knowledge_Article_With_EntityID_Load_Exception" xml:space="preserve">
+    <value>ID가 "{0}"인 knowledgearticle 엔터티를 로드할 수 없습니다. 이 레코드가 있고 현재 사용자가 액세스할 수 있는지 확인하십시오.</value>
+  </data>
+  <data name="Knowledge_Article_NotFound" xml:space="preserve">
+    <value>Id가 "{0}"인 knowledgearticle를 찾을 수 없습니다.</value>
+  </data>
+  <data name="License_Does_Not_Match_StatusMessage" xml:space="preserve">
+    <value>이 라이선스에 지정된 조직 이름이 사용자 조직과 일치하지 않습니다.</value>
+  </data>
+  <data name="License_Failed_To_Load_StatusMessage" xml:space="preserve">
+    <value>이 라이선스를 로드하지 못했습니다.</value>
+  </data>
+  <data name="License_Is_Expired_StatusMessage" xml:space="preserve">
+    <value>이 라이선스가 만료됩니다.</value>
+  </data>
+  <data name="License_Is_Not_Valid_For_ADXStudio_Current_Version_StatusMessage" xml:space="preserve">
+    <value>이 라이선스가 현재 포털 버전에 맞지 않습니다.</value>
+  </data>
+  <data name="License_Is_Not_Valid_For_ADXStudio_StatusMessage" xml:space="preserve">
+    <value>이 라이선스가 현재 포털 제품에 맞지 않습니다.</value>
+  </data>
+  <data name="License_Is_Not_Valid_For_Current_Date_StatusMessage" xml:space="preserve">
+    <value>이 라이선스가 현재 날짜에 맞지 않습니다. 아직 활성 상태가 아닙니다.</value>
+  </data>
+  <data name="License_Is_Not_Valid_StatusMessage" xml:space="preserve">
+    <value>이 라이선스는 잘못되었습니다.</value>
+  </data>
+  <data name="License_Is_Valid_StatusMessage" xml:space="preserve">
+    <value>이 라이선스는 유효합니다.</value>
+  </data>
+  <data name="Lockout_Is_Disabled_For_This_User" xml:space="preserve">
+    <value>이 사용자에 대해 잠금을 사용할 수 없습니다.</value>
+  </data>
+  <data name="MaxDate_LessThan_MinDate_Exception" xml:space="preserve">
+    <value>최대 날짜는 최소 날짜보다 커야 합니다.</value>
+  </data>
+  <data name="Maximum_Options_Selection_Exception" xml:space="preserve">
+    <value>옵션 {0}개까지만 선택할 수 있습니다.</value>
+  </data>
+  <data name="Minimum_Most_Options_Selection_Exception" xml:space="preserve">
+    <value>최소 {0}개 및 최대 {1}개 옵션을 선택해야 합니다.</value>
+  </data>
+  <data name="Minimum_Options_Selection_Exception" xml:space="preserve">
+    <value>최소 {0}개 옵션을 선택해야 합니다.</value>
+  </data>
+  <data name="Must_Be_Greater_Than_Zero_Exception" xml:space="preserve">
+    <value>검토를 만들 때 0보다 커야 함</value>
+  </data>
+  <data name="Name_Must_Be_Bound_To_One_Data_Item_Exception" xml:space="preserve">
+    <value>{0}은(는) 데이터 항목에 바인딩되어야 합니다. 레코드가 없거나 레코드 id가 null입니다.</value>
+  </data>
+  <data name="Not_Associated_With_Connection_Exception" xml:space="preserve">
+    <value>이름이 "{1}"인 "{0}"은(는) 연결과 관련되지 않았습니다.</value>
+  </data>
+  <data name="Not_Found_Exception" xml:space="preserve">
+    <value>없습니다.</value>
+  </data>
+  <data name="OldSecret_SecretKey_Is_Longer_Than_Expected_Exception" xml:space="preserve">
+    <value>오류: OldSecret: 16자 이상의 비밀 키가 필요함:</value>
+  </data>
+  <data name="OldSecretExpiry_Invalid_Timestamp_Exception" xml:space="preserve">
+    <value>오류: OldSecretExpiry: 잘못된 타임스탬프:</value>
+  </data>
+  <data name="Optimistic_Concurrency_Failure_Exception" xml:space="preserve">
+    <value>낙관적 동시 실행 오류, 개체가 수정되었습니다.</value>
+  </data>
+  <data name="Page_Comment_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>페이지 댓글 엔터티를 검색할 수 없습니다. 등급이 저장되지 않습니다.</value>
+  </data>
+  <data name="Password_Error_For_Characters" xml:space="preserve">
+    <value>암호는 {0}자 이상이어야 합니다.</value>
+  </data>
+  <data name="PolicyURL_MustBe_Set_In_Delegated_Auth_NonProvisioned_Scenario_Aborting_Exception" xml:space="preserve">
+    <value>오류: PolicyUrl: 위임된 인증이 구축되지 않은 시나리오에서 정책 URL이 설정되어야 합니다. 중단 중입니다.</value>
+  </data>
+  <data name="PrimaryIdAttribute_For_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>{0} 엔터티에 대해 PrimaryIdAttribute를 검색할 수 없습니다.</value>
+  </data>
+  <data name="Retrieve_Service_Endpoint_RetrieveException" xml:space="preserve">
+    <value>서비스 끝점 "{0}"을(를) 검색할 수 없습니다.</value>
+  </data>
+  <data name="RetrieveRelationshipRequest_Failed_For_Lookupfilterrelationshipname" xml:space="preserve">
+    <value>조회 필터 관계 이름 {0}에 대해 RetrieveRelationshipRequest에 실패했습니다.</value>
+  </data>
+  <data name="RetrieveRelationshipRequest_Failed_For_Viewrelationshipname" xml:space="preserve">
+    <value>보기 관계 이름 {0}에 대해 RetrieveRelationshipRequest에 실패했습니다.</value>
+  </data>
+  <data name="ReturnURL_MustBe_Set_In_Delegated_Auth_NonProvisioned_Scenario_Aborting_Exception" xml:space="preserve">
+    <value>오류: ReturnUrl: 위임된 인증이 구축되지 않은 시나리오에서 반환 URL이 지정되어야 합니다. 취소 중입니다.</value>
+  </data>
+  <data name="Role_Name_Already_Taken_Exception" xml:space="preserve">
+    <value>역할 이름 "{0}"은(는) 이미 사용되고 있습니다.</value>
+  </data>
+  <data name="Role_Not_Found_Exception" xml:space="preserve">
+    <value>역할 {0}이(가) 없습니다.</value>
+  </data>
+  <data name="SecretKey_Longer_Than_Expected_Exception" xml:space="preserve">
+    <value>오류: Secret: 16자 이상의 비밀 키가 필요함:</value>
+  </data>
+  <data name="SecretKey_NotSet_Aborting_Exception" xml:space="preserve">
+    <value>오류: SignToken: 비밀 키가 설정되어 있지 않습니다. 중단 중입니다.</value>
+  </data>
+  <data name="SharePoint_Settings_Missing_Exception" xml:space="preserve">
+    <value>"SharePoint/URL" 사이트 설정을 찾을 수 없고 기본 SharePoint 사이트가 없습니다. "SharePoint/URL" 사이트 설정을 정의하거나 기본 SharePoint 사이트를 지정하십시오.</value>
+  </data>
+  <data name="Shopping_Cart_Not_Found" xml:space="preserve">
+    <value>쇼핑 카드가 없습니다.</value>
+  </data>
+  <data name="Shopping_Cart_Not_Found_On_Tombstone_Entity" xml:space="preserve">
+    <value>사용 기록 엔터티에 쇼핑 카드가 없습니다.</value>
+  </data>
+  <data name="Start_Date_Field_Name_NotSpecified" xml:space="preserve">
+    <value>일정 보기에는 엔터티 목록({0}:{1})에 대해 지정된 시작 날짜 필드 이름(adx_calendar_startdatefieldname)이 있어야 합니다.</value>
+  </data>
+  <data name="StorageConnectionString_CannotBeNull" xml:space="preserve">
+    <value>구성 값 Adxstudio.Xrm.Search.WindowsAzure.StorageConnectionString은 null이거나 비어 있을 수 없습니다.</value>
+  </data>
+  <data name="Store_Not_Implement_IUserSecurityStampStore_Exception" xml:space="preserve">
+    <value>저장소에서 IUserSecurityStampStore&lt;TUser&gt;를 구현하지 않습니다.</value>
+  </data>
+  <data name="Summary_Value_Must_Be_Specified_Exception" xml:space="preserve">
+    <value>요약 값을 지정해야 합니다.</value>
+  </data>
+  <data name="Unable_To_Retrieve_Current_Directory_Error" xml:space="preserve">
+    <value>현재 디렉터리를 검색할 수 없습니다.</value>
+  </data>
+  <data name="Unable_To_Retrieve_Target_Entity_For_Given_Hash_Error" xml:space="preserve">
+    <value>지정된 해시에 대해 대상 엔터티를 검색할 수 없습니다.</value>
+  </data>
+  <data name="Unable_To_Retrieve_View_Exception" xml:space="preserve">
+    <value>보기를 검색할 수 없습니다({0}:{1}).</value>
+  </data>
+  <data name="Unique_And_Valid_Website_Binding" xml:space="preserve">
+    <value>고유하고 유효한 웹 사이트 바인딩을 해결할 수 없습니다. 웹 사이트 바인딩을 검토하십시오.</value>
+  </data>
+  <data name="Unspecified_Request_Body_Exception" xml:space="preserve">
+    <value>요청 본문이 지정되지 않았습니다.</value>
+  </data>
+  <data name="Uploading_Files_Error" xml:space="preserve">
+    <value>파일을 업로드하는 동안 오류 발생: {0}</value>
+  </data>
+  <data name="Use_Asterisk_Wildcard_Character_To_Search_Partial_Text" xml:space="preserve">
+    <value>텍스트 일부를 검색하려면 별표(*) 와일드카드 문자를 사용하십시오. </value>
+  </data>
+  <data name="User_Account_Locked_Exception" xml:space="preserve">
+    <value>사용자 계정이 현재 잠겨 있습니다. 나중에 다시 시도하십시오.</value>
+  </data>
+  <data name="User_Already_Exists_Exception" xml:space="preserve">
+    <value>이 로그인 정보를 사용하는 사용자가 이미 있습니다.</value>
+  </data>
+  <data name="User_Already_Has_Password_Set_Exception" xml:space="preserve">
+    <value>사용자에게 이미 암호가 설정되어 있습니다.</value>
+  </data>
+  <data name="User_Alredy_In_Role_Exception" xml:space="preserve">
+    <value>역할이 "{0}"인 사용자가 이미 있습니다.</value>
+  </data>
+  <data name="User_Invalid_Flags_Exception" xml:space="preserve">
+    <value>오류: User: 잘못된 플래그:</value>
+  </data>
+  <data name="User_Invalid_Id_Exception" xml:space="preserve">
+    <value>오류: User: 잘못된 id:</value>
+  </data>
+  <data name="User_Invalid_TimeStamp_Exception" xml:space="preserve">
+    <value>오류: User: 잘못된 타임스탬프:</value>
+  </data>
+  <data name="User_Name_Alredy_Taken_Exception" xml:space="preserve">
+    <value>사용자 이름 "{0}"은(는) 이미 사용되고 있습니다.</value>
+  </data>
+  <data name="User_Name_Field_Required_Exception" xml:space="preserve">
+    <value>사용자 이름 "{0}"이(가) 잘못되었습니다. 사용자 이름에는 문자나 숫자만 포함할 수 있습니다.</value>
+  </data>
+  <data name="User_Name_Invalid_Can_Only_Contain_Letters_Digits_Exception" xml:space="preserve">
+    <value>사용자 이름 '{0}'이(가) 잘못되었습니다. 문자나 숫자만 포함할 수 있습니다.</value>
+  </data>
+  <data name="User_Name_Invalid_Exception" xml:space="preserve">
+    <value>사용자 이름 "{0}"이(가) 잘못되었습니다.</value>
+  </data>
+  <data name="User_Not_In_Role_Exception" xml:space="preserve">
+    <value>사용자에게 "{0}" 역할이 없습니다.</value>
+  </data>
+  <data name="User_Null_ID_In_Token_Exception" xml:space="preserve">
+    <value>오류: User: 토큰에 Null id가 있습니다.</value>
+  </data>
+  <data name="User_Null_Timestamp_Exception" xml:space="preserve">
+    <value>오류: User: 토큰에 Null 타임스탬프가 있습니다.</value>
+  </data>
+  <data name="Value_Must_Be_Greater_ThanOrEqualTo_One_Exception" xml:space="preserve">
+    <value>값은 1보다 크거나 같아야 합니다.</value>
+  </data>
+  <data name="Value_Null_In_Anonymous_Review_Exception" xml:space="preserve">
+    <value>익명으로 검토를 만들 때 null이거나 공백일 수 없습니다.</value>
+  </data>
+  <data name="Value_Null_In_Create_Review_Exception" xml:space="preserve">
+    <value>검토를 만들 때 null이거나 공백일 수 없습니다.</value>
+  </data>
+  <data name="Value_Should_Be_Positive_Number_Exception" xml:space="preserve">
+    <value>값은 양의 정수여야 합니다.</value>
+  </data>
+  <data name="Web_Page_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>웹 페이지 엔터티를 검색할 수 없습니다. 등급이 저장되지 않습니다.</value>
+  </data>
+  <data name="Webform_StartStep_Missing_Exception" xml:space="preserve">
+    <value>웹 양식에는 시작 단계가 있어야 합니다.</value>
+  </data>
+  <data name="Website_Binding_Named_Exception" xml:space="preserve">
+    <value>'{0}' 웹 사이트 바인딩에 관련 웹 사이트가 없습니다.</value>
+  </data>
+  <data name="Website_Reference_Retrieval_Exception" xml:space="preserve">
+    <value>웹 사이트 참조를 가져올 수 없습니다.</value>
+  </data>
+  <data name="Website_With_Name_Find_Exception" xml:space="preserve">
+    <value>이름이 '{0}'인 웹 사이트를 찾을 수 없습니다.</value>
+  </data>
+  <data name="Type_Name_Required_For_Provider_Exception" xml:space="preserve">
+    <value>이 공급자에 대해 유형 이름을 지정해야 합니다.</value>
+  </data>
+  <data name="Authentication_Error_Invalid_Login" xml:space="preserve">
+    <value>잘못된 로그인 시도입니다. </value>
+  </data>
+  <data name="Registration_Error_Password_Confirmation_Failure" xml:space="preserve">
+    <value>암호 및 확인 암호가 일치하지 않습니다.</value>
+  </data>
+  <data name="Search_Service_Client_Initialize_Exception" xml:space="preserve">
+    <value>검색 서비스 클라이언트를 시작할 수 없습니다. 구성을 확인하십시오.</value>
+  </data>
+  <data name="Target_ADX_Search_Request_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>대상 adx_search_request 엔터티를 검색할 수 없습니다.</value>
+  </data>
+  <data name="Target_Entity_Retrieve_Exception" xml:space="preserve">
+    <value>대상 엔터티를 검색할 수 없습니다.</value>
+  </data>
+  <data name="UserName_Already_Exists_Message" xml:space="preserve">
+    <value>사용자 이름이 이미 있습니다. 다른 사용자 이름을 입력하십시오.</value>
+  </data>
+  <data name="Username_Is_Required_Field_Error" xml:space="preserve">
+    <value>사용자 이름이 필요합니다.</value>
+  </data>
+  <data name="User_Creation_Request_Has_Been_Canceled_Message" xml:space="preserve">
+    <value>사용자 만들기 요청이 취소되었습니다. 입력 내용을 확인하고 다시 시도하십시오. 문제가 지속되면 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="Contact_System_Administrator_Required_Site_Marker_Missing_Exception" xml:space="preserve">
+    <value>시스템 관리자에게 문의하십시오. 필수 사이트 마커 "{0}"이(가) 없습니다.</value>
+  </data>
+  <data name="Answer_Is_Required_Field_Error" xml:space="preserve">
+    <value>대답은 필수 필드입니다.</value>
+  </data>
+  <data name="Authentication_Provider_Returned_Error_Message" xml:space="preserve">
+    <value>인증 공급자가 오류를 반환했습니다. 입력 내용을 확인하고 다시 시도하십시오. 문제가 지속되면 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="Confirm_Password_Is_Required_Field_Error" xml:space="preserve">
+    <value>암호 확인은 필수 필드입니다.</value>
+  </data>
+  <data name="EmailId_Already_Exists_Message" xml:space="preserve">
+    <value>해당 전자 메일 주소에 대한 사용자 이름이 이미 있습니다. 다른 전자 메일 주소를 입력하십시오.</value>
+  </data>
+  <data name="Email_Is_Invalid_Error" xml:space="preserve">
+    <value>전자 메일이 잘못되었습니다.</value>
+  </data>
+  <data name="Email_Is_Required_Field_Error" xml:space="preserve">
+    <value>전자 메일은 필수 필드입니다.</value>
+  </data>
+  <data name="Invalid_Email_Address_Provided_Message" xml:space="preserve">
+    <value>제공한 전자 메일 주소가 잘못되었습니다. 값을 확인하고 다시 시도하십시오.</value>
+  </data>
+  <data name="Invalid_Password_Provided_Message" xml:space="preserve">
+    <value>제공된 암호가 잘못되었습니다. 올바른 암호 값을 입력하십시오.</value>
+  </data>
+  <data name="Invalid_Security_Answer_Error" xml:space="preserve">
+    <value>보안 대답이 잘못되었습니다.</value>
+  </data>
+  <data name="Invalid_Username_Error" xml:space="preserve">
+    <value>사용자 이름이 잘못되었습니다.</value>
+  </data>
+  <data name="Invalid_User_Name_Provided_Message" xml:space="preserve">
+    <value>사용자 이름이 잘못되었습니다. 값을 확인하고 다시 시도하십시오.</value>
+  </data>
+  <data name="Password_Is_Required_Field_Error" xml:space="preserve">
+    <value>암호는 필수 필드입니다.</value>
+  </data>
+  <data name="Password_Retrieval_Answer_Provided_Is_Invalid_Message" xml:space="preserve">
+    <value>제공된 암호 검색 대답이 잘못되었습니다. 값을 확인하고 다시 시도하십시오.</value>
+  </data>
+  <data name="Failed_To_Create_New_User_Exception" xml:space="preserve">
+    <value>새 사용자를 만들 수 없습니다.</value>
+  </data>
+  <data name="Missing_Permissions_For_Operation_Exception" xml:space="preserve">
+    <value>이 작업을 수행할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Oauth_Bearer_Token_Exception" xml:space="preserve">
+    <value>OAuth 전달자 토큰을 가져오지 못했습니다.</value>
+  </data>
+  <data name="Password_Recovery_Not_Configured_Exception" xml:space="preserve">
+    <value>암호 복구가 구성되어 있지 않습니다. 이름이 "{0}"인 워크플로가 없거나 활성화되지 않았습니다. 올바른 솔루션을 설치하고 인증 설정 지침을 따랐는지 확인하십시오.</value>
+  </data>
+  <data name="Form_Heading_Forgot_Password" xml:space="preserve">
+    <value>암호를 잊으셨습니까?</value>
+  </data>
+  <data name="Microsoft_Dynamics_CRM_Website_Copy_Wizard_Title" xml:space="preserve">
+    <value>웹 사이트 복사 마법사</value>
+  </data>
+  <data name="Would_Like_To_Quit_This_Wizard_Message" xml:space="preserve">
+    <value>이 마법사를 종료하시겠습니까?</value>
+  </data>
+  <data name="Contact_Not_Created_Error" xml:space="preserve">
+    <value>연락처를 만들 수 없음:</value>
+  </data>
+  <data name="Entity_Not_Created_Error" xml:space="preserve">
+    <value>엔터티를 만들 수 없음:</value>
+  </data>
+  <data name="Site_Could_Not_Create_Exception" xml:space="preserve">
+    <value>사이트를 만들 수 없음:</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="Permission_Denied_You_Do_Not_Have_Entity_Permissions_To_Update_Notes" xml:space="preserve">
+    <value>메모를 업데이트할 수 있는 적절한 엔터티 권한이 없습니다.</value>
+  </data>
+  <data name="Select_Date_Range_That_Is_Not_Past" xml:space="preserve">
+    <value>게시물에 없는 날짜 범위를 선택하십시오.</value>
+  </data>
+  <data name="Select_End_Date_That_Is_After_Start_Date" xml:space="preserve">
+    <value>시작 날짜보다 뒤의 종료 날짜를 선택하십시오.</value>
+  </data>
+  <data name="Select_End_Time_That_Is_Later_Than_Start_Time" xml:space="preserve">
+    <value>시작 시간보다 뒤의 종료 시간을 선택하십시오.</value>
+  </data>
+  <data name="Select_Your_Time_Zone" xml:space="preserve">
+    <value>시간대를 선택하십시오.</value>
+  </data>
+  <data name="SLA_Resolution_Time" xml:space="preserve">
+    <value>SLA 해결 시간: {0}시간</value>
+  </data>
+  <data name="SLA_Response_Time" xml:space="preserve">
+    <value>SLA 응답 시간: {0}시간</value>
+  </data>
+  <data name="SLA_Details" xml:space="preserve">
+    <value> SLA 정보</value>
+  </data>
+  <data name="Passwords_Not_Meeting_Requirement" xml:space="preserve">
+    <value>암호에는 대문자, 소문자, 숫자 및 특수 문자 중에서 세 가지 이상 포함되어야 합니다.</value>
+  </data>
+  <data name="Confirm_DeleteMultiple_Entity" xml:space="preserve">
+    <value>해당 레코드를 삭제하시겠습니까?</value>
+  </data>
+  <data name="SitemapChildren_HiddenFrom_Sitemap_Tooltip" xml:space="preserve">
+    <value>이 항목은 사이트 맵에 숨겨져 있고 탐색 요소에 표시되지 않습니다. 여전히 직접 연결할 수 있습니다.</value>
+  </data>
+  <data name="SitemapChildren_Update_Tooltip" xml:space="preserve">
+    <value>이 페이지의 하위 레코드 편집</value>
+  </data>
+  <data name="Address_Cannot_Found" xml:space="preserve">
+    <value>해당 주소를 찾을 수 없습니다.</value>
+  </data>
+  <data name="Click_Stay_To_Save_Your_Changes" xml:space="preserve">
+    <value>변경 내용을 저장하지 않았습니다. 변경 내용을 저장하기 위해 페이지를 유지하시겠습니까?</value>
+  </data>
+  <data name="Enter_Address" xml:space="preserve">
+    <value>주소를 입력하십시오.</value>
+  </data>
+  <data name="Failed_Determine_RecordID" xml:space="preserve">
+    <value>레코드 ID를 확인할 수 없습니다.</value>
+  </data>
+  <data name="Required_Regarding_EntityReference_Parameter_Was_Not_Provided" xml:space="preserve">
+    <value>필요한 관련 EntityReference 매개 변수가 제공되지 않았습니다.</value>
+  </data>
+  <data name="Required_Secure_ViewConfiguration_Not_Provided" xml:space="preserve">
+    <value>필요한 보안 ViewConfiguration이 제공되지 않았습니다.</value>
+  </data>
+  <data name="Service_URL_Not_Provided" xml:space="preserve">
+    <value>필요한 서비스 URL이 제공되지 않았습니다.</value>
+  </data>
+  <data name="Service_URL_To_Associate_Request_Could_Determined" xml:space="preserve">
+    <value>이 연결 요청 서비스에 대한 URL을 확인할 수 있습니다.</value>
+  </data>
+  <data name="UnKnown_Error_Occurred" xml:space="preserve">
+    <value>알 수 없는 오류가 발생했습니다.</value>
+  </data>
+  <data name="URL_Service_For_Add_Note_Request_Could_Not_Determined" xml:space="preserve">
+    <value>이 메모 추가 요청 서비스에 대한 URL을 확인할 수 있습니다.</value>
+  </data>
+  <data name="URL_Service_For_Update_Note_Request_Could_Not_Determined" xml:space="preserve">
+    <value>이 메모 업데이트 요청 서비스에 대한 URL을 확인할 수 있습니다.</value>
+  </data>
+  <data name="With_In" xml:space="preserve">
+    <value>이내: </value>
+  </data>
+  <data name="Required_Field_Error" xml:space="preserve">
+    <value>{0}은(는) 필수 필드입니다.</value>
+  </data>
+  <data name="Invalid_Error" xml:space="preserve">
+    <value>{0}이(가) 잘못되었습니다.</value>
+  </data>
+  <data name="Invalid_Decimal_Value_Error" xml:space="preserve">
+    <value>{0}에는 올바른 10진수 값이 있어야 합니다.</value>
+  </data>
+  <data name="Invalid_Email_Address_Error" xml:space="preserve">
+    <value>{0}에는 올바른 전자 메일 주소가 있어야 합니다.</value>
+  </data>
+  <data name="Invalid_Floating_Point_Value_Error" xml:space="preserve">
+    <value>{0}에는 올바른 부동 소수점 값이 있어야 합니다.</value>
+  </data>
+  <data name="Invalid_Integer_Value_Error" xml:space="preserve">
+    <value>{0}에는 올바른 정수 값이 있어야 합니다.</value>
+  </data>
+  <data name="Invalid_Date_Format_Error" xml:space="preserve">
+    <value>{0}에는 올바른 날짜 형식이 있어야 합니다.</value>
+  </data>
+  <data name="Invalid_Range_Error" xml:space="preserve">
+    <value>{0}에는 {1}에서 {2} 사이의 값이 있어야 합니다.</value>
+  </data>
+  <data name="Access_Denied_Error" xml:space="preserve">
+    <value>적절한 권한이 없습니다.</value>
+  </data>
+  <data name="RankOrderNoTies_Validation_ErrorMessage" xml:space="preserve">
+    <value>다른 응답이 같은 값으로 이미 평가되었습니다. 동점은 허용되지 않습니다.</value>
+  </data>
+  <data name="Event_Not_Found" xml:space="preserve">
+    <value>이벤트가 없습니다.</value>
+  </data>
+  <data name="Get_Payment_Web_Response_Stream_Failed" xml:space="preserve">
+    <value>지불 웹 응답 스트림을 가져오지 못했습니다.</value>
+  </data>
+  <data name="Get_Payment_Web_Response_Failed" xml:space="preserve">
+    <value>지불 웹 응답을 가져오지 못했습니다.</value>
+  </data>
+  <data name="Geolocation_Query_Could_Not_Be_Completed" xml:space="preserve">
+    <value>다음 서비스 URL({0})에 대해 지리적 위치 쿼리를 완료할 수 없습니다.&lt;br/&gt;오류: {1}</value>
+  </data>
+  <data name="Get_Directions_DefaultText" xml:space="preserve">
+    <value>길 찾기</value>
+  </data>
+  <data name="Invalid_Height_Parameter" xml:space="preserve">
+    <value>잘못된 높이 매개 변수</value>
+  </data>
+  <data name="Invalid_Width_Parameter_Error" xml:space="preserve">
+    <value>잘못된 너비 매개 변수</value>
+  </data>
+  <data name="PDT_Response_Not_Valid" xml:space="preserve">
+    <value>PayPal PDT(지불 데이터 전송) 응답이 잘못되었습니다. 지불을 확인할 수 없습니다.</value>
+  </data>
+  <data name="Null_PDT_Response" xml:space="preserve">
+    <value>PayPal PDT(지불 데이터 전송) 응답이 null입니다. 지불을 확인할 수 없습니다.</value>
+  </data>
+  <data name="PDT_Returned_Fail_Response" xml:space="preserve">
+    <value>PayPal PDT(지불 데이터 전송)에서 실패 응답을 반환했습니다. 지불을 확인할 수 없습니다.</value>
+  </data>
+  <data name="Entity_Permission_Denied" xml:space="preserve">
+    <value>"{2}" 권한에 대한 id({1})가 있는 "{0}" 엔터티에 대한 권한이 거부되었습니다.</value>
+  </data>
+  <data name="Entity_Permission_Granted" xml:space="preserve">
+    <value>"{2}" 권한에 대한 id({1})가 있는 "{0}" 엔터티에 대한 권한이 부여되었습니다.</value>
+  </data>
+  <data name="Select_Customer_Error_Message" xml:space="preserve">
+    <value>고객을 선택하십시오.</value>
+  </data>
+  <data name="Select_Support_Plan_Error_Message" xml:space="preserve">
+    <value>지원 계획을 선택하십시오.</value>
+  </data>
+  <data name="Search_For_Location_Near_DefaultText" xml:space="preserve">
+    <value>근처 위치 검색</value>
+  </data>
+  <data name="Support_Plan_For_Purchased" xml:space="preserve">
+    <value>{2}에 {1}이(가) 구매한 {0}에 대한 지원 계획</value>
+  </data>
+  <data name="Required_Site_Setting_Not_Exist_Validation_Message" xml:space="preserve">
+    <value>이름이 'Ecommerce/PayPal/PDTIdentityToken'인 필요한 사이트 설정이 없거나 값이 포함되어 있지 않습니다.</value>
+  </data>
+  <data name="Constant_Sum_Validation_Error_Message" xml:space="preserve">
+    <value>합계가 잘못되었습니다. 배포 가능한 포인트 수를 검토하십시오.</value>
+  </data>
+  <data name="TransactionID_Parameter_Not_Provided_Validation_Message" xml:space="preserve">
+    <value>이름이 "tx"인 거래 ID 매개 변수가 제공되지 않았습니다. PDT(지불 데이터 전송)가 PayPal 가맹점의 계정 프로필 "웹 사이트 지불 선호 설정" 설정에서 활성화되어 있고 ID 토큰이 "Ecommerce/PayPal/PDTIdentityToken"이라는 사이트 설정에 지정되어 있는지 확인하십시오.</value>
+  </data>
+  <data name="DoNot_Have_Appropriate_Permissions" xml:space="preserve">
+    <value>적절한 권한이 없습니다.</value>
+  </data>
+  <data name="Check_The_Box_Labeled" xml:space="preserve">
+    <value>계속하려면 \"{0}\" 확인란을 선택하십시오.</value>
+  </data>
+  <data name="Home_Twitter_Widget" xml:space="preserve">
+    <value>311 홈 트위터 위젯</value>
+  </data>
+  <data name="Create_Contact_Permission_Denied" xml:space="preserve">
+    <value>상위 거래처가 할당되지 않았습니다. 연락처를 만들 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>상위 거래처가 할당되지 않았습니다. 연락처를 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Permission_For_Edit_Contact_Permissions_Denied" xml:space="preserve">
+    <value>상위 거래처가 할당되지 않았습니다. 연락처의 권한을 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Manage_Parent_Account_Permission_Denied" xml:space="preserve">
+    <value>상위 거래처가 할당되지 않았습니다. 상위 거래처를 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Create_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>상위 고객 거래처가 할당되지 않았습니다. 고객 거래처를 만들 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Create_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>상위 고객 거래처가 할당되지 않았습니다. 고객 연락처를 만들 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Edit_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>상위 고객 거래처가 할당되지 않았습니다. 고객 거래처를 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Edit_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>상위 고객 거래처가 할당되지 않았습니다. 고객 연락처를 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Manage_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>상위 고객 거래처가 할당되지 않았습니다. 고객 거래처를 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Manage_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>상위 고객 거래처가 할당되지 않았습니다. 고객 연락처를 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Read_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>상위 고객 거래처가 할당되지 않았습니다. 고객 거래처를 읽을 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Read_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>상위 고객 거래처가 할당되지 않았습니다. 고객 연락처를 읽을 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Continue_With_Selected_Service_Request_Error" xml:space="preserve">
+    <value>내 새 서비스 요청을 취소하고 선택한 서비스 요청을 계속합니다.</value>
+  </data>
+  <data name="Accepted_Opportunities_Legend" xml:space="preserve">
+    <value>수락된 영업 기회/범례</value>
+  </data>
+  <data name="Account_Contacts" xml:space="preserve">
+    <value>거래처 연락처</value>
+  </data>
+  <data name="Account_Information_Updated_Success_Message" xml:space="preserve">
+    <value>거래처 정보가 업데이트되었습니다.</value>
+  </data>
+  <data name="Active_Opportunities" xml:space="preserve">
+    <value>활성 영업 기회</value>
+  </data>
+  <data name="Add_Note" xml:space="preserve">
+    <value>메모 추가</value>
+  </data>
+  <data name="Add_To_Calendar" xml:space="preserve">
+    <value>일정에 추가</value>
+  </data>
+  <data name="Add_To_My_Calendar" xml:space="preserve">
+    <value>내 일정에 추가</value>
+  </data>
+  <data name="Address_DefaultText" xml:space="preserve">
+    <value>주소</value>
+  </data>
+  <data name="Address_Line_1_DefaultText" xml:space="preserve">
+    <value>주소란 1</value>
+  </data>
+  <data name="Address_Line_1_Required_Field_Validation_Message" xml:space="preserve">
+    <value>주소란 1은 필수 필드입니다. </value>
+  </data>
+  <data name="Address_Line_2_DefaultText" xml:space="preserve">
+    <value>주소란 2</value>
+  </data>
+  <data name="Apply_For_Permit_Or_License_DefaultText" xml:space="preserve">
+    <value>허가 또는 라이선스 신청</value>
+  </data>
+  <data name="Archive_DefaultText" xml:space="preserve">
+    <value>보관</value>
+  </data>
+  <data name="Cancel_Case_Confirmation_Message" xml:space="preserve">
+    <value>이 서비스 케이스를 취소하시겠습니까?</value>
+  </data>
+  <data name="Reopen_Case_Confirmation_Message" xml:space="preserve">
+    <value>이 서비스 케이스를 다시 시작하시겠습니까?</value>
+  </data>
+  <data name="Assigned_To_DefaultText" xml:space="preserve">
+    <value>담당자</value>
+  </data>
+  <data name="Attach_A_File_DefaultText" xml:space="preserve">
+    <value>파일 첨부</value>
+  </data>
+  <data name="Author_DefaultText" xml:space="preserve">
+    <value>작성자</value>
+  </data>
+  <data name="Billing_Address_DefaultText" xml:space="preserve">
+    <value>청구 주소</value>
+  </data>
+  <data name="Billing_Contact_DefaultText" xml:space="preserve">
+    <value>청구 연락처</value>
+  </data>
+  <data name="Blog_Home_DefaultText" xml:space="preserve">
+    <value>블로그 홈</value>
+  </data>
+  <data name="Brands_DefaultText" xml:space="preserve">
+    <value>브랜드</value>
+  </data>
+  <data name="By_DefaultText" xml:space="preserve">
+    <value>작성자:</value>
+  </data>
+  <data name="Cancel_DefaultText" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Ok_DefaultText" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Cancel_Case_DefaultText" xml:space="preserve">
+    <value>서비스 케이스 취소</value>
+  </data>
+  <data name="Card_Verification_Value_DefaultText" xml:space="preserve">
+    <value>카드 확인 값</value>
+  </data>
+  <data name="Change_Password_DefaultText" xml:space="preserve">
+    <value>암호 변경</value>
+  </data>
+  <data name="City_DefaultText" xml:space="preserve">
+    <value>구/군/시</value>
+  </data>
+  <data name="City_Required_Field_Validation_Message" xml:space="preserve">
+    <value>구/군/시는 필수 필드입니다. </value>
+  </data>
+  <data name="Close_DefaultText" xml:space="preserve">
+    <value>종료</value>
+  </data>
+  <data name="Closing_DefaultText" xml:space="preserve">
+    <value>종료</value>
+  </data>
+  <data name="New_Password_Confirmation_Message" xml:space="preserve">
+    <value>새 암호 확인</value>
+  </data>
+  <data name="Confirm_NewPassword_Required_Field_Validation_Message" xml:space="preserve">
+    <value>새 암호 확인은 필수 필드입니다.</value>
+  </data>
+  <data name="Confirmation_DefaultText" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Contact_Not_Found_Invalid_ContactID_Specified_Exception" xml:space="preserve">
+    <value>연락처를 찾을 수 없습니다. 올바른 연락처 ID를 지정했는지 확인하십시오.</value>
+  </data>
+  <data name="Contact_Invited_Successfully_Message" xml:space="preserve">
+    <value>연락처가 초대되었습니다.</value>
+  </data>
+  <data name="Contact_Information_Updated_Successfully_Message" xml:space="preserve">
+    <value>연락처 정보가 업데이트되었습니다.</value>
+  </data>
+  <data name="Content_Required_Field_Validation_Message" xml:space="preserve">
+    <value>내용은 필수 필드입니다.</value>
+  </data>
+  <data name="Continue_DefaultText" xml:space="preserve">
+    <value>계속</value>
+  </data>
+  <data name="Continue_With_Existing_Service_Request" xml:space="preserve">
+    <value>기존 서비스 요청을 계속합니다.</value>
+  </data>
+  <data name="Continue_With_My_Service_Request" xml:space="preserve">
+    <value>내 서비스 요청을 계속합니다.</value>
+  </data>
+  <data name="Conversion_Of_Quote_To_Order_Failed" xml:space="preserve">
+    <value>견적을 주문으로 변환하지 못했습니다. 지원 팀에 문의하십시오.</value>
+  </data>
+  <data name="Country_DefaultText" xml:space="preserve">
+    <value>국가/지역</value>
+  </data>
+  <data name="CountryRegion_Required_Field_Validation_Message" xml:space="preserve">
+    <value>국가/지역은 필수 필드입니다. </value>
+  </data>
+  <data name="Create_New_Service_Request_DefaultText" xml:space="preserve">
+    <value>새 서비스 요청 만들기</value>
+  </data>
+  <data name="Create_New_Thread_DefaultText" xml:space="preserve">
+    <value>새 스레드 만들기</value>
+  </data>
+  <data name="Create_New_DefaultText" xml:space="preserve">
+    <value>새로 만들기</value>
+  </data>
+  <data name="Created_DefaultText" xml:space="preserve">
+    <value>만듦</value>
+  </data>
+  <data name="Credit_Card_Number_DefaultText" xml:space="preserve">
+    <value>신용 카드 번호</value>
+  </data>
+  <data name="Credit_Card_Verification_Value_DefaultText" xml:space="preserve">
+    <value>신용 카드 확인 값</value>
+  </data>
+  <data name="Current_Opportunities_DefaultText" xml:space="preserve">
+    <value>현재 영업 기회</value>
+  </data>
+  <data name="Current_Password_DefaultText" xml:space="preserve">
+    <value>현재 암호</value>
+  </data>
+  <data name="Current_Password_Required_Field_Validation_Message" xml:space="preserve">
+    <value>현재 암호는 필수 필드입니다.</value>
+  </data>
+  <data name="Customer_DefaultText" xml:space="preserve">
+    <value>고객</value>
+  </data>
+  <data name="Customer_Account_Not_Found_Invalid_AccountID_Specified" xml:space="preserve">
+    <value>고객 거래처를 찾을 수 없습니다. 올바른 고객 거래처 ID를 지정했는지 확인하십시오.</value>
+  </data>
+  <data name="Customer_Contact_Not_Found_Invalid_ContactID_Specified" xml:space="preserve">
+    <value>고객 연락처를 찾을 수 없습니다. 올바른 고객 연락처 ID를 지정했는지 확인하십시오.</value>
+  </data>
+  <data name="Customer_Contact_Not_Found_Invalid_CustomerID_Specified" xml:space="preserve">
+    <value>고객 연락처를 찾을 수 없습니다. 올바른 고객 ID를 지정했는지 확인하십시오.</value>
+  </data>
+  <data name="Date_DefaultText" xml:space="preserve">
+    <value>날짜</value>
+  </data>
+  <data name="Description_DefaultText" xml:space="preserve">
+    <value>설명(필수)</value>
+  </data>
+  <data name="Discount_Code_DefaultText" xml:space="preserve">
+    <value>할인 코드</value>
+  </data>
+  <data name="Discount_DefaultText" xml:space="preserve">
+    <value>할인:</value>
+  </data>
+  <data name="Email_DefaultText" xml:space="preserve">
+    <value>전자 메일</value>
+  </data>
+  <data name="End_Time_DefaultText" xml:space="preserve">
+    <value>종료 시간</value>
+  </data>
+  <data name="Expires_DefaultText" xml:space="preserve">
+    <value>만료</value>
+  </data>
+  <data name="Addition_Of_External_Account_Failed" xml:space="preserve">
+    <value>외부 계정에 추가하지 못했습니다.</value>
+  </data>
+  <data name="Change_Mobile_Phone_Number_Failed" xml:space="preserve">
+    <value>휴대폰 번호를 변경할 수 없습니다.</value>
+  </data>
+  <data name="Confirm_Email_Failed" xml:space="preserve">
+    <value>전자 메일을 확인할 수 없음</value>
+  </data>
+  <data name="Remove_External_Account_Failed" xml:space="preserve">
+    <value>외부 계정을 제거할 수 없습니다.</value>
+  </data>
+  <data name="Fax_DefaultText" xml:space="preserve">
+    <value>팩스</value>
+  </data>
+  <data name="Featured_Products_DefaultText" xml:space="preserve">
+    <value>특집 제품</value>
+  </data>
+  <data name="Feed_DefaultText" xml:space="preserve">
+    <value>피드</value>
+  </data>
+  <data name="First_Name_DefaultText" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Forum_DefaultText" xml:space="preserve">
+    <value>포럼</value>
+  </data>
+  <data name="From_DefaultText" xml:space="preserve">
+    <value>시작</value>
+  </data>
+  <data name="Household_DefaultText" xml:space="preserve">
+    <value>가정</value>
+  </data>
+  <data name="Household_Members_DefaultText" xml:space="preserve">
+    <value>가정 구성원</value>
+  </data>
+  <data name="How_May_We_Contact_You" xml:space="preserve">
+    <value>어떻게 연락할 수 있습니까?&lt;small&gt;적용되는 모든 방법을 선택하십시오.&lt;/small&gt;</value>
+  </data>
+  <data name="Ignore_Existing_And_Submit_My_Service_Request" xml:space="preserve">
+    <value>기존 서비스 요청을 무시하고 내 새 서비스 요청을 제출합니다.</value>
+  </data>
+  <data name="In_This_Section_DefaultText" xml:space="preserve">
+    <value>이 섹션의 내용</value>
+  </data>
+  <data name="Invalid_Request" xml:space="preserve">
+    <value>요청이 잘못되었습니다.</value>
+  </data>
+  <data name="Invoice_DefaultText" xml:space="preserve">
+    <value>송장</value>
+  </data>
+  <data name="Joined_DefaultText" xml:space="preserve">
+    <value>참여함: </value>
+  </data>
+  <data name="Last_Name_DefaultText" xml:space="preserve">
+    <value>성</value>
+  </data>
+  <data name="Last_Post_DefaultText" xml:space="preserve">
+    <value>마지막 게시물</value>
+  </data>
+  <data name="Latest_Knowledge_Base_Articles" xml:space="preserve">
+    <value>최신 참조 자료 문서</value>
+  </data>
+  <data name="Legend_DefaultText" xml:space="preserve">
+    <value>범례</value>
+  </data>
+  <data name="Load_More_Timeline" xml:space="preserve">
+    <value>많이 표시</value>
+  </data>
+  <data name="Locked_DefaultText" xml:space="preserve">
+    <value>잠금</value>
+  </data>
+  <data name="Mail_DefaultText" xml:space="preserve">
+    <value>우편</value>
+  </data>
+  <data name="Mark_As_Answer_DefaultText" xml:space="preserve">
+    <value>대답으로 표시</value>
+  </data>
+  <data name="Month_DefaultText" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="Most_Popular_Articles_DefaultText" xml:space="preserve">
+    <value>최고 인기 문서</value>
+  </data>
+  <data name="Name_DefaultText" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Name_Required_Field_Validation_Message" xml:space="preserve">
+    <value>이름은 필수 필드입니다.</value>
+  </data>
+  <data name="New_Opportunities_DefaultText" xml:space="preserve">
+    <value>새 영업 기회</value>
+  </data>
+  <data name="New_Password_DefaultText" xml:space="preserve">
+    <value>새 암호</value>
+  </data>
+  <data name="New_Password_Required_Field_Validation_Message" xml:space="preserve">
+    <value>새 암호는 필수 필드입니다.</value>
+  </data>
+  <data name="News_DefaultText" xml:space="preserve">
+    <value>뉴스</value>
+  </data>
+  <data name="No_Contacts_Exist_Create_Appropriate_Contact" xml:space="preserve">
+    <value>아직 연락처가 없습니다. 기본 연락처를 설정하려면 먼저 이 고객 거래처에 대해 적절한 연락처를 만든 후 기본 연락처를 할당하십시오.</value>
+  </data>
+  <data name="No_Managing_Partner_Customer_Accounts_Message" xml:space="preserve">
+    <value>관리하는 파트너 고객 거래처가 없습니다. 계속하려면 새 고객을 만드십시오.</value>
+  </data>
+  <data name="No_Products_Message" xml:space="preserve">
+    <value>현재 필터와 일치하는 제품이 없습니다.</value>
+  </data>
+  <data name="Cancel_Confirmation_No" xml:space="preserve">
+    <value>아니요, 이 서비스 케이스를 취소하지 않습니다.</value>
+  </data>
+  <data name="Reopen_Confirmation_No" xml:space="preserve">
+    <value>아니요, 이 서비스 케이스를 다시 시작하지 않습니다.</value>
+  </data>
+  <data name="Note_DefaultText" xml:space="preserve">
+    <value>메모</value>
+  </data>
+  <data name="Notes_DefaultText" xml:space="preserve">
+    <value>메모</value>
+  </data>
+  <data name="Timeline_DefaultText" xml:space="preserve">
+    <value>타임라인</value>
+  </data>
+  <data name="Opportunities_Awaiting_Acceptance" xml:space="preserve">
+    <value>수락 대기 영업 기회</value>
+  </data>
+  <data name="Opportunity_Contacts_DefaultText" xml:space="preserve">
+    <value>영업 기회 연락처</value>
+  </data>
+  <data name="Opportunity_Details_DefaultText" xml:space="preserve">
+    <value>영업 기회 정보</value>
+  </data>
+  <data name="Opportunity_History_DefaultText" xml:space="preserve">
+    <value>영업 기회 기록</value>
+  </data>
+  <data name="Opportunity_Notes_DefaultText" xml:space="preserve">
+    <value>영업 기회 메모</value>
+  </data>
+  <data name="Opportunity_Saved_Successfully_Message" xml:space="preserve">
+    <value>영업 기회가 저장되었습니다.</value>
+  </data>
+  <data name="Opportunity_Status_DefaultText" xml:space="preserve">
+    <value>영업 기회 상태</value>
+  </data>
+  <data name="Options_DefaultText" xml:space="preserve">
+    <value>옵션</value>
+  </data>
+  <data name="Order_DefaultText" xml:space="preserve">
+    <value>주문</value>
+  </data>
+  <data name="Order_Notes_DefaultText" xml:space="preserve">
+    <value>주문 메모</value>
+  </data>
+  <data name="Parent_Customer_DefaultText" xml:space="preserve">
+    <value>상위 고객</value>
+  </data>
+  <data name="Past_DefaultText" xml:space="preserve">
+    <value>붙여넣기</value>
+  </data>
+  <data name="Pay_With_Credit_Card_Message" xml:space="preserve">
+    <value>신용 카드로 결제</value>
+  </data>
+  <data name="Permissions_Updated_Successfully_Message" xml:space="preserve">
+    <value>권한이 업데이트되었습니다.</value>
+  </data>
+  <data name="Permit_Fee_Required_Message" xml:space="preserve">
+    <value>허가 수수료 필요</value>
+  </data>
+  <data name="Permit_Number_DefaultText" xml:space="preserve">
+    <value>허가 번호:</value>
+  </data>
+  <data name="Phone_DefaultText" xml:space="preserve">
+    <value>전화</value>
+  </data>
+  <data name="Select_Support_Package_Error_Message" xml:space="preserve">
+    <value>지원 패키지를 선택하십시오.</value>
+  </data>
+  <data name="Select_Available_Appointment_Times_From_List" xml:space="preserve">
+    <value>사용 가능한 다음 약속 시간 목록에서 선택하십시오.</value>
+  </data>
+  <data name="Poll_DefaultText" xml:space="preserve">
+    <value>설문 조사</value>
+  </data>
+  <data name="Post_A_Reply_DefaultText" xml:space="preserve">
+    <value>답변 게시</value>
+  </data>
+  <data name="Posted_DefaultText" xml:space="preserve">
+    <value>게시됨</value>
+  </data>
+  <data name="Posts_DefaultText" xml:space="preserve">
+    <value>게시물</value>
+  </data>
+  <data name="Price_DefaultText" xml:space="preserve">
+    <value>가격</value>
+  </data>
+  <data name="Priority_DefaultText" xml:space="preserve">
+    <value>우선 순위</value>
+  </data>
+  <data name="Products_DefaultText" xml:space="preserve">
+    <value>제품</value>
+  </data>
+  <data name="Public_DefaultText" xml:space="preserve">
+    <value>공개</value>
+  </data>
+  <data name="Purchase_Summary_DefaultText" xml:space="preserve">
+    <value>구매 요약</value>
+  </data>
+  <data name="Quantity_DefaultText" xml:space="preserve">
+    <value>수량</value>
+  </data>
+  <data name="Quote_Notes_DefaultText" xml:space="preserve">
+    <value>견적 메모</value>
+  </data>
+  <data name="Rating_DefaultText" xml:space="preserve">
+    <value>등급</value>
+  </data>
+  <data name="Invalid_CAPTCHA" xml:space="preserve">
+    <value>해당 CAPTCHA 값이 잘못되었습니다. 다시 시도하십시오.</value>
+  </data>
+  <data name="Register_DefaultText" xml:space="preserve">
+    <value>등록</value>
+  </data>
+  <data name="Event_Register_DefaultText" xml:space="preserve">
+    <value>이 이벤트에 대해 등록</value>
+  </data>
+  <data name="Related_Topics_DefaultText" xml:space="preserve">
+    <value>관련 항목</value>
+  </data>
+  <data name="Remove_DefaultText" xml:space="preserve">
+    <value>제거</value>
+  </data>
+  <data name="Remove_External_Account" xml:space="preserve">
+    <value>\"{0}\" 외부 계정을 제거하시겠습니까?</value>
+  </data>
+  <data name="Reopen_Case_DefaultText" xml:space="preserve">
+    <value>서비스 케이스 다시 시작</value>
+  </data>
+  <data name="Replies_DefaultText" xml:space="preserve">
+    <value>회신</value>
+  </data>
+  <data name="Resolution_DefaultText" xml:space="preserve">
+    <value>해결(필수)</value>
+  </data>
+  <data name="Resolve_Case_DefaultText" xml:space="preserve">
+    <value>서비스 케이스 해결</value>
+  </data>
+  <data name="Satisfaction_DefaultText" xml:space="preserve">
+    <value>만족도(필수)</value>
+  </data>
+  <data name="Schedule_New_Service" xml:space="preserve">
+    <value>새 서비스 예약</value>
+  </data>
+  <data name="Search_DefaultText" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="Search_Blogs_DefaultText" xml:space="preserve">
+    <value>블로그 검색</value>
+  </data>
+  <data name="Select_Customer_Account_As_Potential_Client" xml:space="preserve">
+    <value>고객 거래처를 영업 기회에 대해 잠재적인 클라이언트로 선택:</value>
+  </data>
+  <data name="Service_DefaultText" xml:space="preserve">
+    <value>서비스</value>
+  </data>
+  <data name="Service_Appointment_Not_Found" xml:space="preserve">
+    <value>ID가 "{0}"인 서비스 약속이 없습니다.</value>
+  </data>
+  <data name="Service_Request_Not_Found_Error" xml:space="preserve">
+    <value>&lt;h4&gt;서비스 요청 없음&lt;/h4&gt;&lt;p&gt;참조 번호를 올바르게 입력했는지 확인하십시오. 서비스 요청 상태에 대해 문의하려면 언제든지 311로 전화하실 수 있습니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Service_Request_Number_DefaultText" xml:space="preserve">
+    <value>서비스 요청 번호:</value>
+  </data>
+  <data name="Service_Requests_Searched_Rendered_On_Map" xml:space="preserve">
+    <value>서비스 요청을 검색할 수 있고 지도에 렌더링할 수 있습니다.</value>
+  </data>
+  <data name="Service_Requests_Map_DefaultText" xml:space="preserve">
+    <value>서비스 요청 지도</value>
+  </data>
+  <data name="Set_Primary_Contact_Message" xml:space="preserve">
+    <value>이 거래처에 대해 기본 연락처 설정:</value>
+  </data>
+  <data name="Shipping_Address_DefaultText" xml:space="preserve">
+    <value>운송지 주소</value>
+  </data>
+  <data name="Shipping_DefaultText" xml:space="preserve">
+    <value>운송:</value>
+  </data>
+  <data name="Show_Alerts_DefaultText" xml:space="preserve">
+    <value>알림 표시</value>
+  </data>
+  <data name="SignIn_To_Register_DefaultText" xml:space="preserve">
+    <value>로그인하여 등록</value>
+  </data>
+  <data name="SignIn_Account" xml:space="preserve">
+    <value>{0} 계정으로 로그인하십시오.</value>
+  </data>
+  <data name="Service_Request_Resolve_Duplicates_Summary_Message" xml:space="preserve">
+    <value>유사한 서비스 요청이 이전에 제출되었습니다. 목록에서 서비스 요청을 선택하여 본인이 제출한 요청을 바꾸시겠습니까? 아니면 본인이 제출한 요청을 계속하시겠습니까?</value>
+  </data>
+  <data name="Payment_Error_Message" xml:space="preserve">
+    <value>죄송합니다. 요청 중에 오류가 발생했습니다.</value>
+  </data>
+  <data name="Speakers_DefaultText" xml:space="preserve">
+    <value>발표자</value>
+  </data>
+  <data name="Start_Time_DefaultText" xml:space="preserve">
+    <value>시작 시간</value>
+  </data>
+  <data name="State_Province_DefaultText" xml:space="preserve">
+    <value>시/도</value>
+  </data>
+  <data name="State_Province_Required_Field_Validation_Message" xml:space="preserve">
+    <value>시/도는 필수 필드입니다.</value>
+  </data>
+  <data name="Status_DefaultText" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="Sub_Total_DefaultText" xml:space="preserve">
+    <value>소계:</value>
+  </data>
+  <data name="Submit_New_Service_Request_DefaultText" xml:space="preserve">
+    <value>새 서비스 요청 제출</value>
+  </data>
+  <data name="Subscribe_DefaultText" xml:space="preserve">
+    <value>구독</value>
+  </data>
+  <data name="Subscribe_To_Following_Email_Lists" xml:space="preserve">
+    <value>다음 전자 메일 목록 구독</value>
+  </data>
+  <data name="Subscribe_To_This_Thread" xml:space="preserve">
+    <value>스레드 구독</value>
+  </data>
+  <data name="Support_Plan_Purchase_Required_Message" xml:space="preserve">
+    <value>&lt;h3&gt;지원 계획 구매 필요&lt;/h3&gt;&lt;p&gt;지원 계획을 구매하려면 영업 부서에 문의하십시오.&lt;/p&gt;&lt;p&gt;전화: 555-555-5555&lt;/p&gt;&lt;p&gt;시간: 월요일 - 금요일 오전 9시 - 오후 5시 CST&lt;/p&gt;</value>
+  </data>
+  <data name="Tags_DefaultText" xml:space="preserve">
+    <value>태그</value>
+  </data>
+  <data name="Tax_DefaultText" xml:space="preserve">
+    <value>세금:</value>
+  </data>
+  <data name="Thank_You_For_Feedback" xml:space="preserve">
+    <value>피드백을 주셔서 감사합니다.</value>
+  </data>
+  <data name="Thank_You_DefaultText" xml:space="preserve">
+    <value>감사합니다.</value>
+  </data>
+  <data name="CVV_Help_Message" xml:space="preserve">
+    <value>&lt;p&gt;카드 확인 값은 인터넷에서 신용 카드 거래를 위한 중요한 보안 기능입니다.&lt;/p&gt;&lt;p&gt;MasterCard, Visa 및 Discover 신용 카드에는 카드 뒷면에 3자리 코드가 인쇄되어 있고, American Express 카드에는 앞면 카드 번호 위에 4자리 코드가 인쇄되어 있습니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Case_Not_Found" xml:space="preserve">
+    <value>서비스 케이스를 찾을 수 없습니다.</value>
+  </data>
+  <data name="Post_Exceeds_Maximum_Length" xml:space="preserve">
+    <value>이 게시물의 내용이 최대 길이를 초과합니다. </value>
+  </data>
+  <data name="No_Primary_Contact_Create_Or_Edit_Existing" xml:space="preserve">
+    <value>관리하는 고객 거래처에 기본 연락처가 없습니다. 새 고객 거래처를 만들거나 "고객 관리"를 클릭하고 새 영업 기회에 연결되도록 기존 거래처를 편집하고 계속하려면 기본 연락처를 할당십시오.</value>
+  </data>
+  <data name="Discount_Code_Not_Applicable" xml:space="preserve">
+    <value>지정된 할인 코드가 적용되지 않습니다.</value>
+  </data>
+  <data name="Inavlid_Discount_Code" xml:space="preserve">
+    <value>지정된 할인 코드가 잘못되었습니다.</value>
+  </data>
+  <data name="Discount_Already_Applied" xml:space="preserve">
+    <value>할인이 이미 적용되었습니다.</value>
+  </data>
+  <data name="Discount_Reached_Maximum_Number_Of_Redemptions" xml:space="preserve">
+    <value>할인이 최대 상환 개수에 도달했습니다.</value>
+  </data>
+  <data name="Invalid_Discount" xml:space="preserve">
+    <value>할인이 잘못되었습니다.</value>
+  </data>
+  <data name="External_Account_Added_sucessfully" xml:space="preserve">
+    <value>외부 계정이 추가되었습니다.</value>
+  </data>
+  <data name="External_Account_Removed_sucessfully" xml:space="preserve">
+    <value>외부 계정이 제거되었습니다.</value>
+  </data>
+  <data name="File_Type_Not_Supported" xml:space="preserve">
+    <value>파일 형식이 지원되지 않습니다. </value>
+  </data>
+  <data name="Following_Contacts_Associated_With_Account" xml:space="preserve">
+    <value>다음 연락처는 이 거래처에 연결되어 있음:</value>
+  </data>
+  <data name="New_Password_Confirm_Password_Must_Match" xml:space="preserve">
+    <value>새 암호 및 새 암호 확인이 일치해야 합니다.</value>
+  </data>
+  <data name="Permission_To_Create_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;사용자에게 할당된 상위 고객 거래처에 잘못된 분류 코드가 있습니다. 고객 거래처를 만들 수 있는 권한이 없습니다.&lt;/p&gt;&lt;p&gt;거래처 분류 코드는 "파트너"로 설정해야 합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Create_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;사용자에게 할당된 상위 고객 거래처에 잘못된 분류 코드가 있습니다. 고객 연락처를 만들 수 있는 권한이 없습니다.&lt;/p&gt;&lt;p&gt;거래처 분류 코드는 "파트너"로 설정해야 합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Edit_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;사용자에게 할당된 상위 고객 거래처에 잘못된 분류 코드가 있습니다. 고객 거래처를 편집할 수 있는 권한이 없습니다.&lt;/p&gt;&lt;p&gt;거래처 분류 코드는 "파트너"로 설정해야 합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Edit_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;사용자에게 할당된 상위 고객 거래처에 잘못된 분류 코드가 있습니다. 고객 연락처를 편집할 수 있는 권한이 없습니다.&lt;/p&gt;&lt;p&gt;거래처 분류 코드는 "파트너"로 설정해야 합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;사용자에게 할당된 상위 고객 거래처에 잘못된 분류 코드가 있습니다. 고객 거래처를 관리할 수 있는 권한이 없습니다.&lt;/p&gt;&lt;p&gt;거래처 분류 코드는 "파트너"로 설정해야 합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;사용자에게 할당된 상위 고객 거래처에 잘못된 분류 코드가 있습니다. 고객 연락처를 관리할 수 있는 권한이 없습니다.&lt;/p&gt;&lt;p&gt;거래처 분류 코드는 "파트너"로 설정해야 합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Read_Customer_Accounts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;사용자에게 할당된 상위 고객 거래처에 잘못된 분류 코드가 있습니다. 고객 거래처를 읽을 수 있는 권한이 없습니다.&lt;/p&gt;&lt;p&gt;거래처 분류 코드는 "파트너"로 설정해야 합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Permission_To_Read_Customer_Contacts_Denied" xml:space="preserve">
+    <value>&lt;p&gt;사용자에게 할당된 상위 고객 거래처에 잘못된 분류 코드가 있습니다. 고객 연락처를 읽을 수 있는 권한이 없습니다.&lt;/p&gt;&lt;p&gt;거래처 분류 코드는 "파트너"로 설정해야 합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Requested_Package_Not_Found" xml:space="preserve">
+    <value>요청한 패키지가 없습니다.</value>
+  </data>
+  <data name="Requested_Session_Schedule_Not_Found" xml:space="preserve">
+    <value>요청한 세션 일정이 없습니다.</value>
+  </data>
+  <data name="Discount_Code_Not_specified" xml:space="preserve">
+    <value>필수 할인 코드가 지정되지 않았습니다.</value>
+  </data>
+  <data name="Amount_Zero_Discount_Not_Applied" xml:space="preserve">
+    <value>총 금액이 0입니다. 할인이 적용되지 않았습니다.</value>
+  </data>
+  <data name="Total_Amount_Less_Than_Required_Amount" xml:space="preserve">
+    <value>총 금액은 필요한 최소 금액보다 적습니다.</value>
+  </data>
+  <data name="Remember_Browser_Success_Message" xml:space="preserve">
+    <value>두 요소 인증 세션이 이 브라우저에 대해 이제 기억됩니다.</value>
+  </data>
+  <data name="Tow_Factor_signIn_Required_For_Browser" xml:space="preserve">
+    <value>두 요소 로그인 유효성 검사가 이제 이 브라우저에 필요합니다.</value>
+  </data>
+  <data name="No_Alerts_Currently" xml:space="preserve">
+    <value>현재 아무런 알림도 없습니다.</value>
+  </data>
+  <data name="No_Archived_Polls_Currently" xml:space="preserve">
+    <value>현재 보관된 설문 조사가 없습니다.</value>
+  </data>
+  <data name="No_Appointments_Available_Message" xml:space="preserve">
+    <value>다음 날짜 및 시간에 선택한 서비스에 사용 가능한 약속이 없습니다. 다른 날짜 또는 시간을 선택하고 다시 시도하십시오.</value>
+  </data>
+  <data name="No_Articles_To_Display" xml:space="preserve">
+    <value>표시할 문서가 없습니다.</value>
+  </data>
+  <data name="No_Cases_For_selected_Filter" xml:space="preserve">
+    <value>선택한 필터에 대한 서비스 케이스가 없습니다.</value>
+  </data>
+  <data name="No_Contact_Records_To_Display" xml:space="preserve">
+    <value>표시할 연락처 레코드가 없습니다.</value>
+  </data>
+  <data name="No_Contacts_To_Display" xml:space="preserve">
+    <value>표시할 연락처가 없습니다.</value>
+  </data>
+  <data name="No_Items_To_Display" xml:space="preserve">
+    <value>표시할 항목이 없습니다.</value>
+  </data>
+  <data name="No_Case_Notes_Message" xml:space="preserve">
+    <value>이 서비스 케이스에 연결된 메모가 없습니다. 메모는 공개적이지 않고 서비스 케이스 관련 개인 정보를 게시하는 데 좋은 공간입니다.</value>
+  </data>
+  <data name="No_Responses_To_This_Poll" xml:space="preserve">
+    <value>이 설문 조사에 대한 응답이 없습니다.</value>
+  </data>
+  <data name="No_Services_Available_To_schedule" xml:space="preserve">
+    <value>예약할 사용 가능한 서비스가 없습니다.</value>
+  </data>
+  <data name="Error_Viewing_Order_Contact_Support" xml:space="preserve">
+    <value>죄송합니다. 주문을 볼 수 없습니다. 지원 팀에 문의하십시오.</value>
+  </data>
+  <data name="Error_Viewing_Quote_Contact_Support" xml:space="preserve">
+    <value>죄송합니다. 견적을 볼 수 없습니다. 지원 팀에 문의하십시오.</value>
+  </data>
+  <data name="Declare_Opportunity_As_Won" xml:space="preserve">
+    <value>이 작업은 영업 기회를 성공으로 선언합니다.</value>
+  </data>
+  <data name="Contact_Not_Have_Channel_Permission_Record" xml:space="preserve">
+    <value>이 연락처에는 채널 권한 레코드가 없습니다.</value>
+  </data>
+  <data name="Contact_Not_Have_Opportunity_Permission_Record" xml:space="preserve">
+    <value>이 연락처에는 영업 기회 권한 레코드가 없습니다.</value>
+  </data>
+  <data name="Contact_Not_Have_Channel_Opportunity_Permission_Record" xml:space="preserve">
+    <value>이 연락처에는 채널 또는 영업 기회 권한 레코드가 없습니다.</value>
+  </data>
+  <data name="Thread_Locked" xml:space="preserve">
+    <value>이 스레드는 잠금으로 표시되어 있습니다.</value>
+  </data>
+  <data name="Thread_DefaultText" xml:space="preserve">
+    <value>스레드</value>
+  </data>
+  <data name="Thread_Title_Required_Field" xml:space="preserve">
+    <value>스레드 제목은 필수 필드입니다.</value>
+  </data>
+  <data name="Thread_Type_Required_Field" xml:space="preserve">
+    <value>스레드 유형은 필수 필드입니다.</value>
+  </data>
+  <data name="Threads_DefaultText" xml:space="preserve">
+    <value>스레드</value>
+  </data>
+  <data name="To_DefaultText" xml:space="preserve">
+    <value>종료</value>
+  </data>
+  <data name="Total_Votes_DefaultText" xml:space="preserve">
+    <value>총 투표:</value>
+  </data>
+  <data name="Total_DefaultText" xml:space="preserve">
+    <value>합계:</value>
+  </data>
+  <data name="Service_Request_Status_Tracker_Title" xml:space="preserve">
+    <value>서비스 요청 추적</value>
+  </data>
+  <data name="Twofactor_Authentication_Disabled_Successfully_Message" xml:space="preserve">
+    <value>두 요소 인증이 비활성화되었습니다.</value>
+  </data>
+  <data name="Twofactor_Authentication_Enabled_Successfully_Message" xml:space="preserve">
+    <value>두 요소 인증이 활성화되었습니다.</value>
+  </data>
+  <data name="Type_DefaultText" xml:space="preserve">
+    <value>유형</value>
+  </data>
+  <data name="Unable_To_Retrieve_Order_Information" xml:space="preserve">
+    <value>주문 정보를 검색할 수 없습니다.</value>
+  </data>
+  <data name="Unable_To_Retrieve_Purchase_Information" xml:space="preserve">
+    <value>구매 정보를 검색할 수 없습니다.</value>
+  </data>
+  <data name="UnMark_Answer" xml:space="preserve">
+    <value>대답으로 표시 안 함</value>
+  </data>
+  <data name="Unregister_From_Event" xml:space="preserve">
+    <value>이 이벤트에서 등록 취소</value>
+  </data>
+  <data name="Unsubscribe_DefaultText" xml:space="preserve">
+    <value>구독 취소</value>
+  </data>
+  <data name="UpComing_DefaultText" xml:space="preserve">
+    <value>수신</value>
+  </data>
+  <data name="UpComing_Times_DefaultText" xml:space="preserve">
+    <value>수신 시간</value>
+  </data>
+  <data name="Update_Post_DefaultText" xml:space="preserve">
+    <value>게시물 업데이트</value>
+  </data>
+  <data name="Value_Of_Active_Opportunities" xml:space="preserve">
+    <value>활성 영업 기회의 값</value>
+  </data>
+  <data name="Value_Of_New_Opportunities" xml:space="preserve">
+    <value>새 영업 기회의 값</value>
+  </data>
+  <data name="View_Scheduled_Services" xml:space="preserve">
+    <value>예약된 서비스 모두 보기</value>
+  </data>
+  <data name="View_Map_DefaultText" xml:space="preserve">
+    <value>지도 보기</value>
+  </data>
+  <data name="Unknown_Error_Occured_Message" xml:space="preserve">
+    <value>죄송합니다. 알 수 없는 오류가 발생했습니다.</value>
+  </data>
+  <data name="What_Can_We_Help_You_With_Message" xml:space="preserve">
+    <value>어떤 도움을 드릴 수 있을까요?</value>
+  </data>
+  <data name="Year_DefaultText" xml:space="preserve">
+    <value>년</value>
+  </data>
+  <data name="You_Are_Not_Registered_For_Events_Message" xml:space="preserve">
+    <value>현재 어떤 이벤트에도 등록되어 있지 않습니다.</value>
+  </data>
+  <data name="You_Registered_For_This_Conference_Message" xml:space="preserve">
+    <value>현재 어떤 컨퍼런스에도 등록되어 있지 않습니다.</value>
+  </data>
+  <data name="You_Registered_For_This_Event_Message" xml:space="preserve">
+    <value>이 이벤트에 등록되어 있습니다.</value>
+  </data>
+  <data name="No_Permission_For_Parent_Account_Manage_Contact_Permission_Denied" xml:space="preserve">
+    <value>상위 거래처에 대한 거래처 액세스 권한이 없습니다. 연락처 권한을 관리할 수 없습니다.</value>
+  </data>
+  <data name="No_Permission_For_Parent_Account_Manage_Parent_Account_Denied" xml:space="preserve">
+    <value>상위 거래처에 대한 거래처 액세스 권한이 없습니다. 상위 거래처를 관리할 수 없습니다.</value>
+  </data>
+  <data name="Permission_To_Manage_Contact_Permissions_Denied" xml:space="preserve">
+    <value>상위 거래처에 대한 거래처 액세스 권한이 없습니다. 연락처 권한을 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Permission_To_Manage_Parent_Account_Denied" xml:space="preserve">
+    <value>상위 거래처에 대한 거래처 액세스 권한이 없습니다. 상위 거래처를 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Permission_To_Edit_ContactChannel_And_Opportunity_Permissions_Denied" xml:space="preserve">
+    <value>채널 권한이 없고 영업 기회 권한이 없습니다. 연락처의 채널 및 영업 기회 권한을 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Create_Customer_Account_Denied" xml:space="preserve">
+    <value>상위 고객 거래처에 대한 채널 권한이 없습니다. 고객 거래처를 만들 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Create_Customer_Contacts_Denied" xml:space="preserve">
+    <value>상위 고객 거래처에 대한 채널 권한이 없습니다. 고객 연락처를 만들 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Edit_Customer_Accounts_Denied" xml:space="preserve">
+    <value>상위 고객 거래처에 대한 채널 권한이 없습니다. 고객 거래처를 편집할 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Edit_Customer_Contacts_Denied" xml:space="preserve">
+    <value>상위 고객 거래처에 대한 채널 권한이 없습니다. 고객 연락처를 편집할 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Read_Customer_Accounts_Denied" xml:space="preserve">
+    <value>상위 고객 거래처에 대한 채널 권한이 없습니다. 고객 거래처를 읽을 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permissions_For_Parent_Account_Read_Customer_Contacts_Denied" xml:space="preserve">
+    <value>상위 고객 거래처에 대한 채널 권한이 없습니다. 고객 연락처를 읽을 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permissions_Create_Customer_Account_Denied" xml:space="preserve">
+    <value>채널 권한이 없습니다. 고객 거래처를 만들 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permissions_Create_Customer_Contacts_Denied" xml:space="preserve">
+    <value>채널 권한이 없습니다. 고객 연락처를 만들 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permission_Edit_Contact_Channel_Permissions_Denied" xml:space="preserve">
+    <value>채널 권한이 없습니다. 연락처의 채널 권한을 편집할 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permission_Edit_Customer_Accounts_Denied" xml:space="preserve">
+    <value>채널 권한이 없습니다. 고객 거래처를 편집할 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permission_Edit_Customer_Contacts_Denied" xml:space="preserve">
+    <value>채널 권한이 없습니다. 고객 연락처를 편집할 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permission_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>채널 권한이 없습니다. 고객 거래처를 관리할 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permission_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>채널 권한이 없습니다. 고객 연락처를 관리할 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permission_Read_Customer_Accounts_Denied" xml:space="preserve">
+    <value>채널 권한이 없습니다. 고객 거래처를 읽을 수 없습니다.</value>
+  </data>
+  <data name="No_Channel_Permission_Read_Customer_Contacts_Denied" xml:space="preserve">
+    <value>채널 권한이 없습니다. 고객 연락처를 읽을 수 없습니다.</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Create_Contact_Denied" xml:space="preserve">
+    <value>거래처로 설정된 범위에서 상위 거래처에 대한 연락처 액세스 권한이 없습니다. 연락처를 만들 수 없습니다.</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Edit_Contact_Denied" xml:space="preserve">
+    <value>거래처로 설정된 범위에서 상위 거래처에 대한 연락처 액세스 권한이 없습니다. 연락처를 편집할 수 없습니다.</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>거래처로 설정된 범위에서 상위 거래처에 대한 연락처 액세스 권한이 없습니다. 연락처의 권한을 편집할 수 없습니다.</value>
+  </data>
+  <data name="No_Contact_Access_For_Parent_Account_Permissions_Manage_Parent_Account_Contacts_Permission_Denied" xml:space="preserve">
+    <value>거래처로 설정된 범위에서 상위 거래처에 대한 연락처 액세스 권한이 없습니다. 상위 거래처의 연락처를 관리할 수 없습니다.</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Create_Contact_Denied" xml:space="preserve">
+    <value>연락처 액세스 권한이 없습니다. 연락처를 만들 수 없습니다.</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Edit_Contact_Denied" xml:space="preserve">
+    <value>연락처 액세스 권한이 없습니다. 연락처를 편집할 수 없습니다.</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>연락처 액세스 권한이 없습니다. 연락처의 권한을 편집할 수 없습니다.</value>
+  </data>
+  <data name="No_Contact_Access_Permissions_Manage_Parent_Account_Contacts_Permission_Denied" xml:space="preserve">
+    <value>연락처 액세스 권한이 없습니다. 상위 거래처의 연락처를 관리할 수 없습니다.</value>
+  </data>
+  <data name="Dont_Have_Opportunity_Permissions" xml:space="preserve">
+    <value>영업 기회 권한이 없습니다.</value>
+  </data>
+  <data name="Permission_To_Create_Opportunities_Denied" xml:space="preserve">
+    <value>영업 기회 권한이 없습니다. 영업 기회를 만들 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Permission_To_Edit_Contact_Opportunity_Permissions_Denied" xml:space="preserve">
+    <value>영업 기회 권한이 없습니다. 연락처의 영업 기회 권한을 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="No_Permission_To_Create_Cases" xml:space="preserve">
+    <value>서비스 케이스를 만들 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="No_Permission_To_View_Cases" xml:space="preserve">
+    <value>서비스 케이스를 볼 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="No_Permission_To_View_This_Case" xml:space="preserve">
+    <value>이 서비스 케이스를 볼 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Add_Existing_Or_Create_New_Contact" xml:space="preserve">
+    <value>이 영업 기회에 기존 연락처를 추가하거나 새 연락처를 만들 수 있습니다.</value>
+  </data>
+  <data name="Force_SignUp_Profile_Explanation" xml:space="preserve">
+    <value>이 웹 사이트의 기능을 사용하지 전에 프로필을 작성해야 합니다.</value>
+  </data>
+  <data name="SignIn_To_Open_New_Support_Requests" xml:space="preserve">
+    <value>새 지원 요청을 시작하려면 로그인해야 합니다.</value>
+  </data>
+  <data name="SignIn_To_View_Your_Cases" xml:space="preserve">
+    <value>서비스 케이스를 보려면 로그인해야 합니다.</value>
+  </data>
+  <data name="Account_Access_Manage_Permissions_Denied_Error" xml:space="preserve">
+    <value>연락처의 권한을 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Account_Access_Permissions_Error" xml:space="preserve">
+    <value>상위 거래처를 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Account_Access_Write_Permission_Denied_Message" xml:space="preserve">
+    <value>상위 거래처를 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Case_Updated_Successfully" xml:space="preserve">
+    <value>서비스 케이스가 업데이트되었습니다.</value>
+  </data>
+  <data name="Channel_Permissions_Deny_Create_Customer_Accounts_Denied" xml:space="preserve">
+    <value>고객 거래처를 만들 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Channel_Permissions_Deny_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>고객 거래처를 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Channel_Permissions_Deny_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>고객 연락처를 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Deny_Read_Write_Manage_Customer_Accounts_Denied" xml:space="preserve">
+    <value>고객 거래처를 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Deny_Read_Write_Manage_Customer_Contacts_Denied" xml:space="preserve">
+    <value>고객 연락처를 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Deny_Read_View_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>고객 거래처를 볼 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Deny_Read_View_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>고객 연락처를 볼 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Deny_Read_Edit_Customer_Accounts_Permission_Denied" xml:space="preserve">
+    <value>고객 거래처를 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Deny_Read_Edit_Customer_Contacts_Permission_Denied" xml:space="preserve">
+    <value>고객 연락처를 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Deny_Create_Permission_To_Create_Contact_Denied" xml:space="preserve">
+    <value>연락처를 만들 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Deny_Read_Manage_Parent_Account_Contacts_Permission_Denied" xml:space="preserve">
+    <value>상위 거래처의 연락처를 관리할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Deny_Write_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>연락처를 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Deny_Write_Permission_To_Edit_Contact_Permission_Denied" xml:space="preserve">
+    <value>연락처의 권한을 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Contact_Access_Write_Permission_Denied_Message" xml:space="preserve">
+    <value>연락처를 편집할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Email_Changed_Successfully" xml:space="preserve">
+    <value>전자 메일이 변경되었습니다.</value>
+  </data>
+  <data name="Email_Confirmed_Successfully" xml:space="preserve">
+    <value>전자 메일이 확인되었습니다.</value>
+  </data>
+  <data name="Your_Information" xml:space="preserve">
+    <value>본인 정보</value>
+  </data>
+  <data name="Mobile_Phone_Number_Changed_Successfully" xml:space="preserve">
+    <value>휴대폰 번호가 변경되었습니다.</value>
+  </data>
+  <data name="Mobile_Phone_Number_Removed_Successfully" xml:space="preserve">
+    <value>휴대폰 번호가 제거되었습니다.</value>
+  </data>
+  <data name="Create_Opportunities_Permissions_Denied" xml:space="preserve">
+    <value>영업 기회를 만들 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Order_Updated_Successfully" xml:space="preserve">
+    <value>주문이 업데이트되었습니다.</value>
+  </data>
+  <data name="Password_Changed_Successfully" xml:space="preserve">
+    <value>암호가 변경되었습니다.</value>
+  </data>
+  <data name="Password_Set_Successfully" xml:space="preserve">
+    <value>암호가 설정되었습니다.</value>
+  </data>
+  <data name="Profile_Updated_Successfully" xml:space="preserve">
+    <value>프로필이 업데이트되었습니다.</value>
+  </data>
+  <data name="Quote_Updated_Successfully" xml:space="preserve">
+    <value>견적이 업데이트되었습니다.</value>
+  </data>
+  <data name="Zip_Postal_Code" xml:space="preserve">
+    <value>우편 번호</value>
+  </data>
+  <data name="Zip_Postal_Code_Required" xml:space="preserve">
+    <value>우편 번호는 필수 필드입니다. </value>
+  </data>
+  <data name="Total_DefaultText_Label" xml:space="preserve">
+    <value>합계</value>
+  </data>
+  <data name="Contact_Support_To_Pay_For_Application_Message" xml:space="preserve">
+    <value>이 응용 프로그램을 결제하려면 지원 팀에 문의하십시오.</value>
+  </data>
+  <data name="Entered_Correct_Reference_Number_Confirmation_Message" xml:space="preserve">
+    <value>참조 번호를 올바르게 입력했는지 확인하십시오. 서비스 요청 상태에 대해 문의하려면 언제든지 311로 전화하실 수 있습니다.</value>
+  </data>
+  <data name="Phone_Number" xml:space="preserve">
+    <value>전화: 555-555-5555</value>
+  </data>
+  <data name="Support_Plan_Message" xml:space="preserve">
+    <value>지원 계획</value>
+  </data>
+  <data name="Permit_Default_Success_Message" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;&lt;em&gt;감사합니다.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;귀하의 허가 신청이 성공적으로 제출되었습니다.&lt;/p&gt;&lt;p&gt;해당 신청은 24시간 내에 검토되며 확인 및 후속 메시지가 전송됩니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Select_Support_Package_You_Like_To_Purchase" xml:space="preserve">
+    <value>&lt;h3&gt;지원 계획&lt;/h3&gt;&lt;p&gt;구매하려는 지원 패키지를 선택하십시오.&lt;/p&gt;</value>
+  </data>
+  <data name="Service_Request_Default_Success_Message" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;&lt;em&gt;감사합니다.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;귀하의 서비스 요청이 성공적으로 제출되었습니다.&lt;/p&gt;&lt;p&gt;해당 요청은 24시간 내에 검토되며 확인 및 후속 메시지가 전송됩니다.&lt;/p&gt;</value>
+  </data>
+  <data name="ADX_BlogPost_ShortName" xml:space="preserve">
+    <value>블로그 게시물</value>
+  </data>
+  <data name="ADX_BlogPost_Update_Tooltip" xml:space="preserve">
+    <value>이 블로그 게시물 편집</value>
+  </data>
+  <data name="ADX_Blog_ShortName" xml:space="preserve">
+    <value>블로그</value>
+  </data>
+  <data name="ADX_Blog_Update_Tooltip" xml:space="preserve">
+    <value>이 블로그 편집</value>
+  </data>
+  <data name="ADX_CommunityForumPost_ShortName" xml:space="preserve">
+    <value>게시물</value>
+  </data>
+  <data name="ADX_CommunityForumPost_DeleteEntireThread_Warning" xml:space="preserve">
+    <value>경고: 첫 번째 게시물을 삭제하면 전체 스레드가 삭제됩니다.</value>
+  </data>
+  <data name="ADX_CommunityForumPost_Update_Tooltip" xml:space="preserve">
+    <value>이 게시물 편집</value>
+  </data>
+  <data name="ADX_CommunityForumThread_Update_Tooltip" xml:space="preserve">
+    <value>이 스레드 편집</value>
+  </data>
+  <data name="ADX_CommunityForum_ShortName" xml:space="preserve">
+    <value>포럼</value>
+  </data>
+  <data name="ADX_CommunityForum_Update_Tooltip" xml:space="preserve">
+    <value>이 포럼 편집</value>
+  </data>
+  <data name="ADX_Community_Forum_Thread_ShortName" xml:space="preserve">
+    <value>스레드</value>
+  </data>
+  <data name="ADX_EventSchedule_AcceptableDays" xml:space="preserve">
+    <value>허용 날짜</value>
+  </data>
+  <data name="ADX_EventSchedule_Recurrence" xml:space="preserve">
+    <value>되풀이</value>
+  </data>
+  <data name="ADX_EventSchedule_ShortName" xml:space="preserve">
+    <value>이벤트 일정</value>
+  </data>
+  <data name="ADX_EventSchedule_Update_Tooltip" xml:space="preserve">
+    <value>이 이벤트 일정 편집</value>
+  </data>
+  <data name="ADX_Event_ShortName" xml:space="preserve">
+    <value>이벤트</value>
+  </data>
+  <data name="ADX_Event_Update_Tooltip" xml:space="preserve">
+    <value>이 이벤트 편집</value>
+  </data>
+  <data name="ADX_PageComment_ShortName" xml:space="preserve">
+    <value>댓글</value>
+  </data>
+  <data name="ADX_PageComment_Update_Tooltip" xml:space="preserve">
+    <value>이 댓글 편집</value>
+  </data>
+  <data name="ADX_Shortcut_ShortName" xml:space="preserve">
+    <value>바로 가기</value>
+  </data>
+  <data name="ADX_Shortcut_Target_Instructions" xml:space="preserve">
+    <value>바로 가기 대상을 선택하십시오. 외부 사이트의 대상 URL은 http:// 또는 https://로 시작해야 합니다.</value>
+  </data>
+  <data name="ADX_Shortcut_Update_Tooltip" xml:space="preserve">
+    <value>이 바로 가기 편집</value>
+  </data>
+  <data name="ADX_Weblink_DisplayPage_Childlinks_Tooltip" xml:space="preserve">
+    <value>이 웹 링크는 페이지 하위 링크를 표시하도록 설정되어 있습니다. 여기에 표시된 하위 웹 링크의 하위 항목이 표시되지 않습니다.</value>
+  </data>
+  <data name="Editable_DeleteMultiple_Tooltip_Prefix" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Editable_DeleteMultiple_Tooltip_Suffix_Plural" xml:space="preserve">
+    <value>하위 레코드?</value>
+  </data>
+  <data name="Editable_DeleteMultiple_Tooltip_Suffix_Singular" xml:space="preserve">
+    <value>하위 레코드?</value>
+  </data>
+  <data name="Entity_Create_ADX_BlogPost_Tooltip" xml:space="preserve">
+    <value>새 블로그 게시물 만들기</value>
+  </data>
+  <data name="Entity_Create_ADX_Blog_Label" xml:space="preserve">
+    <value>하위 블로그</value>
+  </data>
+  <data name="Entity_Create_ADX_Blog_Tooltip" xml:space="preserve">
+    <value>새 하위 블로그 만들기</value>
+  </data>
+  <data name="Entity_Create_ADX_CommunityForum_Label" xml:space="preserve">
+    <value>하위 포럼</value>
+  </data>
+  <data name="Entity_Create_ADX_CommunityForum_Tooltip" xml:space="preserve">
+    <value>새 하위 포럼 만들기</value>
+  </data>
+  <data name="Entity_Create_ADX_EventSchedule_Label" xml:space="preserve">
+    <value>이벤트 일정</value>
+  </data>
+  <data name="Entity_Create_ADX_EventSchedule_Tooltip" xml:space="preserve">
+    <value>새 이벤트 일정 만들기</value>
+  </data>
+  <data name="Entity_Create_ADX_Event_Label" xml:space="preserve">
+    <value>하위 이벤트</value>
+  </data>
+  <data name="Entity_Create_ADX_Event_Tooltip" xml:space="preserve">
+    <value>새 하위 이벤트 만들기</value>
+  </data>
+  <data name="Entity_Create_ADX_Shortcut_Label" xml:space="preserve">
+    <value>하위 바로 가기</value>
+  </data>
+  <data name="Entity_Create_ADX_Shortcut_Tooltip" xml:space="preserve">
+    <value>새 하위 바로 가기 만들기</value>
+  </data>
+  <data name="Entity_Create_ADX_Weblinkset_Tooltip" xml:space="preserve">
+    <value>새 웹 링크 설정 만들기</value>
+  </data>
+  <data name="Entity_Delete_ADX_BlogpostComment_Tooltip" xml:space="preserve">
+    <value>이 댓글 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_BlogPost_Tooltip" xml:space="preserve">
+    <value>이 블로그 게시물 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_Blog_Tooltip" xml:space="preserve">
+    <value>이 블로그 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_CommunityForumPost_Tooltip" xml:space="preserve">
+    <value>이 게시물 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_CommunityForumThread_Tooltip" xml:space="preserve">
+    <value>이 스레드 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_CommunityForum_Tooltip" xml:space="preserve">
+    <value>이 포럼 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_EventSchedule_Tooltip" xml:space="preserve">
+    <value>이 이벤트 일정 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_Event_Tooltip" xml:space="preserve">
+    <value>이 이벤트 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_PageComment_Tooltip" xml:space="preserve">
+    <value>이 댓글 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_Shortcut_Tooltip" xml:space="preserve">
+    <value>이 바로 가기 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_Webfile_Tooltip" xml:space="preserve">
+    <value>이 파일 삭제</value>
+  </data>
+  <data name="Entity_Delete_ADX_Webpage_Tooltip" xml:space="preserve">
+    <value>이 페이지 삭제</value>
+  </data>
+  <data name="Entity_Form_Select_New" xml:space="preserve">
+    <value>+ 새로 만들기</value>
+  </data>
+  <data name="FileBrowser_Header_Label" xml:space="preserve">
+    <value>파일 선택…</value>
+  </data>
+  <data name="Cms_Sitemapchildren_Update_Label" xml:space="preserve">
+    <value>하위</value>
+  </data>
+  <data name="Entity_Create_Adx_Webfile_Label" xml:space="preserve">
+    <value>하위 파일</value>
+  </data>
+  <data name="Entity_Create_Adx_Webfile_Tooltip" xml:space="preserve">
+    <value>새 하위 파일 만들기</value>
+  </data>
+  <data name="Entity_Create_Adx_Weblink_Tooltip" xml:space="preserve">
+    <value>새 링크 추가</value>
+  </data>
+  <data name="Entity_Create_Adx_Webpage_Label" xml:space="preserve">
+    <value>하위 페이지</value>
+  </data>
+  <data name="Entity_Create_Adx_Webpage_Tooltip" xml:space="preserve">
+    <value>새 하위 페이지 만들기</value>
+  </data>
+  <data name="Entity_Delete_Adx_Weblink_Tooltip" xml:space="preserve">
+    <value>이 항목 삭제</value>
+  </data>
+  <data name="Adx_Webfile_Shortname" xml:space="preserve">
+    <value>파일</value>
+  </data>
+  <data name="Adx_Webfile_Update_Tooltip" xml:space="preserve">
+    <value>이 파일 편집</value>
+  </data>
+  <data name="Adx_Weblink_Update_Tooltip" xml:space="preserve">
+    <value>이 링크 편집</value>
+  </data>
+  <data name="Adx_Webpage_Shortname" xml:space="preserve">
+    <value>페이지</value>
+  </data>
+  <data name="Adx_Webpage_Not_Yet_Created" xml:space="preserve">
+    <value>아직 만들지 않음</value>
+  </data>
+  <data name="Pagination_Shortname" xml:space="preserve">
+    <value>페이지</value>
+  </data>
+  <data name="Adx_Webpage_Update_Tooltip" xml:space="preserve">
+    <value>이 페이지 편집</value>
+  </data>
+  <data name="Datetimepicker_Datepicker_Label" xml:space="preserve">
+    <value>날짜 선택</value>
+  </data>
+  <data name="Editable_Cancel_Label" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Editable_Delete_Label" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Editable_Delete_Tooltip_Prefix" xml:space="preserve">
+    <value>다음 삭제 </value>
+  </data>
+  <data name="SiteMarker_WarningMessage" xml:space="preserve">
+    <value>이 {0}은(는) 사이트 마커 {1}에 연결되어 있습니다. 사이트 기능은 이 연결에 따라 다를 수 있습니다. </value>
+  </data>
+  <data name="SiteMarkers_WarningMessage" xml:space="preserve">
+    <value>이 {0}은(는) 사이트 마커 {1}에 연결되어 있습니다. 사이트 기능은 이 연결에 따라 다를 수 있습니다. </value>
+  </data>
+  <data name="Edit_Label" xml:space="preserve">
+    <value>편집</value>
+  </data>
+  <data name="Edit_Label_Prefix" xml:space="preserve">
+    <value>편집 </value>
+  </data>
+  <data name="Editable_Loading" xml:space="preserve">
+    <value>로드하는 중...</value>
+  </data>
+  <data name="Editable_Required_Label" xml:space="preserve">
+    <value>(필수)</value>
+  </data>
+  <data name="Editable_Save_Label" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="Editable_Saving" xml:space="preserve">
+    <value>저장 중...</value>
+  </data>
+  <data name="Editable_Sortable_Tooltip" xml:space="preserve">
+    <value>이 항목 이동</value>
+  </data>
+  <data name="Editable_Tooltip" xml:space="preserve">
+    <value>이 내용 편집</value>
+  </data>
+  <data name="Error_Dataservice_Default" xml:space="preserve">
+    <value>내용을 저장하는 동안 오류가 발생했습니다. 변경 내용이 저장되지 않았습니다.</value>
+  </data>
+  <data name="Error_Dataservice_Loading" xml:space="preserve">
+    <value>이 기능에 필요한 내용을 로드하는 동안 오류가 발생했습니다.</value>
+  </data>
+  <data name="Error_Dataservice_Loading_Field_Prefix" xml:space="preserve">
+    <value>로드할 수 없음 </value>
+  </data>
+  <data name="Confirm_Delete_Entity_Prefix" xml:space="preserve">
+    <value>다음을 삭제하시겠습니까? </value>
+  </data>
+  <data name="Confirm_No" xml:space="preserve">
+    <value>아니요</value>
+  </data>
+  <data name="Confirm_Unsavedchanges" xml:space="preserve">
+    <value>저장되지 않은 변경 내용이 있습니다. 계속하시겠습니까?</value>
+  </data>
+  <data name="Confirm_Yes" xml:space="preserve">
+    <value>예</value>
+  </data>
+  <data name="Validation_Required_Suffix" xml:space="preserve">
+    <value>{0}은(는) 필수 필드입니다.</value>
+  </data>
+  <data name="Sitemapchildren_Header_Label" xml:space="preserve">
+    <value>하위 항목 편집</value>
+  </data>
+  <data name="Access_Denied_No_Permissions_To_View_Notes_Message" xml:space="preserve">
+    <value>메모를 볼 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Access_Denied_No_Permissions_To_View_These_Folders_Message" xml:space="preserve">
+    <value>이러한 폴더 또는 파일을 볼 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Access_Denied_No_Permissions_To_View_These_Records_Message" xml:space="preserve">
+    <value>이러한 레코드를 볼 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Activate_Button_Text" xml:space="preserve">
+    <value>활성화</value>
+  </data>
+  <data name="Activate_Quote_Button_Text" xml:space="preserve">
+    <value>견적 활성화</value>
+  </data>
+  <data name="Add_Button_Text" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="Add_Files" xml:space="preserve">
+    <value>파일 추가</value>
+  </data>
+  <data name="Calculate_Value_Button_Text" xml:space="preserve">
+    <value>값 계산</value>
+  </data>
+  <data name="Case_Cancellation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 서비스 케이스를 취소하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Case_Closed_DefaultResolutionLabel_Text" xml:space="preserve">
+    <value>서비스 케이스 종료됨</value>
+  </data>
+  <data name="Case_Closed_Via_Web_Portal_LabelText" xml:space="preserve">
+    <value>웹 포털을 통해 서비스 케이스 종료됨</value>
+  </data>
+  <data name="Close_As_Lost_Button_Label" xml:space="preserve">
+    <value>실패로 종료</value>
+  </data>
+  <data name="Close_As_Won_Button_Text" xml:space="preserve">
+    <value>성공으로 종료</value>
+  </data>
+  <data name="Close_Case_Button_Text" xml:space="preserve">
+    <value>서비스 케이스 종료</value>
+  </data>
+  <data name="Close_Opportunity_As_Lost_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;영업 기회를 실패로 종료하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Close_Quote_Create_Order_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 견적을 종료하고 주문을 만드시겠습니까? &lt;/p&gt;</value>
+  </data>
+  <data name="Create_Invoice_Button_Text" xml:space="preserve">
+    <value>송장 만들기</value>
+  </data>
+  <data name="Create_Invoice_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 주문에 기반한 송장을 만드시겠습니까? &lt;/p&gt;</value>
+  </data>
+  <data name="Create_Order_Button_Text" xml:space="preserve">
+    <value>주문 만들기</value>
+  </data>
+  <data name="Create_Text" xml:space="preserve">
+    <value>만들기</value>
+  </data>
+  <data name="DataBinding_Not_Contain_Property_Message" xml:space="preserve">
+    <value>DataBinding: "{0}"에 이름이 {1}인 속성이 없습니다.</value>
+  </data>
+  <data name="Deactivate_Button_Text" xml:space="preserve">
+    <value>비활성화</value>
+  </data>
+  <data name="Default_AddFiles_ModalAttachFileLabel" xml:space="preserve">
+    <value>파일 선택</value>
+  </data>
+  <data name="Default_AddFolder_Button_Text" xml:space="preserve">
+    <value>폴더 만들기</value>
+  </data>
+  <data name="Default_Delete_File_ModalTitle" xml:space="preserve">
+    <value>파일 삭제</value>
+  </data>
+  <data name="Default_Delete_Folder_ModalTitle" xml:space="preserve">
+    <value>폴더 삭제</value>
+  </data>
+  <data name="Default_Delete_Note_ModalTitle" xml:space="preserve">
+    <value>메모 삭제</value>
+  </data>
+  <data name="Default_Edit_Note_ModalTitle" xml:space="preserve">
+    <value>메모 편집</value>
+  </data>
+  <data name="Default_Error_ModalTitle" xml:space="preserve">
+    <value>오류</value>
+  </data>
+  <data name="Default_Grid_Empty_Message" xml:space="preserve">
+    <value>표시할 레코드가 없습니다.</value>
+  </data>
+  <data name="Default_Grid_Loading_Message" xml:space="preserve">
+    <value>로드하는 중...</value>
+  </data>
+  <data name="Default_Modal_Processing_Text" xml:space="preserve">
+    <value>처리 중...</value>
+  </data>
+  <data name="Default_Modified_Column_Title" xml:space="preserve">
+    <value>수정됨</value>
+  </data>
+  <data name="Default_Notes_List_Empty_Message" xml:space="preserve">
+    <value>표시할 메모가 없습니다.</value>
+  </data>
+  <data name="Default_Activities_List_Empty_Message" xml:space="preserve">
+    <value>표시할 활동이 없습니다.</value>
+  </data>
+  <data name="Default_SharePoint_Grid_Empty_Message" xml:space="preserve">
+    <value>표시할 폴더 또는 파일이 없습니다.</value>
+  </data>
+  <data name="DefaultCalculateBody_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 영업 기회의 실제 값을 계산합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="DefaultGenerateQuoteBody_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 영업 기회를 기반으로 견적을 생성합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="DefaultReopenCaseBody_Message" xml:space="preserve">
+    <value>&lt;p&gt;서비스 케이스를 다시 시작합니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Delete_Button_Text" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Description_Of_Resolution_Label_Text" xml:space="preserve">
+    <value>해결에 대한 설명</value>
+  </data>
+  <data name="Description_Of_Update_Label_Text" xml:space="preserve">
+    <value>업데이트 설명</value>
+  </data>
+  <data name="Destination_Label_Text" xml:space="preserve">
+    <value>대상</value>
+  </data>
+  <data name="Disassociate_Button_Text" xml:space="preserve">
+    <value>분리</value>
+  </data>
+  <data name="Document_Library_Title_Text" xml:space="preserve">
+    <value>문서 라이브러리</value>
+  </data>
+  <data name="Download_Button_Label" xml:space="preserve">
+    <value>다운로드</value>
+  </data>
+  <data name="Download_Records_From_All_Pages" xml:space="preserve">
+    <value>모든 페이지에서 레코드를 다운로드합니다.</value>
+  </data>
+  <data name="Download_Records_From_Current_Page_Label" xml:space="preserve">
+    <value>현재 페이지에서 레코드를 다운로드합니다.</value>
+  </data>
+  <data name="Email_Required_Error" xml:space="preserve">
+    <value>전자 메일이 필요한데 표시되지 않습니다.</value>
+  </data>
+  <data name="Error_Completing_Request_Error_Message" xml:space="preserve">
+    <value>요청을 완료하는 동안 오류가 발생했습니다. &lt;span class='details'&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="Error_Occurred_Message" xml:space="preserve">
+    <value>&lt;p&gt;죄송합니다. 오류가 발생했습니다.&lt;/p&gt;</value>
+  </data>
+  <data name="File_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 파일을 영구적으로 삭제하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Folder_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 폴더 및 그 내용을 모두 영구적으로 삭제하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Generate_Quote_Button_Label" xml:space="preserve">
+    <value>견적 생성</value>
+  </data>
+  <data name="Is_Private_Field_Label_Text" xml:space="preserve">
+    <value>비공개임 &lt;span class='fa fa-eye-slash' aria-hidden='true'&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="Lookup_Records_Title_Text" xml:space="preserve">
+    <value>레코드 조회</value>
+  </data>
+  <data name="Myself_Text" xml:space="preserve">
+    <value>나 자신</value>
+  </data>
+  <data name="New_Folder_Button_Text" xml:space="preserve">
+    <value>새 폴더</value>
+  </data>
+  <data name="New_Tag_Title_Text" xml:space="preserve">
+    <value>새 태그:</value>
+  </data>
+  <data name="Next_Button_Text" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="No_Of_Day_Add_In_Listitem" xml:space="preserve">
+    <value>{0}일</value>
+  </data>
+  <data name="No_Of_Days_Add_In_Listitem" xml:space="preserve">
+    <value>{0}일</value>
+  </data>
+  <data name="No_Of_Hour_Add_In_Listitem" xml:space="preserve">
+    <value>{0}시간</value>
+  </data>
+  <data name="No_Of_Hours_Add_In_Listitem" xml:space="preserve">
+    <value>{0}시간</value>
+  </data>
+  <data name="No_Of_Minute_Add_In_Listitem" xml:space="preserve">
+    <value>{0}분</value>
+  </data>
+  <data name="No_Of_Minutes_Add_In_Listitem" xml:space="preserve">
+    <value>{0}분</value>
+  </data>
+  <data name="Node_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 메모를 삭제하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Overwrite_Existing_Files_Label_Text" xml:space="preserve">
+    <value>기존 파일 덮어쓰기</value>
+  </data>
+  <data name="Pipeline_Phase_Label_Text" xml:space="preserve">
+    <value>파이프라인 단계</value>
+  </data>
+  <data name="Previous_Button_Label" xml:space="preserve">
+    <value>이전</value>
+  </data>
+  <data name="Private_Label_Text" xml:space="preserve">
+    <value>비공개</value>
+  </data>
+  <data name="Qualify_Button_Label_Text" xml:space="preserve">
+    <value>우량으로 선별</value>
+  </data>
+  <data name="Qualify_Lead_As_Opportunity_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 잠재 고객을 우량 영업 기회로 선별하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Quote_Activation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 견적을 활성화하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Record_Activation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 레코드를 활성화하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Record_Deactivation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 레코드를 비활성화하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Record_Deletion_Confirmation_Message" xml:space="preserve">
+    <value>이 레코드를 삭제하시겠습니까?</value>
+  </data>
+  <data name="Record_Disassociation_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 레코드와의 연결을 해제하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Remove_Tag_Tool_Tip_Text" xml:space="preserve">
+    <value>제거 태그</value>
+  </data>
+  <data name="Remove_Value_Button_Text" xml:space="preserve">
+    <value>값 제거</value>
+  </data>
+  <data name="Reopen_Opportunity_Button_Text" xml:space="preserve">
+    <value>영업 기회 다시 시작</value>
+  </data>
+  <data name="Reopen_Opportunity_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 영업 기회를 다시 시작하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Resolve_Case_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 서비스 케이스를 해결하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Run_Workflow_Button_Text" xml:space="preserve">
+    <value>워크플로 실행</value>
+  </data>
+  <data name="Run_Workflow_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;이 워크플로를 실행하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Select_Column_Header_Text" xml:space="preserve">
+    <value>선택</value>
+  </data>
+  <data name="Select_Different_Customer_Button_Text" xml:space="preserve">
+    <value>다른 고객 선택</value>
+  </data>
+  <data name="Select_Different_Support_Plan_Butoon_Text" xml:space="preserve">
+    <value>다른 지원 계획 선택</value>
+  </data>
+  <data name="Selected_Records_Title_Text" xml:space="preserve">
+    <value>선택한 레코드</value>
+  </data>
+  <data name="Set_On_Hold_Button_Label_Text" xml:space="preserve">
+    <value>보류 중 설정</value>
+  </data>
+  <data name="Set_Opportunity_On_Hold_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;영업 기회를 보류 중으로 설정하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Set_Opportunity_To_Close_Confirmation_Message" xml:space="preserve">
+    <value>&lt;p&gt;영업 기회를 성공으로 종료로 설정하시겠습니까?&lt;/p&gt;</value>
+  </data>
+  <data name="Submit_Button_Label_Text" xml:space="preserve">
+    <value>제출</value>
+  </data>
+  <data name="Support_Plan_Name_Text" xml:space="preserve">
+    <value>지원 계획</value>
+  </data>
+  <data name="Toggle_Filter_Text" xml:space="preserve">
+    <value>필터 전환</value>
+  </data>
+  <data name="Update_Note_Button_Text" xml:space="preserve">
+    <value>메모 업데이트</value>
+  </data>
+  <data name="Update_Pipeline_Phase_Button_Label_Text" xml:space="preserve">
+    <value>파이프라인 단계 업데이트</value>
+  </data>
+  <data name="Upto_Text" xml:space="preserve">
+    <value>최대</value>
+  </data>
+  <data name="View_Details_Tooltip" xml:space="preserve">
+    <value>자세히 보기</value>
+  </data>
+  <data name="Associate_Button_Text" xml:space="preserve">
+    <value>연결</value>
+  </data>
+  <data name="Entity_Create_ADX_BlogPost_Label" xml:space="preserve">
+    <value>블로그 게시물</value>
+  </data>
+  <data name="No_Entity_Permissions" xml:space="preserve">
+    <value>권한이 거부되었습니다. {0}에 대한 적절한 엔터티 권한이 없습니다.</value>
+  </data>
+  <data name="Site_Setting_Recaptcha_PublicOrPrivate_Key_Is_Missing" xml:space="preserve">
+    <value>필요한 사이트 설정 "{0}"이(가) 없습니다.</value>
+  </data>
+  <data name="Error_Creating_IdeaAndIssue_Comment_WithNullOrWhitespace" xml:space="preserve">
+    <value>익명으로 {0}을(를) 만들 때 null이거나 공백일 수 없습니다.</value>
+  </data>
+  <data name="Help_Desk_Entitlement_Message" xml:space="preserve">
+    <value>지원 센터 권리 유형 {0} </value>
+  </data>
+  <data name="Password_Errors" xml:space="preserve">
+    <value>암호에는 {0}이(가) 하나 이상 있어야 합니다.</value>
+  </data>
+  <data name="EntityList_Calendar_NoView" xml:space="preserve">
+    <value>일정: {0} 보기 없음</value>
+  </data>
+  <data name="EntityList_Calendar_DateFormat" xml:space="preserve">
+    <value>일정: 잘못된 날자 형식 {0}. "지금" 도는 "yyyy-mm-dd"여야 함</value>
+  </data>
+  <data name="EntityList_Calendar_LoadUrl" xml:space="preserve">
+    <value>일정: 이벤트 URL이 설정되지 않음</value>
+  </data>
+  <data name="EntityList_Calendar_Where" xml:space="preserve">
+    <value>일정: 잘못된 탐색 방향 {0}. "다음", "이전" 또는 "오늘"만 될 수 있음</value>
+  </data>
+  <data name="EntityList_Calendar_TimeDivide" xml:space="preserve">
+    <value>일정: 시간 구분 매개 변수는 10, 15, 30 등 60을 나눠 떨어져야 합니다.</value>
+  </data>
+  <data name="EntityList_Calendar_No_Events_In_Day" xml:space="preserve">
+    <value>이 날은 이벤트가 없습니다.</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Year" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Month" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Week" xml:space="preserve">
+    <value>{0}/{1}주</value>
+  </data>
+  <data name="EntityList_Calendar_Title_Day" xml:space="preserve">
+    <value>{0} {1} {2}, {3}</value>
+  </data>
+  <data name="EntityList_Calendar_Week" xml:space="preserve">
+    <value>{0}(주)</value>
+  </data>
+  <data name="EntityList_Calendar_All_Day" xml:space="preserve">
+    <value>하루 종일</value>
+  </data>
+  <data name="EntityList_Calendar_Time" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="EntityList_Calendar_Events" xml:space="preserve">
+    <value>이벤트</value>
+  </data>
+  <data name="EntityList_Calendar_Before_Time" xml:space="preserve">
+    <value>타임라인 전에 종료</value>
+  </data>
+  <data name="EntityList_Calendar_After_Time" xml:space="preserve">
+    <value>타임라인 후에 시작</value>
+  </data>
+  <data name="Liquid_Template_Ad_Title" xml:space="preserve">
+    <value>광고</value>
+  </data>
+  <data name="Liquid_Template_Ad_Description" xml:space="preserve">
+    <value>이 템플릿은 이름별 광고 또는 광고 배치에서 임의 광고를 렌더링합니다.</value>
+  </data>
+  <data name="Events_Upcoming" xml:space="preserve">
+    <value>예정된 이벤트</value>
+  </data>
+  <data name="Events_Upcoming_All_Events" xml:space="preserve">
+    <value>모든 이벤트</value>
+  </data>
+  <data name="Entity_Create_Label" xml:space="preserve">
+    <value>새로 만들기</value>
+  </data>
+  <data name="Does_Not_Contain_Property_With_Name" xml:space="preserve">
+    <value>DataBinding: "{0}"에 이름이 {1}인 속성이 없습니다.</value>
+  </data>
+  <data name="Clear_Lookup_Field" xml:space="preserve">
+    <value>조회 필드 지우기</value>
+  </data>
+  <data name="ExecutionContext_OrganizationService_Retrieve_Exception" xml:space="preserve">
+    <value>실행 컨텍스트 및 조직 서비스를 검색할 수 없습니다.</value>
+  </data>
+  <data name="Invalid_SIM_Response_Validation_Message" xml:space="preserve">
+    <value>잘못된 SIM 응답: </value>
+  </data>
+  <data name="Process_Payment_Failed" xml:space="preserve">
+    <value>지불을 처리할 수 없습니다.</value>
+  </data>
+  <data name="Unable_To_Parsex_response_code" xml:space="preserve">
+    <value>x_response_code를 구문 분석할 수 없음: </value>
+  </data>
+  <data name="Template_Not_Found_Exception" xml:space="preserve">
+    <value>"{0}" 템플릿이 없습니다.</value>
+  </data>
+  <data name="Invalid_Username_Or_Password_Exception" xml:space="preserve">
+    <value>사용자 이름 또는 암호가 잘못되었습니다.</value>
+  </data>
+  <data name="Knowledge_Base_Article_Not_Found_Exception" xml:space="preserve">
+    <value>참조 자료 문서 "{0}"이(가) 없습니다.</value>
+  </data>
+  <data name="Cannot_Create_New_Website_As_Child_Website_Exception" xml:space="preserve">
+    <value>원본 및 대상 인스턴스가 다른 경우 하위 웹 사이트로 새 웹 사이트를 만들 수 없습니다.</value>
+  </data>
+  <data name="Must_Be_GreaterThan_Or_EqualTo_One_Exception" xml:space="preserve">
+    <value>1보다 크거나 같아야 합니다.</value>
+  </data>
+  <data name="Permissions_Exception" xml:space="preserve">
+    <value>권한</value>
+  </data>
+  <data name="Payment_Always_Successful_Message" xml:space="preserve">
+    <value>지불 항상 성공 - 데모 모드</value>
+  </data>
+  <data name="Job_Postings_Text" xml:space="preserve">
+    <value>채용 공고</value>
+  </data>
+  <data name="Failed_To_Configure_Cloud_Storage_Account" xml:space="preserve">
+    <value>없음: 클라우드 저장소 거래처를 구성하지 못함</value>
+  </data>
+  <data name="Unable_To_Retrieve_Current_Directory_For_Upload_Error" xml:space="preserve">
+    <value>업로드할 현재 디렉터리를 검색할 수 없습니다.</value>
+  </data>
+  <data name="Upload_Permission_Denied_For_Current_Directory_Error" xml:space="preserve">
+    <value>현재 디렉터리에 거부된 업로드 권한</value>
+  </data>
+  <data name="Launch_Lookup_Modal" xml:space="preserve">
+    <value>조회 모달 시작</value>
+  </data>
+  <data name="Create_Customer_Contact" xml:space="preserve">
+    <value>고객 연락처 만들기</value>
+  </data>
+  <data name="Unable_To_Parse_Parameter_In_Required_ToDate_Format_Exception" xml:space="preserve">
+    <value>필요한 날짜 형식에서 "to" 매개 변수를 구문 분석할 수 없습니다.</value>
+  </data>
+  <data name="Name_Required_Error" xml:space="preserve">
+    <value>이름이 필요합니다.</value>
+  </data>
+  <data name="Comment_Required_Error" xml:space="preserve">
+    <value>댓글이 필요합니다.</value>
+  </data>
+  <data name="Idea_Is_Required_Error" xml:space="preserve">
+    <value>아이디어는 필수입니다.</value>
+  </data>
+  <data name="Issue_Required_Error" xml:space="preserve">
+    <value>문제가 필요합니다.</value>
+  </data>
+  <data name="Website_Model_Error_Exception" xml:space="preserve">
+    <value>웹 사이트</value>
+  </data>
+  <data name="UserName_Exception" xml:space="preserve">
+    <value>사용자 이름</value>
+  </data>
+  <data name="Organization_Service_URL_IsInvalid_Exception" xml:space="preserve">
+    <value>조직 서비스 URL이 잘못되었습니다.</value>
+  </data>
+  <data name="ModelErrorException_For_User_Name" xml:space="preserve">
+    <value>사용자 이름은 "domain\\username" 형식이어야 합니다.</value>
+  </data>
+  <data name="No_Active_Website_Found_Exception" xml:space="preserve">
+    <value>활성 웹 사이트가 없습니다. 계속하려면 웹 사이트 데이터 패키지를 설치하십시오.</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>사용자 이름</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>암호</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>웹 사이트</value>
+  </data>
+  <data name="Website_Message" xml:space="preserve">
+    <value>지정한 조직에 이미 이 사이트에 대한 활성 웹 사이트 바인딩이 있습니다.</value>
+  </data>
+  <data name="Check_Connection" xml:space="preserve">
+    <value>연결 확인</value>
+  </data>
+  <data name="Apply_Button_Text" xml:space="preserve">
+    <value>적용</value>
+  </data>
+  <data name="Question_Help_Text" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="Dynamics_365_Organization_Service_URL" xml:space="preserve">
+    <value>Dynamics 365 조직 서비스 URL</value>
+  </data>
+  <data name="Microsoft_Dynamics_Title" xml:space="preserve">
+    <value>Microsoft Dynamics&lt;sup&gt;&lt;small&gt;® &lt;/small&gt;&lt;/sup&gt;365에 연결</value>
+  </data>
+  <data name="CRM_Organization_Service_URL" xml:space="preserve">
+    <value>{0} Dynamics 365 조직 서비스 URL {1}은 아래의 Dynamics 365 인스턴스에서 볼 수 있습니다.</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="Customizations" xml:space="preserve">
+    <value>사용자 지정</value>
+  </data>
+  <data name="Developer_Resources" xml:space="preserve">
+    <value>개발자 리소스</value>
+  </data>
+  <data name="Service_Endpoints" xml:space="preserve">
+    <value>서비스 끝점</value>
+  </data>
+  <data name="Organization_Service" xml:space="preserve">
+    <value>조직 서비스</value>
+  </data>
+  <data name="Click_To_Delete_Your_Vote" xml:space="preserve">
+    <value>투표를 삭제하려면 여기를 클릭하십시오.</value>
+  </data>
+  <data name="Liquid_Template_Blogs_Description" xml:space="preserve">
+    <value>이 템플릿은 목록 그룹에서 최근 블로그 게시물을 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Breadcrumbs_Title" xml:space="preserve">
+    <value>이동 경로</value>
+  </data>
+  <data name="Liquid_Template_Child_Link_List_Group_Title" xml:space="preserve">
+    <value>하위 링크 목록 그룹</value>
+  </data>
+  <data name="Liquid_Template_Entitylist_Description" xml:space="preserve">
+    <value>이 템플릿은 웹 페이지에 연결된 엔터티 목록에 정의된 대로 정렬, 페이지 매기기 및 검색을 지원하는 표에서 레코드 목록을 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Entitylist_Title" xml:space="preserve">
+    <value>엔터티 목록</value>
+  </data>
+  <data name="Liquid_Template_Events_Upcoming_Description" xml:space="preserve">
+    <value>이 템플릿은 지금부터 60일 사이에 발생하는 이벤트에 대한 링크를 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Events_Upcoming_Title" xml:space="preserve">
+    <value>이벤트: 예정</value>
+  </data>
+  <data name="Liquid_Template_Forums_Description" xml:space="preserve">
+    <value>이 템플릿은 스레드 및 게시물의 해당번호로 웹 사이트 포럼의 목록을 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Layout_One_Column_Description" xml:space="preserve">
+    <value>이 템플릿은 이동 경로, 페이지 제목 및 페이지 복사 내용을 포함하는 1열 레이아웃을 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Layout_One_Column_Title" xml:space="preserve">
+    <value>레이아웃 1열</value>
+  </data>
+  <data name="Liquid_Template_Layout_Three_Column_Wide_Middle_Description" xml:space="preserve">
+    <value>템플릿은 3열 레이아웃을 렌더링합니다. 중간 열은 왼쪽 및 오른쪽 열보다 넓습니다. 레이아웃에는 페이지 맨 위에 이동 경로 및 페이지 제목이 포함되고, 페이지 복사 내용은 중간 열에 배치됩니다.</value>
+  </data>
+  <data name="Liquid_Template_Layout_Three_Column_Wide_Middle_Title" xml:space="preserve">
+    <value>레이아웃 3열 중간 넓음</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Left_Description" xml:space="preserve">
+    <value>이 템플릿은 2열 레이아웃을 렌더링합니다. 왼쪽 열이 오른쪽 열보다 넓습니다. 페이지 맨 위에 이동 경로 및 페이지 제목이 포함되고, 페이지 복사 내용은 왼쪽 열에 배치됩니다.</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Left_Title" xml:space="preserve">
+    <value>레이아웃 2열 왼쪽 넓음</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Right_Description" xml:space="preserve">
+    <value>템플릿은 2열 레이아웃을 렌더링합니다. 오른쪽 열이 왼쪽 열보다 넓습니다. 페이지 맨 위에 이동 경로 및 페이지 제목이 포함되고, 페이지 복사 내용은 오른쪽 열에 배치됩니다.</value>
+  </data>
+  <data name="Liquid_Template_Layout_Two_Column_Wide_Right_Title" xml:space="preserve">
+    <value>레이아웃 2열 오른쪽 넓음</value>
+  </data>
+  <data name="Liquid_Template_Page_Copy_Description" xml:space="preserve">
+    <value>이 템플릿은 포함된 Liquid에 대한 지원과 함께 편집 가능한 페이지 복사 내용 HTML을 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Page_Copy_Title" xml:space="preserve">
+    <value>페이지 복사</value>
+  </data>
+  <data name="Liquid_Template_Page_Header_Description" xml:space="preserve">
+    <value>이 템플릿은 페이지 제목을 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Page_Header_Title" xml:space="preserve">
+    <value>페이지 머리글</value>
+  </data>
+  <data name="Liquid_Template_Poll_Description" xml:space="preserve">
+    <value>이 템플릿은 이름별 설문 조사 또는 설문 조사 배치에서 임의 설문 조사를 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Search_Description" xml:space="preserve">
+    <value>이 템플릿은 단일 텍스트 입력 및 검색 단추가 있는 기본 검색 양식을 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Side_Navigation_Description" xml:space="preserve">
+    <value>이 템플릿은 세로 트리 보기 스타일 탐색을 렌더링합니다. 첫 번째 수준으로 돌아가는 최상위 페이지에 대한 링크와 현재 페이지의 하위 페이지에 대한 링크가 있습니다.</value>
+  </data>
+  <data name="Liquid_Template_Side_Navigation_Title" xml:space="preserve">
+    <value>측면 탐색</value>
+  </data>
+  <data name="Liquid_Template_Snippet_Title" xml:space="preserve">
+    <value>조각</value>
+  </data>
+  <data name="Liquid_Template_Top_Navigation_Title" xml:space="preserve">
+    <value>위쪽 탐색</value>
+  </data>
+  <data name="Liquid_Template_Weblink_List_Group_Title" xml:space="preserve">
+    <value>웹 링크 목록 그룹</value>
+  </data>
+  <data name="Liquid_Template_Snippet_Description" xml:space="preserve">
+    <value>이 템플릿은 편집 가능한 HTML 내용 조각을 이름별로 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Top_Navigation_Description" xml:space="preserve">
+    <value>이 템플릿은 기본 탐색 웹 링크 설정에 대한 드롭다운 메뉴가 있는 편집 가능한 탐색 모음을 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Weblink_List_Group_Description" xml:space="preserve">
+    <value>이 템플릿은 웹 링크 설정에 대한 링크 목록 그룹을 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Badges_Description" xml:space="preserve">
+    <value>이 템플릿은 연락처의 배지를 렌더링합니다. 사용자 ID(기본 로그인 사용자) 및 badge_type(profile-badges 또는 basic-badges)에 전달됩니다.</value>
+  </data>
+  <data name="Liquid_Template_Badges_Title" xml:space="preserve">
+    <value>배지</value>
+  </data>
+  <data name="Poll_Archives_Heading" xml:space="preserve">
+    <value>지난 설문 조사</value>
+  </data>
+  <data name="Authentication_Error_TooMany_Attempts" xml:space="preserve">
+    <value>로그인 시도가 너무 많았습니다. 잠시 기다린 후 다시 시도하십시오.</value>
+  </data>
+  <data name="Poll_Results_Label" xml:space="preserve">
+    <value>결과 보기</value>
+  </data>
+  <data name="Poll_Totals_Label" xml:space="preserve">
+    <value>총 투표:</value>
+  </data>
+  <data name="Poll_Return_Label" xml:space="preserve">
+    <value>설문 조사로 돌아가기</value>
+  </data>
+  <data name="All_Blogs_DefaultText" xml:space="preserve">
+    <value>모든 블로그</value>
+  </data>
+  <data name="Forum_Activity_DefaultText" xml:space="preserve">
+    <value>포럼 활동</value>
+  </data>
+  <data name="In_This_Section_DefaultText_With_Span" xml:space="preserve">
+    <value>&lt;span class="fa fa-folder-open" aria-hidden="true"&gt;&lt;/span&gt;&amp;nbsp;  이 섹션의 내용</value>
+  </data>
+  <data name="Related_Links_DefaultText" xml:space="preserve">
+    <value>관련 링크</value>
+  </data>
+  <data name="Subscribe_To_Blogs_DefaultText" xml:space="preserve">
+    <value>블로그 구독</value>
+  </data>
+  <data name="Liquid_Template_Breadcrumbs_Description" xml:space="preserve">
+    <value>이 템플릿은 현재 페이지에서 홈 페이지로 돌아가는 최상위 페이지의 링크를 렌더링합니다.</value>
+  </data>
+  <data name="Liquid_Template_Child_Link_List_Group_Description" xml:space="preserve">
+    <value>이 템플릿은 목록 그룹에서 현재 페이지의 하위 페이지에 대한 링크를 렌더링합니다.</value>
+  </data>
+  <data name="All_Day_Event_Label" xml:space="preserve">
+    <value>하루 종일 이벤트</value>
+  </data>
+  <data name="Answer_Label" xml:space="preserve">
+    <value>대답?</value>
+  </data>
+  <data name="Answered_Label" xml:space="preserve">
+    <value>대답함</value>
+  </data>
+  <data name="Approved_Label" xml:space="preserve">
+    <value>승인되었습니까?</value>
+  </data>
+  <data name="Archive_Template_Label" xml:space="preserve">
+    <value>보관 템플릿</value>
+  </data>
+  <data name="Cloud_Blob_Address_Label" xml:space="preserve">
+    <value>클라우드 Blob 주소</value>
+  </data>
+  <data name="Comment_Policy_Label" xml:space="preserve">
+    <value>댓글 정책</value>
+  </data>
+  <data name="Content_Label" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="Content_Disposition_Label" xml:space="preserve">
+    <value>내용 처리</value>
+  </data>
+  <data name="Copy_Label" xml:space="preserve">
+    <value>복사</value>
+  </data>
+  <data name="Custom_CSS_Label" xml:space="preserve">
+    <value>사용자 지정 CSS</value>
+  </data>
+  <data name="Custom_JavaScript_Label" xml:space="preserve">
+    <value>사용자 지정 JavaScript</value>
+  </data>
+  <data name="Disable_Page_Validation_Label" xml:space="preserve">
+    <value>페이지 유효성 검사 사용 안 함</value>
+  </data>
+  <data name="Disable_Target_Validation_Label" xml:space="preserve">
+    <value>대상 유효성 검사 사용 안 함</value>
+  </data>
+  <data name="Display_Date_Label" xml:space="preserve">
+    <value>날짜 표시</value>
+  </data>
+  <data name="Display_Image_Only_Label" xml:space="preserve">
+    <value>이미지만 표시</value>
+  </data>
+  <data name="Display_Page_Child_Links" xml:space="preserve">
+    <value>페이지 하위 링크 표시</value>
+  </data>
+  <data name="Editorial_Comments_Label" xml:space="preserve">
+    <value>편집 댓글</value>
+  </data>
+  <data name="Enable_Ratings_Label" xml:space="preserve">
+    <value>등급 사용</value>
+  </data>
+  <data name="Enable_Tracking_Label" xml:space="preserve">
+    <value>추적 사용</value>
+  </data>
+  <data name="Entity_Form_Label" xml:space="preserve">
+    <value>엔터티 양식</value>
+  </data>
+  <data name="Entity_List_Label" xml:space="preserve">
+    <value>엔터티 목록</value>
+  </data>
+  <data name="Exclude_From_Search_Label" xml:space="preserve">
+    <value>검색에서 제외</value>
+  </data>
+  <data name="Expiration_Date_Label" xml:space="preserve">
+    <value>만료 날짜</value>
+  </data>
+  <data name="External_URL_Label" xml:space="preserve">
+    <value>외부 URL</value>
+  </data>
+  <data name="Forum_Template_Label" xml:space="preserve">
+    <value>포럼 템플릿</value>
+  </data>
+  <data name="Friday_Label" xml:space="preserve">
+    <value>금요일</value>
+  </data>
+  <data name="General_Label" xml:space="preserve">
+    <value>일반</value>
+  </data>
+  <data name="Hidden_From_Sitemap_Label" xml:space="preserve">
+    <value>사이트 맵에서 숨김</value>
+  </data>
+  <data name="Home_Template_Label" xml:space="preserve">
+    <value>홈 템플릿</value>
+  </data>
+  <data name="Image_Alternate_Text_Label" xml:space="preserve">
+    <value>이미지 대체 텍스트</value>
+  </data>
+  <data name="Image_Height_Label" xml:space="preserve">
+    <value>이미지 높이</value>
+  </data>
+  <data name="Image_URL_Label" xml:space="preserve">
+    <value>이미지 URL</value>
+  </data>
+  <data name="Image_Width_Label" xml:space="preserve">
+    <value>이미지 너비</value>
+  </data>
+  <data name="Interval_Label" xml:space="preserve">
+    <value>간격</value>
+  </data>
+  <data name="Location_Name_Label" xml:space="preserve">
+    <value>위치 이름</value>
+  </data>
+  <data name="Max_Recurrences_Label" xml:space="preserve">
+    <value>최대 되풀이</value>
+  </data>
+  <data name="Monday_Label" xml:space="preserve">
+    <value>월요일</value>
+  </data>
+  <data name="Open_In_New_Window_Label" xml:space="preserve">
+    <value>새 창에서 열기</value>
+  </data>
+  <data name="Page_Label" xml:space="preserve">
+    <value>페이지</value>
+  </data>
+  <data name="Page_Template_Label" xml:space="preserve">
+    <value>페이지 템플릿</value>
+  </data>
+  <data name="Parent_Page_Label" xml:space="preserve">
+    <value>상위 페이지</value>
+  </data>
+  <data name="Partial_URL_Label" xml:space="preserve">
+    <value>부분 URL</value>
+  </data>
+  <data name="Post_Template_Label" xml:space="preserve">
+    <value>게시물 템플릿</value>
+  </data>
+  <data name="Preview_On_Label" xml:space="preserve">
+    <value>미리 보기 켜기</value>
+  </data>
+  <data name="Published_Label" xml:space="preserve">
+    <value>게시됨</value>
+  </data>
+  <data name="Publishing_Label" xml:space="preserve">
+    <value>게시</value>
+  </data>
+  <data name="Publishing_State_Label" xml:space="preserve">
+    <value>게시 상태</value>
+  </data>
+  <data name="R_Label" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="Recurrence_End_Time_Label" xml:space="preserve">
+    <value>되풀이 종료 시간</value>
+  </data>
+  <data name="Registration_Content_Label" xml:space="preserve">
+    <value>등록 내용</value>
+  </data>
+  <data name="Release_Date_Label" xml:space="preserve">
+    <value>릴리스 날짜</value>
+  </data>
+  <data name="Requires_Registration_Label" xml:space="preserve">
+    <value>등록 필요</value>
+  </data>
+  <data name="Robots_Follow_Link_Label" xml:space="preserve">
+    <value>링크를 따르는 로봇</value>
+  </data>
+  <data name="Saturday_Label" xml:space="preserve">
+    <value>토요일</value>
+  </data>
+  <data name="Sticky_Label" xml:space="preserve">
+    <value>고정</value>
+  </data>
+  <data name="Subject_Label" xml:space="preserve">
+    <value>주제</value>
+  </data>
+  <data name="Summary_Label" xml:space="preserve">
+    <value>요약</value>
+  </data>
+  <data name="Summary_Excerpt_Label" xml:space="preserve">
+    <value>요약/발췌</value>
+  </data>
+  <data name="Sunday_Label" xml:space="preserve">
+    <value>일요일</value>
+  </data>
+  <data name="Target_Event_Label" xml:space="preserve">
+    <value>대상 이벤트</value>
+  </data>
+  <data name="Target_Forum_Label" xml:space="preserve">
+    <value>대상 포럼</value>
+  </data>
+  <data name="Target_URL_Label" xml:space="preserve">
+    <value>대상 URL</value>
+  </data>
+  <data name="Target_Web_File_Label" xml:space="preserve">
+    <value>대상 웹 파일</value>
+  </data>
+  <data name="Target_Web_Page_Label" xml:space="preserve">
+    <value>대상 웹 페이지</value>
+  </data>
+  <data name="Thread_Template_Label" xml:space="preserve">
+    <value>스레드 템플릿</value>
+  </data>
+  <data name="Thread_Type_Label" xml:space="preserve">
+    <value>스레드 유형</value>
+  </data>
+  <data name="Thursday_Label" xml:space="preserve">
+    <value>목요일</value>
+  </data>
+  <data name="Title_Label" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="Tuesday_Label" xml:space="preserve">
+    <value>화요일</value>
+  </data>
+  <data name="Upload_File_Label" xml:space="preserve">
+    <value>파일 업로드</value>
+  </data>
+  <data name="Web_Form_Label" xml:space="preserve">
+    <value>웹 양식</value>
+  </data>
+  <data name="Wednesday_Label" xml:space="preserve">
+    <value>수요일</value>
+  </data>
+  <data name="Week_Label" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="Templates_Label" xml:space="preserve">
+    <value>템플릿</value>
+  </data>
+  <data name="Listbox_Label" xml:space="preserve">
+    <value>목록 상자</value>
+  </data>
+  <data name="Insert_Label" xml:space="preserve">
+    <value>삽입</value>
+  </data>
+  <data name="Display_Page_Child_Links_Label" xml:space="preserve">
+    <value>페이지 하위 링크 표시</value>
+  </data>
+  <data name="Keywords_Label" xml:space="preserve">
+    <value>키워드</value>
+  </data>
+  <data name="Image_List_Label" xml:space="preserve">
+    <value>이미지 목록</value>
+  </data>
+  <data name="Anchors_Label" xml:space="preserve">
+    <value>기준 위치</value>
+  </data>
+  <data name="Source_Label" xml:space="preserve">
+    <value>원본</value>
+  </data>
+  <data name="Find_Label" xml:space="preserve">
+    <value>찾기</value>
+  </data>
+  <data name="Style_Label" xml:space="preserve">
+    <value>스타일</value>
+  </data>
+  <data name="Previous_Edit_Point_Label" xml:space="preserve">
+    <value>이전 편집 지점</value>
+  </data>
+  <data name="Encoding_Label" xml:space="preserve">
+    <value>인코딩</value>
+  </data>
+  <data name="Robots_Label" xml:space="preserve">
+    <value>로봇</value>
+  </data>
+  <data name="Author_Label" xml:space="preserve">
+    <value>작성자</value>
+  </data>
+  <data name="Class_Label" xml:space="preserve">
+    <value>클래스</value>
+  </data>
+  <data name="Image_Description_Label" xml:space="preserve">
+    <value>이미지 설명</value>
+  </data>
+  <data name="Image_Title_Label" xml:space="preserve">
+    <value>이미지 제목</value>
+  </data>
+  <data name="Dimensions_Label" xml:space="preserve">
+    <value>크기</value>
+  </data>
+  <data name="Vertical_Space_Label" xml:space="preserve">
+    <value>세로 공백</value>
+  </data>
+  <data name="Horizontal_Space_Label" xml:space="preserve">
+    <value>가로 공간</value>
+  </data>
+  <data name="Border_Label" xml:space="preserve">
+    <value>테두리</value>
+  </data>
+  <data name="Text_To_Display_Label" xml:space="preserve">
+    <value>표시할 텍스트</value>
+  </data>
+  <data name="Link_List_Label" xml:space="preserve">
+    <value>링크 목록</value>
+  </data>
+  <data name="Target_Label" xml:space="preserve">
+    <value>대상</value>
+  </data>
+  <data name="Alternative_Source_Label" xml:space="preserve">
+    <value>대체 원본</value>
+  </data>
+  <data name="Poster_Label" xml:space="preserve">
+    <value>포스터</value>
+  </data>
+  <data name="Replace_With_Label" xml:space="preserve">
+    <value>바꿀 내용</value>
+  </data>
+  <data name="Border_Color_Label" xml:space="preserve">
+    <value>테두리 색</value>
+  </data>
+  <data name="Background_Color_Label" xml:space="preserve">
+    <value>배경색</value>
+  </data>
+  <data name="Cols_Label" xml:space="preserve">
+    <value>열</value>
+  </data>
+  <data name="Rows_Label" xml:space="preserve">
+    <value>행</value>
+  </data>
+  <data name="Width_Label" xml:space="preserve">
+    <value>너비</value>
+  </data>
+  <data name="Height_Label" xml:space="preserve">
+    <value>높이</value>
+  </data>
+  <data name="Cell_Spacing_Label" xml:space="preserve">
+    <value>셀 간격</value>
+  </data>
+  <data name="Cell_Padding_Label" xml:space="preserve">
+    <value>셀 여백</value>
+  </data>
+  <data name="Caption_Label" xml:space="preserve">
+    <value>캡션</value>
+  </data>
+  <data name="Alignment_Label" xml:space="preserve">
+    <value>맞춤</value>
+  </data>
+  <data name="Scope_Label" xml:space="preserve">
+    <value>범위</value>
+  </data>
+  <data name="HAlign_Label" xml:space="preserve">
+    <value>가로 맞춤</value>
+  </data>
+  <data name="VAlign_Label" xml:space="preserve">
+    <value>세로 맞춤</value>
+  </data>
+  <data name="Row_Type_Label" xml:space="preserve">
+    <value>행 유형</value>
+  </data>
+  <data name="Form_Label" xml:space="preserve">
+    <value>양식</value>
+  </data>
+  <data name="Required_Nick_Name" xml:space="preserve">
+    <value>애칭이 필요합니다.</value>
+  </data>
+  <data name="Required_Email" xml:space="preserve">
+    <value>전자 메일이 필요한데 표시되지 않습니다.</value>
+  </data>
+  <data name="Required_Title" xml:space="preserve">
+    <value>제목이 필요합니다.</value>
+  </data>
+  <data name="Required_Rating" xml:space="preserve">
+    <value>등급이 필요합니다.</value>
+  </data>
+  <data name="Delete_Permission_Denied_For_Current_Directory_Error" xml:space="preserve">
+    <value>현재 디렉터리에 거부된 삭제 권한</value>
+  </data>
+  <data name="Account_Classification_Code_Must_Set_To_Partner_Message" xml:space="preserve">
+    <value>거래처 분류 코드를 "파트너"로 설정해야 합니다.</value>
+  </data>
+  <data name="Edit_Customer_Account" xml:space="preserve">
+    <value>고객 거래처 편집</value>
+  </data>
+  <data name="Unable_To_Parse_From_Parameter_Error" xml:space="preserve">
+    <value>"필요한 날짜 형식에서 ""from"" 매개 변수를 구문 분석할 수 없습니다."</value>
+  </data>
+  <data name="Must_Be_GreaterThan_One_Exception" xml:space="preserve">
+    <value>1보다 커야 함</value>
+  </data>
+  <data name="Expected_Entity_Object_Argument_Exception" xml:space="preserve">
+    <value>메서드에서 {0} 유형의 엔터티 개체를 예상했지만 대신 {1} 유형의 엔터티 개체가 전달되었습니다.</value>
+  </data>
+  <data name="License_Failed_To_Load_Exception" xml:space="preserve">
+    <value>이 라이선스를 로드하지 못했습니다. {0}</value>
+  </data>
+  <data name="License_DoesNot_Include_Support_Exception" xml:space="preserve">
+    <value>이 라이선스에 {0}에 대한 지원이 포함되어 있지 않습니다. 이 기능은 요청한 페이지에 필요합니다.</value>
+  </data>
+  <data name="Preview_Off_Label" xml:space="preserve">
+    <value>미리 보기 끄기</value>
+  </data>
+  <data name="Published_UnPublished_Entities_Title" xml:space="preserve">
+    <value>미리 보기 모드로 전환하려면 클릭하십시오. 켜져 있으면 게시 및 게시되지 않은 엔터티가 표시됩니다. 꺼져 있으면 게시된 엔터티만 표시할 수 있습니다.</value>
+  </data>
+  <data name="Confirmed_Email_Required_Message" xml:space="preserve">
+    <value>두 요소 인증을 위해 확인된 전자 메일이 필요합니다.</value>
+  </data>
+  <data name="Change_Email_Defaulttext" xml:space="preserve">
+    <value>전자 메일 변경</value>
+  </data>
+  <data name="Change_Mobile_Phone_Defaulttext" xml:space="preserve">
+    <value>휴대폰 변경</value>
+  </data>
+  <data name="Change_Two_Factor_Authentication" xml:space="preserve">
+    <value>두 요소 인증 변경</value>
+  </data>
+  <data name="Child_Categories_Defaulttext" xml:space="preserve">
+    <value>하위 범주</value>
+  </data>
+  <data name="Code_Defaulttext" xml:space="preserve">
+    <value>코드</value>
+  </data>
+  <data name="Confirm_Email_Defaulttext" xml:space="preserve">
+    <value>전자 메일 확인</value>
+  </data>
+  <data name="Confirm_Password" xml:space="preserve">
+    <value>암호 확인</value>
+  </data>
+  <data name="Confirm_Remove" xml:space="preserve">
+    <value>제거 확인</value>
+  </data>
+  <data name="Enter_Security_Code" xml:space="preserve">
+    <value>보안 코드 입력</value>
+  </data>
+  <data name="Enter_Email_Address_For_Password_Reset" xml:space="preserve">
+    <value>암호 재설정을 요청하려면 전자 메일 주소를 입력하십시오.</value>
+  </data>
+  <data name="Account_Already_Exist_Message" xml:space="preserve">
+    <value>기존 거래처 있음</value>
+  </data>
+  <data name="Instructions_Defaulttext" xml:space="preserve">
+    <value>지침</value>
+  </data>
+  <data name="Invitation_Code_Defaulttext" xml:space="preserve">
+    <value>초대 코드</value>
+  </data>
+  <data name="Keywords_Defaulttext" xml:space="preserve">
+    <value>키워드:</value>
+  </data>
+  <data name="Manage_External_Authentication" xml:space="preserve">
+    <value>외부 인증 관리</value>
+  </data>
+  <data name="Mobile_Phone_Defaulttext" xml:space="preserve">
+    <value>휴대폰</value>
+  </data>
+  <data name="Old_Password_Defaulttext" xml:space="preserve">
+    <value>이전 암호</value>
+  </data>
+  <data name="Password_Defaulttext" xml:space="preserve">
+    <value>암호</value>
+  </data>
+  <data name="Check_Your_Email_For_Confirmation_Instructions" xml:space="preserve">
+    <value>확인 지침은 전자 메일을 확인하십시오.</value>
+  </data>
+  <data name="Check_Your_Email_For_Security_Code" xml:space="preserve">
+    <value>보안 코드는 전자 메일을 확인하십시오.</value>
+  </data>
+  <data name="Check_Your_Mobile_For_Security_Code" xml:space="preserve">
+    <value>보안 코드는 휴대폰을 확인하십시오.</value>
+  </data>
+  <data name="Check_Your_Phone_For_Security_Code" xml:space="preserve">
+    <value>보안 코드는 휴대폰을 확인하십시오.</value>
+  </data>
+  <data name="Print_Defaulttext" xml:space="preserve">
+    <value>인쇄</value>
+  </data>
+  <data name="Provide_Email_Address" xml:space="preserve">
+    <value>외부 계정 등록을 완료하려면 전자 메일 주소를 제공하십시오.</value>
+  </data>
+  <data name="Rate_This_Defaulttext" xml:space="preserve">
+    <value>이 항목 평가</value>
+  </data>
+  <data name="Register_For_New_Local_Account" xml:space="preserve">
+    <value>새 로컬 계정으로 등록</value>
+  </data>
+  <data name="Register_Using_External_Account" xml:space="preserve">
+    <value>외부 계정을 사용하여 등록</value>
+  </data>
+  <data name="Register_External_Account_Defaulttext" xml:space="preserve">
+    <value>외부 계정 등록</value>
+  </data>
+  <data name="Related_Articles_Defaulttext" xml:space="preserve">
+    <value>관련 문서</value>
+  </data>
+  <data name="Related_Products_Defaulttext" xml:space="preserve">
+    <value>관련 제품</value>
+  </data>
+  <data name="Remember_Me_Defaulttext" xml:space="preserve">
+    <value>저장?</value>
+  </data>
+  <data name="Remember_This_Browser_Message" xml:space="preserve">
+    <value>이 브라우저 저장?</value>
+  </data>
+  <data name="Remove_Mobile_Phone_Number_Message" xml:space="preserve">
+    <value>휴대폰 번호 제거?</value>
+  </data>
+  <data name="Reset_Password_Defaulttext" xml:space="preserve">
+    <value>암호 다시 설정</value>
+  </data>
+  <data name="Search_Ideas_Defaulttext" xml:space="preserve">
+    <value>아이디어 검색</value>
+  </data>
+  <data name="Search_Issues_Defaulttext" xml:space="preserve">
+    <value>문제 검색</value>
+  </data>
+  <data name="Search_Knowledge_Base" xml:space="preserve">
+    <value>참조 자료 검색</value>
+  </data>
+  <data name="Security_Defaulttext" xml:space="preserve">
+    <value>보안</value>
+  </data>
+  <data name="Send_Security_Code_Defaulttext" xml:space="preserve">
+    <value>보안 코드 보내기</value>
+  </data>
+  <data name="Set_Email_Defaulttext" xml:space="preserve">
+    <value>전자 메일 설정</value>
+  </data>
+  <data name="Set_Password_Defaulttext" xml:space="preserve">
+    <value>암호 설정</value>
+  </data>
+  <data name="Signin_With_Local_Account" xml:space="preserve">
+    <value>로컬 계정으로 로그인</value>
+  </data>
+  <data name="Signin_With_External_Account" xml:space="preserve">
+    <value>외부 계정으로 로그인</value>
+  </data>
+  <data name="Signup_With_Invitation_Code" xml:space="preserve">
+    <value>초대 코드로 로그인</value>
+  </data>
+  <data name="Subjects_Defaulttext" xml:space="preserve">
+    <value>주제</value>
+  </data>
+  <data name="Twofactor_Authentication_Session_Remembered_For_This_Browser" xml:space="preserve">
+    <value>두 요소 인증 세션이 이 브라우저에 대해 기억됩니다.</value>
+  </data>
+  <data name="Two_Factor_Authentication_Method" xml:space="preserve">
+    <value>두 요소 인증 방법</value>
+  </data>
+  <data name="Twofactor_Authentication_Currently_Disabled" xml:space="preserve">
+    <value>두 요소 인증이 현재 비활성화되어 있습니다.</value>
+  </data>
+  <data name="Twofactor_Authentication_Currently_Enabled" xml:space="preserve">
+    <value>두 요소 인증이 현재 활성화되어 있습니다.</value>
+  </data>
+  <data name="Twofactor_Authentication_Waiting_For_Email_Confirmation" xml:space="preserve">
+    <value>두 요소 인증을 위해 전자 메일 확인을 기다리고 있습니다.</value>
+  </data>
+  <data name="Voting_Defaulttext" xml:space="preserve">
+    <value>투표</value>
+  </data>
+  <data name="Email_Confirmation_Message" xml:space="preserve">
+    <value>전자 메일 확인이 필요합니다.</value>
+  </data>
+  <data name="Service_Request_Create_Button_Text" xml:space="preserve">
+    <value>311 서비스 요청 만들기 단추 텍스트</value>
+  </data>
+  <data name="Add_A_Comment" xml:space="preserve">
+    <value>댓글 추가</value>
+  </data>
+  <data name="Add_A_New_Issue" xml:space="preserve">
+    <value>새 문제 추가</value>
+  </data>
+  <data name="Add_To_Cart" xml:space="preserve">
+    <value>카트에 추가</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>모두</value>
+  </data>
+  <data name="All_Articles" xml:space="preserve">
+    <value>모든 문서</value>
+  </data>
+  <data name="All_Blogs" xml:space="preserve">
+    <value>모든 블로그</value>
+  </data>
+  <data name="All_Brands" xml:space="preserve">
+    <value>모든 브랜드</value>
+  </data>
+  <data name="Any_Rating" xml:space="preserve">
+    <value>모든 등급 </value>
+  </data>
+  <data name="AttachFiles" xml:space="preserve">
+    <value>첨부 파일</value>
+  </data>
+  <data name="Attach_Files" xml:space="preserve">
+    <value>첨부 파일</value>
+  </data>
+  <data name="Be_The_First_To" xml:space="preserve">
+    <value>처음이 되세요:</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>카트</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>범주</value>
+  </data>
+  <data name="Change_And_Confirm_Number" xml:space="preserve">
+    <value>번호 변경 및 확인</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>댓글</value>
+  </data>
+  <data name="Components" xml:space="preserve">
+    <value>구성 요소</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>연결</value>
+  </data>
+  <data name="Copy_URL_To_Clipboard" xml:space="preserve">
+    <value>클립보드로 URL 복사</value>
+  </data>
+  <data name="Create_A_New" xml:space="preserve">
+    <value>새로 만들 대상 </value>
+  </data>
+  <data name="Current_Version" xml:space="preserve">
+    <value>현재 버전</value>
+  </data>
+  <data name="Customer_Reviews" xml:space="preserve">
+    <value>고객 검토</value>
+  </data>
+  <data name="Date_Posted" xml:space="preserve">
+    <value>게시된 날짜:</value>
+  </data>
+  <data name="Dependencies" xml:space="preserve">
+    <value>종속성</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>사용 안 함</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>연결 끊기</value>
+  </data>
+  <data name="E-mail" xml:space="preserve">
+    <value>전자 메일</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>사용</value>
+  </data>
+  <data name="Enter_The_Reason_Content_Inappropriate" xml:space="preserve">
+    <value>내용이 부적절하다고 생각하는 이유를 입력하십시오.</value>
+  </data>
+  <data name="Featured" xml:space="preserve">
+    <value>특집</value>
+  </data>
+  <data name="Forget_Browser" xml:space="preserve">
+    <value>브라우저 삭제</value>
+  </data>
+  <data name="Forgot_Your_Password" xml:space="preserve">
+    <value>암호를 잊으셨습니까?</value>
+  </data>
+  <data name="Gallery_Install_URL" xml:space="preserve">
+    <value>갤러리 설치 URL</value>
+  </data>
+  <data name="I_Would_Not_Recommend_To_A_Friend" xml:space="preserve">
+    <value>이 제품을 친구에게 추천하지 않겠습니다.</value>
+  </data>
+  <data name="I_Would_Recommend_To_A_Friend" xml:space="preserve">
+    <value>이 제품을 친구에게 추천하겠습니다.</value>
+  </data>
+  <data name="Clicking_The_Button_Below" xml:space="preserve">
+    <value>이 내용이 부적절하고 사이트에서 제거해야 한다고 생각할 경우 아래 단추를 클릭하여 알려 주시기 바랍니다. 내용이 부적절하다고 생각하는 이유에 대한 댓글을 추가할 수도 있습니다. 이 정보를 검토하여 적절한 조치를 취할 것입니다.</value>
+  </data>
+  <data name="Install_Gallery" xml:space="preserve">
+    <value>갤러리 설치</value>
+  </data>
+  <data name="Install_Package" xml:space="preserve">
+    <value>패키지 설치</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>위치:</value>
+  </data>
+  <data name="Nickname" xml:space="preserve">
+    <value>애칭</value>
+  </data>
+  <data name="Package_Install_URL" xml:space="preserve">
+    <value>패키지 설치 URL</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>보류 중</value>
+  </data>
+  <data name="Feedback_For_This_Idea" xml:space="preserve">
+    <value>이 아이디어에 대한 피드백을 제공하려면 로그인하십시오.</value>
+  </data>
+  <data name="Provide_All_Types_Of_Feedback_For_This_Issue" xml:space="preserve">
+    <value>이 문제에 대한 피드백을 제공하려면 로그인하십시오.</value>
+  </data>
+  <data name="Feedback_In_This_Idea_Forum" xml:space="preserve">
+    <value>이 아이디어 포럼에서 피드백을 제공하려면 로그인하십시오.</value>
+  </data>
+  <data name="Provide_All_Types_Of_Feedback_In_This_Issue_Forum" xml:space="preserve">
+    <value>이 문제 포럼에서 피드백을 제공하려면 로그인하십시오.</value>
+  </data>
+  <data name="Post_Comment" xml:space="preserve">
+    <value>댓글 게시</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>프로필;</value>
+  </data>
+  <data name="Publisher" xml:space="preserve">
+    <value>게시자</value>
+  </data>
+  <data name="Redeem_Invitation" xml:space="preserve">
+    <value>초대 회수</value>
+  </data>
+  <data name="Redeeming_code" xml:space="preserve">
+    <value>회수 코드:</value>
+  </data>
+  <data name="Report_Abuse" xml:space="preserve">
+    <value>오용 보고</value>
+  </data>
+  <data name="Report_As_Inappropriate" xml:space="preserve">
+    <value>부적절함으로 보고</value>
+  </data>
+  <data name="Report_This_Content_As_Inappropriate" xml:space="preserve">
+    <value>이 내용을 부적절한 것으로 보고</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>다시 설정</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>검토</value>
+  </data>
+  <data name="Search_Filter" xml:space="preserve">
+    <value>검색 필터</value>
+  </data>
+  <data name="Search_The_Knowledge_Base" xml:space="preserve">
+    <value>참조 자료 검색;</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>보내기</value>
+  </data>
+  <data name="Sign_In" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="Sign_In_To_Download" xml:space="preserve">
+    <value>로그인하여 다운로드하십시오.</value>
+  </data>
+  <data name="Sign_In_To_Register_For_This_Event" xml:space="preserve">
+    <value>로그인하여 이 이벤트에 대해 등록하십시오.</value>
+  </data>
+  <data name="Sign_Out" xml:space="preserve">
+    <value>로그아웃</value>
+  </data>
+  <data name="Specifications" xml:space="preserve">
+    <value>사양</value>
+  </data>
+  <data name="Status_Details" xml:space="preserve">
+    <value>상태 정보</value>
+  </data>
+  <data name="Stop_Tracking" xml:space="preserve">
+    <value>추적 중지</value>
+  </data>
+  <data name="Submit_A_Review" xml:space="preserve">
+    <value>검토 제출</value>
+  </data>
+  <data name="Submit_Idea" xml:space="preserve">
+    <value>아이디어 제출</value>
+  </data>
+  <data name="Submit_Issue" xml:space="preserve">
+    <value>문제 제출</value>
+  </data>
+  <data name="Submit_Review" xml:space="preserve">
+    <value>검토 제출</value>
+  </data>
+  <data name="Submitted_By" xml:space="preserve">
+    <value>제출한 사람:</value>
+  </data>
+  <data name="Subscribe_To_Job_Postings" xml:space="preserve">
+    <value>채용 공고 구독</value>
+  </data>
+  <data name="Suggest_A_New_Idea" xml:space="preserve">
+    <value>새 아이디어 제안</value>
+  </data>
+  <data name="Suggested_By" xml:space="preserve">
+    <value>제안한 사람</value>
+  </data>
+  <data name="Review_Has_Been_Submitted" xml:space="preserve">
+    <value>감사합니다! 검토가 제출되었습니다.</value>
+  </data>
+  <data name="No_Reviews_On_This_Product" xml:space="preserve">
+    <value>현재 이 제품에 대한 검토가 없습니다.</value>
+  </data>
+  <data name="This_Blog" xml:space="preserve">
+    <value>이 블로그</value>
+  </data>
+  <data name="Thread_Title" xml:space="preserve">
+    <value>스레드 제목</value>
+  </data>
+  <data name="Track" xml:space="preserve">
+    <value>추적</value>
+  </data>
+  <data name="Unconfirmed" xml:space="preserve">
+    <value>확인되지 않음</value>
+  </data>
+  <data name="Update_History" xml:space="preserve">
+    <value>업데이트 기록</value>
+  </data>
+  <data name="Verify" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="View_Upcoming_Events" xml:space="preserve">
+    <value>예정된 이벤트 보기</value>
+  </data>
+  <data name="Votes_Down_For_This_Idea" xml:space="preserve">
+    <value>이 아이디어에 대해 반대 투표</value>
+  </data>
+  <data name="Votes_For_This_Idea" xml:space="preserve">
+    <value>이 아이디어에 대해 투표</value>
+  </data>
+  <data name="Votes_Up_For_This_Idea" xml:space="preserve">
+    <value>이 아이디어에 대해 찬성 투표</value>
+  </data>
+  <data name="Problem_Submitting_Your_Review" xml:space="preserve">
+    <value>죄송합니다. 검토를 제출하는 동안 문제가 발생했습니다. 문제가 지속되면 고객 지원 팀에 문의하십시오.</value>
+  </data>
+  <data name="Recommend_To_A_Friend" xml:space="preserve">
+    <value>이 제품을 친구에게 추천하겠습니까?</value>
+  </data>
+  <data name="Write_A_Review" xml:space="preserve">
+    <value>검토 작성</value>
+  </data>
+  <data name="Your_Number_Of_Votes_Left" xml:space="preserve">
+    <value>남은 투표 수</value>
+  </data>
+  <data name="Change_Confirm_Email" xml:space="preserve">
+    <value>전자 메일 변경 및 확인</value>
+  </data>
+  <data name="Issue_Search_Heading" xml:space="preserve">
+    <value>문제 검색 제목</value>
+  </data>
+  <data name="Enter_Reason_You_Find_Content_Inappropriate" xml:space="preserve">
+    <value>내용이 부적절하다고 생각하는 이유를 입력하십시오(옵션).</value>
+  </data>
+  <data name="An_Email_Required_To_Set_Local_Account_Password" xml:space="preserve">
+    <value>로컬 계정 암호를 설정하려면 전자 메일이 필요합니다.</value>
+  </data>
+  <data name="No_Information_Matching_Your_Query_Was_Found" xml:space="preserve">
+    <value>쿼리와 일치하는 정보가 없습니다.</value>
+  </data>
+  <data name="No_Items_Were_Found_For_Current_View" xml:space="preserve">
+    <value>현재 보기에 항목이 없습니다.</value>
+  </data>
+  <data name="No_Published_Knowledge_Base_Articles_For_This_Subject" xml:space="preserve">
+    <value>&lt;p&gt;이 주제에 대해 게시된 참조 자료 문서가 없습니다.&lt;/p&gt;</value>
+  </data>
+  <data name="Please_Check_Email_To_Reset_Your_Password" xml:space="preserve">
+    <value>암호 재설정하려면 전자 메일 주소를 확인하십시오.</value>
+  </data>
+  <data name="There_Was_Error_Loading_Data_For_This_Gallery" xml:space="preserve">
+    <value>이 갤러리에 데이터를 로드하는 동안 오류가 발생했습니다.</value>
+  </data>
+  <data name="Unable_To_Authenticate_External_Account_Provider" xml:space="preserve">
+    <value>외부 계정 공급자를 인증할 수 없습니다.</value>
+  </data>
+  <data name="Your_Password_Has_Been_Reset" xml:space="preserve">
+    <value>암호가 다시 설정되었습니다.</value>
+  </data>
+  <data name="Description_Label" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="Comments_Post_A_Comment" xml:space="preserve">
+    <value>댓글 게시</value>
+  </data>
+  <data name="Comments_Post_This_Comment" xml:space="preserve">
+    <value>이 댓글 게시</value>
+  </data>
+  <data name="Required_Label" xml:space="preserve">
+    <value>필수</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Fullsource" xml:space="preserve">
+    <value>전체 원본</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Include" xml:space="preserve">
+    <value>포함</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Insertlabel" xml:space="preserve">
+    <value>삽입</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Previewlabel" xml:space="preserve">
+    <value>미리 보기</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Templatelabel" xml:space="preserve">
+    <value>템플릿</value>
+  </data>
+  <data name="CKEditor_CmsTemplate_Toolbar" xml:space="preserve">
+    <value>템플릿 삽입</value>
+  </data>
+  <data name="Select2_Loading_More" xml:space="preserve">
+    <value>더 많은 결과를 로드하는 중...</value>
+  </data>
+  <data name="Select2_Many_Results_Available" xml:space="preserve">
+    <value> 결과를 사용할 수 있습니다. 위쪽 및 아래쪽 화살표 키를 사용하여 탐색하십시오.</value>
+  </data>
+  <data name="Select2_No_Matches_Found" xml:space="preserve">
+    <value>일치하는 항목 없음</value>
+  </data>
+  <data name="Select2_One_Result_Available" xml:space="preserve">
+    <value>한 가지 결과를 사용할 수 있습니다. 선택하려면 Enter를 누르십시오.</value>
+  </data>
+  <data name="Select2_Searching" xml:space="preserve">
+    <value>검색 중…</value>
+  </data>
+  <data name="ElFinder_Access_Denied" xml:space="preserve">
+    <value>액세스 거부됨</value>
+  </data>
+  <data name="ElFinder_Add_Field" xml:space="preserve">
+    <value>필드 추가</value>
+  </data>
+  <data name="ElFinder_Adobe_Ps_Img" xml:space="preserve">
+    <value>Adobe Photoshop 이미지</value>
+  </data>
+  <data name="ElFinder_Alias" xml:space="preserve">
+    <value>별칭</value>
+  </data>
+  <data name="ElFinder_Application" xml:space="preserve">
+    <value>응용 프로그램</value>
+  </data>
+  <data name="ElFinder_Authors" xml:space="preserve">
+    <value>작성자</value>
+  </data>
+  <data name="ElFinder_Avi_Vid" xml:space="preserve">
+    <value>AVI 비디오</value>
+  </data>
+  <data name="ElFinder_Back" xml:space="preserve">
+    <value>뒤로</value>
+  </data>
+  <data name="ElFinder_Bitt_File" xml:space="preserve">
+    <value>비트토렌트 파일</value>
+  </data>
+  <data name="ElFinder_Bmp_Img" xml:space="preserve">
+    <value>BMP 이미지</value>
+  </data>
+  <data name="ElFinder_Broken_Alias" xml:space="preserve">
+    <value>끊어진 별칭</value>
+  </data>
+  <data name="ElFinder_Bzip_Arch" xml:space="preserve">
+    <value>BZIP 압축 파일</value>
+  </data>
+  <data name="ElFinder_Cmd_Not_Allowed" xml:space="preserve">
+    <value>명령이 허용되지 않음</value>
+  </data>
+  <data name="ElFinder_Confirm_Rem_Files" xml:space="preserve">
+    <value>파일을 제거하시겠습니까?&lt;br /&gt; 이 작업은 취소할 수 없습니다!</value>
+  </data>
+  <data name="ElFinder_Confirm_Required" xml:space="preserve">
+    <value>확인 필요</value>
+  </data>
+  <data name="ElFinder_Contact_Elf_Int" xml:space="preserve">
+    <value>제품에 elFinder를 통합해야 할 경우 문의</value>
+  </data>
+  <data name="ElFinder_Copy" xml:space="preserve">
+    <value>복사</value>
+  </data>
+  <data name="ElFinder_Copy_Right_Std42Ltd" xml:space="preserve">
+    <value>저작권: Studio 42 LTD</value>
+  </data>
+  <data name="ElFinder_Cpp_Src" xml:space="preserve">
+    <value>C++ 원본</value>
+  </data>
+  <data name="ElFinder_Create_Arch" xml:space="preserve">
+    <value>압축 파일 만들기</value>
+  </data>
+  <data name="ElFinder_Create_New_Dir" xml:space="preserve">
+    <value>새 디렉터리 만들기</value>
+  </data>
+  <data name="ElFinder_Css_Ss" xml:space="preserve">
+    <value>CSS 스타일시트</value>
+  </data>
+  <data name="ElFinder_Ctrl_C_X_V_Files" xml:space="preserve">
+    <value>파일 복사/잘라내기/붙여넣기</value>
+  </data>
+  <data name="ElFinder_Cut" xml:space="preserve">
+    <value>잘라내기</value>
+  </data>
+  <data name="ElFinder_C_Src" xml:space="preserve">
+    <value>C 원본</value>
+  </data>
+  <data name="ElFinder_Day_Tday" xml:space="preserve">
+    <value>오늘</value>
+  </data>
+  <data name="ElFinder_Day_Yday" xml:space="preserve">
+    <value>어제</value>
+  </data>
+  <data name="ElFinder_Design" xml:space="preserve">
+    <value>디자인: Valentin Razumnih</value>
+  </data>
+  <data name="ElFinder_Dimensions" xml:space="preserve">
+    <value>크기</value>
+  </data>
+  <data name="ElFinder_Dock_Undock_Flmgr_Win" xml:space="preserve">
+    <value>파일 관리자 창 고정/고정 해제</value>
+  </data>
+  <data name="ElFinder_Donate_Supp_ProjDev" xml:space="preserve">
+    <value>프로젝트 개발 지원을 위해 기부</value>
+  </data>
+  <data name="ElFinder_Dup" xml:space="preserve">
+    <value>중복</value>
+  </data>
+  <data name="ElFinder_Dv_Vid" xml:space="preserve">
+    <value>DV 비디오</value>
+  </data>
+  <data name="ElFinder_Edit_Txt_File" xml:space="preserve">
+    <value>텍스트 파일 편집</value>
+  </data>
+  <data name="ElFinder_Elf_Doc" xml:space="preserve">
+    <value>elFinder 설명서</value>
+  </data>
+  <data name="ElFinder_Elf_Shortcut_Supp" xml:space="preserve">
+    <value>elFinder 지원 다음 바로 가기</value>
+  </data>
+  <data name="ElFinder_Elf_Web_FileMgr" xml:space="preserve">
+    <value>elFinder: 웹 파일 관리자</value>
+  </data>
+  <data name="ElFinder_Error_Connect_Backend" xml:space="preserve">
+    <value>백엔드에 연결할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Copy_Files" xml:space="preserve">
+    <value>파일을 복사할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Copy_Itself" xml:space="preserve">
+    <value>자신으로 복사할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Create_Archive" xml:space="preserve">
+    <value>압축 파일을 만들 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Create_File" xml:space="preserve">
+    <value>파일을 만들 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Create_Folder" xml:space="preserve">
+    <value>폴더를 만들 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Extract_Files_Archive" xml:space="preserve">
+    <value>압축 파일에서 파일을 추출할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_FileCopy_Create" xml:space="preserve">
+    <value>파일 사본을 만들 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Move_Files" xml:space="preserve">
+    <value>파일을 이동할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Open_Broken_Link" xml:space="preserve">
+    <value>끊어진 연결을 열 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Remove_File" xml:space="preserve">
+    <value>파일을 제거할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Rename_File" xml:space="preserve">
+    <value>파일 이름을 변경할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Resize_Image" xml:space="preserve">
+    <value>이미지 크기를 조정할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Save_Uploaded_File" xml:space="preserve">
+    <value>업로드된 파일을 저장할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Uploading_Files" xml:space="preserve">
+    <value>일부 파일이 업로드되지 않음</value>
+  </data>
+  <data name="ElFinder_Error_Upload_File" xml:space="preserve">
+    <value>파일을 업로드할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Upload_Files" xml:space="preserve">
+    <value>파일을 업로드할 수 없음</value>
+  </data>
+  <data name="ElFinder_Error_Write_File" xml:space="preserve">
+    <value>파일에 쓸 수 없음</value>
+  </data>
+  <data name="ElFinder_File_Folder_Name_Exist" xml:space="preserve">
+    <value>이름이 동일한 파일 또는 폴더가 이미 있음</value>
+  </data>
+  <data name="ElFinder_File_Info" xml:space="preserve">
+    <value>파일 정보</value>
+  </data>
+  <data name="ElFinder_File_Not_Found" xml:space="preserve">
+    <value>파일 없음</value>
+  </data>
+  <data name="ElFinder_File_Not_Image" xml:space="preserve">
+    <value>파일이 이미지가 아님</value>
+  </data>
+  <data name="ElFinder_File_Type_Not_Allowed" xml:space="preserve">
+    <value>파일 형식이 허용되지 않음</value>
+  </data>
+  <data name="ElFinder_Flash_App" xml:space="preserve">
+    <value>Flash 응용 프로그램</value>
+  </data>
+  <data name="ElFinder_Flash_Vid" xml:space="preserve">
+    <value>Flash 비디오</value>
+  </data>
+  <data name="ElFinder_Folder" xml:space="preserve">
+    <value>폴더</value>
+  </data>
+  <data name="ElFinder_Folder_Info" xml:space="preserve">
+    <value>폴더 정보</value>
+  </data>
+  <data name="ElFinder_Get_Info" xml:space="preserve">
+    <value>정보 가져오기</value>
+  </data>
+  <data name="ElFinder_Gif_Img" xml:space="preserve">
+    <value>GIF 이미지</value>
+  </data>
+  <data name="ElFinder_Gzip_Arch" xml:space="preserve">
+    <value>GZIP 압축 파일</value>
+  </data>
+  <data name="ElFinder_Help" xml:space="preserve">
+    <value>도움말</value>
+  </data>
+  <data name="ElFinder_Help_Txt" xml:space="preserve">
+    <value>도움말 텍스트</value>
+  </data>
+  <data name="ElFinder_Html_Doc" xml:space="preserve">
+    <value>HTML 문서</value>
+  </data>
+  <data name="ElFinder_Icons" xml:space="preserve">
+    <value>아이콘</value>
+  </data>
+  <data name="ElFinder_Incr_Decr_File_Selection" xml:space="preserve">
+    <value>파일 선택 증가/감소</value>
+  </data>
+  <data name="ElFinder_Invalid_Bg_Config" xml:space="preserve">
+    <value>잘못된 백엔드 구성</value>
+  </data>
+  <data name="ElFinder_Invalid_Name" xml:space="preserve">
+    <value>잘못된 이름</value>
+  </data>
+  <data name="ElFinder_Invalid_Params" xml:space="preserve">
+    <value>잘못된 매개 변수</value>
+  </data>
+  <data name="ElFinder_Items" xml:space="preserve">
+    <value>항목</value>
+  </data>
+  <data name="ElFinder_Java_Src" xml:space="preserve">
+    <value>Java 원본</value>
+  </data>
+  <data name="ElFinder_Jpeg_Img" xml:space="preserve">
+    <value>JPEG 이미지</value>
+  </data>
+  <data name="ElFinder_Js_App" xml:space="preserve">
+    <value>Javascript 응용 프로그램</value>
+  </data>
+  <data name="ElFinder_Js_Php_Prog" xml:space="preserve">
+    <value>Javascripts/PHP 프로그래밍: Dmitry (dio) Levashov, dio@std42.ru</value>
+  </data>
+  <data name="ElFinder_Js_Src" xml:space="preserve">
+    <value>Javascript 원본</value>
+  </data>
+  <data name="ElFinder_Kind" xml:space="preserve">
+    <value>종류</value>
+  </data>
+  <data name="ElFinder_License_Bsd" xml:space="preserve">
+    <value>라이선스: BSD 라이선스</value>
+  </data>
+  <data name="ElFinder_Link_To" xml:space="preserve">
+    <value>연결 대상:</value>
+  </data>
+  <data name="ElFinder_Matr_Vid" xml:space="preserve">
+    <value>Matroska 비디오</value>
+  </data>
+  <data name="ElFinder_Maximum_DataSize_Exceeded" xml:space="preserve">
+    <value>데이터가 최대 허용 크기를 초과함</value>
+  </data>
+  <data name="ElFinder_Maximum_FileSize_Exceeded" xml:space="preserve">
+    <value>파일이 최대 허용 파일 크기를 초과함</value>
+  </data>
+  <data name="ElFinder_Max_Allowed_File_Size" xml:space="preserve">
+    <value>허용된 최대 파일 크기</value>
+  </data>
+  <data name="ElFinder_Midi_Aud" xml:space="preserve">
+    <value>MIDI 오디오</value>
+  </data>
+  <data name="ElFinder_Modified" xml:space="preserve">
+    <value>수정됨</value>
+  </data>
+  <data name="ElFinder_Month_Apr" xml:space="preserve">
+    <value>4월</value>
+  </data>
+  <data name="ElFinder_Month_Aug" xml:space="preserve">
+    <value>8월</value>
+  </data>
+  <data name="ElFinder_Month_Dec" xml:space="preserve">
+    <value>12월</value>
+  </data>
+  <data name="ElFinder_Month_Feb" xml:space="preserve">
+    <value>2월</value>
+  </data>
+  <data name="ElFinder_Month_Jan" xml:space="preserve">
+    <value>1월</value>
+  </data>
+  <data name="ElFinder_Month_Jul" xml:space="preserve">
+    <value>7월</value>
+  </data>
+  <data name="ElFinder_Month_Jun" xml:space="preserve">
+    <value>6월</value>
+  </data>
+  <data name="ElFinder_Month_Mar" xml:space="preserve">
+    <value>3월</value>
+  </data>
+  <data name="ElFinder_Month_May" xml:space="preserve">
+    <value>5월</value>
+  </data>
+  <data name="ElFinder_Month_Nov" xml:space="preserve">
+    <value>11월</value>
+  </data>
+  <data name="ElFinder_Month_Oct" xml:space="preserve">
+    <value>10월</value>
+  </data>
+  <data name="ElFinder_Month_Sep" xml:space="preserve">
+    <value>9월</value>
+  </data>
+  <data name="ElFinder_Mp4_Aud" xml:space="preserve">
+    <value>MP4 오디오</value>
+  </data>
+  <data name="ElFinder_Mp4_Vid" xml:space="preserve">
+    <value>MP4 비디오</value>
+  </data>
+  <data name="ElFinder_Mpeg_Aud" xml:space="preserve">
+    <value>MPEG 오디오</value>
+  </data>
+  <data name="ElFinder_Mpeg_Vid" xml:space="preserve">
+    <value>MPEG 비디오</value>
+  </data>
+  <data name="ElFinder_MS_Excel_Doc" xml:space="preserve">
+    <value>Microsoft Excel 문서</value>
+  </data>
+  <data name="ElFinder_MS_Off_doc" xml:space="preserve">
+    <value>Microsoft Office 문서</value>
+  </data>
+  <data name="ElFinder_MS_PPT_Doc" xml:space="preserve">
+    <value>Microsoft Powerpoint 프레젠테이션</value>
+  </data>
+  <data name="ElFinder_MS_Word_Doc" xml:space="preserve">
+    <value>Microsoft Word 문서</value>
+  </data>
+  <data name="ElFinder_Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="ElFinder_New_Folder" xml:space="preserve">
+    <value>새 폴더</value>
+  </data>
+  <data name="ElFinder_New_Txt_File" xml:space="preserve">
+    <value>새 텍스트 파일</value>
+  </data>
+  <data name="ElFinder_No_File_To_Upload" xml:space="preserve">
+    <value>업로드할 파일 없음</value>
+  </data>
+  <data name="ElFinder_Ogg_Vrb_Aud" xml:space="preserve">
+    <value>Ogg Vorbis 오디오</value>
+  </data>
+  <data name="ElFinder_Open" xml:space="preserve">
+    <value>열기</value>
+  </data>
+  <data name="ElFinder_Open_Close_Ql_Win" xml:space="preserve">
+    <value>QuickLook 창 열기/닫기</value>
+  </data>
+  <data name="ElFinder_Open_Off_Doc" xml:space="preserve">
+    <value>Office 문서 열기</value>
+  </data>
+  <data name="ElFinder_Open_Selected_File_Folder" xml:space="preserve">
+    <value>선택한 파일/폴더 열기</value>
+  </data>
+  <data name="ElFinder_Open_Upload_File_Form" xml:space="preserve">
+    <value>업로드 파일 양식 열기</value>
+  </data>
+  <data name="ElFinder_Paste" xml:space="preserve">
+    <value>붙여넣기</value>
+  </data>
+  <data name="ElFinder_Perl_Scr" xml:space="preserve">
+    <value>Perl 스크립트</value>
+  </data>
+  <data name="ElFinder_Permissions" xml:space="preserve">
+    <value>권한</value>
+  </data>
+  <data name="ElFinder_Php_Src" xml:space="preserve">
+    <value>PHP 원본</value>
+  </data>
+  <data name="ElFinder_Plain_Txt" xml:space="preserve">
+    <value>일반 텍스트</value>
+  </data>
+  <data name="ElFinder_Png_Img" xml:space="preserve">
+    <value>PNG 이미지</value>
+  </data>
+  <data name="ElFinder_PostScript_Doc" xml:space="preserve">
+    <value>Postscript 문서</value>
+  </data>
+  <data name="ElFinder_Preview_Quick_Look" xml:space="preserve">
+    <value>빠른 보기로 미리 보기</value>
+  </data>
+  <data name="ElFinder_Priv_Read" xml:space="preserve">
+    <value>읽기</value>
+  </data>
+  <data name="ElFinder_Priv_Remove" xml:space="preserve">
+    <value>제거</value>
+  </data>
+  <data name="ElFinder_Priv_Write" xml:space="preserve">
+    <value>쓰기</value>
+  </data>
+  <data name="ElFinder_Python_Prg_Supp" xml:space="preserve">
+    <value>Python 프로그래밍, 기술 지원: Troex Nevelin, troex@fury.scancode.ru</value>
+  </data>
+  <data name="ElFinder_Python_Src" xml:space="preserve">
+    <value>Python 원본</value>
+  </data>
+  <data name="ElFinder_Qt_Vid" xml:space="preserve">
+    <value>Quicktime 비디오</value>
+  </data>
+  <data name="ElFinder_Rar_Arch" xml:space="preserve">
+    <value>RAR 압축 파일</value>
+  </data>
+  <data name="ElFinder_Reload" xml:space="preserve">
+    <value>다시 로드</value>
+  </data>
+  <data name="ElFinder_Rem" xml:space="preserve">
+    <value>제거</value>
+  </data>
+  <data name="ElFinder_Rem_Selected_Files" xml:space="preserve">
+    <value>선택한 파일 제거</value>
+  </data>
+  <data name="ElFinder_Rename" xml:space="preserve">
+    <value>이름 바꾸기</value>
+  </data>
+  <data name="ElFinder_Resize_Img" xml:space="preserve">
+    <value>이미지 크기 조정</value>
+  </data>
+  <data name="ElFinder_Ret_Prev_Folder" xml:space="preserve">
+    <value>이전 폴더로 돌아가기</value>
+  </data>
+  <data name="ElFinder_Root_Dir_Not_Exist" xml:space="preserve">
+    <value>루트 디렉터리 없음</value>
+  </data>
+  <data name="ElFinder_Ruby_Src" xml:space="preserve">
+    <value>Ruby 원본</value>
+  </data>
+  <data name="ElFinder_Selected_File_Dir_Info" xml:space="preserve">
+    <value>선택한 파일 또는 현재 디렉터리 정보</value>
+  </data>
+  <data name="ElFinder_Selected_Items" xml:space="preserve">
+    <value>선택한 항목</value>
+  </data>
+  <data name="ElFinder_Select_All_Files" xml:space="preserve">
+    <value>모든 파일 선택</value>
+  </data>
+  <data name="ElFinder_Select_File" xml:space="preserve">
+    <value>파일 선택</value>
+  </data>
+  <data name="ElFinder_Select_File_To_Upload" xml:space="preserve">
+    <value>업로드할 파일 하나 이상 선택</value>
+  </data>
+  <data name="ElFinder_Select_Next_File" xml:space="preserve">
+    <value>다음 파일 선택</value>
+  </data>
+  <data name="ElFinder_Select_Prev_File" xml:space="preserve">
+    <value>이전 파일 선택</value>
+  </data>
+  <data name="ElFinder_Sevenz_Archive" xml:space="preserve">
+    <value>7z 압축 파일</value>
+  </data>
+  <data name="ElFinder_Simple_Useful_Cms" xml:space="preserve">
+    <value>간단하고 유용한 내용 관리 시스템</value>
+  </data>
+  <data name="ElFinder_Size" xml:space="preserve">
+    <value>크기</value>
+  </data>
+  <data name="ElFinder_Spanish_Loc" xml:space="preserve">
+    <value>스페인어 지역화</value>
+  </data>
+  <data name="ElFinder_Sponsors" xml:space="preserve">
+    <value>스폰서</value>
+  </data>
+  <data name="ElFinder_Supp_Proj_Dev_info" xml:space="preserve">
+    <value>프로젝트 개발 지원 및 여기에 고객에 대한 정보 배치</value>
+  </data>
+  <data name="ElFinder_Tar_Arch" xml:space="preserve">
+    <value>TAR 압축 파일</value>
+  </data>
+  <data name="ElFinder_Tga_Img" xml:space="preserve">
+    <value>TGA 이미지</value>
+  </data>
+  <data name="ElFinder_Tiff_Img" xml:space="preserve">
+    <value>TIFF 이미지</value>
+  </data>
+  <data name="ElFinder_Uncompress_Arch" xml:space="preserve">
+    <value>압축 파일 해제</value>
+  </data>
+  <data name="ElFinder_Unix_Ss" xml:space="preserve">
+    <value>Unix 셸 스크립트</value>
+  </data>
+  <data name="ElFinder_Unknown" xml:space="preserve">
+    <value>알 수 없음</value>
+  </data>
+  <data name="ElFinder_Unknown_Cmd" xml:space="preserve">
+    <value>알 수 없는 명령</value>
+  </data>
+  <data name="ElFinder_Upload_Files" xml:space="preserve">
+    <value>파일 업로드</value>
+  </data>
+  <data name="ElFinder_Url_Disabled_By_Config" xml:space="preserve">
+    <value>커넥터 구성으로 파일 URL 사용 안 함</value>
+  </data>
+  <data name="ElFinder_Version" xml:space="preserve">
+    <value>버전</value>
+  </data>
+  <data name="ElFinder_View_As_Icon" xml:space="preserve">
+    <value>아이콘으로 보기</value>
+  </data>
+  <data name="ElFinder_View_As_List" xml:space="preserve">
+    <value>목록으로 보기</value>
+  </data>
+  <data name="ElFinder_Wav_Aud" xml:space="preserve">
+    <value>WAV 오디오</value>
+  </data>
+  <data name="ElFinder_Wm_Vid" xml:space="preserve">
+    <value>WM 비디오</value>
+  </data>
+  <data name="ElFinder_Xml_Doc" xml:space="preserve">
+    <value>XML 문서</value>
+  </data>
+  <data name="ElFinder_Zip_Arch" xml:space="preserve">
+    <value>ZIP 압축 파일</value>
+  </data>
+  <data name="ElFinder_Chezh_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Chinese_Trad_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Dutch_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Greek_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Hungarian_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Italian_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Latvian_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ElFinder_Poland_Loc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Add_Comment" xml:space="preserve">
+    <value>댓글 추가</value>
+  </data>
+  <data name="Default_Record_NotFound_Message" xml:space="preserve">
+    <value>찾고 있는 레코드가 없습니다.</value>
+  </data>
+  <data name="Search_No_Results_Found" xml:space="preserve">
+    <value>이 쿼리에 대한 결과 없음: </value>
+  </data>
+  <data name="Search_Filter_Clear_All" xml:space="preserve">
+    <value>모두 지우기</value>
+  </data>
+  <data name="Search_Results_Format_String" xml:space="preserve">
+    <value>결과 {0} - 쿼리에 대해 {2} 중 {1}: </value>
+  </data>
+  <data name="Submission_Already_Submitted_Message" xml:space="preserve">
+    <value>이미 제출을 완료했습니다. 감사합니다!</value>
+  </data>
+  <data name="Submission_Successful_Message" xml:space="preserve">
+    <value>제출이 완료되었습니다.</value>
+  </data>
+  <data name="Update_Button_Label_Text" xml:space="preserve">
+    <value>업데이트</value>
+  </data>
+  <data name="URL_Default_Text" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="CalendarControl_DownloadTitleLink" xml:space="preserve">
+    <value>이 일정 다운로드</value>
+  </data>
+  <data name="CalendarControl_LoadingError" xml:space="preserve">
+    <value>이 일정의 데이터를 로드하는 동안 문제가 발생했습니다.</value>
+  </data>
+  <data name="CalendarControl_MonthViewToggleButton" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="CalendarControl_Today_Button" xml:space="preserve">
+    <value>오늘</value>
+  </data>
+  <data name="CalendarControl_WeekViewToggleButton" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="CalendarControl_YearViewToggleButton" xml:space="preserve">
+    <value>년</value>
+  </data>
+  <data name="CustomerService_Case_Invalid_Permission" xml:space="preserve">
+    <value>이 서비스 케이스를 볼 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="CustomerService_Case_Knowledge_Base_Article" xml:space="preserve">
+    <value>참조 자료 문서</value>
+  </data>
+  <data name="CustomerService_Case_Not_Found" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="CustomerService_Case_Not_Found_Sentence" xml:space="preserve">
+    <value>서비스 케이스를 찾을 수 없습니다.</value>
+  </data>
+  <data name="CustomerService_Case_Resolution" xml:space="preserve">
+    <value>해결</value>
+  </data>
+  <data name="CustomerService_Case_Resolved" xml:space="preserve">
+    <value>해결됨</value>
+  </data>
+  <data name="CustomerService_CreateCase_Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="CustomerService_Portal_Login_To_View_Case" xml:space="preserve">
+    <value>새 서비스 케이스를 시작하거나 기존 서비스 케이스 목록을 보려면 로그인하십시오.</value>
+  </data>
+  <data name="CustomerService_Support_A_Case" xml:space="preserve">
+    <value>서비스 케이스 </value>
+  </data>
+  <data name="HomeTemplate_Search_Categories" xml:space="preserve">
+    <value>범주 검색</value>
+  </data>
+  <data name="HomeTemplate_Search_Text" xml:space="preserve">
+    <value>텍스트 검색</value>
+  </data>
+  <data name="Most_Popular_Categories" xml:space="preserve">
+    <value>최고 인기 범주</value>
+  </data>
+  <data name="Most_Recent_Categories" xml:space="preserve">
+    <value>가장 최근 범주</value>
+  </data>
+  <data name="SearchResults_Found" xml:space="preserve">
+    <value>찾음 </value>
+  </data>
+  <data name="SearchResults_Results_For_Query" xml:space="preserve">
+    <value>쿼리 결과 </value>
+  </data>
+  <data name="Blogs_Label" xml:space="preserve">
+    <value>블로그</value>
+  </data>
+  <data name="CustomerService_Support_Case_Created" xml:space="preserve">
+    <value> 사용자가 제출한 문제에 대해 생성되었습니다.</value>
+  </data>
+  <data name="CustomerService_Support_ClearButton" xml:space="preserve">
+    <value>지우기</value>
+  </data>
+  <data name="CustomerService_Support_FailedLogin" xml:space="preserve">
+    <value>예: 사용자 로그인 실패</value>
+  </data>
+  <data name="CustomerService_Support_Help_Question" xml:space="preserve">
+    <value>어떤 도움을 드릴 수 있을까요?</value>
+  </data>
+  <data name="CustomerService_Support_NoResults" xml:space="preserve">
+    <value>쿼리와 일치하는 정보가 없습니다.</value>
+  </data>
+  <data name="CustomerService_Support_PleaseSignIn" xml:space="preserve">
+    <value>새 서비스 케이스를 시작하거나 기존 서비스 케이스 목록을 보려면 로그인하십시오.</value>
+  </data>
+  <data name="CustomerService_Support_SearchButton" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="CustomerService_Support_ShowMore" xml:space="preserve">
+    <value>많이 표시...</value>
+  </data>
+  <data name="Events_Label" xml:space="preserve">
+    <value>이벤트</value>
+  </data>
+  <data name="Forums_Label" xml:space="preserve">
+    <value>포럼</value>
+  </data>
+  <data name="Ideas_Label" xml:space="preserve">
+    <value>아이디어</value>
+  </data>
+  <data name="Idea_Label" xml:space="preserve">
+    <value>아이디어</value>
+  </data>
+  <data name="IdeaForum_Top" xml:space="preserve">
+    <value>최고</value>
+  </data>
+  <data name="IdeaForum_Hot" xml:space="preserve">
+    <value>관심 높음</value>
+  </data>
+  <data name="IdeaForum_New" xml:space="preserve">
+    <value>새로 만들기</value>
+  </data>
+  <data name="IdeaForum_All_Time" xml:space="preserve">
+    <value>모든 시간</value>
+  </data>
+  <data name="IdeaForum_Today" xml:space="preserve">
+    <value>오늘</value>
+  </data>
+  <data name="IdeaForum_This_Week" xml:space="preserve">
+    <value>이번 주</value>
+  </data>
+  <data name="IdeaForum_This_Month" xml:space="preserve">
+    <value>이번 달</value>
+  </data>
+  <data name="IdeaForum_This_Year" xml:space="preserve">
+    <value>올해</value>
+  </data>
+  <data name="IdeaForum_Any" xml:space="preserve">
+    <value>모두</value>
+  </data>
+  <data name="IdeaForum_Status_New" xml:space="preserve">
+    <value>새로 만들기</value>
+  </data>
+  <data name="IdeaForum_Accepted" xml:space="preserve">
+    <value>수락됨</value>
+  </data>
+  <data name="IdeaForum_Completed" xml:space="preserve">
+    <value>완료됨</value>
+  </data>
+  <data name="IdeaForum_Rejected" xml:space="preserve">
+    <value>거부됨</value>
+  </data>
+  <data name="Issues_Label" xml:space="preserve">
+    <value>문제</value>
+  </data>
+  <data name="KnowledgeMgmt_Most_Popular_Articles" xml:space="preserve">
+    <value>최고 인기 문서</value>
+  </data>
+  <data name="KnowledgeMgmt_Most_Recent_Articles" xml:space="preserve">
+    <value>최신 문서</value>
+  </data>
+  <data name="KnowledgeMgmt_Search_Knowledge_Base" xml:space="preserve">
+    <value>참조 자료 검색</value>
+  </data>
+  <data name="Knowledge_Base_Label" xml:space="preserve">
+    <value>참조 자료</value>
+  </data>
+  <data name="Resolved_Cases_Label" xml:space="preserve">
+    <value>해결된 서비스 케이스</value>
+  </data>
+  <data name="SearchResults_None" xml:space="preserve">
+    <value>반환된 쿼리 결과가 없습니다.</value>
+  </data>
+  <data name="Click_Next_To_Purchase_Support_Text" xml:space="preserve">
+    <value>지원을 구매하려면 다음을 클릭하십시오.</value>
+  </data>
+  <data name="Form_Could_Not_Be_Submitted_For_The_Following_Reasons" xml:space="preserve">
+    <value>다음 이유로 양식을 제출할 수 없음:</value>
+  </data>
+  <data name="Plan_Name_Text" xml:space="preserve">
+    <value>계획 이름: {0}</value>
+  </data>
+  <data name="Please_Call_Text" xml:space="preserve">
+    <value>555-555-5555로 전화 주십시오.</value>
+  </data>
+  <data name="Please_Contact_Support_Text" xml:space="preserve">
+    <value>지원 팀에 문의하십시오.</value>
+  </data>
+  <data name="Please_Select_Support_Plans_Text" xml:space="preserve">
+    <value>다음 지원 계획 중 하나를 선택하고 다음을 클릭하십시오.</value>
+  </data>
+  <data name="Prepaid_Incidents_Available_Text" xml:space="preserve">
+    <value>사용 가능한 선불 문제</value>
+  </data>
+  <data name="Prepaid_Incidents_Available_With_Parameter_Text" xml:space="preserve">
+    <value>사용 가능한 선불 문제: {0}</value>
+  </data>
+  <data name="Problem_With_Your_Account_Text" xml:space="preserve">
+    <value>죄송합니다. 계정에 문제가 있습니다.</value>
+  </data>
+  <data name="Select_Customer_To_Assign_Support_Request_Text" xml:space="preserve">
+    <value>새로운 지원 요청을 할당할 고객을 선택하십시오.</value>
+  </data>
+  <data name="To_Open_New_Support_Request_You_Must_Purchase_New_Support_Plan_Text" xml:space="preserve">
+    <value>새 지원 요청을 시작하려면 새 지원 계획을 구매해야 합니다.</value>
+  </data>
+  <data name="Upon_Completion_Of_Opening_Support_Request" xml:space="preserve">
+    <value>다은 새 지원 요청 시작을 완료하면 {0}이(가) {1}만큼 감소됩니다.</value>
+    <comment>{0} - Prepaid Incidents Available</comment>
+  </data>
+  <data name="Working_Hours_Text" xml:space="preserve">
+    <value>시간: 월요일 ~ 금요일 오전 9시 - 오후 5시 CST</value>
+  </data>
+  <data name="Your_Account_Does_Not_Have_Support_Plan_Text" xml:space="preserve">
+    <value>계정에는 현재 활성 지원 계획이 없습니다.</value>
+  </data>
+  <data name="You_Do_Dot_Have_Permission_To_Open_Support_Request_Text" xml:space="preserve">
+    <value>죄송합니다. 새 지원 요청을 시작할 수 있는 권한이 없습니다.</value>
+  </data>
+  <data name="Page_500_Something_Went_Wrong_Text" xml:space="preserve">
+    <value>죄송합니다. 문제가 발생했습니다. 오류 ID # [{0}]</value>
+  </data>
+  <data name="Page_500_Something_Went_Wrong_Title" xml:space="preserve">
+    <value>죄송합니다. 문제가 발생함(500)</value>
+  </data>
+  <data name="Page_500_We_Have_Been_Notified_Text" xml:space="preserve">
+    <value>이 문제에 대해 알림을 받았습니다. 곧 살펴보겠습니다. 기다려주시기 바랍니다.</value>
+  </data>
+  <data name="Comment_DefaultText" xml:space="preserve">
+    <value>댓글</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>제출</value>
+  </data>
+  <data name="Timeline_Add_A_Comment" xml:space="preserve">
+    <value>댓글 추가</value>
+  </data>
+  <data name="Timeline_Attach_A_File_DefaultText" xml:space="preserve">
+    <value>파일 첨부</value>
+  </data>
+  <data name="Feedback_Default_Title" xml:space="preserve">
+    <value>{0} {1}에 대한 포털의 피드백</value>
+    <comment>{0} - Prepaid Incidents Available</comment>
+  </data>
+  <data name="Ess_User_Missing_License" xml:space="preserve">
+    <value>이 웹 사이트에 액세스할 수 있는 적절한 라이선스가 없습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="Invalid_FileExtenstion_ErrorMessage" xml:space="preserve">
+    <value>확장명이 .{0}인 첨부 파일을 업로드할 수 없습니다. 다른 확장명으로 파일을 업로드해 보십시오.</value>
+  </data>
+  <data name="Max_FileSize_ErrorMessage" xml:space="preserve">
+    <value>업로드한 파일 크기가 최대 허용 크기를 초과합니다.</value>
+  </data>
+  <data name="Restricted_FileExtensions_ErrorMessage" xml:space="preserve">
+    <value>업로드한 파일에 제한된 파일 확장명이 있습니다.</value>
+  </data>
+  <data name="Restrict_FileTypes_ErrorMessage" xml:space="preserve">
+    <value>업로드된 파일이 필요한 MIME 형식과 일치하지 않습니다.</value>
+  </data>
+  <data name="Knowledge_Article_Views_DefaultText" xml:space="preserve">
+    <value>보기:</value>
+  </data>
+  <data name="Knowledge_Article_Unavailable" xml:space="preserve">
+    <value>문서를 사용할 수 없음</value>
+  </data>
+  <data name="KnowledgeManagement_Article_Unavailable_Message" xml:space="preserve">
+    <value>요청한 참조 문서를 사용할 수 없습니다. 포털 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="No_Results_Text" xml:space="preserve">
+    <value>결과 없음</value>
+  </data>
+  <data name="Calculate_Text" xml:space="preserve">
+    <value>계산</value>
+  </data>
+  <data name="Confirm_Text" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="Generate_Text" xml:space="preserve">
+    <value>생성</value>
+  </data>
+  <data name="Proceed_Text" xml:space="preserve">
+    <value>진행됨</value>
+  </data>
+  <data name="Qualify_Lead_Text" xml:space="preserve">
+    <value>우량으로 선별</value>
+  </data>
+  <data name="Reopen_Text" xml:space="preserve">
+    <value>다시 시작</value>
+  </data>
+  <data name="Resolve_Text" xml:space="preserve">
+    <value>해결</value>
+  </data>
+  <data name="Lookup_Form_Select_New" xml:space="preserve">
+    <value>새로 만들기</value>
+  </data>
+  <data name="New_Record_Message" xml:space="preserve">
+    <value>새 레코드 만들기</value>
+  </data>
+  <data name="Blogs_Subscribe" xml:space="preserve">
+    <value>이 블로그 구독</value>
+  </data>
+  <data name="ContinueReading_ButtonText" xml:space="preserve">
+    <value>더 보기</value>
+  </data>
+  <data name="Newer_ButtonText" xml:space="preserve">
+    <value>&amp;lsaquo; 최신</value>
+  </data>
+  <data name="Older_ButtonText" xml:space="preserve">
+    <value>이전 &amp;rsaquo;</value>
+  </data>
+  <data name="Unpublished_DefaultText" xml:space="preserve">
+    <value>게시되지 않음</value>
+  </data>
+  <data name="Become_A_Partner" xml:space="preserve">
+    <value>파트너 되기</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>이동</value>
+  </data>
+  <data name="Profile_Text" xml:space="preserve">
+    <value>프로필</value>
+  </data>
+  <data name="Program_Details" xml:space="preserve">
+    <value>프로그램 정보</value>
+  </data>
+  <data name="Toggle_Navigation" xml:space="preserve">
+    <value>탐색 전환</value>
+  </data>
+  <data name="Welcome_To_Partner_Portal" xml:space="preserve">
+    <value>파트너 포털 시작!</value>
+  </data>
+  <data name="Required_Field_Text" xml:space="preserve">
+    <value>이 필드는 필수 필드입니다.</value>
+  </data>
+  <data name="Create_This_Thread" xml:space="preserve">
+    <value>스레드 만들기</value>
+  </data>
+  <data name="Post_This_Reply" xml:space="preserve">
+    <value>답변 게시</value>
+  </data>
+  <data name="Phone_Number_Required_Field_Validation_Message" xml:space="preserve">
+    <value>전화 번호는 필수 필드입니다. </value>
+  </data>
+  <data name="Sort_Ascending_Order" xml:space="preserve">
+    <value>활성화하여 오름차순으로 정렬</value>
+  </data>
+  <data name="Sort_Descending_Order" xml:space="preserve">
+    <value>활성화하여 내림차순으로 정렬</value>
+  </data>
+  <data name="Unexpected_Error_Occurred" xml:space="preserve">
+    <value>예기치 않은 오류가 발생했습니다.</value>
+  </data>
+  <data name="Ratings_DefaultText" xml:space="preserve">
+    <value>등급</value>
+  </data>
+  <data name="Browse_The_KB" xml:space="preserve">
+    <value>참조 자료 찾아보기</value>
+  </data>
+  <data name="CommunityPortal_Welcome" xml:space="preserve">
+    <value>커뮤니티 포털 시작!</value>
+  </data>
+  <data name="CustomerPortal_Welcome" xml:space="preserve">
+    <value>고객 셀프 서비스 포털 시작!</value>
+  </data>
+  <data name="EmployeeSelfServicePortal_Welcome" xml:space="preserve">
+    <value>직원 셀프 서비스 포털 시작!</value>
+  </data>
+  <data name="Create_Case_DefaultText" xml:space="preserve">
+    <value>서비스 케이스 만들기 </value>
+  </data>
+  <data name="Need_More_Help" xml:space="preserve">
+    <value>추가 도움말이 필요합니까?</value>
+  </data>
+  <data name="Popular_Topics" xml:space="preserve">
+    <value>인기 있는 주제</value>
+  </data>
+  <data name="Related_Categories_DefaultText" xml:space="preserve">
+    <value>관련 범주</value>
+  </data>
+  <data name="Get_Help_DefaultText" xml:space="preserve">
+    <value>지원 받기</value>
+  </data>
+  <data name="Provisioning_Main_Header" xml:space="preserve">
+    <value>설정 중...</value>
+  </data>
+  <data name="Provisioning_Message" xml:space="preserve">
+    <value>이 작업은 시간이 조금 소요됩니다.</value>
+  </data>
+  <data name="Provisioning_Title" xml:space="preserve">
+    <value>포털 구축</value>
+  </data>
+  <data name="CKEditor_Alert_Danger_Style" xml:space="preserve">
+    <value>알림(위험)</value>
+  </data>
+  <data name="CKEditor_Alert_Info_Style" xml:space="preserve">
+    <value>알림(정보)</value>
+  </data>
+  <data name="CKEditor_Alert_Success_Style" xml:space="preserve">
+    <value>알림(성공)</value>
+  </data>
+  <data name="CKEditor_Alert_Warning_Style" xml:space="preserve">
+    <value>알림(경고)</value>
+  </data>
+  <data name="CKEditor_Label_Danger_Style" xml:space="preserve">
+    <value>레이블(위험)</value>
+  </data>
+  <data name="CKEditor_Label_Info_Style" xml:space="preserve">
+    <value>레이블(정보)</value>
+  </data>
+  <data name="CKEditor_Label_Style" xml:space="preserve">
+    <value>레이블</value>
+  </data>
+  <data name="CKEditor_Label_Success_Style" xml:space="preserve">
+    <value>레이블(성공)</value>
+  </data>
+  <data name="CKEditor_Label_Warning_Style" xml:space="preserve">
+    <value>레이블(경고)</value>
+  </data>
+  <data name="CKEditor_Page_Header_style" xml:space="preserve">
+    <value>페이지 머리글</value>
+  </data>
+  <data name="CKEditor_Well_Large_Style" xml:space="preserve">
+    <value>우물 효과(크게)</value>
+  </data>
+  <data name="CKEditor_Well_Small_Style" xml:space="preserve">
+    <value>우물 효과(작게)</value>
+  </data>
+  <data name="CKEditor_Well_Style" xml:space="preserve">
+    <value>우물 효과</value>
+  </data>
+  <data name="CKEditor_Code_Block_Style" xml:space="preserve">
+    <value>코드 블록</value>
+  </data>
+  <data name="CKEditor_Code_Style" xml:space="preserve">
+    <value>코드</value>
+  </data>
+  <data name="Find_Your_Product" xml:space="preserve">
+    <value>제품 찾기</value>
+  </data>
+  <data name="Invalid_Email_Message" xml:space="preserve">
+    <value>전자 메일 필드에 올바른 전자 메일 주소가 없습니다.</value>
+  </data>
+  <data name="InvitationCode_Required_Exception" xml:space="preserve">
+    <value>초대 코드는 필수 필드입니다. </value>
+  </data>
+  <data name="StarterPortal_Welcome_Text" xml:space="preserve">
+    <value>사용자 지정 포털 시작!</value>
+  </data>
+  <data name="Last_Post_In_Thread" xml:space="preserve">
+    <value>스레드의 마지막 게시물</value>
+  </data>
+  <data name="Opportunity_Product_Price_List_Required" xml:space="preserve">
+    <value>제품을 추가하려면 먼저 가격표를 선택하고 변경 내용을 저장해야 합니다.</value>
+  </data>
+  <data name="FileUpload_Browse_Button_Text" xml:space="preserve">
+    <value>파일 첨부...</value>
+  </data>
+  <data name="InvalidEntitlementContacts" xml:space="preserve">
+    <value>지정한 연락처가 선택한 고객에 연결되어 있지 않습니다.</value>
+  </data>
+  <data name="InvalidEntitlementForSelectedCustomerOrProduct" xml:space="preserve">
+    <value>지정된 고객, 연락처 또는 제품에 속하는 활성 권리 유형을 선택하고 다시 시도하십시오.</value>
+  </data>
+  <data name="InvalidPrimaryContactBasedOnAccount" xml:space="preserve">
+    <value>지정한 연락처가 고객으로 선택된 거래처에 속하지 않습니다. 선택한 거래처에 속하는 연락처를 지정한 후 다시 시도하십시오.</value>
+  </data>
+  <data name="InvalidPrimaryContactBasedOnContact" xml:space="preserve">
+    <value>지정한 연락처가 고객 필드에 지정된 연락처에 속하지 않습니다. 연락처 필드에서 값을 제거하거나 선택한 고객에 연결된 연락처를 선택한 후 다시 시도하십시오.</value>
+  </data>
+  <data name="Licenses" xml:space="preserve">
+    <value>라이선스</value>
+  </data>
+  <data name="License_Expire_In_30_Days" xml:space="preserve">
+    <value>이 라이선스는 30일 이내에 만료됩니다.</value>
+  </data>
+  <data name="License_Id" xml:space="preserve">
+    <value>라이선스 ID</value>
+  </data>
+  <data name="License_Name" xml:space="preserve">
+    <value>라이선스 이름</value>
+  </data>
+  <data name="License_Status" xml:space="preserve">
+    <value>라이선스 상태</value>
+  </data>
+  <data name="Liquid_Template_Ad_Template_Description" xml:space="preserve">
+    <value>광고 렌더링</value>
+  </data>
+  <data name="Liquid_Template_Ad_Template_Title" xml:space="preserve">
+    <value>광고 템플릿</value>
+  </data>
+  <data name="Liquid_Template_Poll_Template_Description" xml:space="preserve">
+    <value>설문 조사 렌더링</value>
+  </data>
+  <data name="Liquid_Template_Poll_Template_Title" xml:space="preserve">
+    <value>설문 조사 템플릿</value>
+  </data>
+  <data name="Liquid_Template_Random_Ad_Description" xml:space="preserve">
+    <value>지정된 배치에서 임의 광고 표시</value>
+  </data>
+  <data name="Liquid_Template_Random_Ad_Title" xml:space="preserve">
+    <value>임의 광고</value>
+  </data>
+  <data name="Liquid_Template_Random_Poll_Description" xml:space="preserve">
+    <value>지정된 배치에서 임의 설문 조사 표시</value>
+  </data>
+  <data name="Liquid_Template_Random_Poll_Title" xml:space="preserve">
+    <value>임의 설문 조사</value>
+  </data>
+  <data name="Unapproved_Comment_Label" xml:space="preserve">
+    <value>승인되지 않음</value>
+  </data>
+  <data name="Unit_Id_Missing" xml:space="preserve">
+    <value>단위 id가 없습니다.</value>
+  </data>
+  <data name="You_Can_Only_Add_Active_Products" xml:space="preserve">
+    <value>활성 제품만 추가할 수 있습니다.</value>
+  </data>
+  <data name="Toggle_Filter_Display_Name" xml:space="preserve">
+    <value>관련된 {0}(으)로 필터링</value>
+  </data>
+  <data name="Home_DefaultText" xml:space="preserve">
+    <value>홈</value>
+  </data>
+  <data name="Found_My_Answer" xml:space="preserve">
+    <value>내 대답 찾음</value>
+  </data>
+  <data name="Marked_As_Your_Answer" xml:space="preserve">
+    <value>대답으로 표시됨</value>
+  </data>
+  <data name="Blogs_DefaultText" xml:space="preserve">
+    <value>블로그</value>
+  </data>
+  <data name="Events_DefaultText" xml:space="preserve">
+    <value>이벤트</value>
+  </data>
+  <data name="Forums_DefaultText" xml:space="preserve">
+    <value>포럼</value>
+  </data>
+  <data name="DropDown_DefaultText" xml:space="preserve">
+    <value>드롭다운</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>새로 만들기</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>수락됨</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>완료됨</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>거부됨</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>비활성</value>
+  </data>
+  <data name="Portal_DefaultText" xml:space="preserve">
+    <value>포털</value>
+  </data>
+  <data name="View_More" xml:space="preserve">
+    <value>추가 보기</value>
+  </data>
+  <data name="Join_Us" xml:space="preserve">
+    <value>참여하세요</value>
+  </data>
+  <data name="Community_DefaultText" xml:space="preserve">
+    <value>커뮤니티</value>
+  </data>
+  <data name="Most_Popular" xml:space="preserve">
+    <value>인기 자료</value>
+  </data>
+  <data name="Top_Rated_Articles" xml:space="preserve">
+    <value>최고 평점 문서</value>
+  </data>
+  <data name="Contact_Us" xml:space="preserve">
+    <value>문의처</value>
+  </data>
+  <data name="Discover_Contoso" xml:space="preserve">
+    <value>Contoso 발견</value>
+  </data>
+  <data name="My_Subscriptions_Heading" xml:space="preserve">
+    <value>내 구독</value>
+  </data>
+  <data name="IdeaForum_From" xml:space="preserve">
+    <value>시작:</value>
+  </data>
+  <data name="IdeaForum_Status" xml:space="preserve">
+    <value>상태:</value>
+  </data>
+  <data name="IdeaForum_Vote" xml:space="preserve">
+    <value>투표</value>
+  </data>
+  <data name="Case_Deflection_Suggested_Topics" xml:space="preserve">
+    <value>제안 항목</value>
+  </data>
+  <data name="Blog_Posts_Label" xml:space="preserve">
+    <value>블로그 게시물</value>
+  </data>
+  <data name="Forum_Posts_Label" xml:space="preserve">
+    <value>포럼 게시물</value>
+  </data>
+  <data name="Composite_Control_Done" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="ForumPost_AnsweredQuestion_Text" xml:space="preserve">
+    <value>대답</value>
+  </data>
+  <data name="Validation_PartialUrl_Suffix" xml:space="preserve">
+    <value>HTTP는 부분 URL에 허용되지 않음</value>
+  </data>
+  <data name="Old_New_Password_Should_Not_Match_Exception" xml:space="preserve">
+    <value>새 암호는 이전 암호와 같을 수 없습니다.</value>
+  </data>
+  <data name="Facet_Type_No_Handler_Defined_Exception" xml:space="preserve">
+    <value>이 패싯 유형에 정의된 처리기가 없습니다.</value>
+  </data>
+  <data name="Facet_Rating_And_Up" xml:space="preserve">
+    <value>&amp;nbsp;이상</value>
+  </data>
+  <data name="Search_Results" xml:space="preserve">
+    <value>검색 결과</value>
+  </data>
+  <data name="User_Avatar_Label" xml:space="preserve">
+    <value>{0} 그래픽/이미지</value>
+    <comment>Placeholder stores Username</comment>
+  </data>
+  <data name="Label_For_ActionLink" xml:space="preserve">
+    <value>작업 메뉴</value>
+  </data>
+  <data name="CkEditor_iFrame_Title" xml:space="preserve">
+    <value>필드 유형을 사용하는 내용 필수 필드입니다.</value>
+  </data>
+  <data name="CreateRelatedRecord_Text" xml:space="preserve">
+    <value>관련 레코드 만들기</value>
+  </data>
+  <data name="Address_Line_3_DefaultText" xml:space="preserve">
+    <value>주소란 3</value>
+  </data>
+  <data name="Sorting_Rating" xml:space="preserve">
+    <value>평균 사용자 등급</value>
+  </data>
+  <data name="Sorting_Relevance" xml:space="preserve">
+    <value>관련성</value>
+  </data>
+  <data name="Sorting_ViewCount" xml:space="preserve">
+    <value>보기 개수</value>
+  </data>
+  <data name="Facet_RecordType" xml:space="preserve">
+    <value>레코드 종류</value>
+  </data>
+  <data name="Facet_DateModified" xml:space="preserve">
+    <value>수정한 날짜</value>
+  </data>
+  <data name="Pagination_Current_Page" xml:space="preserve">
+    <value>현재 페이지 {0}</value>
+  </data>
+  <data name="Pagination_First_Page" xml:space="preserve">
+    <value>첫 페이지</value>
+  </data>
+  <data name="Pagination_Last_Page" xml:space="preserve">
+    <value>마지막 페이지</value>
+  </data>
+  <data name="Pagination_Next_Page" xml:space="preserve">
+    <value>다음 페이지</value>
+  </data>
+  <data name="Pagination_Page" xml:space="preserve">
+    <value>{0}페이지</value>
+  </data>
+  <data name="Pagination_Previous_Page" xml:space="preserve">
+    <value>이전 페이지</value>
+  </data>
+  <data name="Facet_Show_Less" xml:space="preserve">
+    <value>적게 표시</value>
+  </data>
+  <data name="Facet_Show_More" xml:space="preserve">
+    <value>많이 표시</value>
+  </data>
+  <data name="Facet_All" xml:space="preserve">
+    <value>모두</value>
+  </data>
+  <data name="Facet_Rating" xml:space="preserve">
+    <value>등급</value>
+  </data>
+  <data name="Facet_Today" xml:space="preserve">
+    <value>오늘</value>
+  </data>
+  <data name="Facet_Past_Week" xml:space="preserve">
+    <value>지난 주</value>
+  </data>
+  <data name="Facet_Past_Month" xml:space="preserve">
+    <value>지난 달</value>
+  </data>
+  <data name="Facet_Past_Months_String_Format" xml:space="preserve">
+    <value>지난 {0}개월</value>
+  </data>
+  <data name="Facet_Rating_Four_And_Up" xml:space="preserve">
+    <value>별 4개 이상</value>
+  </data>
+  <data name="Facet_Rating_One_And_Up" xml:space="preserve">
+    <value>별 1개 이상</value>
+  </data>
+  <data name="Facet_Rating_Three_And_Up" xml:space="preserve">
+    <value>별 3개 이상</value>
+  </data>
+  <data name="Facet_Rating_Two_And_Up" xml:space="preserve">
+    <value>별 2개 이상</value>
+  </data>
+  <data name="Facet_Products" xml:space="preserve">
+    <value>제품</value>
+  </data>
+  <data name="Sorting_Options" xml:space="preserve">
+    <value>정렬 옵션</value>
+  </data>
+  <data name="Language_Label" xml:space="preserve">
+    <value>언어</value>
+  </data>
+  <data name="Content_Language_Label" xml:space="preserve">
+    <value>언어 내용</value>
+  </data>
+  <data name="Visualization_AxisTitle" xml:space="preserve">
+    <value>{0}({1})</value>
+    <comment>{NumberedPlaceholder="{0}", "{1}"} Placeholder 0 is the name of an aggregate e.g Sum, Avg etc. Placeholder 1 is a display name of a column. Example: "Avg(Est. Revenue)". [Category="Application Infrastructure"]</comment>
+  </data>
+  <data name="Visualization_AxisTitle_AVG" xml:space="preserve">
+    <value>평균</value>
+  </data>
+  <data name="Visualization_AxisTitle_COUNT" xml:space="preserve">
+    <value>개수: 모두</value>
+  </data>
+  <data name="Visualization_AxisTitle_COUNTCOLUMN" xml:space="preserve">
+    <value>개수: 비어 있지 않은 항목</value>
+  </data>
+  <data name="Visualization_AxisTitle_CurrencySymbol" xml:space="preserve">
+    <value>{0}({1})</value>
+    <comment>{NumberedPlaceholder="{0}", "{1}"} Placeholder 0 is the label for the measure, Placeholder 1 is the currency symbol. Example: "SUM(Est. Revenue) ($)" [Category="Application Infrastructure"]</comment>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping" xml:space="preserve">
+    <value>{0}({1})</value>
+    <comment>{NumberedPlaceholder="{0}", "{1}"} Placeholder 0 is the name of dategrouping e.g Day, Month etc. Placeholder 1 is a display name of a column. Example: "Day(Created On)". [Category="Application Infrastructure"]</comment>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_DAY" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_FISCALPERIOD" xml:space="preserve">
+    <value>회계 기간</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_FISCALYEAR" xml:space="preserve">
+    <value>회계 연도</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_MONTH" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_QUARTER" xml:space="preserve">
+    <value>분기</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_WEEK" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="Visualization_AxisTitle_DateGrouping_YEAR" xml:space="preserve">
+    <value>년</value>
+  </data>
+  <data name="Visualization_AxisTitle_MAX" xml:space="preserve">
+    <value>최대</value>
+  </data>
+  <data name="Visualization_AxisTitle_MIN" xml:space="preserve">
+    <value>최소</value>
+  </data>
+  <data name="Visualization_AxisTitle_NONE" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="Visualization_AxisTitle_SUM" xml:space="preserve">
+    <value>합계</value>
+  </data>
+  <data name="Visualization_Chart_NoData_Message" xml:space="preserve">
+    <value>사용할 수 있는 데이터가 없습니다.</value>
+  </data>
+  <data name="Visualization_EmptyAxisLabel" xml:space="preserve">
+    <value>(비어 있음)</value>
+  </data>
+  <data name="Visualization_SubjectEllipsesText" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="Visualization_Year_Quarter" xml:space="preserve">
+    <value>분기</value>
+  </data>
+  <data name="Visualization_Year_Week" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="Visualization_Chart_Loading_Message" xml:space="preserve">
+    <value>로드 중...</value>
+  </data>
+  <data name="Partner_Dashboard_Title" xml:space="preserve">
+    <value>대시보드</value>
+  </data>
+  <data name="Update_Upload_File_Label" xml:space="preserve">
+    <value>파일 업로드(기존 파일 내용 교체)</value>
+  </data>
+  <data name="Forum_Thread_Is_Answered" xml:space="preserve">
+    <value>이 스레드는 대답함으로 표시되어 있습니다.</value>
+  </data>
+  <data name="Forum_Thread_Requires_Answer" xml:space="preserve">
+    <value>이 스레드에는 답변이 필요함</value>
+  </data>
+  <data name="Receive_notifications" xml:space="preserve">
+    <value>이 스레드의 새 게시물에 대한 알림 받음</value>
+  </data>
+  <data name="Do_not_Receive_notifications" xml:space="preserve">
+    <value>이 스레드의 새 게시물에 대한 알림 받지 않음</value>
+  </data>
+  <data name="Language_Label_With_Language" xml:space="preserve">
+    <value> - 언어: {0}</value>
+    <comment>{0} is the language to display with the label</comment>
+  </data>
+  <data name="Narrator_Label_For_Composite_Controls" xml:space="preserve">
+    <value>사용자는 Enter를 눌러 편집할 수 있습니다.</value>
+  </data>
+  <data name="Crm_Connection_Error_Page_Text" xml:space="preserve">
+    <value>Dynamics 365 조직에 포털을 연결할 수 없습니다. Dynamics 365 조직에 연결할 수 없거나 포털과 Dynamics 365 사이의 바인딩이 잘못되었습니다. 도움이 필요할 경우 시스템 관리자에게 문의하십시오. 오류 ID# {0} </value>
+  </data>
+  <data name="Page_500_Crm_Connection_Error" xml:space="preserve">
+    <value>연결 오류</value>
+  </data>
+  <data name="CaptchaAudioLinkButtonText" xml:space="preserve">
+    <value>오디오 코드 재생</value>
+  </data>
+  <data name="CaptchaDefaultErrorMessage" xml:space="preserve">
+    <value>CAPTCHA가 잘못되었습니다. 다시 시도하십시오.</value>
+  </data>
+  <data name="CaptchaLinkButtonText" xml:space="preserve">
+    <value>새 이미지 생성</value>
+  </data>
+  <data name="CaptchaTextBoxLabel" xml:space="preserve">
+    <value>이미지에서 코드 입력</value>
+  </data>
+  <data name="InvalidEntitlementAssociationToCase" xml:space="preserve">
+    <value>사용 가능한 기간이 없으므로 이 권리 유형에 대한 서비스 케이스를 만들 수 없습니다.</value>
+  </data>
+  <data name="Validation_ChildPage_PartialUrl_NotSlash_Message" xml:space="preserve">
+    <value>하위 페이지의 부분 URL은 '/'가 될 수 없습니다. 문자, 숫자, 하이픈 또는 밑줄로 올바른 부분 URL을 입력하십시오.</value>
+  </data>
+  <data name="Validation_HomePage_PartialUrl_NotSlash_Message" xml:space="preserve">
+    <value>웹 사이트의 홈 페이지의 부분 URL 필드 값은 /만 가능합니다. 다른 값은 포털에서 문제가 됩니다.</value>
+  </data>
+  <data name="Validation_ChildPage_PartialUrl_NotUnique_Message" xml:space="preserve">
+    <value>동일한 부분 URL을 가진 웹 페이지가 이미 존재합니다.</value>
+  </data>
+  <data name="Related_Attachments_Defaulttext" xml:space="preserve">
+    <value>관련 첨부 파일</value>
+  </data>
+  <data name="Account_Register_Registration_Disabled_Message" xml:space="preserve">
+    <value>등록이 비활성화됨</value>
+  </data>
+  <data name="MaxLength_Validation_Error" xml:space="preserve">
+    <value>{0}의 길이가 최대 {1}자를 초과합니다.</value>
+  </data>
+  <data name="External_Authentication_Failed" xml:space="preserve">
+    <value>로그인에 실패했습니다.</value>
+  </data>
+  <data name="External_Authentication_Failed_Access_Denied" xml:space="preserve">
+    <value>로그인이 취소되었습니다.</value>
+  </data>
+  <data name="Configuration_Disclaimer" xml:space="preserve">
+    <value>이 응용 프로그램을 구성하면 외부 시스템에서 데이터를 공유하는 데 동의하는 것입니다. Microsoft Dynamics 365 Online에서 가져온 데이터는 {0}여기{1}에서 액세스할 수 있는 개인정보취급방침이 적용됩니다. {2}자세한 내용{1}은 기능 기술 문서를 참조하십시오.</value>
+    <comment>Placeholders will be replaced with HTML a tags and appropriate hyperlinks at runtime.</comment>
+  </data>
+</root>

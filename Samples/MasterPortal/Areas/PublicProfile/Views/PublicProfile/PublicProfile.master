@@ -1,0 +1,40 @@
+<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" Inherits="System.Web.Mvc.ViewMasterPage<Site.Areas.PublicProfile.ViewModels.ProfileViewModel>" %>
+<%@ Import Namespace="Site.Helpers" %>
+<%@ Import Namespace="Adxstudio.Xrm.Web.UI.WebForms" %>
+
+<asp:Content ContentPlaceHolderID="Head" runat="server">
+	<link rel="stylesheet" href="<%: Url.Content("~/Areas/PublicProfile/css/publicprofile.css") %>">
+</asp:Content>
+
+<asp:Content  runat="server" ContentPlaceHolderID="ContentContainer">
+	<asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+		<div class="page-heading">
+			<div class="container">
+				<asp:ContentPlaceHolder ID="Breadcrumbs" runat="server">
+					<% Html.RenderPartial("Breadcrumbs"); %>
+				</asp:ContentPlaceHolder>
+				<crm:CrmEntityDataSource ID="CurrentEntity" DataItem="<%$ CrmSiteMap: Current %>" runat="server" />
+				<asp:ContentPlaceHolder ID="PageHeader" runat="server">
+					<div class="page-header">
+						<h1><%: Localization.LocalizeFullName(Model.User.GetAttributeValue<string>("firstname"), Model.User.GetAttributeValue<string>("lastname")) %> <small><%: Model.User.GetAttributeValue<string>("adx_organizationname") %></small></h1>
+					</div>
+				</asp:ContentPlaceHolder>
+			</div>
+		</div>
+	</asp:ContentPlaceHolder>
+		
+	<div class="container">
+		<div class="row public-profile">
+			<div class="col-sm-3 metadata">
+				<img class="author-img profile-img" src='<%= Url.UserImageUrl(Model.User, 200) %>' alt="" />
+				<div data-badge="true" data-uri="<%: Url.RouteUrl("PortalBadges", new { __portalScopeId__ = Model.Website.Id, userId = Model.User.Id, type = "profile-badges" }) %>"></div>
+				<p><adx:Snippet SnippetName="Public Profile Joined Label" Literal="True" DefaultText="<%$ ResourceManager:Joined_DefaultText %>" runat="server"/> <%= Model.User.GetAttributeValue<DateTime?>("createdon").GetValueOrDefault().Date.ToString("d") %></p>
+				<p><a href='<%: Model.User.GetAttributeValue<string>("websiteurl") %>' rel="me"><%: Model.User.GetAttributeValue<string>("websiteurl") %></a></p>
+				<p><%: Model.User.GetAttributeValue<string>("adx_publicprofilecopy") %></p>
+			</div>
+			<div class="col-sm-9">
+				<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+			</div>
+		</div>
+	</div>
+</asp:Content>

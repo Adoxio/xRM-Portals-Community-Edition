@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/WebForms.master" AutoEventWireup="true" CodeBehind="Forums.master.cs" Inherits="Site.Areas.Forums.MasterPages.Forums" %>
+<%@ Import Namespace="System.Web.Mvc.Html" %>
+<%@ Import Namespace="Adxstudio.Xrm.Web.Mvc.Html" %>
+
+<asp:Content ContentPlaceHolderID="Title" runat="server"><asp:ContentPlaceHolder ID="Title" runat="server"><%: Html.AttributeLiteral("adx_title") ?? Html.AttributeLiteral("adx_name") %></asp:ContentPlaceHolder></asp:Content>
+
+<asp:Content ContentPlaceHolderID="Head" runat="server">
+	<link rel="stylesheet" href="<%: Url.Content("~/Areas/Forums/css/forums.css") %>">
+	<asp:ContentPlaceHolder ID="Head" runat="server"/>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="Breadcrumbs" runat="server">
+	<asp:ContentPlaceHolder ID="Breadcrumbs" runat="server">
+		<% Html.RenderPartial("Breadcrumbs"); %>
+	</asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="PageHeader" runat="server">
+	<asp:ContentPlaceHolder ID="PageHeader" runat="server"/>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+	<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="Scripts" runat="server">
+	<asp:ContentPlaceHolder ID="Scripts" runat="server"/>
+</asp:Content>

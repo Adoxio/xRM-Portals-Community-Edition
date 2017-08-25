@@ -1,0 +1,23 @@
+﻿#comments,
+#article-rating {
+	clear: both;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+#found-my-answer-bottom-comments {
+	text-align: right;
+}
+
+.knowledge-article-content {
+	margin-bottom: 20px;
+}
+
+a.list-group-item {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #36f;
+}

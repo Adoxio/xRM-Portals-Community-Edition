@@ -1,0 +1,22 @@
+﻿<div class="content-panel panel panel-default">
+	<div class="panel-heading">
+		<h4>
+			<span class="fa fa-comments" aria-hidden="true"></span>
+      {{ snippets["Home Forum Activity Heading"] | default: resx['Forum_Activity_DefaultText'] | h }}
+    </h4>
+	</div>
+	<ul class="list-group">
+		{% for forum in website.forums %}	
+			<li class="list-group-item">
+				<div class="row">
+					<div class="col-sm-6">
+						<h4 class="list-group-item-heading"><a href="{{ forum.url | h }}"> {{ forum.name | h }}</a></h4>
+						<div class="list-group-item-text content-metadata">{{ forum.adx_description }}</div>
+					</div>
+					<div class="col-sm-3 content-metadata">{{ forum.thread_count }} threads</div>
+					<div class="col-sm-3 content-metadata">{{ forum.post_count }} posts</div>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

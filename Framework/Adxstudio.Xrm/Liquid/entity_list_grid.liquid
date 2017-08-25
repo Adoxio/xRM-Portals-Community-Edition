@@ -1,0 +1,132 @@
+﻿{% entitylist key:key %}
+
+<div class="entity-grid entitylist{% if entitylist.grid_metadata.css_class != '' %} {{ entitylist.grid_metadata.css_class | h }}{% endif %}" data-column-width-style="{{ entitylist.grid_metadata.grid_column_width_style | h }}" data-defer-loading="false" data-enable-actions="true" data-get-url="{{ entitylist.get_data_url | h }}" data-grid-class="{% if entitylist.grid_metadata.grid_css_class != '' %}{{ entitylist.grid_metadata.grid_css_class | h }}{% endif %}" data-select-mode="None" data-selected-view="{{ entitylist.default_view_id }}" data-view-layouts='{{ entitylist.layouts | h }}' data-user-isauthenticated="{% if user %}true{% else %}false{% endif %}" data-user-parent-account-name="{% if user and user.parentcustomerid %}{{ user.parentcustomerid.name | h }}{% endif %}">
+	<div class="view-grid"></div>
+	<div class="view-empty message">
+		{% if entitylist.grid_metadata.empty_message %}
+		{{ entitylist.grid_metadata.empty_message }}
+		{% else %}
+		{{ resx['Default_Grid_Empty_Message'] | h }}
+		{% endif %}
+	</div>
+	<div class="view-access-denied message">
+		{% if entitylist.grid_metadata.access_denied_message %}
+		{{ entitylist.grid_metadata.access_denied_message }}
+		{% else %}
+		<div class="alert alert-block alert-danger">{{ resx['Access_Denied_No_Permissions_To_View_These_Records_Message'] | h }}</div>
+		{% endif %}
+	</div>
+	<div class="view-error message">
+		{% if entitylist.grid_metadata.error_message %}
+		{{ entitylist.grid_metadata.error_message }}
+		{% else %}
+		<div class="alert alert-block alert-danger">{{ resx['Error_Completing_Request_Error_Message'] }}</div>
+		{% endif %}
+	</div>
+	<div class="view-loading message text-center">
+		{% if entitylist.grid_metadata.loading_message %}
+		{{ entitylist.grid_metadata.loading_message }}
+		{% else %}
+		<span class='fa fa-spinner fa-spin' aria-hidden='true'></span> {{ resx['Default_Grid_Loading_Message'] | h }}
+		{% endif %}
+	</div>
+	<div class="view-pagination" data-current-page="1" data-pages="1" data-pagesize=""></div>
+	<div aria-hidden="true" class="modal fade modal-form modal-form-insert{% if entitylist.grid_metadata.create_form_dialog.css_class != '' %} {{ entitylist.grid_metadata.create_form_dialog.css_class | h }}{% endif %}" role="dialog" tabindex="-1">
+		<div class="modal-dialog{% if entitylist.grid_metadata.create_form_dialog.size_css_class != '' %} {{ entitylist.grid_metadata.create_form_dialog.size_css_class | h }}{% else %} modal-lg{% endif %}">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span><span class="sr-only">{% if entitylist.grid_metadata.create_form_dialog.dismiss_button_sr_text and entitylist.grid_metadata.create_form_dialog.dismiss_button_sr_text != '' %}{{ entitylist.grid_metadata.create_form_dialog.dismiss_button_sr_text }}{% else %}{{ resx['Close_DefaultText'] | h }}{% endif %}</span></button>
+					<h4 class="modal-title{% if entitylist.grid_metadata.create_form_dialog.title_css_class != '' %} {{ entitylist.grid_metadata.create_form_dialog.title_css_class | h }}{% endif %}">{% if entitylist.grid_metadata.create_form_dialog.title and entitylist.grid_metadata.create_form_dialog.title != '' %}{{ entitylist.grid_metadata.create_form_dialog.title }}{% else %}<span class='fa fa-pencil-square-o' aria-hidden='true'></span> {{ resx['Create_Text'] | h }}{% endif %}</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-loading">
+						{% if entitylist.grid_metadata.create_form_dialog.loading_message %}
+						{{ entitylist.grid_metadata.create_form_dialog.loading_message }}
+						{% else %}
+						<span class='fa fa-spinner fa-spin fa-4x' aria-hidden='true'></span>
+						{% endif %}
+					</div>
+					<iframe data-page="{{ entitylist.modal_form_template_url | h }}" src="about:blank"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div aria-hidden="true" class="modal fade modal-form modal-form-edit{% if entitylist.grid_metadata.edit_form_dialog.css_class != '' %} {{ entitylist.grid_metadata.edit_form_dialog.css_class | h }}{% endif %}" role="dialog" tabindex="-1">
+		<div class="modal-dialog{% if entitylist.grid_metadata.edit_form_dialog.size_css_class != '' %} {{ entitylist.grid_metadata.edit_form_dialog.size_css_class | h }}{% else %} modal-lg{% endif %}">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span><span class="sr-only">{% if entitylist.grid_metadata.edit_form_dialog.dismiss_button_sr_text and entitylist.grid_metadata.edit_form_dialog.dismiss_button_sr_text != '' %}{{ entitylist.grid_metadata.edit_form_dialog.dismiss_button_sr_text }}{% else %}{{ resx['Close_DefaultText'] | h }}{% endif %}</span></button>
+					<h4 class="modal-title{% if entitylist.grid_metadata.edit_form_dialog.title_css_class != '' %} {{ entitylist.grid_metadata.edit_form_dialog.title_css_class | h }}{% endif %}">{% if entitylist.grid_metadata.edit_form_dialog.title and entitylist.grid_metadata.edit_form_dialog.title != '' %}{{ entitylist.grid_metadata.edit_form_dialog.title }}{% else %}<span class='fa fa-edit' aria-hidden='true'></span> {{ resx['Edit_Label'] | h }}{% endif %}</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-loading">
+						{% if entitylist.grid_metadata.edit_form_dialog.loading_message %}
+						{{ entitylist.grid_metadata.edit_form_dialog.loading_message }}
+						{% else %}
+						<span class='fa fa-spinner fa-spin fa-4x' aria-hidden='true'></span>
+						{% endif %}
+					</div>
+					<iframe data-page="{{ entitylist.modal_form_template_url | h }}" src="about:blank"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div aria-hidden="true" class="modal fade modal-form modal-form-details{% if entitylist.grid_metadata.details_form_dialog.css_class != '' %} {{ entitylist.grid_metadata.details_form_dialog.css_class | h }}{% endif %}" role="dialog" tabindex="-1">
+		<div class="modal-dialog{% if entitylist.grid_metadata.details_form_dialog.size_css_class != '' %} {{ entitylist.grid_metadata.details_form_dialog.size_css_class | h }}{% else %} modal-lg{% endif %}">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span><span class="sr-only">{% if entitylist.grid_metadata.details_form_dialog.dismiss_button_sr_text and entitylist.grid_metadata.details_form_dialog.dismiss_button_sr_text != '' %}{{ entitylist.grid_metadata.details_form_dialog.dismiss_button_sr_text }}{% else %}{{ resx['Close_DefaultText'] | h }}{% endif %}</span></button>
+					<h4 class="modal-title{% if entitylist.grid_metadata.details_form_dialog.title_css_class != '' %} {{ entitylist.grid_metadata.details_form_dialog.title_css_class | h }}{% endif %}">{% if entitylist.grid_metadata.details_form_dialog.title and entitylist.grid_metadata.details_form_dialog.title != '' %}{{ entitylist.grid_metadata.details_form_dialog.title }}{% else %}<span class='fa fa-info-circle' aria-hidden='true'></span> {{ resx['View_Details_Tooltip'] | h }}{% endif %}</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-loading">
+						{% if entitylist.grid_metadata.details_form_dialog.loading_message %}
+						{{ entitylist.grid_metadata.details_form_dialog.loading_message }}
+						{% else %}
+						<span class='fa fa-spinner fa-spin fa-4x' aria-hidden='true'></span>
+						{% endif %}
+					</div>
+					<iframe data-page="{{ entitylist.modal_form_template_url | h }}" src="about:blank"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div aria-hidden="true" class="modal fade modal-delete{% if entitylist.grid_metadata.delete_dialog.css_class != '' %} {{ entitylist.grid_metadata.delete_dialog.css_class | h }}{% endif %}" role="dialog" tabindex="-1">
+		<div class="modal-dialog{% if entitylist.grid_metadata.delete_dialog.size_css_class != '' %} {{ entitylist.grid_metadata.delete_dialog.size_css_class | h }}{% endif %}">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span><span class="sr-only">{% if entitylist.grid_metadata.delete_dialog.dismiss_button_sr_text and entitylist.grid_metadata.delete_dialog.dismiss_button_sr_text != '' %}{{ entitylist.grid_metadata.delete_dialog.dismiss_button_sr_text }}{% else %}{{ resx['Close_DefaultText'] | h }}{% endif %}</span></button>
+					<h4 class="modal-title{% if entitylist.grid_metadata.delete_dialog.title_css_class != '' %} {{ entitylist.grid_metadata.delete_dialog.title_css_class | h }}{% endif %}">{% if entitylist.grid_metadata.delete_dialog.title and entitylist.grid_metadata.delete_dialog.title != '' %}{{ entitylist.grid_metadata.delete_dialog.title }}{% else %}<span class='fa fa-trash-o' aria-hidden='true'></span> {{ resx['Delete_Button_Text'] | h }}{% endif %}</h4>
+				</div>
+				<div class="modal-body">
+					{% if entitylist.grid_metadata.delete_dialog.confirmation %}
+					{{ entitylist.grid_metadata.delete_dialog.confirmation }}
+					{% else %}
+					{{ resx['Record_Deletion_Confirmation_Message'] | h }}
+					{% endif %}
+				</div>
+				<div class="modal-footer"><button class="primary btn btn-primary{% if entitylist.grid_metadata.delete_dialog.primary_button_css_class != '' %} {{ entitylist.grid_metadata.delete_dialog.primary_button_css_class | h }}{% endif %}" type="button">{% if entitylist.grid_metadata.delete_dialog.primary_button_text and entitylist.grid_metadata.delete_dialog.primary_button_text != '' %}{{ entitylist.grid_metadata.delete_dialog.primary_button_text }}{% else %}{{ resx['Delete_Button_Text'] | h }}{% endif %}</button><button class="cancel btn btn-default{% if entitylist.grid_metadata.delete_dialog.close_button_css_class != '' %} {{ entitylist.grid_metadata.delete_dialog.close_button_css_class | h }}{% endif %}" data-dismiss="modal" type="button">{% if entitylist.grid_metadata.delete_dialog.close_button_text and entitylist.grid_metadata.delete_dialog.close_button_text != '' %}{{ entitylist.grid_metadata.delete_dialog.close_button_text }}{% else %}{{ resx['Cancel_DefaultText'] | h }}{% endif %}</button></div>
+			</div>
+		</div>
+	</div>
+	<div aria-hidden="true" class="modal fade modal-error{% if entitylist.grid_metadata.error_dialog.css_class != '' %} {{ entitylist.grid_metadata.error_dialog.css_class | h }}{% endif %}" role="dialog" tabindex="-1">
+		<div class="modal-dialog{% if entitylist.grid_metadata.error_dialog.size_css_class != '' %} {{ entitylist.grid_metadata.error_dialog.size_css_class | h }}{% endif %}">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span><span class="sr-only">{% if entitylist.grid_metadata.error_dialog.dismiss_button_sr_text and entitylist.grid_metadata.error_dialog.dismiss_button_sr_text != '' %}{{ entitylist.grid_metadata.error_dialog.dismiss_button_sr_text }}{% else %}{{ resx['Close_DefaultText'] | h }}{% endif %}</span></button>
+					<h4 class="modal-title{% if entitylist.grid_metadata.error_dialog.title_css_class != '' %} {{ entitylist.grid_metadata.error_dialog.title_css_class | h }}{% endif %}">{% if entitylist.grid_metadata.error_dialog.title and entitylist.grid_metadata.error_dialog.title != '' %}{{ entitylist.grid_metadata.error_dialog.title }}{% else %}<span class='fa fa-exclamation-triangle' aria-hidden='true'></span> {{ resx['Default_Error_ModalTitle'] | h }}{% endif %}</h4>
+				</div>
+				<div class="modal-body">
+					{% if entitylist.grid_metadata.error_dialog.body %}
+					{{ entitylist.grid_metadata.error_dialog.body }}
+					{% else %}
+					{{ resx['Error_Occurred_Message'] }}
+					{% endif %}
+				</div>
+				<div class="modal-footer"><button class="cancel btn btn-default{% if entitylist.grid_metadata.error_dialog.close_button_css_class != '' %} {{ entitylist.grid_metadata.error_dialog.close_button_css_class | h }}{% endif %}" data-dismiss="modal" type="button">{% if entitylist.grid_metadata.error_dialog.close_button_text and entitylist.grid_metadata.error_dialog.close_button_text != '' %}{{ entitylist.grid_metadata.error_dialog.close_button_text }}{% else %}{{ resx['Close_DefaultText'] | h }}{% endif %}</button></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endentitylist %}

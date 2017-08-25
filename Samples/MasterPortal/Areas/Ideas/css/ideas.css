@@ -1,0 +1,73 @@
+﻿
+.bottom-break,
+.ideas-nav {
+	margin-bottom: 20px;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+#time-span-filter {
+    float: right;
+    position:absolute;
+    margin-left: 77%
+}
+
+#status-filter {
+	float: right;
+    position:absolute; 
+    margin-left: 61%
+}
+
+.voting-well {
+	float: left;
+	margin-top: 6px;
+	padding: 9px 0;
+	text-align: center;
+	width: 44px;
+}
+
+.voting-well h4 {
+	margin: 5px 0;
+}
+
+div.modal-vote {
+	display: none;
+	width: auto !important;
+	margin: 0 !important;
+}
+
+.modal-backdrop {
+	opacity: 0.1 !important;
+	filter:alpha(opacity=10) !important;
+}
+
+.idea-container {
+	margin: 0 0 20px 62px;
+}
+
+.idea-container > h2 {
+	margin: 0;
+}
+
+.idea-container > h3 {
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0;
+}
+
+#create-idea,
+#comments,
+#ideas > li {
+	clear: both;
+}
+
+#comments > ul > li {
+	margin-bottom: 20px;
+}
+
+.user-idea-details {
+	display: inline-block;
+	margin-bottom: 3px;
+}

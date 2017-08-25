@@ -1,0 +1,235 @@
+﻿
+.xrm-editable-panel, .xrm-editable-panel input, .xrm-editable-panel select, .xrm-editable-panel select option, .xrm-editable-dialog textarea, .xrm-editable-controls a.xrm-editable-edit {
+	color: #000!important;
+	font-family: Segoe UI, Sans-Serif!important;
+	font-size: 12px!important;
+	font-variant: normal!important;
+	font-weight: normal!important;
+	letter-spacing: normal!important;
+	line-height: 1.5em!important;
+	text-align: left!important;
+	text-transform: none!important;
+}
+
+.xrm-editable-controls a.xrm-editable-edit {
+	background: #416ED7!important;
+	color: #FFF!important;
+	cursor: pointer!important;
+	display: block!important;
+	margin: 0!important;
+	padding: 2px 8px!important;
+	text-decoration: none!important;
+}
+
+.xrm-editable-controls a.xrm-editable-edit:hover {
+	background: #3056B5!important;
+	text-decoration: none!important;
+}
+
+.xrm-editable-controls.yui-panel .bd {
+	padding: 0;
+}
+
+.xrm-editable-panel .yui-button a:hover {
+	background: none;
+}
+
+.xrm-editable-dialog {
+	width: 26em;
+}
+
+.xrm-editable-dialog.xrm-editable-dialog-html, .xrm-editable-dialog.xrm-editable-dialog-html-fallback {
+	width: 640px;
+}
+
+.xrm-editable-dialog.xrm-editable-dialog-html.yui-panel .bd {
+	padding: 0;
+}
+
+.xrm-editable-dialog.xrm-editable-dialog-html-fallback textarea {
+	height: 240px;
+	width: 100%;
+}
+
+.xrm-editable-toolbar {
+	width: 90px;
+}
+
+.xrm-editable-toolbar .yui-button, .xrm-editable-toolbar .yui-button .first-child {
+	display: block;
+}
+
+.xrm-editable-toolbar .yui-button {
+	margin-bottom: 0.5em;
+}
+
+.xrm-editable-panel .yui-menu-button-menu .bd {
+	padding: 0;
+}
+
+.xrm-editable-panel .yui-menu-button-menu .bd.yui-calcontainer {
+	border-width: 1px;
+	padding: 10px;
+}
+
+.xrm-editable-panel .xrm-datetime {
+	margin-left: -1px;
+	zoom: 1;
+}
+
+.xrm-editable-panel .xrm-datetime:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.xrm-editable-panel .xrm-datetime .xrm-time select {
+	width: auto;
+}
+
+.xrm-editable-panel .xrm-datetime .xrm-date, .xrm-editable-panel .xrm-datetime .xrm-time {
+	float: left;
+}
+
+.xrm-editable-panel .xrm-datetime .xrm-date {
+	margin-right: 5px;
+}
+
+.xrm-editable-panel .xrm-datetime .xrm-date .yui-menu-button button {
+	width: 18.5em;
+}
+
+.xrm-editable-panel .mceLayout {
+	border: none;
+}
+
+.xrm-editable-panel .mceLayout .mceToolbar.mceFirst {
+	border-top: none;
+}
+
+.xrm-editable-dialog input.xrm-text, .xrm-editable-dialog select, .xrm-editable-dialog input.xrm-file {
+	display: block;
+	width: 24em;
+}
+
+.xrm-editable-dialog textarea {
+	display: block;
+	width: 23.5em;
+}
+
+.xrm-editable-dialog .xrm-text, .xrm-editable-dialog .xrm-file {
+	padding: 1px 0;
+}
+
+.xrm-editable-dialog .xrm-checkbox {
+	padding-left: 18px;
+	position: relative;
+}
+
+.xrm-editable-dialog .xrm-checkbox input {
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 1px;
+}
+
+.xrm-editable-dialog .xrm-dialog-section {
+	margin-bottom: 0.75em;
+}
+
+.xrm-editable-dialog .xrm-dialog-validation-summary {
+	color: Red;
+}
+
+.xrm-editable-dialog .xrm-dialog-validation-summary .xrm-dialog-validation-message {
+	display: block;
+}
+
+.xrm-editable-wait {
+	width: 230px;
+}
+
+.xrm-editable-wait .bd {
+	background: url('../images/rel_interstitial_loading.gif') no-repeat center center;
+	height: 20px;
+}
+
+.xrm-attribute-value-empty, .xrm-editable-adx_weblinkset.xrm-entity-value-empty {
+	border: dotted 1px #000;
+	display: block;
+	height: 24px;
+}
+
+.yui-skin-sam .xrm-editable-panel.yui-panel .hd {
+	background: #F2F2F2;
+}
+
+.yui-skin-sam .yui-panel-container.focused .xrm-editable-panel.yui-panel .hd {
+	background: url(../images/sprite.png) repeat-x 0 -200px;
+}
+
+.xrm-editable-weblinks, .xrm-editable-sitemapchildren {
+	margin: 0;
+	padding: 0;
+}
+
+.xrm-editable-weblinks .xrm-editable-weblink, .xrm-editable-sitemapchildren .xrm-editable-sitemapchild {
+	background: #E0E0E0;
+	border: solid 1px #DADADA;
+	clear: both;
+	list-style: none;
+	margin-bottom: 2px;
+	padding: 0.25em 0;
+}
+
+.xrm-editable-weblink .xrm-drag-handle, .xrm-editable-sitemapchild .xrm-drag-handle, .xrm-editable-weblink .xrm-delete, .xrm-editable-weblink .xrm-edit, .xrm-editable-dialog-weblinkset .xrm-add span, .xrm-editable-weblink .xrm-drag-disabled {
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	width: 2em;
+	height: 2em;
+}
+
+.xrm-editable-weblink .xrm-drag-disabled {
+	float: left;
+	margin-right: 0.25em;
+	margin-top: -0.25em;
+	width: 0.25em;
+}
+
+.xrm-editable-weblink .xrm-drag-handle, .xrm-editable-sitemapchild .xrm-drag-handle {
+	background-image: url('../images/drag_handle.gif');
+	cursor: move;
+	float: left;
+	margin-right: 0.25em;
+	margin-top: -0.25em;
+}
+
+.xrm-editable-weblink .xrm-delete, .xrm-editable-weblink .xrm-edit {
+	cursor: pointer;
+	float: right;
+	margin-top: -0.25em;
+}
+
+.xrm-editable-weblink .xrm-delete {
+	background-image: url('../images/delete.png');
+}
+
+.xrm-editable-weblink .xrm-edit {
+	background-image: url('../images/page_white_edit.png');
+}
+
+.xrm-editable-dialog-weblinkset .xrm-add {
+	border: solid 1px #dadada;
+	cursor: pointer;
+	display: block;
+	height: 2em;
+}
+
+.xrm-editable-dialog-weblinkset .xrm-add span {
+	background-image: url('../images/add.png');
+	float: right;
+}

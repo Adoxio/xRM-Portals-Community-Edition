@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="Title"><asp:ContentPlaceHolder ID="Title" runat="server"><%: Html.AttributeLiteral("adx_title") ?? Html.AttributeLiteral("adx_name") %></asp:ContentPlaceHolder></asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="Head">
+	<link rel="stylesheet" href="<%: Url.Content("~/Areas/Ideas/css/ideas.css") %>">
+	<asp:ContentPlaceHolder ID="Head" runat="server"/>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="ContentHeader">
+	<div class="page-heading">
+		<div class="container">
+			<asp:ContentPlaceHolder ID="PageHeader" runat="server"/>
+		</div>
+	</div>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="MainContent">
+	<div class="row">
+		<div class="col-md-8">
+			<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+		</div>
+		<div class="col-md-4">
+			<div class="sidebar">
+				<asp:ContentPlaceHolder ID="SidebarContent" runat="server" />
+				<% if(Html.BooleanSetting("Search/Enabled").GetValueOrDefault(true)) {
+					Html.RenderPartial("Search");
+				} %>
+			</div>
+		</div>
+	</div>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="Scripts">
+	<script type="text/javascript" src="<%: Url.Content("~/js/jquery.unobtrusive-ajax.min.js") %>"></script>
+	<script type="text/javascript" src="<%: Url.Content("~/js/jquery.blockUI.js") %>"></script>
+	<script type="text/javascript" src="<%: Url.Content("~/Areas/Ideas/js/ideas.js") %>"></script>
+</asp:Content>

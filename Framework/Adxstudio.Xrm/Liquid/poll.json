@@ -1,0 +1,5 @@
+﻿{
+	"title": "Poll_DefaultText",
+    "description": "Liquid_Template_Poll_Description",
+    "default_arguments":  "poll_placement_name: ''"
+}

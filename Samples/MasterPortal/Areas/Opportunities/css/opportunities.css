@@ -1,0 +1,12 @@
+﻿#new-opportunities .table tr.saved {
+	background-color: #DEE7ED;
+	color: #aaa;
+}
+
+.opportunity-copy {
+	padding-bottom: 10px;
+}
+
+#select-all-container {
+	margin-bottom: 10px;
+}

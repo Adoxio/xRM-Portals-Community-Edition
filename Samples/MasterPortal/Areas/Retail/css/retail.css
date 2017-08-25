@@ -1,0 +1,21 @@
+﻿
+.product-grid .thumbnail:hover {
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	.product-grid {
+		margin-bottom: 0;
+	}
+
+	.product-grid .product-name {
+		line-height: 20px;
+		height: 40px;
+		overflow: hidden;
+	}
+
+	.product-grid .thumbnail > img {
+		height: 100px;
+		width: 100px;
+	}
+}

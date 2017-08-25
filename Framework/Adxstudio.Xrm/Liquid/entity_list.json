@@ -1,0 +1,5 @@
+﻿{
+	"title": "Liquid_Template_Entitylist_Title",
+    "description": "Liquid_Template_Entitylist_Description",
+    "default_arguments":  "key: ''"
+}

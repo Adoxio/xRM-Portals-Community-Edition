@@ -1,0 +1,16 @@
+<div class="cal-month-day <%= cls %> <%= events.length > 0 ? 'calendar-hasevents' : '' %>">
+	<span class="pull-right" data-cal-date="<%= data_day %>" data-cal-view="day" data-toggle="tooltip" title="<%= tooltip %>"><%= day %></span>
+	<% if (!cal._small_ && events.length > 0) { %>
+		<span class="badge badge-important"><%= events.length %></span>
+		<div class="events-list" data-cal-start="<%= start %>" data-cal-end="<%= end %>">
+			<% _.each(events, function(event) { %>
+				<% var start = moment(event.start); %>
+				<a href="<%= event.url ? event.url : 'javascript:void(0)' %>"
+					 data-event-id="<%= event.id %>"
+					 data-event-class="<%= event['class'] %>"
+					 class="label label-primary <%= event['class'] %>"
+					 title="<%= event.title %>"><%= start.format('h:mma') %>&nbsp;<%= event.title %></a>
+			<% }); %>
+		</div>
+	<% } %>
+</div>

@@ -1,0 +1,28 @@
+﻿<div class="container">
+	<div class="page-heading">
+		<ul class="breadcrumb">
+			{% for crumb in page.breadcrumbs -%}
+			<li>
+				<a href="{{ crumb.url | h }}" title="{{ crumb.title | h }}">{{ crumb.title | truncate: 24 | h }}</a>
+			</li>
+			{% endfor -%}
+			<li class="active">{% block activebreadcrumb %}{{ page.title | h }}{% endblock %}</li>
+		</ul>
+		<div class="page-header">
+			<h1>{{ page.title | h }}{% block title %}{% endblock %}</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 left-column">
+			{% block left_aside %}{% endblock %}
+		</div>
+		<div class="col-md-6 middle-column">
+			{% block main %}
+				{% include 'page_copy' %}
+			{% endblock %}
+		</div>
+		<div class="col-md-3 right-column">
+			{% block right_aside %}{% endblock %}
+		</div>
+	</div>
+</div>

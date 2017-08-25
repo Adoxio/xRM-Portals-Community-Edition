@@ -1,0 +1,87 @@
+﻿{% assign primary_nav = primary_nav | default: weblinks["Primary Navigation"] %}
+<div class="header-navbar navbar navbar-default navbar-static-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="navbar-left visible-xs">
+				{{ snippets["Mobile Header"] }}
+			</div>
+		</div>
+		<div id="header-navbar-collapse" class="navbar-collapse collapse">
+			<div class="navbar-left hidden-xs">
+				{{ snippets["Navbar Left"] | h }}
+			</div>
+			{% if primary_nav %}
+			<div {% if primary_nav.editable %}class="xrm-entity xrm-editable-adx_weblinkset" {% endif %}>
+				<ul class="navbar-left nav navbar-nav">
+					{% for link in primary_nav.weblinks %}
+					{% if link.display_page_child_links %}
+					{% assign sublinks = sitemap[link.url].children %}
+					{% else %}
+					{% assign sublinks = link.weblinks %}
+					{% endif %}
+					<li {% if sublinks.size >	0 %}class="dropdown"{% endif %}>
+						<a {% if sublinks.size >	0 %}
+							href="#" class="dropdown-toggle" data-toggle="dropdown"
+							{% else %}
+							href="{{ link.url | h }}"
+							{% endif %}
+							{% if link.nofollow %}rel="nofollow"{% endif %}
+							{% if link.tooltip %}title="{{ link.tooltip | h }}"{% endif %}>
+							{% if link.image %}
+							{% if link.image.url startswith '.' %}
+							<span class="{{ link.image.url | split:'.' | join | h }}" aria-hidden="true"></span>
+							{% else %}
+							<img src="{{ link.image.url | h }}"
+									 alt="{{ link.image.alternate_text | default:link.tooltip | h }}"
+									 {% if link.image.width %}width="{{ link.image.width }}" {% endif %}
+									 {% if link.image.height %}height="{{ link.image.height }}" {% endif %} />
+							{% endif %}
+							{% endif %}
+							{% unless link.display_image_only %}
+							{{ link.name | h }}
+							{% endunless %}
+							{% if sublinks.size > 0 %}
+							<span class="caret"></span>
+							{% endif %}
+						</a>
+
+						{% if sublinks.size > 0 %}
+						<ul class="dropdown-menu" role="menu">
+							{% if link.url %}
+							<li>
+								<a href="{{ link.url | h }}"
+									 {% if link.nofollow %}rel="nofollow" {% endif %}
+									 {% if link.tooltip %}title="{{ link.tooltip | h }}" {% endif %}>{{ link.name | h }}</a>
+							</li>
+							<li class="divider"></li>
+							{% endif %}
+							{% for sublink in sublinks %}
+							<li>
+								<a href="{{ sublink.url | h }}"
+									 {% if sublink.nofollow %}rel="nofollow" {% endif %}
+									 {% if sublink.tooltip %}title="{{ link.tooltip | h }}" {% endif %}>
+									{{ sublink.name | default:sublink.title | h }}
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+
+					</li>
+					{% endfor %}
+				</ul>
+				{% editable primary_nav %}
+			</div>
+			{% endif %}
+			<div class="navbar-right hidden-xs">
+				{{ snippets["Navbar Right"] | h }}
+			</div>
+		</div>
+	</div>
+</div>

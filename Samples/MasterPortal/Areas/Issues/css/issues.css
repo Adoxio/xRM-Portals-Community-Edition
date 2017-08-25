@@ -1,0 +1,38 @@
+﻿
+.issues-nav,
+.bottom-break {
+	margin-bottom: 20px;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+#priority-filter,
+#status-filter {
+	float: right;
+}
+
+.issue-container {
+	margin: 0 0 20px 0;
+}
+
+.issue-container > h2 {
+	margin: 0;
+}
+
+.issue-container > h3 {
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0;
+}
+
+#create-issue,
+#comments,
+#issues > li {
+	clear: both;
+}
+
+#comments > ul > li {
+	margin-bottom: 20px;
+}

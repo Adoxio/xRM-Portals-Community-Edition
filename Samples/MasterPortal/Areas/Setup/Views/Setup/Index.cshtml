@@ -1,0 +1,101 @@
+﻿@model Site.Areas.Setup.Models.SetupViewModel
+@using Adxstudio.Xrm.Resources
+@{
+	var hideValidation = ViewData.ModelState.IsValid ? "hide" : null;
+}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<title>Portal Configuration</title>
+
+		@Styles.Render("~/css/bootstrap.min.css")
+		@Styles.Render("~/css/glyphicons-font-awesome-migrate.min.css")
+		@Styles.Render("~/Areas/setup/css/setup.css")
+
+	</head>
+
+	<body>
+		<section class="container">
+			<div class="row">
+				<div class="col-lg-12">
+
+					<div class="panel panel-default connection-panel">
+						<div class="panel-heading">
+							<h2 class="panel-title"><span id="cog" class="fa fa-cog"></span>&nbsp;&nbsp; @Html.Raw(ResourceManager.GetString("Microsoft_Dynamics_Title"))</h2>
+						</div>
+						<div class="panel-body">
+
+							@using (Html.BeginForm())
+							{
+								@Html.AntiForgeryToken()
+
+								<div class="alert alert-danger @hideValidation">
+									<ul id="errors-list">
+										@foreach (var modelError in ViewData.ModelState.SelectMany(pair => pair.Value.Errors, (pair, error) => new { pair.Key, Error = error }))
+										{
+											<li data-key="@modelError.Key">@modelError.Error.ErrorMessage</li>
+										}
+									</ul>
+								</div>
+
+								<div class="form-group">
+									<label class="control-label" for="OrganizationServiceUrl">@ResourceManager.GetString("Dynamics_365_Organization_Service_URL")</label>
+									<a tabindex="0" class="service-url-popover-link" role="button"><span class="fa fa-question-circle"></span><span class="sr-only">@ResourceManager.GetString("Question_Help_Text")</span></a>
+									<div class="service-url-popover-content hidden">
+										<div class="service-url-popover small">
+											<strong>@Html.Raw(string.Format(ResourceManager.GetString("CRM_Organization_Service_URL"), "<a href =\"https://go.microsoft.com/fwlink/p/?linkid=848302\" target=\"_blank\" tabindex=\"- 1\">", "</a>"))</strong>
+											<ol class="breadcrumb">
+												<li>@ResourceManager.GetString("Settings")</li>
+												<li>@ResourceManager.GetString("Customizations")</li>
+												<li>@ResourceManager.GetString("Developer_Resources")</li>
+												<li>@ResourceManager.GetString("Service_Endpoints")</li>
+												<li>@ResourceManager.GetString("Organization_Service")</li>
+											</ol>
+										</div>
+									</div>
+									<div class="input-group">
+										<input type="url" id="OrganizationServiceUrl" name="OrganizationServiceUrl" class="form-control" placeholder="https://organization.api.crm.dynamics.com" data-url="@Url.Action("OrganizationConfiguration")" />
+										<span class="input-group-addon"><span class="addon">/XRMServices/2011/Organization.svc</span></span>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="control-label" for="Username">@ResourceManager.GetString("UserName")</label>
+									<input type="text" id="Username" name="Username" class="form-control" placeholder="username@contoso.onmicrosoft.com" />
+								</div>
+
+								<div class="form-group">
+									<label class="control-label" for="Password">@ResourceManager.GetString("Password")</label>
+									<input type="password" id="Password" name="Password" class="form-control" data-url="@Url.Action("Websites")" />
+								</div>
+
+								<div class="form-group">
+									<label class="control-label" for="Website">@ResourceManager.GetString("Website")</label>
+									<select id="Website" name="Website" class="form-control"></select>
+									<span class="help-block"><span class="fa fa-info-circle"></span>&nbsp;@ResourceManager.GetString("Website_Message")</span>
+								</div>
+
+								<p>@Html.Raw(string.Format(ResourceManager.GetString("Configuration_Disclaimer"), "<a href ='https://go.microsoft.com/fwlink/p/?linkid=850368' target='_blank' tabindex='- 1'>", "</a>", "<a href ='https://go.microsoft.com/fwlink/p/?linkid=850407' target='_blank' tabindex='- 1'>"))</p>
+
+								<button type="button" class="btn btn-primary" id="checkConnection"><span class="fa fa-spinner fa-spin hidden"></span>@ResourceManager.GetString("Check_Connection")</button>
+								<button type="submit" class="btn btn-primary" id="submit"><span class="fa fa-spinner fa-spin hidden"></span> <span class="apply-label">@ResourceManager.GetString("Apply_Button_Text")</span></button>
+
+							}
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		
+		@Scripts.Render("~/js/jquery-1.12.4.min.js")
+		@Scripts.Render("~/js/jqueryval.bundle.js")
+		@Scripts.Render("~/js/bootstrap.min.js")
+		@Scripts.Render("~/areas/setup/js/setup.js")
+
+	</body>
+
+</html>
+<!-- Page OK -->

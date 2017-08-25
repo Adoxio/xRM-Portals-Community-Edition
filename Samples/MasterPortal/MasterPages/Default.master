@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" ViewStateMode="Disabled" CodeBehind="Default.master.cs" Inherits="Site.MasterPages.Default" %>
+<%@ Import Namespace="System.Globalization" %>
+<%@ Import Namespace="System.Web.Mvc.Html" %>
+<%@ Import namespace="Adxstudio.Xrm.Web.Mvc.Html" %>
+
+<!DOCTYPE html>
+<html lang="<%: CultureInfo.CurrentUICulture %>" data-lang="<%= PortalLanguageCode %>" crm-lang="<%= CrmLanguageCode %>">
+	<head runat="server">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<title><asp:ContentPlaceHolder ID="Title" runat="server"><%: Html.AttributeLiteral("adx_title") ?? Html.AttributeLiteral("adx_name") %></asp:ContentPlaceHolder><%= Html.SnippetLiteral("Browser Title Suffix") %></title>
+		<asp:ContentPlaceHolder ID="MetaTags" runat="server">
+			<% var metaDescription = Html.Entity().GetAttribute("adx_meta_description"); %>
+			<% if (metaDescription != null && metaDescription.Value != null) { %>
+				<meta name="description" content="<%: Html.AttributeLiteral(metaDescription) %>" />
+			<% } %>
+		</asp:ContentPlaceHolder>
+		<asp:ContentPlaceHolder ID="InstantiateResourceStrings" runat="server">
+			<script src="<%: Url.Action("ResourceManager", "Resources", new { area = "Portal", lang = PortalLanguageCode }) %>"></script>
+		</asp:ContentPlaceHolder>
+		<script type="text/javascript">
+			// Fix for incorrect viewport width setting in IE 10 on Windows Phone 8.
+			if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement("style");
+				msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+				document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+			}
+		</script>
+		<asp:ContentPlaceHolder ID="Styles" runat="server">
+			<%= Html.SnippetLiteral("Head/Fonts") %>
+			<%= Html.SnippetLiteral("Head/Bootstrap", Html.ContentStyles(only: new Dictionary<string, string>
+				{
+					{"bootstrap.min.css", Url.Content("~/css/bootstrap.min.css")}
+				})) %>
+			<%: System.Web.Optimization.Styles.Render(Html.Setting("Head/Icons", "~/css/glyphicons-font-awesome-migrate.min.css")) %>
+			<%: System.Web.Optimization.Styles.Render("~/css/default.bundle.css") %>
+			<%-- HTML5 shim, for IE6-8 support of HTML elements --%>
+			<!--[if lt IE 9]>
+				<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+			<%-- HTML5 polyfill, for IE6-8 support of HTML FormData allowing to post upload file async --%>
+			<!--[if lt IE 10]>
+				<script src="~/js/formdata.js"></script>
+			<![endif]-->
+			<asp:ContentPlaceHolder ID="Header" runat="server">
+			<% Html.RenderPartialFromSetting("Head/Template"); %>
+			</asp:ContentPlaceHolder>
+			<asp:ContentPlaceHolder ID="Head" runat="server"/>
+			<%: Html.ContentStyles(except: new [] { "bootstrap.min.css" }) %>
+			<%: Html.StyleAttribute("adx_customcss") %>
+			<%= Html.SnippetLiteral("Head/Bottom") %>
+			<%--This loads culture-specific styles--%>
+			<%= Html.LocalizedContentStyle(CultureInfo.CurrentUICulture.LCID) %>
+		</asp:ContentPlaceHolder>
+		<asp:ContentPlaceHolder ID="ApmAgentScriptPlaceHolder" runat="server">
+			<% InjectClientsideApmAgent(); %>
+		</asp:ContentPlaceHolder>
+		
+	</head>
+	<body data-sitemap-state="<%: Html.SiteMapState() %>"
+		data-dateformat="<%: Html.Setting("DateTime/DateFormat", CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern) %>"
+		data-timeformat="<%: Html.Setting("DateTime/TimeFormat", CultureInfo.CurrentCulture.DateTimeFormat.ShortTimePattern) %>"
+		data-datetimeformat="<%: Html.Setting("DateTime/DateTimeFormat", string.Format("{0} {1}", Html.Setting("DateTime/DateFormat", CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern), Html.Setting("DateTime/TimeFormat", CultureInfo.CurrentCulture.DateTimeFormat.ShortTimePattern))) %>"
+		data-app-path="<%: Url.Content("~/") %>"
+		data-ckeditor-basepath="<%: Url.Content("~/js/ckeditor/") %>"
+		data-case-deflection-url="<%: Html.GetPortalScopedRouteUrlByName("PortalSearch") %>">
+		<asp:ContentPlaceHolder ID="HeaderNavbar" runat="server">
+			<% if (Html.BooleanSetting("Header/OutputCache/Enabled").GetValueOrDefault(false)) { %>
+				<% Html.RenderAction("Header", "Layout", new { area = "Portal" }); %>
+			<% } else { %>
+				<% Html.RenderPartial("~/Areas/Portal/Views/Layout/Header.ascx"); %>
+			<% } %>
+		</asp:ContentPlaceHolder>
+		<!-- add anti-forgery token-->
+		<div id="antiforgerytoken" data-url="<%: Url.Action("GetAntiForgeryToken", "Layout",new { area = "Portal" } ) %>"></div>
+		<%: System.Web.Optimization.Scripts.Render("~/js/default.preform.bundle.js") %>
+		
+		<asp:ContentPlaceHolder ID="ContentContainer" runat="server">
+			<asp:ContentPlaceHolder ID="ContentHeader" runat="server"/>
+			<div id="content-container" class="container">
+				<div id="content">
+					<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+				</div>
+			</div>
+		</asp:ContentPlaceHolder>
+		<asp:ContentPlaceHolder ID="Footer" runat="server">
+			<% if (Html.BooleanSetting("Footer/OutputCache/Enabled").GetValueOrDefault(false)) { %>
+				<% Html.RenderAction("Footer", "Layout", new { area = "Portal" }); %>
+			<% } else { %>
+				<% Html.RenderPartial("~/Areas/Portal/Views/Layout/Footer.ascx"); %>
+			<% } %>
+		</asp:ContentPlaceHolder>
+		<%: Html.EntityEditingMetadata() %>
+		<%: Html.EditingStyles(new []
+			{
+				"~/xrm-adx/css/yui-skin-sam-2.9.0/skin.css",
+				"~/js/select2/select2.css"
+			}) %>
+		<%: Html.EditingScripts(dependencyScriptPaths: new []
+			{
+				"~/xrm-adx/js/yui-2.9.0-combo.min.js",
+				"~/xrm-adx/js/jquery-ui-1.10.0.min.js",
+				"~/js/select2/select2.min.js",
+				"~/js/select2/select2_locale_all.js"
+			}, extensionScriptPaths: new string[] {}) %>
+		<%: LocalizedScripts.Render("~/js/default.bundle.js") %>
+		<asp:ContentPlaceHolder ID="Scripts" runat="server"/>
+		<%: Html.ScriptAttribute("adx_customjavascript") %>
+		<%= Html.SnippetLiteral("Tracking Code") %>
+		<asp:ContentPlaceHolder ID="ChatWidgetContainer" runat="server">
+			<%= !(bool)(this.Request.RequestContext.RouteData.Values["DisableChatWidget"] ?? false) ? Html.SnippetLiteral("Chat Widget Code") : string.Empty %>
+		</asp:ContentPlaceHolder>
+	</body>
+</html>
+<!-- Generated at <%: DateTime.UtcNow %> -->
+<!-- Page OK -->

@@ -1,0 +1,22 @@
+﻿.connection-panel {
+    margin-top: 60px;
+}
+
+.addon { display: inline-block; }
+
+@media (max-width: 768px) {
+	.addon {
+		max-width: 120px;
+		overflow: hidden;
+		-moz-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+	}
+}
+
+.popover {
+	max-width: 600px;
+}
+
+.breadcrumb {
+	margin-bottom: 0;
+}

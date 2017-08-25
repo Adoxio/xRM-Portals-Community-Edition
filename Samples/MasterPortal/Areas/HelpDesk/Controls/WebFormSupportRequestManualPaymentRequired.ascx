@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="WebFormSupportRequestManualPaymentRequired.ascx.cs" Inherits="Site.Areas.HelpDesk.Controls.WebFormSupportRequestManualPaymentRequired" %>
+<adx:Snippet  runat="server" SnippetName="Help Desk Manual Payment Required Message" DefaultText="<%$ ResourceManager:Support_Plan_Purchase_Required_Message %>" Editable="true" EditType="html"/>

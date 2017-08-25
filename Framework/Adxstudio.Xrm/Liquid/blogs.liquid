@@ -1,0 +1,38 @@
+﻿{% assign posts = blogs.posts | order_by: 'adx_date', 'desc' | paginate: 0, 4 -%}
+
+<div class="content-panel panel panel-default">
+	<div class="panel-heading">
+		{% assign sitemarker = sitemarkers["Blog Home"] %}
+		{% if sitemarker %}
+		<a class="pull-right" href="{{ sitemarker.url | h }}">{{ snippets['Home All Blogs Link Text'] | default: resx['All_Blogs_DefaultText'] | h }}</a>
+		{% endif %}
+		<h4>
+			{%- assign blog_feed_title = snippets['Blog Subscribe Heading'] | default: resx['Subscribe_To_Blogs_DefaultText'] | h -%}
+			<a class="feed-icon fa fa-rss-square" href="{{ blogs.feed_url | h }}" title="{{ blog_feed_title }}">
+				<span class="sr-only">{{ blog_feed_title }}</span>
+			</a>
+			{{ snippets["Home Blog Activity Heading"] | default: resx['Blogs_DefaultText'] | h }}
+		</h4>
+	</div>
+	<ul class="list-group">
+		{% for post in posts.all %}
+		<li class="list-group-item">
+			<a class="user-avatar" {% if post.author.url %}href="{{ post.author.url | h }}"{% endif %}>
+				<img src="{{ post.author.image_url }}" alt="{{ post.author.name | h }}" />
+			</a>
+			<h4 class="list-group-item-heading">
+				<a href="{{ post.url | h }}">{{ post.title | h }}</a>
+			</h4>
+			<div class="content-metadata">
+				<abbr class="{% if post.publish_date > now %}posttime{% else %}timeago{% endif %}">{{ post.publish_date | date: 'r' | h }}</abbr>
+				&ndash;
+				<a href="{{ post.author.url | h }}">{{ post.author.name | h }}</a>
+				&ndash;
+				<a href="{{ post.url | h }}#comments">
+					<span class="fa fa-comment" aria-hidden="true"></span> {{ post.comment_count }}
+				</a>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

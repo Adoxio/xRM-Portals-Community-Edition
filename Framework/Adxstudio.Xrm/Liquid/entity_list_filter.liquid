@@ -1,0 +1,70 @@
+﻿{% entitylist key:key %}
+
+{% assign filters = entitylist | metafilters: params.mf, entityview %}
+{% assign pagesize = 6 %}
+
+{% if filters.size > 0 %}
+<div id="EntityList{{ entitylist.id | h }}" class="content-panel panel panel-default entitylist-filter">
+	<div class="panel-body">
+		<ul id="entitylist-filters" class="{% if entitylist.is_filter_vertical %} list-unstyled {% else %} list-inline {% endif %}">
+		{% for filter in filters %}
+			{% assign filter_element_id = filter.selection_mode | downcase | append: '_' | append: filter.id | h %}
+			<li class="entitylist-filter-option-group">
+				<label class="entitylist-filter-option-group-label h4" data-filter-id="{{ filter.id | h }}" for="{{ filter_element_id }}">
+					{{ filter.label | h }}
+				</label>
+				<ul class="list-unstyled" role="presentation" data-pagesize="{{ pagesize }}">
+				{% if filter.selection_mode == 'Dropdown' %}
+					<li class="entitylist-filter-option">
+						<div class="input-group entitylist-filter-option-text">
+							<span class="input-group-addon"><span class="fa fa-filter" aria-hidden="true"></span></span>
+							<select class="form-control" name="{{ filter.id | h }}" id="{{ filter_element_id }}">
+								<option value="" label=" "></option>
+								{% for option in filter.options %}
+								<option value="{{ option.id | h }}" label="{{ option.label | h }}" {% if option.checked %} selected {% endif %}>
+									{{ option.label | h }}
+								</option>
+								{% endfor %}
+							</select>
+						</div>
+					</li>
+				{% else %}
+					{% for option in filter.options limit:6 %}
+					<li class="entitylist-filter-option">
+						{% if option.type == 'text' %}
+						<div class="input-group entitylist-filter-option-text">
+							<span class="input-group-addon">
+								<span class="fa fa-filter" aria-hidden="true"></span>
+							</span>
+							<input class="form-control" type="text" name="{{ filter.id | h }}" value="{{ option.text | h }}" id="{{ filter_element_id }}" />
+						</div>
+						{% else %}
+							{% if filter.selection_mode == 'Single' %}
+								{% assign type = 'radio' %}
+							{% else %}
+								{% assign type = 'checkbox' %}
+							{% endif %}
+						<div class="{{ type | h }}">
+							<label>
+								<input type="{{ type | h }}" name="{{ filter.id | h }}" value="{{ option.id | h }}" {% if option.checked %} checked="checked" data-checked="true" {% endif %} />
+								{{ option.label | h }}
+							</label>
+						</div>
+						{% endif %}
+					</li>
+					{% endfor %}
+				{% endif %}
+				</ul>
+			</li>
+			{% endfor %}
+		</ul>
+		<div class="pull-right">
+			<button class="btn btn-default btn-entitylist-filter-submit" data-serialized-query="mf" data-target="#EntityList{{ entitylist.id | h }}">
+				{{ entitylist.filter_apply_label }}
+			</button>
+		</div>
+	</div>
+</div>
+{% endif %}
+
+{% endentitylist %}

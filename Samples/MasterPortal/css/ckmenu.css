@@ -1,0 +1,150 @@
+﻿.hc_button__bold_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-24px;
+}
+.hc_button__cut_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-312px;
+}
+.hc_button__copy_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-264px;
+}
+.hc_button__paste_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-360px;
+}
+.hc_button__pastefromword_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1608px;
+}
+.hc_button__undo_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-2208px;
+}
+.hc_button__redo_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-2160px;
+}
+.hc_button__link_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1296px;
+}
+.hc_button__unlink_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1320px;
+}
+.hc_button__image_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1008px;
+}
+.hc_button__table_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-2040px;
+}
+.hc_cke_button__horizontalrule_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-960px;
+}
+.hc_button__specialchar_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-2016px;
+}
+.hc_button__maximize_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1464px;
+}
+.hc_button__source_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1944px;
+}
+.hc_button__italic_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-48px;
+}
+.hc_button__strike_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-72px;
+}
+.hc_button__removeformat_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1776px;
+}
+.hc_button__bulletedlist_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1368px;
+}
+.hc_button__outdent_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1104px;
+}
+.hc_button__indent_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1056px;
+}
+.hc_button__blockquote_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-216px;
+}
+.hc_button__horizontalrule_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-960px;
+}
+.hc_button__pastetext_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1656px;
+}
+.hc_button__numberedlist_icon:before{
+    content:url('../js/ckeditor/skins/moono/icons.png');
+    position:relative;
+    left:0px;
+    top:-1416px;
+}
