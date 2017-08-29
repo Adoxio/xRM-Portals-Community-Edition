@@ -120,7 +120,7 @@ namespace Site.Areas.Portal.Controllers
 					return formattedText;
 
 				}
-				catch (Exception e)
+				catch (Exception)
 				{
 					return null;
 				}
