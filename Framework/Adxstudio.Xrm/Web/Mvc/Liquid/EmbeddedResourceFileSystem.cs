@@ -14,7 +14,6 @@ using DotLiquid;
 using DotLiquid.Exceptions;
 using Microsoft.Xrm.Client;
 using Newtonsoft.Json.Linq;
-using Adxstudio.Xrm.Resources;
 
 namespace Adxstudio.Xrm.Web.Mvc.Liquid
 {
