@@ -31,7 +31,6 @@ using Microsoft.Xrm.Sdk.Query;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Adxstudio.Xrm.Resources;
-using Adxstudio.Xrm.AspNet.Cms;
 
 namespace Adxstudio.Xrm.Web.UI
 {
