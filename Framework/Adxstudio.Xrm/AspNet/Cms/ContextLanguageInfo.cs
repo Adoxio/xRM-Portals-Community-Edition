@@ -1061,7 +1061,6 @@ namespace Adxstudio.Xrm.AspNet.Cms
 		public static ApplicationPath FormatUrl(string languageCode, Uri uri, bool displayCodeInUrl, bool excludeLeadingSlash = false)
 		{
 			string absolutePathWithoutLanguageCode;
-			string query;
 			IEnumerable<IWebsiteLanguage> languages = GetActiveWebsiteLanguages();
 
 			// Extract the absolute path without language code from the given Uri.

@@ -346,7 +346,7 @@ namespace Adxstudio.Xrm.Cms
 						}
 
 					}
-					catch (FaultException<OrganizationServiceFault> fe)
+					catch (FaultException<OrganizationServiceFault>)
 					{
 						// an exception occurs when trying to retrieve a non-existing entity
 						ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("An exception occurs when trying to retrieve a non-existing entity"));
