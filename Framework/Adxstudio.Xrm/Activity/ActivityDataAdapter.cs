@@ -13,7 +13,7 @@ namespace Adxstudio.Xrm.Activity
 	using Adxstudio.Xrm.Security;
 	using Adxstudio.Xrm.Services.Query;
 	using Adxstudio.Xrm.Notes;
-using Adxstudio.Xrm.Services;
+	using Adxstudio.Xrm.Services;
 	using Adxstudio.Xrm.Web.UI;
 	using Adxstudio.Xrm.Web.UI.CrmEntityListView;
 	using Microsoft.Xrm.Client;
@@ -24,7 +24,6 @@ using Adxstudio.Xrm.Services;
 	using Adxstudio.Xrm.Text;
 	using Microsoft.Practices.ObjectBuilder2;
 	using Filter = Adxstudio.Xrm.Services.Query.Filter;
-	using Adxstudio.Xrm.Services;
 
 	/// <summary>
 	/// Data Adapter for ActivityPointer related data access.
