@@ -19,7 +19,6 @@ using Microsoft.Xrm.Client.Services;
 using Microsoft.Xrm.Portal.Configuration;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Client;
-using Adxstudio.Xrm.Resources;
 
 namespace Adxstudio.Xrm.Web.UI.WebControls
 {
