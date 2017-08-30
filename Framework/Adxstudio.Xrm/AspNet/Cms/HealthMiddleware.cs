@@ -20,11 +20,6 @@ namespace Adxstudio.Xrm.AspNet.Cms
 	public class HealthMiddleware : OwinMiddleware
 	{
 		/// <summary>
-		/// info string
-		/// </summary>
-		private static string info;
-
-		/// <summary>
 		/// path string for health.
 		/// </summary>
 		private readonly PathString callbackPath = new PathString("/_services/about/health");
