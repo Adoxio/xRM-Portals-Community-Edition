@@ -13,7 +13,7 @@ namespace Adxstudio.Xrm.Activity
 	using Adxstudio.Xrm.Security;
 	using Adxstudio.Xrm.Services.Query;
 	using Adxstudio.Xrm.Notes;
-    using Adxstudio.Xrm.Services;
+	using Adxstudio.Xrm.Services;
 	using Adxstudio.Xrm.Web.UI;
 	using Adxstudio.Xrm.Web.UI.CrmEntityListView;
 	using Microsoft.Xrm.Client;
