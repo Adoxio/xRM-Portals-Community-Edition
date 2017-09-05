@@ -439,7 +439,7 @@ namespace Adxstudio.Xrm.Web.Providers
 			return null;
 		}
 
-		private static ApplicationPath JoinApplicationPath(string basePath, string extendedPath)
+		private new ApplicationPath JoinApplicationPath(string basePath, string extendedPath)
 		{
 			if (string.IsNullOrWhiteSpace(basePath) || basePath.Contains("?") || basePath.Contains(":") || basePath.Contains("//") || basePath.Contains("&")
 				|| basePath.Contains("%3f") || basePath.Contains("%2f%2f") || basePath.Contains("%26"))
