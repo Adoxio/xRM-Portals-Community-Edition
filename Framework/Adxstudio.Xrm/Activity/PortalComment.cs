@@ -29,7 +29,7 @@ namespace Adxstudio.Xrm.Activity
 		public PortalCommentDirectionCode DirectionCode { get; set; }
 		public Entity From { get; set; }
 		public Entity To { get; set; }
-		public IEnumerable<IAnnotationFile> FileAttachments { get; set; }
+		public new IEnumerable<IAnnotationFile> FileAttachments { get; set; }
 		public IAnnotationSettings AttachmentSettings { get; set; }
 		public Guid ActivityId { get; set; }
 	}
