@@ -297,3 +297,7 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# xRM Portals Community Edition files
+# temporary files are generated at runtime in the App_Data folder
+/Samples/MasterPortal/App_Data/
