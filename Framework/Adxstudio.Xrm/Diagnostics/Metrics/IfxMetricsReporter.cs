@@ -111,9 +111,9 @@ namespace Adxstudio.Xrm.Diagnostics.Metrics
 
 #if CLOUDINSTRUMENTATION
 		readonly ConcurrentDictionary<IAdxMetric, MeasureMetric10D> _metricsCache = new ConcurrentDictionary<IAdxMetric, MeasureMetric10D>();
-#endif
 		readonly string _mdmAccountName, _mdmNamespace, _geo, _tenant, _role, _roleInstance, _org, _portalType, _portalId, _portalApp, _portalUrl, _portalVersion;
 		readonly bool _initializationFailed;
+#endif
 
 		private IfxMetricsReporter()
 		{
