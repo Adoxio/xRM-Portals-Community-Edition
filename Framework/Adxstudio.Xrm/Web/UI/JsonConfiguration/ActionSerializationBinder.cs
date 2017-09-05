@@ -24,7 +24,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 			{
 				if (_knownTypes == null)
 				{
-					return new List<Type>
+					_knownTypes = new List<Type>
 					{
 						typeof(ViewLayout),
 						typeof(Order),
