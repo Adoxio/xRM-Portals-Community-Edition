@@ -1050,7 +1050,7 @@ namespace Adxstudio.Xrm.EntityList
 			{
 				if (_knownTypes == null)
 				{
-					return new List<Type>
+					_knownTypes = new List<Type>
 					{
 						typeof(PackageConfiguration)
 					};
