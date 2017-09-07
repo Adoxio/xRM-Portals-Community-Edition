@@ -115,7 +115,7 @@ namespace Site.Helpers
 		private static string GetAccountRegistrationUrl(UrlHelper url, string actionName, string returnUrl, string invitationCode)
 		{
 			var returnLocalUrl = GetReturnUrl(url.RequestContext.HttpContext.Request, returnUrl);
-			return url.Action(actionName, new { returnUrl = returnLocalUrl, invitationCode });
+			return url.RouteUrl(actionName, new { returnUrl = returnLocalUrl, invitationCode });
 		}
 
 		private static AuthenticationSettings GetAuthenticationSettings(this UrlHelper url)
