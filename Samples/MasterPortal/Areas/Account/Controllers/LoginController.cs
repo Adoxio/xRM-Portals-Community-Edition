@@ -816,8 +816,6 @@ namespace Site.Areas.Account.Controllers
 				{
 					ADXTrace.Instance.TraceInfo(TraceCategory.Application, "Attempting to retrieve user from Graph with UPN ");
 
-					AggregateException exception = null;
-
 					// when we call this, the client will try to retrieve a token from GetAuthTokenTask()
 					user = await client.Me.ExecuteAsync();
 						

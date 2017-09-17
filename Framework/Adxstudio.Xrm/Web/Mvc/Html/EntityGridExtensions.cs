@@ -846,7 +846,6 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 			DisassociateActionLink disassociateAction = null;
 			WorkflowActionLink workflowAction = null;
 			List<CreateRelatedRecordActionLink> createRelatedRecordActionLinks = null;
-			CreateRelatedRecordActionLink createRelatedRecordActionLink = null;
 
 			var defaultFilterDisplayNameChanged = false;
 			var defaultFilterDisplayName = _defaultLookupEntityGridToggleFilterDisplayName;
