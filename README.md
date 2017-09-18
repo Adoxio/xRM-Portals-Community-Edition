@@ -27,7 +27,7 @@ The `MasterPortal` web application  deployment is dependent upon schema (solutio
 
 A full description of the deployment process is described in the file `Self-hosted_Installation_Guide_for_Portals.pdf` available for download on the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=55789).
 
-**Note:** If you are publishing `MasterPortal` to an IIS server that is running IIS 7.5, you will need to install the [IIS Application Initialization module](https://www.iis.net/downloads/microsoft/application-initialization) if it is not already installed on the publishing server.  Scroll down to th bottom of the [page](https://www.iis.net/downloads/microsoft/application-initialization#additionalDownloads) as the "Install this extension" link at the top does not work.
+**Note:** If you are publishing `MasterPortal` to an IIS server that is running IIS 7.5, you will need to install the [IIS Application Initialization module](https://www.iis.net/downloads/microsoft/application-initialization) if it is not already installed on the publishing server. Use the appropriate download link at the [bottom of the page](https://www.iis.net/downloads/microsoft/application-initialization#additionalDownloads) as the *Install this extension* link at the top does not work.
 
 ## Support
 
