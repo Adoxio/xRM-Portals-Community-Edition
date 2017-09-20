@@ -129,7 +129,7 @@ namespace Adxstudio.Xrm.Cms.Security
 
 			// when we use rule scope we're checking permissions for parent page of web file
 			//	and we need to check permissions only for one level
-			var useInheritance = !useScope;
+			var useInheritance = !useScope || right == CrmEntityRight.Change;
 
 			// Get all rules applicable to the page and its parent path, grouping equivalent rules. (Rules that
 			// target the same web page and confer the same right are equivalent.)
