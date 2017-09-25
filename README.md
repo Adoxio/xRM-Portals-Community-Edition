@@ -27,7 +27,21 @@ The `MasterPortal` web application  deployment is dependent upon schema (solutio
 
 A full description of the deployment process is described in the file `Self-hosted_Installation_Guide_for_Portals.pdf` available for download on the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=55789).
 
-**Note:** If you are publishing `MasterPortal` to an IIS server that is running IIS 7.5, you will need to install the [IIS Application Initialization module](https://www.iis.net/downloads/microsoft/application-initialization) if it is not already installed. Use the appropriate download link at the [bottom of the page](https://www.iis.net/downloads/microsoft/application-initialization#additionalDownloads) as the *Install this extension* link at the top does not work.
+## System Requirements
+
+The following system requirements are additional to those listed in `Self-hosted_Installation_Guide_for_Portals.pdf`:
+
+- The website must be set to run in 64-bit mode:
+
+  IIS Application Pool:
+   
+  ![image](https://user-images.githubusercontent.com/10599498/30821566-03ec5466-a1e3-11e7-80bd-bb0b1c724452.png)
+
+  Azure Web App:
+   
+  ![image](https://user-images.githubusercontent.com/10599498/30821633-468576ae-a1e3-11e7-8b45-e55df1742629.png)
+
+- IIS 7.5 (Windows 7 or Windows Server 2008 R2) requires the installation of the [IIS Application Initialization module](https://www.iis.net/downloads/microsoft/application-initialization). Use the `x64` download link at the [bottom of the page](https://www.iis.net/downloads/microsoft/application-initialization#additionalDownloads).
 
 ## Support
 
