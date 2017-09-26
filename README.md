@@ -1,6 +1,6 @@
 # xRM Portals Community Edition
 
-xRM Portals Community Edition is a fork of the open sourced version of [Microsoft Dynamics 365 Customer Engagement Portals](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365). From a versioning standpoint it continues from the [announced one-time release of Portals source code](https://roadmap.dynamics.com/?i=4ba3b9c2-c92a-e711-80c0-00155d2433a1) made available on the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=55789) under the MIT license.
+xRM Portals Community Edition is a fork of the open source release of [Microsoft Dynamics 365 Customer Engagement Portals](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365) version 8.3. It continues from the [announced one-time release of Portals source code](https://roadmap.dynamics.com/?i=e2f80f10-118c-e711-8118-3863bb36dd08#) made available on the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=55789) under the MIT license.
 
 xRM Portals Community Edition enables portal deployments for Dynamics 365 online and on-premises environments, and allows developers to customize the code to suit their specific business needs.
 
