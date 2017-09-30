@@ -28,9 +28,9 @@
     <TargetFrameworkProfile />
     <NativeDllPath>..\..\packages\Microsoft.Cloud.InstrumentationFramework.3.0.4.146\build\native\lib</NativeDllPath>
     <UseGlobalApplicationHostFile />
-    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\Solutions\MasterPortalSolution\</SolutionDir>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='SelfHosted'">
     <SolutionDir>..\..\Solutions\Portals\</SolutionDir>
@@ -44,10 +44,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\..\Build\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -58,7 +57,8 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+    <CodeAnalysisRuleSet>..\..\Build\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <ItemGroup Condition="Exists('..\..\packages\Microsoft.Cloud.InstrumentationFramework.3.0.4.146\lib\net40\Microsoft.Cloud.InstrumentationFramework.Metrics.dll')">
     <Content Include="$(NativeDllPath)\IfxEvents.dll">
@@ -484,28 +484,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="App_Start\FilterConfig.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="Areas\Account\LanguageActionFilterAttribute.cs" />
-    <Compile Include="Areas\Account\Models\IdentityConfig.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="App_Start\RouteConfig.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="App_Start\SetupConfig.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="App_Start\Startup.Auth.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\AccountManagement\AccountManagementAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Account\Models\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SetupConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\AccountManagement\AccountManagementAreaRegistration.cs" />
     <Compile Include="Areas\AccountManagement\Pages\CreatePortalContact.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>CreatePortalContact.aspx</DependentUpon>
@@ -524,9 +510,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>EditPortalContact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\AccountManagement\Enums.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\AccountManagement\Enums.cs" />
     <Compile Include="Areas\AccountManagement\Pages\ManageParentAccount.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ManageParentAccount.aspx</DependentUpon>
@@ -545,37 +529,17 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ManageUserContactRoles.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Account\AccountAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Account\Controllers\LoginController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Account\Controllers\ManageController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Account\ExternalLoginAttribute.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Account\LocalLoginAttribute.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Account\Models\IdentityModels.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Account\Models\LoginManager.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Account\AccountAreaRegistration.cs" />
+    <Compile Include="Areas\Account\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Account\Controllers\ManageController.cs" />
+    <Compile Include="Areas\Account\ExternalLoginAttribute.cs" />
+    <Compile Include="Areas\Account\LocalLoginAttribute.cs" />
+    <Compile Include="Areas\Account\Models\IdentityModels.cs" />
+    <Compile Include="Areas\Account\Models\LoginManager.cs" />
     <Compile Include="Areas\Account\Models\RegistrationManager.cs" />
-    <Compile Include="Areas\Account\ThrottleAttribute.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Account\ViewModels\LoginViewModels.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Account\ViewModels\ManageViewModels.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Account\ThrottleAttribute.cs" />
+    <Compile Include="Areas\Account\ViewModels\LoginViewModels.cs" />
+    <Compile Include="Areas\Account\ViewModels\ManageViewModels.cs" />
     <Compile Include="Areas\Account\Views\Login\Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -583,12 +547,8 @@
     <Compile Include="Areas\Account\Views\Login\Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Blogs\BlogsAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Careers\CareersAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Blogs\BlogsAreaRegistration.cs" />
+    <Compile Include="Areas\Careers\CareersAreaRegistration.cs" />
     <Compile Include="Areas\Careers\Pages\Careers.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Careers.aspx</DependentUpon>
@@ -598,21 +558,11 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Careers.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\CaseManagement\CaseManagementAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\CaseManagement\Controllers\EntitlementsController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Category\CategoryAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Category\Controllers\CategoryController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Category\ViewModels\CategoryViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\CaseManagement\CaseManagementAreaRegistration.cs" />
+    <Compile Include="Areas\CaseManagement\Controllers\EntitlementsController.cs" />
+    <Compile Include="Areas\Category\CategoryAreaRegistration.cs" />
+    <Compile Include="Areas\Category\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Category\ViewModels\CategoryViewModel.cs" />
     <Compile Include="Areas\Category\Views\Category\Index.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Index.aspx</DependentUpon>
@@ -630,21 +580,11 @@
     <Compile Include="Areas\Chat\Models\LivePerson\LivePersonSdesService.cs" />
     <Compile Include="Areas\Chat\Models\LivePerson\LivePersonService.cs" />
     <Compile Include="Areas\Chat\Models\LivePerson\LivePersonDate.cs" />
-    <Compile Include="Areas\Cms\CmsAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Cms\Controllers\AdController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Cms\Controllers\PollController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Commerce\CommerceAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Commerce\Controllers\ShoppingCartController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Cms\CmsAreaRegistration.cs" />
+    <Compile Include="Areas\Cms\Controllers\AdController.cs" />
+    <Compile Include="Areas\Cms\Controllers\PollController.cs" />
+    <Compile Include="Areas\Commerce\CommerceAreaRegistration.cs" />
+    <Compile Include="Areas\Commerce\Controllers\ShoppingCartController.cs" />
     <Compile Include="Areas\Commerce\Controls\ShoppingCart.ascx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ShoppingCart.ascx</DependentUpon>
@@ -685,12 +625,8 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>WebFormPurchaseSummary.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Commerce\Enums.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Commerce\QuoteFunctions.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Commerce\Enums.cs" />
+    <Compile Include="Areas\Commerce\QuoteFunctions.cs" />
     <Compile Include="Areas\Commerce\Pages\OrderStatus.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>OrderStatus.aspx</DependentUpon>
@@ -736,9 +672,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Community\CommunityAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Community\CommunityAreaRegistration.cs" />
     <Compile Include="Areas\Community\Pages\Home.facebook.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.facebook.aspx</DependentUpon>
@@ -748,12 +682,8 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.facebook.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Company\CompanyAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Company\NewsFeedHandler.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Company\CompanyAreaRegistration.cs" />
+    <Compile Include="Areas\Company\NewsFeedHandler.cs" />
     <Compile Include="Areas\Company\Pages\Home.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.aspx</DependentUpon>
@@ -763,9 +693,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Conference\ConferenceAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Conference\ConferenceAreaRegistration.cs" />
     <Compile Include="Areas\Conference\Pages\Conference.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Conference.aspx</DependentUpon>
@@ -811,48 +739,20 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Sponsors.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\CustomerManagement\Enums.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\KnowledgeManagement\Controllers\ArticleController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\KnowledgeManagement\KnowledgeManagementAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\KnowledgeManagement\ViewModels\ArticleCommentsViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\KnowledgeManagement\ViewModels\ArticleViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Marketing\Controllers\MarketingController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Marketing\MarketingAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Portal\Controllers\EntityActivityController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Portal\Controllers\ResourcesController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Portal\Controllers\SharePointGridController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Portal\Controllers\EntityNotesController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Portal\Controllers\EntityGridController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Portal\Controllers\LayoutController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Portal\EntityRecord.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\CustomerManagement\Enums.cs" />
+    <Compile Include="Areas\KnowledgeManagement\Controllers\ArticleController.cs" />
+    <Compile Include="Areas\KnowledgeManagement\KnowledgeManagementAreaRegistration.cs" />
+    <Compile Include="Areas\KnowledgeManagement\ViewModels\ArticleCommentsViewModel.cs" />
+    <Compile Include="Areas\KnowledgeManagement\ViewModels\ArticleViewModel.cs" />
+    <Compile Include="Areas\Marketing\Controllers\MarketingController.cs" />
+    <Compile Include="Areas\Marketing\MarketingAreaRegistration.cs" />
+    <Compile Include="Areas\Portal\Controllers\EntityActivityController.cs" />
+    <Compile Include="Areas\Portal\Controllers\ResourcesController.cs" />
+    <Compile Include="Areas\Portal\Controllers\SharePointGridController.cs" />
+    <Compile Include="Areas\Portal\Controllers\EntityNotesController.cs" />
+    <Compile Include="Areas\Portal\Controllers\EntityGridController.cs" />
+    <Compile Include="Areas\Portal\Controllers\LayoutController.cs" />
+    <Compile Include="Areas\Portal\EntityRecord.cs" />
     <Compile Include="Areas\Portal\Pages\QuickForm.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>QuickForm.aspx</DependentUpon>
@@ -871,28 +771,16 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Form.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Portal\PortalAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\EntityList\Controllers\CalendarController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Portal\PortalAreaRegistration.cs" />
+    <Compile Include="Areas\EntityList\Controllers\CalendarController.cs" />
     <Compile Include="Areas\EntityList\Controllers\ODataEntitySetController.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Areas\EntityList\Controllers\MapController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\EntityList\Controllers\PackageRepositoryController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\EntityList\EntityListAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\EntityList\Helpers\PackageRepositoryHelpers.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\EntityList\Controllers\MapController.cs" />
+    <Compile Include="Areas\EntityList\Controllers\PackageRepositoryController.cs" />
+    <Compile Include="Areas\EntityList\EntityListAreaRegistration.cs" />
+    <Compile Include="Areas\EntityList\Helpers\PackageRepositoryHelpers.cs" />
     <Compile Include="Areas\EntityList\Pages\Gallery.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Gallery.aspx</DependentUpon>
@@ -1010,9 +898,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Subject.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\KnowledgeBase\ViewModels\RelatedArticle.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\KnowledgeBase\ViewModels\RelatedArticle.cs" />
     <Compile Include="Areas\Permits\Controls\WebFormPermitManualPaymentRequired.ascx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>WebFormPermitManualPaymentRequired.ascx</DependentUpon>
@@ -1058,18 +944,10 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Permits.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Permits\PermitsAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Portal\ViewModels\LayoutColumn.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Products\Controllers\ProductsController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Products\Controllers\ReviewController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Permits\PermitsAreaRegistration.cs" />
+    <Compile Include="Areas\Portal\ViewModels\LayoutColumn.cs" />
+    <Compile Include="Areas\Products\Controllers\ProductsController.cs" />
+    <Compile Include="Areas\Products\Controllers\ReviewController.cs" />
     <Compile Include="Areas\Products\MasterPages\Products.master.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Products.master</DependentUpon>
@@ -1097,15 +975,9 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ProductCollections.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Products\ProductsAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Products\ViewModels\ProductImageGalleryViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Products\ViewModels\ProductViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Products\ProductsAreaRegistration.cs" />
+    <Compile Include="Areas\Products\ViewModels\ProductImageGalleryViewModel.cs" />
+    <Compile Include="Areas\Products\ViewModels\ProductViewModel.cs" />
     <Compile Include="Areas\Retail\Pages\Home.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.aspx</DependentUpon>
@@ -1124,9 +996,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>MyAccount.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Retail\RetailAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Retail\RetailAreaRegistration.cs" />
     <Compile Include="Areas\Service311\Controls\WebFormServiceRequestKbArticles.ascx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>WebFormServiceRequestKbArticles.ascx</DependentUpon>
@@ -1163,18 +1033,10 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>WebFormServiceRequestResolveDuplicates.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Setup\Controllers\SetupController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Setup\Models\SetupViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Setup\SetupRoute.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Setup\SetupManager.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Setup\Controllers\SetupController.cs" />
+    <Compile Include="Areas\Setup\Models\SetupViewModel.cs" />
+    <Compile Include="Areas\Setup\SetupRoute.cs" />
+    <Compile Include="Areas\Setup\SetupManager.cs" />
     <Compile Include="Controls\BlogsPanel.ascx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>BlogsPanel.ascx</DependentUpon>
@@ -1237,9 +1099,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ConferenceSessions.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\ContactUs\ContactUsAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\ContactUs\ContactUsAreaRegistration.cs" />
     <Compile Include="Areas\ContactUs\Pages\ContactUs.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ContactUs.aspx</DependentUpon>
@@ -1249,9 +1109,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\CustomerManagement\CustomerManagementAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\CustomerManagement\CustomerManagementAreaRegistration.cs" />
     <Compile Include="Areas\CustomerManagement\Pages\ReadOnlyAccountView.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ReadOnlyAccountView.aspx</DependentUpon>
@@ -1324,9 +1182,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ReadOnlyContactView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Customer\CustomerAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Customer\CustomerAreaRegistration.cs" />
     <Compile Include="Areas\Customer\Pages\Home.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.aspx</DependentUpon>
@@ -1336,15 +1192,9 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Events\EventsAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Forums\ForumsAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Government\GovernmentAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Events\EventsAreaRegistration.cs" />
+    <Compile Include="Areas\Forums\ForumsAreaRegistration.cs" />
+    <Compile Include="Areas\Government\GovernmentAreaRegistration.cs" />
     <Compile Include="Areas\Government\Pages\Home.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.aspx</DependentUpon>
@@ -1354,9 +1204,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\HelpDesk\HelpDeskAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\HelpDesk\HelpDeskAreaRegistration.cs" />
     <Compile Include="Areas\HelpDesk\Pages\CreateCase.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>CreateCase.aspx</DependentUpon>
@@ -1366,33 +1214,15 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>CreateCase.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\HelpDesk\ProductTypeCode.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Ideas\IdeasAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Issues\IssuesAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\KnowledgeBase\Controllers\ArticleController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\KnowledgeBase\KnowledgeBaseAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\KnowledgeBase\ViewModels\ArticleViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Opportunities\Enums.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Opportunities\OpportunitiesAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Opportunities\OrganizationServiceContextExtensions.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\HelpDesk\ProductTypeCode.cs" />
+    <Compile Include="Areas\Ideas\IdeasAreaRegistration.cs" />
+    <Compile Include="Areas\Issues\IssuesAreaRegistration.cs" />
+    <Compile Include="Areas\KnowledgeBase\Controllers\ArticleController.cs" />
+    <Compile Include="Areas\KnowledgeBase\KnowledgeBaseAreaRegistration.cs" />
+    <Compile Include="Areas\KnowledgeBase\ViewModels\ArticleViewModel.cs" />
+    <Compile Include="Areas\Opportunities\Enums.cs" />
+    <Compile Include="Areas\Opportunities\OpportunitiesAreaRegistration.cs" />
+    <Compile Include="Areas\Opportunities\OrganizationServiceContextExtensions.cs" />
     <Compile Include="Areas\Opportunities\Pages\AcceptedOpportunities.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>AcceptedOpportunities.aspx</DependentUpon>
@@ -1429,12 +1259,8 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>OpportunityDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Partner\Enums.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Partner\OrganizationServiceContextExtensions.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Partner\Enums.cs" />
+    <Compile Include="Areas\Partner\OrganizationServiceContextExtensions.cs" />
     <Compile Include="Areas\Partner\Pages\Home.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.aspx</DependentUpon>
@@ -1444,57 +1270,23 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Partner\PartnerAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\PublicProfile\PublicProfileAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Issues\Controllers\IssueController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Ideas\Controllers\IdeaController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Ideas\Controllers\IdeasController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Issues\Controllers\IssuesController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Issues\ViewModels\IssueCommentsViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Issues\ViewModels\IssueForumViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Issues\ViewModels\IssuesViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Issues\ViewModels\IssueViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Ideas\ViewModels\IdeaCommentsViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\PublicProfile\Controllers\PublicProfileController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Ideas\ViewModels\IdeaForumViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Ideas\ViewModels\IdeasViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Ideas\ViewModels\IdeaViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\PublicProfile\ViewModels\ProfileViewModel.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Service311\Controllers\MapController.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Partner\PartnerAreaRegistration.cs" />
+    <Compile Include="Areas\PublicProfile\PublicProfileAreaRegistration.cs" />
+    <Compile Include="Areas\Issues\Controllers\IssueController.cs" />
+    <Compile Include="Areas\Ideas\Controllers\IdeaController.cs" />
+    <Compile Include="Areas\Ideas\Controllers\IdeasController.cs" />
+    <Compile Include="Areas\Issues\Controllers\IssuesController.cs" />
+    <Compile Include="Areas\Issues\ViewModels\IssueCommentsViewModel.cs" />
+    <Compile Include="Areas\Issues\ViewModels\IssueForumViewModel.cs" />
+    <Compile Include="Areas\Issues\ViewModels\IssuesViewModel.cs" />
+    <Compile Include="Areas\Issues\ViewModels\IssueViewModel.cs" />
+    <Compile Include="Areas\Ideas\ViewModels\IdeaCommentsViewModel.cs" />
+    <Compile Include="Areas\PublicProfile\Controllers\PublicProfileController.cs" />
+    <Compile Include="Areas\Ideas\ViewModels\IdeaForumViewModel.cs" />
+    <Compile Include="Areas\Ideas\ViewModels\IdeasViewModel.cs" />
+    <Compile Include="Areas\Ideas\ViewModels\IdeaViewModel.cs" />
+    <Compile Include="Areas\PublicProfile\ViewModels\ProfileViewModel.cs" />
+    <Compile Include="Areas\Service311\Controllers\MapController.cs" />
     <Compile Include="Areas\Service311\Controls\WebFormServiceRequestSuccess.ascx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>WebFormServiceRequestSuccess.ascx</DependentUpon>
@@ -1504,9 +1296,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>WebFormServiceRequestSuccess.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Service311\Enums.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Service311\Enums.cs" />
     <Compile Include="Areas\Service311\Pages\Home.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Home.aspx</DependentUpon>
@@ -1561,18 +1351,10 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ServiceRequestStatus.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Service311\Service311AreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Service311\ServiceRequestHelpers.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Service\CalendarHandler.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Service\ServiceAppointmentState.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Service311\Service311AreaRegistration.cs" />
+    <Compile Include="Areas\Service311\ServiceRequestHelpers.cs" />
+    <Compile Include="Areas\Service\CalendarHandler.cs" />
+    <Compile Include="Areas\Service\ServiceAppointmentState.cs" />
     <Compile Include="Areas\Service\Pages\ScheduleService.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ScheduleService.aspx</DependentUpon>
@@ -1600,9 +1382,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ViewScheduledServices.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Service\ServiceAreaRegistration.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Service\ServiceAreaRegistration.cs" />
     <Compile Include="Controls\ChildNavigation.ascx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>ChildNavigation.ascx</DependentUpon>
@@ -1692,24 +1472,12 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>HelpDesk.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GlobalSuppressions.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Helpers\AjaxHelpers.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Issues\IssuePriority.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Areas\Issues\IssueStatus.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Helpers\DataTableExtensions.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Helpers\UrlHelpers.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Helpers\AjaxHelpers.cs" />
+    <Compile Include="Areas\Issues\IssuePriority.cs" />
+    <Compile Include="Areas\Issues\IssueStatus.cs" />
+    <Compile Include="Helpers\DataTableExtensions.cs" />
+    <Compile Include="Helpers\UrlHelpers.cs" />
     <Compile Include="Areas\Blogs\MasterPages\Blogs.master.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Blogs.master</DependentUpon>
@@ -1964,9 +1732,7 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Forum.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Forums\ForumHelpers.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Areas\Forums\ForumHelpers.cs" />
     <Compile Include="Areas\Forums\Pages\Forums.aspx.cs">
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>Forums.aspx</DependentUpon>
@@ -2079,12 +1845,8 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
       <DependentUpon>WebTemplateNoMaster.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
-    <Compile Include="Startup.cs">
-      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
-    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Account\Views\Login\Registration.aspx" />
@@ -3559,7 +3321,6 @@
     <None Include="Properties\PublishProfiles\MasterPortal-Debug.pubxml" />
     <None Include="Properties\PublishProfiles\MasterPortal-Release.pubxml" />
     <Content Include="Site.snk" />
-    <Content Include="Settings.StyleCop" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
@@ -3738,6 +3499,10 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.1.0-beta004\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.1.0-beta004\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -3807,5 +3572,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <Import Project="..\..\Build\StyleCop\StyleCop.Targets" />
 </Project>
