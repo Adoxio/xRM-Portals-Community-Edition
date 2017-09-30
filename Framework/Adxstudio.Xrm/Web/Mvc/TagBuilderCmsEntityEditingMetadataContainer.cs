@@ -49,7 +49,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 
 		public void AddPicklistMetadata(string entityLogicalName, string attributeLogicalName, Dictionary<int, string> options)
 		{
-			var json = options.SerializeByJson(new Type[] {});
+			var json = options.SerializeByJson(new Type[] { });
 
 			var schemaMap = new TagBuilder("span");
 
@@ -99,7 +99,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 		{
 			var json = new JObject
 			{
-				{"tags", new JArray(tags) }
+				{ "tags", new JArray(tags) }
 			};
 
 			var schemaMap = new TagBuilder("span");

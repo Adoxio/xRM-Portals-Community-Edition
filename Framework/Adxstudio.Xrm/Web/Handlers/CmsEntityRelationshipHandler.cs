@@ -29,7 +29,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 	{
 		private static readonly Regex _relationshipSchemaNameRegex = new Regex(@"^(?<schemaName>[^\.]+)(\.(?<entityRole>.+))?$");
 
-		public CmsEntityRelationshipHandler() : this(null, null, null, null, null) {}
+		public CmsEntityRelationshipHandler() : this(null, null, null, null, null) { }
 
 		public CmsEntityRelationshipHandler(string portalName, Guid? portalScopeId, string entityLogicalName, Guid? id, string relationshipSchemaName) : base(portalName, portalScopeId, entityLogicalName, id)
 		{
@@ -168,7 +168,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 
 					WriteResponse(context.Response, new JObject
 					{
-						{"d", new JArray(entityJsonObjects) }
+						{ "d", new JArray(entityJsonObjects) }
 					});
 				}
 				else
@@ -187,7 +187,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 
 					WriteResponse(context.Response, new JObject
 					{
-						{"d", GetEntityJson(context, serviceProvider, portalScopeId, portal, serviceContext, relatedEntity, new CmsEntityMetadata(serviceContext, relatedEntity.LogicalName)) }
+						{ "d", GetEntityJson(context, serviceProvider, portalScopeId, portal, serviceContext, relatedEntity, new CmsEntityMetadata(serviceContext, relatedEntity.LogicalName)) }
 					});
 				}
 
@@ -233,7 +233,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 
 					WriteResponse(context.Response, new JObject
 					{
-						{"d", GetEntityJson(context, serviceProvider, portalScopeId, portal, serviceContext, refetchedEntity, relatedEntityMetadata) }
+						{ "d", GetEntityJson(context, serviceProvider, portalScopeId, portal, serviceContext, refetchedEntity, relatedEntityMetadata) }
 					}, HttpStatusCode.Created);
 				}
 				else
@@ -269,7 +269,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 
 					WriteResponse(context.Response, new JObject
 					{
-						{"d", GetEntityJson(context, serviceProvider, portalScopeId, portal, serviceContext, refetchedEntity, relatedEntityMetadata) }
+						{ "d", GetEntityJson(context, serviceProvider, portalScopeId, portal, serviceContext, refetchedEntity, relatedEntityMetadata) }
 					}, HttpStatusCode.Created);
 				}
 

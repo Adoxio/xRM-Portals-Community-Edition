@@ -258,7 +258,7 @@ namespace Site.Areas.Portal.Controllers
 			{
 				// Soon we will change the UI/controller to accept multiple attachments during the create dialog, so the data adapter takes in a list of attachments
 				portalComment.FileAttachments = new IAnnotationFile[]
-				{AnnotationDataAdapter.CreateFileAttachment(file, settings.StorageLocation) };
+				{ AnnotationDataAdapter.CreateFileAttachment(file, settings.StorageLocation) };
 			}
 
 			var result = dataAdapter.CreatePortalComment(portalComment);

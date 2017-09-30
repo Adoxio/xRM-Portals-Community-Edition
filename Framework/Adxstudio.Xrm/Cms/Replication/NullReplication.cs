@@ -13,16 +13,16 @@ namespace Adxstudio.Xrm.Cms.Replication
 		/// <summary>
 		/// Created Event
 		/// </summary>
-		public void Created() {}
+		public void Created() { }
 
 		/// <summary>
 		/// Deleted Event
 		/// </summary>
-		public void Deleted() {}
+		public void Deleted() { }
 
 		/// <summary>
 		/// Updated Event
 		/// </summary>
-		public void Updated() {}
+		public void Updated() { }
 	}
 }

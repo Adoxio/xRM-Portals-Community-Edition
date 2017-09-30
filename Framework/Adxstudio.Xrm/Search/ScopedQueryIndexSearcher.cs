@@ -10,7 +10,7 @@ namespace Adxstudio.Xrm.Search
 {
 	public class ScopedQueryIndexSearcher : CrmEntityIndexSearcher
 	{
-		public ScopedQueryIndexSearcher(ICrmEntityIndex index) : base(index) {}
+		public ScopedQueryIndexSearcher(ICrmEntityIndex index) : base(index) { }
 
 		protected override Query CreateQuery(ICrmEntityQuery query)
 		{
@@ -39,8 +39,8 @@ namespace Adxstudio.Xrm.Search
 
 			var compositeQuery = new BooleanQuery
 			{
-				{baseQuery, Occur.MUST},
-				{scopeQuery, Occur.MUST}
+				{ baseQuery, Occur.MUST},
+				{ scopeQuery, Occur.MUST}
 			};
 
 			return compositeQuery;

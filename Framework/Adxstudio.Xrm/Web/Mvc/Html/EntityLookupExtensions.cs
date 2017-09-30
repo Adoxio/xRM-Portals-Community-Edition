@@ -223,7 +223,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 			}
 
 			var container = new TagBuilder("div");
-			container.AddCssClass(string.Join(" ", new[] {"entity-lookup", cssClass}).TrimEnd(' '));
+			container.AddCssClass(string.Join(" ", new[] { "entity-lookup", cssClass}).TrimEnd(' '));
 			container.MergeAttribute("data-url", gridServiceUrl);
 			container.MergeAttribute("data-lookup-datafieldname", lookupDataFieldName);
 			container.MergeAttribute("data-lookup-reference_entityformid", lookupReferenceEntityFormId.ToString());

@@ -484,7 +484,7 @@ namespace Adxstudio.Xrm.Web.Providers
 			var appliedTags = tagExtension.Value.Values<string>().Distinct(TagInfo.TagComparer).ToArray();
 
 			var existingTags = operation == CmsEntityOperation.Create
-				? new Entity[] {}
+				? new Entity[] { }
 				: GetTags(serviceContext, entity, website, taggableEntity);
 
 			var tagsToRemove = existingTags.Where(e => !appliedTags.Contains(e.GetAttributeValue<string>("adx_name"), TagInfo.TagComparer));
@@ -1134,16 +1134,16 @@ namespace Adxstudio.Xrm.Web.Providers
 
 		private static readonly IDictionary<string, Tuple<string, string, string>> TaggableEntities = new Dictionary<string, Tuple<string, string, string>>
 		{
-			{"adx_blogpost", new Tuple<string, string, string>("adx_blogpost", "adx_blogpostid", "adx_blogpost_tag") },
-			{"adx_communityforumthread", new Tuple<string, string, string>("adx_communityforumthread", "adx_communityforumthreadid", "adx_communityforumthread_tag") },
+			{ "adx_blogpost", new Tuple<string, string, string>("adx_blogpost", "adx_blogpostid", "adx_blogpost_tag") },
+			{ "adx_communityforumthread", new Tuple<string, string, string>("adx_communityforumthread", "adx_communityforumthreadid", "adx_communityforumthread_tag") },
 		};
 
 		private static readonly IDictionary<string, WebsiteJoin> WebsiteJoins = new Dictionary<string, WebsiteJoin>
 		{
-			{"adx_communityforumthread", new WebsiteJoin("adx_communityforumthread", "adx_forumid", "adx_communityforum", "adx_communityforumid", "adx_websiteid") },
-			{"adx_eventschedule", new WebsiteJoin("adx_eventschedule", "adx_eventid", "adx_event", "adx_eventid", "adx_websiteid") },
-			{"adx_weblink", new WebsiteJoin("adx_weblink", "adx_weblinksetid", "adx_weblinkset", "adx_weblinksetid", "adx_websiteid") },
-			{"adx_blogpost", new WebsiteJoin("adx_blogpost", "adx_blogid", "adx_blog", "adx_blogid", "adx_websiteid") }
+			{ "adx_communityforumthread", new WebsiteJoin("adx_communityforumthread", "adx_forumid", "adx_communityforum", "adx_communityforumid", "adx_websiteid") },
+			{ "adx_eventschedule", new WebsiteJoin("adx_eventschedule", "adx_eventid", "adx_event", "adx_eventid", "adx_websiteid") },
+			{ "adx_weblink", new WebsiteJoin("adx_weblink", "adx_weblinksetid", "adx_weblinkset", "adx_weblinksetid", "adx_websiteid") },
+			{ "adx_blogpost", new WebsiteJoin("adx_blogpost", "adx_blogid", "adx_blog", "adx_blogid", "adx_websiteid") }
 		};
 
 		private class WebsiteJoin

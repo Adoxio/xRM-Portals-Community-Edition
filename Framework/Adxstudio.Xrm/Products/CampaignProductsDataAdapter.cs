@@ -43,14 +43,14 @@ namespace Adxstudio.Xrm.Products
 		/// </summary>
 		/// <param name="campaign">Campaign Entity</param>
 		/// <param name="dependencies">Data Adapter Dependencies</param>
-		public CampaignProductsDataAdapter(Entity campaign, IDataAdapterDependencies dependencies) : this(campaign.ToEntityReference(), dependencies) {}
+		public CampaignProductsDataAdapter(Entity campaign, IDataAdapterDependencies dependencies) : this(campaign.ToEntityReference(), dependencies) { }
 
 		/// <summary>
 		/// Class initialization
 		/// </summary>
 		/// <param name="campaign">Campaign Entity Reference</param>
 		/// <param name="portalName">Portal Name</param>
-		public CampaignProductsDataAdapter(EntityReference campaign, string portalName = null) : this(campaign, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public CampaignProductsDataAdapter(EntityReference campaign, string portalName = null) : this(campaign, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		/// <summary>
 		/// Class initialization

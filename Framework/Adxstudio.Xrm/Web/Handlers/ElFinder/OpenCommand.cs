@@ -110,8 +110,8 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 				parameters = new InitializationParameters
 				{
 					dotFiles = false,
-					archives = new string[] {},
-					extract = new string[] {},
+					archives = new string[] { },
+					extract = new string[] { },
 				}
 			};
 
@@ -150,8 +150,8 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 				parameters = new InitializationParameters
 				{
 					dotFiles = false,
-					archives = new string[] {},
-					extract = new string[] {},
+					archives = new string[] { },
+					extract = new string[] { },
 				}
 			}, forceTree);
 		}

@@ -179,7 +179,7 @@ namespace Site.Areas.AccountManagement.Pages
 				}
 				else
 				{
-					var opportunityPermissionsFormViewDataSource = new CrmDataSource {ID = "OpportunityPermissionsFormViewDataSource", CrmDataContextName = OpportunityPermissionsFormView.ContextName };
+					var opportunityPermissionsFormViewDataSource = new CrmDataSource { ID = "OpportunityPermissionsFormViewDataSource", CrmDataContextName = OpportunityPermissionsFormView.ContextName };
 
 					var opportunityPermissionsFetchXml =
 						string.Format(
@@ -210,7 +210,7 @@ namespace Site.Areas.AccountManagement.Pages
 				}
 				else
 				{
-					var channelPermissionsFormViewDataSource = new CrmDataSource {ID = "ChannelPermissionsWebViewDataSource", CrmDataContextName = ChannelPermissionsFormView.ContextName };
+					var channelPermissionsFormViewDataSource = new CrmDataSource { ID = "ChannelPermissionsWebViewDataSource", CrmDataContextName = ChannelPermissionsFormView.ContextName };
 
 					var channelPermissionsFetchXml =
 						string.Format(

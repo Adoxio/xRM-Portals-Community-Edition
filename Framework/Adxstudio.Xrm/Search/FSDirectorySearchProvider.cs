@@ -107,7 +107,7 @@ namespace Adxstudio.Xrm.Search
 			var stopWords = config["stopWords"];
 
 			StopWords = string.IsNullOrEmpty(stopWords)
-				? new string[] {}
+				? new string[] { }
 				: stopWords.Split(',').Select(word => word.Trim()).Where(word => !string.IsNullOrEmpty(word)).ToArray();
 
 			var searcherCacheMode = config["indexSearcherCacheMode"];

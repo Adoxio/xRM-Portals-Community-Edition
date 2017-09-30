@@ -114,7 +114,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			if (maximumRows == 0)
 			{
-				return new IBlog[] {};
+				return new IBlog[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();
@@ -267,7 +267,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			if (maximumRows == 0)
 			{
-				return new IBlogPost[] {};
+				return new IBlogPost[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();
@@ -300,7 +300,7 @@ namespace Adxstudio.Xrm.Blogs
 		{
 			var serviceContext = Dependencies.GetServiceContext();
 
-			return serviceContext.FetchBlogPostCountForWebsite(Website.Id, addCondition => {});
+			return serviceContext.FetchBlogPostCountForWebsite(Website.Id, addCondition => { });
 		}
 
 		public IEnumerable<IBlogArchiveMonth> SelectArchiveMonths()

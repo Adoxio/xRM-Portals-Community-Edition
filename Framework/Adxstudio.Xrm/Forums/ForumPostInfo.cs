@@ -21,7 +21,7 @@ namespace Adxstudio.Xrm.Forums
 			EntityReference = entityReference;
 			Author = author;
 			PostedOn = postedOn;
-			AttachmentInfo = attachmentInfo == null ? new IForumPostAttachmentInfo[] {} : attachmentInfo.ToArray();
+			AttachmentInfo = attachmentInfo == null ? new IForumPostAttachmentInfo[] { } : attachmentInfo.ToArray();
 			ThreadEntity = forumThread;
 		}
 

@@ -23,9 +23,9 @@ namespace Adxstudio.Xrm.Web.Handlers
 {
 	public class CmsEntityDeleteHandler : CmsEntityHandler, System.Web.SessionState.IReadOnlySessionState
 	{
-		public CmsEntityDeleteHandler() {}
+		public CmsEntityDeleteHandler() { }
 
-		public CmsEntityDeleteHandler(string portalName, Guid? portalScopeId, string entityLogicalName, Guid? id) : base(portalName, portalScopeId, entityLogicalName, id) {}
+		public CmsEntityDeleteHandler(string portalName, Guid? portalScopeId, string entityLogicalName, Guid? id) : base(portalName, portalScopeId, entityLogicalName, id) { }
 
 		protected override void ProcessRequest(HttpContext context, ICmsEntityServiceProvider serviceProvider, Guid portalScopeId, IPortalContext portal, OrganizationServiceContext serviceContext, Entity entity, CmsEntityMetadata entityMetadata, ICrmEntitySecurityProvider security)
 		{

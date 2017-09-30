@@ -9,6 +9,6 @@ namespace Adxstudio.Xrm.Search
 {
 	public class PortalIndexSearcher : ScopedIndexSearcher
 	{
-		public PortalIndexSearcher(ICrmEntityIndex index, Guid websiteID) : base(index, websiteID.ToString()) {}
+		public PortalIndexSearcher(ICrmEntityIndex index, Guid websiteID) : base(index, websiteID.ToString()) { }
 	}
 }

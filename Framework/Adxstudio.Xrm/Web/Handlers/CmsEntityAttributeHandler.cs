@@ -19,7 +19,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 {
 	public class CmsEntityAttributeHandler : CmsEntityHandler
 	{
-		public CmsEntityAttributeHandler() : this(null, null, null, null, null) {}
+		public CmsEntityAttributeHandler() : this(null, null, null, null, null) { }
 
 		public CmsEntityAttributeHandler(string portalName, Guid? portalScopeId, string entityLogicalName, Guid? id, string attributeLogicalName) : base(portalName, portalScopeId, entityLogicalName, id)
 		{
@@ -54,7 +54,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 					{
 						"d", new JObject
 						{
-							{attributeLogicalName, GetValueJson(value) }
+							{ attributeLogicalName, GetValueJson(value) }
 						}
 					},
 				};

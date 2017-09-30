@@ -65,7 +65,7 @@ namespace Adxstudio.SharePoint
 			{
 				using (file)
 				{
-					var fci = new FileCreationInformation {Url = url, Overwrite = overwrite, ContentStream = file};
+					var fci = new FileCreationInformation { Url = url, Overwrite = overwrite, ContentStream = file};
 
 					folder.Files.Add(fci);
 
@@ -141,7 +141,7 @@ namespace Adxstudio.SharePoint
 				context.ExecuteQuery();
 				exists = true;
 			}
-			catch {}
+			catch { }
 
 			if (exists)
 			{

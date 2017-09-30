@@ -9,10 +9,10 @@ namespace Adxstudio.Xrm.Search
 {
 	public class IndexNotFoundException : InvalidOperationException
 	{
-		public IndexNotFoundException() {}
+		public IndexNotFoundException() { }
 
-		public IndexNotFoundException(string message) : base(message) {}
+		public IndexNotFoundException(string message) : base(message) { }
 
-		public IndexNotFoundException(string message, Exception innerException) : base(message, innerException) {}
+		public IndexNotFoundException(string message, Exception innerException) : base(message, innerException) { }
 	}
 }

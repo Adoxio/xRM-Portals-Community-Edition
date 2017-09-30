@@ -5,5 +5,5 @@
 
 namespace Adxstudio.Xrm.Commerce
 {
-	public interface IDataAdapterDependencies : Cms.IDataAdapterDependencies, IPriceListProvider {}
+	public interface IDataAdapterDependencies : Cms.IDataAdapterDependencies, IPriceListProvider { }
 }

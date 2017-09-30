@@ -75,7 +75,7 @@ namespace Adxstudio.Xrm.Blogs
 				Tuple<string, string, BlogCommentPolicy, string[], IRatingInfo> extendedDataValue;
 				var extendedData = extendedDatas.TryGetValue(e.Id, out extendedDataValue)
 					? extendedDataValue
-					: new Tuple<string, string, BlogCommentPolicy, string[], IRatingInfo>(null, null, BlogCommentPolicy.Closed, new string[] {}, null);
+					: new Tuple<string, string, BlogCommentPolicy, string[], IRatingInfo>(null, null, BlogCommentPolicy.Closed, new string[] { }, null);
 
 				var authorReference = e.GetAttributeValue<EntityReference>("adx_authorid");
 				var author = authorReference != null
@@ -96,7 +96,7 @@ namespace Adxstudio.Xrm.Blogs
 			if (post == null) throw new ArgumentNullException("post");
 
 			return tagNames == null
-				? new IBlogPostTag[] {}
+				? new IBlogPostTag[] { }
 				: tagNames
 					.Distinct(TagInfo.TagComparer)
 					.OrderBy(name => name)

@@ -13,7 +13,7 @@ namespace Adxstudio.Xrm.Search.WindowsAzure
 	public class EntitySearchResult
 	{
 		public EntitySearchResult(string entityLogicalName, Guid entityID, string title, string fragment, float score)
-			: this(entityLogicalName, entityID, title, fragment, score, new Dictionary<string, string>()) {}
+			: this(entityLogicalName, entityID, title, fragment, score, new Dictionary<string, string>()) { }
 
 		public EntitySearchResult(string entityLogicalName, Guid entityID, string title, string fragment, float score, IDictionary<string, string> extendedAttributes)
 		{

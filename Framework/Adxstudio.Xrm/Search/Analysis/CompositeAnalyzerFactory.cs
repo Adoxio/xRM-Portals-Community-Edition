@@ -24,7 +24,7 @@ namespace Adxstudio.Xrm.Search.Analysis
 			_factories = factories;
 		}
 
-		public CompositeAnalyzerFactory(params IAnalyzerFactory[] factories) : this(factories as IEnumerable<IAnalyzerFactory>) {}
+		public CompositeAnalyzerFactory(params IAnalyzerFactory[] factories) : this(factories as IEnumerable<IAnalyzerFactory>) { }
 
 		public Analyzer GetAnalyzer(Version version)
 		{

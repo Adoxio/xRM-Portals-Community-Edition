@@ -63,8 +63,8 @@ namespace Adxstudio.Xrm.Web.Routing
 
 			var uri = uriTemplate.BindByName(new Uri("http://localhost/"), new Dictionary<string, string>
 			{
-				{"__portalScopeId__", portalScopeId.ToString() },
-				{"entityLogicalName", entityLogicalName       },
+				{ "__portalScopeId__", portalScopeId.ToString() },
+				{ "entityLogicalName", entityLogicalName       },
 			});
 
 			return "~{0}".FormatWith(uri.PathAndQuery);

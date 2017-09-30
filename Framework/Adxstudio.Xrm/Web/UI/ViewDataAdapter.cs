@@ -1361,7 +1361,7 @@ namespace Adxstudio.Xrm.Web.UI
 			fetchEntity.Filters.Add(new Filter
 			{
 				Type = LogicalOperator.And,
-				Filters = new List<Filter> {new Filter {Type = LogicalOperator.Or, Conditions = conditions}}
+				Filters = new List<Filter> { new Filter { Type = LogicalOperator.Or, Conditions = conditions}}
 			});
 		}
 
@@ -2140,7 +2140,7 @@ namespace Adxstudio.Xrm.Web.UI
 			{
 				fetch.Entity.Filters = new List<Filter>
 				{
-					new Filter {Type = LogicalOperator.And, Filters = new List<Filter> {filter}}
+					new Filter { Type = LogicalOperator.And, Filters = new List<Filter> { filter}}
 				};
 			}
 			else
@@ -2189,7 +2189,7 @@ namespace Adxstudio.Xrm.Web.UI
 		{
 			if (fetch.Entity.Links == null)
 			{
-				fetch.Entity.Links = new List<Link> {link};
+				fetch.Entity.Links = new List<Link> { link};
 			}
 			else
 			{

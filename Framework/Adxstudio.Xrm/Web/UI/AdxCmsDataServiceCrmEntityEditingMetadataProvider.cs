@@ -226,7 +226,7 @@ namespace Adxstudio.Xrm.Web.UI
 				IDictionary<string, IEnumerable<Relationship>> childAssociationsByEntityName,
 				IEnumerable<string> fileAttachmentEntityNames,
 				string portalName)
-					: base(dependencyEntityNames, deletableEntityNames, urlEntityNames, childAssociationsByEntityName, fileAttachmentEntityNames, portalName) {}
+					: base(dependencyEntityNames, deletableEntityNames, urlEntityNames, childAssociationsByEntityName, fileAttachmentEntityNames, portalName) { }
 
 			public override void AddAttributeMetadata(string portalName, IEditableCrmEntityControl control, Control container, Entity entity, string propertyName, string propertyDisplayName)
 			{
@@ -300,7 +300,7 @@ namespace Adxstudio.Xrm.Web.UI
 					}
 
 					// Add the service reference to the bound entity.
-					container.Controls.Add(new HyperLink {CssClass = "xrm-entity-ref", NavigateUrl = VirtualPathUtility.ToAbsolute(serviceUri), Text = string.Empty});
+					container.Controls.Add(new HyperLink { CssClass = "xrm-entity-ref", NavigateUrl = VirtualPathUtility.ToAbsolute(serviceUri), Text = string.Empty});
 
 					string entityUrlServiceUri;
 
@@ -496,7 +496,7 @@ namespace Adxstudio.Xrm.Web.UI
 					return;
 				}
 
-				var json = options.SerializeByJson(new Type[] {});
+				var json = options.SerializeByJson(new Type[] { });
 
 				var schemaMap = new HtmlGenericControl("span") { InnerText = json };
 

@@ -754,7 +754,7 @@ namespace Adxstudio.Xrm.Web.UI
 				container.AddAttribute(name, url);
 			}
 			// If the route isn't found, just silently fail to add the data attribute.
-			catch (ArgumentException) {}
+			catch (ArgumentException) { }
 		}
 
 		private static bool EntityNameExistsInSchema(string entityLogicalName, IDictionary<string, EntityMetadata> allEntities)

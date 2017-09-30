@@ -22,7 +22,7 @@ namespace Adxstudio.Xrm.Cms.Replication
 		/// </summary>
 		/// <param name="source">Web Page</param>
 		/// <param name="context">Organization Service Context</param>
-		public WebPageReplication(Entity source, OrganizationServiceContext context) : base(source, context, "adx_webpage") {}
+		public WebPageReplication(Entity source, OrganizationServiceContext context) : base(source, context, "adx_webpage") { }
 
 		/// <summary>
 		/// Entity Created Event

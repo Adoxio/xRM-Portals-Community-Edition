@@ -9,6 +9,6 @@ namespace Adxstudio.Xrm.Web
 {
 	public class UrlHistoryMatch : RedirectMatch
 	{
-		public UrlHistoryMatch(string location) : base(HttpStatusCode.Moved, location) {}
+		public UrlHistoryMatch(string location) : base(HttpStatusCode.Moved, location) { }
 	}
 }

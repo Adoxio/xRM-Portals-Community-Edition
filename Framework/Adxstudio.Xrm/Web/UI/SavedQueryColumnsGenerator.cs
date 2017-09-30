@@ -77,7 +77,7 @@ namespace Adxstudio.Xrm.Web.UI
 		/// <param name="entityLogicalName">Logical name of the entity</param>
 		/// <param name="savedQueryName">Saved Query View Name for the entity</param>
 		public SavedQueryColumnsGenerator(OrganizationServiceContext serviceContext, string entityLogicalName, string savedQueryName)
-			: this(serviceContext, GetSavedQuery(serviceContext, entityLogicalName, savedQueryName)) {}
+			: this(serviceContext, GetSavedQuery(serviceContext, entityLogicalName, savedQueryName)) { }
 
 		/// <summary>
 		/// Class initialization that will retrieve a saved query for the entity given the logical name to generate the fields from and language code to provide localized labels.

@@ -11,5 +11,5 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 	/// Basic response allowing command to return an error message.
 	/// </summary>
 	[DataContract]
-	public class ErrorCommandResponse : CommandResponse {}
+	public class ErrorCommandResponse : CommandResponse { }
 }

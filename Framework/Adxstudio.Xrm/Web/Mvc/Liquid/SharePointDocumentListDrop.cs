@@ -63,7 +63,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 					{
 						// Get documents based on provided folder name.
 
-						var entity = new Entity(LogicalName) {Id = id};
+						var entity = new Entity(LogicalName) { Id = id};
 
 						location = GetDocumentLocation(serviceContext, entity, _folderName);
 					}

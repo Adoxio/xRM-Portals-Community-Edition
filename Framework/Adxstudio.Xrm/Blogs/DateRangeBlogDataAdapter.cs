@@ -36,17 +36,17 @@ namespace Adxstudio.Xrm.Blogs
 			_dataAdapter = new BlogDataAdapter(blog, dependencies);
 		}
 
-		public DateRangeBlogDataAdapter(EntityReference blog, DateTime min, DateTime max, IDataAdapterDependencies dependencies) : this(blog, min, max, dependencies, new BlogSecurityInfo(blog, dependencies)) {}
+		public DateRangeBlogDataAdapter(EntityReference blog, DateTime min, DateTime max, IDataAdapterDependencies dependencies) : this(blog, min, max, dependencies, new BlogSecurityInfo(blog, dependencies)) { }
 
-		public DateRangeBlogDataAdapter(Entity blog, DateTime min, DateTime max, IDataAdapterDependencies dependencies) : this(blog.ToEntityReference(), min, max, dependencies, new BlogSecurityInfo(blog, dependencies)) {}
+		public DateRangeBlogDataAdapter(Entity blog, DateTime min, DateTime max, IDataAdapterDependencies dependencies) : this(blog.ToEntityReference(), min, max, dependencies, new BlogSecurityInfo(blog, dependencies)) { }
 
-		public DateRangeBlogDataAdapter(IBlog blog, DateTime min, DateTime max, IDataAdapterDependencies dependencies) : this(blog.Entity, min, max, dependencies) {}
+		public DateRangeBlogDataAdapter(IBlog blog, DateTime min, DateTime max, IDataAdapterDependencies dependencies) : this(blog.Entity, min, max, dependencies) { }
 
-		public DateRangeBlogDataAdapter(EntityReference blog, DateTime min, DateTime max, string portalName = null) : this(blog, min, max, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public DateRangeBlogDataAdapter(EntityReference blog, DateTime min, DateTime max, string portalName = null) : this(blog, min, max, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
-		public DateRangeBlogDataAdapter(Entity blog, DateTime min, DateTime max, string portalName = null) : this(blog, min, max, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public DateRangeBlogDataAdapter(Entity blog, DateTime min, DateTime max, string portalName = null) : this(blog, min, max, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
-		public DateRangeBlogDataAdapter(IBlog blog, DateTime min, DateTime max, string portalName = null) : this(blog, min, max, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public DateRangeBlogDataAdapter(IBlog blog, DateTime min, DateTime max, string portalName = null) : this(blog, min, max, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		protected EntityReference Blog { get; private set; }
 
@@ -77,7 +77,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			if (maximumRows == 0)
 			{
-				return new IBlogPost[] {};
+				return new IBlogPost[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();

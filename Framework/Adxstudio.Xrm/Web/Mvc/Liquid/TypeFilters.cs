@@ -12,12 +12,12 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 	{
 		private static readonly IDictionary<string, bool> BooleanValueMappings = new Dictionary<string, bool>(StringComparer.InvariantCultureIgnoreCase)
 		{
-			{"on", true},
-			{"enabled", true},
-			{"yes", true},
-			{"off", false},
-			{"disabled", false},
-			{"no", false},
+			{ "on", true},
+			{ "enabled", true},
+			{ "yes", true},
+			{ "off", false},
+			{ "disabled", false},
+			{ "no", false},
 		};
 
 		/// <summary>
@@ -34,8 +34,8 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			{
 				return Convert.ToBoolean(input);
 			}
-			catch (FormatException) {}
-			catch (InvalidCastException) {}
+			catch (FormatException) { }
+			catch (InvalidCastException) { }
 			
 			bool parsed;
 
@@ -61,8 +61,8 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			{
 				return Convert.ToDecimal(input);
 			}
-			catch (FormatException) {}
-			catch (InvalidCastException) {}
+			catch (FormatException) { }
+			catch (InvalidCastException) { }
 
 			return null;
 		}
@@ -81,8 +81,8 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			{
 				return Convert.ToInt32(input);
 			}
-			catch (FormatException) {}
-			catch (InvalidCastException) {}
+			catch (FormatException) { }
+			catch (InvalidCastException) { }
 
 			return null;
 		}

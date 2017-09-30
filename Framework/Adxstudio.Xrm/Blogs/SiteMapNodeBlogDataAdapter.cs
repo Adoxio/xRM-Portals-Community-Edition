@@ -31,7 +31,7 @@ namespace Adxstudio.Xrm.Blogs
 			_blogDataAdapter = CreateBlogDataAdapter(node, dependencies);
 		}
 
-		public SiteMapNodeBlogDataAdapter(SiteMapNode node, string portalName = null) : this(node, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public SiteMapNodeBlogDataAdapter(SiteMapNode node, string portalName = null) : this(node, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		public IBlog Select()
 		{

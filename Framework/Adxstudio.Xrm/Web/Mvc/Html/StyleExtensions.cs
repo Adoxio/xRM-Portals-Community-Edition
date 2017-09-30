@@ -457,7 +457,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 
 			private readonly ICollection<Node> _rootNodes = new List<Node>();
 
-			public FileNameTrie() {}
+			public FileNameTrie() { }
 
 			public FileNameTrie(IEnumerable<Tuple<string, string, int>> fileNames)
 			{
@@ -476,7 +476,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 					throw new ArgumentException("Unable to get file name without extension.", "fileName");
 				}
 
-				Add(fileName, extensionless.Split(new [] {'.'}, StringSplitOptions.RemoveEmptyEntries), _rootNodes);
+				Add(fileName, extensionless.Split(new [] { '.'}, StringSplitOptions.RemoveEmptyEntries), _rootNodes);
 			}
 
 			public IEnumerator<Node> GetEnumerator()

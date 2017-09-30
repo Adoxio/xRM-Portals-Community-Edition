@@ -26,7 +26,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 	{
 		private readonly IEnumerable<IComposableFileSystem> _fileSystems;
 
-		public CompositeFileSystem(params IComposableFileSystem[] fileSystems) : this(fileSystems as IEnumerable<IComposableFileSystem>) {}
+		public CompositeFileSystem(params IComposableFileSystem[] fileSystems) : this(fileSystems as IEnumerable<IComposableFileSystem>) { }
 
 		public CompositeFileSystem(IEnumerable<IComposableFileSystem> fileSystems)
 		{

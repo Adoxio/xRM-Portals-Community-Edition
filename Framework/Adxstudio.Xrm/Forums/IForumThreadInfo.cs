@@ -47,7 +47,7 @@ namespace Adxstudio.Xrm.Forums
 
 		public IEnumerable<IForumThreadTag> Tags
 		{
-			get { return new IForumThreadTag[] {}; }
+			get { return new IForumThreadTag[] { }; }
 		}
 
 		public IForumThreadType ThreadType

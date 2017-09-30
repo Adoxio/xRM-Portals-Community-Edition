@@ -17,7 +17,7 @@ namespace Adxstudio.Xrm.Events
 	/// </summary>
 	public class WebsiteEventDataAdapter : EventAggregationDataAdapter
 	{
-		public WebsiteEventDataAdapter(IDataAdapterDependencies dependencies) : base(dependencies) {}
+		public WebsiteEventDataAdapter(IDataAdapterDependencies dependencies) : base(dependencies) { }
 
 		public override IEnumerable<Entity> SelectEvents()
 		{

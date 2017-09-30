@@ -9,6 +9,6 @@ namespace Adxstudio.Xrm.Web.Mvc
 {
 	public class JObjectResult : JContainerResult
 	{
-		public JObjectResult(JObject json) : base(json) {}
+		public JObjectResult(JObject json) : base(json) { }
 	}
 }

@@ -30,19 +30,19 @@ namespace Site.Areas.Products.Pages
 
 		protected Dictionary<int, string> RatingFilterOptions = new Dictionary<int, string>
 		{
-			{3, "+"},
-			{4, "+"},
-			{5, string.Empty},
+			{ 3, "+"},
+			{ 4, "+"},
+			{ 5, string.Empty},
 		};
 
 		protected IDictionary<string, string> SortOptions = new Dictionary<string, string>(StringComparer.InvariantCultureIgnoreCase)
 		{
-			{"Name ASC", "A&ndash;Z"},
-			{"Name DESC", "Z&ndash;A"},
-			{"Price ASC, Name ASC", "$ Low&ndash;High"},
-			{"Price DESC, Name ASC", "$ High&ndash;Low"},
-			{"Rating DESC, Name ASC", "Rating &ndash; High&ndash;Low"},
-			{"Rating ASC, Name ASC", "Rating &ndash; Low&ndash;High"},
+			{ "Name ASC", "A&ndash;Z"},
+			{ "Name DESC", "Z&ndash;A"},
+			{ "Price ASC, Name ASC", "$ Low&ndash;High"},
+			{ "Price DESC, Name ASC", "$ High&ndash;Low"},
+			{ "Rating DESC, Name ASC", "Rating &ndash; High&ndash;Low"},
+			{ "Rating ASC, Name ASC", "Rating &ndash; Low&ndash;High"},
 		};
 
 		protected EntityReference Subject;

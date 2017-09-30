@@ -71,14 +71,14 @@ namespace Adxstudio.Xrm.Notes
 			switch (StorageLocation)
 			{
 			case StorageLocation.CrmDocument:
-				var org = context.GetOrganizationEntity(new[] {"maxuploadfilesize", "blockedattachments"});
+				var org = context.GetOrganizationEntity(new[] { "maxuploadfilesize", "blockedattachments"});
 				
 				var orgMaxFileSize = Convert.ToUInt64(org.GetAttributeValue<int>("maxuploadfilesize"));
 				MaxFileSize = Math.Min((maxFileSize.HasValue ? maxFileSize.Value : _defaultMaxFileSize), orgMaxFileSize);
 
 				var orgRestrictedTypes = org.GetAttributeValue<string>("blockedattachments")
-					.Split(new[] {',', ';'}, StringSplitOptions.RemoveEmptyEntries);
-				var customRestrictedTypes = restrictedFileExtensions.Split(new[] {',', ';'}, StringSplitOptions.RemoveEmptyEntries);
+					.Split(new[] { ',', ';'}, StringSplitOptions.RemoveEmptyEntries);
+				var customRestrictedTypes = restrictedFileExtensions.Split(new[] { ',', ';'}, StringSplitOptions.RemoveEmptyEntries);
 				RestrictedFileExtensions = string.Join(";", orgRestrictedTypes.Union(customRestrictedTypes));
 				break;
 			default:
@@ -123,7 +123,7 @@ namespace Adxstudio.Xrm.Notes
 		public string RestrictedFileExtensions { get; set; }
 		public string RestrictedFileExtensionsErrorMessage { get; set; }
 		public string InvalidFileExtenstionErrorMessage { get; set; }
-		public bool IsPortalComment{ get; set; }
+		public bool IsPortalComment { get; set; }
 
 	}
 }

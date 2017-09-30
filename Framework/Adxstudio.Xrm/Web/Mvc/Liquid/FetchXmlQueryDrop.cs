@@ -30,10 +30,10 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 		}
 
 		public FetchXmlQueryDrop(IPortalLiquidContext portalLiquidContext, Fetch fetch, CrmEntityPermissionProvider.EntityPermissionRightResult permissionRightResult = null)
-			: this(portalLiquidContext, new Lazy<Fetch>(() => fetch, LazyThreadSafetyMode.None), permissionRightResult) {}
+			: this(portalLiquidContext, new Lazy<Fetch>(() => fetch, LazyThreadSafetyMode.None), permissionRightResult) { }
 
 		public FetchXmlQueryDrop(IPortalLiquidContext portalLiquidContext, string fetchXml, CrmEntityPermissionProvider.EntityPermissionRightResult permissionRightResult = null)
-			: this(portalLiquidContext, Fetch.Parse(fetchXml), permissionRightResult) {}
+			: this(portalLiquidContext, Fetch.Parse(fetchXml), permissionRightResult) { }
 
 		public bool GlobalPermissionGranted
 		{

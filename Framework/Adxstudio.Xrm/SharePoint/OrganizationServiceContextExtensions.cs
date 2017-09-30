@@ -394,7 +394,7 @@ namespace Adxstudio.Xrm.SharePoint
 
 		private static T CreateDocumentLocation<T>(this OrganizationServiceContext context, string name, string relativeUrl, Entity parentLocation, string parentRelationship, EntityReference regarding = null) where T : Entity, new()
 		{
-			var location = new T {LogicalName = _sharepointdocumentlocation};
+			var location = new T { LogicalName = _sharepointdocumentlocation};
 			location.SetAttributeValue("name", name);
 			location.SetAttributeValue("relativeurl", relativeUrl);
 			

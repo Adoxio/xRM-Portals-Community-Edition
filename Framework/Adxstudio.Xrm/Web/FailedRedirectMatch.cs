@@ -9,7 +9,7 @@ namespace Adxstudio.Xrm.Web
 {
 	public class FailedRedirectMatch : RedirectMatch
 	{
-		public FailedRedirectMatch() : base(HttpStatusCode.Redirect, null) {}
+		public FailedRedirectMatch() : base(HttpStatusCode.Redirect, null) { }
 
 		public override bool Success
 		{

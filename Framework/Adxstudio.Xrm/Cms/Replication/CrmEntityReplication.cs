@@ -44,11 +44,11 @@ namespace Adxstudio.Xrm.Cms.Replication
 
 		protected Entity Source { get; private set; }
 
-		public virtual void Created() {}
+		public virtual void Created() { }
 
-		public virtual void Deleted() {}
+		public virtual void Deleted() { }
 
-		public virtual void Updated() {}
+		public virtual void Updated() { }
 
 		protected ExecuteWorkflowResult ExecuteWorkflow(string workflowName, string targetEntityName, Guid targetEntityID)
 		{
@@ -156,7 +156,7 @@ namespace Adxstudio.Xrm.Cms.Replication
 
 		protected class WorkflowNotFoundResult : ExecuteWorkflowResult
 		{
-			public WorkflowNotFoundResult(string description) : base(description) {}
+			public WorkflowNotFoundResult(string description) : base(description) { }
 
 			public override bool Success
 			{

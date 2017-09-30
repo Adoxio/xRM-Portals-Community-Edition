@@ -56,7 +56,7 @@ namespace Adxstudio.Xrm.Web.Modules
 	/// <seealso cref="CrmConfigurationManager"/>
 	public class OutputCacheModule : IHttpModule
 	{
-		public void Dispose() {}
+		public void Dispose() { }
 
 		public virtual void Init(HttpApplication application)
 		{

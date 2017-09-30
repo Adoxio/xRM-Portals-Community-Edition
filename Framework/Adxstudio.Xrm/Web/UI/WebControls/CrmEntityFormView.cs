@@ -667,7 +667,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 		protected override void CreateChildControls()
 		{
-			CssClass = string.Join(" ", new[] {"entity-form", CssClass}).TrimEnd(' ');
+			CssClass = string.Join(" ", new[] { "entity-form", CssClass}).TrimEnd(' ');
 
 			if (string.IsNullOrEmpty(EntityName)) throw new InvalidOperationException("EntityName can't be null or empty.");
 
@@ -773,7 +773,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			
 			Controls.Add(EntityNameField);
 
-			EntityIdField = new HiddenField {ID = string.Format("{0}_EntityID", ID), ClientIDMode = ClientIDMode.Static};
+			EntityIdField = new HiddenField { ID = string.Format("{0}_EntityID", ID), ClientIDMode = ClientIDMode.Static};
 
 			Controls.Add(EntityIdField);
 
@@ -783,11 +783,11 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				EntityIdField.Value = crmEntityId.ToString();
 			}
 
-			EntityStateField = new HiddenField {ID = string.Format("{0}_EntityState", ID), ClientIDMode = ClientIDMode.Static};
+			EntityStateField = new HiddenField { ID = string.Format("{0}_EntityState", ID), ClientIDMode = ClientIDMode.Static};
 
 			Controls.Add(EntityStateField);
 
-			EntityStatusField = new HiddenField {ID = string.Format("{0}_EntityStatus", ID), ClientIDMode = ClientIDMode.Static};
+			EntityStatusField = new HiddenField { ID = string.Format("{0}_EntityStatus", ID), ClientIDMode = ClientIDMode.Static};
 
 			Controls.Add(EntityStatusField);
 

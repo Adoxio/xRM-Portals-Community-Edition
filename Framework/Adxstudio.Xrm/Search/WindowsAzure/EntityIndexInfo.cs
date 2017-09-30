@@ -23,7 +23,7 @@ namespace Adxstudio.Xrm.Search.WindowsAzure
 			LogicalNames = logicalNames.ToArray();
 		}
 
-		public EntityIndexInfo() : this(new List<string>()) {}
+		public EntityIndexInfo() : this(new List<string>()) { }
 
 		[DataMember]
 		public bool IndexNotFound { get; set; }

@@ -34,17 +34,17 @@ namespace Adxstudio.Xrm.Blogs
 			_dataAdapter = new BlogDataAdapter(blog, dependencies);
 		}
 
-		public AuthorBlogDataAdapter(EntityReference blog, Guid authorId, IDataAdapterDependencies dependencies) : this(blog, authorId, dependencies, new BlogSecurityInfo(blog, dependencies)) {}
+		public AuthorBlogDataAdapter(EntityReference blog, Guid authorId, IDataAdapterDependencies dependencies) : this(blog, authorId, dependencies, new BlogSecurityInfo(blog, dependencies)) { }
 
-		public AuthorBlogDataAdapter(Entity blog, Guid authorId, IDataAdapterDependencies dependencies) : this(blog.ToEntityReference(), authorId, dependencies, new BlogSecurityInfo(blog, dependencies)) {}
+		public AuthorBlogDataAdapter(Entity blog, Guid authorId, IDataAdapterDependencies dependencies) : this(blog.ToEntityReference(), authorId, dependencies, new BlogSecurityInfo(blog, dependencies)) { }
 
-		public AuthorBlogDataAdapter(IBlog blog, Guid authorId, IDataAdapterDependencies dependencies) : this(blog.Entity, authorId, dependencies) {}
+		public AuthorBlogDataAdapter(IBlog blog, Guid authorId, IDataAdapterDependencies dependencies) : this(blog.Entity, authorId, dependencies) { }
 
-		public AuthorBlogDataAdapter(EntityReference blog, Guid authorId, string portalName = null) : this(blog, authorId, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public AuthorBlogDataAdapter(EntityReference blog, Guid authorId, string portalName = null) : this(blog, authorId, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
-		public AuthorBlogDataAdapter(Entity blog, Guid authorId, string portalName = null) : this(blog, authorId, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public AuthorBlogDataAdapter(Entity blog, Guid authorId, string portalName = null) : this(blog, authorId, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
-		public AuthorBlogDataAdapter(IBlog blog, Guid authorId, string portalName = null) : this(blog, authorId, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public AuthorBlogDataAdapter(IBlog blog, Guid authorId, string portalName = null) : this(blog, authorId, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		protected Guid AuthorId { get; private set; }
 
@@ -73,7 +73,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			if (maximumRows == 0)
 			{
-				return new IBlogPost[] {};
+				return new IBlogPost[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();

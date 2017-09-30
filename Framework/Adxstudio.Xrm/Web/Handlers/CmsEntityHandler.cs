@@ -20,7 +20,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 {
 	public class CmsEntityHandler : CmsEntitySetHandler
 	{
-		public CmsEntityHandler() : this(null, null, null, null) {}
+		public CmsEntityHandler() : this(null, null, null, null) { }
 
 		public CmsEntityHandler(string portalName, Guid? portalScopeId, string entityLogicalName, Guid? id) : base(portalName, portalScopeId, entityLogicalName)
 		{
@@ -119,7 +119,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 			{
 				WriteResponse(context.Response, new JObject
 				{
-					{"d", GetEntityJson(context, serviceProvider, portalScopeId, portal, serviceContext, entity, entityMetadata) }
+					{ "d", GetEntityJson(context, serviceProvider, portalScopeId, portal, serviceContext, entity, entityMetadata) }
 				});
 
 				return;

@@ -61,7 +61,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 				var body = htmlContent.DocumentNode.SelectSingleNode("//body");
 
-				var literal = new HtmlGenericControl("literal") {ID = Metadata.ControlID, Visible = Enabled};
+				var literal = new HtmlGenericControl("literal") { ID = Metadata.ControlID, Visible = Enabled};
 
 				if (body != null)
 				{

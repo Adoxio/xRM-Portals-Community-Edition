@@ -28,7 +28,7 @@ namespace Adxstudio.Xrm.Blogs
 			Tag = tag;
 		}
 
-		public TagWebsiteBlogAggregationDataAdapter(string tag, string portalName = null) : this(tag, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public TagWebsiteBlogAggregationDataAdapter(string tag, string portalName = null) : this(tag, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		protected string Tag { get; private set; }
 
@@ -41,7 +41,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			if (maximumRows == 0)
 			{
-				return new IBlogPost[] {};
+				return new IBlogPost[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();

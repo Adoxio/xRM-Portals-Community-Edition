@@ -28,7 +28,7 @@ namespace Adxstudio.Xrm.Text
 			}
 		}
 
-		public Mask(string pattern) : this(pattern, DefaultRegexOptions) {}
+		public Mask(string pattern) : this(pattern, DefaultRegexOptions) { }
 
 		public Mask(string pattern, RegexOptions options)
 		{

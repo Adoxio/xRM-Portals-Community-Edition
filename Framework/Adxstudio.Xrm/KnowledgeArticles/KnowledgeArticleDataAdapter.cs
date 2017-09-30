@@ -147,7 +147,7 @@ namespace Adxstudio.Xrm.KnowledgeArticles
 				articles = serviceContext.RetrieveMultiple(fetchRelatedArticles, RequestFlag.AllowStaleData);
 			}
 
-			return new List<EntityCollection> {products, articles}.AsEnumerable();
+			return new List<EntityCollection> { products, articles}.AsEnumerable();
 		}
 
 		private IEnumerable<IRelatedProduct> ToRelatedProducts(EntityCollection relatedProductsCollection)
@@ -479,12 +479,12 @@ namespace Adxstudio.Xrm.KnowledgeArticles
 
 			var attributes = new Dictionary<string, object>
 			{
-				{"regardingobjectid", KnowledgeArticle},
-				{"createdon", postedOn},
-				{"title", StringHelper.GetCommentTitleFromContent(content) },
-				{"adx_createdbycontact", authorName},
-				{"adx_contactemail", authorEmail},
-				{"adx_approved", article.CommentPolicy == CommentPolicy.Open || article.CommentPolicy == CommentPolicy.OpenToAuthenticatedUsers},
+				{ "regardingobjectid", KnowledgeArticle},
+				{ "createdon", postedOn},
+				{ "title", StringHelper.GetCommentTitleFromContent(content) },
+				{ "adx_createdbycontact", authorName},
+				{ "adx_contactemail", authorEmail},
+				{ "adx_approved", article.CommentPolicy == CommentPolicy.Open || article.CommentPolicy == CommentPolicy.OpenToAuthenticatedUsers},
 				{ "comments", content},
 			};
 

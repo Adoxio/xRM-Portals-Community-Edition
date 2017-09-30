@@ -64,7 +64,7 @@ namespace Microsoft.Xrm.Portal.Web.UI
 				_defaultUrlEntityNames,
 				_defaultChildAssociationsByEntityName,
 				_defaultFileAttachmentEntityNames)
-		{}
+		{ }
 
 		public CmsDataServiceCrmEntityEditingMetadataProvider(
 			IEnumerable<string> dependencyEntityNames,

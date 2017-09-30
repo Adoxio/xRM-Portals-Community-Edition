@@ -42,7 +42,7 @@ namespace Adxstudio.Xrm.Forums
 		}
 
 		public ForumThread(Entity entity, IPortalViewEntity viewEntity, IForumThreadInfo threadInfo, int postCount, string url = null)
-			: this(entity, viewEntity, threadInfo, () => postCount, url) {}
+			: this(entity, viewEntity, threadInfo, () => postCount, url) { }
 
 		public IForumAuthor Author { get; private set; }
 

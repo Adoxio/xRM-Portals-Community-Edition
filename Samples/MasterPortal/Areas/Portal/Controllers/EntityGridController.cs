@@ -524,15 +524,15 @@ namespace Site.Areas.Portal.Controllers
 			var rowIndex = 1;
 			var columnIndex = 1;
 
-			var firstRow = new Row {RowIndex = (uint)rowIndex};
+			var firstRow = new Row { RowIndex = (uint)rowIndex};
 
 			var dataColumns = columns.Where(col => col.LogicalName != "col-action").ToArray();
 
 			foreach (var column in dataColumns)
 			{
-				var cell = new Cell {CellReference = CreateCellReference(columnIndex) + rowIndex, DataType = CellValues.InlineString};
+				var cell = new Cell { CellReference = CreateCellReference(columnIndex) + rowIndex, DataType = CellValues.InlineString};
 
-				var inlineString = new InlineString {Text = new Text {Text = column.Name}};
+				var inlineString = new InlineString { Text = new Text { Text = column.Name}};
 
 				cell.AppendChild(inlineString);
 
@@ -545,7 +545,7 @@ namespace Site.Areas.Portal.Controllers
 
 			foreach (var record in data.Records)
 			{
-				var row = new Row {RowIndex = (uint)++rowIndex};
+				var row = new Row { RowIndex = (uint)++rowIndex};
 
 				columnIndex = 0;
 
@@ -587,7 +587,7 @@ namespace Site.Areas.Portal.Controllers
 
 			Session[sessionKey] = stream;
 
-			return Json(new {success = true, sessionKey}, JsonRequestBehavior.AllowGet);
+			return Json(new { success = true, sessionKey}, JsonRequestBehavior.AllowGet);
 		}
 
 		private string GetFormattedDateTime(EntityRecordAttribute attribute, int timezoneOffset)

@@ -11,7 +11,7 @@ namespace Adxstudio.Xrm.Search.Index
 {
 	public class UserQueryIndexer : SavedQueryIndexer
 	{
-		public UserQueryIndexer(ICrmEntityIndex index, string savedQueryName) : base(index, savedQueryName) {}
+		public UserQueryIndexer(ICrmEntityIndex index, string savedQueryName) : base(index, savedQueryName) { }
 
 		protected override ICrmEntityIndexer GetIndexerForSavedQuery(Entity query)
 		{

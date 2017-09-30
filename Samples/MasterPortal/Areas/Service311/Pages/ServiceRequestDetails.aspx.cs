@@ -143,7 +143,7 @@ namespace Site.Areas.Service311.Pages
 						new PortalConfigurationDataAdapterDependencies(requestContext: Request.RequestContext, portalName: PortalName);
 					var dataAdapter = new AnnotationDataAdapter(dataAdapterDependencies);
 					var annotations = dataAdapter.GetAnnotations(ServiceRequest.ToEntityReference(),
-						new List<Order> {new Order("createdon") }, respectPermissions: false);
+						new List<Order> { new Order("createdon") }, respectPermissions: false);
 
 					if (!annotations.Any())
 					{
@@ -162,7 +162,7 @@ namespace Site.Areas.Service311.Pages
 						new PortalConfigurationDataAdapterDependencies(requestContext: Request.RequestContext, portalName: PortalName);
 					var dataAdapter = new AnnotationDataAdapter(dataAdapterDependencies);
 					var annotations = dataAdapter.GetAnnotations(ServiceRequest.ToEntityReference(),
-						new List<Order> {new Order("createdon") },
+						new List<Order> { new Order("createdon") },
 						privacy: AnnotationPrivacy.Web | AnnotationPrivacy.Private | AnnotationPrivacy.Public, respectPermissions: false);
 
 					NotesList.DataSource = annotations;

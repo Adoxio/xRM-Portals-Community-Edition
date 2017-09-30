@@ -10,7 +10,7 @@ namespace Adxstudio.Xrm.Commerce
 {
 	public class DemoPaymentHandler : AuthorizeNetPaymentHandlerBase
 	{
-		public DemoPaymentHandler(string portalName) : base(portalName) {}
+		public DemoPaymentHandler(string portalName) : base(portalName) { }
 
 		protected override IPaymentValidation ValidatePayment(HttpContext context, IDataAdapterDependencies dataAdapterDependencies, Tuple<Guid, string> quoteAndReturnUrl)
 		{

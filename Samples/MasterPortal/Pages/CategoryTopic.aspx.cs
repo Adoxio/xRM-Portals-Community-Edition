@@ -10,7 +10,7 @@ namespace Site.Pages
 {
 	public partial class CategoryTopic : PortalPage
 	{
-		protected void Page_Load(object sender, EventArgs e) {}
+		protected void Page_Load(object sender, EventArgs e) { }
 
 		protected bool IsCurrentNode(object dataItem)
 		{

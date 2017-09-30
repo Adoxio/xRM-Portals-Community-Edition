@@ -21,7 +21,7 @@ namespace Adxstudio.SharePoint.Configuration
 
 		static SharePointSection()
 		{
-			_properties = new ConfigurationPropertyCollection {};
+			_properties = new ConfigurationPropertyCollection { };
 		}
 
 		protected override ConfigurationPropertyCollection Properties

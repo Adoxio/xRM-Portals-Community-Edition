@@ -190,8 +190,8 @@ namespace Adxstudio.Xrm.Search
 						{
 							Entity = new FetchEntity("connection")
 							{
-								Filters = new[] {new Filter{
-									Conditions = new List<Condition> {new Condition("connectionid", ConditionOperator.Equal, message.Target.Id) }
+								Filters = new[] { new Filter {
+									Conditions = new List<Condition> { new Condition("connectionid", ConditionOperator.Equal, message.Target.Id) }
 								} }
 							}
 						};
@@ -573,7 +573,7 @@ namespace Adxstudio.Xrm.Search
 			{
 				Entity = new FetchEntity("annotation", new[] { "annotationid", "objectid" })
 				{
-					Filters = new[] {new Filter
+					Filters = new[] { new Filter
 								{
 									Conditions = new List<Condition> { new Condition("objecttypecode", ConditionOperator.Equal, KnowledgeArticleObjectTypeCode) }
 								} }
@@ -590,8 +590,8 @@ namespace Adxstudio.Xrm.Search
 			{
 				Entity = new FetchEntity(entityName, new List<string> { attributeToSelect })
 				{
-					Filters = new[] {new Filter{
-						Conditions = new List<Condition> {new Condition(filterAttributeName, ConditionOperator.Equal, filterAttributeValue) }
+					Filters = new[] { new Filter {
+						Conditions = new List<Condition> { new Condition(filterAttributeName, ConditionOperator.Equal, filterAttributeValue) }
 					} }
 				}
 			};
@@ -630,7 +630,7 @@ namespace Adxstudio.Xrm.Search
             public EntityReference Website { get; set; }
 			public EntityReference PublishingState { get; set; }
 			public EntityReference WebPage { get; set; }
-			public EntityReference Forum{ get; set; }
+			public EntityReference Forum { get; set; }
 			public int? Lcid { get; set; }
 
         }

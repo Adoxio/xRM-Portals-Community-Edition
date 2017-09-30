@@ -169,9 +169,9 @@ namespace Adxstudio.Xrm.Caching
 		{
 			var objectCacheElement = new JObject
 			{
-				{"type", cache.ToString() },
-				{"count", cache.GetCount(regionName).ToString() },
-				{"defaultCacheCapabilities", cache.DefaultCacheCapabilities.ToString() }
+				{ "type", cache.ToString() },
+				{ "count", cache.GetCount(regionName).ToString() },
+				{ "defaultCacheCapabilities", cache.DefaultCacheCapabilities.ToString() }
 			};
 
 			var compositeCache = cache as CompositeObjectCache;
@@ -186,9 +186,9 @@ namespace Adxstudio.Xrm.Caching
 			var memoryCacheElement = memoryCache != null
 				? new JObject
 				{
-					{"cacheMemoryLimit", memoryCache.CacheMemoryLimit.ToString() },
-					{"physicalMemoryLimit", memoryCache.PhysicalMemoryLimit.ToString() },
-					{"pollingInterval", memoryCache.PollingInterval.ToString() }
+					{ "cacheMemoryLimit", memoryCache.CacheMemoryLimit.ToString() },
+					{ "physicalMemoryLimit", memoryCache.PhysicalMemoryLimit.ToString() },
+					{ "pollingInterval", memoryCache.PollingInterval.ToString() }
 				}
 				: null;
 
@@ -203,12 +203,12 @@ namespace Adxstudio.Xrm.Caching
 		{
 			var retval = new JObject
 			{
-				{"title", title ?? string.Empty},
-				{"description", description ?? string.Empty},
-				{"link", link == null ? string.Empty : link.AbsoluteUri},
-				{"objectCache", objectCache},
-				{"memoryCache", memoryCache},
-				{"items", items}
+				{ "title", title ?? string.Empty},
+				{ "description", description ?? string.Empty},
+				{ "link", link == null ? string.Empty : link.AbsoluteUri},
+				{ "objectCache", objectCache},
+				{ "memoryCache", memoryCache},
+				{ "items", items}
 			};
 
 			return retval;
@@ -232,9 +232,9 @@ namespace Adxstudio.Xrm.Caching
 			{
 				var entity = new Dictionary<string, object>
 				{
-					{"Name", entityType.Name},
-					{"Count", entityType.GetCount() },
-					{"Size", entityType.GetSize() }
+					{ "Name", entityType.Name},
+					{ "Count", entityType.GetCount() },
+					{ "Size", entityType.GetSize() }
 				};
 
 				if (expanded)
@@ -244,17 +244,17 @@ namespace Adxstudio.Xrm.Caching
 					{
 						var record = new Dictionary<string, object>
 						{
-							{"LogicalName", item.Entity.LogicalName},
-							{"Name", item.Entity.GetAttributeValueOrDefault("adx_name", string.Empty) },
-							{"Id", item.Entity.Id}
+							{ "LogicalName", item.Entity.LogicalName},
+							{ "Name", item.Entity.GetAttributeValueOrDefault("adx_name", string.Empty) },
+							{ "Id", item.Entity.Id}
 						};
 
 						var recordCache = new Dictionary<string, object>
 						{
-							{"Id", item.CacheItemKey},
-							{"Type", item.CacheItemType},
-							{"Link", item.Link.ToString() },
-							{"Size", GetEntitySizeInMemory(item.Entity) }
+							{ "Id", item.CacheItemKey},
+							{ "Type", item.CacheItemType},
+							{ "Link", item.Link.ToString() },
+							{ "Size", GetEntitySizeInMemory(item.Entity) }
 						};
 
 						record.Add("Cache", recordCache);
@@ -272,11 +272,11 @@ namespace Adxstudio.Xrm.Caching
 				// Add link to the Expanded view with entity record details
 				var query = System.Web.HttpUtility.ParseQueryString(requestUrl.Query);
 				query[Web.Handlers.CacheFeedHandler.QueryKeys.Expanded] = bool.TrueString;
-				var uriBuilder = new UriBuilder(requestUrl.ToString()) {Query = query.ToString() };
+				var uriBuilder = new UriBuilder(requestUrl.ToString()) { Query = query.ToString() };
 				entitiesWrapper.Add("ExpandedView", uriBuilder.ToString());
 			}
 			entitiesWrapper.Add("Entities", entities.OrderByDescending(e => e["Size"]));
-			var retval = new Dictionary<string, object> {{"CacheFootprint", entitiesWrapper}};
+			var retval = new Dictionary<string, object> { { "CacheFootprint", entitiesWrapper}};
 			return retval;
 		}
 
@@ -298,16 +298,16 @@ namespace Adxstudio.Xrm.Caching
 				let link = ApplyKey(itemAlternateLink, "key", item.Key, cache.Name)
 				let remove = ApplyKey(itemAlternateLink, "remove", item.Key, cache.Name)
 				orderby orderBy(defaultDetail)
-				select new {item, detail, telemetry, updatedOn, link, remove};
+				select new { item, detail, telemetry, updatedOn, link, remove};
 
 			var content = rawItems.Select(
 				rawItem => new JObject
 				{
-					{"id", rawItem.item.Key},
-					{"title", rawItem.item.Key},
-					{"updated", rawItem.updatedOn},
-					{"link", rawItem.link.AbsoluteUri},
-					{"content", GetJsonContent(cache.Name, rawItem.detail, rawItem.telemetry, rawItem.item.Value, rawItem.remove, expanded) }
+					{ "id", rawItem.item.Key},
+					{ "title", rawItem.item.Key},
+					{ "updated", rawItem.updatedOn},
+					{ "link", rawItem.link.AbsoluteUri},
+					{ "content", GetJsonContent(cache.Name, rawItem.detail, rawItem.telemetry, rawItem.item.Value, rawItem.remove, expanded) }
 				});
 
 			var items = new JArray(content);
@@ -337,9 +337,9 @@ namespace Adxstudio.Xrm.Caching
 
 			var properties = new JObject
 			{
-				{"name", name},
-				{"type", value != null ? value.GetType().ToString() : null},
-				{"remove", removeLink.AbsoluteUri}
+				{ "name", name},
+				{ "type", value != null ? value.GetType().ToString() : null},
+				{ "remove", removeLink.AbsoluteUri}
 			};
 
 			if (policyContent != null)
@@ -367,7 +367,7 @@ namespace Adxstudio.Xrm.Caching
 
 			var content = new JObject
 			{
-				{"properties", properties}
+				{ "properties", properties}
 			};
 
 			return content;
@@ -383,11 +383,11 @@ namespace Adxstudio.Xrm.Caching
 				{
 					var policy = new JObject
 					{
-						{"isStaleDataAllowed", detail.IsStaleDataAllowed },
-						{"absoluteExpiration", policyDetail.AbsoluteExpiration.UtcDateTime},
-						{"slidingExpiration", policyDetail.SlidingExpiration},
-						{"priority", policyDetail.Priority.ToString() },
-						{"changeMonitors", new JArray(policyDetail.ChangeMonitors.SelectMany(cm => cm.CacheKeys)) }
+						{ "isStaleDataAllowed", detail.IsStaleDataAllowed },
+						{ "absoluteExpiration", policyDetail.AbsoluteExpiration.UtcDateTime},
+						{ "slidingExpiration", policyDetail.SlidingExpiration},
+						{ "priority", policyDetail.Priority.ToString() },
+						{ "changeMonitors", new JArray(policyDetail.ChangeMonitors.SelectMany(cm => cm.CacheKeys)) }
 					};
 
 					return policy;
@@ -577,7 +577,7 @@ namespace Adxstudio.Xrm.Caching
 				// Add link to the Expanded view with entity record details
 				var query = System.Web.HttpUtility.ParseQueryString(requestUrl.Query);
 				query[Web.Handlers.CacheFeedHandler.QueryKeys.Expanded] = Boolean.TrueString;
-				var uriBuilder = new UriBuilder(requestUrl.ToString()) {Query = query.ToString() };
+				var uriBuilder = new UriBuilder(requestUrl.ToString()) { Query = query.ToString() };
 				var expandedView = doc.CreateElement("expandedView");
 				expandedView.InnerText = uriBuilder.ToString();
 				rootElement.AppendChild(expandedView);
@@ -684,7 +684,7 @@ namespace Adxstudio.Xrm.Caching
 		{
 			if (uri == null || string.IsNullOrWhiteSpace(key)) return null;
 
-			var url = uri.OriginalString.AppendQueryString(new Dictionary<string, string> {{keyName, key}, {"objectCacheName", cacheName}});
+			var url = uri.OriginalString.AppendQueryString(new Dictionary<string, string> { { keyName, key}, { "objectCacheName", cacheName}});
 			return new Uri(url);
 		}
 
@@ -937,7 +937,7 @@ namespace Adxstudio.Xrm.Caching
 		/// </summary>
 		private class FootprintEntity
 		{
-			public string Name{ get; private set; }
+			public string Name { get; private set; }
 			public List<FootprintEntityItem> Items { get; private set; }
 
 			public FootprintEntity(string name)

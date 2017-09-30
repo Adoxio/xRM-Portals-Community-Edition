@@ -70,7 +70,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 		{
 			Modal = new ViewCalculateOpportunityModal();
 
-			URL = EntityListFunctions.BuildControllerActionUrl("CalculateActualValueOfOpportunity", "EntityAction", new {area = "Portal", __portalScopeId__ = portalContext.Website.Id});
+			URL = EntityListFunctions.BuildControllerActionUrl("CalculateActualValueOfOpportunity", "EntityAction", new { area = "Portal", __portalScopeId__ = portalContext.Website.Id});
 		}
 	}
 }

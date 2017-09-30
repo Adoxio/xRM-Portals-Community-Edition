@@ -334,7 +334,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						{
 							ContractResolver = JsonConfigurationContractResolver.Instance,
 							TypeNameHandling = TypeNameHandling.Objects,
-							Converters = new List<JsonConverter> {new GuidConverter() },
+							Converters = new List<JsonConverter> { new GuidConverter() },
 							Binder = new ActionSerializationBinder()
 						});
 				}

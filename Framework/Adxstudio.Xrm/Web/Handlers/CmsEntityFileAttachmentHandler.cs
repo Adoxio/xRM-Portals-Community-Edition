@@ -21,9 +21,9 @@ namespace Adxstudio.Xrm.Web.Handlers
 {
 	public class CmsEntityFileAttachmentHandler : CmsEntityHandler
 	{
-		public CmsEntityFileAttachmentHandler() {}
+		public CmsEntityFileAttachmentHandler() { }
 
-		public CmsEntityFileAttachmentHandler(string portalName, Guid? portalScopeId, string entityLogicalName, Guid? id) : base(portalName, portalScopeId, entityLogicalName, id) {}
+		public CmsEntityFileAttachmentHandler(string portalName, Guid? portalScopeId, string entityLogicalName, Guid? id) : base(portalName, portalScopeId, entityLogicalName, id) { }
 
 		protected override void ProcessRequest(HttpContext context, ICmsEntityServiceProvider serviceProvider, Guid portalScopeId, IPortalContext portal, OrganizationServiceContext serviceContext, Entity entity, CmsEntityMetadata entityMetadata, ICrmEntitySecurityProvider security)
 		{

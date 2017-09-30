@@ -166,7 +166,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 		private string LayoutChildAction(string actionName, bool excludeFromParentCache = false)
 		{
-			var html = Html.Action(actionName, "Layout", new {area = "Portal"}, excludeFromParentCache);
+			var html = Html.Action(actionName, "Layout", new { area = "Portal"}, excludeFromParentCache);
 			return html == null ? null : html.ToString();
 		}
 	}

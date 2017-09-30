@@ -36,7 +36,7 @@ namespace Adxstudio.Xrm.Cms
 		}
 
 		public SiteMarkerTarget(Entity entity, IPortalViewEntity viewEntity, ApplicationPath applicationPath)
-			: this(entity, new Lazy<IPortalViewEntity>(() => viewEntity, LazyThreadSafetyMode.None), applicationPath) {}
+			: this(entity, new Lazy<IPortalViewEntity>(() => viewEntity, LazyThreadSafetyMode.None), applicationPath) { }
 
 		public string Description { get; private set; }
 

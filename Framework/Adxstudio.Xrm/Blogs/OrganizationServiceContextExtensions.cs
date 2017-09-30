@@ -472,7 +472,7 @@ namespace Adxstudio.Xrm.Blogs
 
 				if (!entities.Any())
 				{
-					return new Tuple<string, string, BlogCommentPolicy, string[], IRatingInfo>(null, null, defaultCommentPolicy, new string[] {}, null);
+					return new Tuple<string, string, BlogCommentPolicy, string[], IRatingInfo>(null, null, defaultCommentPolicy, new string[] { }, null);
 				}
 
 				var entity = entities.First();

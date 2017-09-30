@@ -25,7 +25,7 @@ namespace Adxstudio.Xrm.Cms.Replication
 		/// </summary>
 		/// <param name="source">Entity</param>
 		/// <param name="context">Organization Service Context</param>
-		public NoteReplication(Entity source, OrganizationServiceContext context) : base(source, context, "annotation") {}
+		public NoteReplication(Entity source, OrganizationServiceContext context) : base(source, context, "annotation") { }
 
 		public override void Created()
 		{

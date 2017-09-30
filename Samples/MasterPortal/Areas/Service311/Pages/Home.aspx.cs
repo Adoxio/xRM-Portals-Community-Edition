@@ -35,7 +35,7 @@ namespace Site.Areas.Service311.Pages
 
 		private IEnumerable<SiteMapNode> GetServiceRequests()
 		{
-			var nodes = new List<SiteMapNode> {};
+			var nodes = new List<SiteMapNode> { };
 
 			var linkSet = ServiceContext.GetLinkSetByName(Website, "Service Requests List");
 

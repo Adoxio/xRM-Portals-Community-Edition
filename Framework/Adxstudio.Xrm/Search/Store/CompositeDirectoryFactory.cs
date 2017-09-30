@@ -25,7 +25,7 @@ namespace Adxstudio.Xrm.Search.Store
 			_factories = factories;
 		}
 
-		public CompositeDirectoryFactory(params IDirectoryFactory[] factories) : this(factories as IEnumerable<IDirectoryFactory>) {}
+		public CompositeDirectoryFactory(params IDirectoryFactory[] factories) : this(factories as IEnumerable<IDirectoryFactory>) { }
 
 		public Directory GetDirectory(Version version)
 		{

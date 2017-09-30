@@ -34,17 +34,17 @@ namespace Adxstudio.Xrm.Blogs
 			_dataAdapter = new BlogDataAdapter(blog, dependencies);
 		}
 
-		public TagBlogDataAdapter(EntityReference blog, string tag, IDataAdapterDependencies dependencies) : this(blog, tag, dependencies, new BlogSecurityInfo(blog, dependencies)) {}
+		public TagBlogDataAdapter(EntityReference blog, string tag, IDataAdapterDependencies dependencies) : this(blog, tag, dependencies, new BlogSecurityInfo(blog, dependencies)) { }
 
-		public TagBlogDataAdapter(Entity blog, string tag, IDataAdapterDependencies dependencies) : this(blog.ToEntityReference(), tag, dependencies, new BlogSecurityInfo(blog, dependencies)) {}
+		public TagBlogDataAdapter(Entity blog, string tag, IDataAdapterDependencies dependencies) : this(blog.ToEntityReference(), tag, dependencies, new BlogSecurityInfo(blog, dependencies)) { }
 
-		public TagBlogDataAdapter(IBlog blog, string tag, IDataAdapterDependencies dependencies) : this(blog.Entity, tag, dependencies) {}
+		public TagBlogDataAdapter(IBlog blog, string tag, IDataAdapterDependencies dependencies) : this(blog.Entity, tag, dependencies) { }
 
-		public TagBlogDataAdapter(EntityReference blog, string tag, string portalName = null) : this(blog, tag, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public TagBlogDataAdapter(EntityReference blog, string tag, string portalName = null) : this(blog, tag, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
-		public TagBlogDataAdapter(Entity blog, string tag, string portalName = null) : this(blog, tag, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public TagBlogDataAdapter(Entity blog, string tag, string portalName = null) : this(blog, tag, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
-		public TagBlogDataAdapter(IBlog blog, string tag, string portalName = null) : this(blog, tag, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public TagBlogDataAdapter(IBlog blog, string tag, string portalName = null) : this(blog, tag, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		protected EntityReference Blog { get; private set; }
 
@@ -73,7 +73,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			if (maximumRows == 0)
 			{
-				return new IBlogPost[] {};
+				return new IBlogPost[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();

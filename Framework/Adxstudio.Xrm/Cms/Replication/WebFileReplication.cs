@@ -22,7 +22,7 @@ namespace Adxstudio.Xrm.Cms.Replication
 		/// </summary>
 		/// <param name="source">Entity</param>
 		/// <param name="context">Organization Service Context</param>
-		public WebFileReplication(Entity source, OrganizationServiceContext context) : base(source, context, "adx_webfile") {}
+		public WebFileReplication(Entity source, OrganizationServiceContext context) : base(source, context, "adx_webfile") { }
 
 		public override void Created()
 		{

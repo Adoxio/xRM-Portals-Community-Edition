@@ -88,7 +88,7 @@ namespace Adxstudio.Xrm.Forums
 		}
 
 		public ForumDataAdapter(IForum forum, IDataAdapterDependencies dependencies)
-			: this(forum.EntityReference, dependencies) {}
+			: this(forum.EntityReference, dependencies) { }
 
 
 
@@ -311,7 +311,7 @@ namespace Adxstudio.Xrm.Forums
 
 			var forumLastPost = forum.GetRelatedEntity(serviceContext, new Relationship("adx_communityforum_lastpost"));
 
-			var forumUpdate = new Entity(forum.LogicalName) {Id = forum.Id};
+			var forumUpdate = new Entity(forum.LogicalName) { Id = forum.Id};
 
 			// If the last post in the forum is from this thread, update the forum last post.
 			if (forumLastPost != null && Equals(forumLastPost.GetAttributeValue<EntityReference>("adx_forumthreadid"), forumThread))
@@ -379,7 +379,7 @@ namespace Adxstudio.Xrm.Forums
 
 			var forumEntity = SelectForumEntity(serviceContext, Forum);
 
-			var forumUpdate = new Entity("adx_communityforum") {Id = forumEntity.Id};
+			var forumUpdate = new Entity("adx_communityforum") { Id = forumEntity.Id};
 
 			forumUpdate["adx_lastpostid"] = forumPost;
 

@@ -150,7 +150,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 		public string DefaultItemTemplateUrl { get; private set; }
 
-		public string CssClass{ get; set; }
+		public string CssClass { get; set; }
 
 		public string PortalName { get; set; }
 		
@@ -312,7 +312,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		/// </summary>
 		/// <param name="container">The container.</param>
 		protected virtual void BuildPagerTemplate(IDataItemContainer container)
-		{}
+		{ }
 
 		/// <summary>
 		/// Builds the alternating item template.

@@ -17,7 +17,7 @@ namespace Adxstudio.Xrm.Web
 			Location = location;
 		}
 
-		public RedirectMatch(int statusCode, string location) : this(statusCode.ToEnum<HttpStatusCode>(), location) {}
+		public RedirectMatch(int statusCode, string location) : this(statusCode.ToEnum<HttpStatusCode>(), location) { }
 
 		public virtual string Location { get; private set; }
 

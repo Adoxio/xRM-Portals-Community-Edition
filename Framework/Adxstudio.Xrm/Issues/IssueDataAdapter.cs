@@ -213,13 +213,13 @@ namespace Adxstudio.Xrm.Issues
 
 			var attributes = new Dictionary<string, object>
 			{
-				{"regardingobjectid",	Issue},
-				{"createdon",	postedOn},
-				{"title",	StringHelper.GetCommentTitleFromContent(content) },
-				{"adx_approved",	issue.CommentPolicy == IssueForumCommentPolicy.Open || issue.CommentPolicy == IssueForumCommentPolicy.OpenToAuthenticatedUsers},
-				{"adx_createdbycontact", authorName},
-				{"adx_contactemail", authorEmail},
-				{"comments",	content},
+				{ "regardingobjectid",	Issue},
+				{ "createdon",	postedOn},
+				{ "title",	StringHelper.GetCommentTitleFromContent(content) },
+				{ "adx_approved",	issue.CommentPolicy == IssueForumCommentPolicy.Open || issue.CommentPolicy == IssueForumCommentPolicy.OpenToAuthenticatedUsers},
+				{ "adx_createdbycontact", authorName},
+				{ "adx_contactemail", authorEmail},
+				{ "comments",	content},
 			};
 
 			var portalUser = Dependencies.GetPortalUser();

@@ -1305,7 +1305,7 @@ namespace Adxstudio.Xrm.AspNet.Cms
 				else if (query != null && query.HasKeys() && !string.IsNullOrWhiteSpace(query.Get("p")))
 				{
 					query.Set("p", policy);
-					var issuerAddress = new UriBuilder(issuerPath) {Query = query.ToString() };
+					var issuerAddress = new UriBuilder(issuerPath) { Query = query.ToString() };
 					notification.ProtocolMessage.IssuerAddress = issuerAddress.ToString();
 				}
 				else

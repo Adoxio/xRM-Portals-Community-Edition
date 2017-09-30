@@ -23,7 +23,7 @@ namespace Microsoft.Xrm.Portal.IdentityModel.Web.Handlers
 		private class Message : WSFederationMessage
 		{
 			public Message(Uri baseUrl) : base(baseUrl, WSFederationConstants.Actions.SignIn) { Parameters.Clear(); }
-			public override void Write(TextWriter writer) {}
+			public override void Write(TextWriter writer) { }
 		}
 
 		#region Constructors
@@ -176,8 +176,8 @@ namespace Microsoft.Xrm.Portal.IdentityModel.Web.Handlers
 		{
 			var signInContext = new Dictionary<string, string>
 			{
-				{LiveIdTokenKey, context.Request["stoken"] },
-				{ReturnUrlKey, context.Request[ReturnUrlKey] },
+				{ LiveIdTokenKey, context.Request["stoken"] },
+				{ ReturnUrlKey, context.Request[ReturnUrlKey] },
 			};
 
 			var fam = new CrmFederationAuthenticationModule(context);

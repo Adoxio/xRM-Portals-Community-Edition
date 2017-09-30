@@ -6,5 +6,5 @@
 
 namespace Site.MasterPages
 {
-	public partial class Default : PortalMasterPage {}
+	public partial class Default : PortalMasterPage { }
 }

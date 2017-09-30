@@ -42,7 +42,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 		private readonly Lazy<IWebsiteAccessPermissionProvider> _websiteAccessPermissionProvider;
 
 		public PortalViewContext(SiteMapProvider siteMapProvider = null, string portalName = null, RequestContext requestContext = null)
-			: this(new PortalConfigurationDataAdapterDependencies(portalName, requestContext), siteMapProvider, portalName, requestContext) {}
+			: this(new PortalConfigurationDataAdapterDependencies(portalName, requestContext), siteMapProvider, portalName, requestContext) { }
 
 		public PortalViewContext(IDataAdapterDependencies dependencies, SiteMapProvider siteMapProvider = null, string portalName = null, 
             RequestContext requestContext = null)
@@ -56,7 +56,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 				dependencies.GetUrlProvider(),
 				siteMapProvider, 
 				portalName,
-				requestContext) {}
+				requestContext) { }
 
 		public PortalViewContext(ISettingDataAdapter settings, ISiteMarkerDataAdapter siteMarkers, ISnippetDataAdapter snippets,
 			IWebLinkSetDataAdapter webLinks, IAdDataAdapter ads, IPollDataAdapter polls, IEntityUrlProvider urlProvider, 
@@ -444,7 +444,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 
 			if (currentNode == null)
 			{
-				return new SiteMapNode[] {};
+				return new SiteMapNode[] { };
 			}
 
 			var path = new List<SiteMapNode>();

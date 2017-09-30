@@ -41,7 +41,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// <exception cref="ArgumentNullException">Thrown if <see cref="ArgumentNullException"/> is null.</exception>
 		public static IHtmlString WebLink(this HtmlHelper html, IWebLink webLink, bool showImage = true, string cssClass = null)
 		{
-			return WebLink(html, webLink, new {}, showImage, cssClass);
+			return WebLink(html, webLink, new { }, showImage, cssClass);
 		}
 
 		/// <summary>
@@ -158,7 +158,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// <exception cref="ArgumentNullException">Thrown if <paramref name="webLink"/> is null.</exception>
 		public static IHtmlString WebLinkImage(this HtmlHelper html, IWebLink webLink)
 		{
-			return WebLinkImage(html, webLink, new {});
+			return WebLinkImage(html, webLink, new { });
 		}
 
 		/// <summary>

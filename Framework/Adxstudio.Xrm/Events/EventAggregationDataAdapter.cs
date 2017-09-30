@@ -43,9 +43,9 @@ namespace Adxstudio.Xrm.Events
 			return SelectEvents()
 				.SelectMany(e => e.GetRelatedEntities(serviceContext, "adx_event_eventschedule")
 					.Where(es => security.TryAssert(serviceContext, es, CrmEntityRight.Read))
-					.Select(es => new {Event = e, EventSchedule = es}))
+					.Select(es => new { Event = e, EventSchedule = es}))
 				.SelectMany(e => serviceContext.GetDates(e.EventSchedule, min, max)
-					.Select(d => new {e.Event, e.EventSchedule, Start = d}))
+					.Select(d => new { e.Event, e.EventSchedule, Start = d}))
 				.Select(e => new EventOccurrence(
 					e.Event,
 					e.EventSchedule,

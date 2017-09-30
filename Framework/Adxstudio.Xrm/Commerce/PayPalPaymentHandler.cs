@@ -17,11 +17,11 @@ namespace Adxstudio.Xrm.Commerce
 	/// </summary>
 	public class PayPalPaymentHandler : PaymentHandler
 	{
-		public PayPalPaymentHandler(string portalName) : base(portalName) {}
+		public PayPalPaymentHandler(string portalName) : base(portalName) { }
 
-		protected override void HandleSuccessfulPayment(HttpContext context, Tuple<Guid, string> quoteAndReturnUrl) {}
+		protected override void HandleSuccessfulPayment(HttpContext context, Tuple<Guid, string> quoteAndReturnUrl) { }
 
-		protected override void HandleUnsuccessfulPayment(HttpContext context, Tuple<Guid, string> quoteAndReturnUrl, string errorMessage) {}
+		protected override void HandleUnsuccessfulPayment(HttpContext context, Tuple<Guid, string> quoteAndReturnUrl, string errorMessage) { }
 
 		protected override bool TryGetQuoteAndReturnUrl(HttpRequest request, IDataAdapterDependencies dataAdapterDependencies, out Tuple<Guid, string> quoteAndReturnUrl)
 		{

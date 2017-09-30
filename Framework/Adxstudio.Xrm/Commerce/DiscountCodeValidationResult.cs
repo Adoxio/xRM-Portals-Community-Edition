@@ -13,7 +13,7 @@ namespace Adxstudio.Xrm.Commerce
 {
 	public class DiscountCodeValidationResult
 	{
-		public DiscountCodeValidationResult() {}
+		public DiscountCodeValidationResult() { }
 
 		public DiscountCodeValidationResult(bool isValid)
 		{
@@ -123,7 +123,7 @@ namespace Adxstudio.Xrm.Commerce
 
 					if (applied)
 					{
-						discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.AlreadyApplied});
+						discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.AlreadyApplied});
 						continue;
 					}
 
@@ -136,7 +136,7 @@ namespace Adxstudio.Xrm.Commerce
 
 					if (typeOption == null)
 					{
-						discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.InvalidDiscountConfiguration});
+						discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.InvalidDiscountConfiguration});
 						continue;
 					}
 
@@ -149,17 +149,17 @@ namespace Adxstudio.Xrm.Commerce
 							amount = GetDecimalFromMoney(discount, "adx_amount");
 							break;
 						default:
-							discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.InvalidDiscountConfiguration});
+							discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.InvalidDiscountConfiguration});
 							continue;
 					}
 
 					if (minimumPurchaseAmount > 0 && prefreightAmount < minimumPurchaseAmount)
 					{
-						discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.MinimumAmountNotMet});
+						discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.MinimumAmountNotMet});
 					}
 					else if (maximumRedemptions > 0 && redemptions >= maximumRedemptions)
 					{
-						discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.MaximumRedemptions});
+						discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.MaximumRedemptions});
 					}
 					else
 					{
@@ -219,7 +219,7 @@ namespace Adxstudio.Xrm.Commerce
 
 						if (baseAmount <= 0)
 						{
-							discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.ZeroAmount});
+							discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.ZeroAmount});
 							continue;
 						}
 
@@ -238,7 +238,7 @@ namespace Adxstudio.Xrm.Commerce
 
 							if (applied)
 							{
-								discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.AlreadyApplied});
+								discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.AlreadyApplied});
 								continue;
 							}
 
@@ -284,7 +284,7 @@ namespace Adxstudio.Xrm.Commerce
 
 							if (typeOption == null)
 							{
-								discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.InvalidDiscountConfiguration});
+								discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.InvalidDiscountConfiguration});
 								continue;
 							}
 
@@ -301,13 +301,13 @@ namespace Adxstudio.Xrm.Commerce
 									amount = GetDecimalFromMoney(discount, "adx_amount");
 									break;
 								default:
-									discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.InvalidDiscountConfiguration});
+									discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.InvalidDiscountConfiguration});
 									continue;
 							}
 
 							if (maximumRedemptions > 0 && redemptions >= maximumRedemptions)
 							{
-								discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.MaximumRedemptions});
+								discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.MaximumRedemptions});
 								continue;
 							}
 
@@ -331,7 +331,7 @@ namespace Adxstudio.Xrm.Commerce
 
 			if (!isValid && !discountErrors.Any())
 			{
-				discountErrors.Add(new DiscountError {ErrorCode = DiscountErrorCode.NotApplicable});
+				discountErrors.Add(new DiscountError { ErrorCode = DiscountErrorCode.NotApplicable});
 				errorCode = DiscountErrorCode.NotApplicable;
 			}
 

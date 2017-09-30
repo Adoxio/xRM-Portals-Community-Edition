@@ -21,9 +21,9 @@ namespace Adxstudio.Xrm.Web.Handlers
 {
 	public class CmsEntityUrlHandler : CmsEntityHandler
 	{
-		public CmsEntityUrlHandler() {}
+		public CmsEntityUrlHandler() { }
 
-		public CmsEntityUrlHandler(string portalName, Guid? portalScopeId, string entityLogicalName, Guid? id) : base(portalName, portalScopeId, entityLogicalName, id) {}
+		public CmsEntityUrlHandler(string portalName, Guid? portalScopeId, string entityLogicalName, Guid? id) : base(portalName, portalScopeId, entityLogicalName, id) { }
 
 		protected override void ProcessRequest(HttpContext context, ICmsEntityServiceProvider serviceProvider, Guid portalScopeId, IPortalContext portal, OrganizationServiceContext serviceContext, EntityReference entityReference)
 		{
@@ -60,7 +60,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 
 			WriteResponse(context.Response, new JObject
 			{
-				{"d",  new JObject { {"Url", new JValue(url) } } }
+				{ "d",  new JObject { { "Url", new JValue(url) } } }
 			});
 		}
 	}

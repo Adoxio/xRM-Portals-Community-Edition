@@ -88,7 +88,7 @@ namespace Adxstudio.Xrm.Web.UI
 
 		public void AddPicklistMetadata(string entityLogicalName, string attributeLogicalName, Dictionary<int, string> options)
 		{
-			var json = options.SerializeByJson(new Type[] {});
+			var json = options.SerializeByJson(new Type[] { });
 
 			var schemaMap = new HtmlGenericControl("span") { InnerText = json };
 
@@ -130,7 +130,7 @@ namespace Adxstudio.Xrm.Web.UI
 		{
 			var json = new JObject
 			{
-				{"tags", new JArray(tags) }
+				{ "tags", new JArray(tags) }
 			};
 
 			var schemaMap = new HtmlGenericControl("span") { InnerText = json.ToString(Formatting.None) };

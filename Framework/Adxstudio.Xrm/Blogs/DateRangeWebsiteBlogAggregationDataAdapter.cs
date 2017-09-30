@@ -25,7 +25,7 @@ namespace Adxstudio.Xrm.Blogs
 			Max = max;
 		}
 
-		public DateRangeWebsiteBlogAggregationDataAdapter(DateTime min, DateTime max, string portalName = null) : this(min, max, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public DateRangeWebsiteBlogAggregationDataAdapter(DateTime min, DateTime max, string portalName = null) : this(min, max, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		protected DateTime Max { get; private set; }
 
@@ -40,7 +40,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			if (maximumRows == 0)
 			{
-				return new IBlogPost[] {};
+				return new IBlogPost[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();

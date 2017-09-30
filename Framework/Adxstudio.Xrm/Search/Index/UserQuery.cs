@@ -9,6 +9,6 @@ namespace Adxstudio.Xrm.Search.Index
 {
 	internal class UserQuery : SavedQuery
 	{
-		public UserQuery(Entity savedQuery) : base(savedQuery) {}
+		public UserQuery(Entity savedQuery) : base(savedQuery) { }
 	}
 }

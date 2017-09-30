@@ -342,21 +342,21 @@ namespace Adxstudio.Xrm.SharePoint
 				? RouteTable.Routes.GetVirtualPath(null, typeof(EntityRouteHandler).FullName,
 					new RouteValueDictionary
 					{
-						{"prefix", "_entity"},
-						{"logicalName", entity.LogicalName},
-						{"id", entity.Id},
-						{"file", fileName},
-						{"folderPath", folderPath}
+						{ "prefix", "_entity"},
+						{ "logicalName", entity.LogicalName},
+						{ "id", entity.Id},
+						{ "file", fileName},
+						{ "folderPath", folderPath}
 					})
 				: RouteTable.Routes.GetVirtualPath(null, typeof(EntityRouteHandler).FullName + "PortalScoped",
 					new RouteValueDictionary
 					{
-						{"prefix", "_entity"},
-						{"logicalName", entity.LogicalName},
-						{"id", entity.Id},
-						{"__portalScopeId__", website.Id},
-						{"file", fileName},
-						{"folderPath", folderPath}
+						{ "prefix", "_entity"},
+						{ "logicalName", entity.LogicalName},
+						{ "id", entity.Id},
+						{ "__portalScopeId__", website.Id},
+						{ "file", fileName},
+						{ "folderPath", folderPath}
 					});
 
 			var absolutePath = virtualPath == null

@@ -9,7 +9,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 {
 	public class ResourceManagerDrop : PortalDrop
 	{
-		public ResourceManagerDrop(IPortalLiquidContext portalLiquidContext) : base(portalLiquidContext) {}
+		public ResourceManagerDrop(IPortalLiquidContext portalLiquidContext) : base(portalLiquidContext) { }
 
 		public override object BeforeMethod(string method)
 		{

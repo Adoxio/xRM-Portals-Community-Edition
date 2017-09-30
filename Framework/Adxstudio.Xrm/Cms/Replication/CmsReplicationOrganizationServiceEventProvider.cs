@@ -40,7 +40,7 @@ namespace Adxstudio.Xrm.Cms.Replication
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="args"></param>
-		public void Deleted(object sender, OrganizationServiceDeletedEventArgs args) {}
+		public void Deleted(object sender, OrganizationServiceDeletedEventArgs args) { }
 
 		/// <summary>
 		/// Executed event

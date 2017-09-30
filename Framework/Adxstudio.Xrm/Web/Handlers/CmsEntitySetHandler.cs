@@ -36,7 +36,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 
 		private static readonly Encoding _contentEncoding = Encoding.UTF8;
 
-		public CmsEntitySetHandler() : this(null, null, null) {}
+		public CmsEntitySetHandler() : this(null, null, null) { }
 
 		public CmsEntitySetHandler(string portalName, Guid? portalScopeId, string entityLogicalName)
 		{
@@ -157,7 +157,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 			
 			WriteResponse(context.Response, new JObject
 			{
-				{"d", new JArray(entities.Select(e => GetEntityReferenceJson(e, entityMetadata, portalScopeId))) }
+				{ "d", new JArray(entities.Select(e => GetEntityReferenceJson(e, entityMetadata, portalScopeId))) }
 			});
 		}
 
@@ -188,12 +188,12 @@ namespace Adxstudio.Xrm.Web.Handlers
 				{
 					"__metadata", new JObject
 					{
-						{"uri", new JValue(VirtualPathUtility.ToAbsolute(CmsEntityRouteHandler.GetAppRelativePath(portalScopeId, entity.ToEntityReference()))) },
-						{"type", new JValue(entity.GetType().FullName) },
+						{ "uri", new JValue(VirtualPathUtility.ToAbsolute(CmsEntityRouteHandler.GetAppRelativePath(portalScopeId, entity.ToEntityReference()))) },
+						{ "type", new JValue(entity.GetType().FullName) },
 					}
 				},
-				{"Id", new JValue(entity.Id.ToString()) },
-				{"LogicalName", new JValue(entity.LogicalName) },
+				{ "Id", new JValue(entity.Id.ToString()) },
+				{ "LogicalName", new JValue(entity.LogicalName) },
 			};
 
 			foreach (var attributeLogicalName in entityMetadata.Attributes)
@@ -216,7 +216,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 					{
 						"__deferred", new JObject
 						{
-							{"uri", new JValue(VirtualPathUtility.ToAbsolute(CmsEntityRelationshipRouteHandler.GetAppRelativePath(portalScopeId, entity.ToEntityReference(), relationship))) }
+							{ "uri", new JValue(VirtualPathUtility.ToAbsolute(CmsEntityRelationshipRouteHandler.GetAppRelativePath(portalScopeId, entity.ToEntityReference(), relationship))) }
 						}
 					},
 				};
@@ -245,15 +245,15 @@ namespace Adxstudio.Xrm.Web.Handlers
 				{
 					"__metadata", new JObject
 					{
-						{"uri", new JValue(VirtualPathUtility.ToAbsolute(CmsEntityRouteHandler.GetAppRelativePath(portalScopeId, entity.ToEntityReference()))) },
-						{"type", new JValue(entity.GetType().FullName) },
+						{ "uri", new JValue(VirtualPathUtility.ToAbsolute(CmsEntityRouteHandler.GetAppRelativePath(portalScopeId, entity.ToEntityReference()))) },
+						{ "type", new JValue(entity.GetType().FullName) },
 					}
 					},
-				{"Id", new JValue(entity.Id.ToString()) },
-				{"LogicalName", new JValue(entity.LogicalName) },
-				{"Name", new JValue(name) },
-				{primaryNameAttribute, new JValue(name) },
-				{entityMetadata.PrimaryIdAttribute, new JValue(entity.Id.ToString()) }
+				{ "Id", new JValue(entity.Id.ToString()) },
+				{ "LogicalName", new JValue(entity.LogicalName) },
+				{ "Name", new JValue(name) },
+				{ primaryNameAttribute, new JValue(name) },
+				{ entityMetadata.PrimaryIdAttribute, new JValue(entity.Id.ToString()) }
 			};
 
 			if (entityMetadata.HasAttribute("adx_description"))
@@ -292,12 +292,12 @@ namespace Adxstudio.Xrm.Web.Handlers
 					{
 						"__metadata", new JObject
 						{
-							{"type", new JValue(crmEntityReference.GetType().FullName) }
+							{ "type", new JValue(crmEntityReference.GetType().FullName) }
 						}
 					},
-					{"Id", new JValue(crmEntityReference.Id) },
-					{"LogicalName", new JValue(crmEntityReference.LogicalName) },
-					{"Name", new JValue(crmEntityReference.Name) },
+					{ "Id", new JValue(crmEntityReference.Id) },
+					{ "LogicalName", new JValue(crmEntityReference.LogicalName) },
+					{ "Name", new JValue(crmEntityReference.Name) },
 				};
 			}
 
@@ -310,12 +310,12 @@ namespace Adxstudio.Xrm.Web.Handlers
 					{
 						"__metadata", new JObject
 						{
-							{"type", new JValue(entityReference.GetType().FullName) }
+							{ "type", new JValue(entityReference.GetType().FullName) }
 						}
 					},
-					{"Id", new JValue(entityReference.Id) },
-					{"LogicalName", new JValue(entityReference.LogicalName) },
-					{"Name", new JValue(entityReference.Name) },
+					{ "Id", new JValue(entityReference.Id) },
+					{ "LogicalName", new JValue(entityReference.LogicalName) },
+					{ "Name", new JValue(entityReference.Name) },
 				};
 			}
 
@@ -391,11 +391,11 @@ namespace Adxstudio.Xrm.Web.Handlers
 				{
 					"error", new JObject
 					{
-						{"code", new JValue(string.Empty) },
+						{ "code", new JValue(string.Empty) },
 						{
 							"message", new JObject
 							{
-								{"value", new JValue(string.Format(Resources.ResourceManager.GetString("Generic_Error_Message"), guid)) }
+								{ "value", new JValue(string.Format(Resources.ResourceManager.GetString("Generic_Error_Message"), guid)) }
 							}
 						},
 					}

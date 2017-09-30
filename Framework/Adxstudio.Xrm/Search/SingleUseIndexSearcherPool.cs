@@ -14,6 +14,6 @@ namespace Adxstudio.Xrm.Search
 			return searcherFactory();
 		}
 
-		public void Refresh(string name) {}
+		public void Refresh(string name) { }
 	}
 }

@@ -61,7 +61,7 @@ namespace Adxstudio.Xrm.Ideas
 
 			if (maximumRows == 0)
 			{
-				return new IIdeaForum[] {};
+				return new IIdeaForum[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();

@@ -97,7 +97,7 @@ namespace Adxstudio.Xrm.Forums
 
 			if (maximumRows == 0)
 			{
-				return new IForumThread[] {};
+				return new IForumThread[] { };
 			}
 
 			return FilterByForumReadAccess

@@ -81,7 +81,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
 		/// <summary>
 		/// An integer value of the height of the map pushpin image. Default: 39 
 		/// </summary>
-		public int PinImageHeight{ get; set; }
+		public int PinImageHeight { get; set; }
 		/// <summary>
 		/// An integer value of the width of the map pushpin image. Default: 32 
 		/// </summary>

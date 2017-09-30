@@ -128,7 +128,7 @@ namespace Site.Areas.Setup.Controllers
 
 				using (var service = new OrganizationService(connection))
 				{
-					var query = new QueryExpression("adx_website") {ColumnSet = new ColumnSet("adx_name") };
+					var query = new QueryExpression("adx_website") { ColumnSet = new ColumnSet("adx_name") };
 
 					query.Criteria.AddCondition("statecode", ConditionOperator.Equal, 0);
 					query.Criteria.AddCondition("adx_parentwebsiteid", ConditionOperator.Null);

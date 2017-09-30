@@ -35,9 +35,9 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 			var uri = uriTemplate.BindByName(new Uri("http://localhost/"), new Dictionary<string, string>
 			{
-				{"__portalScopeId__",      portalScopeId.ToString() },
-				{"entityLogicalName",      logicalNamePlaceholder  },
-				{"id",                     idPlaceholder           },
+				{ "__portalScopeId__",      portalScopeId.ToString() },
+				{ "entityLogicalName",      logicalNamePlaceholder  },
+				{ "id",                     idPlaceholder           },
 			});
 
 			var path = "~{0}".FormatWith(uri.PathAndQuery);
@@ -63,8 +63,8 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 					return new JObjectResult(new JObject
 					{
-						{"d", new JArray(GetWebPageReferenceJson(selected, __portalScopeId__)) },
-						{"more", false}
+						{ "d", new JArray(GetWebPageReferenceJson(selected, __portalScopeId__)) },
+						{ "more", false}
 					});
 				}
 
@@ -86,8 +86,8 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 				return new JObjectResult(new JObject
 				{
-					{"d", new JArray(results.Select(e => GetWebPageReferenceJson(e, __portalScopeId__))) },
-					{"more", nodes.Length > (offset + PageSize) }
+					{ "d", new JArray(results.Select(e => GetWebPageReferenceJson(e, __portalScopeId__))) },
+					{ "more", nodes.Length > (offset + PageSize) }
 				});
 			}
 			catch (Exception e)
@@ -114,8 +114,8 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 					return new JObjectResult(new JObject
 					{
-						{"d", new JArray(GetWebPageReferenceJson(selected, __portalScopeId__)) },
-						{"more", false}
+						{ "d", new JArray(GetWebPageReferenceJson(selected, __portalScopeId__)) },
+						{ "more", false}
 					});
 				}
 
@@ -137,8 +137,8 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 				return new JObjectResult(new JObject
 				{
-					{"d", new JArray(results.Select(e => GetWebPageReferenceJson(e, __portalScopeId__))) },
-					{"more", nodes.Length > (offset + PageSize) }
+					{ "d", new JArray(results.Select(e => GetWebPageReferenceJson(e, __portalScopeId__))) },
+					{ "more", nodes.Length > (offset + PageSize) }
 				});
 			}
 			catch (Exception e)
@@ -159,12 +159,12 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 		private static readonly IDictionary<string, Tuple<string, string>> ParentSchema = new Dictionary<string, Tuple<string, string>>
 		{
-			{"adx_webpage", new Tuple<string, string>("adx_webpageid", "adx_parentpageid") },
-			{"adx_webfile", new Tuple<string, string>("adx_webfileid", "adx_parentpageid") },
-			{"adx_shortcut", new Tuple<string, string>("adx_shortcutid", "adx_parentpage_webpageid") },
-			{"adx_event", new Tuple<string, string>("adx_eventid", "adx_parentpageid") },
-			{"adx_blog", new Tuple<string, string>("adx_blogid", "adx_parentpageid") },
-			{"adx_communityforum", new Tuple<string, string>("adx_communityforumid", "adx_parentpageid") },
+			{ "adx_webpage", new Tuple<string, string>("adx_webpageid", "adx_parentpageid") },
+			{ "adx_webfile", new Tuple<string, string>("adx_webfileid", "adx_parentpageid") },
+			{ "adx_shortcut", new Tuple<string, string>("adx_shortcutid", "adx_parentpage_webpageid") },
+			{ "adx_event", new Tuple<string, string>("adx_eventid", "adx_parentpageid") },
+			{ "adx_blog", new Tuple<string, string>("adx_blogid", "adx_parentpageid") },
+			{ "adx_communityforum", new Tuple<string, string>("adx_communityforumid", "adx_parentpageid") },
 		};
 
 		private EntityReference GetExistingParent(EntityReference child, IDataAdapterDependencies dependencies)
@@ -245,14 +245,14 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 				{
 					"error", new JObject
 					{
-						{"code", new JValue(string.Empty) },
+						{ "code", new JValue(string.Empty) },
 						{
 							"message", new JObject
 							{
-								{"value", new JValue(e.Message) }
+								{ "value", new JValue(e.Message) }
 							}
 						},
-						{"innererror", GetExceptionJson(e) }
+						{ "innererror", GetExceptionJson(e) }
 					}
 				}
 			});
@@ -260,7 +260,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 		private IEnumerable<Tuple<DirectoryTreeNode, string[]>> GetParentOptions(DirectoryTreeNode node)
 		{
-			return GetParentOptions(node, new string[] {});
+			return GetParentOptions(node, new string[] { });
 		}
 
 		private IEnumerable<Tuple<DirectoryTreeNode, string[]>> GetParentOptions(DirectoryTreeNode node, string[] path)
@@ -286,7 +286,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 		private IEnumerable<Tuple<DirectoryTreeNode, string[]>> GetParentOptions(EntityReference child, EntityReference existingParent, DirectoryTreeNode node)
 		{
-			return GetParentOptions(child, existingParent, node, new string[] {});
+			return GetParentOptions(child, existingParent, node, new string[] { });
 		}
 
 		private IEnumerable<Tuple<DirectoryTreeNode, string[]>> GetParentOptions(EntityReference child, EntityReference existingParent, DirectoryTreeNode node, string[] path)
@@ -324,9 +324,9 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 			var json = new JObject
 			{
-				{"message", new JValue(e.Message) },
-				{"type", new JValue(e.GetType().FullName) },
-				{"stacktrace", new JValue(e.StackTrace) },
+				{ "message", new JValue(e.Message) },
+				{ "type", new JValue(e.GetType().FullName) },
+				{ "stacktrace", new JValue(e.StackTrace) },
 			};
 
 			if (e.InnerException != null)
@@ -347,15 +347,15 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 				{
 					"__metadata", new JObject
 					{
-						{"uri", new JValue(VirtualPathUtility.ToAbsolute(CmsEntityRouteHandler.GetAppRelativePath(portalScopeId, entity.ToEntityReference()))) },
-						{"type", new JValue(entity.GetType().FullName) },
+						{ "uri", new JValue(VirtualPathUtility.ToAbsolute(CmsEntityRouteHandler.GetAppRelativePath(portalScopeId, entity.ToEntityReference()))) },
+						{ "type", new JValue(entity.GetType().FullName) },
 					}
 					},
-				{"Id", new JValue(entity.Id.ToString()) },
-				{"LogicalName", new JValue(entity.LogicalName) },
-				{"Name", new JValue(name) },
-				{"adx_name", new JValue(name) },
-				{"adx_webpageid", new JValue(entity.Id.ToString()) }
+				{ "Id", new JValue(entity.Id.ToString()) },
+				{ "LogicalName", new JValue(entity.LogicalName) },
+				{ "Name", new JValue(name) },
+				{ "adx_name", new JValue(name) },
+				{ "adx_webpageid", new JValue(entity.Id.ToString()) }
 			};
 
 			return json;
@@ -371,16 +371,16 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 				{
 					"__metadata", new JObject
 					{
-						{"uri", new JValue(VirtualPathUtility.ToAbsolute(CmsEntityRouteHandler.GetAppRelativePath(portalScopeId, entity.ToEntityReference()))) },
-						{"type", new JValue(entity.GetType().FullName) },
+						{ "uri", new JValue(VirtualPathUtility.ToAbsolute(CmsEntityRouteHandler.GetAppRelativePath(portalScopeId, entity.ToEntityReference()))) },
+						{ "type", new JValue(entity.GetType().FullName) },
 					}
 					},
-				{"Id", new JValue(entity.Id.ToString()) },
-				{"LogicalName", new JValue(entity.LogicalName) },
-				{"Name", new JValue(name) },
-				{"Path", new JArray(node.Item2.AsEnumerable()) },
-				{"adx_name", new JValue(name) },
-				{"adx_webpageid", new JValue(entity.Id.ToString()) }
+				{ "Id", new JValue(entity.Id.ToString()) },
+				{ "LogicalName", new JValue(entity.LogicalName) },
+				{ "Name", new JValue(name) },
+				{ "Path", new JArray(node.Item2.AsEnumerable()) },
+				{ "adx_name", new JValue(name) },
+				{ "adx_webpageid", new JValue(entity.Id.ToString()) }
 			};
 
 			return json;

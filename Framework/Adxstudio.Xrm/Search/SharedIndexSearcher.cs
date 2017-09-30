@@ -42,7 +42,7 @@ namespace Adxstudio.Xrm.Search
 				: DefaultSearcherLockTimeout;
 		}
 
-		public void Dispose() {}
+		public void Dispose() { }
 
 		public void Refresh()
 		{

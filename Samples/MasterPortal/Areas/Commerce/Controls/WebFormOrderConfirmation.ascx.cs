@@ -298,7 +298,7 @@ namespace Site.Areas.Commerce.Controls
 		protected class LineItem : Tuple<string, int, decimal, decimal>
 		{
 			public LineItem(string name, int lineItemNumber, decimal quantity, decimal pricePerUnit)
-				: base(name, lineItemNumber, quantity, pricePerUnit) {}
+				: base(name, lineItemNumber, quantity, pricePerUnit) { }
 
 			public string Name
 			{

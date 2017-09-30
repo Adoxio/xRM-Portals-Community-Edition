@@ -15,7 +15,7 @@ namespace Adxstudio.Xrm.Search.Services
 	public class CrmEntitySearchResult : ICrmEntitySearchResult
 	{
 		public CrmEntitySearchResult(string entityLogicalName, Guid entityID, string title, Uri url, string fragment, int resultNumber, float score)
-			: this(entityLogicalName, entityID, title, url, fragment, resultNumber, score, new Dictionary<string, string>()) {}
+			: this(entityLogicalName, entityID, title, url, fragment, resultNumber, score, new Dictionary<string, string>()) { }
 
 		public CrmEntitySearchResult(string entityLogicalName, Guid entityID, string title, Uri url, string fragment, int resultNumber, float score, IDictionary<string, string> extendedAttributes)
 		{

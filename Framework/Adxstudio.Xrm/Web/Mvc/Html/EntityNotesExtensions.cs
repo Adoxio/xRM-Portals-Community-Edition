@@ -209,7 +209,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 
 			if (orders == null || !orders.Any())
 			{
-				orders = new List<Order> {new Order("createdon") };
+				orders = new List<Order> { new Order("createdon") };
 			}
 			container.MergeAttribute("data-orders", JsonConvert.SerializeObject(orders));
 			container.MergeAttribute("data-target", JsonConvert.SerializeObject(target));
@@ -221,7 +221,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				var header = new TagBuilder("div");
 				header.AddCssClass("page-header");
 				header.AddCssClass("col-sm-9");
-				header.InnerHtml = (new TagBuilder("h3") {InnerHtml = title.GetValueOrDefault(DefaultNotesListTitle) }).ToString();
+				header.InnerHtml = (new TagBuilder("h3") { InnerHtml = title.GetValueOrDefault(DefaultNotesListTitle) }).ToString();
 				container.InnerHtml += header.ToString();
 			}
 

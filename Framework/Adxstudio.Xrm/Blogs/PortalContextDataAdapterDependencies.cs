@@ -17,6 +17,6 @@ namespace Adxstudio.Xrm.Blogs
 			PortalCrmConfigurationManager.CreateCrmEntitySecurityProvider(portalName),
 			PortalCrmConfigurationManager.CreateDependencyProvider(portalName).GetDependency<IEntityUrlProvider>(),
 			portalContext,
-			requestContext) {}
+			requestContext) { }
 	}
 }

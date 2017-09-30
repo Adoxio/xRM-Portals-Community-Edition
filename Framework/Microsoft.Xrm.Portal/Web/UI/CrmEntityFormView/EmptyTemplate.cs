@@ -9,6 +9,6 @@ namespace Microsoft.Xrm.Portal.Web.UI.CrmEntityFormView
 {
 	internal sealed class EmptyTemplate : ITemplate
 	{
-		public void InstantiateIn(Control container) {}
+		public void InstantiateIn(Control container) { }
 	}
 }

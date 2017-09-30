@@ -34,7 +34,7 @@ namespace Adxstudio.Xrm.Search
 			LogicalNames = logicalNames == null ? Enumerable.Empty<string>() : logicalNames.ToArray();
         }
 
-		public CrmEntityQuery(string queryText, int pageNumber, int pageSize, IWebsiteLanguage language, bool multiLanguageEnabled, string filter = null) : this(queryText, pageNumber, pageSize, Enumerable.Empty<string>(), language, multiLanguageEnabled, filter) {}
+		public CrmEntityQuery(string queryText, int pageNumber, int pageSize, IWebsiteLanguage language, bool multiLanguageEnabled, string filter = null) : this(queryText, pageNumber, pageSize, Enumerable.Empty<string>(), language, multiLanguageEnabled, filter) { }
 
 		public string Filter { get; private set; }
 

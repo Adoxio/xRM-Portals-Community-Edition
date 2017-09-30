@@ -28,9 +28,9 @@ namespace Adxstudio.Xrm.Products
 
 		private static readonly IDictionary<string, Expression<Func<Entity, object>>> SortExpressions = new Dictionary<string, Expression<Func<Entity, object>>>(StringComparer.InvariantCultureIgnoreCase)
 		{
-			{"Name", product => product.GetAttributeValue<string>("name") },
-			{"Price", product => product.GetAttributeValue<Money>("price") },
-			{"Rating", product => product.GetAttributeValue<object>("adx_ratingaverage") },
+			{ "Name", product => product.GetAttributeValue<string>("name") },
+			{ "Price", product => product.GetAttributeValue<Money>("price") },
+			{ "Rating", product => product.GetAttributeValue<object>("adx_ratingaverage") },
 		};
 
 		public ProductAggregationDataAdapter(

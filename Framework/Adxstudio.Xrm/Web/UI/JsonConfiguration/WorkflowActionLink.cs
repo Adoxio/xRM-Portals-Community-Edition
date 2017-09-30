@@ -139,7 +139,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 
 			if (url == null)
 				URL = EntityListFunctions.BuildControllerActionUrl("ExecuteWorkflow", "EntityGrid",
-					new {area = "Portal", __portalScopeId__ = portalContext.Website.Id});
+					new { area = "Portal", __portalScopeId__ = portalContext.Website.Id});
 
 			var buttonLabel = action.ButtonLabel.GetLocalizedString(languageCode);
 			var buttonTooltip = action.ButtonTooltip.GetLocalizedString(languageCode);

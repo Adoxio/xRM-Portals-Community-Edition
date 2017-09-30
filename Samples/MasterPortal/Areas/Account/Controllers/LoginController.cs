@@ -1537,7 +1537,7 @@ namespace Site.Areas.Account.Controllers
 
 		private static ActionResult RedirectToProfile(string returnUrl)
 		{
-			var query = !string.IsNullOrWhiteSpace(returnUrl) ? new NameValueCollection {{"ReturnUrl", returnUrl}} : null;
+			var query = !string.IsNullOrWhiteSpace(returnUrl) ? new NameValueCollection { { "ReturnUrl", returnUrl}} : null;
 
 			return new RedirectToSiteMarkerResult("Profile", query);
 		}

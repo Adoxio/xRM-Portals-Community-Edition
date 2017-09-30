@@ -117,7 +117,7 @@ namespace Adxstudio.Xrm.Cms
 			{
 				Entity = new FetchEntity("adx_weblink")
 				{
-					Orders = new[] {new Order("adx_displayorder") },
+					Orders = new[] { new Order("adx_displayorder") },
 					Filters = new[]
 					{
 						new Filter
@@ -152,14 +152,14 @@ namespace Adxstudio.Xrm.Cms
 		{
 			var webLinkSet = Select(webLinkSetId);
 
-			return webLinkSet == null ? new IWebLink[] {} : webLinkSet.WebLinks;
+			return webLinkSet == null ? new IWebLink[] { } : webLinkSet.WebLinks;
 		}
 
 		public IEnumerable<IWebLink> SelectWebLinks(string webLinkSetName)
 		{
 			var webLinkSet = Select(webLinkSetName);
 
-			return webLinkSet == null ? new IWebLink[] {} : webLinkSet.WebLinks;
+			return webLinkSet == null ? new IWebLink[] { } : webLinkSet.WebLinks;
 		}
 
 		private static IWebLink CreateWebLink(OrganizationServiceContext serviceContext, Entity entity, ICrmEntitySecurityProvider securityProvider, IEntityUrlProvider urlProvider, ILookup<Guid, Entity> childWebLinkLookup)

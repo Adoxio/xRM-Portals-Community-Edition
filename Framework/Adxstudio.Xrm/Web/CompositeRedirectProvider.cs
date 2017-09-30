@@ -23,7 +23,7 @@ namespace Adxstudio.Xrm.Web
 			_providers = providers;
 		}
 
-		public CompositeRedirectProvider(params IRedirectProvider[] providers) : this((IEnumerable<IRedirectProvider>)providers) {}
+		public CompositeRedirectProvider(params IRedirectProvider[] providers) : this((IEnumerable<IRedirectProvider>)providers) { }
 
 		public IRedirectMatch Match(Guid websiteID, UrlBuilder url)
 		{

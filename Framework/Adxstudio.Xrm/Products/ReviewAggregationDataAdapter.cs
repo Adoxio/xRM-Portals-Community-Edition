@@ -28,8 +28,8 @@ namespace Adxstudio.Xrm.Products
 
 		private static readonly IDictionary<string, Expression<Func<Entity, object>>> SortExpressions = new Dictionary<string, Expression<Func<Entity, object>>>(StringComparer.InvariantCultureIgnoreCase)
 		{
-			{"SubmittedOn", review => review.GetAttributeValue<object>("adx_submittedon") },
-			{"Rating", review => review.GetAttributeValue<object>("adx_rating") },
+			{ "SubmittedOn", review => review.GetAttributeValue<object>("adx_submittedon") },
+			{ "Rating", review => review.GetAttributeValue<object>("adx_rating") },
 		};
 
 		public ReviewAggregationDataAdapter(

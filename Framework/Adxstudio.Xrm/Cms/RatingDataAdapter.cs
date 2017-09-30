@@ -33,10 +33,10 @@ namespace Adxstudio.Xrm.Cms
 		}
 
 		public RatingDataAdapter(Entity rateable, IDataAdapterDependencies dependencies) 
-			: this(rateable.ToEntityReference(), dependencies) {}
+			: this(rateable.ToEntityReference(), dependencies) { }
 
 		public RatingDataAdapter(EntityReference rateableReference, string portalName = null)
-			: this(rateableReference, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+			: this(rateableReference, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		public RatingDataAdapter(Entity rateable, string portalName = null) 
 			: this(rateable.ToEntityReference(), new PortalConfigurationDataAdapterDependencies(portalName)) { }

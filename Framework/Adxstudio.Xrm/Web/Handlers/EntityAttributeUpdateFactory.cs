@@ -68,7 +68,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 
 		private class NonexistentAttributeUpdate : EntityAttributeUpdate
 		{
-			public NonexistentAttributeUpdate(Entity entity) : base(entity) {}
+			public NonexistentAttributeUpdate(Entity entity) : base(entity) { }
 
 			public override void Apply(JToken token)
 			{

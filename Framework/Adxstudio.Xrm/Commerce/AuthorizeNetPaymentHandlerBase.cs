@@ -16,7 +16,7 @@ namespace Adxstudio.Xrm.Commerce
 {
 	public abstract class AuthorizeNetPaymentHandlerBase : PaymentHandler
 	{
-		protected AuthorizeNetPaymentHandlerBase(string portalName) : base(portalName) {}
+		protected AuthorizeNetPaymentHandlerBase(string portalName) : base(portalName) { }
 
 		protected override void HandleSuccessfulPayment(HttpContext context, Tuple<Guid, string> quoteAndReturnUrl)
 		{

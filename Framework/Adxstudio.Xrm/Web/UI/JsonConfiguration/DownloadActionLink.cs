@@ -90,7 +90,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 
 			if (url == null)
 				URL = EntityListFunctions.BuildControllerActionUrl("DownloadAsExcel", "EntityGrid",
-					new {area = "Portal", __portalScopeId__ = portalContext.Website.Id});
+					new { area = "Portal", __portalScopeId__ = portalContext.Website.Id});
 		}
 	}
 }

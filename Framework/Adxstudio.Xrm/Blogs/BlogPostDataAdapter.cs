@@ -41,20 +41,20 @@ namespace Adxstudio.Xrm.Blogs
 			Security = security;
 		}
 
-		public BlogPostDataAdapter(EntityReference blogPost, IDataAdapterDependencies dependencies) : this(blogPost, dependencies, new BlogSecurityInfo(blogPost, dependencies)) {}
+		public BlogPostDataAdapter(EntityReference blogPost, IDataAdapterDependencies dependencies) : this(blogPost, dependencies, new BlogSecurityInfo(blogPost, dependencies)) { }
 
-		public BlogPostDataAdapter(Entity blogPost, IDataAdapterDependencies dependencies) : this(blogPost.ToEntityReference(), dependencies, new BlogSecurityInfo(blogPost, dependencies)) {}
+		public BlogPostDataAdapter(Entity blogPost, IDataAdapterDependencies dependencies) : this(blogPost.ToEntityReference(), dependencies, new BlogSecurityInfo(blogPost, dependencies)) { }
 
 		public BlogPostDataAdapter(IBlogPost blogPost, IDataAdapterDependencies dependencies) : this(blogPost.Entity, dependencies)
 		{
 			BlogPost = blogPost;
 		}
 
-		public BlogPostDataAdapter(EntityReference blogPost, string portalName = null) : this(blogPost, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public BlogPostDataAdapter(EntityReference blogPost, string portalName = null) : this(blogPost, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
-		public BlogPostDataAdapter(Entity blogPost, string portalName = null) : this(blogPost, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public BlogPostDataAdapter(Entity blogPost, string portalName = null) : this(blogPost, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
-		public BlogPostDataAdapter(IBlogPost blogPost, string portalName = null) : this(blogPost, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public BlogPostDataAdapter(IBlogPost blogPost, string portalName = null) : this(blogPost, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		protected EntityReference BlogPostReference { get; private set; }
 
@@ -82,14 +82,14 @@ namespace Adxstudio.Xrm.Blogs
 
 			var attributes = new Dictionary<string, object>
 			{
-				{"regardingobjectid",   post.Entity.ToEntityReference() },
-				{"createdon",           postedOn},
-				{"adx_approved",        post.CommentPolicy == BlogCommentPolicy.Open || post.CommentPolicy == BlogCommentPolicy.OpenToAuthenticatedUsers},
-				{"title",               StringHelper.GetCommentTitleFromContent(content) },
-				{"adx_createdbycontact", authorName},
-				{"adx_contactemail", authorEmail},
-				{"comments", content},
-				{"source", new OptionSetValue((int)FeedbackSource.Portal) }
+				{ "regardingobjectid",   post.Entity.ToEntityReference() },
+				{ "createdon",           postedOn},
+				{ "adx_approved",        post.CommentPolicy == BlogCommentPolicy.Open || post.CommentPolicy == BlogCommentPolicy.OpenToAuthenticatedUsers},
+				{ "title",               StringHelper.GetCommentTitleFromContent(content) },
+				{ "adx_createdbycontact", authorName},
+				{ "adx_contactemail", authorEmail},
+				{ "comments", content},
+				{ "source", new OptionSetValue((int)FeedbackSource.Portal) }
 			};
 
 			var portalUser = BlogDependencies.GetPortalUser();

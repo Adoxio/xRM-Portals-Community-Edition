@@ -21,7 +21,7 @@ namespace Adxstudio.Xrm.EntityList
 	public class EntityListCalendarDataAdapter : EntityListDataAdapter
 	{
 		public EntityListCalendarDataAdapter(EntityReference entityList, EntityReference view, IDataAdapterDependencies dependencies)
-			: base(entityList, view, dependencies) {}
+			: base(entityList, view, dependencies) { }
 
 		public IEnumerable<EntityListEvent> SelectEvents(DateTime from, DateTime to, string filter = null, string search = null)
 		{
@@ -351,7 +351,7 @@ namespace Adxstudio.Xrm.EntityList
 
 			var systemUser = serviceContext.RetrieveSingle(
 				organizerEntityReference.LogicalName,
-				new [] {"fullname", "internalemailaddress"},
+				new [] { "fullname", "internalemailaddress"},
 				new Condition("systemuserid", ConditionOperator.Equal, organizerEntityReference.Id));
 
 			if (systemUser == null)

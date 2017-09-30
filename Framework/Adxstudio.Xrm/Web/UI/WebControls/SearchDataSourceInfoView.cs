@@ -15,7 +15,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 {
 	public class SearchDataSourceInfoView : SearchDataSourceView
 	{
-		public SearchDataSourceInfoView(IDataSource owner, string viewName) : base(owner, viewName) {}
+		public SearchDataSourceInfoView(IDataSource owner, string viewName) : base(owner, viewName) { }
 
 		protected override IEnumerable ExecuteSelect(DataSourceSelectArguments args)
 		{

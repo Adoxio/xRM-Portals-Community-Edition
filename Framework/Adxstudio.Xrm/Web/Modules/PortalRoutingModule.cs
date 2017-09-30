@@ -268,32 +268,32 @@ namespace Adxstudio.Xrm.Web.Modules
 			routes.MapRoute("CmsTemplate_GetAll",
 				"_services/portal/{__portalScopeId__}/{entityLogicalname}/{id}/__templates/all/{currentSiteMapNodeUrl}",
 				new { controller = "CmsTemplate", action = "GetAll" },
-				new [] {"Adxstudio.Xrm.Web.Mvc.Controllers"});
+				new [] { "Adxstudio.Xrm.Web.Mvc.Controllers"});
 
 			routes.MapRoute("CmsTemplate_Get",
 				"_services/portal/{__portalScopeId__}/{entityLogicalname}/{id}/__templates/source/{encodedName}",
 				new { controller = "CmsTemplate", action = "Get" },
-				new [] {"Adxstudio.Xrm.Web.Mvc.Controllers"});
+				new [] { "Adxstudio.Xrm.Web.Mvc.Controllers"});
 
 			routes.MapRoute("CmsTemplate_GetPreview",
 				"_services/portal/{__portalScopeId__}/{entityLogicalname}/{id}/__templates/preview/{encodedName}/{__currentSiteMapNodeUrl__}",
 				new { controller = "CmsTemplate", action = "GetPreview" },
-				new [] {"Adxstudio.Xrm.Web.Mvc.Controllers"});
+				new [] { "Adxstudio.Xrm.Web.Mvc.Controllers"});
 
 			routes.MapRoute("CmsTemplate_GetLivePreview",
 				"_services/portal/{__portalScopeId__}/{entityLogicalname}/{id}/__templates/live-preview/{__currentSiteMapNodeUrl__}",
 				new { controller = "CmsTemplate", action = "GetLivePreview" },
-				new [] {"Adxstudio.Xrm.Web.Mvc.Controllers"});
+				new [] { "Adxstudio.Xrm.Web.Mvc.Controllers"});
 
 			routes.MapRoute("CmsParent_GetParentOptions",
 				"_services/portal/{__portalScopeId__}/__parents",
 				new { controller = "CmsParent", action = "GetParentOptions" },
-				new [] {"Adxstudio.Xrm.Web.Mvc.Controllers"});
+				new [] { "Adxstudio.Xrm.Web.Mvc.Controllers"});
 
 			routes.MapRoute("CmsParent_GetParentOptionsForEntity",
 				CmsParentController.GetParentOptionsForEntityRoutePath,
 				new { controller = "CmsParent", action = "GetParentOptionsForEntity" },
-				new [] {"Adxstudio.Xrm.Web.Mvc.Controllers"});
+				new [] { "Adxstudio.Xrm.Web.Mvc.Controllers"});
 
 			routes.Add(typeof(CmsEntityChildrenRouteHandler).FullName, new Route(CmsEntityChildrenRouteHandler.RoutePath, new CmsEntityChildrenRouteHandler(PortalName)));
 			routes.Add(typeof(CmsEntityDeleteRouteHandler).FullName, new Route(CmsEntityDeleteRouteHandler.RoutePath, new CmsEntityDeleteRouteHandler(PortalName)));

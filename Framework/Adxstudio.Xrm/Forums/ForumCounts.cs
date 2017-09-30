@@ -9,7 +9,7 @@ namespace Adxstudio.Xrm.Forums
 {
 	public class ForumCounts : Tuple<int, int>
 	{
-		public ForumCounts(int threadCount, int postCount) : base(threadCount, postCount) {}
+		public ForumCounts(int threadCount, int postCount) : base(threadCount, postCount) { }
 
 		public int PostCount
 		{

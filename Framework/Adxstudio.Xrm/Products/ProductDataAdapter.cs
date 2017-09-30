@@ -48,28 +48,28 @@ namespace Adxstudio.Xrm.Products
 		/// </summary>
 		/// <param name="product">Product Entity Reference</param>
 		/// <param name="dependencies">Data Adapter Dependencies</param>
-		public ProductDataAdapter(Entity product, IDataAdapterDependencies dependencies) : this(product.ToEntityReference(), dependencies) {}
+		public ProductDataAdapter(Entity product, IDataAdapterDependencies dependencies) : this(product.ToEntityReference(), dependencies) { }
 
 		/// <summary>
 		/// Constructor
 		/// </summary>
 		/// <param name="product">Product Entity Reference</param>
 		/// <param name="dependencies">Data Adapter Dependencies</param>
-		public ProductDataAdapter(IProduct product, IDataAdapterDependencies dependencies) : this(product.Entity, dependencies) {}
+		public ProductDataAdapter(IProduct product, IDataAdapterDependencies dependencies) : this(product.Entity, dependencies) { }
 
 		/// <summary>
 		/// Constructor
 		/// </summary>
 		/// <param name="product">Product Entity Reference</param>
 		/// <param name="portalName">The configured name of the portal to get and set data for.</param>
-		public ProductDataAdapter(EntityReference product, string portalName = null) : this(product, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public ProductDataAdapter(EntityReference product, string portalName = null) : this(product, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		/// <summary>
 		/// Constructor
 		/// </summary>
 		/// <param name="product">Product Entity Reference</param>
 		/// <param name="portalName">The configured name of the portal to get and set data for.</param>
-		public ProductDataAdapter(Entity product, string portalName = null) : this(product, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public ProductDataAdapter(Entity product, string portalName = null) : this(product, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		/// <summary>
 		/// Constructor

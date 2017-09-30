@@ -40,7 +40,7 @@ namespace Adxstudio.Xrm.Security
 			Key = BuildKey(entity, right, securityContextKey);
 		}
 
-		protected CrmEntitySecurityCacheInfo() {}
+		protected CrmEntitySecurityCacheInfo() { }
 
 		public virtual bool IsCacheable
 		{
@@ -129,7 +129,7 @@ namespace Adxstudio.Xrm.Security
 
 	internal class VaryByPreviewCrmEntitySecurityCacheInfoFactory : CrmEntitySecurityCacheInfoFactory
 	{
-		public VaryByPreviewCrmEntitySecurityCacheInfoFactory(string securityContextKey) : base(securityContextKey) {}
+		public VaryByPreviewCrmEntitySecurityCacheInfoFactory(string securityContextKey) : base(securityContextKey) { }
 
 		public override CrmEntitySecurityCacheInfo GetCacheInfo(OrganizationServiceContext context, Entity entity, CrmEntityRight right)
 		{

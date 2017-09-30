@@ -61,7 +61,7 @@ namespace Adxstudio.Xrm.Tagging
 		/// Multiple sets of <see cref="ITagInfo"/>s, which will be flattened into one collection.
 		/// </param>
 		public TagCloudData(int numberOfWeights, IEqualityComparer<string> tagNameEqualityComparer, params IEnumerable<ITagInfo>[] tagSets)
-			: this(numberOfWeights, tagNameEqualityComparer, tagSets.SelectMany(tags => tags)) {}
+			: this(numberOfWeights, tagNameEqualityComparer, tagSets.SelectMany(tags => tags)) { }
 
 		/// <summary>
 		/// Gets the number of weight "buckets" from which weights will be assigned to items.

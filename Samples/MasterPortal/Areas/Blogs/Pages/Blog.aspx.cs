@@ -16,7 +16,7 @@ namespace Site.Areas.Blogs.Pages
 	{
 		private readonly Lazy<IPortalContext> _portal = new Lazy<IPortalContext>(() => PortalCrmConfigurationManager.CreatePortalContext());
 
-		protected void Page_Load(object sender, EventArgs e) {}
+		protected void Page_Load(object sender, EventArgs e) { }
 
 		protected void CreateBlogDataAdapter(object sender, ObjectDataSourceEventArgs e)
 		{

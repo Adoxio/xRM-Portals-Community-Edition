@@ -71,7 +71,7 @@ namespace Adxstudio.Xrm.Search.WindowsAzure
 			}
 			catch (IndexNotFoundException)
 			{
-				return new EntitySearchResultPage(new EntitySearchResult[] {}, 0, page, pageSize)
+				return new EntitySearchResultPage(new EntitySearchResult[] { }, 0, page, pageSize)
 				{
 					IndexNotFound = true
 				};

@@ -76,9 +76,9 @@ namespace Adxstudio.Xrm.Web.Routing
 
 			var uri = uriTemplate.BindByName(new Uri("http://localhost/"), new Dictionary<string, string>
 			{
-				{"__portalScopeId__", portalScopeId.ToString() },
-				{"entityLogicalName", entity.LogicalName      },
-				{"id",                entity.Id.ToString()    },
+				{ "__portalScopeId__", portalScopeId.ToString() },
+				{ "entityLogicalName", entity.LogicalName      },
+				{ "id",                entity.Id.ToString()    },
 			});
 
 			return "~{0}".FormatWith(uri.PathAndQuery);
@@ -92,9 +92,9 @@ namespace Adxstudio.Xrm.Web.Routing
 
 			var uri = uriTemplate.BindByName(new Uri("http://localhost/"), new Dictionary<string, string>
 			{
-				{"__portalScopeId__", portalScopeId.ToString() },
-				{"entityLogicalName", entityLogicalName       },
-				{"id",                idPlaceholder           },
+				{ "__portalScopeId__", portalScopeId.ToString() },
+				{ "entityLogicalName", entityLogicalName       },
+				{ "id",                idPlaceholder           },
 			});
 
 			var path = "~{0}".FormatWith(uri.PathAndQuery);

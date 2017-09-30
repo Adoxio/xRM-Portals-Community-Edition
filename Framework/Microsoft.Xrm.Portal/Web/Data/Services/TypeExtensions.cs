@@ -77,7 +77,7 @@ namespace Microsoft.Xrm.Portal.Web.Data.Services
 
 				var schemaMap = properties.ToDictionary(info => info.CrmPropertyAttribute.LogicalName, info => info.Property.Name);
 
-				var json = schemaMap.SerializeByJson(new Type[] {});
+				var json = schemaMap.SerializeByJson(new Type[] { });
 
 				return json;
 			});

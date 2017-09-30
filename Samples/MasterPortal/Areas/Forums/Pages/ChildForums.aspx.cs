@@ -18,7 +18,7 @@ namespace Site.Areas.Forums.Pages
 	{
 		private readonly Lazy<IPortalContext> _portal = new Lazy<IPortalContext>(() => PortalCrmConfigurationManager.CreatePortalContext(), LazyThreadSafetyMode.None);
 
-	    protected void Page_Load(object sender, EventArgs e) {}
+	    protected void Page_Load(object sender, EventArgs e) { }
 
 		protected void CreateForumAggregationDataAdapter(object sender, ObjectDataSourceEventArgs args)
 		{

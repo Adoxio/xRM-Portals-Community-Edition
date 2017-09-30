@@ -21,9 +21,9 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 	{
 		private static readonly IDictionary<string, DirectoryType> DirectoryTypes = new Dictionary<string, DirectoryType>(StringComparer.InvariantCultureIgnoreCase)
 		{
-			{"adx_webpage",  new WebPageDirectoryType() },
-			{"adx_blog",     new BlogDirectoryType()    },
-			{"adx_blogpost", new BlogPostDirectoryType() },
+			{ "adx_webpage",  new WebPageDirectoryType() },
+			{ "adx_blog",     new BlogDirectoryType()    },
+			{ "adx_blogpost", new BlogPostDirectoryType() },
 		};
 
 		private readonly Lazy<Entity> _root;

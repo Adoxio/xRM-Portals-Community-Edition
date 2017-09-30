@@ -17,13 +17,13 @@ namespace Adxstudio.Xrm.Commerce
 {
 	public abstract class DataAdapterDependencies : Cms.DataAdapterDependencies, IDataAdapterDependencies
 	{
-		public DataAdapterDependencies(OrganizationServiceContext serviceContext, ICrmEntitySecurityProvider securityProvider, IEntityUrlProvider urlProvider, EntityReference website, EntityReference portalUser = null, RequestContext requestContext = null) : base(serviceContext, securityProvider, urlProvider, website, portalUser, requestContext) {}
+		public DataAdapterDependencies(OrganizationServiceContext serviceContext, ICrmEntitySecurityProvider securityProvider, IEntityUrlProvider urlProvider, EntityReference website, EntityReference portalUser = null, RequestContext requestContext = null) : base(serviceContext, securityProvider, urlProvider, website, portalUser, requestContext) { }
 
-		public DataAdapterDependencies(OrganizationServiceContext serviceContext, ICrmEntitySecurityProvider securityProvider, IEntityUrlProvider urlProvider, EntityReference website, EntityReference portalUser = null) : base(serviceContext, securityProvider, urlProvider, website, portalUser) {}
+		public DataAdapterDependencies(OrganizationServiceContext serviceContext, ICrmEntitySecurityProvider securityProvider, IEntityUrlProvider urlProvider, EntityReference website, EntityReference portalUser = null) : base(serviceContext, securityProvider, urlProvider, website, portalUser) { }
 
-		public DataAdapterDependencies(OrganizationServiceContext serviceContext, ICrmEntitySecurityProvider securityProvider, IEntityUrlProvider urlProvider, IPortalContext portalContext) : base(serviceContext, securityProvider, urlProvider, portalContext) {}
+		public DataAdapterDependencies(OrganizationServiceContext serviceContext, ICrmEntitySecurityProvider securityProvider, IEntityUrlProvider urlProvider, IPortalContext portalContext) : base(serviceContext, securityProvider, urlProvider, portalContext) { }
 
-		public DataAdapterDependencies(OrganizationServiceContext serviceContext, ICrmEntitySecurityProvider securityProvider, IEntityUrlProvider urlProvider, IPortalContext portalContext, RequestContext requestContext = null) : base(serviceContext, securityProvider, urlProvider, portalContext, requestContext) {}
+		public DataAdapterDependencies(OrganizationServiceContext serviceContext, ICrmEntitySecurityProvider securityProvider, IEntityUrlProvider urlProvider, IPortalContext portalContext, RequestContext requestContext = null) : base(serviceContext, securityProvider, urlProvider, portalContext, requestContext) { }
 
 		public virtual EntityReference GetPriceList()
 		{

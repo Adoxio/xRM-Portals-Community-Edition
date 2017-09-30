@@ -13,7 +13,7 @@ namespace Adxstudio.Xrm.Forums
 	{
 		public IEnumerable<IForumPostAttachmentInfo> AttachmentInfo
 		{
-			get { return new IForumPostAttachmentInfo[] {}; }
+			get { return new IForumPostAttachmentInfo[] { }; }
 		}
 
 		public IForumAuthor Author

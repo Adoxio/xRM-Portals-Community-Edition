@@ -40,7 +40,7 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 
 			var uri = uriTemplate.BindByName(new Uri("http://localhost/"), new Dictionary<string, string>
 			{
-				{"__portalScopeId__", portalScopeId.ToString() },
+				{ "__portalScopeId__", portalScopeId.ToString() },
 			});
 
 			return "~{0}".FormatWith(uri.PathAndQuery);

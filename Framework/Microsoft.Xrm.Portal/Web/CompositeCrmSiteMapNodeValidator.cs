@@ -18,7 +18,7 @@ namespace Microsoft.Xrm.Portal.Web
 	{
 		private readonly List<ICrmSiteMapNodeValidator> _validators = new List<ICrmSiteMapNodeValidator>();
 
-		public CompositeCrmSiteMapNodeValidator() {}
+		public CompositeCrmSiteMapNodeValidator() { }
 
 		public CompositeCrmSiteMapNodeValidator(IEnumerable<ICrmSiteMapNodeValidator> validators)
 		{

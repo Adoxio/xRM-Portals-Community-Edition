@@ -49,7 +49,7 @@ namespace Site.Controls
 
 			if (currentNode == null)
 			{
-				return new Tuple<IEnumerable<SiteMapNode>, IEnumerable<SiteMapNode>>(new SiteMapNode[] {}, new SiteMapNode[] {});
+				return new Tuple<IEnumerable<SiteMapNode>, IEnumerable<SiteMapNode>>(new SiteMapNode[] { }, new SiteMapNode[] { });
 			}
 
 			var excludeLogicalNames = string.IsNullOrEmpty(Exclude)

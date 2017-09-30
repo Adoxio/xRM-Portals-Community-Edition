@@ -732,7 +732,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 			{
 				virtualPath = RouteTable.Routes.GetVirtualPath(requestContext, "PortalModalFormTemplatePath", new RouteValueDictionary
 				{
-					{"__portalScopeId__", website.Id}
+					{ "__portalScopeId__", website.Id}
 				});
 			}
 			

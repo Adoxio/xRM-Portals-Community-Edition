@@ -70,7 +70,7 @@ namespace Site.Areas.Commerce.Pages
 			var dataAdapterDependencies = new PortalConfigurationDataAdapterDependencies(requestContext: Request.RequestContext, portalName: PortalName);
 			var dataAdapter = new AnnotationDataAdapter(dataAdapterDependencies);
 			var annotations = dataAdapter.GetAnnotations(OrderToEdit.ToEntityReference(),
-				new List<Order> {new Order("createdon") }, respectPermissions: false);
+				new List<Order> { new Order("createdon") }, respectPermissions: false);
 
 			NotesList.DataSource = annotations;
 			NotesList.DataBind();

@@ -31,7 +31,7 @@ namespace Adxstudio.Xrm.Forums
 
 		public IEnumerable<IForumPostAttachmentInfo> AttachmentInfo
 		{
-			get { return new IForumPostAttachmentInfo[] {}; }
+			get { return new IForumPostAttachmentInfo[] { }; }
 		}
 
 		public ICollection<IForumPostAttachment> Attachments { get; private set; }
@@ -153,7 +153,7 @@ namespace Adxstudio.Xrm.Forums
 
 		public IEnumerable<IForumPostAttachmentInfo> AttachmentInfo
 		{
-			get { return new IForumPostAttachmentInfo[] {}; }
+			get { return new IForumPostAttachmentInfo[] { }; }
 		}
 
 		public ICollection<IForumPostAttachment> Attachments { get; private set; }

@@ -129,7 +129,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString EntityLink(this HtmlHelper html, OrganizationServiceContext serviceContext, Entity entity, string linkText)
 		{
-			return EntityLink(html, serviceContext, entity, linkText, new {});
+			return EntityLink(html, serviceContext, entity, linkText, new { });
 		}
 
 		/// <summary>
@@ -148,7 +148,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString EntityLink(this HtmlHelper html, OrganizationServiceContext serviceContext, Entity entity, string linkText, object queryStringParameters)
 		{
-			return EntityLink(html, serviceContext, entity, linkText, queryStringParameters, new {});
+			return EntityLink(html, serviceContext, entity, linkText, queryStringParameters, new { });
 		}
 
 		/// <summary>
@@ -167,7 +167,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString EntityLink(this HtmlHelper html, OrganizationServiceContext serviceContext, Entity entity, string linkText, NameValueCollection queryStringParameters)
 		{
-			return EntityLink(html, serviceContext, entity, linkText, queryStringParameters, new {});
+			return EntityLink(html, serviceContext, entity, linkText, queryStringParameters, new { });
 		}
 
 		/// <summary>
@@ -262,7 +262,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString EntityLink(this HtmlHelper html, string linkText)
 		{
-			return EntityLink(html, linkText, new {});
+			return EntityLink(html, linkText, new { });
 		}
 
 		/// <summary>
@@ -276,7 +276,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString EntityLink(this HtmlHelper html, string linkText, object queryStringParameters)
 		{
-			return EntityLink(html, linkText, queryStringParameters, new {});
+			return EntityLink(html, linkText, queryStringParameters, new { });
 		}
 
 		/// <summary>
@@ -290,7 +290,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString EntityLink(this HtmlHelper html, string linkText, NameValueCollection queryStringParameters)
 		{
-			return EntityLink(html, linkText, queryStringParameters, new {});
+			return EntityLink(html, linkText, queryStringParameters, new { });
 		}
 
 		/// <summary>
@@ -366,7 +366,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString EntityLink(this HtmlHelper html, IPortalViewEntity entity, string linkText)
 		{
-			return EntityLink(html, entity, linkText, new {});
+			return EntityLink(html, entity, linkText, new { });
 		}
 
 		/// <summary>
@@ -396,7 +396,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString EntityLink(this HtmlHelper html, IPortalViewEntity entity, string linkText, NameValueCollection queryStringParameters)
 		{
-			return EntityLink(html, entity, linkText, queryStringParameters, new {});
+			return EntityLink(html, entity, linkText, queryStringParameters, new { });
 		}
 		
 		/// <summary>
@@ -499,7 +499,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static string EntityUrl(this HtmlHelper html, OrganizationServiceContext serviceContext, Entity entity)
 		{
-			return EntityUrl(html, serviceContext, entity, new {});
+			return EntityUrl(html, serviceContext, entity, new { });
 		}
 
 		/// <summary>
@@ -551,7 +551,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static string EntityUrl(this HtmlHelper html)
 		{
-			return EntityUrl(html, new {});
+			return EntityUrl(html, new { });
 		}
 
 		/// <summary>
@@ -593,7 +593,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static string EntityUrl(this HtmlHelper html, IPortalViewEntity entity)
 		{
-			return EntityUrl(html, entity, new {});
+			return EntityUrl(html, entity, new { });
 		}
 
 		/// <summary>
@@ -651,7 +651,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 			{
 				ViewData = new ViewDataDictionary
 				{
-					{PortalExtensions.PortalViewContextKey, portalViewContext}
+					{ PortalExtensions.PortalViewContextKey, portalViewContext}
 				}
 			}, new ViewPage());
 

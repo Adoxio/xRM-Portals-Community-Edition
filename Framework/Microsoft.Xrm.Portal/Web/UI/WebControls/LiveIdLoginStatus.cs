@@ -119,7 +119,7 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 		{
 			Controls.Clear();
 			
-			_hyperLink = new System.Web.UI.WebControls.HyperLink {EnableViewState = false, EnableTheming = false};
+			_hyperLink = new System.Web.UI.WebControls.HyperLink { EnableViewState = false, EnableTheming = false};
 
 			Controls.Add(_hyperLink);
 		}

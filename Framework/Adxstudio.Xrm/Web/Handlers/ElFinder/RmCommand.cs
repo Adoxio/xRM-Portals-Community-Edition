@@ -216,7 +216,7 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 
 		private static readonly IDictionary<string, Tuple<string, string>> RmTargetSchemaLookup = new Dictionary<string, Tuple<string, string>>(StringComparer.InvariantCultureIgnoreCase)
 		{
-			{"adx_webfile", new Tuple<string, string>("adx_webfileid", "adx_websiteid") },
+			{ "adx_webfile", new Tuple<string, string>("adx_webfileid", "adx_websiteid") },
 		};
 	}
 }

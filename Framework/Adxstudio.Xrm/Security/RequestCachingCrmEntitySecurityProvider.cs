@@ -12,7 +12,7 @@ namespace Adxstudio.Xrm.Security
 {
 	internal class RequestCachingCrmEntitySecurityProvider : CachingCrmEntitySecurityProvider
 	{
-		public RequestCachingCrmEntitySecurityProvider(ICacheSupportingCrmEntitySecurityProvider underlyingProvider, ICrmEntitySecurityCacheInfoFactory cacheInfoFactory) : base(underlyingProvider, cacheInfoFactory) {}
+		public RequestCachingCrmEntitySecurityProvider(ICacheSupportingCrmEntitySecurityProvider underlyingProvider, ICrmEntitySecurityCacheInfoFactory cacheInfoFactory) : base(underlyingProvider, cacheInfoFactory) { }
 
 		public override bool TryAssert(OrganizationServiceContext context, Entity entity, CrmEntityRight right, CrmEntityCacheDependencyTrace dependencies)
 		{

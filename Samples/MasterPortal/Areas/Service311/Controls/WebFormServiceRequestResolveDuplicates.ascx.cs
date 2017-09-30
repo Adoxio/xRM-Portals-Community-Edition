@@ -133,7 +133,7 @@ namespace Site.Areas.Service311.Controls
 				ID = "CurrentList",
 				LanguageCode = LanguageCode,
 				PortalName = PortalName,
-				ViewConfigurations = new List<ViewConfiguration> {viewConfiguration},
+				ViewConfigurations = new List<ViewConfiguration> { viewConfiguration},
 				ListCssClass = "table table-striped",
 				SelectMode = EntityGridExtensions.GridSelectMode.Single
 			};
@@ -194,7 +194,7 @@ namespace Site.Areas.Service311.Controls
 				PortalName = PortalName
 			};
 
-			var response = context.Execute(new RetrieveMultipleRequest {Query = new FetchExpression(viewConfiguration.FetchXml.ToString()) }) as RetrieveMultipleResponse;
+			var response = context.Execute(new RetrieveMultipleRequest { Query = new FetchExpression(viewConfiguration.FetchXml.ToString()) }) as RetrieveMultipleResponse;
 
 			if (!response.EntityCollection.Entities.Any())
 			{

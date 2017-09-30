@@ -18,7 +18,7 @@ namespace Adxstudio.Xrm.Security
 		public ApplicationCachingCrmEntitySecurityProvider(
 			ICacheSupportingCrmEntitySecurityProvider underlyingProvider,
 			ICrmEntitySecurityCacheInfoFactory cacheInfoFactory)
-			: base(underlyingProvider, cacheInfoFactory) {}
+			: base(underlyingProvider, cacheInfoFactory) { }
 
 		public override bool TryAssert(OrganizationServiceContext context, Entity entity, CrmEntityRight right, CrmEntityCacheDependencyTrace dependencies)
 		{

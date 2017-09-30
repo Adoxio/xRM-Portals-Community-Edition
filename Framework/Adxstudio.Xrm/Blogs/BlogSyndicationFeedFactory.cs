@@ -64,8 +64,8 @@ namespace Adxstudio.Xrm.Blogs
 
 			var selfPath = RouteTable.Routes.GetVirtualPath(context.Request.RequestContext, selfRouteName, new RouteValueDictionary
 			{
-				{"__portalScopeId__", portal.Website.Id},
-				{"id", blog.Id}
+				{ "__portalScopeId__", portal.Website.Id},
+				{ "id", blog.Id}
 			});
 
 			if (selfPath != null)

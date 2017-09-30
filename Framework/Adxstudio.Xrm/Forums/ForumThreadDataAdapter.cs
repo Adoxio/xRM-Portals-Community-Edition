@@ -47,7 +47,7 @@ namespace Adxstudio.Xrm.Forums
 		}
 
 		public ForumThreadDataAdapter(IForumThread forumThread, IDataAdapterDependencies dependencies)
-			: this(forumThread.EntityReference, dependencies) {}
+			: this(forumThread.EntityReference, dependencies) { }
 
 		protected IDataAdapterDependencies Dependencies { get; private set; }
 
@@ -161,7 +161,7 @@ namespace Adxstudio.Xrm.Forums
 			serviceContext.SaveChanges();
 
 			var threadEntity = SelectEntity(serviceContext);
-			var threadUpdate = new Entity(threadEntity.LogicalName) {Id = threadEntity.Id};
+			var threadUpdate = new Entity(threadEntity.LogicalName) { Id = threadEntity.Id};
 
 			threadUpdate["adx_lastpostdate"] = forumPost.PostedOn;
 			threadUpdate["adx_lastpostid"] = entity.ToEntityReference();
@@ -339,7 +339,7 @@ namespace Adxstudio.Xrm.Forums
 								}
 							}
 						},
-						Orders = new[] {new Order("adx_date", OrderType.Descending) }
+						Orders = new[] { new Order("adx_date", OrderType.Descending) }
 					},
 					PageNumber = 1,
 					PageSize = 1
@@ -455,7 +455,7 @@ namespace Adxstudio.Xrm.Forums
 
 			var thread = SelectEntity(serviceContext);
 
-			var postUpdate = new Entity(post.LogicalName) {Id = post.Id};
+			var postUpdate = new Entity(post.LogicalName) { Id = post.Id};
 			var threadUpdate = new Entity(thread.LogicalName) { Id = thread.Id };
 
 			postUpdate["adx_isanswer"] = true;
@@ -583,7 +583,7 @@ namespace Adxstudio.Xrm.Forums
 
 			if (maximumRows == 0)
 			{
-				return new IForumPost[] {};
+				return new IForumPost[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();

@@ -25,7 +25,7 @@ namespace Adxstudio.Xrm.Search
 			_scopes = scopes;
 		}
 
-		public ScopedIndexSearcher(ICrmEntityIndex index, params string[] scopes) : this(index, scopes as IEnumerable<string>) {}
+		public ScopedIndexSearcher(ICrmEntityIndex index, params string[] scopes) : this(index, scopes as IEnumerable<string>) { }
 
 		protected override Query CreateQuery(ICrmEntityQuery query)
 		{
@@ -50,8 +50,8 @@ namespace Adxstudio.Xrm.Search
 
 			var compositeQuery = new BooleanQuery
 			{
-				{baseQuery, Occur.MUST},
-				{scopeQuery, Occur.MUST}
+				{ baseQuery, Occur.MUST},
+				{ scopeQuery, Occur.MUST}
 			};
 
 			return compositeQuery;

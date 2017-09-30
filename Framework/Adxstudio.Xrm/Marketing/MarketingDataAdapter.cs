@@ -151,7 +151,7 @@ namespace Adxstudio.Xrm.Marketing
 			Validate(encodedEmail, encodedList, signature);
 			var emailAddress = Decode(encodedEmail);
 			var listId = Decode(encodedList);
-			return Unsubscribe(emailAddress, new[] {listId});
+			return Unsubscribe(emailAddress, new[] { listId});
 		}
 
 		public IEnumerable<IMarketingList> Unsubscribe(string encodedEmail, IEnumerable<string> listIds, string signature)

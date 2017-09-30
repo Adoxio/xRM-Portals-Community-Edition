@@ -96,7 +96,7 @@ namespace Site.Areas.Portal.Controllers
 					AttachmentSize = annotation.FileAttachment.FileSize;
 					AttachmentSizeDisplay = AttachmentSize.ToString();
 					AttachmentIsImage = HasAttachment &&
-						(new List<string> {"image/jpeg", "image/gif", "image/png"}).Contains(AttachmentContentType);
+						(new List<string> { "image/jpeg", "image/gif", "image/png"}).Contains(AttachmentContentType);
 				}
 				var subject = annotation.Subject;
 				Subject = subject;

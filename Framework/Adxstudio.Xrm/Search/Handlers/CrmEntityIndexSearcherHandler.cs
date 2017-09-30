@@ -26,13 +26,13 @@ namespace Adxstudio.Xrm.Search.Handlers
 			{
 				var results = Search(context.Request);
 
-				var json = results.SerializeByJson(new Type[] {});
+				var json = results.SerializeByJson(new Type[] { });
 
 				context.Response.Write(json);
 			}
 			catch (Exception e)
 			{              
-				var json = (new ExceptionData(e)).SerializeByJson(new Type[] {});
+				var json = (new ExceptionData(e)).SerializeByJson(new Type[] { });
 
 				context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 				context.Response.Write(json);

@@ -132,7 +132,7 @@ namespace Adxstudio.Xrm.Performance
 			public virtual TimeSpan? Elapsed
 			{
 				get { return null; }
-				protected set {}
+				protected set { }
 			}
 
 			public string Id { get; private set; }
@@ -157,9 +157,9 @@ namespace Adxstudio.Xrm.Performance
 
 			public string Tag { get; private set; }
 
-			public virtual void Dispose() {}
+			public virtual void Dispose() { }
 
-			public virtual void Stop() {}
+			public virtual void Stop() { }
 		}
 
 		private class StopwatchPerformanceMarker : PerformanceMarker

@@ -243,5 +243,5 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 	}
 
 	[AspNetHostingPermission(SecurityAction.LinkDemand, Level=AspNetHostingPermissionLevel.Minimal), AspNetHostingPermission(SecurityAction.InheritanceDemand, Level=AspNetHostingPermissionLevel.Minimal)]
-	public class StyleReferenceCollection : Collection<StyleReference> {}
+	public class StyleReferenceCollection : Collection<StyleReference> { }
 }

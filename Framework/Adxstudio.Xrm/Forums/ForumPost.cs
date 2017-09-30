@@ -34,7 +34,7 @@ namespace Adxstudio.Xrm.Forums
 			Entity = entity;
 			_viewEntity = viewEntity;
 			_editable = editable;
-			AttachmentInfo = postInfo.AttachmentInfo ?? new IForumPostAttachmentInfo[] {};
+			AttachmentInfo = postInfo.AttachmentInfo ?? new IForumPostAttachmentInfo[] { };
 			Author = postInfo.Author;
 			_getEditPath = getEditPath ?? new Lazy<ApplicationPath>(() => null, LazyThreadSafetyMode.None);
 			_getDeletePath = getDeletePath ?? new Lazy<ApplicationPath>(() => null, LazyThreadSafetyMode.None);

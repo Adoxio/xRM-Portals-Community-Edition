@@ -13,15 +13,15 @@ namespace Adxstudio.Xrm.Search.Services.Client
 {
 	public class CrmEntityIndexUpdaterServiceClient : ClientBase<ICrmEntityIndexUpdaterService>, ICrmEntityIndexUpdater
 	{
-		public CrmEntityIndexUpdaterServiceClient() {}
+		public CrmEntityIndexUpdaterServiceClient() { }
 
-		public CrmEntityIndexUpdaterServiceClient(string endpointConfigurationName) : base(endpointConfigurationName) {}
+		public CrmEntityIndexUpdaterServiceClient(string endpointConfigurationName) : base(endpointConfigurationName) { }
 
-		public CrmEntityIndexUpdaterServiceClient(string endpointConfigurationName, string remoteAddress) : base(endpointConfigurationName, remoteAddress) {}
+		public CrmEntityIndexUpdaterServiceClient(string endpointConfigurationName, string remoteAddress) : base(endpointConfigurationName, remoteAddress) { }
 
-		public CrmEntityIndexUpdaterServiceClient(string endpointConfigurationName, EndpointAddress remoteAddress) : base(endpointConfigurationName, remoteAddress) {}
+		public CrmEntityIndexUpdaterServiceClient(string endpointConfigurationName, EndpointAddress remoteAddress) : base(endpointConfigurationName, remoteAddress) { }
 
-		public CrmEntityIndexUpdaterServiceClient(Binding binding, EndpointAddress remoteAddress) : base(binding, remoteAddress) {}
+		public CrmEntityIndexUpdaterServiceClient(Binding binding, EndpointAddress remoteAddress) : base(binding, remoteAddress) { }
 
 		public string SearchProvider { get; set; }
 

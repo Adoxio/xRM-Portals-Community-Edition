@@ -59,7 +59,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 				{
 					ViewData = new ViewDataDictionary
 					{
-						{PortalExtensions.PortalViewContextKey, portalViewContext}
+						{ PortalExtensions.PortalViewContextKey, portalViewContext}
 					}
 				}, new ViewPage());
 
@@ -75,11 +75,11 @@ namespace Adxstudio.Xrm.Web.Mvc
 			return new Lazy<UrlHelper>(() => new UrlHelper(requestContext), LazyThreadSafetyMode.None);
 		}
 
-		internal class MockController : Controller {}
+		internal class MockController : Controller { }
 
 		internal class MockView : IView
 		{
-			public void Render(ViewContext viewContext, TextWriter writer) {}
+			public void Render(ViewContext viewContext, TextWriter writer) { }
 		}
 	}
 }

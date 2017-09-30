@@ -37,17 +37,17 @@ namespace Adxstudio.Xrm.Blogs
 
 		}
 
-		public BlogDataAdapter(EntityReference blog, IDataAdapterDependencies dependencies) : this(blog, dependencies, new BlogSecurityInfo(blog, dependencies)) {}
+		public BlogDataAdapter(EntityReference blog, IDataAdapterDependencies dependencies) : this(blog, dependencies, new BlogSecurityInfo(blog, dependencies)) { }
 
-		public BlogDataAdapter(Entity blog, IDataAdapterDependencies dependencies) : this(blog.ToEntityReference(), dependencies, new BlogSecurityInfo(blog, dependencies)) {}
+		public BlogDataAdapter(Entity blog, IDataAdapterDependencies dependencies) : this(blog.ToEntityReference(), dependencies, new BlogSecurityInfo(blog, dependencies)) { }
 
-		public BlogDataAdapter(IBlog blog, IDataAdapterDependencies dependencies) : this(blog.Entity, dependencies) {}
+		public BlogDataAdapter(IBlog blog, IDataAdapterDependencies dependencies) : this(blog.Entity, dependencies) { }
 
-		public BlogDataAdapter(EntityReference blog, string portalName = null) : this(blog, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public BlogDataAdapter(EntityReference blog, string portalName = null) : this(blog, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
-		public BlogDataAdapter(Entity blog, string portalName = null) : this(blog, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public BlogDataAdapter(Entity blog, string portalName = null) : this(blog, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
-		public BlogDataAdapter(IBlog blog, string portalName = null) : this(blog, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public BlogDataAdapter(IBlog blog, string portalName = null) : this(blog, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		protected EntityReference Blog { get; private set; }
 
@@ -87,7 +87,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			if (maximumRows == 0)
 			{
-				return new IBlogPost[] {};
+				return new IBlogPost[] { };
 			}
 
 			var serviceContext = BlogDependencies.GetServiceContext();

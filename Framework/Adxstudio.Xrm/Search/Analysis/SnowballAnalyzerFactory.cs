@@ -19,7 +19,7 @@ namespace Adxstudio.Xrm.Search.Analysis
 		private readonly string _stemmer;
 		private readonly ISet<string> _stopWords;
 
-		public SnowballAnalyzerFactory(string stemmer) : this(stemmer, new string[] {}) {}
+		public SnowballAnalyzerFactory(string stemmer) : this(stemmer, new string[] { }) { }
 
 		public SnowballAnalyzerFactory(string stemmer, IEnumerable<string> stopWords)
 		{
@@ -27,7 +27,7 @@ namespace Adxstudio.Xrm.Search.Analysis
 			_stopWords = new HashSet<string>(stopWords);
 		}
 
-		protected internal SnowballAnalyzerFactory() : this(null, new string[] {}) {}
+		protected internal SnowballAnalyzerFactory() : this(null, new string[] { }) { }
 
 		public virtual Analyzer GetAnalyzer(Version version)
 		{

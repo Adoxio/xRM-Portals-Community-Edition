@@ -97,7 +97,7 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 			}
 			catch
 			{
-				return new Entity[] {};
+				return new Entity[] { };
 			}
 		}
 	}
@@ -147,7 +147,7 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 			}
 			catch (FaultException<OrganizationServiceFault>)
 			{
-				return new Tuple<Entity, EntityReference>[] {};
+				return new Tuple<Entity, EntityReference>[] { };
 			}
 		}
 	}
@@ -203,7 +203,7 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 			}
 			catch (FaultException<OrganizationServiceFault>)
 			{
-				return new Tuple<Entity, EntityReference>[] {};
+				return new Tuple<Entity, EntityReference>[] { };
 			}
 		}
 	}

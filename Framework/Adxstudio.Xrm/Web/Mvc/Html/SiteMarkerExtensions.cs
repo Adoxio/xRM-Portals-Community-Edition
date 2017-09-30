@@ -55,7 +55,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString SiteMarkerLink(this HtmlHelper html, string siteMarkerName, string linkText = null, bool requireTargetReadAccess = false)
 		{
-			return SiteMarkerLink(html, siteMarkerName, new {}, linkText, requireTargetReadAccess);
+			return SiteMarkerLink(html, siteMarkerName, new { }, linkText, requireTargetReadAccess);
 		}
 
 		/// <summary>
@@ -76,7 +76,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString SiteMarkerLink(this HtmlHelper html, string siteMarkerName, object queryStringParameters, string linkText = null, bool requireTargetReadAccess = false)
 		{
-			return SiteMarkerLink(html, siteMarkerName, queryStringParameters, new {}, linkText, requireTargetReadAccess);
+			return SiteMarkerLink(html, siteMarkerName, queryStringParameters, new { }, linkText, requireTargetReadAccess);
 		}
 
 		/// <summary>
@@ -97,7 +97,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static IHtmlString SiteMarkerLink(this HtmlHelper html, string siteMarkerName, NameValueCollection queryStringParameters, string linkText = null, bool requireTargetReadAccess = false)
 		{
-			return SiteMarkerLink(html, siteMarkerName, queryStringParameters, new {}, linkText, requireTargetReadAccess);
+			return SiteMarkerLink(html, siteMarkerName, queryStringParameters, new { }, linkText, requireTargetReadAccess);
 		}
 
 		/// <summary>
@@ -227,7 +227,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static string SiteMarkerUrl(this HtmlHelper html, string siteMarkerName, bool requireTargetReadAccess = false)
 		{
-			return SiteMarkerUrl(html, siteMarkerName, new {}, requireTargetReadAccess);
+			return SiteMarkerUrl(html, siteMarkerName, new { }, requireTargetReadAccess);
 		}
 
 		/// <summary>
@@ -283,7 +283,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// </returns>
 		public static string SiteMarkerUrl(this HtmlHelper html, ISiteMarkerTarget target)
 		{
-			return SiteMarkerUrl(html, target, new {});
+			return SiteMarkerUrl(html, target, new { });
 		}
 
 		/// <summary>

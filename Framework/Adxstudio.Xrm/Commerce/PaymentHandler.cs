@@ -152,7 +152,7 @@ namespace Adxstudio.Xrm.Commerce
 
 				if (order != null)
 				{
-					var orderUpdate = new Entity("salesorder") {Id = order.Id};
+					var orderUpdate = new Entity("salesorder") { Id = order.Id};
 					orderUpdate["adx_receiptnumber"] = receiptNumber;
 					serviceContext.Attach(orderUpdate);
 					serviceContext.UpdateObject(orderUpdate);
@@ -240,12 +240,12 @@ namespace Adxstudio.Xrm.Commerce
 
 		protected class SuccessfulPaymentValidation : PaymentValidation
 		{
-			public SuccessfulPaymentValidation(string log, string errorMessage = null) : base(true, log, errorMessage) {}
+			public SuccessfulPaymentValidation(string log, string errorMessage = null) : base(true, log, errorMessage) { }
 		}
 
 		protected class UnsuccessfulPaymentValidation : PaymentValidation
 		{
-			public UnsuccessfulPaymentValidation(string log, string errorMessage) : base(false, log, errorMessage) {}
+			public UnsuccessfulPaymentValidation(string log, string errorMessage) : base(false, log, errorMessage) { }
 		}
 
 		protected abstract bool TryGetReceiptNumber(HttpContext context, out string receiptNumber);

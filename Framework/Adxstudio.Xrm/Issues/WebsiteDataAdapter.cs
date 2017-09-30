@@ -59,7 +59,7 @@ namespace Adxstudio.Xrm.Issues
 
 			if (maximumRows == 0)
 			{
-				return new IIssueForum[] {};
+				return new IIssueForum[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();

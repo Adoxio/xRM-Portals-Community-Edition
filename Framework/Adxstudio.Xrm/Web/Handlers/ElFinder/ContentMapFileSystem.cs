@@ -26,8 +26,8 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 	{
 		private static readonly IDictionary<string, DirectoryType> DirectoryTypes = new Dictionary<string, DirectoryType>(StringComparer.InvariantCultureIgnoreCase)
 		{
-			{"adx_blog",     new BlogDirectoryType()    },
-			{"adx_blogpost", new BlogPostDirectoryType() },
+			{ "adx_blog",     new BlogDirectoryType()    },
+			{ "adx_blogpost", new BlogPostDirectoryType() },
 		};
 
 		public ContentMapFileSystem(IContentMapProvider contentMapProvider, IContentMapEntityUrlProvider contentMapUrlProvider, IDataAdapterDependencies dependencies) : base(dependencies)
@@ -454,7 +454,7 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 			}
 			catch
 			{
-				return new Entity[] {};
+				return new Entity[] { };
 			}
 		}
 	}

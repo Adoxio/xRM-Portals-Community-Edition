@@ -23,7 +23,7 @@ namespace Adxstudio.Xrm.Blogs
 			AuthorId = authorId;
 		}
 
-		public AuthorWebsiteBlogAggregationDataAdapter(Guid authorId, string portalName = null) : this(authorId, new PortalConfigurationDataAdapterDependencies(portalName)) {}
+		public AuthorWebsiteBlogAggregationDataAdapter(Guid authorId, string portalName = null) : this(authorId, new PortalConfigurationDataAdapterDependencies(portalName)) { }
 
 		protected Guid AuthorId { get; private set; }
 
@@ -36,7 +36,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			if (maximumRows == 0)
 			{
-				return new IBlogPost[] {};
+				return new IBlogPost[] { };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();

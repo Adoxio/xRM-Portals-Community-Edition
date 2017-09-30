@@ -896,7 +896,7 @@ namespace Adxstudio.Xrm.Security
 			{
 				fetchIn.Entity.Filters = new List<Filter>
 				{
-					new Filter {Type = LogicalOperator.And, Filters = new List<Filter> {filter}}
+					new Filter { Type = LogicalOperator.And, Filters = new List<Filter> { filter}}
 				};
 			}
 			else
@@ -984,7 +984,7 @@ namespace Adxstudio.Xrm.Security
 			{
 				Entity = new FetchEntity(entityReference.LogicalName)
 				{
-					Filters = new[] {new Filter { Conditions = new[] { new Condition(primaryKeyName, ConditionOperator.Equal, entityReference.Id) } } }
+					Filters = new[] { new Filter { Conditions = new[] { new Condition(primaryKeyName, ConditionOperator.Equal, entityReference.Id) } } }
 				}
 			};
 

@@ -124,7 +124,7 @@ namespace Adxstudio.Xrm.Search
 					{
 						_provider = _providers[searchElement.DefaultProvider];
 					}
-					catch {}
+					catch { }
 
 					if (_provider == null)
 					{
