@@ -229,7 +229,7 @@ namespace Adxstudio.Xrm.Metadata
 				return string.Empty;
 			}
 
-			var response = (RetrieveLocLabelsResponse) serviceContext.Execute(new RetrieveLocLabelsRequest
+			var response = (RetrieveLocLabelsResponse)serviceContext.Execute(new RetrieveLocLabelsRequest
 			{
 				EntityMoniker = entityMoniker,
 				AttributeName = attributeLogicalName,

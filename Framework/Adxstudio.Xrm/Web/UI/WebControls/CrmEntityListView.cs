@@ -53,7 +53,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		[Description("Indicates whether or not the entity permission provider will add record level filters to the view's fetch query to assert privileges.")]
 		public bool EnableEntityPermissions
 		{
-			get { return (bool) (ViewState["EnableEntityPermissions"] ?? false); }
+			get { return (bool)(ViewState["EnableEntityPermissions"] ?? false); }
 			set { ViewState["EnableEntityPermissions"] = value; }
 		}
 
@@ -63,7 +63,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		[Description("The Entity Reference of the Entity List to load.")]
 		public EntityReference EntityListReference
 		{
-			get { return ((EntityReference) ViewState["EntityListReference"]); }
+			get { return ((EntityReference)ViewState["EntityListReference"]); }
 			set { ViewState["EntityListReference"] = value; }
 		}
 
@@ -73,7 +73,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		[Description("The portal configuration that the control binds to.")] [DefaultValue("")]
 		public string PortalName
 		{
-			get { return ((string) ViewState["PortalName"]) ?? string.Empty; }
+			get { return ((string)ViewState["PortalName"]) ?? string.Empty; }
 			set { ViewState["PortalName"] = value; }
 		}
 
@@ -91,7 +91,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		[Description("The CSS Class assigned to the List.")] [DefaultValue("")]
 		public string ListCssClass
 		{
-			get { return ((string) ViewState["ListCssClass"]) ?? string.Empty; }
+			get { return ((string)ViewState["ListCssClass"]) ?? string.Empty; }
 			set { ViewState["ListCssClass"] = value; }
 		}
 
@@ -101,7 +101,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		[Description("The Query String parameter name for the selected view.")] [DefaultValue("view")]
 		public string ViewQueryStringParameterName
 		{
-			get { return ((string) ViewState["ViewQueryStringParameterName"]) ?? "view"; }
+			get { return ((string)ViewState["ViewQueryStringParameterName"]) ?? "view"; }
 			set { ViewState["ViewQueryStringParameterName"] = value; }
 		}
 
@@ -111,7 +111,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		[Description("Indicates whether the list is a gallery or not.")] [DefaultValue("false")]
 		public bool IsGallery
 		{
-			get { return (bool) (ViewState["IsGallery"] ?? false); }
+			get { return (bool)(ViewState["IsGallery"] ?? false); }
 			set { ViewState["IsGallery"] = value; }
 		}
 
@@ -133,7 +133,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			get
 			{
-				return (EntityGridExtensions.GridSelectMode) (ViewState["SelectMode"] ?? EntityGridExtensions.GridSelectMode.None);
+				return (EntityGridExtensions.GridSelectMode)(ViewState["SelectMode"] ?? EntityGridExtensions.GridSelectMode.None);
 			}
 			set { ViewState["SelectMode"] = value; }
 		}

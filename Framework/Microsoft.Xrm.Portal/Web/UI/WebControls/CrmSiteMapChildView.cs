@@ -114,7 +114,7 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 			{
 				var value = ViewState["StartFromCurrentNode"];
 
-				return (value != null) ? ((bool) value) : true;
+				return (value != null) ? ((bool)value) : true;
 			}
 			set { ViewState["StartFromCurrentNode"] = value; }
 		}

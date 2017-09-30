@@ -109,7 +109,7 @@ namespace Adxstudio.Xrm.Cms
 										  EntityFilters = EntityFilters.Attributes
 									  };
 
-			var metadataResponse = (RetrieveEntityResponse) serviceContext.Execute(metadataRequest);
+			var metadataResponse = (RetrieveEntityResponse)serviceContext.Execute(metadataRequest);
 
 			var primaryIdFieldName = metadataResponse.EntityMetadata.PrimaryIdAttribute;
 

@@ -69,7 +69,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 			using (var serviceContext = PortalViewContext.CreateServiceContext())
 			{
-				var response = (RetrieveMultipleResponse) serviceContext.Execute(_fetch.Value.ToRetrieveMultipleRequest());
+				var response = (RetrieveMultipleResponse)serviceContext.Execute(_fetch.Value.ToRetrieveMultipleRequest());
 
 				return new EntityCollectionDrop(this, response.EntityCollection);
 			}

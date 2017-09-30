@@ -79,7 +79,7 @@ namespace Adxstudio.Xrm.Security
 
 		private string BuildKey(Entity entity, CrmEntityRight right, string securityContextKey)
 		{
-			var baseKey =string.Concat(securityContextKey, ":", entity.Id, ":", right);
+			var baseKey = string.Concat(securityContextKey, ":", entity.Id, ":", right);
 
             IIdentity identity;
 

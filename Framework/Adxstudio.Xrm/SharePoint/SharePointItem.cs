@@ -40,7 +40,7 @@ namespace Adxstudio.Xrm.SharePoint
 
 				var size = FileSize.Value;
 
-				return size >= 0x400 ? (size/1024) + " KB" : "1 KB";
+				return size >= 0x400 ? (size / 1024) + " KB" : "1 KB";
 			}
 		}
 		

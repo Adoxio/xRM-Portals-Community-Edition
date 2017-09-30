@@ -232,13 +232,13 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 			var dataAdapterDependencies = new PortalConfigurationDataAdapterDependencies(requestContext: Request.RequestContext);
 
 			return contentMapProvider == null || contentMapUrlProvider == null
-				? (IFileSystem) new EntityFileSystem(dataAdapterDependencies)
+				? (IFileSystem)new EntityFileSystem(dataAdapterDependencies)
 				: new ContentMapFileSystem(contentMapProvider, contentMapUrlProvider, dataAdapterDependencies);
 		}
 
 		private ActionResult Error(Exception e)
 		{
-			Response.StatusCode = (int) HttpStatusCode.InternalServerError;
+			Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
 			return new JObjectResult(new JObject
 			{

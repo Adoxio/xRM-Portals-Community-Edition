@@ -63,7 +63,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 		public bool TryReadTemplateFile(Context context, string templateName, out string template)
 		{
-			var templatePath = (string) context[templateName];
+			var templatePath = (string)context[templateName];
 
 			return TryReadTemplateFile(templatePath, out template);
 		}

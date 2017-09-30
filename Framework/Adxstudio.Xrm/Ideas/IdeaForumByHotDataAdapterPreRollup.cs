@@ -143,7 +143,7 @@ namespace Adxstudio.Xrm.Ideas
 
 			if (Status.HasValue)
 			{
-				linkEntityConditions.Add(new Condition("statuscode", ConditionOperator.Equal, (int) Status.Value));
+				linkEntityConditions.Add(new Condition("statuscode", ConditionOperator.Equal, (int)Status.Value));
 			}
 
 			var response = (RetrieveMultipleResponse)serviceContext.Execute(fetch.ToRetrieveMultipleRequest());

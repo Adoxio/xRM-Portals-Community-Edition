@@ -261,7 +261,7 @@ namespace Adxstudio.Xrm.Web
 			var type = pageTemplate.GetAttributeValue<OptionSetValue>("adx_type");
 			var webTemplate = pageTemplate.GetAttributeValue<EntityReference>("adx_webtemplateid");
 
-			if (type == null || type.Value != (int) PageTemplateNode.TemplateType.WebTemplate || webTemplate == null)
+			if (type == null || type.Value != (int)PageTemplateNode.TemplateType.WebTemplate || webTemplate == null)
 			{
 				return false;
 			}

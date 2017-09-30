@@ -178,7 +178,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 					if (_tracking)
 					{
-						((IStateManager) _queryByAttribute).TrackViewState();
+						((IStateManager)_queryByAttribute).TrackViewState();
 					}
 				}
 
@@ -197,7 +197,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 					if (_tracking)
 					{
-						((IStateManager) _queryParameters).TrackViewState();
+						((IStateManager)_queryParameters).TrackViewState();
 					}
 				}
 
@@ -229,7 +229,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 					if (_tracking)
 					{
-						((IStateManager) _selectParameters).TrackViewState();
+						((IStateManager)_selectParameters).TrackViewState();
 					}
 				}
 
@@ -1250,16 +1250,16 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			if (savedState != null)
 			{
-				Pair state = (Pair) savedState;
+				Pair state = (Pair)savedState;
 
 				if (state.First != null)
 				{
-					((IStateManager) SelectParameters).LoadViewState(state.First);
+					((IStateManager)SelectParameters).LoadViewState(state.First);
 				}
 
 				if (state.Second != null)
 				{
-					((IStateManager) QueryByAttribute).LoadViewState(state.Second);
+					((IStateManager)QueryByAttribute).LoadViewState(state.Second);
 				}
 			}
 		}
@@ -1267,8 +1267,8 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		protected virtual object SaveViewState()
 		{
 			Pair state = new Pair();
-			state.First = (SelectParameters != null) ? ((IStateManager) SelectParameters).SaveViewState() : null;
-			state.Second = (QueryByAttribute != null) ? ((IStateManager) QueryByAttribute).SaveViewState() : null;
+			state.First = (SelectParameters != null) ? ((IStateManager)SelectParameters).SaveViewState() : null;
+			state.Second = (QueryByAttribute != null) ? ((IStateManager)QueryByAttribute).SaveViewState() : null;
 
 			if ((state.First == null) && (state.Second == null))
 			{
@@ -1284,12 +1284,12 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			if (_selectParameters != null)
 			{
-				((IStateManager) _selectParameters).TrackViewState();
+				((IStateManager)_selectParameters).TrackViewState();
 			}
 
 			if (_queryByAttribute != null)
 			{
-				((IStateManager) _queryByAttribute).TrackViewState();
+				((IStateManager)_queryByAttribute).TrackViewState();
 			}
 		}
 	}

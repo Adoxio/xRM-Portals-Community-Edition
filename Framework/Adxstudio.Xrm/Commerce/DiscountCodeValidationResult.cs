@@ -96,7 +96,7 @@ namespace Adxstudio.Xrm.Commerce
 						d =>
 							d.GetAttributeValue<OptionSetValue>("statecode").Value == 0 &&
 							(d.GetAttributeValue<OptionSetValue>("adx_scope") != null &&
-							 d.GetAttributeValue<OptionSetValue>("adx_scope").Value == (int) DiscountScope.Order) &&
+							 d.GetAttributeValue<OptionSetValue>("adx_scope").Value == (int)DiscountScope.Order) &&
 							((d.GetAttributeValue<DateTime?>("adx_startdate") == null ||
 							  d.GetAttributeValue<DateTime?>("adx_startdate") <= DateTime.UtcNow) &&
 							 (d.GetAttributeValue<DateTime?>("adx_enddate") == null ||
@@ -142,10 +142,10 @@ namespace Adxstudio.Xrm.Commerce
 
 					switch (typeOption.Value)
 					{
-						case (int) DiscountType.Percentage:
+						case (int)DiscountType.Percentage:
 							percentage = discount.GetAttributeValue<Decimal?>("adx_percentage") ?? 0;
 							break;
-						case (int) DiscountType.Amount:
+						case (int)DiscountType.Amount:
 							amount = GetDecimalFromMoney(discount, "adx_amount");
 							break;
 						default:
@@ -195,7 +195,7 @@ namespace Adxstudio.Xrm.Commerce
 								d =>
 									d.GetAttributeValue<OptionSetValue>("statecode").Value == 0 &&
 									(d.GetAttributeValue<OptionSetValue>("adx_scope") != null &&
-									 d.GetAttributeValue<OptionSetValue>("adx_scope").Value == (int) DiscountScope.Product) &&
+									 d.GetAttributeValue<OptionSetValue>("adx_scope").Value == (int)DiscountScope.Product) &&
 									((d.GetAttributeValue<DateTime?>("adx_startdate") == null ||
 									  d.GetAttributeValue<DateTime?>("adx_startdate") <= DateTime.UtcNow) &&
 									 (d.GetAttributeValue<DateTime?>("adx_enddate") == null ||
@@ -290,14 +290,14 @@ namespace Adxstudio.Xrm.Commerce
 
 							switch (typeOption.Value)
 							{
-								case (int) DiscountType.Percentage:
+								case (int)DiscountType.Percentage:
 									var percentage = discount.GetAttributeValue<Decimal?>("adx_percentage") ?? 0;
 									if (percentage > 0 && baseAmount > 0)
 									{
-										amount = baseAmount*percentage/100;
+										amount = baseAmount * percentage / 100;
 									}
 									break;
-								case (int) DiscountType.Amount:
+								case (int)DiscountType.Amount:
 									amount = GetDecimalFromMoney(discount, "adx_amount");
 									break;
 								default:

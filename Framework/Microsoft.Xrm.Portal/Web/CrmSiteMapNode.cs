@@ -35,8 +35,7 @@ namespace Microsoft.Xrm.Portal.Web
 			string title,
 			string description,
 			string rewriteUrl,
-			DateTime lastModified) :
-				base(provider, key, url, title, description)
+			DateTime lastModified) : base(provider, key, url, title, description)
 		{
 			RewriteUrl = rewriteUrl;
 			LastModified = lastModified;

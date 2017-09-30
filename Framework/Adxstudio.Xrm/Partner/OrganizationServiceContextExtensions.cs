@@ -280,7 +280,7 @@ namespace Adxstudio.Xrm.Partner
 
 			var opportunities = context.GetOpportunitiesSpecificToContact(contact);
 
-			return accounts.Aggregate(opportunities, (current, account) => current.Union(context.GetOpportunitiesForContactByAccountId(contact, (Guid) account.GetAttributeValue<Guid>("accountid"))).Distinct());
+			return accounts.Aggregate(opportunities, (current, account) => current.Union(context.GetOpportunitiesForContactByAccountId(contact, (Guid)account.GetAttributeValue<Guid>("accountid"))).Distinct());
 		}
 
 		public static IEnumerable<Entity> GetContactsForContact(this OrganizationServiceContext context, Entity contact)

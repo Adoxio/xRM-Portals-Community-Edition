@@ -8,7 +8,7 @@ using System;
 namespace Adxstudio.Xrm.AspNet
 {
 	public abstract class BaseManager<TStore> : IDisposable
-		where TStore: class, IDisposable
+		where TStore : class, IDisposable
 	{
 		protected virtual TStore Store { get; private set; }
 

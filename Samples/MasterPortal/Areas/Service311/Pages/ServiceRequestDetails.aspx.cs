@@ -66,7 +66,7 @@ namespace Site.Areas.Service311.Pages
 												  EntityFilters = EntityFilters.Attributes
 											  };
 
-					var metadataResponse = (RetrieveEntityResponse) XrmContext.Execute(metadataRequest);
+					var metadataResponse = (RetrieveEntityResponse)XrmContext.Execute(metadataRequest);
 
 					var primaryFieldLogicalName = metadataResponse.EntityMetadata.PrimaryIdAttribute;
 
@@ -113,7 +113,7 @@ namespace Site.Areas.Service311.Pages
 												  EntityFilters = EntityFilters.Attributes
 											  };
 
-				var trueMetadataResponse = (RetrieveEntityResponse) XrmContext.Execute(trueMetadataRequest);
+				var trueMetadataResponse = (RetrieveEntityResponse)XrmContext.Execute(trueMetadataRequest);
 
 				var primaryFieldName = trueMetadataResponse.EntityMetadata.PrimaryIdAttribute;
 
@@ -207,11 +207,11 @@ namespace Site.Areas.Service311.Pages
 				var entityFormControl = new EntityForm(entityForm.ToEntityReference(), formRecordSourceDefinition)
 										{
 											ID = "CustomEntityFormControl",
-											FormCssClass="crmEntityFormView",
-											PreviousButtonCssClass="btn btn-default",
-											NextButtonCssClass="btn btn-primary",
-											SubmitButtonCssClass="btn btn-primary",
-											ClientIDMode= ClientIDMode.Static/*,
+											FormCssClass = "crmEntityFormView",
+											PreviousButtonCssClass = "btn btn-default",
+											NextButtonCssClass = "btn btn-primary",
+											SubmitButtonCssClass = "btn btn-primary",
+											ClientIDMode = ClientIDMode.Static/*,
 											EntityFormReference	= entityForm.ToEntityReference(),
 											EntitySourceDefinition = formRecordSourceDefinition*/
 										};

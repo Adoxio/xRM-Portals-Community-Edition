@@ -52,7 +52,7 @@ namespace Adxstudio.Xrm.Products
 				}
 				var type =  option.Value;
 				return Enum.IsDefined(typeof(SalesLiteratureTypeCode), type)
-					       ? (SalesLiteratureTypeCode?) ((SalesLiteratureTypeCode) type)
+					       ? (SalesLiteratureTypeCode?)((SalesLiteratureTypeCode)type)
 					       : null;
 			}
 		}

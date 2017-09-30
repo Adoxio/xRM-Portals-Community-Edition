@@ -35,7 +35,7 @@ namespace Adxstudio.Xrm.Commerce
 		public string PayPalAccountEmail { get; private set; }
 
 
-		public PayPalHelper(IPortalContext xrm) :this(GetPaypalBaseUrl(xrm), GetPaypalAccountEmail(xrm))
+		public PayPalHelper(IPortalContext xrm) : this(GetPaypalBaseUrl(xrm), GetPaypalAccountEmail(xrm))
 		{
 			
 		}
@@ -253,7 +253,7 @@ namespace Adxstudio.Xrm.Commerce
 		{
 			var query = string.Format("cmd=_notify-synch&tx={0}&at={1}", transactionId, identityToken);
 
-			var request = (HttpWebRequest) WebRequest.Create(PayPalBaseUrl);
+			var request = (HttpWebRequest)WebRequest.Create(PayPalBaseUrl);
 
 			request.Method = WebRequestMethods.Http.Post;
 			request.ContentType = "application/x-www-form-urlencoded";
@@ -306,7 +306,7 @@ namespace Adxstudio.Xrm.Commerce
 
 				using (var reader = new StringReader(response))
 				{
-					var line=reader.ReadLine();
+					var line = reader.ReadLine();
 
 					if (line == "FAIL")
 					{

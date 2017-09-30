@@ -166,7 +166,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					{
 						foreach (Control element in cell.Controls)
 						{
-							if (element is HtmlContainerControl && ((HtmlContainerControl) element).Attributes["class"] == "control")
+							if (element is HtmlContainerControl && ((HtmlContainerControl)element).Attributes["class"] == "control")
 							{
 								foreach (Control input in element.Controls)
 								{

@@ -335,7 +335,7 @@ namespace Adxstudio.Xrm.EntityList
 				return PackageType.Solution;
 			}
 
-			if (type.Value == (int) PackageType.Data)
+			if (type.Value == (int)PackageType.Data)
 			{
 				return PackageType.Data;
 			}

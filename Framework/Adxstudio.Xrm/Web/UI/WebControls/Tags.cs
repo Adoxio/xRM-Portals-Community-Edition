@@ -174,7 +174,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			{
 				return;
 			}
-			if (HeaderTemplate== null)
+			if (HeaderTemplate == null)
 			{
 				HeaderTemplate = new CompiledTemplateBuilder(BuildTemplate);
 			}
@@ -248,7 +248,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var ulOpen = new Literal();
 			ulOpen.DataBinding += (sender, args) =>
 			{
-				ulOpen.Text = "<ul class='" + CssClass + "' id ='"+ID +"'>";
+				ulOpen.Text = "<ul class='" + CssClass + "' id ='" + ID + "'>";
 			};
 			(container as Control).Controls.Add(ulOpen);
 		}
@@ -259,8 +259,8 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		/// <param name="container">The container.</param>
 		protected virtual void BuildFooterTemplate(IDataItemContainer container)
 		{
-			var ulClose= new Literal();
-			ulClose.DataBinding += (sender, args) =>ulClose.Text = "</ul>";
+			var ulClose = new Literal();
+			ulClose.DataBinding += (sender, args) => ulClose.Text = "</ul>";
 
 			(container as Control).Controls.Add(ulClose);
 			if (!IsReadOnly)
@@ -288,7 +288,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					createButton.ID += createButton;
 					createButton.Text = NewTagButtonName;
 					createButton.CssClass = NewTagButtonCssClass;
-					createButton.Click +=CreateNewTag;
+					createButton.Click += CreateNewTag;
 				};
 				(container as Control).Controls.Add(createButton);
 			}
@@ -357,7 +357,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		public Tags()
 		{
 			Init += TagRepeater_Init;
-			PreRender+= TagRepeater_PreRender;
+			PreRender += TagRepeater_PreRender;
 		}
 
 		/// <summary>
@@ -418,7 +418,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			{
 				if (!string.IsNullOrEmpty(liClass))
 				{
-					liOpen.Text = "<li class='" + liClass.Trim()+ "'>";
+					liOpen.Text = "<li class='" + liClass.Trim() + "'>";
 				}
 				else
 				{
@@ -453,7 +453,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			}
 			
 			var liClose = new Literal();
-			liClose.DataBinding += (sender, args) =>liClose.Text = "</li>";
+			liClose.DataBinding += (sender, args) => liClose.Text = "</li>";
 			(container as Control).Controls.Add(liClose);
 		}
 

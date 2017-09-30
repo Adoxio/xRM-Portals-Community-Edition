@@ -57,7 +57,7 @@ namespace Adxstudio.Xrm.Cms
 		}
 
 		public DataAdapterDependencies(OrganizationServiceContext serviceContext, ICrmEntitySecurityProvider securityProvider,
-			IEntityUrlProvider urlProvider, EntityReference website, EntityReference portalUser = null):this
+			IEntityUrlProvider urlProvider, EntityReference website, EntityReference portalUser = null) : this
 			(serviceContext, securityProvider, urlProvider, website, portalUser, null)
 		{ }
 

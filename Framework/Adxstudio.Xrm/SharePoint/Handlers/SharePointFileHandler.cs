@@ -88,14 +88,14 @@ namespace Adxstudio.Xrm.SharePoint.Handlers
 
 					if (hwr != null && hwr.StatusCode == HttpStatusCode.NotModified)
 					{
-						context.Response.StatusCode = (int) HttpStatusCode.NotModified;
+						context.Response.StatusCode = (int)HttpStatusCode.NotModified;
 						return;
 					}
 
                     ADXTrace.Instance.TraceError(TraceCategory.Application, string.Format("Exception thrown trying to download {0}", SharePointFileUrl));
 					ADXTrace.Instance.TraceError(TraceCategory.Application, string.Format("ProcessRequest", "Exception details: {0}", we.ToString()));
 
-                    context.Response.StatusCode = (int) HttpStatusCode.BadRequest;
+                    context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
 
 					return;
 				}

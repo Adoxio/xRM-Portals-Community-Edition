@@ -35,8 +35,8 @@ namespace Adxstudio.Xrm.Commerce
 			VolumeDiscountAmount = GetDecimalFromMoney(quoteProduct, "volumediscountamount");
 
 			IsSelected = Quantity > 0;
-			Amount = PricePerUnit*Quantity;
-			TotalDiscountAmount = ManualDiscountAmount + (Quantity*VolumeDiscountAmount);
+			Amount = PricePerUnit * Quantity;
+			TotalDiscountAmount = ManualDiscountAmount + (Quantity * VolumeDiscountAmount);
 			AmountAfterDiscount = Amount - TotalDiscountAmount;
 		}
 

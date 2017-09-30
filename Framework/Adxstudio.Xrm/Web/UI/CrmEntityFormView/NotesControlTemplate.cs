@@ -328,7 +328,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					settings.AttachFileAccept,
 					settings.AttachFileRestrictAccept.GetValueOrDefault(false),
 					Localization.GetLocalizedString(settings.AttachFileRestrictErrorMessage, Metadata.LanguageCode),
-					settings.AttachFileMaximumSize.HasValue ? Convert.ToUInt64(settings.AttachFileMaximumSize.Value) << 10 : (ulong?) null,
+					settings.AttachFileMaximumSize.HasValue ? Convert.ToUInt64(settings.AttachFileMaximumSize.Value) << 10 : (ulong?)null,
 					Localization.GetLocalizedString(settings.AttachFileMaximumSizeErrorMessage, Metadata.LanguageCode),
 					IsTimeline ? ((JsonConfiguration.TimelineMetadata)settings).AttachFileAcceptExtensions : "",
 					isPortalComment: IsTimeline);
@@ -355,7 +355,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			string addServiceUrl = null;
 			string updateServiceUrl = null;
 			string deleteServiceUrl = null;
-			string getAttachmentsServiceUrl= null;
+			string getAttachmentsServiceUrl = null;
 			bool isTimeline;
 			bool useScrollingPagination;
 			string entityLogicalName = null;

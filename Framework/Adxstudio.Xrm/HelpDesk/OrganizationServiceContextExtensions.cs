@@ -36,7 +36,7 @@ namespace Adxstudio.Xrm.HelpDesk
 		{
 			var plans = context.CreateQuery("adx_supportplan").Where(o =>
 							o.GetAttributeValue<EntityReference>("adx_customercontact") == new EntityReference("contact", contactid) &&
-							(o.GetAttributeValue<OptionSetValue>("adx_allotmenttype") != null && o.GetAttributeValue<OptionSetValue>("adx_allotmenttype").Value == (int) AllotmentType.NumberCases && o.GetAttributeValue<int?>("adx_allotmentsremaining").GetValueOrDefault(0) > 0) &&
+							(o.GetAttributeValue<OptionSetValue>("adx_allotmenttype") != null && o.GetAttributeValue<OptionSetValue>("adx_allotmenttype").Value == (int)AllotmentType.NumberCases && o.GetAttributeValue<int?>("adx_allotmentsremaining").GetValueOrDefault(0) > 0) &&
 							o.GetAttributeValue<OptionSetValue>("statecode") != null && o.GetAttributeValue<OptionSetValue>("statecode").Value == (int)EntityState.Active);
 
 			return plans;

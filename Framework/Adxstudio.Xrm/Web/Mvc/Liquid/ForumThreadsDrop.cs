@@ -28,7 +28,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 									IDataAdapterDependencies dependencies,
 									IForum forum,
 									int startRowIndex = 0, int pageSize = -1, string orderBy = "adx_lastpostdate", string sortDirection = "asc"
-									): base(portalLiquidContext)
+									) : base(portalLiquidContext)
 		{
 			if (forum != null)
 			{

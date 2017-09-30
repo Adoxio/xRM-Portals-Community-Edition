@@ -183,7 +183,7 @@ namespace Adxstudio.Xrm.Web.Routing
 					{
 						// Sending Forbidden gets caught by the Application_EndRequest and throws an error trying to redirect to the Access Denied page.
 						// Send a 404 instead with plain text indicating Access Denied.
-						httpContext.Response.StatusCode = (int) HttpStatusCode.NotFound;
+						httpContext.Response.StatusCode = (int)HttpStatusCode.NotFound;
 						httpContext.Response.ContentType = "text/plain";
 						httpContext.Response.Write("Access Denied");
 						httpContext.Response.End();

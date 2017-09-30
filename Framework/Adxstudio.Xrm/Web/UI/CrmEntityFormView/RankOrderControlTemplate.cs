@@ -115,7 +115,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					{
 						foreach (Control element in cell.Controls)
 						{
-							if (element is HtmlContainerControl && ((HtmlContainerControl) element).Attributes["class"] == "control")
+							if (element is HtmlContainerControl && ((HtmlContainerControl)element).Attributes["class"] == "control")
 							{
 								foreach (Control input in element.Controls)
 								{
@@ -142,7 +142,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 		{
 			if (control is TextBox)
 			{
-				var textBox = (TextBox) control;
+				var textBox = (TextBox)control;
 				int valueCompare;
 				if (int.TryParse(textBox.Text, out valueCompare))
 				{

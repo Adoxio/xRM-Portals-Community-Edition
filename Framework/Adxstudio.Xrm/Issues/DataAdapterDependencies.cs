@@ -54,7 +54,7 @@ namespace Adxstudio.Xrm.Issues
 
 		public DataAdapterDependencies(OrganizationServiceContext serviceContext, ICrmEntitySecurityProvider securityProvider,
 			HttpContextBase httpContext, EntityReference website, EntityReference portalUser = null)
-			:this(serviceContext, securityProvider, httpContext, website, portalUser: portalUser, requestContext: null)
+			: this(serviceContext, securityProvider, httpContext, website, portalUser: portalUser, requestContext: null)
 		{
 			
 		}

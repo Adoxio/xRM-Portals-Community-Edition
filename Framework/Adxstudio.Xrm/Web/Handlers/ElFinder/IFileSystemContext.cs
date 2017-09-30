@@ -81,7 +81,7 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 
 			if (!FileSystem.EntityDirectoryTypes.TryGetValue(type, out directoryType))
 			{
-				return Enumerable.Empty<IGrouping<EntityReference, Tuple<Entity, DirectoryType>>>().ToLookup(e => (EntityReference) null);
+				return Enumerable.Empty<IGrouping<EntityReference, Tuple<Entity, DirectoryType>>>().ToLookup(e => (EntityReference)null);
 			}
 
 			return directoryType.GetTreeParents(ServiceContext, Website)

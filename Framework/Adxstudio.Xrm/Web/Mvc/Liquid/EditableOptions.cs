@@ -88,14 +88,14 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 			if (value is bool)
 			{
-				return (bool) value;
+				return (bool)value;
 			}
 
 			bool parsed;
 
 			return bool.TryParse(value.ToString(), out parsed)
 				? parsed
-				: (bool?) null;
+				: (bool?)null;
 		}
 	}
 }

@@ -109,7 +109,7 @@ namespace Adxstudio.Xrm.EntityList
 
 			var serviceContext = Dependencies.GetServiceContext();
 
-			var response = (RetrieveEntityResponse) serviceContext.Execute(new RetrieveEntityRequest
+			var response = (RetrieveEntityResponse)serviceContext.Execute(new RetrieveEntityRequest
 			{
 				LogicalName = fetchEntity.Name,
 				EntityFilters = EntityFilters.Attributes,
@@ -606,7 +606,7 @@ namespace Adxstudio.Xrm.EntityList
 					return EntityListTimeZoneDisplayMode.UserLocalTimeZone;
 				}
 
-				return (EntityListTimeZoneDisplayMode) option.Value;
+				return (EntityListTimeZoneDisplayMode)option.Value;
 			}
 		}
 	}

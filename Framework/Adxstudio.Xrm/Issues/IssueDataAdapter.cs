@@ -156,7 +156,7 @@ namespace Adxstudio.Xrm.Issues
 			comment["adx_approved"] = issue.CommentPolicy != IssueForumCommentPolicy.Moderated;
 			comment["adx_createdbycontact"] = authorName;
 			comment["adx_contactemail"] = authorEmail;
-			comment["source"] = new OptionSetValue((int) FeedbackSource.Portal);
+			comment["source"] = new OptionSetValue((int)FeedbackSource.Portal);
 
 			if (author != null && author.LogicalName == "contact")
 			{
@@ -228,7 +228,7 @@ namespace Adxstudio.Xrm.Issues
 			{
 				attributes[FeedbackMetadataAttributes.UserIdAttributeName] = portalUser;
 			}
-			else if (httpContext != null && httpContext.Profile!=null)
+			else if (httpContext != null && httpContext.Profile != null)
 			{
 				attributes[FeedbackMetadataAttributes.VisitorAttributeName] = httpContext.Profile.UserName;
 			}

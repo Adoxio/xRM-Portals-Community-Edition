@@ -166,7 +166,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					},
 					Set = obj =>
 					{
-						var value = ((OptionSetValue) obj).Value;
+						var value = ((OptionSetValue)obj).Value;
 						var listItem = listControl.Items.FindByValue(value.ToString(CultureInfo.InvariantCulture));
 						if (listItem != null)
 						{
@@ -235,7 +235,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				},
 				Set = obj =>
 				{
-					var value = ((OptionSetValue) obj).Value;
+					var value = ((OptionSetValue)obj).Value;
 					var listItem = listControl.Items.FindByValue(value.ToString(CultureInfo.InvariantCulture));
 					if (listItem != null)
 					{

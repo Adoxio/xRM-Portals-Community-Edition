@@ -76,7 +76,7 @@ namespace Adxstudio.Xrm.Notes
 		{
 			var containerName = context.GetSettingValueByName(StorageContainerSetting);
 			return (string.IsNullOrEmpty(containerName)
-				? ((WhoAmIResponse) context.Execute(new WhoAmIRequest())).OrganizationId.ToString("N")
+				? ((WhoAmIResponse)context.Execute(new WhoAmIRequest())).OrganizationId.ToString("N")
 				: containerName).ToLowerInvariant();
 		}
 
@@ -116,7 +116,7 @@ namespace Adxstudio.Xrm.Notes
 			};
 			fetch.Entity = fetchEntity;
 
-			var response = (RetrieveMultipleResponse) context.Execute(fetch.ToRetrieveMultipleRequest());
+			var response = (RetrieveMultipleResponse)context.Execute(fetch.ToRetrieveMultipleRequest());
 			var note = response.EntityCollection.Entities.FirstOrDefault();
 
 			if (note == null) return null;
@@ -286,7 +286,7 @@ namespace Adxstudio.Xrm.Notes
 						{
 							Name = note.FileAttachment.FileName,
 							Type = note.FileAttachment.MimeType,
-							Size = (ulong) note.FileAttachment.FileSize,
+							Size = (ulong)note.FileAttachment.FileSize,
 							Url = ""
 						};
 						entity.SetAttributeValue("documentbody",
@@ -307,7 +307,7 @@ namespace Adxstudio.Xrm.Notes
 				{
 					var container = GetBlobContainer(storageAccount, _containerName);
 
-					var azureFile = (AzureAnnotationFile) note.FileAttachment;
+					var azureFile = (AzureAnnotationFile)note.FileAttachment;
 
 					azureFile.BlockBlob = UploadBlob(azureFile, container, note.AnnotationId);
 
@@ -315,7 +315,7 @@ namespace Adxstudio.Xrm.Notes
 					{
 						Name = azureFile.FileName,
 						Type = azureFile.MimeType,
-						Size = (ulong) azureFile.FileSize,
+						Size = (ulong)azureFile.FileSize,
 						Url = azureFile.BlockBlob.Uri.AbsoluteUri
 					};
 					entity.SetAttributeValue("documentbody",
@@ -473,7 +473,7 @@ namespace Adxstudio.Xrm.Notes
 						{
 							Name = note.FileAttachment.FileName,
 							Type = note.FileAttachment.MimeType,
-							Size = (ulong) note.FileAttachment.FileSize,
+							Size = (ulong)note.FileAttachment.FileSize,
 							Url = ""
 						};
 						entity.SetAttributeValue("documentbody",
@@ -504,7 +504,7 @@ namespace Adxstudio.Xrm.Notes
 						{
 							Name = azureFile.FileName,
 							Type = azureFile.MimeType,
-							Size = (ulong) azureFile.FileSize,
+							Size = (ulong)azureFile.FileSize,
 							Url = azureFile.BlockBlob.Uri.AbsoluteUri
 						};
 						entity.SetAttributeValue("documentbody",
@@ -586,7 +586,7 @@ namespace Adxstudio.Xrm.Notes
 			}
 
 			var serviceContext = _dependencies.GetServiceContext();
-			var response = (RetrieveMultipleResponse) serviceContext.Execute(fetch.ToRetrieveMultipleRequest());
+			var response = (RetrieveMultipleResponse)serviceContext.Execute(fetch.ToRetrieveMultipleRequest());
 
 			if (!string.IsNullOrEmpty(response.EntityCollection.PagingCookie))
 			{
@@ -834,7 +834,7 @@ namespace Adxstudio.Xrm.Notes
 		{
 			if (note == null)
 			{
-				context.Response.StatusCode = (int) HttpStatusCode.NotFound;
+				context.Response.StatusCode = (int)HttpStatusCode.NotFound;
 				return;
 			}
 
@@ -842,7 +842,7 @@ namespace Adxstudio.Xrm.Notes
 
 			if (crmFile == null || crmFile.Document == null || crmFile.Document.Length == 0)
 			{
-				context.Response.StatusCode = (int) HttpStatusCode.NoContent;
+				context.Response.StatusCode = (int)HttpStatusCode.NoContent;
 				return;
 			}
 
@@ -870,7 +870,7 @@ namespace Adxstudio.Xrm.Notes
 
 			if (notModified)
 			{
-				context.Response.StatusCode = (int) HttpStatusCode.NotModified;
+				context.Response.StatusCode = (int)HttpStatusCode.NotModified;
 			}
 			else
 			{
@@ -882,7 +882,7 @@ namespace Adxstudio.Xrm.Notes
 		{
 			if (note == null)
 			{
-				context.Response.StatusCode = (int) HttpStatusCode.NotFound;
+				context.Response.StatusCode = (int)HttpStatusCode.NotFound;
 				return;
 			}
 
@@ -890,7 +890,7 @@ namespace Adxstudio.Xrm.Notes
 
 			if (azureFile == null || azureFile.BlockBlob == null || !azureFile.BlockBlob.Exists() || azureFile.BlockBlob.Properties.Length <= 0)
 			{
-				context.Response.StatusCode = (int) HttpStatusCode.NoContent;
+				context.Response.StatusCode = (int)HttpStatusCode.NoContent;
 				return;
 			}
 
@@ -923,7 +923,7 @@ namespace Adxstudio.Xrm.Notes
 		private static void SetResponseParameters(HttpContextBase context,
 			Entity annotation, Entity webfile, ICollection<byte> data)
 		{
-			context.Response.StatusCode = (int) HttpStatusCode.OK;
+			context.Response.StatusCode = (int)HttpStatusCode.OK;
 			context.Response.ContentType = annotation.GetAttributeValue<string>("mimetype");
 
 			var contentDispositionText = "attachment";
@@ -976,14 +976,14 @@ namespace Adxstudio.Xrm.Notes
 		{
 			if (note == null)
 			{
-				return new HttpStatusCodeResult((int) HttpStatusCode.NotFound);
+				return new HttpStatusCodeResult((int)HttpStatusCode.NotFound);
 			}
 
 			var crmFile = note.FileAttachment as CrmAnnotationFile;
 
 			if (crmFile == null)
 			{
-				return new HttpStatusCodeResult((int) HttpStatusCode.NotFound);
+				return new HttpStatusCodeResult((int)HttpStatusCode.NotFound);
 			}
 
 			var contentType = string.IsNullOrEmpty(crmFile.MimeType)
@@ -1005,14 +1005,14 @@ namespace Adxstudio.Xrm.Notes
 		{
 			if (note == null)
 			{
-				return new HttpStatusCodeResult((int) HttpStatusCode.NotFound);
+				return new HttpStatusCodeResult((int)HttpStatusCode.NotFound);
 			}
 
 			var azureFile = note.FileAttachment as AzureAnnotationFile;
 
 			if (azureFile == null || azureFile.BlockBlob == null || !azureFile.BlockBlob.Exists() || azureFile.BlockBlob.Properties.Length <= 0)
 			{
-				return new HttpStatusCodeResult((int) HttpStatusCode.NoContent);
+				return new HttpStatusCodeResult((int)HttpStatusCode.NoContent);
 			}
 
 			var accessSignature = azureFile.BlockBlob.GetSharedAccessSignature(new SharedAccessBlobPolicy
@@ -1076,7 +1076,7 @@ namespace Adxstudio.Xrm.Notes
 					{
 						Name = azureFile.FileName,
 						Type = azureFile.MimeType,
-						Size = (ulong) azureFile.FileSize,
+						Size = (ulong)azureFile.FileSize,
 						Url = toBlob.Uri.AbsoluteUri
 					};
 					entity.SetAttributeValue("documentbody",

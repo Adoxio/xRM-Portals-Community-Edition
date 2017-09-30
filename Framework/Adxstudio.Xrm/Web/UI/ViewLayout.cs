@@ -59,7 +59,7 @@ namespace Adxstudio.Xrm.Web.UI
 			/// <param name="sortDisabled">True value indicates that sort is disabled, otherwise sort is enabled by default. </param>
 			/// <param name="type">Type of column. Default is 'Data'. <see cref="ViewColumnType"/></param>
 			public ViewColumn(string logicalName, string name, AttributeMetadata metadata, int width, double widthAsPercent, bool sortDisabled = false, ViewColumnType type = ViewColumnType.Data)
-				:base(logicalName, name, metadata, width, sortDisabled)
+				: base(logicalName, name, metadata, width, sortDisabled)
 			{
 				WidthAsPercent = widthAsPercent;
 				Type = type;

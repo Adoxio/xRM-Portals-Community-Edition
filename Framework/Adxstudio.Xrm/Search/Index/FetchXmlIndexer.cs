@@ -318,7 +318,7 @@ namespace Adxstudio.Xrm.Search.Index
 
 		private void AddNotesFilter(string notePrefix)
 		{
-			var fetchXml =@"<filter>
+			var fetchXml = @"<filter>
 							<condition attribute='notetext' operator='begins-with' value='{0}' />
 							</filter > ";
 

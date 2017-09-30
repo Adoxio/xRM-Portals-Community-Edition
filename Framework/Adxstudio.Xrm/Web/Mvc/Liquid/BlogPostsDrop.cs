@@ -21,7 +21,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 		public BlogPostsDrop(IPortalLiquidContext portalLiquidContext, 
 									IDataAdapterDependencies dependencies,
 									int startRowIndex = 0, int pageSize = -1, string orderBy = "adx_date", string sortDirection = "desc"
-									): base(portalLiquidContext)
+									) : base(portalLiquidContext)
 		{
 			Dependencies = dependencies;
 

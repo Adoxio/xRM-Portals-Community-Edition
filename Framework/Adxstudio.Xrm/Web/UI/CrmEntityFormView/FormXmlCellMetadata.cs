@@ -455,45 +455,45 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 						{
 							switch (controlStyle.Value)
 							{
-								case (int) WebFormMetadata.ControlStyle.VerticalRadioButtonList:
+								case (int)WebFormMetadata.ControlStyle.VerticalRadioButtonList:
 									_controlStyle = WebFormMetadata.ControlStyle.VerticalRadioButtonList;
 									break;
-								case (int) WebFormMetadata.ControlStyle.HorizontalRadioButtonList:
+								case (int)WebFormMetadata.ControlStyle.HorizontalRadioButtonList:
 									_controlStyle = WebFormMetadata.ControlStyle.HorizontalRadioButtonList;
 									break;
-								case (int) WebFormMetadata.ControlStyle.GeolocationLookupValidator:
+								case (int)WebFormMetadata.ControlStyle.GeolocationLookupValidator:
 									_controlStyle = WebFormMetadata.ControlStyle.GeolocationLookupValidator;
 									_geolocationValidatorErrorMessage =
 										Localization.GetLocalizedString(
 											attributeWebFormMetadata.GetAttributeValue<string>("adx_geolocationvalidatorerrormessage"), LanguageCode);
 									break;
-								case (int) WebFormMetadata.ControlStyle.ConstantSum:
+								case (int)WebFormMetadata.ControlStyle.ConstantSum:
 									_controlStyle = WebFormMetadata.ControlStyle.ConstantSum;
 									_constantSumAttributeNames =
 										webFormMetadata.Where(
 											w =>
 												w.GetAttributeValue<OptionSetValue>("adx_controlstyle") != null &&
 												w.GetAttributeValue<OptionSetValue>("adx_controlstyle").Value ==
-												(int) WebFormMetadata.ControlStyle.ConstantSum && w.GetAttributeValue<string>("adx_groupname") == _groupName)
+												(int)WebFormMetadata.ControlStyle.ConstantSum && w.GetAttributeValue<string>("adx_groupname") == _groupName)
 											.Select(w => w.GetAttributeValue<string>("adx_attributelogicalname"))
 											.ToArray();
 									break;
-								case (int) WebFormMetadata.ControlStyle.RankOrderNoTies:
+								case (int)WebFormMetadata.ControlStyle.RankOrderNoTies:
 									_controlStyle = WebFormMetadata.ControlStyle.RankOrderNoTies;
 									break;
-								case (int) WebFormMetadata.ControlStyle.RankOrderAllowTies:
+								case (int)WebFormMetadata.ControlStyle.RankOrderAllowTies:
 									_controlStyle = WebFormMetadata.ControlStyle.RankOrderAllowTies;
 									break;
-								case (int) WebFormMetadata.ControlStyle.MultipleChoiceMatrix:
+								case (int)WebFormMetadata.ControlStyle.MultipleChoiceMatrix:
 									_controlStyle = WebFormMetadata.ControlStyle.MultipleChoiceMatrix;
 									break;
-								case (int) WebFormMetadata.ControlStyle.MultipleChoice:
+								case (int)WebFormMetadata.ControlStyle.MultipleChoice:
 									_controlStyle = WebFormMetadata.ControlStyle.MultipleChoice;
 									break;
-								case (int) WebFormMetadata.ControlStyle.StackRank:
+								case (int)WebFormMetadata.ControlStyle.StackRank:
 									_controlStyle = WebFormMetadata.ControlStyle.StackRank;
 									break;
-								case (int) WebFormMetadata.ControlStyle.LookupDropdown:
+								case (int)WebFormMetadata.ControlStyle.LookupDropdown:
 									_controlStyle = WebFormMetadata.ControlStyle.LookupDropdown;
 									break;
 							}
@@ -529,13 +529,13 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 						{
 							switch (descriptionPosition.Value)
 							{
-								case (int) WebFormMetadata.DescriptionPosition.AboveControl:
+								case (int)WebFormMetadata.DescriptionPosition.AboveControl:
 									_descriptionPosition = WebFormMetadata.DescriptionPosition.AboveControl;
 									break;
-								case (int) WebFormMetadata.DescriptionPosition.BelowControl:
+								case (int)WebFormMetadata.DescriptionPosition.BelowControl:
 									_descriptionPosition = WebFormMetadata.DescriptionPosition.BelowControl;
 									break;
-								case (int) WebFormMetadata.DescriptionPosition.AboveLabel:
+								case (int)WebFormMetadata.DescriptionPosition.AboveLabel:
 									_descriptionPosition = WebFormMetadata.DescriptionPosition.AboveLabel;
 									break;
 							}

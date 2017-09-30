@@ -43,11 +43,11 @@ namespace Adxstudio.Xrm.Mapping
 								   let latitude = c.GetAttributeValue<Double>(entityLatitudeAttributeName)
 								   let longitude = c.GetAttributeValue<Double>(entityLongitudeAttributeName)
 								   let distance =
-									   earthRadius*2*
+									   earthRadius * 2 *
 									   Math.Asin(
-										   Math.Sqrt(Math.Pow(Math.Sin((Math.Abs(originLatitude) - Math.Abs(latitude))*Math.PI/180/2), 2) +
-													 Math.Cos(Math.Abs(originLatitude)*Math.PI/180)*Math.Cos(Math.Abs(latitude)*Math.PI/180)*
-													 Math.Pow(Math.Sin((Math.Abs(originLongitude) - Math.Abs(longitude))*Math.PI/180/2), 2)))
+										   Math.Sqrt(Math.Pow(Math.Sin((Math.Abs(originLatitude) - Math.Abs(latitude)) * Math.PI / 180 / 2), 2) +
+													 Math.Cos(Math.Abs(originLatitude) * Math.PI / 180) * Math.Cos(Math.Abs(latitude) * Math.PI / 180) *
+													 Math.Pow(Math.Sin((Math.Abs(originLongitude) - Math.Abs(longitude)) * Math.PI / 180 / 2), 2)))
 								   where distance < maxDistance
 								   orderby distance
 								   select c;

@@ -243,7 +243,7 @@ namespace Adxstudio.Xrm.Search.Index
 				.Where(e => e.Attributes("alias").Any(a => a.Value == nameParts.First()))
 				.FirstOrDefault() 
 				?? entity.XPathSelectElements("link-entity").FirstOrDefault().XPathSelectElements("link-entity")
-				.FirstOrDefault().XPathSelectElements("link-entity").FirstOrDefault(a=> a.Attributes("alias").Any(n => n.Value == nameParts.First()));
+				.FirstOrDefault().XPathSelectElements("link-entity").FirstOrDefault(a => a.Attributes("alias").Any(n => n.Value == nameParts.First()));
 
 			if (linkEntity == null)
 			{

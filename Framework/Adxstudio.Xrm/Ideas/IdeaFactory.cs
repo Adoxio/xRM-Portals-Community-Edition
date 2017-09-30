@@ -46,7 +46,7 @@ namespace Adxstudio.Xrm.Ideas
 					: IdeaExtendedData.Default;
 
 				int commentCountValue;
-				var commentCount = commentCounts.TryGetValue(e.Id, out commentCountValue)? commentCountValue: 0;
+				var commentCount = commentCounts.TryGetValue(e.Id, out commentCountValue) ? commentCountValue : 0;
 
 				var authorName = extendedData.AuthorName;
 				var authorEmail = e.GetAttributeValue<string>("adx_authoremail") ?? extendedData.AuthorEmail;

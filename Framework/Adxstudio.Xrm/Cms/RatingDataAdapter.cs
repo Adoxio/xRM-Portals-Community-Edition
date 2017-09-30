@@ -218,7 +218,7 @@ namespace Adxstudio.Xrm.Cms
 			entity.Attributes[FeedbackMetadataAttributes.RatingValueAttributeName] = rating;
 			entity.Attributes[FeedbackMetadataAttributes.MaxRatingAttributeName] = maxRating;
 			entity.Attributes[FeedbackMetadataAttributes.MinRatingAttributeName] = minRating;
-			entity.Attributes["source"] = new OptionSetValue((int) FeedbackSource.Portal);
+			entity.Attributes["source"] = new OptionSetValue((int)FeedbackSource.Portal);
 
 			var entityMetadata = GetRelatedEntityMetadata(serviceContext);
 

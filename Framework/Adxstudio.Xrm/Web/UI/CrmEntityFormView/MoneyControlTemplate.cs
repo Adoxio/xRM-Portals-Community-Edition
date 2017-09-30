@@ -105,7 +105,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 					if (data == null)
 					{
-						textbox.Text = ((Money) obj).Value.ToString("N{0}".FormatWith(Metadata.Precision));
+						textbox.Text = ((Money)obj).Value.ToString("N{0}".FormatWith(Metadata.Precision));
 
 						return;
 					}

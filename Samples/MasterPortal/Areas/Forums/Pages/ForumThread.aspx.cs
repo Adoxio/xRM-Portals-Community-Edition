@@ -217,7 +217,7 @@ namespace Site.Areas.Forums.Pages
 				throw new SecurityException("The current user does not have the necessary permissions to update this forum post.");
 			}
 
-			var content = ((Control) sender).FindControl("ForumPostContentUpdate") as ITextControl;
+			var content = ((Control)sender).FindControl("ForumPostContentUpdate") as ITextControl;
 
 			if (content == null)
 			{
@@ -243,7 +243,7 @@ namespace Site.Areas.Forums.Pages
 
 		protected void ValidatePostContentLength(object source, ServerValidateEventArgs args)
 		{
-			var response = (RetrieveAttributeResponse) ServiceContext.Execute(new RetrieveAttributeRequest
+			var response = (RetrieveAttributeResponse)ServiceContext.Execute(new RetrieveAttributeRequest
 			{
 				EntityLogicalName = "adx_communityforumpost",
 				LogicalName = "adx_content"

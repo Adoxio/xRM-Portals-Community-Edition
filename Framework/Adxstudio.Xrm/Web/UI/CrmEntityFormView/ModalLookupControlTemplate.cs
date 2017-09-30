@@ -287,7 +287,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				var pos = Metadata.LookupDependentAttributeName.IndexOf(".", StringComparison.InvariantCulture);
 				filterFieldName = pos >= 0
-					? Metadata.LookupDependentAttributeName.Substring(pos+1)
+					? Metadata.LookupDependentAttributeName.Substring(pos + 1)
 					: Metadata.LookupDependentAttributeName;
 			}
 			
@@ -343,7 +343,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					new[] {
 						new Condition("adx_entityformid", ConditionOperator.Equal, Metadata.LookupReferenceEntityFormId),
 						new Condition("statuscode", ConditionOperator.NotNull),
-						new Condition("statuscode", ConditionOperator.Equal, (int) Enums.EntityFormStatusCode.Active)
+						new Condition("statuscode", ConditionOperator.Equal, (int)Enums.EntityFormStatusCode.Active)
 					});
 
 				if (entityForm != null)

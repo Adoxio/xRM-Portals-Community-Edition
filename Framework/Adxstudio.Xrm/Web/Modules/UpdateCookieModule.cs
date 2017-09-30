@@ -27,9 +27,9 @@ public class UpdateCookieModule :IHttpModule
 			{
 				foreach (string cookieKey in HttpContext.Current.Response.Cookies.AllKeys)
 				{
-					if (cookieKey !="adxPreviewUnpublishedEntities")
+					if (cookieKey != "adxPreviewUnpublishedEntities")
 					{
-						var httpCookie =HttpContext.Current.Response.Cookies[cookieKey];
+						var httpCookie = HttpContext.Current.Response.Cookies[cookieKey];
 						if (httpCookie != null && !httpCookie.Secure)
 						{
 							httpCookie.Secure = true;

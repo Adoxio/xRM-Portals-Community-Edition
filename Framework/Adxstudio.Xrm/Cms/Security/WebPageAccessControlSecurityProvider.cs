@@ -169,7 +169,7 @@ namespace Adxstudio.Xrm.Cms.Security
 				// is read...
 				else if (ruleGrouping.Key.Right == RightOption.RestrictRead && right == CrmEntityRight.Read)
 				{
-					if (useScope && ruleGrouping.Any(rule => rule.Scope.HasValue && (ScopeOption) rule.Scope.Value == ScopeOption.ExcludeDirectChildWebFiles))
+					if (useScope && ruleGrouping.Any(rule => rule.Scope.HasValue && (ScopeOption)rule.Scope.Value == ScopeOption.ExcludeDirectChildWebFiles))
 					{
 						// Ignore read restriction for web files where scope is ExcludeDirectChildWebFiles
 						ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Ignoring web page ({0}) read restriction due to ExcludeDirectChildWebFiles", ruleGrouping.Key.WebPageId));

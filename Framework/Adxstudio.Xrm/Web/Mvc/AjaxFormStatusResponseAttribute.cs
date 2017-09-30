@@ -31,8 +31,8 @@ namespace Adxstudio.Xrm.Web.Mvc
 			// We can't allow 403 Forbidden as a status code, as IE 8-9 file uploads will be done
 			// through a hidden iframe instead of an AJAX request, and will thus trigger the portal's
 			// authentication redirect if we don't send an alternate code.
-			var statusCode = httpStatusResult.StatusCode == (int) HttpStatusCode.Forbidden
-				? (int) HttpStatusCode.BadRequest
+			var statusCode = httpStatusResult.StatusCode == (int)HttpStatusCode.Forbidden
+				? (int)HttpStatusCode.BadRequest
 				: httpStatusResult.StatusCode;
 
 			filterContext.Result = GetErrorResult(filterContext, statusCode, httpStatusResult.StatusDescription);

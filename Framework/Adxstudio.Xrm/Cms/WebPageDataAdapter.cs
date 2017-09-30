@@ -86,7 +86,7 @@ namespace Adxstudio.Xrm.Cms
 				{"adx_createdbycontact", authorName},
 				{"adx_contactemail", authorEmail},
 				{"comments", content},
-				{"source", new OptionSetValue((int) FeedbackSource.Portal)}
+				{"source", new OptionSetValue((int)FeedbackSource.Portal)}
 			};
 
 			var portalUser = Dependencies.GetPortalUser();
@@ -95,7 +95,7 @@ namespace Adxstudio.Xrm.Cms
 			{
 				attributes[FeedbackMetadataAttributes.UserIdAttributeName] = portalUser;
 			}
-			else if (context != null && context.Profile!=null)
+			else if (context != null && context.Profile != null)
 			{
 				attributes[FeedbackMetadataAttributes.VisitorAttributeName] = context.Profile.UserName;
 			}

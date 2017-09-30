@@ -142,7 +142,7 @@ namespace Site.Areas.Portal
 								{
 									// JSON serialization converts the time from server local to UTC automatically
 									// to avoid this we can convert to UTC before serialization
-									value = DateTime.SpecifyKind((DateTime) value, DateTimeKind.Utc);
+									value = DateTime.SpecifyKind((DateTime)value, DateTimeKind.Utc);
 								}
 							}
 							break;
@@ -154,7 +154,7 @@ namespace Site.Areas.Portal
 							var decimalAttributeMetadata = attributeMetadata as DecimalAttributeMetadata;
 							if (decimalAttributeMetadata != null && value is decimal)
 							{
-								displayValue = ((decimal) value).ToString("N{0}".FormatWith(decimalAttributeMetadata.Precision.GetValueOrDefault(2)));
+								displayValue = ((decimal)value).ToString("N{0}".FormatWith(decimalAttributeMetadata.Precision.GetValueOrDefault(2)));
 							}
 							break;
 						case AttributeTypeCode.Money:
@@ -163,7 +163,7 @@ namespace Site.Areas.Portal
 							{
 								var moneyFormatter = new MoneyFormatter(organizationMoneyFormatInfo, recordMoneyFormatInfo, moneyAttributeMetadata);
 
-								displayValue = string.Format(moneyFormatter, "{0}", (Money) value);
+								displayValue = string.Format(moneyFormatter, "{0}", (Money)value);
 							}
 							break;
 					}

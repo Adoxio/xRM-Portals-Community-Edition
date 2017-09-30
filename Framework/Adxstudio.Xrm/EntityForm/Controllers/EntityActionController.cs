@@ -272,9 +272,9 @@ namespace Adxstudio.Xrm.EntityForm.Controllers
 
 			var status = quote.GetAttributeValue<OptionSetValue>("statecode").Value;
 
-			if (status != (int) QuoteState.Active)
+			if (status != (int)QuoteState.Active)
 			{
-				adapter.SetState(entityReference, (int) QuoteState.Active, (int) QuoteStatusCode.InProgressActive);
+				adapter.SetState(entityReference, (int)QuoteState.Active, (int)QuoteStatusCode.InProgressActive);
 			}
 
 			if (status != (int)QuoteState.Won)

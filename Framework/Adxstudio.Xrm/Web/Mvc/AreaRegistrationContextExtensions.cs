@@ -28,7 +28,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 		/// <returns>The mapped <see cref="Route"/> instance.</returns>
 		public static Route MapSiteMarkerRoute(this AreaRegistrationContext context, string name, string siteMarkerName, string url, string portalName = null)
 		{
-			return MapSiteMarkerRoute(context, name, siteMarkerName, url, null, (object) null, portalName);
+			return MapSiteMarkerRoute(context, name, siteMarkerName, url, null, (object)null, portalName);
 		}
 
 		/// <summary>
@@ -46,7 +46,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 		/// <returns>The mapped <see cref="Route"/> instance.</returns>
 		public static Route MapSiteMarkerRoute(this AreaRegistrationContext context, string name, string siteMarkerName, string url, object defaults, string portalName = null)
 		{
-			return MapSiteMarkerRoute(context, name, siteMarkerName, url, defaults, (object) null, portalName);
+			return MapSiteMarkerRoute(context, name, siteMarkerName, url, defaults, (object)null, portalName);
 		}
 
 		/// <summary>

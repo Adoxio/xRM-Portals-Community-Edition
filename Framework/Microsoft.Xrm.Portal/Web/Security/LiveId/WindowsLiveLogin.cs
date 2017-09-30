@@ -43,8 +43,7 @@ namespace Microsoft.Xrm.Portal.Web.Security.LiveId
 		/// the secret key. The secret key should never be
 		/// exposed to the Web or other users.
 		/// </summary>
-		public WindowsLiveLogin(string appId, string secret) :
-			this(appId, secret, null) { }
+		public WindowsLiveLogin(string appId, string secret) : this(appId, secret, null) { }
 
 		/// <summary>
 		/// Initialize the WindowsLiveLogin module with the
@@ -54,8 +53,7 @@ namespace Microsoft.Xrm.Portal.Web.Security.LiveId
 		/// the secret key. The secret key should never be
 		/// exposed to the Web or other users.
 		/// </summary>
-		public WindowsLiveLogin(string appId, string secret, string securityAlgorithm) :
-			this(appId, secret, securityAlgorithm, false) { }
+		public WindowsLiveLogin(string appId, string secret, string securityAlgorithm) : this(appId, secret, securityAlgorithm, false) { }
 
 		/// <summary>
 		/// Initialize the WindowsLiveLogin module with the
@@ -89,8 +87,7 @@ namespace Microsoft.Xrm.Portal.Web.Security.LiveId
 		/// recommend that your Delegated Authentication application always 
 		/// be registered for enhanced security and functionality. 
 		/// </summary>
-		public WindowsLiveLogin(string appId, string secret, string securityAlgorithm, bool forceDelAuthNonProvisioned) :
-			this(appId, secret, securityAlgorithm, forceDelAuthNonProvisioned, null) { }
+		public WindowsLiveLogin(string appId, string secret, string securityAlgorithm, bool forceDelAuthNonProvisioned) : this(appId, secret, securityAlgorithm, forceDelAuthNonProvisioned, null) { }
 
 		/// <summary>
 		/// Initialize the WindowsLiveLogin module with the
@@ -107,8 +104,7 @@ namespace Microsoft.Xrm.Portal.Web.Security.LiveId
 		/// recommend that your Delegated Authentication application always 
 		/// be registered for enhanced security and functionality. 
 		/// </summary>
-		public WindowsLiveLogin(string appId, string secret, string securityAlgorithm, bool forceDelAuthNonProvisioned, string policyUrl) :
-			this(appId, secret, securityAlgorithm, forceDelAuthNonProvisioned, policyUrl, null) { }
+		public WindowsLiveLogin(string appId, string secret, string securityAlgorithm, bool forceDelAuthNonProvisioned, string policyUrl) : this(appId, secret, securityAlgorithm, forceDelAuthNonProvisioned, policyUrl, null) { }
 
 		/// <summary>
 		/// Initialize the WindowsLiveLogin module with the

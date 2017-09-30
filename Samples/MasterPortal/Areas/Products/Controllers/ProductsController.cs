@@ -73,7 +73,7 @@ namespace Site.Areas.Products.Controllers
 				Reviews = reviews;
 				ItemCount = itemCount;
 				PageCount = itemCount > 0 ? (int)Math.Ceiling(itemCount / (double)pageSize) : 0;
-				PageNumber = startIndex > 0 ? (int) Math.Ceiling(startIndex/(double) pageSize) + 1 : 1;
+				PageNumber = startIndex > 0 ? (int)Math.Ceiling(startIndex / (double)pageSize) + 1 : 1;
 				PageSize = pageSize;
 			}
 

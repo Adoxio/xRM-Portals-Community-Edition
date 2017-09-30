@@ -256,7 +256,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 			if (value is Guid)
 			{
-				return ((Guid) value).ToString();
+				return ((Guid)value).ToString();
 			}
 
 			var entityReference = value as EntityReference;
@@ -305,7 +305,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 			using (var serviceContext = PortalViewContext.CreateServiceContext())
 			{
-				var response = (RetrieveResponse) serviceContext.Execute(new RetrieveRequest
+				var response = (RetrieveResponse)serviceContext.Execute(new RetrieveRequest
 				{
 					ColumnSet = new ColumnSet(true),
 					Target = EntityReference
@@ -378,7 +378,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 			using (var serviceContext = PortalViewContext.CreateServiceContext())
 			{
-				var response = (RetrieveEntityResponse) serviceContext.Execute(new RetrieveEntityRequest
+				var response = (RetrieveEntityResponse)serviceContext.Execute(new RetrieveEntityRequest
 				{
 					LogicalName = LogicalName,
 					EntityFilters = EntityFilters.Entity | EntityFilters.Attributes | EntityFilters.Relationships
@@ -446,7 +446,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 				query.AddOrder("createdon", OrderType.Ascending);
 
-				var response = (RetrieveMultipleResponse) serviceContext.Execute(new RetrieveMultipleRequest
+				var response = (RetrieveMultipleResponse)serviceContext.Execute(new RetrieveMultipleRequest
 				{
 					Query = query
 				});

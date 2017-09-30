@@ -417,7 +417,7 @@ namespace Adxstudio.Xrm.Ideas
 				idea =>
 				{
 					int ideaForumActiveVoteCountValue;
-					var ideaForumActiveVoteCount = idea.GetAttributeValue<EntityReference>("adx_ideaforumid") == null ? 0: ideaForumActiveVoteCounts.TryGetValue(idea.GetAttributeValue<EntityReference>("adx_ideaforumid").Id, out ideaForumActiveVoteCountValue)
+					var ideaForumActiveVoteCount = idea.GetAttributeValue<EntityReference>("adx_ideaforumid") == null ? 0 : ideaForumActiveVoteCounts.TryGetValue(idea.GetAttributeValue<EntityReference>("adx_ideaforumid").Id, out ideaForumActiveVoteCountValue)
 						? ideaForumActiveVoteCountValue
 						: 0;
 

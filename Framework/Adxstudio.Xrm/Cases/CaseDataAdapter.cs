@@ -116,7 +116,7 @@ namespace Adxstudio.Xrm.Cases
 			// resolutions be canceled/deleted in the reopening of cases.
 
 			if (customerSatisfactionCode != null)
-				incident["customersatisfactioncode"] = new OptionSetValue((int) customerSatisfactionCode);
+				incident["customersatisfactioncode"] = new OptionSetValue((int)customerSatisfactionCode);
 
 			incident["adx_resolution"] = resolutionDescription;
 			incident["adx_resolutiondate"] = DateTime.UtcNow;

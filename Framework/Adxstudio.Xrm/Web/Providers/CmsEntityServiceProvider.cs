@@ -1076,7 +1076,7 @@ namespace Adxstudio.Xrm.Web.Providers
 				};
 			}
 
-			return ((RetrieveMultipleResponse) serviceContext.Execute(fetch.ToRetrieveMultipleRequest()))
+			return ((RetrieveMultipleResponse)serviceContext.Execute(fetch.ToRetrieveMultipleRequest()))
 				.EntityCollection
 				.Entities
 				.ToArray();
@@ -1128,7 +1128,7 @@ namespace Adxstudio.Xrm.Web.Providers
 				});
 			}
 
-			return ((RetrieveMultipleResponse) serviceContext.Execute(fetch.ToRetrieveMultipleRequest()))
+			return ((RetrieveMultipleResponse)serviceContext.Execute(fetch.ToRetrieveMultipleRequest()))
 				.EntityCollection
 				.Entities
 				.ToArray();

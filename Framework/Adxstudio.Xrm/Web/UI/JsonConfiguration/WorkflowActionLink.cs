@@ -76,7 +76,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 			Modal.CloseButtonText = formMetadata.WorkflowDialog.CloseButtonText.GetLocalizedString(languageCode);
 			Modal.CssClass = formMetadata.WorkflowDialog.CssClass;
 			Modal.DismissButtonSrText = formMetadata.WorkflowDialog.DismissButtonSrText.GetLocalizedString(languageCode);
-			Modal.PrimaryButtonCssClass =formMetadata.WorkflowDialog.PrimaryButtonCssClass;
+			Modal.PrimaryButtonCssClass = formMetadata.WorkflowDialog.PrimaryButtonCssClass;
 			Modal.Size = formMetadata.WorkflowDialog.Size;
 			Modal.TitleCssClass = formMetadata.WorkflowDialog.TitleCssClass;
 
@@ -110,7 +110,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 			Modal.Size = gridMetadata.WorkflowDialog.Size;
 			Modal.TitleCssClass = gridMetadata.WorkflowDialog.TitleCssClass;
 
-			var customPrimaryButtonText= action.WorkflowDialogPrimaryButtonText.GetLocalizedString(languageCode);
+			var customPrimaryButtonText = action.WorkflowDialogPrimaryButtonText.GetLocalizedString(languageCode);
 			Modal.PrimaryButtonText = !String.IsNullOrEmpty(customPrimaryButtonText)
 				? customPrimaryButtonText
 				: gridMetadata.WorkflowDialog.PrimaryButtonText.GetLocalizedString(languageCode);
@@ -133,7 +133,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 		{
 			Modal = new ViewWorkflowModal();
 
-			CustomizeModal = action.WorkflowDialogTitle != null || action.WorkflowDialogPrimaryButtonText != null || action.WorkflowDialogCloseButtonText!=null;
+			CustomizeModal = action.WorkflowDialogTitle != null || action.WorkflowDialogPrimaryButtonText != null || action.WorkflowDialogCloseButtonText != null;
 
 			Workflow = workflow;
 

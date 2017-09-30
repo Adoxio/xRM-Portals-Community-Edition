@@ -65,7 +65,7 @@ namespace Site.Areas.Service311.Controls
 
 				var duplicateDistance = Convert.ToDouble(type.GetAttributeValue("adx_duplicatedistance"));
 				var distanceUnit = type.GetAttributeValue<OptionSetValue>("adx_duplicatedistanceunit");
-				var unit = distanceUnit != null ? (DuplicateDistanceUnit) distanceUnit.Value : DuplicateDistanceUnit.Miles;
+				var unit = distanceUnit != null ? (DuplicateDistanceUnit)distanceUnit.Value : DuplicateDistanceUnit.Miles;
 				var distance = unit == DuplicateDistanceUnit.Miles ? (1.60934 * duplicateDistance) : duplicateDistance;
 
 				var entity = GetPreviousStepEntity(context);

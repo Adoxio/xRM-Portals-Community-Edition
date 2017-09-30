@@ -206,7 +206,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				var aspNetForm = Page.ParseControl(formMarkup);
 				if (aspNetForm != null) container.Controls.Add(aspNetForm);
 
-				var pageForm = (HtmlForm) container.FindControl("liquid_form");
+				var pageForm = (HtmlForm)container.FindControl("liquid_form");
 				if (pageForm != null) pageForm.Action = HttpContext.Current.Request.Url.PathAndQuery;
 
 				return pageForm ?? container;

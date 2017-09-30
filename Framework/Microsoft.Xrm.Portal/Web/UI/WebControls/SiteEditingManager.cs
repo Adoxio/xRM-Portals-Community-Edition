@@ -37,7 +37,7 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 		/// <remarks>
 		/// These scripts will only be loaded if XRM inline editing support is requested by another control on the page.
 		/// </remarks>
-		[DefaultValue((string) null), PersistenceMode(PersistenceMode.InnerProperty), Category("Behavior"), MergableProperty(false)]
+		[DefaultValue((string)null), PersistenceMode(PersistenceMode.InnerProperty), Category("Behavior"), MergableProperty(false)]
 		public ScriptReferenceCollection DependencyScripts
 		{
 			get
@@ -58,7 +58,7 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 		/// <remarks>
 		/// These styles will be loaded prior to any styles included by the framework.
 		/// </remarks>
-		[DefaultValue((string) null), PersistenceMode(PersistenceMode.InnerProperty), Category("Behavior"), MergableProperty(false)]
+		[DefaultValue((string)null), PersistenceMode(PersistenceMode.InnerProperty), Category("Behavior"), MergableProperty(false)]
 		public StyleReferenceCollection DependencyStyles
 		{
 			get
@@ -79,7 +79,7 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 		/// <remarks>
 		/// These scripts will only be loaded if XRM inline editing support is requested by another control on the page.
 		/// </remarks>
-		[DefaultValue((string) null), PersistenceMode(PersistenceMode.InnerProperty), Category("Behavior"), MergableProperty(false)]
+		[DefaultValue((string)null), PersistenceMode(PersistenceMode.InnerProperty), Category("Behavior"), MergableProperty(false)]
 		public ScriptReferenceCollection ExtensionScripts
 		{
 			get
@@ -100,7 +100,7 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 		/// <remarks>
 		/// These styles will be loaded after to any styles included by the framework.
 		/// </remarks>
-		[DefaultValue((string) null), PersistenceMode(PersistenceMode.InnerProperty), Category("Behavior"), MergableProperty(false)]
+		[DefaultValue((string)null), PersistenceMode(PersistenceMode.InnerProperty), Category("Behavior"), MergableProperty(false)]
 		public StyleReferenceCollection ExtensionStyles
 		{
 			get

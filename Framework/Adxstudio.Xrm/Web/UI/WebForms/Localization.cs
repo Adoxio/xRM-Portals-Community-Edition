@@ -51,7 +51,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 
 			var resources = ConvertJsonStringToList(json);
 
-			if (resources.Count <=0)
+			if (resources.Count <= 0)
 			{
 				return string.Empty;
 			}

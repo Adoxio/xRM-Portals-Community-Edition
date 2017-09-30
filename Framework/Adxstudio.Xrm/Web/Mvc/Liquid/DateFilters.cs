@@ -102,7 +102,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 		{
 			return date.HasValue
 				? date.Value.ToLocalTime()
-				: (DateTime?) null;
+				: (DateTime?)null;
 		}
 
 		/// <summary>
@@ -112,7 +112,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 		{
 			return date.HasValue
 				? date.Value.ToUniversalTime()
-				: (DateTime?) null;
+				: (DateTime?)null;
 		}
 
 		/// <summary>

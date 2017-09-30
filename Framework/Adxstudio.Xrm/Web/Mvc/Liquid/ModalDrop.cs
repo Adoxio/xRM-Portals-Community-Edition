@@ -29,7 +29,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			Size = modal.Size == null ? null : modal.Size.GetValueOrDefault(BootstrapExtensions.BootstrapModalSize.Default).ToString();
 			SizeCssClass = GetCssClassForModalSize(modal.Size);
 			_title = Localization.CreateLazyLocalizedString(modal.Title, languageCode);
-			_primaryButtonText= Localization.CreateLazyLocalizedString(modal.PrimaryButtonText, languageCode);
+			_primaryButtonText = Localization.CreateLazyLocalizedString(modal.PrimaryButtonText, languageCode);
 			_dismissButtonSrText = Localization.CreateLazyLocalizedString(modal.DismissButtonSrText, languageCode);
 			_closeButtonText = Localization.CreateLazyLocalizedString(modal.CloseButtonText, languageCode);
 			_type = new Lazy<string>(() => modal.GetType().Name, LazyThreadSafetyMode.None);
@@ -125,7 +125,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 	public class CreateRelatedRecordModalDrop : FormModalDrop
 	{
-		public CreateRelatedRecordModalDrop(IPortalLiquidContext portalLiquidContext, Modal modal, int languageCode):base(portalLiquidContext, modal, languageCode)
+		public CreateRelatedRecordModalDrop(IPortalLiquidContext portalLiquidContext, Modal modal, int languageCode) : base(portalLiquidContext, modal, languageCode)
 		{
 			
 		}

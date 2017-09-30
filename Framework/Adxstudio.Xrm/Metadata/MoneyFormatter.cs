@@ -321,7 +321,7 @@ namespace Adxstudio.Xrm.Metadata
 		/// </summary>
 		protected TResponse Execute<TResponse>(OrganizationRequest request) where TResponse : OrganizationResponse
 		{
-			return (TResponse) _getServiceContext().Execute(request);
+			return (TResponse)_getServiceContext().Execute(request);
 		}
 
 		/// <summary>

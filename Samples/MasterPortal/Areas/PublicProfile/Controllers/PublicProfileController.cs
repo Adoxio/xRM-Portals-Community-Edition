@@ -147,7 +147,7 @@ namespace Site.Areas.PublicProfile.Controllers
 		private void EnityEnablePermission(ProfileViewModel profileViewModel)
 		{
 			var serviceContext = PortalCrmConfigurationManager.CreateServiceContext(null);
-			var response = (RetrieveMetadataChangesResponse) serviceContext.Execute(new RetrieveMetadataChangesRequest
+			var response = (RetrieveMetadataChangesResponse)serviceContext.Execute(new RetrieveMetadataChangesRequest
 			{
 				Query = new EntityQueryExpression
 				{

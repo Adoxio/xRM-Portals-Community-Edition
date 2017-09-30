@@ -194,7 +194,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
 	                                    $"Could not filter option list: user is not of type {filterEntityName}");
 								}
 
-								var response = (RetrieveMultipleResponse) context.Execute(fetch.ToRetrieveMultipleRequest());
+								var response = (RetrieveMultipleResponse)context.Execute(fetch.ToRetrieveMultipleRequest());
 								return response.EntityCollection.Entities.Select(
 									r => ToFilterOption(context.GetEntityMetadata(link.Name), r, labelColumn, selected));
 							}

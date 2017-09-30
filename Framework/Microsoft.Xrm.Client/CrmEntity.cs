@@ -54,7 +54,7 @@ namespace Microsoft.Xrm.Client
 		/// <param name="attributeLogicalName"></param>
 		/// <returns></returns>
 		public virtual IEnumerable<T> GetAttributeCollectionValue<T>(string attributeLogicalName)
-			where T: Entity
+			where T : Entity
 		{
 			return EntityExtensions.GetAttributeCollectionValue<T>(this, attributeLogicalName);
 		}

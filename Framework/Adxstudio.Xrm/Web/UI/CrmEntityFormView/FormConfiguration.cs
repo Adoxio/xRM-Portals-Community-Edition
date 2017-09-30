@@ -216,7 +216,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				if (action is WorkflowAction)
 				{
-					var workflowAction = (WorkflowAction) action;
+					var workflowAction = (WorkflowAction)action;
 
 					if (!workflowAction.IsConfigurationValid()) continue;
 					
@@ -227,7 +227,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				
 				if (action is DeleteAction)
 				{
-					var deleteAction = (DeleteAction) action;
+					var deleteAction = (DeleteAction)action;
 
 					if (!deleteAction.IsConfigurationValid()) continue;
 					
@@ -240,7 +240,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 				if (action is SubmitAction)
 				{
-					var submitAction = (SubmitAction) action;
+					var submitAction = (SubmitAction)action;
 
 					if (!submitAction.IsConfigurationValid()) continue;
 					
@@ -253,7 +253,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 				if (action is PreviousAction)
 				{
-					var previousAction = (PreviousAction) action;
+					var previousAction = (PreviousAction)action;
 
 					if (!previousAction.IsConfigurationValid()) continue;
 					
@@ -266,7 +266,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 				if (action is NextAction)
 				{
-					var nextAction = (NextAction) action;
+					var nextAction = (NextAction)action;
 
 					if (!nextAction.IsConfigurationValid()) continue;
 					
@@ -302,7 +302,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 		{
 			if (action is CloseIncidentAction)
 			{
-				var closeIncidentAction = (CloseIncidentAction) action;
+				var closeIncidentAction = (CloseIncidentAction)action;
 
 				if (!closeIncidentAction.IsConfigurationValid()) return;
 
@@ -315,7 +315,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is ResolveCaseAction)
 			{
-				var resolveCaseAction = (ResolveCaseAction) action;
+				var resolveCaseAction = (ResolveCaseAction)action;
 
 				if (!resolveCaseAction.IsConfigurationValid()) return;
 
@@ -328,7 +328,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is ReopenCaseAction)
 			{
-				var reopenCaseAction = (ReopenCaseAction) action;
+				var reopenCaseAction = (ReopenCaseAction)action;
 
 				if (!reopenCaseAction.IsConfigurationValid()) return;
 
@@ -341,7 +341,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is CancelCaseAction)
 			{
-				var cancelCaseAction = (CancelCaseAction) action;
+				var cancelCaseAction = (CancelCaseAction)action;
 
 				if (!cancelCaseAction.IsConfigurationValid()) return;
 
@@ -354,7 +354,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is QualifyLeadAction)
 			{
-				var qualifyLeadAction = (QualifyLeadAction) action;
+				var qualifyLeadAction = (QualifyLeadAction)action;
 
 				if (!qualifyLeadAction.IsConfigurationValid()) return;
 
@@ -367,11 +367,11 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is ConvertQuoteToOrderAction)
 			{
-				var convertQuoteToOrderAction = (ConvertQuoteToOrderAction) action;
+				var convertQuoteToOrderAction = (ConvertQuoteToOrderAction)action;
 
 				if (!convertQuoteToOrderAction.IsConfigurationValid()) return;
 
-				var convertQuoteToOrderActionLink = new ConvertQuoteToOrderActionLink(portalContext, formActionMetadata, languageCode, (ConvertQuoteToOrderAction) action);
+				var convertQuoteToOrderActionLink = new ConvertQuoteToOrderActionLink(portalContext, formActionMetadata, languageCode, (ConvertQuoteToOrderAction)action);
 
 				ConvertQuoteToOrderActionLink = convertQuoteToOrderActionLink;
 
@@ -380,7 +380,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is ConvertOrderToInvoiceAction)
 			{
-				var convertOrderToInvoiceAction = (ConvertOrderToInvoiceAction) action;
+				var convertOrderToInvoiceAction = (ConvertOrderToInvoiceAction)action;
 
 				if (!convertOrderToInvoiceAction.IsConfigurationValid()) return;
 
@@ -393,7 +393,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is DeactivateAction)
 			{
-				var deactivateAction = (DeactivateAction) action;
+				var deactivateAction = (DeactivateAction)action;
 
 				if (!deactivateAction.IsConfigurationValid()) return;
 
@@ -406,7 +406,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is ActivateAction)
 			{
-				var activateAction = (ActivateAction) action;
+				var activateAction = (ActivateAction)action;
 
 				if (!activateAction.IsConfigurationValid()) return;
 
@@ -419,7 +419,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is ActivateQuoteAction)
 			{
-				var activateQuoteAction = (ActivateQuoteAction) action;
+				var activateQuoteAction = (ActivateQuoteAction)action;
 
 				if (!activateQuoteAction.IsConfigurationValid()) return;
 
@@ -432,7 +432,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is SetOpportunityOnHoldAction)
 			{
-				var setOpportunityOnHoldAction = (SetOpportunityOnHoldAction) action;
+				var setOpportunityOnHoldAction = (SetOpportunityOnHoldAction)action;
 
 				if (!setOpportunityOnHoldAction.IsConfigurationValid()) return;
 
@@ -445,7 +445,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is ReopenOpportunityAction)
 			{
-				var reopenOpportunityAction = (ReopenOpportunityAction) action;
+				var reopenOpportunityAction = (ReopenOpportunityAction)action;
 
 				if (!reopenOpportunityAction.IsConfigurationValid()) return;
 
@@ -458,7 +458,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is CalculateOpportunityAction)
 			{
-				var calculateOpportunityAction = (CalculateOpportunityAction) action;
+				var calculateOpportunityAction = (CalculateOpportunityAction)action;
 
 				if (!calculateOpportunityAction.IsConfigurationValid()) return;
 
@@ -471,7 +471,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is WinOpportunityAction)
 			{
-				var winOpportunityAction = (WinOpportunityAction) action;
+				var winOpportunityAction = (WinOpportunityAction)action;
 
 				if (!winOpportunityAction.IsConfigurationValid()) return;
 
@@ -484,7 +484,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is LoseOpportunityAction)
 			{
-				var loseOpportunityAction = (LoseOpportunityAction) action;
+				var loseOpportunityAction = (LoseOpportunityAction)action;
 
 				if (!loseOpportunityAction.IsConfigurationValid()) return;
 
@@ -497,7 +497,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is GenerateQuoteFromOpportunityAction)
 			{
-				var generateQuoteFromOpportunityAction = (GenerateQuoteFromOpportunityAction) action;
+				var generateQuoteFromOpportunityAction = (GenerateQuoteFromOpportunityAction)action;
 
 				if (!generateQuoteFromOpportunityAction.IsConfigurationValid()) return;
 
@@ -510,7 +510,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (action is UpdatePipelinePhaseAction)
 			{
-				var updatePipelinePhaseAction = (UpdatePipelinePhaseAction) action;
+				var updatePipelinePhaseAction = (UpdatePipelinePhaseAction)action;
 
 				if (!updatePipelinePhaseAction.IsConfigurationValid()) return;
 

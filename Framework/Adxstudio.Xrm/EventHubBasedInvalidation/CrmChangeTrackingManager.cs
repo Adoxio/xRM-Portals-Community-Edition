@@ -168,7 +168,7 @@ namespace Adxstudio.Xrm.EventHubBasedInvalidation
 				var entities = string.Join(",", entitiesWithLastTimestamp.Keys);
 				ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Retrieving changes for entities = {0}.", entities));
 
-				var response = (ExecuteMultipleResponse) context.Service.Execute(request);
+				var response = (ExecuteMultipleResponse)context.Service.Execute(request);
 
 				if (response == null || response.Responses == null)
 				{

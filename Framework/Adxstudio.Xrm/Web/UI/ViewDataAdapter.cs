@@ -65,7 +65,7 @@ namespace Adxstudio.Xrm.Web.UI
 			if (entityMetadata == null)
 			{
 				var serviceContext = Dependencies.GetServiceContext();
-				var response = (RetrieveEntityResponse) serviceContext.Execute(new RetrieveEntityRequest
+				var response = (RetrieveEntityResponse)serviceContext.Execute(new RetrieveEntityRequest
 				{
 					LogicalName = configuration.EntityName,
 					EntityFilters = EntityFilters.Attributes,
@@ -1322,7 +1322,7 @@ namespace Adxstudio.Xrm.Web.UI
 
 			var serviceContext = Dependencies.GetServiceContext();
 
-			var response = (RetrieveEntityResponse) serviceContext.Execute(new RetrieveEntityRequest
+			var response = (RetrieveEntityResponse)serviceContext.Execute(new RetrieveEntityRequest
 			{
 				LogicalName = fetchEntity.Name,
 				EntityFilters = EntityFilters.Attributes,

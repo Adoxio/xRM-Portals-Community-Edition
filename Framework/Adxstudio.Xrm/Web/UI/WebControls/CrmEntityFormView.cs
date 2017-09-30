@@ -286,7 +286,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			get 
 			{ 
-				var text = (string) ViewState["PreviousButtonText"];
+				var text = (string)ViewState["PreviousButtonText"];
 				return String.IsNullOrWhiteSpace(text) ? DefaultPreviousStepTemplate.DefaultPreviousButtonText : text;
 			}
 			set { ViewState["PreviousButtonText"] = value; }
@@ -558,7 +558,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				{
 					_stepCount = GetStepTemplates().ToList().Count;
 				}
-				return (int) _stepCount;
+				return (int)_stepCount;
 			}
 		}
 
@@ -830,7 +830,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					EditType = "html",
 					Editable = true,
 					DefaultText =
-						"<div class='alert alert-block alert-danger'><span class='fa fa-lock' aria-hidden='true'></span>"+ ResourceManager.GetString("Access_Denied_Error")+"</div>"
+						"<div class='alert alert-block alert-danger'><span class='fa fa-lock' aria-hidden='true'></span>" + ResourceManager.GetString("Access_Denied_Error") + "</div>"
 				};
 
 			Controls.Add(accessDeniedSnippet);
@@ -1772,5 +1772,5 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 	public class CrmEntityFormViewUpdatedEventArgs : UI.CrmEntityFormView.CrmEntityFormViewUpdatedEventArgs { }
 
-	public class CrmEntityFormViewUpdatingEventArgs : UI.CrmEntityFormView.CrmEntityFormViewUpdatingEventArgs { public CrmEntityFormViewUpdatingEventArgs(IDictionary<string, object> values):base(values){ } }
+	public class CrmEntityFormViewUpdatingEventArgs : UI.CrmEntityFormView.CrmEntityFormViewUpdatingEventArgs { public CrmEntityFormViewUpdatingEventArgs(IDictionary<string, object> values) : base(values){ } }
 }

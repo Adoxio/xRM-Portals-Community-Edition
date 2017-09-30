@@ -84,7 +84,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					{
 						if (Metadata.Precision != null)
 						{
-							value = decimal.Round(value, (int) Metadata.Precision);
+							value = decimal.Round(value, (int)Metadata.Precision);
 						}
 						return value;
 					}

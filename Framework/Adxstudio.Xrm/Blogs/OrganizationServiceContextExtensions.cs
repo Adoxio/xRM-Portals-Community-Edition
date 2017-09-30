@@ -501,7 +501,7 @@ namespace Adxstudio.Xrm.Blogs
 
 				int ratingCount = 0;
 				int ratingSum = 0;
-				double averageRating=0;
+				double averageRating = 0;
 				int yesCount = 0;
 				int noCount = 0;
 

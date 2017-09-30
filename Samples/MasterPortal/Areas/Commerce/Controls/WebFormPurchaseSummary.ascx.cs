@@ -81,7 +81,7 @@ namespace Site.Areas.Commerce.Controls
 				}
 
 				var quoteProductReference = new EntityReference("quotedetail", quoteProductId);
-				var isSelected = (bool) isSelectedValue;
+				var isSelected = (bool)isSelectedValue;
 
 				options.Add(new PurchasableItemOptions(quoteProductReference, isSelected));
 			}

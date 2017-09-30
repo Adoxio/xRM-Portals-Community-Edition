@@ -87,7 +87,7 @@ namespace Adxstudio.Xrm.Services
 		}
 
 		public CachedOrganizationService(IOrganizationService service)
-			: this(service, (string) null)
+			: this(service, (string)null)
 		{
 		}
 
@@ -305,7 +305,7 @@ namespace Adxstudio.Xrm.Services
 		{
 			var execute = this.Cache != null
 				? this.Cache.Execute
-				: (Func<OrganizationRequest, Func<OrganizationRequest, OrganizationResponse>, Func<OrganizationResponse, T>, string, T>) null;
+				: (Func<OrganizationRequest, Func<OrganizationRequest, OrganizationResponse>, Func<OrganizationResponse, T>, string, T>)null;
 
 			return this.Execute(request, execute, selector, selectorCacheKey);
 		}

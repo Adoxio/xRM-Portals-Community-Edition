@@ -107,7 +107,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			{
 				if (Enum.IsDefined(typeof(FilterConfiguration.FilterOrientation), filterOrientation.Value))
 				{
-					IsFilterVertical = (FilterConfiguration.FilterOrientation) filterOrientation.Value ==
+					IsFilterVertical = (FilterConfiguration.FilterOrientation)filterOrientation.Value ==
 					                   FilterConfiguration.FilterOrientation.Vertical;
 				}
 			}

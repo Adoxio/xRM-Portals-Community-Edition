@@ -33,7 +33,7 @@ namespace Adxstudio.Xrm.Cms
 		/// <param name="displayName">The name to display for this author.</param>
 		/// <param name="emailAddress">The author's e-mail address.</param>
 		/// <param name="websiteUrl">Url to the author's website.</param>
-		public Author(string displayName, string emailAddress = null, string websiteUrl = null) :this(null, displayName, emailAddress, websiteUrl) { }
+		public Author(string displayName, string emailAddress = null, string websiteUrl = null) : this(null, displayName, emailAddress, websiteUrl) { }
 
 		public string DisplayName { get; private set; }
 

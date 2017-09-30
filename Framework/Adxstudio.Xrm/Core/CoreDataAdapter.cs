@@ -25,7 +25,7 @@ namespace Adxstudio.Xrm.Core
 	public enum StandardStatusCode
 	{
 		Active = 1,
-		Inactive =2
+		Inactive = 2
 	}
 
 	public enum LeadState
@@ -129,7 +129,7 @@ namespace Adxstudio.Xrm.Core
 									  Status = new OptionSetValue(statusReason)
 								  };
 
-			var setStateResponse = (SetStateResponse) context.Execute(setStateRequest);
+			var setStateResponse = (SetStateResponse)context.Execute(setStateRequest);
 
 			return setStateResponse;
 		}
@@ -161,7 +161,7 @@ namespace Adxstudio.Xrm.Core
 				Status = new OptionSetValue((int)LeadStatusCode.Qualified)
 			};
 
-			var qualifyLeadResponse = (QualifyLeadResponse) context.Execute(qualifyLeadReq);
+			var qualifyLeadResponse = (QualifyLeadResponse)context.Execute(qualifyLeadReq);
 
 			return qualifyLeadResponse;
 		}
@@ -186,7 +186,7 @@ namespace Adxstudio.Xrm.Core
 			var closeRequest = new CloseIncidentRequest
 				{
 					IncidentResolution = resolution,
-					Status = new OptionSetValue((int) IncidentStatusCode.ProblemSolved)
+					Status = new OptionSetValue((int)IncidentStatusCode.ProblemSolved)
 				};
 
 			// Execute the close request
@@ -257,7 +257,7 @@ namespace Adxstudio.Xrm.Core
 				Status = new OptionSetValue(-1)
 			};
 
-			var winQuoteResponse = (WinQuoteResponse) context.Execute(winQuoteRequest);
+			var winQuoteResponse = (WinQuoteResponse)context.Execute(winQuoteRequest);
 
 			return winQuoteResponse;
 		}
@@ -316,7 +316,7 @@ namespace Adxstudio.Xrm.Core
 				};
 
 			var calculateActualValueResponse =
-				(CalculateActualValueOpportunityResponse) context.Execute(calculateActualValueRequest);
+				(CalculateActualValueOpportunityResponse)context.Execute(calculateActualValueRequest);
 
 			return calculateActualValueResponse;
 		}

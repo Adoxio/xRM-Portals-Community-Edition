@@ -178,7 +178,7 @@ namespace Site.Pages
 			{
 				object preferedLanguage;
 				e.Values.TryGetValue("adx_preferredlanguageid", out preferedLanguage);
-				UpdateCurrentLanguage((EntityReference) preferedLanguage, languageContext);
+				UpdateCurrentLanguage((EntityReference)preferedLanguage, languageContext);
 			}
 		}
 

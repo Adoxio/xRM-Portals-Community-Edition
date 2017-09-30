@@ -159,7 +159,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 
 			link.Attributes["href"] = viewActionLink.URL != null ? viewActionLink.URL.PathWithQueryString : null;
 
-			link.MergeAttribute("data-url", viewActionLink.URL != null? viewActionLink.URL.PathWithQueryString : null);
+			link.MergeAttribute("data-url", viewActionLink.URL != null ? viewActionLink.URL.PathWithQueryString : null);
 
 			return new HtmlString(link.ToString());
 		}

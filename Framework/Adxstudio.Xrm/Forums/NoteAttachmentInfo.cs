@@ -21,7 +21,7 @@ namespace Adxstudio.Xrm.Forums
 
 			Name = name;
 			ContentType = contentType;
-			Path = (new Entity(annotation.LogicalName){Id=annotation.Id}).GetFileAttachmentPath(websiteId);
+			Path = (new Entity(annotation.LogicalName){Id = annotation.Id}).GetFileAttachmentPath(websiteId);
 			Size = new FileSize(Convert.ToUInt64(size < 0 ? 0 : size));
 			if (cloudStorageContainer != null)
 			{

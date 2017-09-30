@@ -49,7 +49,7 @@ namespace Adxstudio.Xrm.Cms
 
 			if (cache.TryGetValue(key, out cached))
 			{
-				return (T) cached;
+				return (T)cached;
 			}
 
 			value = get();

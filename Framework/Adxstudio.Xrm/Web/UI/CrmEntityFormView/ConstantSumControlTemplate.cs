@@ -87,7 +87,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			}
 			else
 			{
-				hiddenField = (HiddenField) hiddenFieldControl;
+				hiddenField = (HiddenField)hiddenFieldControl;
 				int.TryParse(hiddenField.Value, out index);
 			}
 			index++;

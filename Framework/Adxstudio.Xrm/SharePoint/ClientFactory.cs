@@ -105,7 +105,7 @@ namespace Adxstudio.SharePoint
 		{
 			var portalContext = PortalCrmConfigurationManager.CreatePortalContext();
 			var onlineDomains = portalContext.ServiceContext.GetSiteSettingValueByName(portalContext.Website, _onlineDomainsSettingKey);
-			var domains = (onlineDomains != null) ? onlineDomains.Split(';').ToList(): new List<string>();
+			var domains = (onlineDomains != null) ? onlineDomains.Split(';').ToList() : new List<string>();
 			domains.AddRange(_onlineDomains);
 			return domains.Distinct();
 		}

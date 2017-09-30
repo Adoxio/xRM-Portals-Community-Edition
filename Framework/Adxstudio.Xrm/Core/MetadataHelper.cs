@@ -62,7 +62,7 @@ namespace Adxstudio.Xrm.Core
 
 			var attributes = entityMetadata.Attributes;
 
-			var attributeDictionary = attributes.Where(attribute => attribute.AttributeType != null).ToDictionary(attribute => attribute.LogicalName, attribute => attribute.AttributeType != null ? attribute.AttributeType.Value : (AttributeTypeCode?) null);
+			var attributeDictionary = attributes.Where(attribute => attribute.AttributeType != null).ToDictionary(attribute => attribute.LogicalName, attribute => attribute.AttributeType != null ? attribute.AttributeType.Value : (AttributeTypeCode?)null);
 
 			return attributeDictionary;
 		}

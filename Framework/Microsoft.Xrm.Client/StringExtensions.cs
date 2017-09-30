@@ -41,7 +41,7 @@ namespace Microsoft.Xrm.Client
 		/// <returns></returns>
 		public static T ToEnum<T>(this string enumName)
 		{
-			return (T) Enum.Parse(typeof(T), enumName);
+			return (T)Enum.Parse(typeof(T), enumName);
 		}
 
 		/// <summary>

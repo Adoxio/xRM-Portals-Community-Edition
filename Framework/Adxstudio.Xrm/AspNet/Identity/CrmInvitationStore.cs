@@ -167,7 +167,7 @@ namespace Adxstudio.Xrm.AspNet.Identity
 					} },
 					Links = new[] {
 						new Link {
-							Alias = _contactEntityName, Name = _contactEntityName, ToAttribute = _contactToAttributeName, Type=JoinOperator.LeftOuter,
+							Alias = _contactEntityName, Name = _contactEntityName, ToAttribute = _contactToAttributeName, Type = JoinOperator.LeftOuter,
 							Attributes = new[]
 							{
 								new FetchAttribute("emailaddress1"),

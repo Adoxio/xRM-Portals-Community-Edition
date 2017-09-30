@@ -308,7 +308,7 @@ namespace Site
 
 				if (method != null)
 				{
-					return (SetupManager) method.Invoke(null, null);
+					return (SetupManager)method.Invoke(null, null);
 				}
 			}
 

@@ -223,8 +223,8 @@ namespace Site.Areas.Chat.Controllers
 			}
 
 			var csp = includePrivateKey
-				? (RSACryptoServiceProvider) cert.PrivateKey
-				: (RSACryptoServiceProvider) cert.PublicKey.Key;
+				? (RSACryptoServiceProvider)cert.PrivateKey
+				: (RSACryptoServiceProvider)cert.PublicKey.Key;
 
 			if (includePrivateKey)
 			{

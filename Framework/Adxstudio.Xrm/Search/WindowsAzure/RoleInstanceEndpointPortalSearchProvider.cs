@@ -184,7 +184,7 @@ namespace Adxstudio.Xrm.Search.WindowsAzure
 
 			var metadata = info.LogicalNames.Select(logicalName =>
 			{
-				var response = (RetrieveEntityResponse) serviceContext.Execute(new RetrieveEntityRequest
+				var response = (RetrieveEntityResponse)serviceContext.Execute(new RetrieveEntityRequest
 				{
 					LogicalName = logicalName, EntityFilters = EntityFilters.Entity
 				});

@@ -49,7 +49,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 		public int? FirstPage
 		{
-			get { return TotalPages > 0 ? 1 : (int?) null; }
+			get { return TotalPages > 0 ? 1 : (int?)null; }
 		}
 
 		public string Id
@@ -64,7 +64,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 		public int? LastPage
 		{
-			get { return TotalPages > 0 ? TotalPages : (int?) null; }
+			get { return TotalPages > 0 ? TotalPages : (int?)null; }
 		}
 
 		public string Name
@@ -74,7 +74,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 		public int? NextPage
 		{
-			get { return Page < TotalPages ? Page + 1 : (int?) null; }
+			get { return Page < TotalPages ? Page + 1 : (int?)null; }
 		}
 
 		public int Page
@@ -94,7 +94,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 		public int? PreviousPage
 		{
-			get { return Page > 1 ? Page - 1 : (int?) null; }
+			get { return Page > 1 ? Page - 1 : (int?)null; }
 		}
 
 		public string PrimaryKeyLogicalName

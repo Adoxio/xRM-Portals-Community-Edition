@@ -65,7 +65,7 @@ namespace Adxstudio.Xrm.EventHubBasedInvalidation
 			{
 				try
 				{
-					return (DateTime) message.Properties[property];
+					return (DateTime)message.Properties[property];
 				}
 				catch
 				{

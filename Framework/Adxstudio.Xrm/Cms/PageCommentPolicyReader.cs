@@ -33,7 +33,7 @@ namespace Adxstudio.Xrm.Cms
 
 				if (pageCommentPolicyAttributeValue is OptionSetValue)
 				{
-					pageCommentPolicy = (PageCommentPolicy)Enum.ToObject(typeof(PageCommentPolicy), ((OptionSetValue) pageCommentPolicyAttributeValue).Value);
+					pageCommentPolicy = (PageCommentPolicy)Enum.ToObject(typeof(PageCommentPolicy), ((OptionSetValue)pageCommentPolicyAttributeValue).Value);
 				}
 				else
 				{

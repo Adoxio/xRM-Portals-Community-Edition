@@ -470,7 +470,7 @@ namespace Adxstudio.Xrm.Web
 				? "&ReturnUrl={0}".FormatWith(System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode(HttpContext.Current.Request.Url.PathAndQuery))
 				: string.Empty;
 
-			var rewriteUrl = template.Type == (int) PageTemplateNode.TemplateType.WebTemplate && template.WebTemplateId != null
+			var rewriteUrl = template.Type == (int)PageTemplateNode.TemplateType.WebTemplate && template.WebTemplateId != null
 				? template.UseWebsiteHeaderAndFooter.GetValueOrDefault(true) ? "~/Pages/WebTemplate.aspx" : "~/Pages/WebTemplateNoMaster.aspx"
 				: template.RewriteUrl;
 

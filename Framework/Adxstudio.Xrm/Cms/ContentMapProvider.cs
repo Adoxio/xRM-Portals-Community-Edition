@@ -390,7 +390,7 @@ namespace Adxstudio.Xrm.Cms
 
 			// retrieve a fresh entity which also acts as a backend validation
 			ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Calling Retrieve Multiple Request for Entity {0} ", EntityNamePrivacy.GetEntityName(reference.LogicalName)));
-			RetrieveMultipleResponse responses = (RetrieveMultipleResponse) context.Service.Execute(fetch.ToRetrieveMultipleRequest());
+			RetrieveMultipleResponse responses = (RetrieveMultipleResponse)context.Service.Execute(fetch.ToRetrieveMultipleRequest());
 			var entities = responses.EntityCollection.Entities;
 
 			ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Retrieve Multiple Response for Entity {0} has Record Count {1}  ", EntityNamePrivacy.GetEntityName(reference.LogicalName), responses.EntityCollection.Entities.Count));

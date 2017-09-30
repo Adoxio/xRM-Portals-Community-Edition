@@ -811,7 +811,7 @@ namespace Adxstudio.Xrm.Services
 			[CallerFilePath] string sourceFilePath = "",
 			[CallerLineNumber] int sourceLineNumber = 0)
 		{
-			var primaryEntityRole = IsReflexive(service, relationshipSchemaName) ? defaultEntityRole : (EntityRole?) null;
+			var primaryEntityRole = IsReflexive(service, relationshipSchemaName) ? defaultEntityRole : (EntityRole?)null;
 			var relationship = relationshipSchemaName.ToRelationship(primaryEntityRole);
 			var attributes = columns != null ? columns.Select(column => new FetchAttribute(column)).ToArray() : null;
 

@@ -223,7 +223,7 @@ namespace Adxstudio.Xrm.Marketing
 
 		public static string Decode(string str)
 		{
-			while (str.Length%4 != 0)
+			while (str.Length % 4 != 0)
 			{
 				str += '=';
 			}

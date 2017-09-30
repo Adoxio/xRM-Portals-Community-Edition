@@ -54,7 +54,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				{
 					return FieldType.Default;
 				}
-				return (FieldType) type;
+				return (FieldType)type;
 			}
 			set { ViewState["Type"] = value; }
 		}

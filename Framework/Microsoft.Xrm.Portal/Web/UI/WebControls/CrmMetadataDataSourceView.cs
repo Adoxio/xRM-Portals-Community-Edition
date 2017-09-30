@@ -523,7 +523,7 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 		{
 			if (savedState != null)
 			{
-				object[] state = (object[]) savedState;
+				object[] state = (object[])savedState;
 
 				if (state[0] != null)
 				{

@@ -56,7 +56,7 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 			var dataAdapterDependencies = new PortalConfigurationDataAdapterDependencies(_portalName, _requestContext);
 
 			return contentMapProvider == null || contentMapUrlProvider == null
-				? (IFileSystem) new EntityFileSystem(dataAdapterDependencies)
+				? (IFileSystem)new EntityFileSystem(dataAdapterDependencies)
 				: new ContentMapFileSystem(contentMapProvider, contentMapUrlProvider, dataAdapterDependencies);
 		}
 

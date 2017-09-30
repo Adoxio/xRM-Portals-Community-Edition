@@ -524,7 +524,7 @@ namespace Site.Areas.Portal.Controllers
 			var rowIndex = 1;
 			var columnIndex = 1;
 
-			var firstRow = new Row {RowIndex = (uint) rowIndex};
+			var firstRow = new Row {RowIndex = (uint)rowIndex};
 
 			var dataColumns = columns.Where(col => col.LogicalName != "col-action").ToArray();
 
@@ -545,7 +545,7 @@ namespace Site.Areas.Portal.Controllers
 
 			foreach (var record in data.Records)
 			{
-				var row = new Row {RowIndex = (uint) ++rowIndex};
+				var row = new Row {RowIndex = (uint)++rowIndex};
 
 				columnIndex = 0;
 
@@ -762,7 +762,7 @@ namespace Site.Areas.Portal.Controllers
 		{
 			var serviceContext = dataAdapterDependencies.GetServiceContext();
 
-			var response = (RetrieveResponse) serviceContext.Execute(new RetrieveRequest
+			var response = (RetrieveResponse)serviceContext.Execute(new RetrieveRequest
 			{
 				Target = opportunity,
 				ColumnSet = new ColumnSet("pricelevelid")
@@ -918,7 +918,7 @@ namespace Site.Areas.Portal.Controllers
 
 		private static EntityReference[] FilterAlreadyAssociated(OrganizationServiceContext serviceContext, Relationship relationship, EntityReference target, EntityReference[] relatedEntities)
 		{
-			var metadataResponse = (RetrieveRelationshipResponse) serviceContext.Execute(new RetrieveRelationshipRequest
+			var metadataResponse = (RetrieveRelationshipResponse)serviceContext.Execute(new RetrieveRelationshipRequest
 			{
 				Name = relationship.SchemaName
 			});

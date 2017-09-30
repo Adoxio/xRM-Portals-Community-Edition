@@ -174,7 +174,7 @@ namespace Microsoft.Xrm.Client.Threading
 					});
 			}
 
-			return (T) obj;
+			return (T)obj;
 		}
 
 		/// <summary>

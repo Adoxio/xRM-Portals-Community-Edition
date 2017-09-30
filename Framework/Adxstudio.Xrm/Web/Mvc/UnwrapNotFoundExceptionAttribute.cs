@@ -87,7 +87,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 		/// <returns>True if given <see cref="HttpException"/> represents a 404 Not Found error, False otherwise.</returns>
 		private static bool IsNotFoundException(HttpException ex)
 		{
-			return ex.GetHttpCode() == (int) HttpStatusCode.NotFound;
+			return ex.GetHttpCode() == (int)HttpStatusCode.NotFound;
 		}
 	}
 }

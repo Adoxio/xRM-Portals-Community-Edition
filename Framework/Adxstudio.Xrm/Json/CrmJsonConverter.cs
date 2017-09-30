@@ -88,7 +88,7 @@ namespace Adxstudio.Xrm.Json
 
 			if (value is EntityFilters)
 			{
-				serializer.Serialize(writer, new JsonEntityFilters { Value = (int) value });
+				serializer.Serialize(writer, new JsonEntityFilters { Value = (int)value });
 			}
 
 			CrmJsonConverter.Serialize(writer, value as DataCollection<string, object>, serializer);
@@ -161,7 +161,7 @@ namespace Adxstudio.Xrm.Json
 			if (existingValue is EntityFilters)
 			{
 				var filters = serializer.Deserialize<JsonEntityFilters>(reader);
-				return (EntityFilters) filters.Value;
+				return (EntityFilters)filters.Value;
 			}
 
 			if (objectType == typeof(Condition))
@@ -223,10 +223,10 @@ namespace Adxstudio.Xrm.Json
 
 			if (alias != null)
 			{
-				return new KeyValuePair<TKey, TValue>(pair.Key, (TValue) (object) new AliasedValue(alias.EntityLogicalName, alias.AttributeLogicalName, Deserialize(alias.Value)));
+				return new KeyValuePair<TKey, TValue>(pair.Key, (TValue)(object)new AliasedValue(alias.EntityLogicalName, alias.AttributeLogicalName, Deserialize(alias.Value)));
 			}
 
-			return new KeyValuePair<TKey, TValue>(pair.Key, (TValue) Deserialize(pair.Value));
+			return new KeyValuePair<TKey, TValue>(pair.Key, (TValue)Deserialize(pair.Value));
 		}
 
 		/// <summary>
@@ -269,12 +269,12 @@ namespace Adxstudio.Xrm.Json
 
 			if (value is JsonGuid)
 			{
-				return new Guid(((JsonGuid) value).Value);
+				return new Guid(((JsonGuid)value).Value);
 			}
 
 			if (value is JsonEntityFilters)
 			{
-				return (EntityFilters) ((JsonEntityFilters) value).Value;
+				return (EntityFilters)((JsonEntityFilters)value).Value;
 			}
 
 			if (value is JsonList<KeyValuePair<Relationship, QueryBase>>)

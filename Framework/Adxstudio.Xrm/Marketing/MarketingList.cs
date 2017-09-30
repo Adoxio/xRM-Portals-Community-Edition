@@ -18,9 +18,9 @@ namespace Adxstudio.Xrm.Marketing
 			Name = listGroup.First().GetAttributeValue<string>("listname");
 			Purpose = listGroup.First().GetAttributeValue<string>("purpose");
 
-			Subscribers = listGroup.Where(g => g.GetAttributeValue<AliasedValue>("c.contactid") != null).Select(e => new EntityReference("contact", (Guid) e.GetAttributeValue<AliasedValue>("c.contactid").Value))
-				.Concat(listGroup.Where(g => g.GetAttributeValue<AliasedValue>("l.leadid") != null).Select(e => new EntityReference("lead", (Guid) e.GetAttributeValue<AliasedValue>("l.leadid").Value)))
-				.Concat(listGroup.Where(g => g.GetAttributeValue<AliasedValue>("a.accountid") != null).Select(e => new EntityReference("account", (Guid) e.GetAttributeValue<AliasedValue>("a.accountid").Value)))
+			Subscribers = listGroup.Where(g => g.GetAttributeValue<AliasedValue>("c.contactid") != null).Select(e => new EntityReference("contact", (Guid)e.GetAttributeValue<AliasedValue>("c.contactid").Value))
+				.Concat(listGroup.Where(g => g.GetAttributeValue<AliasedValue>("l.leadid") != null).Select(e => new EntityReference("lead", (Guid)e.GetAttributeValue<AliasedValue>("l.leadid").Value)))
+				.Concat(listGroup.Where(g => g.GetAttributeValue<AliasedValue>("a.accountid") != null).Select(e => new EntityReference("account", (Guid)e.GetAttributeValue<AliasedValue>("a.accountid").Value)))
 				.Distinct();
 		}
 

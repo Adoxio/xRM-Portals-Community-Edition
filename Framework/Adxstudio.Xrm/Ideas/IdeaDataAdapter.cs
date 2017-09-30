@@ -137,7 +137,7 @@ namespace Adxstudio.Xrm.Ideas
 			comment["adx_approved"] = idea.CommentPolicy != IdeaForumCommentPolicy.Moderated;
 			comment["adx_createdbycontact"] = authorName;
 			comment["adx_contactemail"] = authorEmail;
-			comment["source"] = new OptionSetValue((int) FeedbackSource.Portal);
+			comment["source"] = new OptionSetValue((int)FeedbackSource.Portal);
 
 			if (author != null && author.LogicalName == "contact")
 			{
@@ -197,7 +197,7 @@ namespace Adxstudio.Xrm.Ideas
 			vote["rating"] = voteValue;
 			vote["adx_createdbycontact"] = voterName;
 			vote["adx_contactemail"] = voterEmail;
-			vote["source"] = new OptionSetValue((int) FeedbackSource.Portal);
+			vote["source"] = new OptionSetValue((int)FeedbackSource.Portal);
 
 			var portalUser = Dependencies.GetPortalUser();
 

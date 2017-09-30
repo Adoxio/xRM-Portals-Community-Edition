@@ -89,7 +89,7 @@ namespace Adxstudio.Xrm.Blogs
 				{"adx_createdbycontact", authorName},
 				{"adx_contactemail", authorEmail},
 				{"comments", content},
-				{"source", new OptionSetValue((int) FeedbackSource.Portal)}
+				{"source", new OptionSetValue((int)FeedbackSource.Portal)}
 			};
 
 			var portalUser = BlogDependencies.GetPortalUser();

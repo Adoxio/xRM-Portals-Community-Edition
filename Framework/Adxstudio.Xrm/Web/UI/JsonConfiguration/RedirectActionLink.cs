@@ -47,7 +47,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 			OnComplete = JsonConfiguration.OnComplete.RedirectToWebPage;
 		}
 
-		public RedirectActionLink(IPortalContext portalContext, int languageCode, RedirectAction action, LinkActionType type, bool enabled = false, UrlBuilder url = null, string portalName = null, string label = null, string tooltip = null): base(portalContext, languageCode, action, type, enabled, url, portalName, label, tooltip)
+		public RedirectActionLink(IPortalContext portalContext, int languageCode, RedirectAction action, LinkActionType type, bool enabled = false, UrlBuilder url = null, string portalName = null, string label = null, string tooltip = null) : base(portalContext, languageCode, action, type, enabled, url, portalName, label, tooltip)
 		{
 			string redirectUrl = null;
 			

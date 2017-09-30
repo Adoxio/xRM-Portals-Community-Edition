@@ -131,7 +131,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 			using (var serviceContext = portalViewContext.CreateServiceContext())
 			{
-				var response = (RetrieveResponse) serviceContext.Execute(new RetrieveRequest
+				var response = (RetrieveResponse)serviceContext.Execute(new RetrieveRequest
 				{
 					ColumnSet = new ColumnSet(true),
 					Target = new EntityReference(entityLogicalName, id)

@@ -17,7 +17,7 @@ namespace Adxstudio.Xrm.AspNet.Cms
 	/// </summary>
 	public class ETWMiddleware : OwinMiddleware
 	{
-		public ETWMiddleware(OwinMiddleware next):base(next)
+		public ETWMiddleware(OwinMiddleware next) : base(next)
 		{
 
 		}

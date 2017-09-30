@@ -14,7 +14,7 @@ namespace Adxstudio.Xrm.Cms
 		{
 			YesCount = yesCount;
 			NoCount = noCount;
-			AverageRating = (averageRating > 0) ? averageRating : ((ratingCount != 0) ? ((double)ratingSum/(double)ratingCount) : 0);
+			AverageRating = (averageRating > 0) ? averageRating : ((ratingCount != 0) ? ((double)ratingSum / (double)ratingCount) : 0);
 			AverageRatingRounded = AverageRating > 0 ? Math.Round(AverageRating * 2, MidpointRounding.AwayFromZero) / 2 : 0; // round to the nearest half
 			RatingCount = ratingCount;
 		}

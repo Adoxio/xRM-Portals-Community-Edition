@@ -46,7 +46,7 @@ namespace Adxstudio.Xrm.Cms
 		public int? Votes { get; private set; }
 
 		public decimal Percentage {
-			get { return _poll.Votes > 0 ? (Votes.GetValueOrDefault(0)/(decimal) _poll.Votes)*100 : 0; }
+			get { return _poll.Votes > 0 ? (Votes.GetValueOrDefault(0) / (decimal)_poll.Votes) * 100 : 0; }
 		}
 	}
 }

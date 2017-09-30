@@ -516,7 +516,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				var fileInputLabel = new TagBuilder("label");
 				fileInputLabel.AddCssClass(formLeftColumnCssClass.GetValueOrDefault(DefaultAddNoteModalFormLeftColumnCssClass));
 				fileInputLabel.AddCssClass("control-label");
-				fileInputLabel.InnerHtml = attachFileLabel.GetValueOrDefault(isTimeline? DefaultAddCommentModalAttachFileLabel: DefaultAddNoteModalAttachFileLabel);
+				fileInputLabel.InnerHtml = attachFileLabel.GetValueOrDefault(isTimeline ? DefaultAddCommentModalAttachFileLabel : DefaultAddNoteModalAttachFileLabel);
 				fileInputLabel.MergeAttribute("aria-label", DefaultAddCommentModalAttachFileLabel);
 				var fileInputContainer = new TagBuilder("div");
 				fileInputContainer.AddCssClass(formRightColumnCssClass.GetValueOrDefault(DefaultAddNoteModalFormRightColumnCssClass));
@@ -856,7 +856,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 					</div>
 					{{#if ViewFields.modifiedon}}
 						{{#if_not_eq ViewFields.modifiedon ViewFields.createdon}}
-							<div class=""modifiedon"">"+ String.Format(DefaultTimelineModifiedOnFieldLabel, "{{#dateTimeFormatter ViewFields.modifiedon}}") + @"{{this}}{{/dateTimeFormatter}}</div>
+							<div class=""modifiedon"">" + String.Format(DefaultTimelineModifiedOnFieldLabel, "{{#dateTimeFormatter ViewFields.modifiedon}}") + @"{{this}}{{/dateTimeFormatter}}</div>
 						{{/if_not_eq}}
 					{{/if}}
 				</div>

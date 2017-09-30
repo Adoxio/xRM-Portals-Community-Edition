@@ -140,10 +140,10 @@ namespace Adxstudio.Xrm.Core
 			{
 				columns = new[] {"name"};
 			}
-			return ((RetrieveResponse) serviceContext.Execute(new RetrieveRequest
+			return ((RetrieveResponse)serviceContext.Execute(new RetrieveRequest
 			{
 				ColumnSet = new ColumnSet(columns),
-				Target = new EntityReference("organization", ((WhoAmIResponse) serviceContext.Execute(new WhoAmIRequest())).OrganizationId)
+				Target = new EntityReference("organization", ((WhoAmIResponse)serviceContext.Execute(new WhoAmIRequest())).OrganizationId)
 			})).Entity;
 		}
 	}

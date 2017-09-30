@@ -83,7 +83,7 @@ namespace Adxstudio.Xrm.Cms
 			{
 				query.Criteria.AddCondition("adx_approved", ConditionOperator.Equal, true);
 			}
-			query.ColumnSet=new ColumnSet()
+			query.ColumnSet = new ColumnSet()
 			{
 				Columns = { "createdbycontact", "adx_createdbycontact", "adx_authorurl", "adx_contactemail", "comments", "createdon", "title", "createdbycontact", "adx_approved" }
 			};
@@ -155,7 +155,7 @@ namespace Adxstudio.Xrm.Cms
 			filter.AddFetchXmlFilterInCondition(FeedbackMetadataAttributes.PageCommentIdAttribute,
 				commentIds.Select(id => id.ToString()));
 
-			var response = (RetrieveMultipleResponse) serviceContext.Execute(new RetrieveMultipleRequest
+			var response = (RetrieveMultipleResponse)serviceContext.Execute(new RetrieveMultipleRequest
 			{
 				Query = new FetchExpression(fetchXml.ToString())
 			});
@@ -179,7 +179,7 @@ namespace Adxstudio.Xrm.Cms
 			aggregateFilter.AddFetchXmlFilterInCondition(FeedbackMetadataAttributes.PageCommentIdAttribute,
 				commentIds.Select(id => id.ToString()));
 
-			var aggregateResponse = (RetrieveMultipleResponse) serviceContext.Execute(new RetrieveMultipleRequest
+			var aggregateResponse = (RetrieveMultipleResponse)serviceContext.Execute(new RetrieveMultipleRequest
 			{
 				Query = new FetchExpression(aggregateFetchXml.ToString())
 			});
@@ -233,7 +233,7 @@ namespace Adxstudio.Xrm.Cms
 				}
 				else
 				{
-					averageRating = (double) ratingSum/(double) ratingCount;
+					averageRating = (double)ratingSum / (double)ratingCount;
 				}
 
 				var ratingInfo = new RatingInfo(yesCount, noCount, averageRating, ratingCount, ratingSum);

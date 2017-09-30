@@ -139,7 +139,7 @@ namespace Site.Areas.Forums.Pages
 
 		protected void ValidatePostContentLength(object source, ServerValidateEventArgs args)
 		{
-			var response = (RetrieveAttributeResponse) ServiceContext.Execute(new RetrieveAttributeRequest
+			var response = (RetrieveAttributeResponse)ServiceContext.Execute(new RetrieveAttributeRequest
 			{
 				EntityLogicalName = "adx_communityforumpost",
 				LogicalName = "adx_content"

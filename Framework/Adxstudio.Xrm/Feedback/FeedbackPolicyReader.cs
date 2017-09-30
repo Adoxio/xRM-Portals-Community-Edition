@@ -35,7 +35,7 @@ namespace Adxstudio.Xrm.Feedback
 				return CommentPolicy.Closed;
 			}
 
-			return (CommentPolicy) commentPolicy.Value;
+			return (CommentPolicy)commentPolicy.Value;
 		}
 
 		public bool IsRatingEnabled()

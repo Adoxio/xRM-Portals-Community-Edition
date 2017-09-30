@@ -633,7 +633,7 @@ namespace Site.Areas.Account.Controllers
 			}
 
 			// Sign in the user with this external login provider if the user already has a login
-			var result = await SignInManager.ExternalSignInAsync(loginInfo, false, (bool) ViewBag.Settings.TriggerLockoutOnFailedPassword);
+			var result = await SignInManager.ExternalSignInAsync(loginInfo, false, (bool)ViewBag.Settings.TriggerLockoutOnFailedPassword);
 
 			switch (result)
 			{
@@ -730,7 +730,7 @@ namespace Site.Areas.Account.Controllers
 			// if the user's already gone through the Graph check, this will be set with the error that happened
 			if (HttpContext.Cache[userAuthResultCacheKey] != null)
 			{
-				return OutputGraphError((Enums.AzureADGraphAuthResults) HttpContext.Cache[userAuthResultCacheKey], userAuthResultCacheKey, loginInfo);
+				return OutputGraphError((Enums.AzureADGraphAuthResults)HttpContext.Cache[userAuthResultCacheKey], userAuthResultCacheKey, loginInfo);
 			}
 
 			// if the cache here is null, we haven't retrieved the Graph user yet. retrieve it
@@ -745,7 +745,7 @@ namespace Site.Areas.Account.Controllers
 			}
 			else
 			{
-				user = (Microsoft.Azure.ActiveDirectory.GraphClient.IUser) HttpContext.Cache[userCacheKey];
+				user = (Microsoft.Azure.ActiveDirectory.GraphClient.IUser)HttpContext.Cache[userCacheKey];
 			}
 
 			// if the user doesn't have an email address, try to use the UPN
@@ -833,7 +833,7 @@ namespace Site.Areas.Account.Controllers
 							break;
 						}
 						var clientException = innerEx.InnerException as DataServiceClientException;
-						if (clientException?.StatusCode == (int) HttpStatusCode.Unauthorized)
+						if (clientException?.StatusCode == (int)HttpStatusCode.Unauthorized)
 						{
 							ADXTrace.Instance.TraceInfo(TraceCategory.Application, "Current GraphClient auth token didn't seem to work. Discarding...");
 
@@ -1312,7 +1312,7 @@ namespace Site.Areas.Account.Controllers
 			}
 
 			// Sign in the user with this external login provider if the user already has a login
-			var result = await SignInManager.ExternalSignInAsync(loginInfo, false, (bool) ViewBag.Settings.TriggerLockoutOnFailedPassword);
+			var result = await SignInManager.ExternalSignInAsync(loginInfo, false, (bool)ViewBag.Settings.TriggerLockoutOnFailedPassword);
 
 			switch (result)
 			{
