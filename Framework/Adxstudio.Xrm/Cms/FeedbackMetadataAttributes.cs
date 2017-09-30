@@ -18,7 +18,7 @@ namespace Adxstudio.Xrm.Cms
 
 		public const string PageCommentEntityName = "feedback";
 
-		public const string CommentAttribute = "comments" ;
+		public const string CommentAttribute = "comments";
 
 		#endregion
 
@@ -26,42 +26,42 @@ namespace Adxstudio.Xrm.Cms
 		
 		public const string AuthorNameAttribute = "adx_createdbycontact";
 
-		public const string WebPageIdAttribute = "regardingobjectid" ;
+		public const string WebPageIdAttribute = "regardingobjectid";
 
-		public const string PageCommentIdAttribute = "feedbackid" ;
+		public const string PageCommentIdAttribute = "feedbackid";
 
 		#endregion
 
 		#region Adx_rating to Feedback mapping properties
 
-		public const string RatingEntityName = "feedback" ;
+		public const string RatingEntityName = "feedback";
 
 		public const string VisitorAttributeName = "adx_contactusername";
 
-		public const string UserIdAttributeName = "createdbycontact" ;
+		public const string UserIdAttributeName = "createdbycontact";
 
-		public const string ActivityIdAttributeName = "feedbackid" ;
+		public const string ActivityIdAttributeName = "feedbackid";
 
-		public const string RatingValueAttributeName = "rating" ;
+		public const string RatingValueAttributeName = "rating";
 
-		public const string MinRatingAttributeName = "minrating" ;
+		public const string MinRatingAttributeName = "minrating";
 
-		public const string MaxRatingAttributeName = "maxrating" ;
+		public const string MaxRatingAttributeName = "maxrating";
 
 		#endregion
 
 		#region Adx_blogpostcomment to Feedback mapping properties
 
-		public const string BlogPostCommentEntityName = "feedback" ;
+		public const string BlogPostCommentEntityName = "feedback";
 
-		public const string BlogPostIdAttribute = "regardingobjectid" ;
+		public const string BlogPostIdAttribute = "regardingobjectid";
 
-		public const string BlogPostCommentIdAttribute = "feedbackid" ;
+		public const string BlogPostCommentIdAttribute = "feedbackid";
 
-		public const string CommentContentAttribute = "comments" ;
+		public const string CommentContentAttribute = "comments";
 
 		#endregion
 
-		public const string DateAttribute = "modifiedon" ;
+		public const string DateAttribute = "modifiedon";
 	}
 }

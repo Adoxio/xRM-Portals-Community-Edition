@@ -91,7 +91,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			set { autocompleteMaxItemsToShow = value; }
 		}
 		
-		public string Title { get; set;}
+		public string Title { get; set; }
 	
 		public bool IsReadOnly { get; set; }
 
@@ -112,7 +112,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			}
 		}
 		
-		public string AutoCompleteServiceUrl { get; set;}
+		public string AutoCompleteServiceUrl { get; set; }
 
 		public string NavigateUrl { get; set; }
 
@@ -150,7 +150,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 		public string DefaultItemTemplateUrl { get; private set; }
 
-		public string CssClass{ get; set;}
+		public string CssClass{ get; set; }
 
 		public string PortalName { get; set; }
 		

@@ -16,7 +16,7 @@ namespace Adxstudio.Xrm.Notes
 		private string _acceptMimeTypes;
 		private string _acceptExtensionTypes;
 		// Max possible CRM size
-		private const ulong _defaultMaxFileSize = 32 << 10 << 10;// MB<<kB<<B
+		private const ulong _defaultMaxFileSize = 32 << 10 << 10; // MB<<kB<<B
 
 		private readonly string _defaultRestrictFileTypesErrorMessage = ResourceManager.GetString("Restrict_FileTypes_ErrorMessage");
 		private readonly string _defaultMaxFileSizeErrorMessage = ResourceManager.GetString("Max_FileSize_ErrorMessage");

@@ -19,7 +19,7 @@ namespace Adxstudio.Xrm.Forums
 
 		public bool AllowsVoting
 		{
-			get { throw new NotSupportedException() ; }
+			get { throw new NotSupportedException(); }
 		}
 
 		public int DisplayOrder

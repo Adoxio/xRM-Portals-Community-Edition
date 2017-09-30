@@ -158,7 +158,7 @@ namespace Site.Areas.Products.Controllers
 			var visitorID = HttpContext.Profile.UserName;
 			ShoppingCart cart;
 			var portal = PortalCrmConfigurationManager.CreatePortalContext();
-			var context = portal.ServiceContext ;
+			var context = portal.ServiceContext;
 			var product = context.CreateQuery("product").FirstOrDefault(p => p.GetAttributeValue<Guid>("productid") == productid);
 			var productDataAdapter = new ProductDataAdapter(product, new Adxstudio.Xrm.Products.PortalContextDataAdapterDependencies(portal, null, Request.RequestContext));
 			
