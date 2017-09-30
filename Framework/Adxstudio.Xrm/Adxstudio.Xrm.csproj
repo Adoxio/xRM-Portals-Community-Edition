@@ -45,7 +45,7 @@
     <DefineConstants>DEBUG;TRACE;SELFHOSTED</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\..\Build\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
     <DocumentationFile>
     </DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
@@ -60,7 +60,7 @@
     <DefineConstants>TRACE;SELFHOSTED</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\..\Build\CodeAnalysis.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <DocumentationFile>bin\Release\Adxstudio.Xrm.XML</DocumentationFile>
@@ -2122,6 +2122,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Liquid\faceted_search.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.1.0-beta004\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.1.0-beta004\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
   <Import Project="$(AdxstudioFrameworkPath)\Adxstudio.Xrm.Build\SetStrongName.targets" />
   <Import Project="..\..\packages\SafeNuGet.1.0.10\build\SafeNuGet.targets" Condition="Exists('..\..\packages\SafeNuGet.1.0.10\build\SafeNuGet.targets')" />
