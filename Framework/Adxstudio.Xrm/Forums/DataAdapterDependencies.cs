@@ -56,7 +56,7 @@ namespace Adxstudio.Xrm.Forums
 
 			try
 			{
-				var pathData = RouteTable.Routes.GetVirtualPath(requestContext, typeof (CmsEntityDeleteRouteHandler).FullName,
+				var pathData = RouteTable.Routes.GetVirtualPath(requestContext, typeof(CmsEntityDeleteRouteHandler).FullName,
 					new RouteValueDictionary{
 						{"__portalScopeId__", website.Id.ToString()},
 						{"entityLogicalName", entity.LogicalName},
@@ -83,7 +83,7 @@ namespace Adxstudio.Xrm.Forums
 
 			try
 			{
-				var pathData = RouteTable.Routes.GetVirtualPath(requestContext, typeof (CmsEntityRouteHandler).FullName, 
+				var pathData = RouteTable.Routes.GetVirtualPath(requestContext, typeof(CmsEntityRouteHandler).FullName, 
 					new RouteValueDictionary{
 						{"__portalScopeId__", website.Id.ToString()},
 						{"entityLogicalName", entity.LogicalName},

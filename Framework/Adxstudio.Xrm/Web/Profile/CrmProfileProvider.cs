@@ -398,9 +398,9 @@ namespace Adxstudio.Xrm.Web.Profile
 
 			var entityParameter = wherePredicate.Parameters.Single();
 
-			Expression getPropertyValue = Expression.Call(entityParameter, "GetPropertyValue", new[] { typeof (bool?) }, Expression.Constant(_attributeMapIsAnonymous));
+			Expression getPropertyValue = Expression.Call(entityParameter, "GetPropertyValue", new[] { typeof(bool?) }, Expression.Constant(_attributeMapIsAnonymous));
 
-			var left = Expression.Call(getPropertyValue, typeof (bool?).GetMethod("GetValueOrDefault", Type.EmptyTypes));
+			var left = Expression.Call(getPropertyValue, typeof(bool?).GetMethod("GetValueOrDefault", Type.EmptyTypes));
 
 			var anonymousPredicateBody = Expression.Equal(left, Expression.Constant(isAnonymous));
 

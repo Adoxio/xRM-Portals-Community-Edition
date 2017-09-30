@@ -56,8 +56,8 @@ namespace Adxstudio.Xrm.Caching
 	{
 		private static string[] _excludeKeys =
 		{
-			typeof (CacheItemDetail).ToString().ToLower(),
-			typeof (CacheItemTelemetry).ToString().ToLower(),
+			typeof(CacheItemDetail).ToString().ToLower(),
+			typeof(CacheItemTelemetry).ToString().ToLower(),
 			"xrm:dependency:entity"	// We don't need output cache to be dependent on these entity tags, just on the queries themselves (which should get invalidated anyway when one of these tags is invalidated).
 		};
 

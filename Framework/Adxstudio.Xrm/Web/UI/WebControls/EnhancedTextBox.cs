@@ -30,7 +30,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			base.OnPreRender(e);
 
 			// Configure TextArea support
-			if((TextMode == TextBoxMode.MultiLine ) && (MaxLength > 0))
+			if ((TextMode == TextBoxMode.MultiLine ) && (MaxLength > 0))
 			{
 				// If we haven't already, include the supporting
 				// script that limits the content of textareas.

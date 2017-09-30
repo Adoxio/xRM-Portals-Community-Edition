@@ -72,7 +72,7 @@ namespace Site.Areas.Blogs.Pages
 
 		private bool TryGetCurrentBlog(out Guid blogId)
 		{
-			blogId = default (Guid);
+			blogId = default(Guid);
 
 			var entity = _portal.Value.Entity;
 

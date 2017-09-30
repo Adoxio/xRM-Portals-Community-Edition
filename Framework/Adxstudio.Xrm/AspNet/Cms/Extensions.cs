@@ -295,7 +295,7 @@ namespace Adxstudio.Xrm.AspNet.Cms
 				registerAction(bundles, CultureInfo.CurrentCulture);
 			}
 
-			foreach(var websiteLanguage in websiteNode.WebsiteLanguages)
+			foreach (var websiteLanguage in websiteNode.WebsiteLanguages)
 			{
 				var portalLanguage = websiteLanguage.PortalLanguage;
 				var culture = ContextLanguageInfo.GetCulture(portalLanguage.CrmLanguage ?? 0);

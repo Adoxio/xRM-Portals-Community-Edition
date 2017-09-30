@@ -37,7 +37,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			var website = portalContext.Website;
 
 			var virtualPath = website == null
-				? RouteTable.Routes.GetVirtualPath(null, typeof (EntityRouteHandler).FullName,
+				? RouteTable.Routes.GetVirtualPath(null, typeof(EntityRouteHandler).FullName,
 					new RouteValueDictionary
 					{
 						{"prefix", "_entity"},
@@ -45,7 +45,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 						{"id", documentLocation.Id},
 						{"file", file.Name}
 					})
-				: RouteTable.Routes.GetVirtualPath(null, typeof (EntityRouteHandler).FullName + "PortalScoped",
+				: RouteTable.Routes.GetVirtualPath(null, typeof(EntityRouteHandler).FullName + "PortalScoped",
 					new RouteValueDictionary
 					{
 						{"prefix", "_entity"},

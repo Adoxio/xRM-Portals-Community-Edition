@@ -155,7 +155,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 		protected static Boolean RankOrderHasTie(int value, Control control)
 		{
-			if(control is TextBox)
+			if (control is TextBox)
 			{
 				var textBox = (TextBox) control;
 				int valueCompare;

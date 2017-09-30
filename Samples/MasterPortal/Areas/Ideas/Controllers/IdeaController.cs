@@ -113,7 +113,7 @@ namespace Site.Areas.Ideas.Controllers
 			{
 				searcher = searchProvider.GetIndexSearcher();
 			}
-			catch(IndexNotFoundException)
+			catch (IndexNotFoundException)
 			{
 				searchProvider.GetIndexBuilder().BuildIndex();
 				

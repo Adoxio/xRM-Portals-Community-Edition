@@ -83,7 +83,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 
 		private string SerializeChildInfos(ExtendedSiteMapChildInfo[] childInfos)
 		{
-			using(var stream = new MemoryStream())
+			using (var stream = new MemoryStream())
 			{
 				var serializer = new DataContractJsonSerializer(childInfos.GetType());
 

@@ -71,7 +71,7 @@ namespace Adxstudio.Xrm.Web.Compilation
 
 				object returnValue;
 
-				if (returnType == typeof (String) && !string.IsNullOrWhiteSpace(value) && !string.IsNullOrWhiteSpace(format))
+				if (returnType == typeof(String) && !string.IsNullOrWhiteSpace(value) && !string.IsNullOrWhiteSpace(format))
 				{
 					returnValue = string.Format(CultureInfo.InvariantCulture, format, value);
 
@@ -80,7 +80,7 @@ namespace Adxstudio.Xrm.Web.Compilation
 
 				if (string.IsNullOrWhiteSpace(value)) value = defaultString;
 
-				if (returnType == typeof (String))
+				if (returnType == typeof(String))
 				{
 					returnValue = value;
 				}

@@ -24,7 +24,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 
 		protected override JsonObjectContract CreateObjectContract(Type objectType)
 		{
-			return objectType == typeof (EntityReference)
+			return objectType == typeof(EntityReference)
 				? CreateEntityReferenceObjectContract(objectType)
 				: base.CreateObjectContract(objectType);
 		}

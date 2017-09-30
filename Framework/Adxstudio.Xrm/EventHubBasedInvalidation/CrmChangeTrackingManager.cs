@@ -315,7 +315,7 @@ namespace Adxstudio.Xrm.EventHubBasedInvalidation
 		/// <returns>List of updated records</returns>
 		private TimeBasedChangedData ParseBusinessEntityChangesResponse(Dictionary<string, RetrieveEntityChangesResponse> responseCollection, CrmDbContext context, Guid websiteId)
 		{
-			if(responseCollection == null || responseCollection.Count == 0)
+			if (responseCollection == null || responseCollection.Count == 0)
 			{
 				return null;
 			}

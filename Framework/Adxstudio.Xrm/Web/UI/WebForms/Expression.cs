@@ -675,7 +675,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 			{
 				return true;
 			}
-			return obj.GetType() == typeof (Expression) && Equals((Expression) obj);
+			return obj.GetType() == typeof(Expression) && Equals((Expression) obj);
 		}
 
 		public override int GetHashCode()

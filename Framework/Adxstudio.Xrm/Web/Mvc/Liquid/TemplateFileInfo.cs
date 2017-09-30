@@ -44,7 +44,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 			if (!Metadata.TryGetValue(key, StringComparison.InvariantCultureIgnoreCase, out token))
 			{
-				return default (T);
+				return default(T);
 			}
 
 			try
@@ -53,7 +53,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			}
 			catch (InvalidCastException)
 			{
-				return default (T);
+				return default(T);
 			}
 		}
 	}

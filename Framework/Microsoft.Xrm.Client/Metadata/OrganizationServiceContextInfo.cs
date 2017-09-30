@@ -72,7 +72,7 @@ namespace Microsoft.Xrm.Client.Metadata
 			var entitySetTypes =
 				from property in dataContextPublicProperties
 				let propertyType = property.PropertyType
-				where propertyType.IsGenericType && propertyType.GetGenericTypeDefinition() == typeof (IQueryable<>)
+				where propertyType.IsGenericType && propertyType.GetGenericTypeDefinition() == typeof(IQueryable<>)
 				let entityType = propertyType.GetGenericArguments().First()
 				select new EntitySetInfo(property, new EntityInfo(entityType));
 

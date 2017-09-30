@@ -205,9 +205,9 @@ namespace Site.Areas.EntityList.Helpers
 
 		private static bool TryGetRepositoryInfo(HtmlHelper html, out Guid websiteId, out Guid entityListId, out Guid viewId)
 		{
-			websiteId = default (Guid);
-			entityListId = default (Guid);
-			viewId = default (Guid);
+			websiteId = default(Guid);
+			entityListId = default(Guid);
+			viewId = default(Guid);
 			
 			var portalViewContext = PortalExtensions.GetPortalViewContext(html);
 

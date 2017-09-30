@@ -238,14 +238,14 @@ namespace Microsoft.Xrm.Portal.Web.UI
 
 				if (dependencyProvider == null)
 				{
-					throw new InvalidOperationException("Unable to create {0} for current portal configuration.".FormatWith(typeof (IDependencyProvider).FullName));
+					throw new InvalidOperationException("Unable to create {0} for current portal configuration.".FormatWith(typeof(IDependencyProvider).FullName));
 				}
 
 				var urlProvider = dependencyProvider.GetDependency<IEntityUrlProvider>();
 
 				if (urlProvider == null)
 				{
-					throw new InvalidOperationException("Unable to create {0} for current portal configuration.".FormatWith(typeof (IEntityUrlProvider).FullName));
+					throw new InvalidOperationException("Unable to create {0} for current portal configuration.".FormatWith(typeof(IEntityUrlProvider).FullName));
 				}
 
 				var parentPath = urlProvider.GetApplicationPath(context, parent ?? entity);

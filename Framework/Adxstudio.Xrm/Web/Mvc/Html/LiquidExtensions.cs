@@ -198,7 +198,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				{"htmlHelper", html},
 				{"file_system", new CompositeFileSystem(
 					new EntityFileSystem(portalViewContext, "adx_webtemplate", "adx_name", "adx_source"),
-					new EmbeddedResourceFileSystem(typeof (LiquidExtensions).Assembly, "Adxstudio.Xrm.Liquid"))},
+					new EmbeddedResourceFileSystem(typeof(LiquidExtensions).Assembly, "Adxstudio.Xrm.Liquid"))},
 				{"portalLiquidContext", portalLiquidContext}
 			});
 

@@ -64,7 +64,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				checkboxList.Attributes.Add("required", string.Empty);
 			}
 
-			if(Metadata.ReadOnly)
+			if (Metadata.ReadOnly)
 			{
 				checkboxList.CssClass += " readonly";
 				checkboxList.Attributes["readonly"] = "readonly";

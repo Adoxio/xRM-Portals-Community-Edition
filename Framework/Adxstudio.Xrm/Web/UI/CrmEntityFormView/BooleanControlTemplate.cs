@@ -42,7 +42,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				if (Metadata != null)
 				{
-					if(Metadata.ClassID == DropDownClassID)
+					if (Metadata.ClassID == DropDownClassID)
 					{
 						return "boolean-dropdown";
 					} 

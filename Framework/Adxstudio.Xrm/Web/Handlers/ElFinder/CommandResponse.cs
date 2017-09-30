@@ -29,7 +29,7 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 
 		public string ToJson()
 		{
-			using(var stream = new MemoryStream())
+			using (var stream = new MemoryStream())
 			{
 				var serializer = new DataContractJsonSerializer(GetType());
 

@@ -91,7 +91,7 @@ namespace Microsoft.Xrm.Portal.Web
 
 		protected static bool TryParseGuid(string value, out Guid guid)
 		{
-			guid = default (Guid);
+			guid = default(Guid);
 
 			try
 			{

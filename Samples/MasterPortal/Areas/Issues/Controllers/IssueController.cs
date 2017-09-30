@@ -174,7 +174,7 @@ namespace Site.Areas.Issues.Controllers
 			{
 				searcher = searchProvider.GetIndexSearcher();
 			}
-			catch(IndexNotFoundException)
+			catch (IndexNotFoundException)
 			{
 				searchProvider.GetIndexBuilder().BuildIndex();
 				

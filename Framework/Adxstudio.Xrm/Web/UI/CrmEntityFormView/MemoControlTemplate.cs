@@ -84,7 +84,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				textbox.Attributes["aria-label"] = string.Format(ResourceManager.GetString("Required_Field_Error"), Metadata.Label);
 			}
 
-			if(Metadata.ReadOnly)
+			if (Metadata.ReadOnly)
 			{
 				textbox.CssClass += " readonly";
 				textbox.Attributes["readonly"] = "readonly";

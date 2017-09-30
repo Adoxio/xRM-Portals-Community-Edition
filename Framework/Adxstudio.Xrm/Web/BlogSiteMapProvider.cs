@@ -1145,14 +1145,14 @@ namespace Adxstudio.Xrm.Web
 
 		public static bool TryGetAuthorArchiveNodeAttribute(SiteMapNode node, out Guid authorId)
 		{
-			authorId = default (Guid);
+			authorId = default(Guid);
 
 			return node != null && Guid.TryParse(node[AuthorArchiveNodeAttributeKey], out authorId);
 		}
 
 		public static bool TryGetMonthArchiveNodeAttribute(SiteMapNode node, out DateTime month)
 		{
-			month = default (DateTime);
+			month = default(DateTime);
 
 			return node != null && DateTime.TryParseExact(node[MonthArchiveNodeAttributeKey], "o", CultureInfo.InvariantCulture, DateTimeStyles.RoundtripKind, out month);
 		}

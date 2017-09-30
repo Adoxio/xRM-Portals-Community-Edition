@@ -34,7 +34,7 @@ namespace Microsoft.Xrm.Client.Metadata
 		{
 			Property = property;
 			CrmAssociationAttribute = crmAssociationAttribute;
-			IsCollection = property.PropertyType.GetInterfaces().Any(i => i == typeof (IEnumerable));
+			IsCollection = property.PropertyType.GetInterfaces().Any(i => i == typeof(IEnumerable));
 		}
 	}
 }

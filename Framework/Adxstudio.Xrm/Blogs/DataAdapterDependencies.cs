@@ -80,7 +80,7 @@ namespace Adxstudio.Xrm.Blogs
 				return null;
 			}
 
-			var virtualPath = RouteTable.Routes.GetVirtualPath(requestContext, typeof (WebsiteBlogAggregationFeedRouteHandler).FullName, new RouteValueDictionary
+			var virtualPath = RouteTable.Routes.GetVirtualPath(requestContext, typeof(WebsiteBlogAggregationFeedRouteHandler).FullName, new RouteValueDictionary
 			{
 				{"__portalScopeId__", _website.Id}
 			});
@@ -97,7 +97,7 @@ namespace Adxstudio.Xrm.Blogs
 				return null;
 			}
 
-			var virtualPath = RouteTable.Routes.GetVirtualPath(requestContext, typeof (BlogFeedRouteHandler).FullName, new RouteValueDictionary
+			var virtualPath = RouteTable.Routes.GetVirtualPath(requestContext, typeof(BlogFeedRouteHandler).FullName, new RouteValueDictionary
 			{
 				{"__portalScopeId__", _website.Id},
 				{"id", blogId}
@@ -116,7 +116,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			try
 			{
-				var pathData = RouteTable.Routes.GetVirtualPath(_requestContext, typeof (CmsEntityDeleteRouteHandler).FullName, new RouteValueDictionary
+				var pathData = RouteTable.Routes.GetVirtualPath(_requestContext, typeof(CmsEntityDeleteRouteHandler).FullName, new RouteValueDictionary
 				{
 					{"__portalScopeId__", website.Id.ToString()},
 					{"entityLogicalName", entity.LogicalName},
@@ -141,7 +141,7 @@ namespace Adxstudio.Xrm.Blogs
 
 			try
 			{
-				var pathData = RouteTable.Routes.GetVirtualPath(_requestContext, typeof (CmsEntityRouteHandler).FullName, new RouteValueDictionary
+				var pathData = RouteTable.Routes.GetVirtualPath(_requestContext, typeof(CmsEntityRouteHandler).FullName, new RouteValueDictionary
 				{
 					{"__portalScopeId__", website.Id.ToString()},
 					{"entityLogicalName", entity.LogicalName},

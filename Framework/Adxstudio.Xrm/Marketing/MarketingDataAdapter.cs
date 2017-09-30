@@ -205,7 +205,7 @@ namespace Adxstudio.Xrm.Marketing
 		private void Validate(string encodedEmail, string encodedList, string signature)
 		{
 			var confirmation = ConstructSignature(encodedEmail, encodedList);
-			if(signature != confirmation)
+			if (signature != confirmation)
 			{
 				throw new InvalidSignatureException();
 			}

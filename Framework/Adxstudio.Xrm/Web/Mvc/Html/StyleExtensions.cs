@@ -270,7 +270,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				return Enumerable.Empty<Tuple<string, string, int>>();
 			}
 
-			var cacheKey = "{0}:ContentStyles:{1}".FormatWith(typeof (StyleExtensions).FullName, node.Url);
+			var cacheKey = "{0}:ContentStyles:{1}".FormatWith(typeof(StyleExtensions).FullName, node.Url);
 
 			object cached;
 

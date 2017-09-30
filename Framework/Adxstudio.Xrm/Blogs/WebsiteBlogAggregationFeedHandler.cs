@@ -12,7 +12,7 @@ namespace Adxstudio.Xrm.Blogs
 	{
 		public WebsiteBlogAggregationFeedHandler() : this(null) {}
 
-		public WebsiteBlogAggregationFeedHandler(string portalName) : base(portalName, typeof (WebsiteBlogAggregationFeedRouteHandler).FullName) {}
+		public WebsiteBlogAggregationFeedHandler(string portalName) : base(portalName, typeof(WebsiteBlogAggregationFeedRouteHandler).FullName) {}
 
 		protected override IBlogDataAdapter GetDataAdapter(IPortalContext portal, HttpContext context)
 		{

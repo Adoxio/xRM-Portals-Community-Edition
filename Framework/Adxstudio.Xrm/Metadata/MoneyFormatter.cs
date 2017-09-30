@@ -112,7 +112,7 @@ namespace Adxstudio.Xrm.Metadata
 		/// </returns>
 		public object GetFormat(Type formatType)
 		{
-			return formatType == typeof (ICustomFormatter) ? this : null;
+			return formatType == typeof(ICustomFormatter) ? this : null;
 		}
 
 		/// <summary>

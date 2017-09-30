@@ -106,7 +106,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			container.Controls.Add(tabTable);
 
-			foreach(var columnElement in Node.XPathSelectElements("columns/column"))
+			foreach (var columnElement in Node.XPathSelectElements("columns/column"))
 			{
 				var col = new HtmlGenericControl("div");
 				col.Attributes.Add("class", "tab-column");

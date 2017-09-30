@@ -266,7 +266,7 @@ namespace Adxstudio.Xrm.EventHubBasedInvalidation
 							}
 							InvalidateCache(batchedPluginMessage);
 						}
-						else if(isSearchIndexInvalidation)
+						else if (isSearchIndexInvalidation)
 						{
 							InvalidateSearchIndex(batchedPluginMessage, searchInvalidationDatum);
 						}

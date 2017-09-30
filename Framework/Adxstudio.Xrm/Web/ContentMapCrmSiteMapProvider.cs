@@ -436,7 +436,7 @@ namespace Adxstudio.Xrm.Web
 					var id = notFoundNode.Id;
 					throw new HttpException((int)HttpStatusCode.NotFound, "Error ID – {0} . {1} language is not available. Please ensure it is in published status.".FormatWith(id, language));
 				}
-				else if(!isPublished)
+				else if (!isPublished)
 				{
 					throw new HttpException((int)HttpStatusCode.NotFound, "Not Found.");
 				}

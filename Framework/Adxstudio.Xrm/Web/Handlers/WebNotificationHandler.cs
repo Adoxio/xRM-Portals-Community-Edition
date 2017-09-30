@@ -110,7 +110,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 			if (!string.IsNullOrWhiteSpace(body))
 			{
 				var message =
-					body.DeserializeByJson(typeof (OrganizationServiceCachePluginMessage), null) as
+					body.DeserializeByJson(typeof(OrganizationServiceCachePluginMessage), null) as
 						OrganizationServiceCachePluginMessage;
 
 				if (message == null)

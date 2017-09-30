@@ -76,7 +76,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		/// </summary>
 		[DefaultValue((string)null)]
 		[PersistenceMode(PersistenceMode.InnerProperty)]
-		[TemplateContainer(typeof (RepeaterItem))]
+		[TemplateContainer(typeof(RepeaterItem))]
 		[Description("")]
 		[Browsable(false)]
 		public virtual ITemplate ItemTemplate { get; set; }

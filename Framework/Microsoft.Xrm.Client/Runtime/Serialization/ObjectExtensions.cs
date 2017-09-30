@@ -47,7 +47,7 @@ namespace Microsoft.Xrm.Client.Runtime.Serialization
 			IEnumerable<Type> knownTypes,
 			Func<Type, IEnumerable<Type>, XmlObjectSerializer> create)
 		{
-			using(var ms = new MemoryStream())
+			using (var ms = new MemoryStream())
 			{
 				var serializer = create(type, knownTypes);
 				serializer.WriteObject(ms, value);

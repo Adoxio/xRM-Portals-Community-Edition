@@ -32,7 +32,7 @@ namespace Adxstudio.Xrm.Web.Routing
 
 			if (!string.IsNullOrWhiteSpace(body))
 			{
-				var message = body.DeserializeByJson(typeof (OrganizationServiceCachePluginMessage), null) as OrganizationServiceCachePluginMessage;
+				var message = body.DeserializeByJson(typeof(OrganizationServiceCachePluginMessage), null) as OrganizationServiceCachePluginMessage;
 				return new OrganizationServiceCachePluginMessageHandler(PortalName, message);
 			}
 

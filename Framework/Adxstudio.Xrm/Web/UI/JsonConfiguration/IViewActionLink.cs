@@ -14,7 +14,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 		/// <summary>
 		/// URL target of the action link
 		/// </summary>
-		[JsonConverter(typeof (UrlBuilderConverter))]
+		[JsonConverter(typeof(UrlBuilderConverter))]
 		UrlBuilder URL { get; set; }
 
 		/// <summary>

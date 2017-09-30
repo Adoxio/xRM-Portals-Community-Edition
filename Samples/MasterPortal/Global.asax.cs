@@ -39,7 +39,7 @@ namespace Site
 			if (_setupRunning) return;
 
 			var areaRegistrationState = new PortalAreaRegistrationState();
-			Application[typeof (IPortalAreaRegistrationState).FullName] = areaRegistrationState;
+			Application[typeof(IPortalAreaRegistrationState).FullName] = areaRegistrationState;
 
 			AreaRegistration.RegisterAllAreas(areaRegistrationState);
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
@@ -97,7 +97,7 @@ namespace Site
 
 		public void Profile_MigrateAnonymous(object sender, ProfileMigrateEventArgs e)
 		{
-			var portalAreaRegistrationState = Application[typeof (IPortalAreaRegistrationState).FullName] as IPortalAreaRegistrationState;
+			var portalAreaRegistrationState = Application[typeof(IPortalAreaRegistrationState).FullName] as IPortalAreaRegistrationState;
 
 			if (portalAreaRegistrationState != null)
 			{

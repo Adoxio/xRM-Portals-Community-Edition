@@ -57,7 +57,7 @@ namespace Adxstudio.Xrm.Services.Query
 			if (attribute == null) return null;
 			if (typeof(T).GetUnderlyingType() == typeof(bool)) return bool.Parse(attribute.Value<string>());
 			if (typeof(T).GetUnderlyingType() == typeof(int)) return int.Parse(attribute.Value<string>());
-			if (typeof (T) == typeof (object)) return attribute.Value<JValue>().Value;
+			if (typeof(T) == typeof(object)) return attribute.Value<JValue>().Value;
 
 			return null;
 		}

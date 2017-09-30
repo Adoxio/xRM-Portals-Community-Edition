@@ -165,7 +165,7 @@ namespace Adxstudio.Xrm.Search
 
 				var providerType = Type.GetType(settings.Type, true, true);
 
-				if (!typeof (TProvider).IsAssignableFrom(providerType))
+				if (!typeof(TProvider).IsAssignableFrom(providerType))
 				{
 					throw new ArgumentException("Provider must implement the class {0}.".FormatWith(typeof(TProvider)));
 				}

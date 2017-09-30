@@ -103,7 +103,7 @@ namespace Adxstudio.Xrm.Ideas
 		{
 			if (!FeatureCheckHelper.IsFeatureEnabled(FeatureNames.Feedback))
 			{
-				return ;
+				return;
 			}
 			content.ThrowOnNullOrWhitespace("content");
 

@@ -61,7 +61,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				textbox.Attributes.Add("required", string.Empty);
 			}
 
-			if(Metadata.ReadOnly)
+			if (Metadata.ReadOnly)
 			{
 				textbox.CssClass += " readonly";
 				textbox.Attributes["readonly"] = "readonly";

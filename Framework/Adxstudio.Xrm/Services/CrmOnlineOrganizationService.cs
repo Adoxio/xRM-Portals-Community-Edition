@@ -325,10 +325,10 @@ namespace Adxstudio.Xrm.Services
 
 		private static readonly IEnumerable<Type> _cachedRequestsContent = new[]
 		{
-			typeof (KeyedRequest),
-			typeof (RetrieveRequest),
-			typeof (RetrieveMultipleRequest),
-			typeof (RetrieveSingleRequest),
+			typeof(KeyedRequest),
+			typeof(RetrieveRequest),
+			typeof(RetrieveMultipleRequest),
+			typeof(RetrieveSingleRequest),
 		};
 
 		private static readonly IEnumerable<Type> _cachedRequestsMetadata = new[]

@@ -1042,7 +1042,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			const string xPathSelectAllTabs = "form/tabs/tab";
 
-			if(string.IsNullOrWhiteSpace(TabName))
+			if (string.IsNullOrWhiteSpace(TabName))
 			{
 				tabs = XDocument.Parse(formXml).XPathSelectElements(xPathSelectAllTabs).Where(t => t.HasAttributes && (t.Attribute("visible") == null || t.Attribute("visible").Value == "true")).ToList();
 			}
@@ -1056,7 +1056,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				}
 
 				// fallback to showing all tabs if the TabName could not be found
-				if(!tabs.Any())
+				if (!tabs.Any())
 				{
 					tabs = XDocument.Parse(formXml).XPathSelectElements(xPathSelectAllTabs).Where(t => t.HasAttributes && (t.Attribute("visible") == null || t.Attribute("visible").Value == "true")).ToList();
 				}
@@ -1190,7 +1190,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				{
 					CellBindings[key].Set(dataItem);
 				}
-				else if(Mode != FormViewMode.ReadOnly && (key.StartsWith("address") && key.Contains("composite")))
+				else if (Mode != FormViewMode.ReadOnly && (key.StartsWith("address") && key.Contains("composite")))
 				{
 					CellBindings[key].Set(dataItem);
 				}

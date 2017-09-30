@@ -23,7 +23,7 @@ public class UpdateCookieModule :IHttpModule
  
 		private static void UpdateCookies(object sender, EventArgs e)
 		{
-			if(HttpContext.Current.Request.IsSecureConnection && HttpContext.Current.Response.Cookies.Count > 0)
+			if (HttpContext.Current.Request.IsSecureConnection && HttpContext.Current.Response.Cookies.Count > 0)
 			{
 				foreach (string cookieKey in HttpContext.Current.Response.Cookies.AllKeys)
 				{

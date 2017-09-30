@@ -53,7 +53,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 		private string GetUrl()
 		{
-			var virtualPath = RouteTable.Routes.GetVirtualPath(Html.ViewContext.RequestContext, typeof (EntityRouteHandler).FullName, new RouteValueDictionary
+			var virtualPath = RouteTable.Routes.GetVirtualPath(Html.ViewContext.RequestContext, typeof(EntityRouteHandler).FullName, new RouteValueDictionary
 			{
 				{"prefix", "_entity" },
 				{"logicalName", LogicalName},

@@ -207,7 +207,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						return true;
 					}
 				}
-				catch(FormatException)
+				catch (FormatException)
 				{
 					// Swallow the exception.
 				}

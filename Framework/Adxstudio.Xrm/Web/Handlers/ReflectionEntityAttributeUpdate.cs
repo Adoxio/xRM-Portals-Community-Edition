@@ -60,12 +60,12 @@ namespace Adxstudio.Xrm.Web.Handlers
 				return null;
 			}
 
-			if (propertyType == typeof (bool?))
+			if (propertyType == typeof(bool?))
 			{
 				return Convert.ToBoolean(value);
 			}
 
-			if (propertyType == typeof (CrmEntityReference))
+			if (propertyType == typeof(CrmEntityReference))
 			{
 				EntityReference entityReference;
 
@@ -77,24 +77,24 @@ namespace Adxstudio.Xrm.Web.Handlers
 				throw new FormatException("Unable to convert value {0} for attribute {1} to {2}.".FormatWith(value, Attribute.CrmPropertyAttribute.LogicalName, typeof(EntityReference)));
 			}
 
-			if (propertyType == typeof (DateTime?))
+			if (propertyType == typeof(DateTime?))
 			{
 				var dateTimeValue = value is DateTime ? (DateTime)value : Convert.ToDateTime(value);
 
 				return dateTimeValue.Kind == DateTimeKind.Utc ? dateTimeValue : dateTimeValue.ToUniversalTime();
 			}
 
-			if (propertyType == typeof (double?))
+			if (propertyType == typeof(double?))
 			{
 				return Convert.ToDouble(value);
 			}
 
-			if (propertyType == typeof (decimal))
+			if (propertyType == typeof(decimal))
 			{
 				return Convert.ToDecimal(value);
 			}
 
-			if (propertyType == typeof (EntityReference))
+			if (propertyType == typeof(EntityReference))
 			{
 				EntityReference entityReference;
 
@@ -106,22 +106,22 @@ namespace Adxstudio.Xrm.Web.Handlers
 				throw new FormatException("Unable to convert value {0} for attribute {1} to {2}.".FormatWith(value, Attribute.CrmPropertyAttribute.LogicalName, typeof(EntityReference)));
 			}
 
-			if (propertyType == typeof (Guid?))
+			if (propertyType == typeof(Guid?))
 			{
 				return value is Guid ? value : new Guid(value.ToString());
 			}
 
-			if (propertyType == typeof (int?))
+			if (propertyType == typeof(int?))
 			{
 				return Convert.ToInt32(value);
 			}
 
-			if (propertyType == typeof (long?))
+			if (propertyType == typeof(long?))
 			{
 				return Convert.ToInt64(value);
 			}
 
-			if (propertyType == typeof (string))
+			if (propertyType == typeof(string))
 			{
 				return value is string ? value : value.ToString();
 			}

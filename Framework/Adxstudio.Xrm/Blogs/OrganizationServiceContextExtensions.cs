@@ -482,17 +482,17 @@ namespace Adxstudio.Xrm.Blogs
 
 				object postCommentPolicyAttributeValue;
 				var postCommentPolicy = entity.Attributes.TryGetValue("adx_commentpolicy", out postCommentPolicyAttributeValue) && (postCommentPolicyAttributeValue is OptionSetValue)
-					? (BlogPostCommentPolicy)Enum.ToObject(typeof (BlogPostCommentPolicy), ((OptionSetValue)postCommentPolicyAttributeValue).Value)
+					? (BlogPostCommentPolicy)Enum.ToObject(typeof(BlogPostCommentPolicy), ((OptionSetValue)postCommentPolicyAttributeValue).Value)
 					: BlogPostCommentPolicy.Inherit;
 
 				var blogCommentPolicyOption = entity.GetAttributeAliasedValue<OptionSetValue>("blog.adx_commentpolicy");
 				var blogCommentPolicy = blogCommentPolicyOption == null
 					? defaultCommentPolicy
-					: (BlogCommentPolicy)Enum.ToObject(typeof (BlogCommentPolicy), blogCommentPolicyOption.Value);
+					: (BlogCommentPolicy)Enum.ToObject(typeof(BlogCommentPolicy), blogCommentPolicyOption.Value);
 
 				var commentPolicy = postCommentPolicy == BlogPostCommentPolicy.Inherit
 					? blogCommentPolicy
-					: (BlogCommentPolicy)Enum.ToObject(typeof (BlogCommentPolicy), (int)postCommentPolicy);
+					: (BlogCommentPolicy)Enum.ToObject(typeof(BlogCommentPolicy), (int)postCommentPolicy);
 
 				var tags = entities
 					.Select(e => e.GetAttributeAliasedValue<string>("tag.adx_name"))

@@ -35,7 +35,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		/// If this <see cref="IPortalViewContext"/> is not found in view data, most of the helpers in this class will fail with
 		/// an <see cref="InvalidOperationException"/> error.
 		/// </remarks>
-		public static readonly string PortalViewContextKey = typeof (IPortalViewContext).FullName;
+		public static readonly string PortalViewContextKey = typeof(IPortalViewContext).FullName;
 
 		/// <summary>
 		/// Gets the <see cref="IPortalViewEntity"/> for the current portal user. (In most configurations, this will be a Contact record.

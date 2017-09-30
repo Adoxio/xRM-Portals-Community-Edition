@@ -58,7 +58,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 
 			var localizedString = string.Empty;
 
-			foreach(var res in resources)
+			foreach (var res in resources)
 			{
 				if (res.LCID == languageCode)
 				{
