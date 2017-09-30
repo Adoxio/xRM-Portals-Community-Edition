@@ -134,9 +134,9 @@ namespace Site.Areas.EntityList.Controllers
 			
 			return new JObjectResult(new JObject
 			{
-				{ "Title", repository.Title},
-				{ "InstallerVersion", repository.RequiredInstallerVersion},
-				{ "Description", repository.Description},
+				{ "Title", repository.Title },
+				{ "InstallerVersion", repository.RequiredInstallerVersion },
+				{ "Description", repository.Description },
 				{ "Categories", new JArray(repository.Categories.Select(e => e.Name)) },
 				{ "Packages", new JArray(repository.Packages.Select(ToJObject)) },
 			});
@@ -248,29 +248,29 @@ namespace Site.Areas.EntityList.Controllers
 		{
 			return new JObject
 			{
-				{ "DisplayName", package.DisplayName},
-				{ "UniqueName", package.UniqueName},
-				{ "URI", package.Uri},
-				{ "URL", package.Url},
-				{ "Version", package.Version},
-				{ "PublisherName", package.PublisherName},
+				{ "DisplayName", package.DisplayName },
+				{ "UniqueName", package.UniqueName },
+				{ "URI", package.Uri },
+				{ "URL", package.Url },
+				{ "Version", package.Version },
+				{ "PublisherName", package.PublisherName },
 				{ "ReleaseDate", package.ReleaseDate.ToUniversalTime().ToString("o") },
-				{ "RequiredInstallerVersion", package.RequiredInstallerVersion},
-				{ "Summary", package.Summary},
-				{ "Description", package.Description},
+				{ "RequiredInstallerVersion", package.RequiredInstallerVersion },
+				{ "Summary", package.Summary },
+				{ "Description", package.Description },
 				{ "Type", package.Type.ToString() },
 				{ "Content", new JObject
 				{
-					{ "URL", package.ContentUrl}
-				}},
-				{ "HideFromPackageListing", package.HideFromPackageListing},
-				{ "OverwriteWarning", package.OverwriteWarning},
+					{ "URL", package.ContentUrl }
+				} },
+				{ "HideFromPackageListing", package.HideFromPackageListing },
+				{ "OverwriteWarning", package.OverwriteWarning },
 				{ "Icon", package.Icon == null ? null : ToJObject(package.Icon) },
 				{ "Images", new JArray(package.Images.Select(ToJObject)) },
 				{ "Categories", new JArray(package.Categories.Select(e => e.Name)) },
 				{ "Components", new JArray(package.Components.Select(ToJObject)) },
 				{ "Dependencies", new JArray(package.Dependencies.Select(ToJObject)) },
-				{ "DuplicationEnabled", package.Configuration.DuplicationEnabled},
+				{ "DuplicationEnabled", package.Configuration.DuplicationEnabled },
 				{ "ReferenceReplacementTargets", package.Configuration.ReferenceReplacementTargets != null ? new JArray(package.Configuration.ReferenceReplacementTargets.Select(ToJObject)) : new JArray() },
 				{ "AttributeReplacementTargets", package.Configuration.AttributeReplacementTargets != null ? new JArray(package.Configuration.AttributeReplacementTargets.Select(ToJObject)) : new JArray() }
 			};
@@ -280,9 +280,9 @@ namespace Site.Areas.EntityList.Controllers
 		{
 			return new JObject
 			{
-				{ "DisplayName", component.DisplayName},
-				{ "URI", component.Uri},
-				{ "Version", component.Version},
+				{ "DisplayName", component.DisplayName },
+				{ "URI", component.Uri },
+				{ "Version", component.Version },
 			};
 		}
 
@@ -290,9 +290,9 @@ namespace Site.Areas.EntityList.Controllers
 		{
 			return new JObject
 			{
-				{ "DisplayName", dependency.DisplayName},
-				{ "URI", dependency.Uri},
-				{ "Version", dependency.Version},
+				{ "DisplayName", dependency.DisplayName },
+				{ "URI", dependency.Uri },
+				{ "Version", dependency.Version },
 			};
 		}
 
@@ -300,8 +300,8 @@ namespace Site.Areas.EntityList.Controllers
 		{
 			return new JObject
 			{
-				{ "URL", image.Url},
-				{ "Description", image.Description},
+				{ "URL", image.Url },
+				{ "Description", image.Description },
 			};
 		}
 
@@ -309,10 +309,10 @@ namespace Site.Areas.EntityList.Controllers
 		{
 			return new JObject
 			{
-				{ "Id", referenceReplacement.Id},
-				{ "LogicalName", referenceReplacement.LogicalName},
-				{ "Name", referenceReplacement.Name},
-				{ "Operation", referenceReplacement.Operation}
+				{ "Id", referenceReplacement.Id },
+				{ "LogicalName", referenceReplacement.LogicalName },
+				{ "Name", referenceReplacement.Name },
+				{ "Operation", referenceReplacement.Operation }
 			};
 		}
 
@@ -320,16 +320,16 @@ namespace Site.Areas.EntityList.Controllers
 		{
 			var jObject = new JObject
 			{
-				{ "Id", attributeReplacement.Id},
-				{ "EntityLogicalName", attributeReplacement.EntityLogicalName},
-				{ "AttributeLogicalName", attributeReplacement.AttributeLogicalName},
-				{ "Type", attributeReplacement.Type},
-				{ "Description", attributeReplacement.Description},
-				{ "Label", attributeReplacement.Label},
-				{ "InputId", attributeReplacement.InputId},
-				{ "Required", attributeReplacement.Required},
-				{ "Placeholder", attributeReplacement.Placeholder},
-				{ "DefaultValue", attributeReplacement.DefaultValue}
+				{ "Id", attributeReplacement.Id },
+				{ "EntityLogicalName", attributeReplacement.EntityLogicalName },
+				{ "AttributeLogicalName", attributeReplacement.AttributeLogicalName },
+				{ "Type", attributeReplacement.Type },
+				{ "Description", attributeReplacement.Description },
+				{ "Label", attributeReplacement.Label },
+				{ "InputId", attributeReplacement.InputId },
+				{ "Required", attributeReplacement.Required },
+				{ "Placeholder", attributeReplacement.Placeholder },
+				{ "DefaultValue", attributeReplacement.DefaultValue }
 			};
 
 			if (attributeReplacement.MaxLength.HasValue)
@@ -374,8 +374,8 @@ namespace Site.Areas.EntityList.Controllers
 		{
 			return new JObject
 			{
-				{ "Value", option.Value},
-				{ "Text", option.Text},
+				{ "Value", option.Value },
+				{ "Text", option.Text },
 			};
 		}
 

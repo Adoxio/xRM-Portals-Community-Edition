@@ -52,7 +52,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			_createRecordModal = new Lazy<CreateRelatedRecordModalDrop>(() => new CreateRelatedRecordModalDrop(portalLiquidContext, gridMetadata.CreateRelatedRecordDialog, languageCode), LazyThreadSafetyMode.None);
 		}
 
-		public IEnumerable<ActionDrop> ViewActions { get { return _viewActions.Value; }}
+		public IEnumerable<ActionDrop> ViewActions { get { return _viewActions.Value; } }
 
 		public IEnumerable<ActionDrop> ItemActions { get { return _itemActions.Value; } }
 

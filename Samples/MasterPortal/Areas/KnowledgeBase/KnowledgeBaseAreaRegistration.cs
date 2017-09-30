@@ -21,7 +21,7 @@ namespace Site.Areas.KnowledgeBase
 				"KnowledgeBaseArticle",
 				"Knowledge Base",
 				"{number}",
-				new { controller = "Article", action = "Index"});
+				new { controller = "Article", action = "Index" });
 		}
 	}
 }

@@ -413,7 +413,7 @@ namespace Adxstudio.Xrm.Web.UI.EntityList.OData
 			fetch.Entity.Orders.Clear();
 			fetch.Entity.Filters.Clear();
 
-			var filter = new Filter { Type = LogicalOperator.And};
+			var filter = new Filter { Type = LogicalOperator.And };
 			var conditions = new List<Condition>();
 			var condition = new Condition
 								{

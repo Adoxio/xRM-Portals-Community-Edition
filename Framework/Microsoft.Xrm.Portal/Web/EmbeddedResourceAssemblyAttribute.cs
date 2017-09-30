@@ -101,7 +101,7 @@ namespace Microsoft.Xrm.Portal.Web
 			return null;
 		}
 
-		private static readonly string[] _directoryDelimiters = new[] { "/", @"\", "~"};
+		private static readonly string[] _directoryDelimiters = new[] { "/", @"\", "~" };
 
 		private static void AddResource(EmbeddedResourceNode resources, IDictionary<string, EmbeddedResourceNode> lookup, string path, string resourceName)
 		{
@@ -164,7 +164,7 @@ namespace Microsoft.Xrm.Portal.Web
 				var virtualPath = lookup.ContainsKey(resourceName)
 					? lookup[resourceName]
 					: ConvertResourceNameToVirtualPath(resourceName);
-				yield return new Pair { VirtualPath = virtualPath, ResourceName = resourceName};
+				yield return new Pair { VirtualPath = virtualPath, ResourceName = resourceName };
 			}
 		}
 
@@ -210,7 +210,7 @@ namespace Microsoft.Xrm.Portal.Web
 			// for all parts: prepend an '_' if the name starts with a numeric character
 			// convert '-' to '_'
 
-			var parts = directory.Split(new[] { '.'}, StringSplitOptions.RemoveEmptyEntries);
+			var parts = directory.Split(new[] { '.' }, StringSplitOptions.RemoveEmptyEntries);
 
 			if (parts.Any())
 			{

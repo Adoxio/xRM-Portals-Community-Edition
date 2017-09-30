@@ -209,7 +209,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				?? website;
 
 			var subscriberWebsites = masterWebsite
-				.GetRelatedEntities(serviceContext, new Relationship("adx_website_parentwebsite") { PrimaryEntityRole = EntityRole.Referenced})
+				.GetRelatedEntities(serviceContext, new Relationship("adx_website_parentwebsite") { PrimaryEntityRole = EntityRole.Referenced })
 				.Select(e => new RelatedWebsite(e, false, e.ToEntityReference().Equals(website.ToEntityReference())))
 				.ToArray();
 
@@ -363,7 +363,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 							.Join(serviceContext.CreateQuery("adx_webpage"),
 								webPage => webPage.GetAttributeValue<Guid?>("adx_webpageid"),
 								subscriberWebPage => subscriberWebPage.GetAttributeValue<EntityReference>("adx_masterwebpageid").Id,
-								(webPage, subscriberWebPage) => new { webPage, subscriberWebPage})
+								(webPage, subscriberWebPage) => new { webPage, subscriberWebPage })
 							.Where(@t => @t.subscriberWebPage.GetAttributeValue<Guid?>("adx_webpageid") == current.EntityReference.Id)
 							.Where(@t => @t.webPage.GetAttributeValue<EntityReference>("adx_websiteid") == website.Entity.ToEntityReference())
 							.Where(@t => @t.webPage.GetAttributeValue<OptionSetValue>("statecode") != null && @t.webPage.GetAttributeValue<OptionSetValue>("statecode").Value == 0)

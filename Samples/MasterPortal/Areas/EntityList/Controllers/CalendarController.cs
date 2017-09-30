@@ -103,12 +103,12 @@ namespace Site.Areas.EntityList.Controllers
 			var json = new JObject
 			{
 				{ "id", @event.EntityReference.Id.ToString() },
-				{ "class", "event-info"},
-				{ "title", @event.Summary},
+				{ "class", "event-info" },
+				{ "title", @event.Summary },
 				{ "start", ToUnixMilliseconds(@event.Start) },
 				{ "end", ToUnixMilliseconds(@event.End.GetValueOrDefault(@event.Start)) },
-				{ "description", @event.Description},
-				{ "location", @event.Location},
+				{ "description", @event.Description },
+				{ "location", @event.Location },
 			};
 
 			if (!string.IsNullOrEmpty(@event.Url))
@@ -120,8 +120,8 @@ namespace Site.Areas.EntityList.Controllers
 			{
 				json["organizer"] = new JObject
 				{
-					{ "name", @event.Organizer.Name},
-					{ "email", @event.Organizer.Email},
+					{ "name", @event.Organizer.Name },
+					{ "email", @event.Organizer.Email },
 				};
 			}
 
@@ -161,8 +161,8 @@ namespace Site.Areas.EntityList.Controllers
 		{
 			return new JObjectResult(new JObject
 			{
-				{ "success", 0},
-				{ "error", message}
+				{ "success", 0 },
+				{ "error", message }
 			});
 		}
 

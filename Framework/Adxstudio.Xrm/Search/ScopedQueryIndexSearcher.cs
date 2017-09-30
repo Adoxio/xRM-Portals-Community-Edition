@@ -39,8 +39,8 @@ namespace Adxstudio.Xrm.Search
 
 			var compositeQuery = new BooleanQuery
 			{
-				{ baseQuery, Occur.MUST},
-				{ scopeQuery, Occur.MUST}
+				{ baseQuery, Occur.MUST },
+				{ scopeQuery, Occur.MUST }
 			};
 
 			return compositeQuery;

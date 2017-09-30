@@ -39,7 +39,7 @@ namespace Adxstudio.Xrm.Cms
 
 				httpContext.Items[_key] = new Dictionary<string, object>(StringComparer.Ordinal)
 				{
-					{ key, value}
+					{ key, value }
 				};
 
 				return value;

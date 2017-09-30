@@ -25,8 +25,8 @@ namespace Site
 				? new PathString(url.Action("Login", "Login", new { area = "Account" }))
 				: new PathString(url.Action("ExternalLogin", "Login", new { area = "Account", provider = defaultAuthenticationType }));
 			var externalLoginCallbackPath = new PathString(url.Action("ExternalLoginCallback", "Login", new { area = "Account" }));
-			var externalAuthenticationFailedPath = new PathString(url.Action("ExternalAuthenticationFailed", "Login", new { area = "Account"}));
-			var externalPasswordResetPath = new PathString(url.Action("ExternalPasswordReset", "Login", new { area = "Account"}));
+			var externalAuthenticationFailedPath = new PathString(url.Action("ExternalAuthenticationFailed", "Login", new { area = "Account" }));
+			var externalPasswordResetPath = new PathString(url.Action("ExternalPasswordReset", "Login", new { area = "Account" }));
 			var settingsManager = new ApplicationStartupSettingsManager(website, 
 				(manager, user) => user.GenerateUserIdentityAsync(manager), loginPath, externalLoginCallbackPath, externalAuthenticationFailedPath, externalPasswordResetPath);
 

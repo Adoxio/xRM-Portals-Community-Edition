@@ -19,12 +19,12 @@ namespace Site.Areas.Marketing
 			context.MapRoute(
 				"ManageSubscriptions",
 				"_Marketing/ManageSubscriptions/{encodedEmail}/{signature}",
-				new { action = "ManageSubscriptions", controller= "Marketing"});
+				new { action = "ManageSubscriptions", controller= "Marketing" });
 
 			context.MapRoute(
 				"Unsubscribe",
 				"_Marketing/Unsubscribe/{encodedEmail}/{encodedList}/{signature}",
-				new { action = "Unsubscribe", controller= "Marketing"});
+				new { action = "Unsubscribe", controller= "Marketing" });
 		}
 	}
 }

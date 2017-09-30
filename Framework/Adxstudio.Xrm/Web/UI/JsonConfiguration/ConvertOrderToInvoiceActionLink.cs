@@ -67,7 +67,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 			Modal = new ViewConvertOrderModal();
 
 			URL = EntityListFunctions.BuildControllerActionUrl("ConvertOrderToInvoice", "EntityAction",
-				new { area = "Portal", __portalScopeId__ = portalContext.Website.Id});
+				new { area = "Portal", __portalScopeId__ = portalContext.Website.Id });
 		}
 	}
 }

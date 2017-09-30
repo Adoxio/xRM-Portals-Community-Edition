@@ -53,10 +53,10 @@ namespace Adxstudio.Xrm.Cms.Security
 
 		private static readonly IDictionary<WebsiteRight, Func<WebsiteAccessNode, bool?>> RightMappings = new Dictionary<WebsiteRight, Func<WebsiteAccessNode, bool?>>
 		{
-			{ WebsiteRight.ManageContentSnippets, site => site.ManageContentSnippets},
-			{ WebsiteRight.ManageSiteMarkers, site => site.ManageSiteMarkers},
-			{ WebsiteRight.ManageWebLinkSets, site => site.ManageWebLinkSets},
-			{ WebsiteRight.PreviewUnpublishedEntities, site => site.PreviewUnpublishedEntities}
+			{ WebsiteRight.ManageContentSnippets, site => site.ManageContentSnippets },
+			{ WebsiteRight.ManageSiteMarkers, site => site.ManageSiteMarkers },
+			{ WebsiteRight.ManageWebLinkSets, site => site.ManageWebLinkSets },
+			{ WebsiteRight.PreviewUnpublishedEntities, site => site.PreviewUnpublishedEntities }
 		};
 
 		public bool TryAssert(OrganizationServiceContext serviceContext, WebsiteRight right)

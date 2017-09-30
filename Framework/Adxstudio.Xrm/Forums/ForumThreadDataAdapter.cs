@@ -161,7 +161,7 @@ namespace Adxstudio.Xrm.Forums
 			serviceContext.SaveChanges();
 
 			var threadEntity = SelectEntity(serviceContext);
-			var threadUpdate = new Entity(threadEntity.LogicalName) { Id = threadEntity.Id};
+			var threadUpdate = new Entity(threadEntity.LogicalName) { Id = threadEntity.Id };
 
 			threadUpdate["adx_lastpostdate"] = forumPost.PostedOn;
 			threadUpdate["adx_lastpostid"] = entity.ToEntityReference();
@@ -455,7 +455,7 @@ namespace Adxstudio.Xrm.Forums
 
 			var thread = SelectEntity(serviceContext);
 
-			var postUpdate = new Entity(post.LogicalName) { Id = post.Id};
+			var postUpdate = new Entity(post.LogicalName) { Id = post.Id };
 			var threadUpdate = new Entity(thread.LogicalName) { Id = thread.Id };
 
 			postUpdate["adx_isanswer"] = true;

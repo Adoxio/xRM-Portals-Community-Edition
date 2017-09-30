@@ -23,7 +23,7 @@ namespace Adxstudio.Xrm.Forums
 	{
 		public static ForumCounts FetchForumCounts(this OrganizationServiceContext serviceContext, Guid forumId)
 		{
-			var counts = FetchForumCounts(serviceContext, new[] { forumId});
+			var counts = FetchForumCounts(serviceContext, new[] { forumId });
 			ForumCounts count;
 
 			return counts.TryGetValue(forumId, out count) ? count : new ForumCounts(0, 0);
@@ -188,7 +188,7 @@ namespace Adxstudio.Xrm.Forums
 
 		public static IForumInfo FetchForumInfo(this OrganizationServiceContext serviceContext, Guid forumId)
 		{
-			var infos = FetchForumInfos(serviceContext, new[] { forumId});
+			var infos = FetchForumInfos(serviceContext, new[] { forumId });
 			IForumInfo info;
 
 			return infos.TryGetValue(forumId, out info) ? info : new UnknownForumInfo();
@@ -313,7 +313,7 @@ namespace Adxstudio.Xrm.Forums
 
 		public static IForumPostInfo FetchForumPostInfo(this OrganizationServiceContext serviceContext, Guid forumPostId, Guid websiteId, CloudBlobContainer cloudStorageContainer = null)
 		{
-			var infos = FetchForumPostInfos(serviceContext, new[] { forumPostId}, websiteId, cloudStorageContainer);
+			var infos = FetchForumPostInfos(serviceContext, new[] { forumPostId }, websiteId, cloudStorageContainer);
 
 			IForumPostInfo info;
 			return infos.TryGetValue(forumPostId, out info) ? info : new UnknownForumPostInfo();
@@ -408,7 +408,7 @@ namespace Adxstudio.Xrm.Forums
 
 		public static IForumThreadInfo FetchForumThreadInfo(this OrganizationServiceContext serviceContext, Guid forumThreadId, Guid websiteId)
 		{
-			var infos = FetchForumThreadInfos(serviceContext, new[] { forumThreadId}, websiteId);
+			var infos = FetchForumThreadInfos(serviceContext, new[] { forumThreadId }, websiteId);
 
 			IForumThreadInfo info;
 			return infos.TryGetValue(forumThreadId, out info) ? info : new UnknownForumThreadInfo();
@@ -516,7 +516,7 @@ namespace Adxstudio.Xrm.Forums
 
 		public static int FetchForumThreadPostCount(this OrganizationServiceContext serviceContext, Guid forumThreadId)
 		{
-			var counts = FetchForumThreadPostCounts(serviceContext, new[] { forumThreadId});
+			var counts = FetchForumThreadPostCounts(serviceContext, new[] { forumThreadId });
 			int count;
 
 			return counts.TryGetValue(forumThreadId, out count) ? count : 0;

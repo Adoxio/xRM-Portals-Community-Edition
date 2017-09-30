@@ -112,7 +112,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				textbox.Enabled = false;
 				textbox.Attributes.Add("aria-disabled", "true");
 			}
-			var hiddenValue = new HtmlInputHidden { ID = ControlID};
+			var hiddenValue = new HtmlInputHidden { ID = ControlID };
 			var hiddenValueEntityName = new HtmlInputHidden { ID = string.Format("{0}_entityname", ControlID) };
 			inputGroup.Controls.Add(textbox);
 			inputGroup.Controls.Add(hiddenValue);
@@ -339,7 +339,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				var entityForm = serviceContext.RetrieveSingle(
 					"adx_entityform",
-					new[] { "adx_entityname", "adx_mode"},
+					new[] { "adx_entityname", "adx_mode" },
 					new[] {
 						new Condition("adx_entityformid", ConditionOperator.Equal, Metadata.LookupReferenceEntityFormId),
 						new Condition("statuscode", ConditionOperator.NotNull),

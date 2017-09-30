@@ -200,7 +200,7 @@ namespace Adxstudio.Xrm.AspNet
 		public static IEnumerable<Entity> ToRemovedEntities(this Entity entity, Entity snapshot)
 		{
 			var removed = ToRemovedEntity(entity, snapshot);
-			return GetRelatedEntitiesRecursive(removed).Except(new[] { removed}).ToList();
+			return GetRelatedEntitiesRecursive(removed).Except(new[] { removed }).ToList();
 		}
 
 		private static Entity ToRemovedEntity(Entity entity, Entity snapshot)

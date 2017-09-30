@@ -65,7 +65,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 
 			if (url == null)
 				URL = EntityListFunctions.BuildControllerActionUrl("LoseOpportunity", "EntityAction",
-					new { area = "Portal", __portalScopeId__ = portalContext.Website.Id});
+					new { area = "Portal", __portalScopeId__ = portalContext.Website.Id });
 		}
 	}
 }

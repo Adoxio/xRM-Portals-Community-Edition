@@ -40,19 +40,19 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 				? RouteTable.Routes.GetVirtualPath(null, typeof(EntityRouteHandler).FullName,
 					new RouteValueDictionary
 					{
-						{ "prefix", "_entity"},
-						{ "logicalName", documentLocation.LogicalName},
-						{ "id", documentLocation.Id},
-						{ "file", file.Name}
+						{ "prefix", "_entity" },
+						{ "logicalName", documentLocation.LogicalName },
+						{ "id", documentLocation.Id },
+						{ "file", file.Name }
 					})
 				: RouteTable.Routes.GetVirtualPath(null, typeof(EntityRouteHandler).FullName + "PortalScoped",
 					new RouteValueDictionary
 					{
-						{ "prefix", "_entity"},
-						{ "logicalName", documentLocation.LogicalName},
-						{ "id", documentLocation.Id},
-						{ "__portalScopeId__", website.Id},
-						{ "file", file.Name}
+						{ "prefix", "_entity" },
+						{ "logicalName", documentLocation.LogicalName },
+						{ "id", documentLocation.Id },
+						{ "__portalScopeId__", website.Id },
+						{ "file", file.Name }
 					});
 
 			_url = virtualPath == null

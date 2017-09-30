@@ -95,7 +95,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 
 			if (url == null)
 				URL = EntityListFunctions.BuildControllerActionUrl("Delete", "EntityGrid",
-					new { area = "Portal", __portalScopeId__ = portalContext.Website.Id});
+					new { area = "Portal", __portalScopeId__ = portalContext.Website.Id });
 		}
 	}
 }

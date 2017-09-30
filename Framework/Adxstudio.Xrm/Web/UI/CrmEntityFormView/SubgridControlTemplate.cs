@@ -83,11 +83,11 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (viewId == Guid.Empty) return;
 
-			var viewGuids = new[] { viewId};
+			var viewGuids = new[] { viewId };
 
 			if (Metadata.ViewEnableViewPicker && !string.IsNullOrWhiteSpace(Metadata.ViewIds))
 			{
-				var viewids = Metadata.ViewIds.Split(new[] { ','}, StringSplitOptions.RemoveEmptyEntries);
+				var viewids = Metadata.ViewIds.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
 				if (viewids.Length >= 1)
 				{
 					viewGuids = Array.ConvertAll(viewids, Guid.Parse).AsEnumerable().OrderBy(o => o != viewId).ThenBy(o => o).ToArray();
@@ -263,8 +263,8 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			return !string.IsNullOrWhiteSpace(Metadata.ViewRelationshipName)
 				? html.EntitySubGrid(source, relationship, viewConfigurations,
 					EntityListFunctions.BuildControllerActionUrl("GetSubgridData", "EntityGrid", new { area = "Portal", __portalScopeId__ = portalContext.Website.Id }), user,
-					string.Join(" ", new[] { CssClass, cssClass}).TrimEnd(' '),
-					string.Join(" ", new[] { "table-striped", gridCssClass}).TrimEnd(' '),
+					string.Join(" ", new[] { CssClass, cssClass }).TrimEnd(' '),
+					string.Join(" ", new[] { "table-striped", gridCssClass }).TrimEnd(' '),
 					gridColumnWidthStyle, EntityGridExtensions.GridSelectMode.None, null, loadingMessage,
 					errorMessage, accessDeniedMessage, emptyMessage, Metadata.FormView.ContextName, Metadata.LanguageCode, false, true,
 					modalDetailsFormSize, modalDetailsFormCssClass, modalDetailsFormTitle, modalDetailsFormLoadingMessage, modalDetailsFormDismissButtonSrText,
@@ -283,8 +283,8 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				modalCreateRelatedRecordDismissButtonSrText, modalCreateRelatedRecordTitleCssClass)
 				: html.EntitySubGrid(viewConfigurations,
 					EntityListFunctions.BuildControllerActionUrl("GetSubgridData", "EntityGrid", new { area = "Portal", __portalScopeId__ = portalContext.Website.Id }), user,
-					string.Join(" ", new[] { CssClass, cssClass}).TrimEnd(' '),
-					string.Join(" ", new[] { "table-striped", gridCssClass}).TrimEnd(' '), gridColumnWidthStyle,
+					string.Join(" ", new[] { CssClass, cssClass }).TrimEnd(' '),
+					string.Join(" ", new[] { "table-striped", gridCssClass }).TrimEnd(' '), gridColumnWidthStyle,
 					EntityGridExtensions.GridSelectMode.None, null, loadingMessage, errorMessage, accessDeniedMessage, emptyMessage,
 					Metadata.FormView.ContextName, Metadata.LanguageCode, false, true, modalDetailsFormSize, modalDetailsFormCssClass,
 					modalDetailsFormTitle, modalDetailsFormLoadingMessage, modalDetailsFormDismissButtonSrText,
@@ -474,7 +474,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				fetch.Entity.Filters = new List<Filter>
 				{
-					new Filter { Type = LogicalOperator.And, Filters = new List<Filter> { filter}}
+					new Filter { Type = LogicalOperator.And, Filters = new List<Filter> { filter } }
 				};
 			}
 			else

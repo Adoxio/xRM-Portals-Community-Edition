@@ -205,7 +205,7 @@ namespace Site.Areas.HelpDesk.Controls
 		{
 			var context = new CrmOrganizationServiceContext(new CrmConnection("Xrm"));
 
-			var supportRequest = new Entity("adx_supportrequest") { Id = CurrentStepEntityID};
+			var supportRequest = new Entity("adx_supportrequest") { Id = CurrentStepEntityID };
 
 			supportRequest.Attributes["adx_shoppingcartid"] = myCart.Entity.ToEntityReference();
 

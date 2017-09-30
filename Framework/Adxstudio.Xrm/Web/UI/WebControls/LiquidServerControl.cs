@@ -53,7 +53,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				Guid guid;
 				if (Guid.TryParse(id, out guid))
 				{
-					var splits = html.Split(new[] { match.Value}, StringSplitOptions.RemoveEmptyEntries);
+					var splits = html.Split(new[] { match.Value }, StringSplitOptions.RemoveEmptyEntries);
 					var preSplit = new LiteralControl(splits[0]);
 					container.Controls.Add(preSplit);
 

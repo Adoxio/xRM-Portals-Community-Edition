@@ -380,9 +380,9 @@ namespace Adxstudio.Xrm
 				virtualPath = RouteTable.Routes.GetVirtualPath(requestContext, typeof(EntityRouteHandler).FullName,
 					new RouteValueDictionary
 					{
-						{ "prefix", "_entity"},
-						{ "logicalName", entity.LogicalName},
-						{ "id", entity.Id}
+						{ "prefix", "_entity" },
+						{ "logicalName", entity.LogicalName },
+						{ "id", entity.Id }
 					});
 			}
 			else
@@ -390,9 +390,9 @@ namespace Adxstudio.Xrm
 				virtualPath = RouteTable.Routes.GetVirtualPath(requestContext, typeof(EntityRouteHandler).FullName + "PortalScoped", new RouteValueDictionary
 				{
 					{ "prefix", "_entity" },
-					{ "logicalName", entity.LogicalName},
-					{ "id", entity.Id},
-					{ "__portalScopeId__", websiteId}
+					{ "logicalName", entity.LogicalName },
+					{ "id", entity.Id },
+					{ "__portalScopeId__", websiteId }
 				});
 			}
 

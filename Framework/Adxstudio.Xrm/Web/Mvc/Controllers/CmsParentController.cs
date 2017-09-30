@@ -64,7 +64,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 					return new JObjectResult(new JObject
 					{
 						{ "d", new JArray(GetWebPageReferenceJson(selected, __portalScopeId__)) },
-						{ "more", false}
+						{ "more", false }
 					});
 				}
 
@@ -115,7 +115,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 					return new JObjectResult(new JObject
 					{
 						{ "d", new JArray(GetWebPageReferenceJson(selected, __portalScopeId__)) },
-						{ "more", false}
+						{ "more", false }
 					});
 				}
 

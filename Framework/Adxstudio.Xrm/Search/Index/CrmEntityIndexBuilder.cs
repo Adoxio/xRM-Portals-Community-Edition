@@ -189,7 +189,7 @@ namespace Adxstudio.Xrm.Search.Index
 						}
 					};
 
-					var webPageIndexers = _index.GetIndexers("adx_webpage", filters: new List<Fetch.Filter> { localizedWebPagesUnderTargetWebPageFilter});
+					var webPageIndexers = _index.GetIndexers("adx_webpage", filters: new List<Fetch.Filter> { localizedWebPagesUnderTargetWebPageFilter });
 
 					UpdateWithIndexers("adx_webpage", webPageIndexers);
 				}
@@ -263,7 +263,7 @@ namespace Adxstudio.Xrm.Search.Index
 						};
 					}
 
-					var forumBlogLinks = new List<Fetch.Link>() { forumBlogToParentPageLink};
+					var forumBlogLinks = new List<Fetch.Link>() { forumBlogToParentPageLink };
 					if (languageFilter != null)
 					{
 						forumBlogLinks.Add(languageFilter);
@@ -272,7 +272,7 @@ namespace Adxstudio.Xrm.Search.Index
 					var forumIndexers = _index.GetIndexers("adx_communityforum", links: forumBlogLinks);
 					UpdateWithIndexers("adx_communityforum", forumIndexers);
 
-					var forumThreadForumLinks = new List<Fetch.Link>() { forumBlogToParentPageLink};
+					var forumThreadForumLinks = new List<Fetch.Link>() { forumBlogToParentPageLink };
 					if (languageFilter != null)
 					{
 						forumThreadForumLinks.Add(languageFilter);
@@ -287,7 +287,7 @@ namespace Adxstudio.Xrm.Search.Index
 					};
 
 					var forumThreadIndexers = _index.GetIndexers("adx_communityforumthread",
-						links: new List<Fetch.Link>() { forumThreadToParentPageLink});
+						links: new List<Fetch.Link>() { forumThreadToParentPageLink });
 					UpdateWithIndexers("adx_communityforumthread", forumThreadIndexers);
 
 					var forumPostToParentPageLink = new Fetch.Link
@@ -303,14 +303,14 @@ namespace Adxstudio.Xrm.Search.Index
 					};
 
 					var forumPostIndexers = _index.GetIndexers("adx_communityforumpost",
-						links: new List<Fetch.Link>() { forumPostToParentPageLink});
+						links: new List<Fetch.Link>() { forumPostToParentPageLink });
 					UpdateWithIndexers("adx_communityforumpost", forumPostIndexers);
 
 					// -------------------- BLOGS ------------------------------
 					var blogIndexers = _index.GetIndexers("adx_blog", links: forumBlogLinks);
 					UpdateWithIndexers("adx_blog", blogIndexers);
 
-					var blogPostBlogLinks = new List<Fetch.Link>() { forumBlogToParentPageLink};
+					var blogPostBlogLinks = new List<Fetch.Link>() { forumBlogToParentPageLink };
 					if (languageFilter != null)
 					{
 						blogPostBlogLinks.Add(languageFilter);
@@ -325,7 +325,7 @@ namespace Adxstudio.Xrm.Search.Index
 						Links = blogPostBlogLinks
 					};
 
-					var blogPostIndexers = _index.GetIndexers("adx_blogpost", links: new List<Fetch.Link> { blogPostParentPageLink});
+					var blogPostIndexers = _index.GetIndexers("adx_blogpost", links: new List<Fetch.Link> { blogPostParentPageLink });
 					UpdateWithIndexers("adx_blogpost", blogPostIndexers);
 				}
 			}
@@ -495,8 +495,8 @@ namespace Adxstudio.Xrm.Search.Index
 		{
 			return new BooleanQuery
 			{
-				{ new TermQuery(new Term(index.LogicalNameFieldName, entityLogicalName)), Occur.MUST},
-				{ new TermQuery(new Term(index.PrimaryKeyFieldName, id.ToString())), Occur.MUST}
+				{ new TermQuery(new Term(index.LogicalNameFieldName, entityLogicalName)), Occur.MUST },
+				{ new TermQuery(new Term(index.PrimaryKeyFieldName, id.ToString())), Occur.MUST }
 			};
 		}
 

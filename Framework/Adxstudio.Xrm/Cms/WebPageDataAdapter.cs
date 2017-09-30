@@ -80,12 +80,12 @@ namespace Adxstudio.Xrm.Cms
 			attributes = new Dictionary<string, object>
 			{
 				{ "regardingobjectid", page.ToEntityReference() },
-				{ "createdon", postedOn},
+				{ "createdon", postedOn },
 				{ "title", StringHelper.GetCommentTitleFromContent(content) },
 				{ "adx_approved",     (policyReader.IsCommentPolicyOpen || policyReader.IsCommentPolicyOpenToAuthenticatedUsers) },
-				{ "adx_createdbycontact", authorName},
-				{ "adx_contactemail", authorEmail},
-				{ "comments", content},
+				{ "adx_createdbycontact", authorName },
+				{ "adx_contactemail", authorEmail },
+				{ "comments", content },
 				{ "source", new OptionSetValue((int)FeedbackSource.Portal) }
 			};
 

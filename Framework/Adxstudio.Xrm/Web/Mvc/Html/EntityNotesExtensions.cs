@@ -401,7 +401,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 
 			if (deleteNotesEnabled && !string.IsNullOrWhiteSpace(serviceUrlDelete))
 			{
-				var deleteNoteModal = html.DeleteModal(modalDeleteNoteSize, string.Join(" ", new[] { "modal-deletenote", modalDeleteNoteCssClass}).TrimEnd(' '),
+				var deleteNoteModal = html.DeleteModal(modalDeleteNoteSize, string.Join(" ", new[] { "modal-deletenote", modalDeleteNoteCssClass }).TrimEnd(' '),
 					modalDeleteNoteTitle.GetValueOrDefault(DefaultDeleteNoteModalTitle),
 					modalDeleteNoteConfirmation.GetValueOrDefault(DefaultDeleteNoteModalConfirmation),
 					modalDeleteNoteDismissButtonSrText.GetValueOrDefault(DefaultModalDismissButtonSrText),

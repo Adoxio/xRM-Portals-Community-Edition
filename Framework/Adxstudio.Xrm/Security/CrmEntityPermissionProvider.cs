@@ -82,7 +82,7 @@ namespace Adxstudio.Xrm.Security
 							FromAttribute = "adx_webroleid",
 							Alias = "epw",
 							Attributes = new[] { new FetchAttribute("adx_entitypermissionid") }
-						}}
+						} }
 					}
 				};
 
@@ -896,7 +896,7 @@ namespace Adxstudio.Xrm.Security
 			{
 				fetchIn.Entity.Filters = new List<Filter>
 				{
-					new Filter { Type = LogicalOperator.And, Filters = new List<Filter> { filter}}
+					new Filter { Type = LogicalOperator.And, Filters = new List<Filter> { filter } }
 				};
 			}
 			else

@@ -64,7 +64,7 @@ namespace Microsoft.Xrm.Client.Services
 			const string requestName = "FetchXmlToQueryExpression";
 			var parameters = new Dictionary<string, object>
 			{
-				{ "FetchXml", fetchXml},
+				{ "FetchXml", fetchXml },
 			};
 
 			return service.Execute<QueryExpression>(requestName, parameters, "Query");

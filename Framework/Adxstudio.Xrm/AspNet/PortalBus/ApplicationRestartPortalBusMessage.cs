@@ -22,8 +22,8 @@ namespace Adxstudio.Xrm.AspNet.PortalBus
 		private static readonly IDictionary<string, IEnumerable<string>> _entitiesToRestart = new Dictionary<string, IEnumerable<string>>
 		{
 			{ "adx_sitesetting", GetSiteSettingPatterns().ToArray() },
-			{ "adx_websitebinding", new [] { ".*"} },
-			{ "adx_website", new [] { ".*"} }
+			{ "adx_websitebinding", new [] { ".*" } },
+			{ "adx_website", new [] { ".*" } }
 		};
 
 		public override Task InvokeAsync(IOwinContext context)

@@ -17,15 +17,15 @@ namespace Adxstudio.Xrm.AspNet.Cms
 	{
 		private static readonly IEnumerable<KeyValuePair<string, string>> HeaderSettings = new Dictionary<string, string>
 		{
-			{ "HTTP/Access-Control-Allow-Credentials",    "Access-Control-Allow-Credentials"},
-			{ "HTTP/Access-Control-Allow-Headers",        "Access-Control-Allow-Headers"},
-			{ "HTTP/Access-Control-Allow-Methods",        "Access-Control-Allow-Methods"},
-			{ "HTTP/Access-Control-Allow-Origin",         "Access-Control-Allow-Origin"},
-			{ "HTTP/Access-Control-Expose-Headers",       "Access-Control-Expose-Headers"},
-			{ "HTTP/Access-Control-Max-Age",              "Access-Control-Max-Age"},
-			{ "HTTP/Content-Security-Policy",             "Content-Security-Policy"},
-			{ "HTTP/Content-Security-Policy-Report-Only", "Content-Security-Policy-Report-Only"},
-			{ "HTTP/X-Frame-Options",                     "X-Frame-Options"}
+			{ "HTTP/Access-Control-Allow-Credentials",    "Access-Control-Allow-Credentials" },
+			{ "HTTP/Access-Control-Allow-Headers",        "Access-Control-Allow-Headers" },
+			{ "HTTP/Access-Control-Allow-Methods",        "Access-Control-Allow-Methods" },
+			{ "HTTP/Access-Control-Allow-Origin",         "Access-Control-Allow-Origin" },
+			{ "HTTP/Access-Control-Expose-Headers",       "Access-Control-Expose-Headers" },
+			{ "HTTP/Access-Control-Max-Age",              "Access-Control-Max-Age" },
+			{ "HTTP/Content-Security-Policy",             "Content-Security-Policy" },
+			{ "HTTP/Content-Security-Policy-Report-Only", "Content-Security-Policy-Report-Only" },
+			{ "HTTP/X-Frame-Options",                     "X-Frame-Options" }
 		};
 
 		public WebsiteHeaderSettingsMiddleware(OwinMiddleware next, CrmWebsite website) : base(next)

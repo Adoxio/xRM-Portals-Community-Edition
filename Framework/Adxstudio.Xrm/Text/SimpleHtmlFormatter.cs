@@ -38,7 +38,7 @@ namespace Adxstudio.Xrm.Text
 			text = LinkifyUrls ? ReplaceUrlsWithLinks(text) : text;
 
 			// Split text on blank lines.
-			var blocks = text.Split(new[] { "\r\n\r\n", "\n\n"}, StringSplitOptions.RemoveEmptyEntries);
+			var blocks = text.Split(new[] { "\r\n\r\n", "\n\n" }, StringSplitOptions.RemoveEmptyEntries);
 
 			var html = new StringBuilder();
 

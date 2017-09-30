@@ -101,7 +101,7 @@ namespace Adxstudio.Xrm.Web.Security
 					{
 						new Condition(_attributeMapStateCode, ConditionOperator.Equal, 0),
 						new Condition(_attributeMapRoleWebsiteId, ConditionOperator.Equal, WebsiteID.Id)
-					}}},
+					} } },
 					Links = new[] { new Link
 					{
 						Name = _roleToParentRelationshipEntityName,
@@ -115,7 +115,7 @@ namespace Adxstudio.Xrm.Web.Security
 							Filters = new[] { new Filter { Conditions = new[]
 							{
 								new Condition(_attributeMapStateCode, ConditionOperator.Equal, 0)
-							}}},
+							} } },
 							Links = new[] { new Link
 							{
 								IsUnique = true,
@@ -126,10 +126,10 @@ namespace Adxstudio.Xrm.Web.Security
 								{
 									new Condition(_attributeMapStateCode, ConditionOperator.Equal, 0),
 									new Condition(_attributeMapUsername, ConditionOperator.Equal, username)
-								}}}
-							}}
-						}}
-					}}
+								} } }
+							} }
+						} }
+					} }
 				}
 			};
 
@@ -170,7 +170,7 @@ namespace Adxstudio.Xrm.Web.Security
 					{
 						new Condition(_attributeMapStateCode, ConditionOperator.Equal, 0),
 						new Condition(_attributeMapUsername, ConditionOperator.NotNull)
-					}}},
+					} } },
 					Links = new[] { new Link
 					{
 						Name = _parentEntityName,
@@ -191,10 +191,10 @@ namespace Adxstudio.Xrm.Web.Security
 									new Condition(_attributeMapStateCode, ConditionOperator.Equal, 0),
 									new Condition(_attributeMapRoleName, ConditionOperator.Equal, roleName),
 									new Condition(_attributeMapRoleWebsiteId, ConditionOperator.Equal, WebsiteID.Id)
-								}}}
-							}}
-						}}
-					}}
+								} } }
+							} }
+						} }
+					} }
 				}
 			};
 

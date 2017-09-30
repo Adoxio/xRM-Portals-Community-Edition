@@ -211,7 +211,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				virtualPath = RouteTable.Routes.GetVirtualPath(requestContext, "PortalQuickFormTemplatePath", new RouteValueDictionary
 				{
-					{ "__portalScopeId__", website.Id}
+					{ "__portalScopeId__", website.Id }
 				});
 			}
 

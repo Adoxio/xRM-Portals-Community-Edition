@@ -47,7 +47,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 										LogicalName = recordEntityLogicalName,
 										PrimaryKeyLogicalName = recordEntityPrimaryKeyLogicalName
 									};
-			var step = new SessionHistory.Step { ID = currentStepId, Index = currentStepIndex, ReferenceEntity = referenceEntity};
+			var step = new SessionHistory.Step { ID = currentStepId, Index = currentStepIndex, ReferenceEntity = referenceEntity };
 			stepHistory.Add(step);
 			return (new SessionHistory
 			{

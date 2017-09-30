@@ -57,10 +57,10 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 			{
 				return new JObjectResult(new JObject
 				{
-					{ "itemCount", 0},
-					{ "pageNumber", pageNumber},
-					{ "pageSize", pageSize},
-					{ "pageCount", 0},
+					{ "itemCount", 0 },
+					{ "pageNumber", pageNumber },
+					{ "pageSize", pageSize },
+					{ "pageCount", 0 },
 					{ "items", new JArray() }
 				});
 			}
@@ -95,10 +95,10 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 				ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Search term:{0}, length: {1}, results contain {2} items", searchTerm, searchTerm.Length, itemCount));
 
 				var jsonResult = new JObject {
-					{ "itemCount", itemCount},
-					{ "pageNumber", results.PageNumber},
-					{ "pageSize", results.PageSize},
-					{ "pageCount", pageCount},
+					{ "itemCount", itemCount },
+					{ "pageNumber", results.PageNumber },
+					{ "pageSize", results.PageSize },
+					{ "pageCount", pageCount },
 					{ "items", new JArray(results.Select(GetSearchResultJson)) }
 				};
 
@@ -207,8 +207,8 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 				facetViewJson.Add(
 					new JObject
 						{
-							{ "displayName", localizedConstraintName},
-							{ "name",  constraint.ConstraintValue},
+							{ "displayName", localizedConstraintName },
+							{ "name",  constraint.ConstraintValue },
 							{ "hitCount", hitCountsEnabled ? constraint.HitCount.ToString() : string.Empty }
 						});
 			}
@@ -260,11 +260,11 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 			var json = new JObject
 			{
 				{ "entityID", @searchResult.EntityID.ToString() },
-				{ "entityLogicalName", @searchResult.EntityLogicalName},
-				{ "title", @searchResult.Title},
-				{ "fragment", @searchResult.Fragment},
-				{ "resultNumber", @searchResult.ResultNumber},
-				{ "score", @searchResult.Score}
+				{ "entityLogicalName", @searchResult.EntityLogicalName },
+				{ "title", @searchResult.Title },
+				{ "fragment", @searchResult.Fragment },
+				{ "resultNumber", @searchResult.ResultNumber },
+				{ "score", @searchResult.Score }
 			};
 
 			//Adding annotations to KnowledgeArticle
@@ -279,10 +279,10 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 
 					var relatedNote = new JObject
 					{
-						{ "entityID", note.EntityID},
-						{ "entityLogicalName", note.EntityLogicalName},
+						{ "entityID", note.EntityID },
+						{ "entityLogicalName", note.EntityLogicalName },
 						{ "title", note.Entity.GetAttributeValue<string>("filename") },
-						{ "fragment", note.Fragment}, { "url", note.Url.ToString() },
+						{ "fragment", note.Fragment }, { "url", note.Url.ToString() },
 						{ "absoluteUrl", BuildAbsoluteUrl(note.Url.ToString()) }
 					};
 					list.Add(relatedNote);

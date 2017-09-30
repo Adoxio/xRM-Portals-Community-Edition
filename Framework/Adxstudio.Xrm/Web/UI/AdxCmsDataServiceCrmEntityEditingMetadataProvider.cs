@@ -300,7 +300,7 @@ namespace Adxstudio.Xrm.Web.UI
 					}
 
 					// Add the service reference to the bound entity.
-					container.Controls.Add(new HyperLink { CssClass = "xrm-entity-ref", NavigateUrl = VirtualPathUtility.ToAbsolute(serviceUri), Text = string.Empty});
+					container.Controls.Add(new HyperLink { CssClass = "xrm-entity-ref", NavigateUrl = VirtualPathUtility.ToAbsolute(serviceUri), Text = string.Empty });
 
 					string entityUrlServiceUri;
 

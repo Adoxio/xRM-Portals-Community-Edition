@@ -54,29 +54,29 @@ namespace Site.Areas.Portal
 			context.MapRoute("PortalDeleteNote", "_services/entity-form-deletenote/{__portalScopeId__}", new { controller = "EntityNotes", action = "DeleteNote" });
 			context.MapRoute("PortalGetNotes", "_services/entity-notes/{__portalScopeId__}", new { controller = "EntityNotes", action = "GetNotes" });
 			context.MapRoute("PortalBadges", "_services/badges/{__portalScopeId__}/{userid}/{type}", new { controller = "Badges", action = "GetBadges" }, new[] { "Adxstudio.Xrm.Cms.Badges.Controllers" });
-			context.MapRoute("PortalGetSharePointData", "_services/sharepoint-data.json/{__portalScopeId__}", new { controller = "SharePointGrid", action = "GetSharePointData"});
-			context.MapRoute("PortalAddSharePointFiles", "_services/sharepoint-addfiles/{__portalScopeId__}", new { controller = "SharePointGrid", action = "AddSharePointFiles"});
-			context.MapRoute("PortalAddSharePointFolder", "_services/sharepoint-addfolder/{__portalScopeId__}", new { controller = "SharePointGrid", action = "AddSharePointFolder"});
-			context.MapRoute("PortalDeleteSharePointItem", "_services/sharepoint-deleteitem/{__portalScopeId__}", new { controller = "SharePointGrid", action = "DeleteSharePointItem"});
+			context.MapRoute("PortalGetSharePointData", "_services/sharepoint-data.json/{__portalScopeId__}", new { controller = "SharePointGrid", action = "GetSharePointData" });
+			context.MapRoute("PortalAddSharePointFiles", "_services/sharepoint-addfiles/{__portalScopeId__}", new { controller = "SharePointGrid", action = "AddSharePointFiles" });
+			context.MapRoute("PortalAddSharePointFolder", "_services/sharepoint-addfolder/{__portalScopeId__}", new { controller = "SharePointGrid", action = "AddSharePointFolder" });
+			context.MapRoute("PortalDeleteSharePointItem", "_services/sharepoint-deleteitem/{__portalScopeId__}", new { controller = "SharePointGrid", action = "DeleteSharePointItem" });
 			context.MapRoute("Default", "_portal/{__portalScopeId__}/{controller}/{action}");
 			context.Routes.MapPageRoute("PortalModalFormTemplatePath", "_portal/modal-form-template-path/{__portalScopeId__}", "~/Areas/Portal/Pages/Form.aspx");
 			context.Routes.MapPageRoute("PortalQuickFormTemplatePath", "_portal/quickform-template-path/{__portalScopeId__}", "~/Areas/Portal/Pages/QuickForm.aspx");
 			
 			context.MapRoute("Layout_TokenHtml", "_layout/tokenhtml", new { controller = "Layout", action = "GetAntiForgeryToken" });
 			context.MapRoute("Layout_ContextUrlWithLanguage", "_layout/contexturlwithlanguage", new { controller = "Layout", action = "ContextUrlWithLanguage" });
-			context.MapRoute("Layout_Header", "_layout/header", new { controller = "Layout", action = "Header"});
-			context.MapRoute("Layout_HeaderChildNavbar", "_layout/headerchildnavbar", new { controller = "Layout", action = "HeaderChildNavbar"});
-			context.MapRoute("Layout_HeaderPrimaryNavigation", "_layout/headerprimarynavigation", new { controller = "Layout", action = "HeaderPrimaryNavigation"});
-			context.MapRoute("Layout_HeaderPrimaryNavigationTabs", "_layout/headerprimarynavigationtabs", new { controller = "Layout", action = "HeaderPrimaryNavigationTabs"});
-			context.MapRoute("Layout_HeaderPrimaryNavigationXs", "_layout/headerprimarynavigationxs", new { controller = "Layout", action = "HeaderPrimaryNavigationXs"});
-			context.MapRoute("Layout_Footer", "_layout/footer", new { controller = "Layout", action = "Footer"});
-			context.MapRoute("Layout_LiquidSubstitution", "_layout/liquidsubstitution", new { controller = "Layout", action = "LiquidSubstitution"});
-			context.MapRoute("Layout_RegisterUrl", "_layout/registerurl", new { controller = "Layout", action = "RegisterUrl"});
-			context.MapRoute("Layout_SignInLink", "_layout/signinlink", new { controller = "Layout", action = "SignInLink"});
-			context.MapRoute("Layout_SignInUrl", "_layout/signinurl", new { controller = "Layout", action = "SignInUrl"});
-			context.MapRoute("Layout_SignOutUrl", "_layout/signouturl", new { controller = "Layout", action = "SignOutUrl"});
+			context.MapRoute("Layout_Header", "_layout/header", new { controller = "Layout", action = "Header" });
+			context.MapRoute("Layout_HeaderChildNavbar", "_layout/headerchildnavbar", new { controller = "Layout", action = "HeaderChildNavbar" });
+			context.MapRoute("Layout_HeaderPrimaryNavigation", "_layout/headerprimarynavigation", new { controller = "Layout", action = "HeaderPrimaryNavigation" });
+			context.MapRoute("Layout_HeaderPrimaryNavigationTabs", "_layout/headerprimarynavigationtabs", new { controller = "Layout", action = "HeaderPrimaryNavigationTabs" });
+			context.MapRoute("Layout_HeaderPrimaryNavigationXs", "_layout/headerprimarynavigationxs", new { controller = "Layout", action = "HeaderPrimaryNavigationXs" });
+			context.MapRoute("Layout_Footer", "_layout/footer", new { controller = "Layout", action = "Footer" });
+			context.MapRoute("Layout_LiquidSubstitution", "_layout/liquidsubstitution", new { controller = "Layout", action = "LiquidSubstitution" });
+			context.MapRoute("Layout_RegisterUrl", "_layout/registerurl", new { controller = "Layout", action = "RegisterUrl" });
+			context.MapRoute("Layout_SignInLink", "_layout/signinlink", new { controller = "Layout", action = "SignInLink" });
+			context.MapRoute("Layout_SignInUrl", "_layout/signinurl", new { controller = "Layout", action = "SignInUrl" });
+			context.MapRoute("Layout_SignOutUrl", "_layout/signouturl", new { controller = "Layout", action = "SignOutUrl" });
 			
-			context.MapRoute("Get_ResourceManager", "_resources/getresourcemanager", new { controller = "Resources", action = "ResourceManager"});
+			context.MapRoute("Get_ResourceManager", "_resources/getresourcemanager", new { controller = "Resources", action = "ResourceManager" });
 		}
 	}
 }

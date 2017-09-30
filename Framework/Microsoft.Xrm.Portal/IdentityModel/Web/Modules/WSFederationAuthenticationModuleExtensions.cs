@@ -87,7 +87,7 @@ namespace Microsoft.Xrm.Portal.IdentityModel.Web.Modules
 		{
 			var ctx = new Dictionary<string, string>
 			{
-				{ returnUrlKey, returnUrl},
+				{ returnUrlKey, returnUrl },
 			};
 
 			var requestUrl = GetSignInRequestUrl(fam, ctx);

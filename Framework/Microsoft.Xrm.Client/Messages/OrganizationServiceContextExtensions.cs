@@ -111,10 +111,10 @@ namespace Microsoft.Xrm.Client.Messages
 			const string requestName = "RetrieveEntity";
 			var parameters = new Dictionary<string, object>
 			{
-				{ "LogicalName", logicalName},
-				{ "EntityFilters", entityFilters},
-				{ "RetrieveAsIfPublished", retrieveAsIfPublished},
-				{ "MetadataId", Guid.Empty},
+				{ "LogicalName", logicalName },
+				{ "EntityFilters", entityFilters },
+				{ "RetrieveAsIfPublished", retrieveAsIfPublished },
+				{ "MetadataId", Guid.Empty },
 			};
 
 			return service.Execute<EntityMetadata>(requestName, parameters, "EntityMetadata");
@@ -129,10 +129,10 @@ namespace Microsoft.Xrm.Client.Messages
 			const string requestName = "RetrieveAttribute";
 			var parameters = new Dictionary<string, object>
 			{
-				{ "EntityLogicalName", entityLogicalName},
-				{ "LogicalName", logicalName},
-				{ "RetrieveAsIfPublished", retrieveAsIfPublished},
-				{ "MetadataId", Guid.Empty},
+				{ "EntityLogicalName", entityLogicalName },
+				{ "LogicalName", logicalName },
+				{ "RetrieveAsIfPublished", retrieveAsIfPublished },
+				{ "MetadataId", Guid.Empty },
 			};
 
 			return service.Execute<AttributeMetadata>(requestName, parameters, "AttributeMetadata");
@@ -146,9 +146,9 @@ namespace Microsoft.Xrm.Client.Messages
 			const string requestName = "RetrieveAllEntities";
 			var parameters = new Dictionary<string, object>
 			{
-				{ "EntityFilters", entityFilters},
-				{ "RetrieveAsIfPublished", retrieveAsIfPublished},
-				{ "MetadataId", Guid.Empty},
+				{ "EntityFilters", entityFilters },
+				{ "RetrieveAsIfPublished", retrieveAsIfPublished },
+				{ "MetadataId", Guid.Empty },
 			};
 
 			return service.Execute<EntityMetadata[]>(requestName, parameters, "EntityMetadata");

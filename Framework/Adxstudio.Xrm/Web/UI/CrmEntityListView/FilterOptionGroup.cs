@@ -454,7 +454,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
 			{
 				fetch.Entity.Filters = new List<Filter>
 				{
-					new Filter { Type = LogicalOperator.And, Filters = new List<Filter> { filter}}
+					new Filter { Type = LogicalOperator.And, Filters = new List<Filter> { filter } }
 				};
 			}
 			else

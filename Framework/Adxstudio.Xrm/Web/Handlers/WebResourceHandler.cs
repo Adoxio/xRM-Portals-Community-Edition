@@ -23,16 +23,16 @@ namespace Adxstudio.Xrm.Web.Handlers
 		/// </summary>
 		private Dictionary<int, string> _webResourceTypes = new Dictionary<int, string>
 		{
-			{ 1, "text/html"}, //Web Page (HTML)
-			{ 2, "text/css"}, //Style Sheet (CSS)
-			{ 3, "application/x-javascript"}, //Script (JScript)
-			{ 4, "text/xml"}, //Data (XML)
-			{ 5, "image/png"}, //PNG format
-			{ 6, "image/jpeg"}, //JPG format
-			{ 7, "image/gif"}, //GIF format
-			{ 8, "application/x-silverlight-app"}, //Silverlight (XAP)
-			{ 9, "text/xml"}, //Stylesheet (XSL)
-			{ 10, "image/x-icon"}, //ICO format
+			{ 1, "text/html" }, //Web Page (HTML)
+			{ 2, "text/css" }, //Style Sheet (CSS)
+			{ 3, "application/x-javascript" }, //Script (JScript)
+			{ 4, "text/xml" }, //Data (XML)
+			{ 5, "image/png" }, //PNG format
+			{ 6, "image/jpeg" }, //JPG format
+			{ 7, "image/gif" }, //GIF format
+			{ 8, "application/x-silverlight-app" }, //Silverlight (XAP)
+			{ 9, "text/xml" }, //Stylesheet (XSL)
+			{ 10, "image/x-icon" }, //ICO format
 		};
 
 		public WebResourceHandler(Entity webResource)

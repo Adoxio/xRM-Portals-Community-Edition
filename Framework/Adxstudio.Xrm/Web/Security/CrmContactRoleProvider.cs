@@ -314,7 +314,7 @@ namespace Adxstudio.Xrm.Web.Security
 				{
 					new Condition(_attributeMapStateCode, ConditionOperator.Equal, 0),
 					new Condition(_attributeMapRoleWebsiteId, ConditionOperator.Equal, WebsiteID.Id)
-				}}},
+				} } },
 				Links = new[] { new Link
 				{
 					Name = _roleToUserRelationshipName,
@@ -330,10 +330,10 @@ namespace Adxstudio.Xrm.Web.Security
 						Filters = new[] { new Filter
 						{
 							Conditions = GetUserNamePredicate(username)
-						}}
-					}}
-				}}
-			}};
+						} }
+					} }
+				} }
+			} };
 
 			var service = HttpContext.Current.GetOrganizationService();
 			var entities = service.RetrieveMultiple(fetch).Entities;
@@ -350,8 +350,8 @@ namespace Adxstudio.Xrm.Web.Security
 						new Condition(_attributeMapStateCode, ConditionOperator.Equal, 0),
 						new Condition(_attributeMapRoleWebsiteId, ConditionOperator.Equal, WebsiteID.Id),
 						new Condition(_attributeMapIsAuthenticatedUsersRole, ConditionOperator.Equal, true)
-					}}}
-				}};
+					} } }
+				} };
 
 				entities = service.RetrieveMultiple(fetch).Entities;
 				var authenticatedUsersRoleNames = entities.Select(e => e.GetAttributeValue<string>(_attributeMapRoleName)).ToList();
@@ -441,9 +441,9 @@ namespace Adxstudio.Xrm.Web.Security
 							Filters = new[] { new Filter
 							{
 								Conditions = new[] { new Condition(_roleEntityId, ConditionOperator.In, roleIds)  }
-							}}
-						}}
-					}}
+							} }
+						} }
+					} }
 				}
 			};
 
@@ -608,7 +608,7 @@ namespace Adxstudio.Xrm.Web.Security
 						new Condition(_attributeMapStateCode, ConditionOperator.Equal, 0),
 						new Condition(_attributeMapRoleName, ConditionOperator.Equal, roleName),
 						new Condition(_attributeMapRoleWebsiteId, ConditionOperator.Equal, WebsiteID.Id)
-					}}}
+					} } }
 				}
 			};
 

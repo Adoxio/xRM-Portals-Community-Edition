@@ -12,12 +12,12 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 	{
 		private static readonly IDictionary<string, bool> BooleanValueMappings = new Dictionary<string, bool>(StringComparer.InvariantCultureIgnoreCase)
 		{
-			{ "on", true},
-			{ "enabled", true},
-			{ "yes", true},
-			{ "off", false},
-			{ "disabled", false},
-			{ "no", false},
+			{ "on", true },
+			{ "enabled", true },
+			{ "yes", true },
+			{ "off", false },
+			{ "disabled", false },
+			{ "no", false },
 		};
 
 		/// <summary>

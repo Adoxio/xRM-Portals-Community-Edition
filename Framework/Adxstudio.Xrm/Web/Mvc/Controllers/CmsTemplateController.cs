@@ -41,9 +41,9 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 				.GetTemplateFiles()
 				.OrderBy(template => template.Name)
 				.Select(template => new JObject {
-					{ "name", template.Name},
-					{ "title", template.Title},
-					{ "description", template.Description},
+					{ "name", template.Name },
+					{ "title", template.Title },
+					{ "description", template.Description },
 					{ "include", string.IsNullOrEmpty(template.DefaultArguments)
 						? "{{% include '{0}' %}}".FormatWith(template.Name)
 						: "{{% include '{0}' {1} %}}".FormatWith(template.Name, template.DefaultArguments)

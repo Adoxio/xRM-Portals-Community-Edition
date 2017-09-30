@@ -130,7 +130,7 @@ namespace Adxstudio.Xrm.Cms
 
 			activityparty["partyid"] = user;
 
-			var particpant = new EntityCollection(new List<Entity> { activityparty});
+			var particpant = new EntityCollection(new List<Entity> { activityparty });
 
 			alert["customers"] = particpant;
 

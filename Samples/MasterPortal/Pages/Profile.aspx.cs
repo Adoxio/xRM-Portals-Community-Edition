@@ -90,7 +90,7 @@ namespace Site.Pages
 			var contact = !Contact.Contains("donotemail") || !Contact.Contains("donotfax") || !Contact.Contains("donotphone") || !Contact.Contains("donotpostalmail")
 				? PortalOrganizationService.RetrieveSingle(
 					"contact",
-					new[] { "donotemail", "donotfax", "donotphone", "donotpostalmail"},
+					new[] { "donotemail", "donotfax", "donotphone", "donotpostalmail" },
 					new[] {
 						new Condition("statecode", ConditionOperator.Equal, 0),
 						new Condition("contactid", ConditionOperator.Equal, Contact.Id)

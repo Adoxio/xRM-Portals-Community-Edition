@@ -152,7 +152,7 @@ namespace Adxstudio.Xrm.Commerce
 
 				if (order != null)
 				{
-					var orderUpdate = new Entity("salesorder") { Id = order.Id};
+					var orderUpdate = new Entity("salesorder") { Id = order.Id };
 					orderUpdate["adx_receiptnumber"] = receiptNumber;
 					serviceContext.Attach(orderUpdate);
 					serviceContext.UpdateObject(orderUpdate);

@@ -702,7 +702,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			// Primary key filter
 			var primaryAttributeFilter = new Filter
 			{
-				Conditions = new[] { primaryAttributeCondition},
+				Conditions = new[] { primaryAttributeCondition },
 				Type = LogicalOperator.And
 			};
 

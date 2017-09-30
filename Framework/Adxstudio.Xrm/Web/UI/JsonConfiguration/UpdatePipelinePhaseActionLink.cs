@@ -74,7 +74,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 
 			if (url == null)
 				URL = EntityListFunctions.BuildControllerActionUrl("UpdatePipelinePhase", "EntityAction",
-					new { area = "Portal", __portalScopeId__ = portalContext.Website.Id});
+					new { area = "Portal", __portalScopeId__ = portalContext.Website.Id });
 
 			var subjectLabel = action.StepNameLabel.GetLocalizedString(languageCode);
 			var descriptionLabel = action.DescriptionLabel.GetLocalizedString(languageCode);

@@ -114,9 +114,9 @@ namespace Site.Areas.Portal.Pages
 
 			return new JObject
 			{
-				{ "type", "Success"},
-				{ "name", e.EntityDisplayName},
-				{ "id", e.EntityId.HasValue ? e.EntityId.Value.ToString() : null}
+				{ "type", "Success" },
+				{ "name", e.EntityDisplayName },
+				{ "id", e.EntityId.HasValue ? e.EntityId.Value.ToString() : null }
 			}.ToString(Formatting.None);
 		}
 	}

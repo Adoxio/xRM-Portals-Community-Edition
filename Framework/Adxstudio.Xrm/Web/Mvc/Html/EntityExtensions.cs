@@ -651,7 +651,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 			{
 				ViewData = new ViewDataDictionary
 				{
-					{ PortalExtensions.PortalViewContextKey, portalViewContext}
+					{ PortalExtensions.PortalViewContextKey, portalViewContext }
 				}
 			}, new ViewPage());
 

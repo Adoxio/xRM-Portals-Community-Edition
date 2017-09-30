@@ -389,14 +389,14 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 					languageJson = new JObject
 					{
 						{ "Id", langContext.ContextLanguage.EntityReference.Id.ToString() },
-						{ "LogicalName", langContext.ContextLanguage.EntityReference.LogicalName}
+						{ "LogicalName", langContext.ContextLanguage.EntityReference.LogicalName }
 					};
 
 					portalViewContext.RenderEditingMetadata("adx_contentsnippet", tag, snippetName, new JObject
 					{
-						{ "adx_name", snippetName},
-						{ "adx_display_name", displayName},
-						{ "adx_contentsnippetlanguageid", languageJson}
+						{ "adx_name", snippetName },
+						{ "adx_display_name", displayName },
+						{ "adx_contentsnippetlanguageid", languageJson }
 					});
 				}
 
@@ -404,7 +404,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				{
 					portalViewContext.RenderEditingMetadata("adx_contentsnippet", tag, snippetName, new JObject
 					{
-						{ "adx_name", snippetName},
+						{ "adx_name", snippetName },
 						{ "adx_display_name", displayName }
 					});
 				}

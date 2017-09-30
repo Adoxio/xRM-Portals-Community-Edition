@@ -160,24 +160,24 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 
 			var globals = new Hash
 			{
-				{ "context", contextDrop},
+				{ "context", contextDrop },
 				{ "entities", new EntitiesDrop(portalLiquidContext) },
-				{ "now", DateTime.UtcNow},
-				{ "params", requestDrop == null ? null : requestDrop.Params},
-				{ "request", requestDrop},
+				{ "now", DateTime.UtcNow },
+				{ "params", requestDrop == null ? null : requestDrop.Params },
+				{ "request", requestDrop },
 				{ "settings", new SettingsDrop(portalViewContext.Settings) },
 				{ "sharepoint", new SharePointDrop(portalLiquidContext) },
-				{ "sitemap", siteMapDrop},
+				{ "sitemap", siteMapDrop },
 				{ "sitemarkers", new SiteMarkersDrop(portalLiquidContext, portalViewContext.SiteMarkers) },
 				{ "snippets", new SnippetsDrop(portalLiquidContext, portalViewContext.Snippets) },
-				{ "user", contextDrop.User},
+				{ "user", contextDrop.User },
 				{ "weblinks", new WebLinkSetsDrop(portalLiquidContext, portalViewContext.WebLinks) },
 				{ "ads", new AdsDrop(portalLiquidContext, portalViewContext.Ads) },
 				{ "polls", new PollsDrop(portalLiquidContext, portalViewContext.Polls) },
 				{ "forums", new ForumsDrop(portalLiquidContext, forumDependencies) },
 				{ "events", new EventsDrop(portalLiquidContext, forumDependencies) },
 				{ "blogs", new BlogsDrop(portalLiquidContext, blogDependencies) },
-				{ "website", contextDrop.Website},
+				{ "website", contextDrop.Website },
 				{ "resx", new ResourceManagerDrop(portalLiquidContext) },
 				{ "knowledge", new KnowledgeDrop(portalLiquidContext, knowledgeDependencies) },
 				{ "uniqueId", new UniqueDrop() }
@@ -195,11 +195,11 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 
 			environment = new LiquidEnvironment(globals, new Hash
 			{
-				{ "htmlHelper", html},
+				{ "htmlHelper", html },
 				{ "file_system", new CompositeFileSystem(
 					new EntityFileSystem(portalViewContext, "adx_webtemplate", "adx_name", "adx_source"),
 					new EmbeddedResourceFileSystem(typeof(LiquidExtensions).Assembly, "Adxstudio.Xrm.Liquid")) },
-				{ "portalLiquidContext", portalLiquidContext}
+				{ "portalLiquidContext", portalLiquidContext }
 			});
 
 			html.ViewContext.TempData[environmentKey] = environment;

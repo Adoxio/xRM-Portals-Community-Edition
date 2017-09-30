@@ -38,7 +38,7 @@ namespace Site.Areas.CaseManagement.Controllers
 				if (entitlements.Any())
 				{
 					var defaultEntitlement = entitlements[0];
-					return Json(new { id = defaultEntitlement.Id, name = defaultEntitlement.Attributes["name"], entityname = defaultEntitlement.LogicalName});
+					return Json(new { id = defaultEntitlement.Id, name = defaultEntitlement.Attributes["name"], entityname = defaultEntitlement.LogicalName });
 				}
 			}
 			return Json(null);
