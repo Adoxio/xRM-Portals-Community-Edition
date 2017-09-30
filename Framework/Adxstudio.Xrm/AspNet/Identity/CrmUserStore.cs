@@ -25,7 +25,7 @@ namespace Adxstudio.Xrm.AspNet.Identity
 
 		public static readonly ColumnSet ExternalIdentityAttributes = new ColumnSet("adx_username", "adx_identityprovidername");
 
-		public static readonly EntityNodeColumn [] ContactAttributes =
+		public static readonly EntityNodeColumn[] ContactAttributes =
 		{
 			new EntityNodeColumn("adx_identity_logonenabled", BaseSolutionVersions.NaosAndOlderVersions),
 			new EntityNodeColumn("adx_identity_username", BaseSolutionVersions.NaosAndOlderVersions),

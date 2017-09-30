@@ -31,7 +31,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 	/// </summary>
 	public class WebNotificationHandler : IHttpHandler, IRouteHandler
 	{
-		private static readonly string [] SearchIndexApplicableMessages = new[] { "Build", "Publish", "PublishAll", "Delete", "Create", "Update", "Associate", "Disassociate" };
+		private static readonly string[] SearchIndexApplicableMessages = new[] { "Build", "Publish", "PublishAll", "Delete", "Create", "Update", "Associate", "Disassociate" };
 		private static readonly IEqualityComparer<string> MessageComparer = StringComparer.InvariantCultureIgnoreCase;
 
 		public void ProcessRequest(HttpContext context)

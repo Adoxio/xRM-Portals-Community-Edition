@@ -273,7 +273,7 @@ namespace Adxstudio.Xrm.Web
 
 			var forumsInCurrentWebsite = context.RetrieveMultiple(
 				"adx_communityforum",
-				new string [] { },
+				new string[] { },
 				new[] { new Condition("adx_websiteid", ConditionOperator.Equal, website.Id) });
 
 			var webForum = forumsInCurrentWebsite.Entities
