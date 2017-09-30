@@ -1829,7 +1829,7 @@ namespace Adxstudio.Xrm.Web.UI
 			var portalOrganizationService = this.Dependencies.GetRequestContext().HttpContext.GetOrganizationService();
 			var contact = portalOrganizationService.RetrieveSingle(
 				user.LogicalName,
-				new[]{ "parentcustomerid" },
+				new[] { "parentcustomerid" },
 				new[] {
 					new Condition("statecode", ConditionOperator.Equal, 0),
 					new Condition("contactid", ConditionOperator.Equal, user.Id)

@@ -176,8 +176,8 @@ namespace Microsoft.Xrm.Portal.IdentityModel.Web.Handlers
 		{
 			var signInContext = new Dictionary<string, string>
 			{
-				{LiveIdTokenKey, context.Request["stoken"]},
-				{ReturnUrlKey, context.Request[ReturnUrlKey]},
+				{LiveIdTokenKey, context.Request["stoken"] },
+				{ReturnUrlKey, context.Request[ReturnUrlKey] },
 			};
 
 			var fam = new CrmFederationAuthenticationModule(context);

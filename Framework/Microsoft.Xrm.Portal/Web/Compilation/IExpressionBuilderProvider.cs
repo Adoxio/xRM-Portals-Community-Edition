@@ -148,7 +148,7 @@ namespace Microsoft.Xrm.Portal.Web.Compilation
 		private static NameValueCollection ParseExpression(string expression)
 		{
 			var results = new NameValueCollection(StringComparer.OrdinalIgnoreCase);
-			var pairs = expression.Split(new[]{','}, StringSplitOptions.RemoveEmptyEntries).Select(arg => arg.Trim().Split('='));
+			var pairs = expression.Split(new[] {','}, StringSplitOptions.RemoveEmptyEntries).Select(arg => arg.Trim().Split('='));
 			var index = 0;
 
 			foreach (var pair in pairs)
