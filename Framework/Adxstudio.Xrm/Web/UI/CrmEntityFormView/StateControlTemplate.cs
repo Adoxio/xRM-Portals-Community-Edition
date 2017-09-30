@@ -31,7 +31,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 		protected override void InstantiateControlIn(Control container)
 		{
-			var label = new HtmlGenericControl ("span") { ID = ControlID };
+			var label = new HtmlGenericControl("span") { ID = ControlID };
 
 			label.Attributes["class"] = string.Join(" ", CssClass, Metadata.CssClass);
 

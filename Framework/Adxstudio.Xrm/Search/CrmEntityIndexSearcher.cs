@@ -425,7 +425,7 @@ namespace Adxstudio.Xrm.Search
             foreach (var scoreDoc in rawSearchResults.Results)
             {
             var resultField = _searcher.Doc(scoreDoc.Doc).GetField("_logicalname");
-                if ( resultField != null && resultField.StringValue == "knowledgearticle")
+                if (resultField != null && resultField.StringValue == "knowledgearticle")
                 {
                     var primaryKey = _searcher.Doc(scoreDoc.Doc).GetField("_primarykey");
                     noteQuery.Add(new TermQuery(new Term("annotation_knowledgearticleid", primaryKey.StringValue)), Occur.SHOULD);

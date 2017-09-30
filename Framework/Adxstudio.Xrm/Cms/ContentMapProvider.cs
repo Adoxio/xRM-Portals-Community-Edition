@@ -504,7 +504,7 @@ namespace Adxstudio.Xrm.Cms
 				var targetRelationship = ed.Relationships.Single(r => r.ForeignEntityLogicalname == target.LogicalName);
 
 				var filters = fetch.Entity.Filters.FirstOrDefault() ?? new Filter {Conditions = new List<Condition>()};
-				filters.Conditions.Add(new Condition( targetRelationship.ForeignIdAttributeName, ConditionOperator.Equal, target.Id));
+				filters.Conditions.Add(new Condition(targetRelationship.ForeignIdAttributeName, ConditionOperator.Equal, target.Id));
 
 				var relatedIds = relatedEntities.Select(related => related.Id).Cast<object>().ToArray();
 				var firstRelated = relatedEntities.FirstOrDefault();

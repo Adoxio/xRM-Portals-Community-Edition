@@ -91,7 +91,7 @@ namespace Adxstudio.Xrm.Events
 			return value;
 		}
 
-		public static string FormatOrganizer( string name = null, string email = null )
+		public static string FormatOrganizer(string name = null, string email = null )
 		{
 			var parts = new List<string>();
 

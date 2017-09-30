@@ -52,7 +52,7 @@ namespace Adxstudio.Xrm.Search
 		{
 			try
 			{
-				var response = context.Execute( new RetrieveEntityRequest { LogicalName = logicalName, EntityFilters = EntityFilters.Entity }) as RetrieveEntityResponse;
+				var response = context.Execute(new RetrieveEntityRequest { LogicalName = logicalName, EntityFilters = EntityFilters.Entity }) as RetrieveEntityResponse;
 				return response != null;
 			}
 			catch (Exception e)

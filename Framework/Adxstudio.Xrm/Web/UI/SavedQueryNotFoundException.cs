@@ -25,7 +25,7 @@ namespace Adxstudio.Xrm.Web.UI
 		/// </summary>
 		/// <param name="savedQueryId">Unique ID of the savedquery record in CRM.</param>
 		public SavedQueryNotFoundException(Guid savedQueryId)
-			: base ($"A saved query with savedqueryid equal to {savedQueryId} couldn't be found.")
+			: base($"A saved query with savedqueryid equal to {savedQueryId} couldn't be found.")
 		{
 		}
 
@@ -34,7 +34,7 @@ namespace Adxstudio.Xrm.Web.UI
 		/// </summary>
 		/// <param name="entityLogicalName">Logical Name of the entity the savedquery is associated to.</param>
 		public SavedQueryNotFoundException(string entityLogicalName)
-			: base ($"A saved query for the entity {EntityNamePrivacy.GetEntityName(entityLogicalName)} couldn't be found.")
+			: base($"A saved query for the entity {EntityNamePrivacy.GetEntityName(entityLogicalName)} couldn't be found.")
 		{
 		}
 
@@ -45,7 +45,7 @@ namespace Adxstudio.Xrm.Web.UI
 		/// <param name="queryType">Query Type of the savedquery record in CRM.</param>
 		/// <param name="isDefault">Is the default savedquery.</param>
 		public SavedQueryNotFoundException(string entityLogicalName, int queryType, bool isDefault)
-			: base ($"A saved query for entity {EntityNamePrivacy.GetEntityName(entityLogicalName)} with the querytype {queryType} and isdefault {isDefault} couldn't be found.")
+			: base($"A saved query for entity {EntityNamePrivacy.GetEntityName(entityLogicalName)} with the querytype {queryType} and isdefault {isDefault} couldn't be found.")
 		{
 		}
 	}

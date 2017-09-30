@@ -58,7 +58,7 @@ namespace Adxstudio.Xrm.Cms.Security
 		{
 
 			EntityNode entity = null;
-			this.ContentMapProvider.Using( map => map.TryGetValue(entityReference, out entity));
+			this.ContentMapProvider.Using(map => map.TryGetValue(entityReference, out entity));
 
 			return entity != null && this.TryAssert(context, entity.ToEntity(), right, dependencies);
 		}

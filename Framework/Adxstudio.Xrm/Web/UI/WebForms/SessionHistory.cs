@@ -110,7 +110,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 			/// <summary>
 			/// A boolean value indicating whether the step is active or just a history record.
 			/// </summary>
-			[DataMember (IsRequired = false)]
+			[DataMember(IsRequired = false)]
 			public Boolean? IsActive { get; set; }
 
 			/// <summary>

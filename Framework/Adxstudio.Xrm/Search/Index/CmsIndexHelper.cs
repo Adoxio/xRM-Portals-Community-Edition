@@ -451,7 +451,7 @@ namespace Adxstudio.Xrm.Search.Index
 		public static bool IsWebPageUrlDefined(IContentMapProvider contentMapProvider, Guid entityId, string additionalPartialUrl = null)
 		{
 			return contentMapProvider.Using(
-				delegate (ContentMap contentMap)
+				delegate(ContentMap contentMap)
 					{
 						EntityNode entity;
 						if (!contentMap.TryGetValue(new EntityReference("adx_webpage", entityId), out entity))

@@ -14,7 +14,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 		private readonly Lazy<string> _description;
 
 		public PortalViewEntityAttribute(IPortalViewEntity entity, string logicalName, object value, string description = null)
-			: this (entity, logicalName, value, new Lazy<string>(() => description, LazyThreadSafetyMode.None)) {}
+			: this(entity, logicalName, value, new Lazy<string>(() => description, LazyThreadSafetyMode.None)) {}
 
 		internal PortalViewEntityAttribute(IPortalViewEntity entity, string logicalName, object value, Lazy<string> description)
 		{
