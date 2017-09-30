@@ -80,8 +80,7 @@ namespace Adxstudio.Xrm.Web.Providers
 					join referenced in serviceContext.CreateQuery(websiteJoin.ReferencedEntity) on referencing.GetAttributeValue<EntityReference>(websiteJoin.ReferencingAttribute) equals referenced.GetAttributeValue<EntityReference>(websiteJoin.ReferencedAttribute)
 					where referenced.GetAttributeValue<EntityReference>(websiteJoin.WebsiteReferenceAttribute) == website
 					where referencing.GetAttributeValue<Guid>(entityMetadata.PrimaryIdAttribute) == entityReference.Id
-					select referencing
-					).FirstOrDefault();
+					select referencing).FirstOrDefault();
 			}
 
 			var query = serviceContext.CreateQuery(entityReference.LogicalName);
@@ -254,8 +253,7 @@ namespace Adxstudio.Xrm.Web.Providers
 					from referencing in serviceContext.CreateQuery(websiteJoin.ReferencingEntity)
 					join referenced in serviceContext.CreateQuery(websiteJoin.ReferencedEntity) on referencing.GetAttributeValue<EntityReference>(websiteJoin.ReferencingAttribute) equals referenced.GetAttributeValue<EntityReference>(websiteJoin.ReferencedAttribute)
 					where referenced.GetAttributeValue<EntityReference>(websiteJoin.WebsiteReferenceAttribute) == website
-					select referencing
-					).ToArray().Where(e =>
+					select referencing).ToArray().Where(e =>
 					{
 						try
 						{
@@ -1136,16 +1134,16 @@ namespace Adxstudio.Xrm.Web.Providers
 
 		private static readonly IDictionary<string, Tuple<string, string, string>> TaggableEntities = new Dictionary<string, Tuple<string, string, string>>
 		{
-			{"adx_blogpost", new Tuple<string, string, string>("adx_blogpost", "adx_blogpostid", "adx_blogpost_tag")},
-			{"adx_communityforumthread", new Tuple<string, string, string>("adx_communityforumthread", "adx_communityforumthreadid", "adx_communityforumthread_tag")},
+			{"adx_blogpost", new Tuple<string, string, string>("adx_blogpost", "adx_blogpostid", "adx_blogpost_tag") },
+			{"adx_communityforumthread", new Tuple<string, string, string>("adx_communityforumthread", "adx_communityforumthreadid", "adx_communityforumthread_tag") },
 		};
 
 		private static readonly IDictionary<string, WebsiteJoin> WebsiteJoins = new Dictionary<string, WebsiteJoin>
 		{
-			{"adx_communityforumthread", new WebsiteJoin("adx_communityforumthread", "adx_forumid", "adx_communityforum", "adx_communityforumid", "adx_websiteid")},
-			{"adx_eventschedule", new WebsiteJoin("adx_eventschedule", "adx_eventid", "adx_event", "adx_eventid", "adx_websiteid")},
-			{"adx_weblink", new WebsiteJoin("adx_weblink", "adx_weblinksetid", "adx_weblinkset", "adx_weblinksetid", "adx_websiteid")},
-			{"adx_blogpost", new WebsiteJoin("adx_blogpost", "adx_blogid", "adx_blog", "adx_blogid", "adx_websiteid")}
+			{"adx_communityforumthread", new WebsiteJoin("adx_communityforumthread", "adx_forumid", "adx_communityforum", "adx_communityforumid", "adx_websiteid") },
+			{"adx_eventschedule", new WebsiteJoin("adx_eventschedule", "adx_eventid", "adx_event", "adx_eventid", "adx_websiteid") },
+			{"adx_weblink", new WebsiteJoin("adx_weblink", "adx_weblinksetid", "adx_weblinkset", "adx_weblinksetid", "adx_websiteid") },
+			{"adx_blogpost", new WebsiteJoin("adx_blogpost", "adx_blogid", "adx_blog", "adx_blogid", "adx_websiteid") }
 		};
 
 		private class WebsiteJoin

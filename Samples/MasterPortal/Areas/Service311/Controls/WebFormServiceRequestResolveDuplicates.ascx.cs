@@ -194,7 +194,7 @@ namespace Site.Areas.Service311.Controls
 				PortalName = PortalName
 			};
 
-			var response = context.Execute(new RetrieveMultipleRequest {Query = new FetchExpression(viewConfiguration.FetchXml.ToString())}) as RetrieveMultipleResponse;
+			var response = context.Execute(new RetrieveMultipleRequest {Query = new FetchExpression(viewConfiguration.FetchXml.ToString()) }) as RetrieveMultipleResponse;
 
 			if (!response.EntityCollection.Entities.Any())
 			{

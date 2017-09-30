@@ -320,8 +320,7 @@ namespace Adxstudio.Xrm.Ideas
 						addCondition("adx_websiteid", "eq", Website.Id.ToString());
 						addCondition("statecode", "eq", "0");
 					},
-					null)
-				);
+					null));
 		}
 
 		/// <summary>

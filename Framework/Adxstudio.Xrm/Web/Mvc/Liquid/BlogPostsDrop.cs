@@ -20,8 +20,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 		
 		public BlogPostsDrop(IPortalLiquidContext portalLiquidContext, 
 									IDataAdapterDependencies dependencies,
-									int startRowIndex = 0, int pageSize = -1, string orderBy = "adx_date", string sortDirection = "desc"
-									) : base(portalLiquidContext)
+									int startRowIndex = 0, int pageSize = -1, string orderBy = "adx_date", string sortDirection = "desc") : base(portalLiquidContext)
 		{
 			Dependencies = dependencies;
 
@@ -37,8 +36,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 		public BlogPostsDrop(IPortalLiquidContext portalLiquidContext,
 									IDataAdapterDependencies dependencies,
 									IBlog blog,
-									int startRowIndex = 0, int pageSize = -1, string orderBy = "adx_date", string sortDirection = "desc"
-									)
+									int startRowIndex = 0, int pageSize = -1, string orderBy = "adx_date", string sortDirection = "desc")
 			: base(portalLiquidContext)
 		{
 			Dependencies = dependencies;

@@ -119,7 +119,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 			{
 				WriteResponse(context.Response, new JObject
 				{
-					{"d", GetEntityJson(context, serviceProvider, portalScopeId, portal, serviceContext, entity, entityMetadata)}
+					{"d", GetEntityJson(context, serviceProvider, portalScopeId, portal, serviceContext, entity, entityMetadata) }
 				});
 
 				return;

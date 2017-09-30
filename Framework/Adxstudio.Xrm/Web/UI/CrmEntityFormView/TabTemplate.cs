@@ -124,7 +124,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				var rowTemplateFactory = new TableLayoutRowTemplateFactory(LanguageCode);
 
 				var sectionTemplates = columnElement.XPathSelectElements("sections/section")
-					.Select(section => new TableLayoutSectionTemplate(section, LanguageCode, EntityMetadata, CellTemplateFactory, rowTemplateFactory, _webformMetadata){MappingFieldCollection = MappingFieldCollection});
+					.Select(section => new TableLayoutSectionTemplate(section, LanguageCode, EntityMetadata, CellTemplateFactory, rowTemplateFactory, _webformMetadata) {MappingFieldCollection = MappingFieldCollection});
 
 				foreach (var template in sectionTemplates)
 				{

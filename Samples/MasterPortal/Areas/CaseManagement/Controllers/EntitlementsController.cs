@@ -27,7 +27,7 @@ namespace Site.Areas.CaseManagement.Controllers
 		// POST: CaseManagement/Entitlements
 		[HttpPost]
 		[AjaxValidateAntiForgeryToken]
-		public ActionResult GetDefaultEntitlements(string layout, string sortExpression, IDictionary<string, string> customParameters )
+		public ActionResult GetDefaultEntitlements(string layout, string sortExpression, IDictionary<string, string> customParameters)
 		{
 			EntityGridController egc = new EntityGridController();
 			var result = GetData(layout, sortExpression, customParameters);

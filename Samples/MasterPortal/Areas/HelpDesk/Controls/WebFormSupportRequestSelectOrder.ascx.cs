@@ -129,8 +129,7 @@ namespace Site.Areas.HelpDesk.Controls
 
 					PlanPackageList.Items.Add(new ListItem(
 												string.Format("{0} - {1} - {2}", supportProduct.GetAttributeValue<string>("name"), u.GetAttributeValue<string>("name"), amount.Value.ToString("c0")),
-												string.Format("{0}&{1}", supportProduct.GetAttributeValue<Guid>("productid"), u.GetAttributeValue<Guid>("uomid"))
-												));
+												string.Format("{0}&{1}", supportProduct.GetAttributeValue<Guid>("productid"), u.GetAttributeValue<Guid>("uomid"))));
 				}
 			}
 		}

@@ -166,8 +166,7 @@ namespace Adxstudio.Xrm.Web
 				forums = forumsInCurrentWebsite
 					.Where(e => e.GetAttributeValue<EntityReference>("adx_parentpageid") == rootPage
 					&& (e.GetAttributeValue<EntityReference>("adx_websitelanguageid") == null
-					|| e.GetAttributeValue<EntityReference>("adx_websitelanguageid") == languageInfo.ContextLanguage.EntityReference)
-					);
+					|| e.GetAttributeValue<EntityReference>("adx_websitelanguageid") == languageInfo.ContextLanguage.EntityReference));
 			}
 			else
 			{

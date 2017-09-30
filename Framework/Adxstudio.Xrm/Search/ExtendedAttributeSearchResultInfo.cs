@@ -105,8 +105,7 @@ namespace Adxstudio.Xrm.Search
 				from queryType in _extendedInfoAttributeQueryTypes
 				select queries.FirstOrDefault(e => e.GetAttributeValue<int>("querytype") == queryType)
 				into query where query != null
-				select XDocument.Parse(query.GetAttributeValue<string>("layoutxml"))
-				).FirstOrDefault();
+				select XDocument.Parse(query.GetAttributeValue<string>("layoutxml"))).FirstOrDefault();
 		}
 
 		private static string GetEntityDisplayName(EntityMetadata metadata)

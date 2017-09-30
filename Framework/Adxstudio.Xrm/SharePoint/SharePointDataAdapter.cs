@@ -268,8 +268,7 @@ namespace Adxstudio.Xrm.SharePoint
 						item => item["FileLeafRef"],
 						item => item["Created"],
 						item => item["Modified"],
-						item => item["FileSizeDisplay"]
-						));
+						item => item["FileSizeDisplay"]));
 				client.ExecuteQuery();
 
 				var sharePointItems = new List<SharePointItem>();

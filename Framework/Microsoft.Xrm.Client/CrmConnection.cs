@@ -169,8 +169,7 @@ namespace Microsoft.Xrm.Client
 				connection.FirstNotNullOrEmpty("ProxyTypesAssembly", "Proxy Types Assembly"),
 				connection.FirstNotNullOrEmpty("CallerId", "Caller Id"),
 				connection.FirstNotNullOrEmpty("ServiceConfigurationInstanceMode", "Service Configuration Instance Mode"),
-				connection.FirstNotNullOrEmpty("UserTokenExpiryWindow", "User Token Expiry Window")
-			)
+				connection.FirstNotNullOrEmpty("UserTokenExpiryWindow", "User Token Expiry Window"))
 		{
 		}
 

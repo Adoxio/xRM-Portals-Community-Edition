@@ -458,7 +458,7 @@ namespace Adxstudio.Xrm.EntityList
 					try
 					{
 						configuration = JsonConvert.DeserializeObject<PackageConfiguration>(configurationJson,
-							new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Objects, Binder = new PackageConfigurationSerializationBinder()});
+							new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Objects, Binder = new PackageConfigurationSerializationBinder() });
 					}
 					catch (Exception e)
 					{

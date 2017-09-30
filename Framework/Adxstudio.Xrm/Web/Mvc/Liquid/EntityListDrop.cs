@@ -72,7 +72,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 						{
 							ContractResolver = JsonConfigurationContractResolver.Instance,
 							TypeNameHandling = TypeNameHandling.Objects,
-							Converters = new List<JsonConverter> {new GuidConverter()},
+							Converters = new List<JsonConverter> {new GuidConverter() },
 							Binder = new ActionSerializationBinder()
 						});
 				}
@@ -93,7 +93,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 							ContractResolver = JsonConfigurationContractResolver.Instance,
 							TypeNameHandling = TypeNameHandling.Objects,
 							Binder = new ActionSerializationBinder(),
-							Converters = new List<JsonConverter> {new GuidConverter()}
+							Converters = new List<JsonConverter> {new GuidConverter() }
 						});
 				}
 				catch (Exception e)

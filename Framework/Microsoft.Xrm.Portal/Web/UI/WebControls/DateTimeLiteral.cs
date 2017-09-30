@@ -81,7 +81,7 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 					dt = TimeZoneInfo.ConvertTimeFromUtc(dt, tz);
 
 					// if no timezone label provided, use the display name of the current timezone
-					if (string.IsNullOrEmpty(TimeZoneLabel) )
+					if (string.IsNullOrEmpty(TimeZoneLabel))
 					{	
 						TimeZoneLabel = tz.DisplayName;
 					}

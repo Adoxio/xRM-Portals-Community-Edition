@@ -54,7 +54,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 					{
 						"d", new JObject
 						{
-							{attributeLogicalName, GetValueJson(value)}
+							{attributeLogicalName, GetValueJson(value) }
 						}
 					},
 				};

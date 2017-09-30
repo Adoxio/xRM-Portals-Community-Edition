@@ -23,7 +23,7 @@ namespace Adxstudio.Xrm.Web.Handlers.ElFinder
 		{
 			{"adx_webpage",  new WebPageDirectoryType() },
 			{"adx_blog",     new BlogDirectoryType()    },
-			{"adx_blogpost", new BlogPostDirectoryType()},
+			{"adx_blogpost", new BlogPostDirectoryType() },
 		};
 
 		private readonly Lazy<Entity> _root;

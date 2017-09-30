@@ -478,8 +478,7 @@ namespace Adxstudio.Xrm.Visualizations
 					groupbyAttribute = record.Attributes.FirstOrDefault(a =>
 						a.Key != dategroupAttribute.Key
 						&&
-						a.Key.StartsWith(dategroupAttribute.Key.Substring(0, dategroupAttribute.Key.IndexOf("_dategroup_value", StringComparison.InvariantCulture)))
-					);
+						a.Key.StartsWith(dategroupAttribute.Key.Substring(0, dategroupAttribute.Key.IndexOf("_dategroup_value", StringComparison.InvariantCulture))));
 				}
 
 				foreach (var attribute in record.Attributes)

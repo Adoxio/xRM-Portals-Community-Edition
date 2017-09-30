@@ -375,7 +375,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		protected virtual void RenderList(OrganizationServiceContext context, Control container)
 		{
 			var gridHtml = BuildGrid(context);
-			var gridControl = new HtmlGenericControl("div") {InnerHtml = gridHtml.ToString()};
+			var gridControl = new HtmlGenericControl("div") {InnerHtml = gridHtml.ToString() };
 			container.Controls.Add(gridControl);
 		}
 
@@ -1268,7 +1268,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 				scriptManager.Scripts.Add(new ScriptReference(url.RouteUrl("EntityListCalendarLanguage", new RouteValueDictionary
 				{
-					{"__portalScopeId__", websiteId.ToString()}
+					{"__portalScopeId__", websiteId.ToString() }
 				})));
 
 				Attributes["lang"] = CultureInfo.CurrentCulture.ToString();

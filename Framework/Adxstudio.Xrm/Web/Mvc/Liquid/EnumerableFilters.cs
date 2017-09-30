@@ -72,7 +72,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			return input.Cast<object>().GroupBy(e => Get(e, key)).Select(group => new Hash
 			{
 				{"key", @group.Key},
-				{"items", @group.AsEnumerable()}
+				{"items", @group.AsEnumerable() }
 			});
 		}
 

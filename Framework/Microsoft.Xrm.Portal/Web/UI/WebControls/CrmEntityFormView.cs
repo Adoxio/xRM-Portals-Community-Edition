@@ -191,9 +191,7 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 
 				var sections = XDocument.Parse(formXml).XPathSelectElements("form/tabs/tab").Where(
 					tab => tab.XPathSelectElements("labels/label").Any(
-						label => label.Attributes("description").Any(description => description.Value == TabName)
-					)
-				).SelectMany(tab => tab.XPathSelectElements("columns/column/sections/section"));
+						label => label.Attributes("description").Any(description => description.Value == TabName))).SelectMany(tab => tab.XPathSelectElements("columns/column/sections/section"));
 
 				cellTemplateFactory.Initialize(this, new FormXmlCellMetadataFactory(), CellBindings, LanguageCode, ValidationGroup, ShowUnsupportedFields);
 

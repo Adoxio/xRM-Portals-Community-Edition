@@ -20,26 +20,22 @@ namespace Site.Areas.Account
 			context.MapRoute(
 				"Account/SignIn/Region",
 				"{region}/SignIn",
-				new { pageless = true, area = "Account", controller = "Login", action = "Login" }
-			);
+				new { pageless = true, area = "Account", controller = "Login", action = "Login" });
 
 			context.MapRoute(
 				"Account/SignIn",
 				"SignIn",
-				new { pageless = true, area = "Account", controller = "Login", action = "Login" }
-			);
+				new { pageless = true, area = "Account", controller = "Login", action = "Login" });
 
 			context.MapRoute(
 				"Account/Redeem/Region",
 				"{region}/Register",
-				new { pageless = true, area = "Account", controller = "Login", action = "RedeemInvitation" }
-			);
+				new { pageless = true, area = "Account", controller = "Login", action = "RedeemInvitation" });
 
 			context.MapRoute(
 				"Account/Redeem",
 				"Register",
-				new { pageless = true, area = "Account", controller = "Login", action = "RedeemInvitation" }
-			);
+				new { pageless = true, area = "Account", controller = "Login", action = "RedeemInvitation" });
 
 			context.Routes.MapPageRoute(
 				"Register/Region",
@@ -59,29 +55,25 @@ namespace Site.Areas.Account
 				"Account/Login/Region",
 				"{region}/Account/{controller}/{action}",
 				new { pageless = true, area = "Account", action = "Login" },
-				new { controller = "Login" }
-			);
+				new { controller = "Login" });
 
 			context.MapRoute(
 				"Account/Login",
 				"Account/{controller}/{action}",
 				new { pageless = true, area = "Account", action = "Login" },
-				new { controller = "Login" }
-			);
+				new { controller = "Login" });
 
 			context.MapRoute(
 				"Account/Manage/Region",
 				"{region}/Account/{controller}/{action}",
 				new { pageless = true, area = "Account", action = "Index" },
-				new { controller = "Manage" }
-			);
+				new { controller = "Manage" });
 
 			context.MapRoute(
 				"Account/Manage",
 				"Account/{controller}/{action}",
 				new { pageless = true, area = "Account", action = "Index" },
-				new { controller = "Manage" }
-			);
+				new { controller = "Manage" });
 
 			context.MapRoute("Facebook/Pages/Region", "{region}/app/facebook", new { pageless = true, controller = "Login", action = "FacebookExternalLoginCallback" });
 			context.MapRoute("Facebook/Pages", "app/facebook", new { pageless = true, controller = "Login", action = "FacebookExternalLoginCallback" });

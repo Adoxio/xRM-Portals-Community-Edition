@@ -99,7 +99,7 @@ namespace Adxstudio.Xrm.Web.Mvc
 		{
 			var json = new JObject
 			{
-				{"tags", new JArray(tags)}
+				{"tags", new JArray(tags) }
 			};
 
 			var schemaMap = new TagBuilder("span");

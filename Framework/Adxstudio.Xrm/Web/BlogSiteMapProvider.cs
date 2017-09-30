@@ -1122,8 +1122,8 @@ namespace Adxstudio.Xrm.Web
 			{
 				Entity = new FetchEntity("contact")
 				{
-					Attributes = new List<FetchAttribute> {new FetchAttribute("fullname")},
-					Filters = new List<Filter> {new Filter {Conditions = new[] {new Condition("contactid", ConditionOperator.Equal, authorId)}}}
+					Attributes = new List<FetchAttribute> {new FetchAttribute("fullname") },
+					Filters = new List<Filter> {new Filter {Conditions = new[] {new Condition("contactid", ConditionOperator.Equal, authorId) }}}
 				}
 			};
 

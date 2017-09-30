@@ -22,8 +22,7 @@ namespace Site.Areas.CaseManagement
 			context.MapRoute(
 				"CaseManagement_default",
 				"CaseManagement/{controller}/{action}/{id}",
-				new { action = "Index", id = UrlParameter.Optional }
-			);
+				new { action = "Index", id = UrlParameter.Optional });
 		}
 	}
 }

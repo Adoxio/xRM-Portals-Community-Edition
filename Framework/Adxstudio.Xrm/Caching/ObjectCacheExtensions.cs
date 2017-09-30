@@ -169,9 +169,9 @@ namespace Adxstudio.Xrm.Caching
 		{
 			var objectCacheElement = new JObject
 			{
-				{"type", cache.ToString()},
-				{"count", cache.GetCount(regionName).ToString()},
-				{"defaultCacheCapabilities", cache.DefaultCacheCapabilities.ToString()}
+				{"type", cache.ToString() },
+				{"count", cache.GetCount(regionName).ToString() },
+				{"defaultCacheCapabilities", cache.DefaultCacheCapabilities.ToString() }
 			};
 
 			var compositeCache = cache as CompositeObjectCache;
@@ -186,9 +186,9 @@ namespace Adxstudio.Xrm.Caching
 			var memoryCacheElement = memoryCache != null
 				? new JObject
 				{
-					{"cacheMemoryLimit", memoryCache.CacheMemoryLimit.ToString()},
-					{"physicalMemoryLimit", memoryCache.PhysicalMemoryLimit.ToString()},
-					{"pollingInterval", memoryCache.PollingInterval.ToString()}
+					{"cacheMemoryLimit", memoryCache.CacheMemoryLimit.ToString() },
+					{"physicalMemoryLimit", memoryCache.PhysicalMemoryLimit.ToString() },
+					{"pollingInterval", memoryCache.PollingInterval.ToString() }
 				}
 				: null;
 
@@ -233,8 +233,8 @@ namespace Adxstudio.Xrm.Caching
 				var entity = new Dictionary<string, object>
 				{
 					{"Name", entityType.Name},
-					{"Count", entityType.GetCount()},
-					{"Size", entityType.GetSize()}
+					{"Count", entityType.GetCount() },
+					{"Size", entityType.GetSize() }
 				};
 
 				if (expanded)
@@ -245,7 +245,7 @@ namespace Adxstudio.Xrm.Caching
 						var record = new Dictionary<string, object>
 						{
 							{"LogicalName", item.Entity.LogicalName},
-							{"Name", item.Entity.GetAttributeValueOrDefault("adx_name", string.Empty)},
+							{"Name", item.Entity.GetAttributeValueOrDefault("adx_name", string.Empty) },
 							{"Id", item.Entity.Id}
 						};
 
@@ -253,8 +253,8 @@ namespace Adxstudio.Xrm.Caching
 						{
 							{"Id", item.CacheItemKey},
 							{"Type", item.CacheItemType},
-							{"Link", item.Link.ToString()},
-							{"Size", GetEntitySizeInMemory(item.Entity)}
+							{"Link", item.Link.ToString() },
+							{"Size", GetEntitySizeInMemory(item.Entity) }
 						};
 
 						record.Add("Cache", recordCache);
@@ -272,7 +272,7 @@ namespace Adxstudio.Xrm.Caching
 				// Add link to the Expanded view with entity record details
 				var query = System.Web.HttpUtility.ParseQueryString(requestUrl.Query);
 				query[Web.Handlers.CacheFeedHandler.QueryKeys.Expanded] = bool.TrueString;
-				var uriBuilder = new UriBuilder(requestUrl.ToString()) {Query = query.ToString()};
+				var uriBuilder = new UriBuilder(requestUrl.ToString()) {Query = query.ToString() };
 				entitiesWrapper.Add("ExpandedView", uriBuilder.ToString());
 			}
 			entitiesWrapper.Add("Entities", entities.OrderByDescending(e => e["Size"]));
@@ -307,7 +307,7 @@ namespace Adxstudio.Xrm.Caching
 					{"title", rawItem.item.Key},
 					{"updated", rawItem.updatedOn},
 					{"link", rawItem.link.AbsoluteUri},
-					{"content", GetJsonContent(cache.Name, rawItem.detail, rawItem.telemetry, rawItem.item.Value, rawItem.remove, expanded)}
+					{"content", GetJsonContent(cache.Name, rawItem.detail, rawItem.telemetry, rawItem.item.Value, rawItem.remove, expanded) }
 				});
 
 			var items = new JArray(content);
@@ -386,8 +386,8 @@ namespace Adxstudio.Xrm.Caching
 						{"isStaleDataAllowed", detail.IsStaleDataAllowed },
 						{"absoluteExpiration", policyDetail.AbsoluteExpiration.UtcDateTime},
 						{"slidingExpiration", policyDetail.SlidingExpiration},
-						{"priority", policyDetail.Priority.ToString()},
-						{"changeMonitors", new JArray(policyDetail.ChangeMonitors.SelectMany(cm => cm.CacheKeys))}
+						{"priority", policyDetail.Priority.ToString() },
+						{"changeMonitors", new JArray(policyDetail.ChangeMonitors.SelectMany(cm => cm.CacheKeys)) }
 					};
 
 					return policy;
@@ -577,7 +577,7 @@ namespace Adxstudio.Xrm.Caching
 				// Add link to the Expanded view with entity record details
 				var query = System.Web.HttpUtility.ParseQueryString(requestUrl.Query);
 				query[Web.Handlers.CacheFeedHandler.QueryKeys.Expanded] = Boolean.TrueString;
-				var uriBuilder = new UriBuilder(requestUrl.ToString()) {Query = query.ToString()};
+				var uriBuilder = new UriBuilder(requestUrl.ToString()) {Query = query.ToString() };
 				var expandedView = doc.CreateElement("expandedView");
 				expandedView.InnerText = uriBuilder.ToString();
 				rootElement.AppendChild(expandedView);

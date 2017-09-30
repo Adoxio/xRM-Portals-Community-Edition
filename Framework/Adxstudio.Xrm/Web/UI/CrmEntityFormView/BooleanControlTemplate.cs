@@ -123,7 +123,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			}
 			else if (Metadata.ClassID == DropDownClassID)
 			{
-				listControl = new DropDownList {CssClass = string.Join(" ", "form-control", CssClass, Metadata.CssClass)};
+				listControl = new DropDownList {CssClass = string.Join(" ", "form-control", CssClass, Metadata.CssClass) };
 			}
 			else
 			{

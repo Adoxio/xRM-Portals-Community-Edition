@@ -35,7 +35,7 @@ namespace Site.Areas.Setup
 				var siteName = GetSiteName();
 				var virtualPath = HostingEnvironment.ApplicationVirtualPath ?? "/";
 
-				var query = new QueryExpression("adx_websitebinding") {ColumnSet = new ColumnSet("adx_websiteid")};
+				var query = new QueryExpression("adx_websitebinding") {ColumnSet = new ColumnSet("adx_websiteid") };
 				query.Criteria.AddCondition("statecode", ConditionOperator.Equal, 0);
 				query.Criteria.AddCondition("adx_sitename", ConditionOperator.Equal, siteName);
 

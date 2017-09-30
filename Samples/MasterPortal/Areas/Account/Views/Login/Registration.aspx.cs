@@ -243,7 +243,7 @@ namespace Site.Areas.Account.Views.Login
 			{
 				StringBuilder sb = new StringBuilder();
 				errors.ForEach(item => sb.Append(item));
-				if (sb.Length > 0 )
+				if (sb.Length > 0)
 				{
 					errors.Clear();
 					Page currentPage = HttpContext.Current.Handler as Page;

@@ -109,8 +109,7 @@ namespace Adxstudio.SharePoint
 				connection.FirstNotNullOrEmpty("AuthenticationMode", "Authentication Mode"),
 				connection.FirstNotNullOrEmpty("RequestTimeout", "Request Timeout", "Timeout"),
 				connection.FirstNotNullOrEmpty("ValidateOnClient", "Validate On Client"),
-				connection.FirstNotNullOrEmpty("CookieExpiryWindow", "Cookie Expiry Window")
-			)
+				connection.FirstNotNullOrEmpty("CookieExpiryWindow", "Cookie Expiry Window"))
 		{
 		}
 

@@ -1916,8 +1916,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 									new Condition("adx_setvalueonsave", ConditionOperator.Equal, true)
 								}
 							}
-						}
-				).Entities;
+						}).Entities;
 
 			if (!metadata.Any()) return;
 

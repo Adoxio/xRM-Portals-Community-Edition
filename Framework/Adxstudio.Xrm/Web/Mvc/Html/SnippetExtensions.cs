@@ -388,7 +388,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 					tag.MergeAttribute("data-languageContext", langContext.ContextLanguage.DisplayName);
 					languageJson = new JObject
 					{
-						{"Id", langContext.ContextLanguage.EntityReference.Id.ToString()},
+						{"Id", langContext.ContextLanguage.EntityReference.Id.ToString() },
 						{"LogicalName", langContext.ContextLanguage.EntityReference.LogicalName}
 					};
 

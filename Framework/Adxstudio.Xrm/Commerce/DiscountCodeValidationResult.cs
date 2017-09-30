@@ -13,7 +13,7 @@ namespace Adxstudio.Xrm.Commerce
 {
 	public class DiscountCodeValidationResult
 	{
-		public DiscountCodeValidationResult(){}
+		public DiscountCodeValidationResult() {}
 
 		public DiscountCodeValidationResult(bool isValid)
 		{

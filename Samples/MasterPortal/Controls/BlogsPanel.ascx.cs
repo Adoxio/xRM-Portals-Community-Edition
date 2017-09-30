@@ -27,8 +27,7 @@ namespace Site.Controls
 				new WebsiteBlogAggregationDataAdapter(
 					new PortalContextDataAdapterDependencies(Portal, requestContext:Request.RequestContext),
 					null,
-					serviceContext => GetAllBlogPostsInWebsiteExceptNews(ServiceContext, Website.Id, newsBlogName)
-					);
+					serviceContext => GetAllBlogPostsInWebsiteExceptNews(ServiceContext, Website.Id, newsBlogName));
 		}
 
 		protected IQueryable<Entity> GetAllBlogPostsInWebsiteExceptNews(OrganizationServiceContext serviceContext, Guid websiteId, string newsBlogName)

@@ -20,8 +20,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 		public ForumPostsDrop(IPortalLiquidContext portalLiquidContext,
 									IDataAdapterDependencies dependencies,
 									IForumThread forumThread,
-									int startRowIndex = 0, int pageSize = -1
-									) : base(portalLiquidContext)
+									int startRowIndex = 0, int pageSize = -1) : base(portalLiquidContext)
 		{
 			Dependencies = dependencies;
 

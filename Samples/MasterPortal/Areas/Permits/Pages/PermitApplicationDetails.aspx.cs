@@ -122,7 +122,7 @@ namespace Site.Areas.Permits.Pages
 							new PortalConfigurationDataAdapterDependencies(requestContext: Request.RequestContext, portalName: PortalName);
 						var dataAdapter = new AnnotationDataAdapter(dataAdapterDependencies);
 						var annotations = dataAdapter.GetAnnotations(Permit.ToEntityReference(),
-							new List<Order> {new Order("createdon")}, respectPermissions: false);
+							new List<Order> {new Order("createdon") }, respectPermissions: false);
 
 						NotesList.DataSource = annotations;
 						NotesList.DataBind();

@@ -345,8 +345,7 @@ namespace Adxstudio.Xrm.AspNet.Identity
 
 			var entity = await FetchByConditionOnExternalIdentityAsync(
 				new Condition("adx_identityprovidername", ConditionOperator.Equal, login.LoginProvider),
-				new Condition("adx_username", ConditionOperator.Equal, login.ProviderKey)
-			).WithCurrentCulture();
+				new Condition("adx_username", ConditionOperator.Equal, login.ProviderKey)).WithCurrentCulture();
 
 			return ToModel(entity);
 		}

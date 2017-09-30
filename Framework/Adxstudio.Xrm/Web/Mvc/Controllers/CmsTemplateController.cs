@@ -52,18 +52,18 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 					{
 						encodedName = EncodeTemplateName(template.Name),
 						context
-					})},
+					}) },
 					{"preview_url", Url.RouteUrl("CmsTemplate_GetPreview", new
 					{
 						encodedName = EncodeTemplateName(template.Name),
 						__currentSiteMapNodeUrl__ = currentSiteMapNodeUrl,
 						context
-					})},
+					}) },
 					{"live_preview_url", Url.RouteUrl("CmsTemplate_GetLivePreview", new
 					{
 						__currentSiteMapNodeUrl__ = currentSiteMapNodeUrl,
 						context
-					})}
+					}) }
 				});
 
 			return new JContainerResult(new JArray(templates));

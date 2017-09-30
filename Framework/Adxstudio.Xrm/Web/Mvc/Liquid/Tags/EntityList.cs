@@ -187,7 +187,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid.Tags
 							new Filter
 							{
 								Type = LogicalOperator.And,
-								Conditions = new[] {new Condition("statecode", ConditionOperator.Equal, 0)},
+								Conditions = new[] {new Condition("statecode", ConditionOperator.Equal, 0) },
 								Filters = new List<Filter>
 								{
 									new Filter

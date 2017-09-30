@@ -79,14 +79,14 @@ namespace Adxstudio.Xrm.Cms
 
 			attributes = new Dictionary<string, object>
 			{
-				{"regardingobjectid", page.ToEntityReference()},
+				{"regardingobjectid", page.ToEntityReference() },
 				{"createdon", postedOn},
-				{"title", StringHelper.GetCommentTitleFromContent(content)},
-				{"adx_approved",     (policyReader.IsCommentPolicyOpen || policyReader.IsCommentPolicyOpenToAuthenticatedUsers)},
+				{"title", StringHelper.GetCommentTitleFromContent(content) },
+				{"adx_approved",     (policyReader.IsCommentPolicyOpen || policyReader.IsCommentPolicyOpenToAuthenticatedUsers) },
 				{"adx_createdbycontact", authorName},
 				{"adx_contactemail", authorEmail},
 				{"comments", content},
-				{"source", new OptionSetValue((int)FeedbackSource.Portal)}
+				{"source", new OptionSetValue((int)FeedbackSource.Portal) }
 			};
 
 			var portalUser = Dependencies.GetPortalUser();

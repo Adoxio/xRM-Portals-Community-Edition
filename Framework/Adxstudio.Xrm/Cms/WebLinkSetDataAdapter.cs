@@ -117,7 +117,7 @@ namespace Adxstudio.Xrm.Cms
 			{
 				Entity = new FetchEntity("adx_weblink")
 				{
-					Orders = new[] {new Order("adx_displayorder")},
+					Orders = new[] {new Order("adx_displayorder") },
 					Filters = new[]
 					{
 						new Filter

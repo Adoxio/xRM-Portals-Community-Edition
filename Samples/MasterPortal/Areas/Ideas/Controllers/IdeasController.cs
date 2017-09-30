@@ -208,7 +208,7 @@ namespace Site.Areas.Ideas.Controllers
 			//Log Customer Journey Tracking
 			if (FeatureCheckHelper.IsFeatureEnabled(FeatureNames.CustomerJourneyTracking))
 			{
-				PortalTrackingTrace.TraceInstance.Log(Constants.Forum, ideaForum.Id.ToString(), currentIdeaForum.Title );
+				PortalTrackingTrace.TraceInstance.Log(Constants.Forum, ideaForum.Id.ToString(), currentIdeaForum.Title);
 			}
 
 			return View("IdeaForum", ideaForumViewModel);

@@ -51,7 +51,7 @@ namespace Site.Areas.Portal.Pages
 						new Filter
 						{
 							Type = LogicalOperator.And,
-							Conditions = new List<Condition> {new Condition(entityPrimaryKeyName, ConditionOperator.Equal, entityId)}
+							Conditions = new List<Condition> {new Condition(entityPrimaryKeyName, ConditionOperator.Equal, entityId) }
 						}
 					}
 				}

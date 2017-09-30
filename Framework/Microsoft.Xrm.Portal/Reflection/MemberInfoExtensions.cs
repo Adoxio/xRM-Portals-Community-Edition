@@ -30,7 +30,7 @@ namespace Microsoft.Xrm.Portal.Reflection
 		/// <returns></returns>
 		public static IEnumerable<T> GetCustomAttributes<T>(this MemberInfo info) where T : Attribute
 		{
-			var pair = new MethodInfoAttributeType {MethodInfo = info, Type = typeof(T)};
+			var pair = new MethodInfoAttributeType {MethodInfo = info, Type = typeof(T) };
 
 			if (!_memberInfoToAttributesLookup.ContainsKey(pair))
 			{

@@ -212,7 +212,7 @@ namespace Adxstudio.Xrm.Category
 			{
 				childCategories =
 					childCategoriesEntityCollection.Entities
-						.Select(e => new { Title = e.GetAttributeValue<string>("title"), Url = urlProvider.GetUrl(serviceContext, e ) })
+						.Select(e => new { Title = e.GetAttributeValue<string>("title"), Url = urlProvider.GetUrl(serviceContext, e) })
 						.Where(e => !string.IsNullOrEmpty(e.Title))
 						.Select(e => new ChildCategory(e.Title, e.Url))
 						.OrderBy(e => e.Title);

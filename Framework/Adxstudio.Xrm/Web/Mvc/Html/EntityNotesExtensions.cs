@@ -209,7 +209,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 
 			if (orders == null || !orders.Any())
 			{
-				orders = new List<Order> {new Order("createdon")};
+				orders = new List<Order> {new Order("createdon") };
 			}
 			container.MergeAttribute("data-orders", JsonConvert.SerializeObject(orders));
 			container.MergeAttribute("data-target", JsonConvert.SerializeObject(target));
@@ -221,7 +221,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				var header = new TagBuilder("div");
 				header.AddCssClass("page-header");
 				header.AddCssClass("col-sm-9");
-				header.InnerHtml = (new TagBuilder("h3") {InnerHtml = title.GetValueOrDefault(DefaultNotesListTitle)}).ToString();
+				header.InnerHtml = (new TagBuilder("h3") {InnerHtml = title.GetValueOrDefault(DefaultNotesListTitle) }).ToString();
 				container.InnerHtml += header.ToString();
 			}
 
@@ -232,7 +232,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				timelineHeader.AddCssClass("col-sm-12");
 
 				var timelineTitle = new TagBuilder("div");
-				timelineTitle.InnerHtml = (new TagBuilder("label") { InnerHtml = title.GetValueOrDefault(DefaultTimelineListTitle)}).ToString();
+				timelineTitle.InnerHtml = (new TagBuilder("label") { InnerHtml = title.GetValueOrDefault(DefaultTimelineListTitle) }).ToString();
 				timelineTitle.MergeAttribute("for", "timeline");
 				timelineTitle.MergeAttribute("id", "timeline_label");
 				timelineTitle.AddCssClass("col-sm-9 title");

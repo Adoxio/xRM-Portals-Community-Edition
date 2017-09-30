@@ -229,7 +229,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 							try
 							{
 								_timelineSettings = JsonConvert.DeserializeObject<JsonConfiguration.TimelineMetadata>(timelineSettingsJson,
-									new JsonSerializerSettings { ContractResolver = JsonConfigurationContractResolver.Instance, TypeNameHandling = TypeNameHandling.Objects, Binder = new ActionSerializationBinder()});
+									new JsonSerializerSettings { ContractResolver = JsonConfigurationContractResolver.Instance, TypeNameHandling = TypeNameHandling.Objects, Binder = new ActionSerializationBinder() });
 							}
 							catch (Exception e)
 							{
@@ -341,7 +341,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 										{
 											ContractResolver = JsonConfigurationContractResolver.Instance,
 											TypeNameHandling = TypeNameHandling.Objects,
-											Converters = new List<JsonConverter> {new GuidConverter()},
+											Converters = new List<JsonConverter> {new GuidConverter() },
 											Binder = new ActionSerializationBinder(),
 											NullValueHandling = NullValueHandling.Ignore
 										});

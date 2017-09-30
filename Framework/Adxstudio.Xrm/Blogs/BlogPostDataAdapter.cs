@@ -82,14 +82,14 @@ namespace Adxstudio.Xrm.Blogs
 
 			var attributes = new Dictionary<string, object>
 			{
-				{"regardingobjectid",   post.Entity.ToEntityReference()},
+				{"regardingobjectid",   post.Entity.ToEntityReference() },
 				{"createdon",           postedOn},
 				{"adx_approved",        post.CommentPolicy == BlogCommentPolicy.Open || post.CommentPolicy == BlogCommentPolicy.OpenToAuthenticatedUsers},
-				{"title",               StringHelper.GetCommentTitleFromContent(content)},
+				{"title",               StringHelper.GetCommentTitleFromContent(content) },
 				{"adx_createdbycontact", authorName},
 				{"adx_contactemail", authorEmail},
 				{"comments", content},
-				{"source", new OptionSetValue((int)FeedbackSource.Portal)}
+				{"source", new OptionSetValue((int)FeedbackSource.Portal) }
 			};
 
 			var portalUser = BlogDependencies.GetPortalUser();

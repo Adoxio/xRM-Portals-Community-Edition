@@ -584,7 +584,7 @@ namespace Adxstudio.Xrm.Search
 			return response.Entities;
 		} 
 
-		private static Fetch GetEntityFetch(string entityName, string attributeToSelect, string filterAttributeName, string filterAttributeValue )
+		private static Fetch GetEntityFetch(string entityName, string attributeToSelect, string filterAttributeName, string filterAttributeValue)
 		{
 			return new Fetch
 			{

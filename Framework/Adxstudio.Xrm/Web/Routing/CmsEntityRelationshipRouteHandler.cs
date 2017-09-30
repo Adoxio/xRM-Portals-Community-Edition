@@ -76,7 +76,7 @@ namespace Adxstudio.Xrm.Web.Routing
 				{"__portalScopeId__",      portalScopeId.ToString()      },
 				{"entityLogicalName",      entity.LogicalName            },
 				{"id",                     entity.Id.ToString()          },
-				{"relationshipSchemaName", relationship.ToSchemaName(".")},
+				{"relationshipSchemaName", relationship.ToSchemaName(".") },
 			});
 
 			return "~{0}".FormatWith(uri.PathAndQuery);
@@ -93,7 +93,7 @@ namespace Adxstudio.Xrm.Web.Routing
 				{"__portalScopeId__",      portalScopeId.ToString()      },
 				{"entityLogicalName",      entityLogicalName             },
 				{"id",                     idPlaceholder                 },
-				{"relationshipSchemaName", relationship.ToSchemaName(".")},
+				{"relationshipSchemaName", relationship.ToSchemaName(".") },
 			});
 
 			var path = "~{0}".FormatWith(uri.PathAndQuery);

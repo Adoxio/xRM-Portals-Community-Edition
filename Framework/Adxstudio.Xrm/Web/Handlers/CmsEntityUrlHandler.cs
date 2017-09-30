@@ -60,7 +60,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 
 			WriteResponse(context.Response, new JObject
 			{
-				{"d",  new JObject { {"Url", new JValue(url)} } }
+				{"d",  new JObject { {"Url", new JValue(url) } } }
 			});
 		}
 	}

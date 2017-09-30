@@ -61,7 +61,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 					{"pageNumber", pageNumber},
 					{"pageSize", pageSize},
 					{"pageCount", 0},
-					{"items", new JArray()}
+					{"items", new JArray() }
 				});
 			}
 
@@ -99,7 +99,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 					{"pageNumber", results.PageNumber},
 					{"pageSize", results.PageSize},
 					{"pageCount", pageCount},
-					{"items", new JArray(results.Select(GetSearchResultJson))}
+					{"items", new JArray(results.Select(GetSearchResultJson)) }
 				};
 
 				if (results.FacetViews != null)
@@ -259,7 +259,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 		{
 			var json = new JObject
 			{
-				{"entityID", @searchResult.EntityID.ToString()},
+				{"entityID", @searchResult.EntityID.ToString() },
 				{"entityLogicalName", @searchResult.EntityLogicalName},
 				{"title", @searchResult.Title},
 				{"fragment", @searchResult.Fragment},
@@ -281,9 +281,9 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 					{
 						{"entityID", note.EntityID},
 						{ "entityLogicalName", note.EntityLogicalName},
-						{ "title", note.Entity.GetAttributeValue<string>("filename")},
-						{ "fragment", note.Fragment}, {"url", note.Url.ToString()},
-						{ "absoluteUrl", BuildAbsoluteUrl(note.Url.ToString())}
+						{ "title", note.Entity.GetAttributeValue<string>("filename") },
+						{ "fragment", note.Fragment}, {"url", note.Url.ToString() },
+						{ "absoluteUrl", BuildAbsoluteUrl(note.Url.ToString()) }
 					};
 					list.Add(relatedNote);
 				}

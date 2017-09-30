@@ -1186,7 +1186,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				{
 					CellBindings[key].Set(dataItem);
 				}
-				else if (Mode != FormViewMode.ReadOnly && key == "fullname_firstname" || key == "fullname_lastname" )
+				else if (Mode != FormViewMode.ReadOnly && key == "fullname_firstname" || key == "fullname_lastname")
 				{
 					CellBindings[key].Set(dataItem);
 				}
@@ -1772,5 +1772,5 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 	public class CrmEntityFormViewUpdatedEventArgs : UI.CrmEntityFormView.CrmEntityFormViewUpdatedEventArgs { }
 
-	public class CrmEntityFormViewUpdatingEventArgs : UI.CrmEntityFormView.CrmEntityFormViewUpdatingEventArgs { public CrmEntityFormViewUpdatingEventArgs(IDictionary<string, object> values) : base(values){ } }
+	public class CrmEntityFormViewUpdatingEventArgs : UI.CrmEntityFormView.CrmEntityFormViewUpdatingEventArgs { public CrmEntityFormViewUpdatingEventArgs(IDictionary<string, object> values) : base(values) { } }
 }

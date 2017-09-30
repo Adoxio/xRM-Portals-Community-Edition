@@ -101,7 +101,7 @@ namespace Adxstudio.Xrm.Notes
 					new FetchAttribute("objectid"),
 					new FetchAttribute("objecttypecode")
 				},
-				Orders = new List<Order> {new Order("createdon")},
+				Orders = new List<Order> {new Order("createdon") },
 				Filters = new List<Filter>
 				{
 					new Filter
@@ -775,7 +775,7 @@ namespace Adxstudio.Xrm.Notes
 					new FetchAttribute("mimetype"),
 					new FetchAttribute("objectid")
 				},
-				Orders = orders == null || !orders.Any() ? new List<Order> {new Order("createdon")} : orders,
+				Orders = orders == null || !orders.Any() ? new List<Order> {new Order("createdon") } : orders,
 				Filters = new List<Filter>
 				{
 					new Filter

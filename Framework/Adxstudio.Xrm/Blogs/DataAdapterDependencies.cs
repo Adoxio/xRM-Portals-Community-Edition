@@ -118,9 +118,9 @@ namespace Adxstudio.Xrm.Blogs
 			{
 				var pathData = RouteTable.Routes.GetVirtualPath(_requestContext, typeof(CmsEntityDeleteRouteHandler).FullName, new RouteValueDictionary
 				{
-					{"__portalScopeId__", website.Id.ToString()},
+					{"__portalScopeId__", website.Id.ToString() },
 					{"entityLogicalName", entity.LogicalName},
-					{"id", entity.Id.ToString()},
+					{"id", entity.Id.ToString() },
 				});
 
 				return pathData == null ? null : ApplicationPath.FromAbsolutePath(VirtualPathUtility.ToAbsolute(pathData.VirtualPath));
@@ -143,9 +143,9 @@ namespace Adxstudio.Xrm.Blogs
 			{
 				var pathData = RouteTable.Routes.GetVirtualPath(_requestContext, typeof(CmsEntityRouteHandler).FullName, new RouteValueDictionary
 				{
-					{"__portalScopeId__", website.Id.ToString()},
+					{"__portalScopeId__", website.Id.ToString() },
 					{"entityLogicalName", entity.LogicalName},
-					{"id", entity.Id.ToString()},
+					{"id", entity.Id.ToString() },
 				});
 				
 				return pathData == null ? null : ApplicationPath.FromAbsolutePath(VirtualPathUtility.ToAbsolute(pathData.VirtualPath));

@@ -215,7 +215,7 @@ namespace Adxstudio.Xrm.Issues
 			{
 				{"regardingobjectid",	Issue},
 				{"createdon",	postedOn},
-				{"title",	StringHelper.GetCommentTitleFromContent(content)},
+				{"title",	StringHelper.GetCommentTitleFromContent(content) },
 				{"adx_approved",	issue.CommentPolicy == IssueForumCommentPolicy.Open || issue.CommentPolicy == IssueForumCommentPolicy.OpenToAuthenticatedUsers},
 				{"adx_createdbycontact", authorName},
 				{"adx_contactemail", authorEmail},

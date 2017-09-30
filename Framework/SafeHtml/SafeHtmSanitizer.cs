@@ -166,8 +166,7 @@ namespace SafeHtml
 					&rgbTmp,
 					out cbDst,
 					(int)SafeHtmlCodePages.CodePageUnicode,
-					(int)(flags | SafeHtmlFlags.DebugNoPopup | SafeHtmlFlags.IndicateIfUnsafe | SafeHtmlFlags.NoWriteBOM)
-					);
+					(int)(flags | SafeHtmlFlags.DebugNoPopup | SafeHtmlFlags.IndicateIfUnsafe | SafeHtmlFlags.NoWriteBOM));
 
 				StringBuilder Result = new StringBuilder(cbDst / 2);
 

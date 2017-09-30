@@ -436,8 +436,7 @@ namespace Adxstudio.Xrm.Cms
 							wls => wls.Website,
 							site => site.WebLinkSets,
 							(site, wls) => { wls.Website = site; site.WebLinkSets.Add(wls); },
-							(site, wls, id) => { wls.Website = id; site.WebLinkSets.Remove(wls); }
-							))
+							(site, wls, id) => { wls.Website = id; site.WebLinkSets.Remove(wls); }))
 				},
 				{
 					"adx_webpageaccesscontrolrule",
@@ -653,8 +652,7 @@ namespace Adxstudio.Xrm.Cms
 							language => language.PortalLanguage,
 							null,
 							(portalLanguage, language) => { language.PortalLanguage = portalLanguage; },
-							(portalLanguage, language, id) => { language.PortalLanguage = id; })
-						)
+							(portalLanguage, language, id) => { language.PortalLanguage = id; }))
 				}
 			},
 			new Dictionary<string, ManyRelationshipDefinition>

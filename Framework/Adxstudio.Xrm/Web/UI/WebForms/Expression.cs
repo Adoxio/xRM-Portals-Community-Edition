@@ -624,8 +624,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 						}
 
 						return expression;
-					}
-			);
+					});
 		}
 
 		public Expression Clone()

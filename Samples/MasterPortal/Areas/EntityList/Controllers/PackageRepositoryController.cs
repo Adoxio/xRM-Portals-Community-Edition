@@ -45,10 +45,9 @@ namespace Site.Areas.EntityList.Controllers
 				{"Repositories", new JArray(repositories.Select(e =>
 					new JObject
 					{
-						{"Name", e.GetAttributeValue<string>("adx_name")},
-						{"URL", GetPackageRepositoryUrl(website.Id, e.GetAttributeValue<string>("adx_partialurl"))},
-					}
-				))},
+						{"Name", e.GetAttributeValue<string>("adx_name") },
+						{"URL", GetPackageRepositoryUrl(website.Id, e.GetAttributeValue<string>("adx_partialurl")) },
+					})) },
 			});
 		}
 
@@ -138,8 +137,8 @@ namespace Site.Areas.EntityList.Controllers
 				{"Title", repository.Title},
 				{"InstallerVersion", repository.RequiredInstallerVersion},
 				{"Description", repository.Description},
-				{"Categories", new JArray(repository.Categories.Select(e => e.Name))},
-				{"Packages", new JArray(repository.Packages.Select(ToJObject))},
+				{"Categories", new JArray(repository.Categories.Select(e => e.Name)) },
+				{"Packages", new JArray(repository.Packages.Select(ToJObject)) },
 			});
 		}
 
@@ -255,25 +254,25 @@ namespace Site.Areas.EntityList.Controllers
 				{"URL", package.Url},
 				{"Version", package.Version},
 				{"PublisherName", package.PublisherName},
-				{"ReleaseDate", package.ReleaseDate.ToUniversalTime().ToString("o")},
+				{"ReleaseDate", package.ReleaseDate.ToUniversalTime().ToString("o") },
 				{"RequiredInstallerVersion", package.RequiredInstallerVersion},
 				{"Summary", package.Summary},
 				{"Description", package.Description},
-				{"Type", package.Type.ToString()},
+				{"Type", package.Type.ToString() },
 				{"Content", new JObject
 				{
 					{"URL", package.ContentUrl}
 				}},
 				{"HideFromPackageListing", package.HideFromPackageListing},
 				{"OverwriteWarning", package.OverwriteWarning},
-				{"Icon", package.Icon == null ? null : ToJObject(package.Icon)},
-				{"Images", new JArray(package.Images.Select(ToJObject))},
-				{"Categories", new JArray(package.Categories.Select(e => e.Name))},
-				{"Components", new JArray(package.Components.Select(ToJObject))},
-				{"Dependencies", new JArray(package.Dependencies.Select(ToJObject))},
+				{"Icon", package.Icon == null ? null : ToJObject(package.Icon) },
+				{"Images", new JArray(package.Images.Select(ToJObject)) },
+				{"Categories", new JArray(package.Categories.Select(e => e.Name)) },
+				{"Components", new JArray(package.Components.Select(ToJObject)) },
+				{"Dependencies", new JArray(package.Dependencies.Select(ToJObject)) },
 				{"DuplicationEnabled", package.Configuration.DuplicationEnabled},
-				{"ReferenceReplacementTargets", package.Configuration.ReferenceReplacementTargets != null ? new JArray(package.Configuration.ReferenceReplacementTargets.Select(ToJObject)) : new JArray()},
-				{"AttributeReplacementTargets", package.Configuration.AttributeReplacementTargets != null ? new JArray(package.Configuration.AttributeReplacementTargets.Select(ToJObject)) : new JArray()}
+				{"ReferenceReplacementTargets", package.Configuration.ReferenceReplacementTargets != null ? new JArray(package.Configuration.ReferenceReplacementTargets.Select(ToJObject)) : new JArray() },
+				{"AttributeReplacementTargets", package.Configuration.AttributeReplacementTargets != null ? new JArray(package.Configuration.AttributeReplacementTargets.Select(ToJObject)) : new JArray() }
 			};
 		}
 

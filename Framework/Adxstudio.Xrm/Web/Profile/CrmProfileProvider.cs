@@ -469,8 +469,7 @@ namespace Adxstudio.Xrm.Web.Profile
 						entity.GetAttributeValue<bool?>(_attributeMapIsAnonymous).GetValueOrDefault(),
 						entity.GetAttributeValue<DateTime?>(_attributeMapLastActivityDate).GetValueOrDefault(),
 						entity.GetAttributeValue<DateTime?>(_attributeMapLastUpdatedDate).GetValueOrDefault(),
-						-1)
-					);
+						-1));
 			}
 
 			totalRecords = context.CreateQuery(_profileEntityName).Where(wherePredicate).ToList().Count();

@@ -15,7 +15,7 @@ namespace Adxstudio.Xrm.Web.Mvc
     /// <summary>
     /// custom attribute to validate csrf token for ajax requests.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Method) ]
+    [AttributeUsage(AttributeTargets.Method)]
     public class AjaxValidateAntiForgeryTokenAttribute : FilterAttribute, IAuthorizationFilter
     {
 

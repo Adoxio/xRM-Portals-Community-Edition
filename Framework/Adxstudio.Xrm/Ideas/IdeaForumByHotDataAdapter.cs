@@ -71,8 +71,7 @@ namespace Adxstudio.Xrm.Ideas
 							addCondition("createdon", "ge", MinDate.Value.ToUniversalTime().ToString(CultureInfo.InvariantCulture));
 						}
 					},
-					null)
-				);
+					null));
 		}
 	}
 }

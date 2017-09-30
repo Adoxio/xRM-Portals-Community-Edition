@@ -77,7 +77,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 
 			WriteResponse(context.Response, new JObject
 			{
-				{"d", new JRaw(childJson)}
+				{"d", new JRaw(childJson) }
 			});
 		}
 

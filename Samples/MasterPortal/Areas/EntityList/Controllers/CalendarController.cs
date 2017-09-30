@@ -102,11 +102,11 @@ namespace Site.Areas.EntityList.Controllers
 		{
 			var json = new JObject
 			{
-				{"id", @event.EntityReference.Id.ToString()},
+				{"id", @event.EntityReference.Id.ToString() },
 				{"class", "event-info"},
 				{"title", @event.Summary},
-				{"start", ToUnixMilliseconds(@event.Start)},
-				{"end", ToUnixMilliseconds(@event.End.GetValueOrDefault(@event.Start))},
+				{"start", ToUnixMilliseconds(@event.Start) },
+				{"end", ToUnixMilliseconds(@event.End.GetValueOrDefault(@event.Start)) },
 				{"description", @event.Description},
 				{"location", @event.Location},
 			};

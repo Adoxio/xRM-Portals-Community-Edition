@@ -481,7 +481,7 @@ namespace Adxstudio.Xrm.KnowledgeArticles
 			{
 				{"regardingobjectid", KnowledgeArticle},
 				{"createdon", postedOn},
-				{"title", StringHelper.GetCommentTitleFromContent(content)},
+				{"title", StringHelper.GetCommentTitleFromContent(content) },
 				{"adx_createdbycontact", authorName},
 				{"adx_contactemail", authorEmail},
 				{"adx_approved", article.CommentPolicy == CommentPolicy.Open || article.CommentPolicy == CommentPolicy.OpenToAuthenticatedUsers},

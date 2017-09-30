@@ -70,16 +70,11 @@ namespace Adxstudio.Xrm.Web.Handlers
 				new XElement("html",
 					new XElement("head",
 						new XElement("title", ProductName + " " + product.Assembly.Version),
-						new XElement("link", new XAttribute("href", urlHelper.Content("~/css/bootstrap.min.css")), new XAttribute("rel", "stylesheet"))
-					),
+						new XElement("link", new XAttribute("href", urlHelper.Content("~/css/bootstrap.min.css")), new XAttribute("rel", "stylesheet"))),
 					new XElement("body",
 						new XElement("div", new XAttribute("class", "container"),
-							new XElement("div", body)
-						)
-					)
-				),
-				new XComment(" Page OK ")
-			);
+							new XElement("div", body)))),
+				new XComment(" Page OK "));
 		}
 
 		protected virtual IEnumerable<XObject> ToSection(string title, IEnumerable<string> headings, Func<IEnumerable<XObject>> toBody)
@@ -91,10 +86,8 @@ namespace Adxstudio.Xrm.Web.Handlers
 			yield return new XElement("h3", title);
 			yield return new XElement("table", new XAttribute("class", "table"),
 				new XElement("thead",
-					new XElement("tr", headings.Select(h => new XElement("th", h)))
-				),
-				new XElement("tbody", body)
-			);
+					new XElement("tr", headings.Select(h => new XElement("th", h)))),
+				new XElement("tbody", body));
 		}
 
 		protected static XElement ToRow(params object[] values)
