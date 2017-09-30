@@ -35,7 +35,7 @@ namespace Adxstudio.Xrm.AspNet.PortalBus
 			{
 				var entity = message.Target.ToEntityReference();
 
-				ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Id={0}, LogicalName={1}" , entity.Id, EntityNamePrivacy.GetEntityName(entity.LogicalName)));
+				ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Id={0}, LogicalName={1}", entity.Id, EntityNamePrivacy.GetEntityName(entity.LogicalName)));
 			}
 
 			if (message.Category != null)

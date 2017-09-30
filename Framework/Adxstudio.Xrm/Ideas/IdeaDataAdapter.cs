@@ -277,8 +277,8 @@ namespace Adxstudio.Xrm.Ideas
 				commentsEntitiesResult.Entities.Select(
 					commentEntity =>
 						new Comment(commentEntity,
-							new Lazy<ApplicationPath>(() => Dependencies.GetEditPath(commentEntity.ToEntityReference()),LazyThreadSafetyMode.None),
-							new Lazy<ApplicationPath>(() => Dependencies.GetDeletePath(commentEntity.ToEntityReference()),LazyThreadSafetyMode.None),
+							new Lazy<ApplicationPath>(() => Dependencies.GetEditPath(commentEntity.ToEntityReference()), LazyThreadSafetyMode.None),
+							new Lazy<ApplicationPath>(() => Dependencies.GetDeletePath(commentEntity.ToEntityReference()), LazyThreadSafetyMode.None),
 							new Lazy<bool>(() => includeUnapprovedComments, LazyThreadSafetyMode.None), ratingEnabled: true)));
 			return comments;
 

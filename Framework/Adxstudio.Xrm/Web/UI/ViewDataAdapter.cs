@@ -935,7 +935,7 @@ namespace Adxstudio.Xrm.Web.UI
 		/// ]]>
 		/// </code>
 		/// </example>
-		protected void ApplyEntitlementFilter(Fetch fetch, IDictionary<string,string> filterParameters)
+		protected void ApplyEntitlementFilter(Fetch fetch, IDictionary<string, string> filterParameters)
 		{
 			Guid customerId;
 			Guid primaryContactId;

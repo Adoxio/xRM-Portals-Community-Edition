@@ -204,7 +204,7 @@ namespace Adxstudio.Xrm.KnowledgeArticles
 			var annotationDataAdapter = new AnnotationDataAdapter(this.Dependencies);
 			var webPrefix = GetNotesFilterPrefix;
 
-			var relatedNotes = annotationDataAdapter.GetDocuments(article.EntityReference,webPrefix: webPrefix);
+			var relatedNotes = annotationDataAdapter.GetDocuments(article.EntityReference, webPrefix: webPrefix);
 			return relatedNotes.Select(a => new RelatedNote(a.NoteText == null ? string.Empty : a.NoteText.ToString().Substring(webPrefix.Length), a.FileAttachment.FileName, a.FileAttachment.Url));
 		}
 

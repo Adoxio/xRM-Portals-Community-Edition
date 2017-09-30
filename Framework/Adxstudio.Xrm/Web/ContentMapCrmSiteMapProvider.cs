@@ -157,12 +157,12 @@ namespace Adxstudio.Xrm.Web
 
 					if (node != null)
 					{
-						ADXTrace.Instance.TraceInfo(TraceCategory.Monitoring,"FindSiteMapNode: (7)FOUND other provider");
+						ADXTrace.Instance.TraceInfo(TraceCategory.Monitoring, "FindSiteMapNode: (7)FOUND other provider");
 						return node;
 					}
 				}
 
-				ADXTrace.Instance.TraceInfo(TraceCategory.Monitoring,"FindSiteMapNode: (8)NOT FOUND");
+				ADXTrace.Instance.TraceInfo(TraceCategory.Monitoring, "FindSiteMapNode: (8)NOT FOUND");
 				return GetNotFoundNode(map, site, urlProvider);
 			}
 		}

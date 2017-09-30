@@ -110,7 +110,7 @@ namespace Site
 			var langContext = HttpContext.Current.GetContextLanguageInfo();
 			if (langContext.IsCrmMultiLanguageEnabled)
 			{
-				return string.Format(",{0}" ,langContext.ContextLanguage.Code);
+				return string.Format(",{0}", langContext.ContextLanguage.Code);
 			}
 
 			return string.Empty;

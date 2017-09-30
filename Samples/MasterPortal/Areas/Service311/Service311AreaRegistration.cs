@@ -19,7 +19,7 @@ namespace Site.Areas.Service311
 
 		public override void RegisterArea(AreaRegistrationContext context)
 		{
-			context.MapRoute("ServiceRequestsMap", "Service311/Map/{action}" , new { controller = "Map", action = "Search" });
+			context.MapRoute("ServiceRequestsMap", "Service311/Map/{action}", new { controller = "Map", action = "Search" });
 
 		}
 	}

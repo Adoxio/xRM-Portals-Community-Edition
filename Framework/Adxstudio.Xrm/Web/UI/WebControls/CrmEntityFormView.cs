@@ -1022,7 +1022,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var filterExpression = new FilterExpression();
 			filterExpression.FilterOperator = LogicalOperator.And;
 			filterExpression.Conditions.Add(new ConditionExpression("type", ConditionOperator.NotNull));
-			filterExpression.Conditions.Add(new ConditionExpression("type",ConditionOperator.NotEqual,5));
+			filterExpression.Conditions.Add(new ConditionExpression("type", ConditionOperator.NotEqual, 5));
 			filterExpression.Conditions.Add(new ConditionExpression("objecttypecode", ConditionOperator.Equal, EntityName));
 
 			filterExpression = AddNameCondition(filterExpression, FormName);
@@ -1742,7 +1742,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var webControl = control as WebControl;
 			if (webControl != null)
 			{
-				webControl.Attributes.Add("readonly","readonly");
+				webControl.Attributes.Add("readonly", "readonly");
 				if (webControl is RadioButtonList || webControl is DropDownList || webControl is CheckBoxList || webControl is RadioButton || webControl is CheckBox)
 				{
 					webControl.Enabled = false;

@@ -48,14 +48,14 @@ namespace Adxstudio.Xrm.AspNet.Identity
 	}
 
 	public class CrmUserStore<TUser, TKey>
-		: CrmEntityStore<TUser, TKey>
-		, IUserPasswordStore<TUser, TKey>
-		, IUserEmailStore<TUser, TKey>
-		, IUserPhoneNumberStore<TUser, TKey>
-		, IUserSecurityStampStore<TUser, TKey>
-		, IUserTwoFactorStore<TUser, TKey>
-		, IUserLockoutStore<TUser, TKey>
-		, IUserLoginStore<TUser, TKey>
+		: CrmEntityStore<TUser, TKey>,
+		  IUserPasswordStore<TUser, TKey>,
+		  IUserEmailStore<TUser, TKey>,
+		  IUserPhoneNumberStore<TUser, TKey>,
+		  IUserSecurityStampStore<TUser, TKey>,
+		  IUserTwoFactorStore<TUser, TKey>,
+		  IUserLockoutStore<TUser, TKey>,
+		  IUserLoginStore<TUser, TKey>
 		where TUser : CrmUser<TKey>, new()
 		where TKey : IEquatable<TKey>
 	{
@@ -77,7 +77,7 @@ namespace Adxstudio.Xrm.AspNet.Identity
 					} }
 				}
 			};
-			
+
 			var relatedEntitiesQuery = new RelationshipQueryCollection
 			{
 				{ UserConstants.ContactExternalIdentityRelationship, externalIdentityFetch.ToFetchExpression() },

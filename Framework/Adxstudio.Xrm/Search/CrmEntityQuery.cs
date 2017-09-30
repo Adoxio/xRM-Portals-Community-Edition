@@ -14,7 +14,7 @@ namespace Adxstudio.Xrm.Search
 {
 	public class CrmEntityQuery : ICrmEntityQuery
 	{
-		public CrmEntityQuery(string queryText, int pageNumber, int pageSize, IEnumerable<string> logicalNames, IWebsiteLanguage language, bool multiLanguageEnabled, string filter = null, IEnumerable<FacetConstraints> facetConstraints = null, string sortingOptions = null , string queryTerm = null)
+		public CrmEntityQuery(string queryText, int pageNumber, int pageSize, IEnumerable<string> logicalNames, IWebsiteLanguage language, bool multiLanguageEnabled, string filter = null, IEnumerable<FacetConstraints> facetConstraints = null, string sortingOptions = null, string queryTerm = null)
         {
 			if (queryText == null)
 			{

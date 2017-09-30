@@ -119,7 +119,7 @@ namespace Adxstudio.Xrm.Cms
 				return null;
 			}
 
-            ADXTrace.Instance.TraceInfo(TraceCategory.Application,"Start");
+            ADXTrace.Instance.TraceInfo(TraceCategory.Application, "Start");
 
 			var adPlacement = SelectAdPlacement(e => e.GetAttributeValue<string>("adx_name") == adPlacementName);
 

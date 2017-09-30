@@ -73,7 +73,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				}
 
 				// Now bind the onkeydown, oninput and onpaste events to script to inject in parent page.
-				Attributes.Add("onkeydown","javascript:return LimitInput(this, event);" );
+				Attributes.Add("onkeydown", "javascript:return LimitInput(this, event);" );
 				Attributes.Add("oninput",  "javascript:return LimitInput(this, event);" );
 				Attributes.Add("onpaste",  "javascript:return LimitPaste(this, event);" );
 			}

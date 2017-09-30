@@ -300,7 +300,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					div.DataBinding += (sender, args) => 
 					{
 						div.InnerText = ReadOnlyMessage;
-						div.Attributes.Add("class","read-only-message");
+						div.Attributes.Add("class", "read-only-message");
 					};
 					(container as Control).Controls.Add(div);
 				}

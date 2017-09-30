@@ -165,14 +165,14 @@ namespace Adxstudio.Xrm.Search.Index
 					// Add this filter for url filtering
 					this._fetchXml.AddConditionalStatement("and", "articlepublicnumber", "not-null");
 
-					this.AddRelatedEntityFetch("connection", "connectionid", "record1id"
-						, "knowledgearticleid", "record2id", "product", "productid", "record2id", "productid");
+					this.AddRelatedEntityFetch("connection", "connectionid", "record1id",
+						"knowledgearticleid", "record2id", "product", "productid", "record2id", "productid");
 
 					if (this._index.DataContext.AssertEntityExists("adx_contentaccesslevel"))
 					{
-						this.AddRelatedEntityFetch("adx_knowledgearticlecontentaccesslevel"
-							, "adx_knowledgearticlecontentaccesslevelid", "knowledgearticleid", "knowledgearticleid", "adx_contentaccesslevelid"
-							, "adx_contentaccesslevel", "adx_contentaccesslevelid", "adx_contentaccesslevelid", "adx_contentaccesslevelid");
+						this.AddRelatedEntityFetch("adx_knowledgearticlecontentaccesslevel",
+							"adx_knowledgearticlecontentaccesslevelid", "knowledgearticleid", "knowledgearticleid", "adx_contentaccesslevelid",
+							"adx_contentaccesslevel", "adx_contentaccesslevelid", "adx_contentaccesslevelid", "adx_contentaccesslevelid");
 					}
 				}
 			}
@@ -242,9 +242,9 @@ namespace Adxstudio.Xrm.Search.Index
 				{
 					if (this._fetchXml.LogicalName == "knowledgearticle")
 					{
-						fetchXmlResponse = knowledgeArticleFilter.Aggregate(fetchXmlResponse, "knowledgearticleid", "record2id.productid"
-							, "adx_contentaccesslevelid.adx_contentaccesslevelid", "record2id.connectionid", "annotation.filename"
-							, "annotation.notetext", "annotation.annotationid");
+						fetchXmlResponse = knowledgeArticleFilter.Aggregate(fetchXmlResponse, "knowledgearticleid", "record2id.productid",
+							"adx_contentaccesslevelid.adx_contentaccesslevelid", "record2id.connectionid", "annotation.filename",
+							"annotation.notetext", "annotation.annotationid");
 					}
 					if (this._fetchXml.LogicalName == "annotation")
 					{
@@ -290,8 +290,8 @@ namespace Adxstudio.Xrm.Search.Index
 					</link-entity >
 				</link-entity > ";
 
-			this._fetchXml.AddLinkEntity(XElement.Parse(string.Format(xml, intersectLinkEntityName, intersectLinkEntityFrom
-				, intersectLinkEntityTo, intersectLinkEntityAlias, intersectLinkEntityNamePrimaryAttribute, linkEntityName,
+			this._fetchXml.AddLinkEntity(XElement.Parse(string.Format(xml, intersectLinkEntityName, intersectLinkEntityFrom,
+				intersectLinkEntityTo, intersectLinkEntityAlias, intersectLinkEntityNamePrimaryAttribute, linkEntityName,
 				 linkEntityFrom, linkEntityTo, attributeName)));
 		}
 

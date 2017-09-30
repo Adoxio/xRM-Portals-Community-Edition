@@ -803,7 +803,7 @@ namespace Adxstudio.Xrm.Web
 							Conditions = new[]
 							{
 								new Condition("adx_blogid", ConditionOperator.NotNull),
-								new Condition("adx_partialurl", ConditionOperator.Equal,pathMatch.Groups["right"].Value)
+								new Condition("adx_partialurl", ConditionOperator.Equal, pathMatch.Groups["right"].Value)
 							}
 						}
 					},

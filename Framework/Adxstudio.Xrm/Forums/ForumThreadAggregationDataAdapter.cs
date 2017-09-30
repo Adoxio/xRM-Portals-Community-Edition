@@ -222,7 +222,7 @@ namespace Adxstudio.Xrm.Forums
 
 			if (forumReference == null)
 			{
-				throw new ArgumentException(string.Format("Value must have entity reference attribute {0}.","adx_forumid"), "forumThread");
+				throw new ArgumentException(string.Format("Value must have entity reference attribute {0}.", "adx_forumid"), "forumThread");
 			}
 
 			bool cachedResult;

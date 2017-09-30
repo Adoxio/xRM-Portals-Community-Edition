@@ -117,7 +117,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			}
 		}
 
-		private static ServerValidateEventHandler GetConstantSumValidationHandler(Control container, string groupname,int min, int max)
+		private static ServerValidateEventHandler GetConstantSumValidationHandler(Control container, string groupname, int min, int max)
 		{
 			return (sender, args) =>
 			{

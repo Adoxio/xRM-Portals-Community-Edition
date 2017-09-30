@@ -755,7 +755,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						distanceItem.ToString(CultureInfo.InvariantCulture)));
 			}
 			optionsContainerElement.Controls.Add(distanceElement);
-			var searchButton = new HtmlButton {ID = "entity-list-map-search",};
+			var searchButton = new HtmlButton {ID = "entity-list-map-search"};
 			var searchButtonSnippet = new Snippet
 			{
 				SnippetName = "EntityList/Map/SearchButtonLabel",
@@ -942,7 +942,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var longitudeElement = new HtmlInputHidden();
 			longitudeElement.Attributes.Add("id", "entity-list-map-directions-longitude");
 			footerElement.Controls.Add(longitudeElement);
-			var getDirectionsButton = new HtmlButton {ID = "entity-list-map-directions-get",};
+			var getDirectionsButton = new HtmlButton {ID = "entity-list-map-directions-get"};
 			getDirectionsButton.Attributes.Add("class", "btn btn-primary");
 			var getDirectionsButtonSnippet = new Snippet
 			{

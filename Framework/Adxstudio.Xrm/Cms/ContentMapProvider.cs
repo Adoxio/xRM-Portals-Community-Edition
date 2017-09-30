@@ -301,7 +301,7 @@ namespace Adxstudio.Xrm.Cms
 			{
 				references[0].ThrowOnNull("reference");
 				EntityDefinition ed;
-				Dictionary<Guid,Entity> mapEntities = new Dictionary<Guid, Entity>();
+				Dictionary<Guid, Entity> mapEntities = new Dictionary<Guid, Entity>();
 				bool getEntityDefinition = map.Solution.Entities.TryGetValue(references[0].LogicalName, out ed);
 
 				if (getEntityDefinition)
@@ -323,7 +323,7 @@ namespace Adxstudio.Xrm.Cms
 							mapEntities.Add(entity.Id, entity);
 						}
 
-						ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Retrieve Multiple Response for Entity {0} has Record Count {1} , Refrence Count {2} ", references[0].LogicalName , entities.Count , references.Count));
+						ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Retrieve Multiple Response for Entity {0} has Record Count {1} , Refrence Count {2} ", references[0].LogicalName, entities.Count, references.Count));
 
 						// check if the entity is inactive according to the definition
 						foreach (var reference in references)
@@ -359,7 +359,7 @@ namespace Adxstudio.Xrm.Cms
 			}
 		}
 
-		private static DataCollection<Entity> RetrieveCRMRecords(CrmDbContext context, string primaryEntityAttribute , EntityReference reference , EntityDefinition ed , List<Guid> guids)
+		private static DataCollection<Entity> RetrieveCRMRecords(CrmDbContext context, string primaryEntityAttribute, EntityReference reference, EntityDefinition ed, List<Guid> guids)
 		{
 			var fetch = ed.CreateFetch();
 

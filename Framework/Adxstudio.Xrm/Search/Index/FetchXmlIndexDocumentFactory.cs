@@ -186,7 +186,7 @@ namespace Adxstudio.Xrm.Search.Index
 						if (entityMetadata.LogicalName == "annotation" && fetchXmlField.Name == "knowledgearticle.knowledgearticleid")
 						{
 							var id = new Guid(fetchXmlField.Value);
-							document.Add(new Field("annotation_knowledgearticleid",id.ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
+							document.Add(new Field("annotation_knowledgearticleid", id.ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
 						}
 					}
 

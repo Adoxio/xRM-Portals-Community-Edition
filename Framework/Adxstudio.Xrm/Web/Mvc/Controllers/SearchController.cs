@@ -92,7 +92,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 				var itemCount = results.ApproximateTotalHits;
 				var pageCount = itemCount > 0 ? (int)Math.Ceiling(itemCount / (double)results.PageSize) : 0;
 
-				ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Search term:{0}, length: {1}, results contain {2} items",searchTerm, searchTerm.Length, itemCount));
+				ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Search term:{0}, length: {1}, results contain {2} items", searchTerm, searchTerm.Length, itemCount));
 
 				var jsonResult = new JObject {
 					{"itemCount", itemCount},
@@ -216,7 +216,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 			return facetViewJson;
 		}
 
-		private Dictionary<Guid,string> MapEntityReferencesToLocalizedLabels(IEnumerable<EntityReference> entityReferences, string localizedLabelField)
+		private Dictionary<Guid, string> MapEntityReferencesToLocalizedLabels(IEnumerable<EntityReference> entityReferences, string localizedLabelField)
 		{
 			var portal = PortalCrmConfigurationManager.CreatePortalContext();
 			var serviceContext = portal.ServiceContext;

@@ -58,8 +58,8 @@ namespace Adxstudio.Xrm.AspNet.Cms
 	}
 
 	public class CrmWebsiteStore<TWebsite, TKey>
-		: CrmEntityStore<TWebsite, TKey>
-		, IQueryableWebsiteStore<TWebsite, TKey>
+		: CrmEntityStore<TWebsite, TKey>,
+		  IQueryableWebsiteStore<TWebsite, TKey>
 		where TWebsite : CrmWebsite<TKey>, new()
 		where TKey : IEquatable<TKey>
 	{

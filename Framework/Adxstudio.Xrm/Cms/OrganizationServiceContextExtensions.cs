@@ -69,7 +69,7 @@ namespace Adxstudio.Xrm.Cms
 
 		#region Page Comments
 
-		public static QueryExpression SelectCommentsByPage(PagingInfo pageInfo, Guid regardingobjectid,bool includeUnapprovedComments,bool? chronologicalComments = null)
+		public static QueryExpression SelectCommentsByPage(PagingInfo pageInfo, Guid regardingobjectid, bool includeUnapprovedComments, bool? chronologicalComments = null)
 		{
 			var query = new QueryExpression("feedback")
 			{

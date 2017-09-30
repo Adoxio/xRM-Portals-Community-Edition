@@ -67,7 +67,7 @@ namespace Adxstudio.Xrm.Search
 
 			if (result.Url == null)
 			{
-				ADXTrace.Instance.TraceWarning(TraceCategory.Application, string.Format("Search result had invalid URL. Logical name: {0}, ID: {1}",EntityNamePrivacy.GetEntityName(result.EntityLogicalName), result.EntityID));
+				ADXTrace.Instance.TraceWarning(TraceCategory.Application, string.Format("Search result had invalid URL. Logical name: {0}, ID: {1}", EntityNamePrivacy.GetEntityName(result.EntityLogicalName), result.EntityID));
 				return false;
 			}
 

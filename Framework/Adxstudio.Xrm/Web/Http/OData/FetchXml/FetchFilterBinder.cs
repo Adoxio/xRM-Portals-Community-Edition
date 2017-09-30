@@ -104,7 +104,7 @@ namespace Adxstudio.Xrm.Web.Http.OData.FetchXml
 			var constantNode = arguments[1] as ConstantNode;
 			if (constantNode == null)
 			{
-				throw new ODataException(string.Format("Invalid {0} function call. A valid string value must be specified as the {1} parameter.", singleValueFunctionCallNode.Name,"second"));
+				throw new ODataException(string.Format("Invalid {0} function call. A valid string value must be specified as the {1} parameter.", singleValueFunctionCallNode.Name, "second"));
 			}
 			var value = BindConstantNode(constantNode);
 			if (value == null)
@@ -132,7 +132,7 @@ namespace Adxstudio.Xrm.Web.Http.OData.FetchXml
 			var constantNode = arguments[1] as ConstantNode;
 			if (constantNode == null)
 			{
-				throw new ODataException(string.Format("Invalid {0} function call. A valid string value must be specified as the {1} parameter.", singleValueFunctionCallNode.Name,"second"));
+				throw new ODataException(string.Format("Invalid {0} function call. A valid string value must be specified as the {1} parameter.", singleValueFunctionCallNode.Name, "second"));
 			}
 			var value = BindConstantNode(constantNode);
 			if (value == null)
@@ -154,7 +154,7 @@ namespace Adxstudio.Xrm.Web.Http.OData.FetchXml
 			var singleValuePropertyAccessNode = arguments[1] as SingleValuePropertyAccessNode;
 			if (singleValuePropertyAccessNode == null)
 			{
-				throw new ODataException(string.Format("Invalid {0} function call. A valid property name must be specified as the {1} parameter.", singleValueFunctionCallNode.Name,"second"));
+				throw new ODataException(string.Format("Invalid {0} function call. A valid property name must be specified as the {1} parameter.", singleValueFunctionCallNode.Name, "second"));
 			}
 			condition.Attribute = BindPropertyAccessQueryNode(singleValuePropertyAccessNode);
 			var constantNode = arguments[0] as ConstantNode;

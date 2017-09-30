@@ -230,9 +230,9 @@ namespace Adxstudio.Xrm.AspNet
 			{
 				Parameters = new ParameterCollection
 				{
-					{ "EntityMoniker" , entity },
-					{ "State" , new OptionSetValue(1) },
-					{ "Status" , new OptionSetValue(2) },
+					{ "EntityMoniker", entity },
+					{ "State", new OptionSetValue(1) },
+					{ "Status", new OptionSetValue(2) },
 				}
 			};
 		}

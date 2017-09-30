@@ -25,7 +25,7 @@ namespace Adxstudio.Xrm.Issues
 		{
 			var issueForums = issueForumEntities.ToArray();
 
-			return issueForums.Select(e => new IssueForum(e,_httpContext)).ToArray();
+			return issueForums.Select(e => new IssueForum(e, _httpContext)).ToArray();
 		}
 	}
 }
