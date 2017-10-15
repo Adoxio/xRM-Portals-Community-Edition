@@ -53,14 +53,14 @@ namespace Microsoft.Xrm.Portal.Web.Providers
 			{
 				{
 					"adx_webpage",
-					new Tuple<string, Relationship, string> (
+					new Tuple<string, Relationship, string>(
 						"adx_partialurl",
 						"adx_webpage_webpage".ToRelationship(EntityRole.Referencing),
 						"adx_webpage")
 				},
 				{
 					"adx_webfile",
-					new Tuple<string, Relationship, string> (
+					new Tuple<string, Relationship, string>(
 						"adx_partialurl",
 						"adx_webpage_webfile".ToRelationship(),
 						"adx_webpage")
