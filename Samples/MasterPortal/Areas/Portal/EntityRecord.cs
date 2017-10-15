@@ -138,7 +138,7 @@ namespace Site.Areas.Portal
 									var date = (DateTime)value;
 									displayValue = date.ToString(DateTimeClientFormat);
 								}
-								if (behavior == DateTimeBehavior.TimeZoneIndependent)
+								if (behavior == DateTimeBehavior.TimeZoneIndependent || behavior == DateTimeBehavior.DateOnly)
 								{
 									// JSON serialization converts the time from server local to UTC automatically
 									// to avoid this we can convert to UTC before serialization
@@ -194,6 +194,7 @@ namespace Site.Areas.Portal
 						{
 							behavior = DateTimeBehavior.DateOnly;
 							format = DateTimeFormat.DateOnly;
+							value = DateTime.SpecifyKind((DateTime)value, DateTimeKind.Utc);
 						}
 						else
 						{

@@ -1405,7 +1405,7 @@
 					displayFormat = datetimeFormat;
 				}
 
-				var attributeAsMoment = behavior == "TimeZoneIndependent"
+				var attributeAsMoment = behavior == "TimeZoneIndependent" || behavior == "DateOnly"
 					? moment.utc(attribute.Value)
 					: moment(attribute.Value);
 
