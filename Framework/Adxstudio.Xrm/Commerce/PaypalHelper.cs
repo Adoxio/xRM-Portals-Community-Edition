@@ -231,7 +231,7 @@ namespace Adxstudio.Xrm.Commerce
 			return true;
 		}
 
-		public static Dictionary <string, string> ToDictionary(NameValueCollection source)
+		public static Dictionary<string, string> ToDictionary(NameValueCollection source)
 		{
 			return source.Cast<string>().Select(s => new { Key = s, Value = source[s] }).ToDictionary(p => p.Key, p => p.Value);
 		}
