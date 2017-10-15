@@ -8,7 +8,7 @@ using System;
 namespace Adxstudio.Xrm.Cms
 {
 	[Serializable]
-	public class RatingInfo: IRatingInfo
+	public class RatingInfo : IRatingInfo
 	{
 		public RatingInfo(int yesCount = 0, int noCount = 0, double averageRating = 0, int ratingCount = 0, int ratingSum = 0)
 		{

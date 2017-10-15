@@ -16,7 +16,7 @@ using System.Web.Routing;
 
 namespace Adxstudio.Xrm.Commerce
 {
-	public class PaymentProcessingRequestHandlerFactory: IHttpHandler
+	public class PaymentProcessingRequestHandlerFactory : IHttpHandler
 	{
 		public string PortalName { get; set; }
 

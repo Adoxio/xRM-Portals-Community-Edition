@@ -11,7 +11,7 @@ using Adxstudio.Xrm.Cms;
 
 namespace Adxstudio.Xrm.Web.Mvc.Liquid
 {
-	public class PollDrop :EntityDrop
+	public class PollDrop : EntityDrop
 	{
 		private readonly Lazy<PollOptionDrop[]> _options;
 

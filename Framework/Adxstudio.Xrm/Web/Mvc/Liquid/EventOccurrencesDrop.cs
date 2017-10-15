@@ -15,7 +15,7 @@ using Adxstudio.Xrm.Resources;
 
 namespace Adxstudio.Xrm.Web.Mvc.Liquid
 {
-	public class EventOccurrencesDrop: PortalDrop
+	public class EventOccurrencesDrop : PortalDrop
 	{
 		private bool _isMin;
 		private bool _isMax;

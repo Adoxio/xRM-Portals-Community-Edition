@@ -44,7 +44,7 @@ namespace Adxstudio.Xrm.Web
 		{
 			ADXTrace.Instance.TraceInfo(TraceCategory.Monitoring, "FindSiteMapNode: (0)ENTER");
 
-			return GetContentMapProvider().Using(map => FindSiteMapNode(GetRawUrlWithoutLanguage(rawUrl), map, excludeFromSecurityValidation:true));
+			return GetContentMapProvider().Using(map => FindSiteMapNode(GetRawUrlWithoutLanguage(rawUrl), map, excludeFromSecurityValidation: true));
 		}
 
 		private string GetRawUrlWithoutLanguage(string rawUrl)

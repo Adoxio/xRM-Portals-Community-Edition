@@ -7,7 +7,7 @@ using System;
 
 namespace Adxstudio.Xrm.Marketing
 {
-	class InvalidSignatureException: Exception
+	class InvalidSignatureException : Exception
 	{
 	}
 }

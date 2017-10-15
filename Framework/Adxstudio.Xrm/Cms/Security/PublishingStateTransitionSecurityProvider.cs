@@ -15,7 +15,7 @@ using Adxstudio.Xrm.Resources;
 
 namespace Adxstudio.Xrm.Cms.Security
 {
-	internal class PublishingStateTransitionSecurityProvider: IPublishingStateTransitionSecurityProvider
+	internal class PublishingStateTransitionSecurityProvider : IPublishingStateTransitionSecurityProvider
 	{
 
 		public void Assert(OrganizationServiceContext context, Entity website, Entity fromState, Entity toState)

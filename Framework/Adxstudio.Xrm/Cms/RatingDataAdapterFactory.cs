@@ -12,7 +12,7 @@ using Microsoft.Xrm.Sdk;
 
 namespace Adxstudio.Xrm.Cms
 {
-	public class RatingDataAdapterFactory: IRatingDataAdapterFactory
+	public class RatingDataAdapterFactory : IRatingDataAdapterFactory
 	{
 		private EntityReference _entity;
 

@@ -618,7 +618,7 @@ namespace Adxstudio.Xrm.Forums
 				cloudStorageContainer = AnnotationDataAdapter.GetBlobContainer(cloudStorageAccount, cloudStorageContainerName);
 			}
 
-			var postInfos = serviceContext.FetchForumPostInfos(entities.Select(e => e.Id), website.Id, cloudStorageContainer:cloudStorageContainer);
+			var postInfos = serviceContext.FetchForumPostInfos(entities.Select(e => e.Id), website.Id, cloudStorageContainer: cloudStorageContainer);
 			var urlProvider = Dependencies.GetUrlProvider();
 			var thread = Select();
 			var user = Dependencies.GetPortalUser();

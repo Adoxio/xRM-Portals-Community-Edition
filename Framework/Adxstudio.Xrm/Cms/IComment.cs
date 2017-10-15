@@ -9,7 +9,7 @@ using Microsoft.Xrm.Sdk;
 
 namespace Adxstudio.Xrm.Cms
 {
-	public interface IComment: IRateable
+	public interface IComment : IRateable
 	{
 		IAuthor Author { get; }
 

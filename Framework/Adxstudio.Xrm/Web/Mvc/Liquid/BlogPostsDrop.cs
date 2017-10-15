@@ -13,7 +13,7 @@ using Microsoft.Xrm.Sdk.Client;
 
 namespace Adxstudio.Xrm.Web.Mvc.Liquid
 {
-	public class BlogPostsDrop: PortalDrop
+	public class BlogPostsDrop : PortalDrop
 	{
 		private readonly IBlogAggregationDataAdapter _adapter;
 		private readonly Lazy<BlogPostDrop[]> _posts;

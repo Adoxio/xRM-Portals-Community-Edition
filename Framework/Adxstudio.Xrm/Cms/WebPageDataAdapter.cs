@@ -23,7 +23,7 @@ using Microsoft.Xrm.Sdk.Query;
 
 namespace Adxstudio.Xrm.Cms
 {
-	public class WebPageDataAdapter: RatingDataAdapter, ICommentDataAdapter
+	public class WebPageDataAdapter : RatingDataAdapter, ICommentDataAdapter
 	{
 		private bool? _hasCommentModerationPermission;
 

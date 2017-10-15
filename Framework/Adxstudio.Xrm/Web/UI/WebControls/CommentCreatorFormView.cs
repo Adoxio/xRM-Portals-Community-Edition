@@ -12,7 +12,7 @@ using System.Globalization;
 
 namespace Adxstudio.Xrm.Web.UI.WebControls
 {
-	public class CommentCreatorFormView: CrmEntityFormView
+	public class CommentCreatorFormView : CrmEntityFormView
 	{
 		protected override void OnInit(EventArgs e)
 		{

@@ -10,7 +10,7 @@ using Adxstudio.Xrm.Core.Flighting;
 
 namespace Adxstudio.Xrm.Events
 {
-	internal class Event: IEvent
+	internal class Event : IEvent
 	{
 		public Event(Entity entity)
 		{

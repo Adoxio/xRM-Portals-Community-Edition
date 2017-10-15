@@ -12,7 +12,7 @@ using System.Web;
 
 namespace Adxstudio.Xrm.Web.Modules
 {
-public class UpdateCookieModule :IHttpModule
+public class UpdateCookieModule : IHttpModule
 	{
 		public void Dispose() { }
  

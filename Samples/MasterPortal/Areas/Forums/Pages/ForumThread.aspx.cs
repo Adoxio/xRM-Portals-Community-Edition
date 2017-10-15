@@ -134,7 +134,7 @@ namespace Site.Areas.Forums.Pages
 
 		private IForumThreadDataAdapter CreateForumThreadDataAdapter()
 		{
-			return new ForumThreadDataAdapter(_portal.Value.Entity.ToEntityReference(), new PortalContextDataAdapterDependencies(_portal.Value, requestContext:Request.RequestContext));
+			return new ForumThreadDataAdapter(_portal.Value.Entity.ToEntityReference(), new PortalContextDataAdapterDependencies(_portal.Value, requestContext: Request.RequestContext));
 		}
 
 		protected void AddAlert_Click(object sender, EventArgs e)

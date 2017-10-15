@@ -16,7 +16,7 @@ using Microsoft.Xrm.Sdk.Metadata;
 
 namespace Adxstudio.Xrm.Cms
 {
-	public class RatingDataAdapter: IRatingDataAdapter
+	public class RatingDataAdapter : IRatingDataAdapter
 	{
 		public RatingDataAdapter(EntityReference rateableReference, IDataAdapterDependencies dependencies)
 		{

@@ -7,7 +7,7 @@ using Adxstudio.Xrm.Cms;
 
 namespace Adxstudio.Xrm.Issues
 {
-	public class IssueCommentPolicyReader: ICommentPolicyReader
+	public class IssueCommentPolicyReader : ICommentPolicyReader
 	{
 		private IIssue _issue;
 

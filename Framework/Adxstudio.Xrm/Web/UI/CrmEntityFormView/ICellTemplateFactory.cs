@@ -15,7 +15,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 	/// <summary>
 	/// Factory pattern class to create a cell template.
 	/// </summary>
-	public interface ICellTemplateFactory: Microsoft.Xrm.Portal.Web.UI.CrmEntityFormView.ICellTemplateFactory
+	public interface ICellTemplateFactory : Microsoft.Xrm.Portal.Web.UI.CrmEntityFormView.ICellTemplateFactory
 	{
 		/// <summary>
 		/// CellTemplateFactory Initialization.

@@ -7,7 +7,7 @@ using System.Configuration.Provider;
 
 namespace Adxstudio.Xrm.Search
 {
-	internal class SearchDisabledProviderException: ProviderException
+	internal class SearchDisabledProviderException : ProviderException
 	{
 		public SearchDisabledProviderException(string message) : base(message)
 		{

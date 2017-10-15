@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace Site.Areas.Opportunities
 {
-	public class OpportunitiesAreaRegistration: AreaRegistration
+	public class OpportunitiesAreaRegistration : AreaRegistration
 	{
 		public override string AreaName
 		{

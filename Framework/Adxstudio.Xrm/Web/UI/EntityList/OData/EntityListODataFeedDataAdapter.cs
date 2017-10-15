@@ -29,7 +29,7 @@ namespace Adxstudio.Xrm.Web.UI.EntityList.OData
 	/// <summary>
 	/// Data adapter regarding OData feeds enabled for Entity List.
 	/// </summary>
-	public class EntityListODataFeedDataAdapter: IEntityListODataFeedDataAdapter
+	public class EntityListODataFeedDataAdapter : IEntityListODataFeedDataAdapter
 	{
 		private enum StateCode
 		{

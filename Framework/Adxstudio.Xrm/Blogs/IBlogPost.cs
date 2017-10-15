@@ -12,7 +12,7 @@ using Microsoft.Xrm.Sdk;
 
 namespace Adxstudio.Xrm.Blogs
 {
-	public interface IBlogPost: IRateable
+	public interface IBlogPost : IRateable
 	{
 		ApplicationPath ApplicationPath { get; }
 

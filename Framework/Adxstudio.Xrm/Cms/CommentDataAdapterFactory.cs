@@ -10,7 +10,7 @@ using Microsoft.Xrm.Sdk;
 
 namespace Adxstudio.Xrm.Cms
 {
-	public class CommentDataAdapterFactory: ICommentDataAdapterFactory
+	public class CommentDataAdapterFactory : ICommentDataAdapterFactory
 	{
 		private readonly EntityReference _entity;
 

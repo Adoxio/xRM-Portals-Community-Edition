@@ -14,7 +14,7 @@ using Microsoft.Xrm.Sdk;
 
 namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 {
-	public class ActionSerializationBinder :SerializationBinder
+	public class ActionSerializationBinder : SerializationBinder
 	{
 		private IList<Type> _knownTypes;
 		

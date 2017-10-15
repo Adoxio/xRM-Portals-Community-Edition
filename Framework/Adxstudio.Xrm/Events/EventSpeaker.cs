@@ -12,7 +12,7 @@ using Microsoft.Xrm.Sdk;
 
 namespace Adxstudio.Xrm.Events
 {
-	public class EventSpeaker: IEventSpeaker
+	public class EventSpeaker : IEventSpeaker
 	{
 		public EventSpeaker(Entity entity)
 		{

@@ -12,7 +12,7 @@ using Microsoft.Xrm.Sdk;
 
 namespace Adxstudio.Xrm.Events
 {
-		public class EventSponsor: IEventSponsor
+		public class EventSponsor : IEventSponsor
 	{
 		public EventSponsor(Entity entity)
 		{

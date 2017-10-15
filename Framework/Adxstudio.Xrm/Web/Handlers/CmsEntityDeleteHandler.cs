@@ -53,7 +53,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 				{
 					var forumDataAdapter = new ForumDataAdapter(
 						forum.ToEntityReference(),
-						new PortalConfigurationDataAdapterDependencies(portalName:PortalName, requestContext:context.Request.RequestContext));
+						new PortalConfigurationDataAdapterDependencies(portalName: PortalName, requestContext: context.Request.RequestContext));
 
 					forumDataAdapter.DeleteThread(entity.ToEntityReference());
 
@@ -76,7 +76,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 				{
 					var forumThreadDataAdapter = new ForumThreadDataAdapter(
 						forumThread.ToEntityReference(),
-						new PortalConfigurationDataAdapterDependencies(portalName:PortalName, requestContext:context.Request.RequestContext));
+						new PortalConfigurationDataAdapterDependencies(portalName: PortalName, requestContext: context.Request.RequestContext));
 
 					forumThreadDataAdapter.DeletePost(entity.ToEntityReference());
 

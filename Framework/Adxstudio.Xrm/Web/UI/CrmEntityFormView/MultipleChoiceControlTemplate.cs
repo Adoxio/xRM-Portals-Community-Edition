@@ -135,7 +135,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			};
 		}
 
-		private class MultipleChoiceCheckboxValidator: CheckboxValidator
+		private class MultipleChoiceCheckboxValidator : CheckboxValidator
 		{
 			public Control Container;
 			public string GroupName;

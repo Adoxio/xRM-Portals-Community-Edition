@@ -14,7 +14,7 @@ using Adxstudio.Xrm.Resources;
 
 namespace Adxstudio.Xrm.Web.UI.WebControls
 {
-	public class CheckboxValidator: CustomValidator
+	public class CheckboxValidator : CustomValidator
 	{
 		protected CheckBox CheckBoxToValidate
 		{

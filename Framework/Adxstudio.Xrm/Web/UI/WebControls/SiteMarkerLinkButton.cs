@@ -19,7 +19,7 @@ using Microsoft.Xrm.Sdk;
 namespace Adxstudio.Xrm.Web.UI.WebControls
 {
 	[ToolboxData("<{0}:SiteMarkerLinkButton runat=\"server\">SiteMarkerLinkButton</{0}:SiteMarkerLinkButton>")]
-	public class SiteMarkerLinkButton: LinkButton
+	public class SiteMarkerLinkButton : LinkButton
 	{
 		
 		private IPortalContext Portal

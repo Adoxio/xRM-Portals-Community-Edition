@@ -7,7 +7,7 @@ using Adxstudio.Xrm.Cms;
 
 namespace Adxstudio.Xrm.Blogs
 {
-	public class BlogCommentPolicyReader: ICommentPolicyReader
+	public class BlogCommentPolicyReader : ICommentPolicyReader
 	{
 		private IBlogPost _blogPost;
 

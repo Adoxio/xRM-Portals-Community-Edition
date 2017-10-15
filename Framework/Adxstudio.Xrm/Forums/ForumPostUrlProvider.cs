@@ -13,7 +13,7 @@ using Microsoft.Xrm.Client;
 
 namespace Adxstudio.Xrm.Forums
 {
-	public class ForumPostUrlProvider: IForumPostUrlProvider
+	public class ForumPostUrlProvider : IForumPostUrlProvider
 	{
 		public string GetPostUrl(IForumThread forumThread, Guid forumPostId)
 		{

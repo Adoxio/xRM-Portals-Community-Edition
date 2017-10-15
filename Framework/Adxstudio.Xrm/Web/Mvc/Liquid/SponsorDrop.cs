@@ -12,7 +12,7 @@ using Adxstudio.Xrm.Events;
 
 namespace Adxstudio.Xrm.Web.Mvc.Liquid
 {
-	public class SponsorDrop: EntityDrop
+	public class SponsorDrop : EntityDrop
 	{
 		public SponsorDrop(IPortalLiquidContext portalLiquidContext, IEventSponsor eventSponsor)
 			: base(portalLiquidContext, eventSponsor.Entity)

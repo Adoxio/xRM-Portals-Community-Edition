@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace Site.Areas.CustomerManagement
 {
-	public class CustomerManagementAreaRegistration: AreaRegistration
+	public class CustomerManagementAreaRegistration : AreaRegistration
 	{
 		public override string AreaName
 		{
