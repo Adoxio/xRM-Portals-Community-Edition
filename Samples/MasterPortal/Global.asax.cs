@@ -25,6 +25,7 @@ namespace Site
 	using Adxstudio.Xrm.Web;
 	using Adxstudio.Xrm.Web.Mvc;
 	using Microsoft.Xrm.Portal.Configuration;
+	using Adxstudio.Xrm.AspNet.Cms;
 
 	public class Global : HttpApplication
 	{
@@ -45,6 +46,22 @@ namespace Site
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
+		}
+
+		protected void Application_PreRequestHandlerExecute(object sender, EventArgs e)
+		{
+			// Set the culture of the current request's thread to the current website's language.
+			// This is necessary in .NET 4.6 and above because the current thread doesn't retain the
+			// thread culture set within the Site.Startup OWIN middleware.
+			// https://stackoverflow.com/questions/36455801/owinmiddleware-doesnt-preserve-culture-change-in-net-4-6
+			// https://connect.microsoft.com/VisualStudio/feedback/details/2455357
+			// https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(v=vs.110).aspx#Async
+			// https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/mitigation-culture-and-asynchronous-operations
+			var languageContext = Context.GetContextLanguageInfo();
+			if (languageContext?.ContextLanguage != null)
+			{
+				ContextLanguageInfo.SetCultureInfo(languageContext.ContextLanguage.Lcid);
+			}
 		}
 
 		protected void Session_Start(object sender, EventArgs e)

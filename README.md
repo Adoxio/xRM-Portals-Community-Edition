@@ -31,6 +31,8 @@ A full description of the deployment process is described in the file `Self-host
 
 The following system requirements are additional to those listed in `Self-hosted_Installation_Guide_for_Portals.pdf`:
 
+- .NET Framework 4.7 must be installed ([download](https://www.microsoft.com/net/download/dotnet-framework-runtime/net47), [system requirements](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements)).
+
 - The website must be set to run in 64-bit mode:
 
   IIS Application Pool:
