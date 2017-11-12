@@ -248,7 +248,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 
 			return current == null
 				? null
-				: string.Join(":", new [] { current.Url }.Concat(portalViewContext.CurrentSiteMapNodeAncestors.Select(e => e.Url)));
+				: string.Join(":", new[] { current.Url }.Concat(portalViewContext.CurrentSiteMapNodeAncestors.Select(e => e.Url)));
 		}
 
 		public static IHtmlString Breadcrumb(this HtmlHelper html, string url = null, int? takeLast = null)

@@ -49,10 +49,10 @@ namespace Microsoft.Xrm.Portal.Web.UI.WebControls
 
 				if (dataItem is CrmSiteMapNode)
 				{
-					return new [] { (dataItem as CrmSiteMapNode).Entity };
+					return new[] { (dataItem as CrmSiteMapNode).Entity };
 				}
 
-				return new [] { dataItem };
+				return new[] { dataItem };
 			}
 		}
 	}

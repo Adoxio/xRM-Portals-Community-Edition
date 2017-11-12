@@ -70,7 +70,7 @@ namespace Adxstudio.Xrm.Caching
 		{
 			var key = cacheKey.ToLower();
 			var policy = new CacheItemPolicy();
-			policy.ChangeMonitors.Add(cache.CreateCacheEntryChangeMonitor(new [] { key }, regionName));
+			policy.ChangeMonitors.Add(cache.CreateCacheEntryChangeMonitor(new[] { key }, regionName));
 			var itemTelemetryCacheKey = GetItemTelemetryCacheKey(key);
 			cache.Add(itemTelemetryCacheKey, telemetry, policy, regionName);
 		}

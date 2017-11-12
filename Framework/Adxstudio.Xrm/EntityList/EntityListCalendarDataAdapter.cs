@@ -351,7 +351,7 @@ namespace Adxstudio.Xrm.EntityList
 
 			var systemUser = serviceContext.RetrieveSingle(
 				organizerEntityReference.LogicalName,
-				new [] { "fullname", "internalemailaddress" },
+				new[] { "fullname", "internalemailaddress" },
 				new Condition("systemuserid", ConditionOperator.Equal, organizerEntityReference.Id));
 
 			if (systemUser == null)

@@ -46,7 +46,7 @@ namespace Adxstudio.Xrm.Forums.Security
 
 			ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Testing right {0} on forum '{1}' ({2}).", right, forum.GetAttributeValue<string>("adx_name"), forum.Id));
 
-			this.AddDependencies(dependencies, forum, new [] { "adx_webrole", "adx_communityforumaccesspermission" });
+			this.AddDependencies(dependencies, forum, new[] { "adx_webrole", "adx_communityforumaccesspermission" });
 
 			if (!Roles.Enabled)
 			{

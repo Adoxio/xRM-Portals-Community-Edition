@@ -58,7 +58,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			var secondEnumerable = second as IEnumerable;
 
 			return secondEnumerable == null
-				? firstEnumerable.Concat(new [] { second })
+				? firstEnumerable.Concat(new[] { second })
 				: firstEnumerable.Concat(secondEnumerable.Cast<object>());
 		}
 

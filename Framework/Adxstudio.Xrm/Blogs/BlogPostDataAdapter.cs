@@ -149,7 +149,7 @@ namespace Adxstudio.Xrm.Blogs
 			var urlProvider = BlogDependencies.GetUrlProvider();
 			var tagPathGenerator = new BlogArchiveApplicationPathGenerator(BlogDependencies);
 
-			return new BlogPostFactory(serviceContext, urlProvider, BlogDependencies.GetWebsite(), tagPathGenerator).Create(new [] { entity }).FirstOrDefault();
+			return new BlogPostFactory(serviceContext, urlProvider, BlogDependencies.GetWebsite(), tagPathGenerator).Create(new[] { entity }).FirstOrDefault();
 		}
 
 		public virtual IEnumerable<IComment> SelectComments()

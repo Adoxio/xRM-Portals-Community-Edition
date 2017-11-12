@@ -1251,12 +1251,12 @@ namespace Adxstudio.Xrm.Web.UI
 		{
 			if (!configuration.EnableEntityPermissions)
 			{
-				return new [] { fetch };
+				return new[] { fetch };
 			}
 
 			if (!AdxstudioCrmConfigurationManager.GetCrmSection().ContentMap.Enabled)
 			{
-				return new [] { fetch };
+				return new[] { fetch };
 			}
 
 			var serviceContext = Dependencies.GetServiceContext();

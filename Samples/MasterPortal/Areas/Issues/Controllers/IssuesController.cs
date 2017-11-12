@@ -119,7 +119,7 @@ namespace Site.Areas.Issues.Controllers
 			
 			if (status == "all" && string.Equals(filter, "open", StringComparison.InvariantCultureIgnoreCase))
 			{
-				issueForumDataAdapter.Status = new []
+				issueForumDataAdapter.Status = new[]
 				{
 					(int)IssueStatus.NewOrUnconfirmed,
 					(int)IssueStatus.Confirmed,
@@ -128,7 +128,7 @@ namespace Site.Areas.Issues.Controllers
 			}
 			else if (status == "all" && string.Equals(filter, "closed", StringComparison.InvariantCultureIgnoreCase))
 			{
-				issueForumDataAdapter.Status = new []
+				issueForumDataAdapter.Status = new[]
 				{
 					(int)IssueStatus.Resolved,
 					(int)IssueStatus.WillNotFix,

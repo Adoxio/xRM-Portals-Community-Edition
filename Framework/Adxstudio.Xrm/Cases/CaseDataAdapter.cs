@@ -229,7 +229,7 @@ namespace Adxstudio.Xrm.Cases
 				return Enumerable.Empty<ICaseResolution>();
 			}
 
-			return new [] { new CaseResolution(@case.Resolution, @case.ResolutionDate.GetValueOrDefault()) };
+			return new[] { new CaseResolution(@case.Resolution, @case.ResolutionDate.GetValueOrDefault()) };
 		}
 
 		private bool TryGetContactParentCustomer(EntityReference customer, out EntityReference parentcustomerid)

@@ -210,7 +210,7 @@ namespace Adxstudio.Xrm.Cms.Security
 			var websiteaccessFetch = 
 				new Fetch
 				{
-					Entity = new FetchEntity("adx_websiteaccess", new [] { "adx_manageweblinksets", "adx_previewunpublishedentities" })
+					Entity = new FetchEntity("adx_websiteaccess", new[] { "adx_manageweblinksets", "adx_previewunpublishedentities" })
 					{
 						Filters = new[]
 						{
@@ -242,7 +242,7 @@ namespace Adxstudio.Xrm.Cms.Security
 
 			foreach (var rule in rules)
 			{
-				var ruleRoles = context.RetrieveRelatedEntities(rule, "adx_websiteaccess_webrole", new [] { "adx_name" }).Entities;
+				var ruleRoles = context.RetrieveRelatedEntities(rule, "adx_websiteaccess_webrole", new[] { "adx_name" }).Entities;
 
 				if (ruleRoles == null)
 				{

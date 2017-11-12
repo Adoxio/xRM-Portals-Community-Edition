@@ -278,7 +278,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 				yield return new Tuple<DirectoryTreeNode, string[]>(node, path);
 			}
 
-			foreach (var option in node.dirs.SelectMany(dir => GetParentOptions(dir, path.Concat(new [] { node.name }).ToArray())))
+			foreach (var option in node.dirs.SelectMany(dir => GetParentOptions(dir, path.Concat(new[] { node.name }).ToArray())))
 			{
 				yield return option;
 			}
@@ -309,7 +309,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Controllers
 				yield return new Tuple<DirectoryTreeNode, string[]>(node, path);
 			}
 
-			foreach (var option in node.dirs.SelectMany(dir => GetParentOptions(child, existingParent, dir, path.Concat(new [] { node.name }).ToArray())))
+			foreach (var option in node.dirs.SelectMany(dir => GetParentOptions(child, existingParent, dir, path.Concat(new[] { node.name }).ToArray())))
 			{
 				yield return option;
 			}

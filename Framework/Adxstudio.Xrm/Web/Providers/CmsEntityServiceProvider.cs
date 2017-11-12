@@ -1047,12 +1047,12 @@ namespace Adxstudio.Xrm.Web.Providers
 				Distinct = true,
 				Entity = new FetchEntity(entityLogicalName)
 				{
-					Attributes = new []
+					Attributes = new[]
 					{
 						new FetchAttribute(idAttribute), 
 						new FetchAttribute(primaryNameAttribute)
 					},
-					Orders = new []
+					Orders = new[]
 					{
 						new Order(primaryNameAttribute, OrderType.Ascending)
 					}
@@ -1061,7 +1061,7 @@ namespace Adxstudio.Xrm.Web.Providers
 
 			if (!string.IsNullOrEmpty(stateAttribute))
 			{
-				fetch.Entity.Filters = new []
+				fetch.Entity.Filters = new[]
 				{
 					new Filter
 					{
@@ -1087,7 +1087,7 @@ namespace Adxstudio.Xrm.Web.Providers
 				Distinct = true,
 				Entity = new FetchEntity("adx_pagetemplate")
 				{
-					Attributes = new []
+					Attributes = new[]
 					{
 						new FetchAttribute("adx_pagetemplateid"), 
 						new FetchAttribute("adx_name"),
@@ -1099,14 +1099,14 @@ namespace Adxstudio.Xrm.Web.Providers
 						new Filter
 						{
 							Type = LogicalOperator.And,
-							Conditions = new []
+							Conditions = new[]
 							{
 								new Condition("adx_websiteid", ConditionOperator.Equal, websiteId),
 								new Condition("statecode", ConditionOperator.Equal, 0)
 							}
 						},
 					},
-					Orders = new []
+					Orders = new[]
 					{
 						new Order("adx_name", OrderType.Ascending)
 					}
@@ -1118,7 +1118,7 @@ namespace Adxstudio.Xrm.Web.Providers
 				fetch.Entity.Filters.Add(new Filter
 				{
 					Type = LogicalOperator.Or,
-					Conditions = new []
+					Conditions = new[]
 					{
 						new Condition("adx_entityname", ConditionOperator.Equal, filter),
 						new Condition("adx_entityname", ConditionOperator.Null)

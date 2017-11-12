@@ -29,12 +29,12 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			AddStyleReferencesToPage(control.Page);
 		}
 
-		private static readonly string[] PreLoadScriptReferencePaths = new []
+		private static readonly string[] PreLoadScriptReferencePaths = new[]
 		{
 			SiteSettings.XrmFilesRootPath + "/js/xrm-preload.js"
 		};
 
-		private static readonly string[] ScriptReferencePaths = new []
+		private static readonly string[] ScriptReferencePaths = new[]
 		{
 			SiteSettings.XrmFilesRootPath + "/js/xrm-combined-js.aspx"
 		};

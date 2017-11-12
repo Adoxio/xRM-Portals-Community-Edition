@@ -17,7 +17,7 @@ namespace Adxstudio.Xrm.Services
 {
 	public class CrmOnlineReadTransientErrorDetectionStrategy : ITransientErrorDetectionStrategy
 	{
-		private static readonly IEnumerable<string> _transientWebExceptions = new []
+		private static readonly IEnumerable<string> _transientWebExceptions = new[]
 		{
 			"The request was aborted: The request was canceled.",
 			"The underlying connection was closed: An unexpected error occurred on a receive.",

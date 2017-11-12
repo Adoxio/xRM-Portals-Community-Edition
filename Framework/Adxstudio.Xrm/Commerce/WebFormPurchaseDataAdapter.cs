@@ -474,7 +474,7 @@ namespace Adxstudio.Xrm.Commerce
 		{
 			TraceMethodInfo("Start: product={0}:{1}", product.LogicalName, product.Id);
 
-			var lineItems = new []
+			var lineItems = new[]
 			{
 				new LineItem(product, null, 1, false, product.GetAttributeValue<string>("description"), null, 1)
 			};

@@ -34,13 +34,13 @@ namespace Adxstudio.Xrm.Web.UI
 		private static readonly Dictionary<string, IEnumerable<Relationship>> _childAssociationsByEntityName = new Dictionary<string, IEnumerable<Relationship>>
 		{
 			{ "adx_event",
-				new []
+				new[]
 				{
 					"adx_event_eventschedule".ToRelationship()
 				}
 			},
 			{ "adx_webpage",
-				new []
+				new[]
 				{
 					"adx_webpage_webfile".ToRelationship(),
 					"adx_webpage_webpage".ToRelationship(EntityRole.Referenced),
@@ -54,7 +54,7 @@ namespace Adxstudio.Xrm.Web.UI
 		private static readonly Dictionary<string, IEnumerable<string>> _siteMapChildEntitiesByEntityName = new Dictionary<string, IEnumerable<string>>
 		{
 			{ "adx_webpage",
-				new []
+				new[]
 				{
 					"adx_communityforum",
 					"adx_event",

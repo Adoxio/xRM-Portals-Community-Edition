@@ -50,19 +50,19 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			{
 				Entity = new FetchEntity(EntityLogicalName, new[] { NameAttributeLogicalName })
 				{
-					Filters = new []
+					Filters = new[]
 					{
 						new Filter
 						{
 							Type = LogicalOperator.And,
-							Conditions = new []
+							Conditions = new[]
 							{
 								new Condition("statecode", ConditionOperator.Equal, 0),
 								new Condition("adx_websiteid", ConditionOperator.Equal, website.Id)
 							}
 						}
 					},
-					Orders = new []
+					Orders = new[]
 					{
 						new Order(NameAttributeLogicalName, OrderType.Ascending), 
 					}
@@ -133,12 +133,12 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 				PageSize = 1,
 				Entity = new FetchEntity(EntityLogicalName, new[] { SourceAttributeLogicalName })
 				{
-					Filters = new []
+					Filters = new[]
 					{
 						new Filter
 						{
 							Type = LogicalOperator.And,
-							Conditions = new []
+							Conditions = new[]
 							{
 								new Condition("statecode", ConditionOperator.Equal, 0),
 								new Condition("adx_websiteid", ConditionOperator.Equal, website.Id),

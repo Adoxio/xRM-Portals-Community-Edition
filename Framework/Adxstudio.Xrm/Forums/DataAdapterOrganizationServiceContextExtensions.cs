@@ -125,7 +125,7 @@ namespace Adxstudio.Xrm.Forums
 
 		public static ForumCounts FetchForumCountsForWebsiteWithTag(this OrganizationServiceContext serviceContext, Guid websiteId, string tag)
 		{
-			return FetchForumCountsForWebsiteWithTags(serviceContext, websiteId, new [] { tag });
+			return FetchForumCountsForWebsiteWithTags(serviceContext, websiteId, new[] { tag });
 		}
 
 		public static ForumCounts FetchForumCountsForWebsiteWithTags(this OrganizationServiceContext serviceContext, Guid websiteId, string[] tags)

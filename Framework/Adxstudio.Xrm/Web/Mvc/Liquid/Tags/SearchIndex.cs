@@ -85,7 +85,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid.Tags
 			string logicalNamesValue;
 
 			var logicalNames = (TryGetAttributeValue(context, "logical_names", out logicalNamesValue) || TryGetAttributeValue(context, "logicalnames", out logicalNamesValue))
-				? logicalNamesValue.Split(new [] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries)
+				? logicalNamesValue.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries)
 				: Enumerable.Empty<string>();
 
 			// TODO check this here for context when this is called to make sure this still works

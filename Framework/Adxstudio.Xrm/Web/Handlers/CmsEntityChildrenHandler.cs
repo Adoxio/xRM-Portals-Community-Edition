@@ -116,7 +116,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 					.Union(serviceContext.GetChildFiles(entity))
 					.Union(serviceContext.GetChildShortcuts(entity));
 
-				var extendedChildRelationships = new []
+				var extendedChildRelationships = new[]
 				{
 					new Relationship("adx_webpage_event"),
 					new Relationship("adx_webpage_communityforum"),

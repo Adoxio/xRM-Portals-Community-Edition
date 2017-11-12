@@ -573,7 +573,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						var entity = _executeSingle.EndInvoke(asyncResult);
 						if (entity != null)
 						{
-							selectResult = ExecuteSelect(new [] { entity }).ToList();
+							selectResult = ExecuteSelect(new[] { entity }).ToList();
 							if (Owner.CacheParameters.Enabled)
 							{
 								var dependencies = GetCacheDependencies(Fetch, selectResult, Owner.IsSingleSource);

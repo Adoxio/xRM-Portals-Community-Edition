@@ -59,8 +59,8 @@ namespace Adxstudio.Xrm.Search.WindowsAzure
 				using (var searcher = SearchManager.Provider.GetIndexSearcher())
 				{
 					var entityQuery = string.IsNullOrEmpty(logicalNames)
-						? new ScopedEntityQuery(new [] { scope }, query, page, pageSize, contextLanguage.ContextLanguage, contextLanguage.IsCrmMultiLanguageEnabled, filter)
-						: new ScopedEntityQuery(new [] { scope }, query, page, pageSize, logicalNames.Split(','), contextLanguage.ContextLanguage, contextLanguage.IsCrmMultiLanguageEnabled, filter);
+						? new ScopedEntityQuery(new[] { scope }, query, page, pageSize, contextLanguage.ContextLanguage, contextLanguage.IsCrmMultiLanguageEnabled, filter)
+						: new ScopedEntityQuery(new[] { scope }, query, page, pageSize, logicalNames.Split(','), contextLanguage.ContextLanguage, contextLanguage.IsCrmMultiLanguageEnabled, filter);
 
 					var rawResults = searcher.Search(entityQuery);
 

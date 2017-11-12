@@ -110,7 +110,7 @@ namespace Adxstudio.Xrm.Blogs
 							Name = "adx_sitemarker",
 							ToAttribute = "adx_webpageid",
 							FromAttribute = "adx_pageid",
-							Filters = new []
+							Filters = new[]
 							{
 								new Filter
 								{
