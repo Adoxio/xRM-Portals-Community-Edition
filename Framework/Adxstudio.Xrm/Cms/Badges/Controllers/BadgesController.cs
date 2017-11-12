@@ -70,7 +70,7 @@ namespace Adxstudio.Xrm.Cms.Badges.Controllers
 				default:
 					badges = BasicBadges(entities);
 					break;
-			};
+			}
 
 			return Content(badges);
 		}

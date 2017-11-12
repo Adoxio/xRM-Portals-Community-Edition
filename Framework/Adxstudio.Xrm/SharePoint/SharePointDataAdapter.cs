@@ -197,7 +197,7 @@ namespace Adxstudio.Xrm.SharePoint
 			if (!result.PermissionsExist || !result.CanCreate || !result.CanAppend || !result.CanAppendTo)
 			{
                 ADXTrace.Instance.TraceInfo(TraceCategory.Application, "Permission Denied. You do not have the appropriate Entity Permissions to Create or Append document locations or AppendTo the regarding entity.");
-				return SharePointCollection.Empty(true); ;
+				return SharePointCollection.Empty(true);
 			}
 
 			var entityMetadata = context.GetEntityMetadata(regarding.LogicalName);

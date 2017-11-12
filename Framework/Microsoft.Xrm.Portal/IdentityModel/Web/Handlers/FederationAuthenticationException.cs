@@ -12,7 +12,7 @@ namespace Microsoft.Xrm.Portal.IdentityModel.Web.Handlers
 	public enum FederationAuthenticationErrorReason
 	{
 		MissingChallengeAnswer,
-	};
+	}
 
 	[Serializable]
 	public class FederationAuthenticationException : FederationException

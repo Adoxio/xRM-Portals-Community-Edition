@@ -32,13 +32,13 @@ namespace Site.Areas.Service311.Controls
 		{
 			Potential = 756150000,
 			Confirmed = 756150001,
-		};
+		}
 
 		private enum DuplicateDistanceUnit
 		{
 			Miles = 756150000,
 			Kilometers = 756150001,
-		};
+		}
 
 		private bool _isUnique;
 

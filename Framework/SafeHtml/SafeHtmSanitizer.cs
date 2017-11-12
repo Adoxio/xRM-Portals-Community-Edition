@@ -42,7 +42,7 @@ namespace SafeHtml
 			DebugOutputHigh = 0x10000,
 			DebugOutputMedium = 0x20000,
 			DebugOutputLow = 0x40000
-		};
+		}
 
 		private enum SafeHtmlCodePages
 		{
@@ -100,7 +100,7 @@ namespace SafeHtml
 			CodePageACP = 0,
 			// CodePageGetDefault = Encoding.Default.WindowsCodePage,
 			CodePageUnknown = -1,
-		};
+		}
 
 		/// <summary>
 		/// Get a safe version of a given string representing an HTML fragment.
