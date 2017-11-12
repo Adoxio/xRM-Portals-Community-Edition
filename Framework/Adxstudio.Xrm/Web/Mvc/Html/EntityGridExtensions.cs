@@ -1053,7 +1053,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 			var pagination = new TagBuilder("div");
 			pagination.AddCssClass("view-pagination");
 			pagination.MergeAttribute("data-pages", "1");
-			pagination.MergeAttribute("data-pagesize", "");
+			pagination.MergeAttribute("data-pagesize", string.Empty);
 			pagination.MergeAttribute("data-current-page", "1");
 
 			container.InnerHtml += pagination.ToString();

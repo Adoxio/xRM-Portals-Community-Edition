@@ -4877,13 +4877,13 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 							{
 								int picklistInt;
 								OptionMetadata picklistValue;
-								if (int.TryParse("" + value, out picklistInt))
+								if (int.TryParse(string.Empty + value, out picklistInt))
 								{
 									picklistValue = picklistAttribute.OptionSet.Options.FirstOrDefault(o => o.Value == picklistInt);
 								}
 								else
 								{
-									picklistValue = picklistAttribute.OptionSet.Options.FirstOrDefault(o => o.Label.GetLocalizedLabelString() == "" + value);
+									picklistValue = picklistAttribute.OptionSet.Options.FirstOrDefault(o => o.Label.GetLocalizedLabelString() == string.Empty + value);
 								}
 
 								if (picklistValue != null && picklistValue.Value.HasValue)

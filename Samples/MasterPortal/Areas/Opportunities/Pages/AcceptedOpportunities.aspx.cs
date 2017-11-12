@@ -193,7 +193,7 @@ namespace Site.Areas.Opportunities.Pages
 
 			if (alertType.ToString() == Enums.AlertType.PotentiallyStalled.ToString()) return "fa fa-exclamation-triangle";
 
-			return "";
+			return string.Empty;
 		}
 
 		private void PopulateCustomerFilter(OrganizationServiceContext context, Entity contact)

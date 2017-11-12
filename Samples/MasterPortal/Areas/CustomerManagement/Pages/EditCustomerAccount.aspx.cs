@@ -310,7 +310,7 @@ namespace Site.Areas.CustomerManagement.Pages
 		{
 			var id = AccountToEdit.GetAttributeValue<Guid>("accountid");
 
-			var queryStringCollection = new QueryStringCollection("");
+			var queryStringCollection = new QueryStringCollection(string.Empty);
 
 			queryStringCollection.Set("AccountID", id.ToString());
 

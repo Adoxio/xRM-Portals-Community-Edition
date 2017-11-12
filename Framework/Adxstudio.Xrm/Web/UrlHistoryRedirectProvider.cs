@@ -211,7 +211,7 @@ namespace Adxstudio.Xrm.Web
 						return new FailedMatch();
 					}
 
-					var newPath = parentPath.AppRelativePath + (parentPath.AppRelativePath.EndsWith("/") ? "" : "/") + pathAfterSlash;
+					var newPath = parentPath.AppRelativePath + (parentPath.AppRelativePath.EndsWith("/") ? string.Empty : "/") + pathAfterSlash;
 
 					if (newPath == path)
 					{

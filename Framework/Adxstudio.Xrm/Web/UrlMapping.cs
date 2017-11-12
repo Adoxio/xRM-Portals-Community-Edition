@@ -92,7 +92,7 @@ namespace Adxstudio.Xrm.Web
 
 			if (website.Id == Guid.Empty)
 			{
-				throw new ArgumentException(string.Format("Unable to retrieve the Id of the website. {0}", ""), "website");
+				throw new ArgumentException(string.Format("Unable to retrieve the Id of the website. {0}", string.Empty), "website");
 			}
 
 			var urlWithoutWebsitePath = WebsitePathUtility.ToRelative(website, urlPath);

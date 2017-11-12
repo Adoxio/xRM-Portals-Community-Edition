@@ -34,7 +34,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 		{
 			if (Guid.Empty.Equals(value))
 			{
-				writer.WriteValue("");
+				writer.WriteValue(string.Empty);
 			}
 			else
 			{

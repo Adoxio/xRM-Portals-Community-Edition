@@ -77,7 +77,7 @@ namespace Adxstudio.Xrm.Cms.Badges.Controllers
 
 		private static RetrieveMultipleResponse FetchBadges(string contactid)
 		{
-			string parentAccountId = "";
+			string parentAccountId = string.Empty;
 			
 			
 			try
@@ -92,7 +92,7 @@ namespace Adxstudio.Xrm.Cms.Badges.Controllers
 					if (AccountQueryResult.Results != null)
 					{
 						var contactParentAccount = ((Entity)AccountQueryResult.Results.First().Value).GetAttributeValue<EntityReference>("parentcustomerid");
-						parentAccountId = contactParentAccount != null ? contactParentAccount.Id.ToString() : "";
+						parentAccountId = contactParentAccount != null ? contactParentAccount.Id.ToString() : string.Empty;
 					}
 				}
 			}
@@ -129,7 +129,7 @@ namespace Adxstudio.Xrm.Cms.Badges.Controllers
 			var filter = fetchXml.XPathSelectElement("//entity[@name='adx_badge']/filter/filter[@type='or']");
 
 			filter.AddFetchXmlFilterCondition("adx_contactid", "eq", contactid);
-			if (parentAccountId != "")
+			if (parentAccountId != string.Empty)
 			{
 				filter.AddFetchXmlFilterCondition("adx_accountid", "eq", parentAccountId);
 			}

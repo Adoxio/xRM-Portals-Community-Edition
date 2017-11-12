@@ -10,7 +10,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 {
 	internal class WebFormFunctions
 	{
-		internal static string DefaultAttachFileLabel = "";
+		internal static string DefaultAttachFileLabel = string.Empty;
 		internal static string DefaultPreviousButtonCssClass = "button previous";
 		internal static string DefaultNextButtonCssClass = "button next";
 		internal static string DefaultSubmitButtonCssClass = "button submit";

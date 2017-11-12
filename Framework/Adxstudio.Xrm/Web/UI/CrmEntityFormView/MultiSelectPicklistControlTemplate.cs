@@ -164,7 +164,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 			if (!Metadata.IgnoreDefaultValue && Metadata.DefaultValue != null)
 			{
-				checkboxList.SelectedValue = Convert.ToInt32(Metadata.DefaultValue) == -1 ? "" : Metadata.DefaultValue.ToString();
+				checkboxList.SelectedValue = Convert.ToInt32(Metadata.DefaultValue) == -1 ? string.Empty : Metadata.DefaultValue.ToString();
 			}
 		}
 	}

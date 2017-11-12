@@ -255,7 +255,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		/// <summary>
 		/// Add the necessary script files to the <see cref="ScriptManager"/> if one exists.
 		/// </summary>
-		protected virtual string[] ScriptIncludes { get { return new[] { "" }; } }
+		protected virtual string[] ScriptIncludes { get { return new[] { string.Empty }; } }
 
 		protected override HtmlTextWriterTag TagKey { get { return HtmlTextWriterTag.Div; } }
 

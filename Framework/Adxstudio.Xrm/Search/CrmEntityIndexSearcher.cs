@@ -118,7 +118,7 @@ namespace Adxstudio.Xrm.Search
 			{
 				var queryStringArray = query.QueryText.Split('(', ')');
 				string queryString = queryStringArray.Length > 1 ? queryStringArray[1] : query.QueryText;
-				PortalTrackingTrace.TraceInstance.Log(Constants.Search, queryString, "");
+				PortalTrackingTrace.TraceInstance.Log(Constants.Search, queryString, string.Empty);
         }
 
 			return userResults;

@@ -141,7 +141,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		/// <summary>
 		/// Script files to be loaded.
 		/// </summary>
-		protected virtual string[] ScriptIncludes { get { return new[] { "" }; } }
+		protected virtual string[] ScriptIncludes { get { return new[] { string.Empty }; } }
 
 		/// <summary>
 		/// Script files to be loaded for calendar view
@@ -1105,7 +1105,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 							if (option.Checked)
 							{
-								filterOptionSelect.Attributes.Add("selected", "");
+								filterOptionSelect.Attributes.Add("selected", string.Empty);
 								filterOptionSelect.Attributes.Add("data-selected", "true");
 							}
 

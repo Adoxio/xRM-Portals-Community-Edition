@@ -527,7 +527,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				fileInput.MergeAttribute("type", "file");
 				fileInput.MergeAttribute("aria-label", DefaultAddNoteModalAttachFileLabel);
 				fileInput.MergeAttribute("tabindex", "0");
-				fileInput.MergeAttribute("multiple", "");
+				fileInput.MergeAttribute("multiple", string.Empty);
 				if (!string.IsNullOrWhiteSpace(attachFileAccept))
 				{
 					fileInput.MergeAttribute("accept", attachFileAccept);

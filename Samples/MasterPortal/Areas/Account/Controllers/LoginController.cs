@@ -1355,7 +1355,7 @@ namespace Site.Areas.Account.Controllers
 		{
 			foreach (var error in result.Errors)
 			{
-				ModelState.AddModelError("", error);
+				ModelState.AddModelError(string.Empty, error);
 			}
 		}
 

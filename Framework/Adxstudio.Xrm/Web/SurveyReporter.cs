@@ -164,7 +164,7 @@ namespace Adxstudio.Xrm.Web
 						if (ans.GetRelatedEntity(crm, "adx_choicequestion_choiceanswer").GetAttributeValue<Guid?>("adx_surveychoicequestionid")
 							== question.GetAttributeValue<Guid?>("adx_surveychoicequestionid"))
 						{
-							string partialChoiceList = "";
+							string partialChoiceList = string.Empty;
 							var choices = ans.GetRelatedEntities(crm, "adx_surveychoiceanswer_surveychoice");
 							foreach (var entity in choices)
 							{

@@ -122,7 +122,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			if (Metadata.IsRequired || Metadata.WebFormForceFieldIsRequired)
 			{
 				hiddenValue.Attributes.Add("aria-required", "true");
-				textbox.Attributes.Add("aria-labelledby", "");
+				textbox.Attributes.Add("aria-labelledby", string.Empty);
 				textbox.Attributes["aria-label"] = string.Format(ResourceManager.GetString("Required_Field_Error"), Metadata.Label);
 			}
 

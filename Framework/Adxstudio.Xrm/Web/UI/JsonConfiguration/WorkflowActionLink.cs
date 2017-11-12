@@ -154,7 +154,7 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 			if (string.IsNullOrWhiteSpace(buttonLabel)) Label = DefaultButtonLabel;
 			
 			// Try to extract the text only if the label has HTML
-			string nohtmlLabel = Regex.Replace(Label, @"<[^>]*>", "");
+			string nohtmlLabel = Regex.Replace(Label, @"<[^>]*>", string.Empty);
 			if (string.IsNullOrWhiteSpace(buttonTooltip)) Tooltip = nohtmlLabel;
 		}
 	}

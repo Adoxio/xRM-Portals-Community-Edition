@@ -99,7 +99,7 @@ namespace Adxstudio.Xrm.Notes
 			{ 
 				if (string.IsNullOrEmpty(_acceptMimeTypes))
 				{
-					return (IsPortalComment) ? "" : "*/*";
+					return (IsPortalComment) ? string.Empty : "*/*";
 				}
 				else
 				{
@@ -112,7 +112,7 @@ namespace Adxstudio.Xrm.Notes
 
 		public string AcceptExtensionTypes
 		{
-			get { return string.IsNullOrEmpty(_acceptExtensionTypes) ? "" : _acceptExtensionTypes; }
+			get { return string.IsNullOrEmpty(_acceptExtensionTypes) ? string.Empty : _acceptExtensionTypes; }
 			set { _acceptExtensionTypes = value; }
 		}
 

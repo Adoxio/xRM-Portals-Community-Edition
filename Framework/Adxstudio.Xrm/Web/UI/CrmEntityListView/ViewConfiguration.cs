@@ -620,7 +620,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
 
 			if (string.IsNullOrEmpty(ViewName) && ViewId == Guid.Empty)
 			{
-				throw new ApplicationException(string.Format("The current view configuration isn't valid. Either specify a ViewName or ViewId {0}.", ""));
+				throw new ApplicationException(string.Format("The current view configuration isn't valid. Either specify a ViewName or ViewId {0}.", string.Empty));
 			}
 
 			SavedQueryView view = null;
@@ -661,7 +661,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
 
 			if (string.IsNullOrEmpty(ViewName) && ViewId == Guid.Empty)
 			{
-				throw new ApplicationException(string.Format("The current view configuration isn't valid. Either specify a ViewName or ViewId {0}.", ""));
+				throw new ApplicationException(string.Format("The current view configuration isn't valid. Either specify a ViewName or ViewId {0}.", string.Empty));
 			}
 
 			EntityView view = null;

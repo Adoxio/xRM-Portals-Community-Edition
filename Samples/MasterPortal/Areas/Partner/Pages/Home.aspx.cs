@@ -117,7 +117,7 @@ namespace Site.Areas.Partner.Pages
 
 			if (alertType.ToString() == Enums.AlertType.New.ToString()) return "fa fa-check-circle-o";
 
-			return "";
+			return string.Empty;
 		}
 
 	}

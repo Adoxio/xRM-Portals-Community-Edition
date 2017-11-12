@@ -166,7 +166,7 @@ namespace Site.Areas.CustomerManagement.Pages
 
 			if (CustomerFilter.SelectedItem != null && Guid.TryParse(CustomerFilter.SelectedItem.Value, out id))
 			{
-				CreateButton.QueryStringCollection = new QueryStringCollection("");
+				CreateButton.QueryStringCollection = new QueryStringCollection(string.Empty);
 
 				CreateButton.QueryStringCollection.Set("AccountID", id.ToString());
 			}

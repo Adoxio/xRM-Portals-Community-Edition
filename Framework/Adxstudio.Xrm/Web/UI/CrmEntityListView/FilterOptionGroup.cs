@@ -356,7 +356,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
 			{
 				Id = id,
 				Type = "dynamic",
-				Label = entity.GetAttributeValueOrDefault(labelColumn, ""),
+				Label = entity.GetAttributeValueOrDefault(labelColumn, string.Empty),
 				Checked = selected.Contains(id)
 			};
 		}

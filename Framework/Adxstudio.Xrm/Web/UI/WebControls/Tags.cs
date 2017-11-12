@@ -31,7 +31,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		private string newTagTitle = ResourceManager.GetString("New_Tag_Title_Text");
 		private string newTagButtonName = ResourceManager.GetString("Create_Text");
 		private string newTagButtonCssClass = "create-tag";
-		private string readOnlyMessage = "";
+		private string readOnlyMessage = string.Empty;
 		private int autocompleteMaxItemsToShow = 10;
 		#endregion
 
@@ -403,7 +403,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		/// <param name="container">The container.</param>
 		protected void BuildItemTemplate(IDataItemContainer container)
 		{
-			string liClass = "";
+			string liClass = string.Empty;
 			if (container.DataItemIndex == 0)
 			{
 				liClass = "first";
@@ -464,12 +464,12 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		/// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
 		protected void CreateNewTag(object sender, EventArgs e)
 		{
-			if (newTagTextBox.Text != "")
+			if (newTagTextBox.Text != string.Empty)
 			{
 				string[] tags = newTagTextBox.Text.Split(',');
 				foreach (string s in tags)
 				{
-					if (s != "")
+					if (s != string.Empty)
 					{
 						TaggableItem.AddTag(s.Trim());
 					}

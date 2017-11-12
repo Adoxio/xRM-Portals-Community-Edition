@@ -330,7 +330,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					AutoPostBack = true,
 					ValidationGroup = ValidationGroup
 				};
-				customerDropdown.Items.Add(new ListItem(""));
+				customerDropdown.Items.Add(new ListItem(string.Empty));
 				if (permissionScopes.Self.Create && portalContext.User != null)
 				{
 					ContactID = portalContext.User.Id;
@@ -348,7 +348,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					Display = ValidatorDisplay.Static,
 					ErrorMessage = ResourceManager.GetString("Select_Customer_Error_Message"),
 					ValidationGroup = ValidationGroup,
-					InitialValue = "",
+					InitialValue = string.Empty,
 					CssClass = "help-block error",
 				};
 				panelHelpDeskEntitlementSelectCustomer.Controls.Add(customerDropdown);
@@ -469,7 +469,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					Display = ValidatorDisplay.Static,
 					ErrorMessage = ResourceManager.GetString("Select_Support_Plan_Error_Message"),
 					ValidationGroup = ValidationGroup,
-					InitialValue = "",
+					InitialValue = string.Empty,
 					CssClass = "help-block error",
 				};
 				p.Controls.Add(requiredValidator);

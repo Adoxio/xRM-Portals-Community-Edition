@@ -73,8 +73,8 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			var firstNameAttribute = ViewEntity.GetAttribute("firstname");
 			var lastNameAttribute = ViewEntity.GetAttribute("lastname");
 
-			var firstName = "";
-			var lastName = "";
+			var firstName = string.Empty;
+			var lastName = string.Empty;
 			if (firstNameAttribute != null && firstNameAttribute.Value != null)
 			{
 				firstName = firstNameAttribute.Value.ToString();

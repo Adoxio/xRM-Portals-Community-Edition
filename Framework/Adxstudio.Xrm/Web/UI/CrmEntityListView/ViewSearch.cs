@@ -125,7 +125,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
                 : ResourceManager.GetString("Search_DefaultText");
             TooltipText = !string.IsNullOrWhiteSpace(tooltipText)
                 ? tooltipText 
-                : "";
+                : string.Empty;
             ButtonLabel = string.Format(buttonLabelConstant, ResourceManager.GetString("Search_DefaultText"));
         }
     }

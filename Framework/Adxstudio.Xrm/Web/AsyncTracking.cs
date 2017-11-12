@@ -60,11 +60,11 @@ namespace Adxstudio.Xrm.Web
 
 			try
 			{
-				ipAddress = ((HttpApplication)source).Context.Request.UserHostAddress ?? "";
+				ipAddress = ((HttpApplication)source).Context.Request.UserHostAddress ?? string.Empty;
 			}
 			catch
 			{
-				ipAddress = "";
+				ipAddress = string.Empty;
 			}
 			
 			// Create a delegate instance of the LogRequest method 

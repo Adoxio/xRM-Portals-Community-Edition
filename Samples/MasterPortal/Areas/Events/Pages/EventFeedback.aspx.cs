@@ -120,12 +120,12 @@ namespace Site.Areas.Events.Pages
 		{
 			if (schedule == null)
 			{
-				return "";
+				return string.Empty;
 			}
 
 			var session = schedule.GetRelatedEntity(context, new Relationship("adx_event_eventschedule"));
 
-			return session == null ? "" : session.GetAttributeValue<string>("adx_name");
+			return session == null ? string.Empty : session.GetAttributeValue<string>("adx_name");
 		}
 	}
 }

@@ -99,7 +99,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
 			SelectMethod = "Select";
 			EnablePaging = true;
 			Config = configuration;
-			SelectParameters.Add("configuration", TypeCode.Object, "");
+			SelectParameters.Add("configuration", TypeCode.Object, string.Empty);
 			Selecting += OnSelecting;
 		}
 

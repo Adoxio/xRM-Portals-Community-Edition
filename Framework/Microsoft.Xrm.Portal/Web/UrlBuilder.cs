@@ -34,7 +34,7 @@ namespace Microsoft.Xrm.Portal.Web
 			{
 				if (_queryString == null)
 				{
-					_queryString = new QueryStringCollection("");
+					_queryString = new QueryStringCollection(string.Empty);
 				}
 
 				return _queryString;
