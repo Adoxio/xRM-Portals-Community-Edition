@@ -287,7 +287,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get 
 			{ 
 				var text = (string)ViewState["PreviousButtonText"];
-				return String.IsNullOrWhiteSpace(text) ? DefaultPreviousStepTemplate.DefaultPreviousButtonText : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultPreviousStepTemplate.DefaultPreviousButtonText : text;
 			}
 			set { ViewState["PreviousButtonText"] = value; }
 		}
@@ -298,7 +298,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["NextButtonText"];
-				return String.IsNullOrWhiteSpace(text) ? DefaultNextStepTemplate.DefaultNextButtonText : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultNextStepTemplate.DefaultNextButtonText : text;
 			}
 			set { ViewState["NextButtonText"] = value; }
 		}
@@ -309,7 +309,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["SubmitButtonText"];
-				return String.IsNullOrWhiteSpace(text) ? DefaultSubmitButtonText : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultSubmitButtonText : text;
 			}
 			set { ViewState["SubmitButtonText"] = value; }
 		}
@@ -343,7 +343,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["ValidationSummaryCssClass"];
-				return String.IsNullOrWhiteSpace(text) ? DefaultValidationSummaryCssClass : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultValidationSummaryCssClass : text;
 			}
 			set { ViewState["ValidationSummaryCssClass"] = value; }
 		}
@@ -355,7 +355,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["ValidationHeaderText"];
-				return String.IsNullOrWhiteSpace(text) ? DefaultValidationHeaderText : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultValidationHeaderText : text;
 			}
 			set { ViewState["ValidationHeaderText"] = value; }
 		}
@@ -400,7 +400,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["ReadAccessDeniedSnippetName"];
-				return String.IsNullOrWhiteSpace(text) ? DefaultReadAccessDeniedSnippetName : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultReadAccessDeniedSnippetName : text;
 			}
 			set { ViewState["ReadAccessDeniedSnippetName"] = value; }
 		}
@@ -416,7 +416,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			{
 				var text = (string)ViewState["WriteAccessDeniedSnippetName"];
 
-				return String.IsNullOrWhiteSpace(text) ? DefaultWriteAccessDeniedSnippetName : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultWriteAccessDeniedSnippetName : text;
 			}
 			set
 			{
@@ -434,7 +434,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["CreateAccessDeniedSnippetName"];
-				return String.IsNullOrWhiteSpace(text) ? DefaultCreateAccessDeniedSnippetName : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultCreateAccessDeniedSnippetName : text;
 			}
 			set { ViewState["CreateAccessDeniedSnippetName"] = value; }
 		}
@@ -511,7 +511,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		[PersistenceMode(PersistenceMode.InnerProperty), Browsable(false), DefaultValue((string)null)]
 		public ITemplate UpdateItemTemplate
 		{
-			get { return _updateItemTemplate ?? new DefaultUpdateItemTemplate(ValidationGroup, String.IsNullOrWhiteSpace(SubmitButtonText) ? DefaultUpdateItemTemplate.DefaultUpdateButtonText : SubmitButtonText, SubmitButtonCssClass); }
+			get { return _updateItemTemplate ?? new DefaultUpdateItemTemplate(ValidationGroup, string.IsNullOrWhiteSpace(SubmitButtonText) ? DefaultUpdateItemTemplate.DefaultUpdateButtonText : SubmitButtonText, SubmitButtonCssClass); }
 			set { _updateItemTemplate = value; }
 		}
 

@@ -106,7 +106,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ID = string.Format("ConstantSumTotalValidator{0}", Metadata.GroupName),
 					ControlToValidate = string.Format("ConstantSumTotalValue{0}", Metadata.GroupName),
 					ValidationGroup = ValidationGroup,
-					ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.ConstantSumValidationErrorMessage) ? ResourceManager.GetString("Constant_Sum_Validation_Error_Message") : Metadata.ConstantSumValidationErrorMessage)),
+					ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.ConstantSumValidationErrorMessage) ? ResourceManager.GetString("Constant_Sum_Validation_Error_Message") : Metadata.ConstantSumValidationErrorMessage)),
 					Text = "*",
 					CssClass = "validator-text"
 				};
@@ -125,7 +125,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			};
 		}
 
-		protected static Boolean IsTotalValid(Control container, string groupname, int min, int max)
+		protected static bool IsTotalValid(Control container, string groupname, int min, int max)
 		{
 			var total = 0;
 

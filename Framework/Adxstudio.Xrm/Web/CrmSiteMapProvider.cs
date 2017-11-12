@@ -314,7 +314,7 @@ namespace Adxstudio.Xrm.Web
 
 		private CrmSiteMapNode GetShortcutTargetNode(OrganizationServiceContext context, Entity entity)
 		{
-			if (!String.IsNullOrEmpty(entity.GetAttributeValue<string>("adx_externalurl")))
+			if (!string.IsNullOrEmpty(entity.GetAttributeValue<string>("adx_externalurl")))
 			{
 				return null;
 			}

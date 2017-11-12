@@ -72,7 +72,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		/// <param name="validationGroup">The name of the group of controls that is validated on validation.</param>
 		/// <param name="renderScript">bool tell if scripts need to rendered or not.</param>
 		/// <returns>IValidator control which the rad captcha control</returns>
-		public static IValidator RenderCaptcha(Control container, String controlID, String validationGroup, bool renderScript = false)
+		public static IValidator RenderCaptcha(Control container, string controlID, string validationGroup, bool renderScript = false)
 		{
 
 #if TELERIKWEBUI

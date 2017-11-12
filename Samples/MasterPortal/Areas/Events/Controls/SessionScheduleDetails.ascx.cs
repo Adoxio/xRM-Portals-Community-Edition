@@ -92,7 +92,7 @@ namespace Site.Areas.Events.Controls
 			Response.Redirect(SiteMap.CurrentNode.Url);
 		}
 
-		protected Boolean CheckIfScheduledForCurrentUser(Entity schedule, Guid contactId)
+		protected bool CheckIfScheduledForCurrentUser(Entity schedule, Guid contactId)
 		{
 			if (schedule == null)
 			{

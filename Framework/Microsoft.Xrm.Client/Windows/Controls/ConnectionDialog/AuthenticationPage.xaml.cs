@@ -166,7 +166,7 @@ namespace Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog
 
 		private void UpdateDeviceCredentials(ClientCredentials deviceCredentials)
 		{
-			var deviceId = deviceCredentials.UserName.UserName ?? String.Empty;
+			var deviceId = deviceCredentials.UserName.UserName ?? string.Empty;
 
 			txtDeviceId.Text = deviceId.StartsWith(DeviceIdManager.DevicePrefix) & deviceId.Length > DeviceIdManager.MaxDeviceNameLength ? deviceId.Substring(DeviceIdManager.DevicePrefix.Length) : deviceId;
 
@@ -178,7 +178,7 @@ namespace Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog
 			RegisterDevice(false);
 		}
 
-		private void RegisterDevice(Boolean persistToFile)
+		private void RegisterDevice(bool persistToFile)
 		{
 			var progress = new ProgressDialog
 			{

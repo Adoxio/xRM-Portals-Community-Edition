@@ -81,17 +81,17 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 			Modal.TitleCssClass = formMetadata.WorkflowDialog.TitleCssClass;
 
 			var customPrimaryButtonText = action.WorkflowDialogPrimaryButtonText.GetLocalizedString(languageCode);
-			Modal.PrimaryButtonText = !String.IsNullOrEmpty(customPrimaryButtonText)
+			Modal.PrimaryButtonText = !string.IsNullOrEmpty(customPrimaryButtonText)
 				? customPrimaryButtonText
 				: formMetadata.WorkflowDialog.PrimaryButtonText.GetLocalizedString(languageCode);
 
 			var customCloseButtonTest = action.WorkflowDialogCloseButtonText.GetLocalizedString(languageCode);
-			Modal.CloseButtonText = !String.IsNullOrEmpty(customCloseButtonTest)
+			Modal.CloseButtonText = !string.IsNullOrEmpty(customCloseButtonTest)
 				? customCloseButtonTest
 				: formMetadata.WorkflowDialog.CloseButtonText.GetLocalizedString(languageCode);
 
 			var customTitle = action.WorkflowDialogTitle.GetLocalizedString(languageCode);
-			Modal.Title = !String.IsNullOrEmpty(customTitle)
+			Modal.Title = !string.IsNullOrEmpty(customTitle)
 				? customTitle
 				: formMetadata.WorkflowDialog.Title.GetLocalizedString(languageCode);
 		}
@@ -111,17 +111,17 @@ namespace Adxstudio.Xrm.Web.UI.JsonConfiguration
 			Modal.TitleCssClass = gridMetadata.WorkflowDialog.TitleCssClass;
 
 			var customPrimaryButtonText = action.WorkflowDialogPrimaryButtonText.GetLocalizedString(languageCode);
-			Modal.PrimaryButtonText = !String.IsNullOrEmpty(customPrimaryButtonText)
+			Modal.PrimaryButtonText = !string.IsNullOrEmpty(customPrimaryButtonText)
 				? customPrimaryButtonText
 				: gridMetadata.WorkflowDialog.PrimaryButtonText.GetLocalizedString(languageCode);
 
 			var customCancelButtonText = action.WorkflowDialogCloseButtonText.GetLocalizedString(languageCode);
-			Modal.CloseButtonText = !String.IsNullOrEmpty(customCancelButtonText)
+			Modal.CloseButtonText = !string.IsNullOrEmpty(customCancelButtonText)
 				? customCancelButtonText
 				: gridMetadata.WorkflowDialog.CloseButtonText.GetLocalizedString(languageCode);
 
 			var customTitle = action.WorkflowDialogTitle.GetLocalizedString(languageCode);
-			Modal.Title = !String.IsNullOrEmpty(customTitle)
+			Modal.Title = !string.IsNullOrEmpty(customTitle)
 				? customTitle
 				: gridMetadata.WorkflowDialog.Title.GetLocalizedString(languageCode);
 

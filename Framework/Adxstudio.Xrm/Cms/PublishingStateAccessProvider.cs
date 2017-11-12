@@ -129,7 +129,7 @@ namespace Adxstudio.Xrm.Cms
 			if (link.PublishingState != null && link.PublishingState.IsReference)
 			{
 				ADXTrace.Instance.TraceInfo(TraceCategory.Exception, 
-					String.Format(@"InvalidOperationException: IsReference cannot be set to true. WebLinkNode: Id:{0}, 
+					string.Format(@"InvalidOperationException: IsReference cannot be set to true. WebLinkNode: Id:{0}, 
 						WebLinkNode.PublishingState.Website.Id: {1}, WebLinkNode.PublishingState.Website.Name: {2}, 
 						WebLinkNode.PublishingState.Website.WebsiteLanguage: {3}, WebLinkNode.WebPage.Website.Id: {4},
 						WebLinkNode.WebPage.Website.Name: {5}, WebLinkNode.WebPage.Website.WebsiteLanguage: {6}",

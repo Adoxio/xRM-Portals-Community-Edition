@@ -53,7 +53,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 			}
 			else
 			{
-				if (String.IsNullOrWhiteSpace(_webResource.GetAttributeValue<string>("content")))
+				if (string.IsNullOrWhiteSpace(_webResource.GetAttributeValue<string>("content")))
 				{
 					context.Response.StatusCode = (int)HttpStatusCode.NoContent;
 

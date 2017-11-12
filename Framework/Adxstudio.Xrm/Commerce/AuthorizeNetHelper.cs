@@ -88,8 +88,8 @@ namespace Adxstudio.Xrm.Commerce
 			supportPlan.Attributes["adx_supportplanid"] = supportPlanId;
 
 			var siteSettingStringFormat = context.GetSiteSettingValueByName(portal.Website, "HelpDesk/SupportPlanNameFormat");
-			var contactName = String.Empty;
-			var accountName = String.Empty;
+			var contactName = string.Empty;
+			var accountName = string.Empty;
 
 			if (account != null)
 			{
@@ -103,12 +103,12 @@ namespace Adxstudio.Xrm.Commerce
 				contactName = contact.GetAttributeValue<string>("fullname");
 			}
 
-			supportPlan.Attributes["adx_name"] = !String.IsNullOrWhiteSpace(siteSettingStringFormat)
-															? String.Format(siteSettingStringFormat,
+			supportPlan.Attributes["adx_name"] = !string.IsNullOrWhiteSpace(siteSettingStringFormat)
+															? string.Format(siteSettingStringFormat,
 																			accountName,
 																			contactName,
 																			DateTime.UtcNow)
-															: String.Format(ResourceManager.GetString("Support_Plan_For_Purchased"),
+															: string.Format(ResourceManager.GetString("Support_Plan_For_Purchased"),
 																			accountName,
 																			contactName,
 																			DateTime.UtcNow);
@@ -204,7 +204,7 @@ namespace Adxstudio.Xrm.Commerce
 				return true;
 			}
 
-			return Boolean.Parse(createInvoiceSetting.GetAttributeValue<string>("adx_value"));
+			return bool.Parse(createInvoiceSetting.GetAttributeValue<string>("adx_value"));
 		}
 	}
 }

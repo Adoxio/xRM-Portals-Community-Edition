@@ -217,7 +217,7 @@ namespace Adxstudio.Xrm.Web.UI.EntityList.OData
 			model.AddElement(entityReferenceType);
 			model.AddElement(picklistType);
 
-			var entitySetNames = new List<String>();
+			var entitySetNames = new List<string>();
 
 			foreach (var entitylist in entitylists)
 			{

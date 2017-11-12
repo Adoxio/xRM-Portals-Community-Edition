@@ -45,11 +45,11 @@ namespace Adxstudio.Xrm.Feedback
 			}
 			else
 			{
-				var authorName = feedback.Contains("adx_createdbycontact") ? feedback["adx_createdbycontact"].ToString() : String.Empty;
-				if (!String.IsNullOrWhiteSpace(authorName))
+				var authorName = feedback.Contains("adx_createdbycontact") ? feedback["adx_createdbycontact"].ToString() : string.Empty;
+				if (!string.IsNullOrWhiteSpace(authorName))
 				{
-					var authorUrl = feedback.Contains("adx_authorurl") ? feedback["adx_authorurl"].ToString() : String.Empty;
-					var authorauthorEmailUrl = feedback.Contains("adx_contactemail") ? feedback["adx_contactemail"].ToString() : String.Empty;
+					var authorUrl = feedback.Contains("adx_authorurl") ? feedback["adx_authorurl"].ToString() : string.Empty;
+					var authorauthorEmailUrl = feedback.Contains("adx_contactemail") ? feedback["adx_contactemail"].ToString() : string.Empty;
 					Author = new Author(authorName, authorUrl, authorauthorEmailUrl);
 				}
 			}

@@ -291,8 +291,8 @@ namespace Adxstudio.Xrm.Activity
 					{
 						IAnnotation annotation = new Annotation
 						{
-							Subject = String.Empty,
-							NoteText = String.Empty,
+							Subject = string.Empty,
+							NoteText = string.Empty,
 							Regarding = portalComment.Entity.ToEntityReference(),
 							FileAttachment = attachment
 						};

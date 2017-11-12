@@ -195,7 +195,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 
 			if (!webLink.HasImage)
 			{
-				return new HtmlString(String.Empty);
+				return new HtmlString(string.Empty);
 			}
 
 			// If the ImageUrl attribute starts with a '.' followed by a word character (alphanumeric or underscore), interpret

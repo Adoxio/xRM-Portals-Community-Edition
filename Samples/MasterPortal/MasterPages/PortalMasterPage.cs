@@ -213,7 +213,7 @@ namespace Site.MasterPages
 		private string GetPortalLanguageCode()
 		{
 			var contextLanguage = this.Context.GetContextLanguageInfo();
-			return contextLanguage.ContextLanguage != null ? contextLanguage.ContextLanguage.Code : String.Empty;
+			return contextLanguage.ContextLanguage != null ? contextLanguage.ContextLanguage.Code : string.Empty;
 		}
 	}
 }

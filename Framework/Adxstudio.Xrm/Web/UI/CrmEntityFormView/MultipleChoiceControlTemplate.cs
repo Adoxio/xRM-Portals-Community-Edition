@@ -73,15 +73,15 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				var multipleChoiceValidatorErrorMessage = string.Empty;
 				if (Metadata.MinMultipleChoiceSelectedCount > 0 && Metadata.MaxMultipleChoiceSelectedCount > 0)
 				{
-					multipleChoiceValidatorErrorMessage = String.Format(ResourceManager.GetString("Minimum_Most_Options_Selection_Exception"), Metadata.MinMultipleChoiceSelectedCount, Metadata.MaxMultipleChoiceSelectedCount);
+					multipleChoiceValidatorErrorMessage = string.Format(ResourceManager.GetString("Minimum_Most_Options_Selection_Exception"), Metadata.MinMultipleChoiceSelectedCount, Metadata.MaxMultipleChoiceSelectedCount);
 				}
 				else if (Metadata.MinMultipleChoiceSelectedCount == 0 && Metadata.MaxMultipleChoiceSelectedCount > 0)
 				{
-					multipleChoiceValidatorErrorMessage = String.Format(ResourceManager.GetString("Maximum_Options_Selection_Exception"), Metadata.MaxMultipleChoiceSelectedCount);
+					multipleChoiceValidatorErrorMessage = string.Format(ResourceManager.GetString("Maximum_Options_Selection_Exception"), Metadata.MaxMultipleChoiceSelectedCount);
 				}
 				else if (Metadata.MinMultipleChoiceSelectedCount > 0 && Metadata.MaxMultipleChoiceSelectedCount == 0)
 				{
-					multipleChoiceValidatorErrorMessage = String.Format(ResourceManager.GetString("Minimum_Options_Selection_Exception"), Metadata.MinMultipleChoiceSelectedCount);
+					multipleChoiceValidatorErrorMessage = string.Format(ResourceManager.GetString("Minimum_Options_Selection_Exception"), Metadata.MinMultipleChoiceSelectedCount);
 				}
 				
 				var multipleChoiceValidator = new MultipleChoiceCheckboxValidator
@@ -89,7 +89,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ID = string.Format("multipleChoiceValidator{0}", Metadata.GroupName),
 					ControlToValidate = ControlID,
 					ValidationGroup = ValidationGroup,
-					ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.MultipleChoiceValidationErrorMessage) ? multipleChoiceValidatorErrorMessage : Metadata.MultipleChoiceValidationErrorMessage)),
+					ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.MultipleChoiceValidationErrorMessage) ? multipleChoiceValidatorErrorMessage : Metadata.MultipleChoiceValidationErrorMessage)),
 					Text = "*",
 					CssClass = "validator-text",
 					Display = ValidatorDisplay.None,
@@ -153,7 +153,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			}
 		}
 
-		protected static Boolean IsSelectedCountValid(Control container, string groupname, int min, int max)
+		protected static bool IsSelectedCountValid(Control container, string groupname, int min, int max)
 		{
 			var selectedCount = 0;
 			var controlCount = 0;

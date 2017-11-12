@@ -26,7 +26,7 @@ namespace Adxstudio.Xrm.EventHubBasedInvalidation
 		private static readonly bool timeTrackingTelemetry = WebAppConfigurationProvider.GetTimeTrackingTelemetryString();
 		private static readonly Lazy<PortalCacheInvalidatorThread> instance = new Lazy<PortalCacheInvalidatorThread>(() => new PortalCacheInvalidatorThread());
 		private readonly Lazy<RetryPolicy> retryPolicy = new Lazy<RetryPolicy>(GetRetryPolicy); 
-		private static object mutexLockObject = new Object();
+		private static object mutexLockObject = new object();
 
 		/// <summary>
 		/// Gets the instance of this class

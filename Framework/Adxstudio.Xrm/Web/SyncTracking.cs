@@ -26,7 +26,7 @@ namespace Adxstudio.Xrm.Web
 
 			var notFoundLog = new Entity("adx_requestlog");
 
-			notFoundLog.SetAttributeValue("adx_name", String.Format("Log of failed attempt to access {0} by IP address; {1}", originalPath, ipAddress));
+			notFoundLog.SetAttributeValue("adx_name", string.Format("Log of failed attempt to access {0} by IP address; {1}", originalPath, ipAddress));
 
 			notFoundLog.SetAttributeValue("adx_date", DateTime.UtcNow);
 

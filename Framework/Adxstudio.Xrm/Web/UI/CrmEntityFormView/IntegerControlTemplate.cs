@@ -49,7 +49,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 		private ValidatorDisplay ValidatorDisplay
 		{
-			get { return String.IsNullOrWhiteSpace(ValidationText) ? ValidatorDisplay.None : ValidatorDisplay.Dynamic; }
+			get { return string.IsNullOrWhiteSpace(ValidationText) ? ValidatorDisplay.None : ValidatorDisplay.Dynamic; }
 		}
 
 		protected override void InstantiateControlIn(Control container)
@@ -95,7 +95,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				ID = string.Format("IntegerValidator{0}", ControlID),
 				ControlToValidate = ControlID,
 				ValidationGroup = ValidationGroup,
-				ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.ValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("integer")) ? ResourceManager.GetString("Invalid_Integer_Value_Error").FormatWith(Metadata.Label) : Metadata.Messages["integer"].FormatWith(Metadata.Label) : Metadata.ValidationErrorMessage)),
+				ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.ValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("integer")) ? ResourceManager.GetString("Invalid_Integer_Value_Error").FormatWith(Metadata.Label) : Metadata.Messages["integer"].FormatWith(Metadata.Label) : Metadata.ValidationErrorMessage)),
 				Text = "*",
 			};
 
@@ -111,7 +111,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				ID = string.Format("RangeValidator{0}", ControlID),
 				ControlToValidate = ControlID,
 				ValidationGroup = ValidationGroup,
-				ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.RangeValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("range")) ? ResourceManager.GetString("Invalid_Range_Error").FormatWith(Metadata.Label, minValue, maxValue) : Metadata.Messages["range"].FormatWith(Metadata.Label, minValue, maxValue) : Metadata.RangeValidationErrorMessage)),
+				ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.RangeValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("range")) ? ResourceManager.GetString("Invalid_Range_Error").FormatWith(Metadata.Label, minValue, maxValue) : Metadata.Messages["range"].FormatWith(Metadata.Label, minValue, maxValue) : Metadata.RangeValidationErrorMessage)),
 				Text = "*",
 			};
 
@@ -127,7 +127,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ControlToValidate = ControlID,
 					ValidationGroup = ValidationGroup,
 					Display = ValidatorDisplay,
-					ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.RequiredFieldValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("required")) ? ResourceManager.GetString("Required_Field_Error").FormatWith(Metadata.Label) : Metadata.Messages["required"].FormatWith(Metadata.Label) : Metadata.RequiredFieldValidationErrorMessage)),
+					ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.RequiredFieldValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("required")) ? ResourceManager.GetString("Required_Field_Error").FormatWith(Metadata.Label) : Metadata.Messages["required"].FormatWith(Metadata.Label) : Metadata.RequiredFieldValidationErrorMessage)),
 					Text = ValidationText,
 				});
 			}
@@ -139,7 +139,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ID = string.Format("RegularExpressionValidator{0}", ControlID),
 					ControlToValidate = ControlID,
 					ValidationGroup = ValidationGroup,
-					ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.ValidationRegularExpressionErrorMessage) ? ResourceManager.GetString("Invalid_Error").FormatWith(Metadata.Label) : Metadata.ValidationRegularExpressionErrorMessage)),
+					ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.ValidationRegularExpressionErrorMessage) ? ResourceManager.GetString("Invalid_Error").FormatWith(Metadata.Label) : Metadata.ValidationRegularExpressionErrorMessage)),
 					Text = "*",
 					ValidationExpression = Metadata.ValidationRegularExpression
 				});

@@ -104,7 +104,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				tag.AddCssClass("xrm-entity-current");
 			}
 
-			if (!String.IsNullOrEmpty(cssClass))
+			if (!string.IsNullOrEmpty(cssClass))
 			{
 				tag.AddCssClass(cssClass);
 			}

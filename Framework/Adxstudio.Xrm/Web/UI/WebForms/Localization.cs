@@ -37,7 +37,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 		/// <param name="json">String containing the JSON object array of language resources</param>
 		/// <param name="languageCode">Language code used to retrieve the localized string</param>
 		/// <returns></returns>
-		public static String GetLocalizedString(string json, int languageCode)
+		public static string GetLocalizedString(string json, int languageCode)
 		{
 			if (string.IsNullOrWhiteSpace(json))
 			{
@@ -75,7 +75,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 		/// </summary>
 		/// <param name="languageResources">List of language resources</param>
 		/// <param name="languageCode">Language code used to retrieve the localized string</param>
-		public static String GetLocalizedString(List<LanguageResources> languageResources, int languageCode)
+		public static string GetLocalizedString(List<LanguageResources> languageResources, int languageCode)
 		{
 			if (languageResources == null)
 			{
@@ -111,7 +111,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 		/// <returns> localized full name string</returns>
 		public static string LocalizeFullName(string firstName, string lastName)
 		{
-			return IsWesternType() ? String.Join(" ", firstName, lastName) : String.Join(" ", lastName, firstName);
+			return IsWesternType() ? string.Join(" ", firstName, lastName) : string.Join(" ", lastName, firstName);
 		}
 
 		/// <summary>
@@ -131,13 +131,13 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 		/// <returns> localized full name string</returns>
 		public static string LocalizeFullName(object firstNameInput, object lastNameInput)
 		{
-			var firstName = firstNameInput != null ? firstNameInput.ToString() : String.Empty;
-			var lastName = lastNameInput != null ? lastNameInput.ToString() : String.Empty;
+			var firstName = firstNameInput != null ? firstNameInput.ToString() : string.Empty;
+			var lastName = lastNameInput != null ? lastNameInput.ToString() : string.Empty;
 
 			return LocalizeFullName(firstName, lastName);
 		}
 
-		private static String ConvertListToJsonString(List<LanguageResources> languageResources)
+		private static string ConvertListToJsonString(List<LanguageResources> languageResources)
 		{
 			var stream = new MemoryStream();
 			var serialiser = new DataContractJsonSerializer(typeof(List<LanguageResources>));

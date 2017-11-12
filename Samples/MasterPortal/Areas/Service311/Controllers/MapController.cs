@@ -120,7 +120,7 @@ namespace Site.Areas.Service311.Controllers
 			var typesGuids = types == null || types.Length < 1 ? null : Array.ConvertAll(types, Guid.Parse);
 			var context = PortalCrmConfigurationManager.CreateServiceContext();
 
-			var serviceRequests = context.CreateQuery("adx_servicerequest").Where(s => s.GetAttributeValue<Decimal?>("adx_latitude") != null && s.GetAttributeValue<Decimal?>("adx_longitude") != null)
+			var serviceRequests = context.CreateQuery("adx_servicerequest").Where(s => s.GetAttributeValue<decimal?>("adx_latitude") != null && s.GetAttributeValue<decimal?>("adx_longitude") != null)
 				.FilterServiceRequestsByPriority(priority)
 				.FilterServiceRequestsByStatus(status)
 				.FilterServiceRequestsByDate(dateFilterCode, fromDate, toDate.AddDays(1))
@@ -145,8 +145,8 @@ namespace Site.Areas.Service311.Controllers
 								s.GetAttributeValue<DateTime>("adx_incidentdate"),
 								s.GetAttributeValue<DateTime>("adx_scheduleddate"),
 								s.GetAttributeValue<DateTime>("adx_closeddate"),
-								s.GetAttributeValue<Decimal?>("adx_latitude").GetValueOrDefault(0),
-								s.GetAttributeValue<Decimal?>("adx_longitude").GetValueOrDefault(0),
+								s.GetAttributeValue<decimal?>("adx_latitude").GetValueOrDefault(0),
+								s.GetAttributeValue<decimal?>("adx_longitude").GetValueOrDefault(0),
 								ServiceRequestHelpers.GetPushpinImageUrl(context, s),
 								ServiceRequestHelpers.GetCheckStatusUrl(s))).ToList();
 			}
@@ -156,13 +156,13 @@ namespace Site.Areas.Service311.Controllers
 			if (includeAlerts)
 			{
 				var alerts = context.CreateQuery("adx_311alert").Where(a =>
-					a.GetAttributeValue<Decimal?>("adx_latitude") != null && a.GetAttributeValue<Decimal?>("adx_longitude") != null && a.GetAttributeValue<bool?>("adx_publishtoweb").GetValueOrDefault(false) == true)
+					a.GetAttributeValue<decimal?>("adx_latitude") != null && a.GetAttributeValue<decimal?>("adx_longitude") != null && a.GetAttributeValue<bool?>("adx_publishtoweb").GetValueOrDefault(false) == true)
 					.FilterAlertsByDate(dateFilterCode, fromDate, toDate.AddDays(1)).ToList();
 
 				if (alerts.Any())
 				{
 					var alertIconImageUrl = ServiceRequestHelpers.GetAlertPushpinImageUrl();
-					alertMapNodes = alerts.Select(a => new MapNode(MapNode.NodeType.Alert, a.GetAttributeValue<string>("adx_name"), a.GetAttributeValue<string>("adx_address1_line1"), a.GetAttributeValue<string>("adx_description"), a.GetAttributeValue<DateTime?>("adx_scheduledstartdate"), a.GetAttributeValue<DateTime?>("adx_scheduledenddate"), a.GetAttributeValue<Decimal?>("adx_latitude") ?? 0, a.GetAttributeValue<Decimal?>("adx_longitude") ?? 0, alertIconImageUrl)).ToList();
+					alertMapNodes = alerts.Select(a => new MapNode(MapNode.NodeType.Alert, a.GetAttributeValue<string>("adx_name"), a.GetAttributeValue<string>("adx_address1_line1"), a.GetAttributeValue<string>("adx_description"), a.GetAttributeValue<DateTime?>("adx_scheduledstartdate"), a.GetAttributeValue<DateTime?>("adx_scheduledenddate"), a.GetAttributeValue<decimal?>("adx_latitude") ?? 0, a.GetAttributeValue<decimal?>("adx_longitude") ?? 0, alertIconImageUrl)).ToList();
 				}
 			}
 

@@ -290,7 +290,7 @@ namespace Adxstudio.Xrm.Web.Providers
 					return ApplicationPath.FromPartialPath(partialUrl);
 				}
 
-				var traceMessage = parent == null ? String.Format("Parent is Null. Page.Id = {0}", page.Id) : String.Format("Parent is Reference. Page.Id = {0}, ParentId = {1}", page.Id, parent.Id);
+				var traceMessage = parent == null ? string.Format("Parent is Null. Page.Id = {0}", page.Id) : string.Format("Parent is Reference. Page.Id = {0}, ParentId = {1}", page.Id, parent.Id);
 				ADXTrace.Instance.TraceWarning(TraceCategory.Application, traceMessage);
 				return null;
 			}
@@ -331,7 +331,7 @@ namespace Adxstudio.Xrm.Web.Providers
 
 			if (parentUrl == null)
 			{
-				ADXTrace.Instance.TraceWarning(TraceCategory.Application, String.Format("Parent is Null. PartialUrl = {0}", partialUrl));
+				ADXTrace.Instance.TraceWarning(TraceCategory.Application, string.Format("Parent is Null. PartialUrl = {0}", partialUrl));
 				return null;
 			}
 

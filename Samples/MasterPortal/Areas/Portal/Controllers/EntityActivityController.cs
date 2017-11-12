@@ -82,7 +82,7 @@ namespace Site.Areas.Portal.Controllers
 					if (attribute.Key == "description")
 					{
 						string formattedValue = FormatViewFieldsValue(attribute.Value);
-						if (!String.IsNullOrWhiteSpace(formattedValue))
+						if (!string.IsNullOrWhiteSpace(formattedValue))
 						{
 							return formattedValue;
 						}
@@ -109,7 +109,7 @@ namespace Site.Areas.Portal.Controllers
 			private string FormatViewFieldsValue(object valueObj)
 			{
 				string valueText = valueObj as string;
-				if (String.IsNullOrWhiteSpace(valueText))
+				if (string.IsNullOrWhiteSpace(valueText))
 				{
 					return null;
 				}

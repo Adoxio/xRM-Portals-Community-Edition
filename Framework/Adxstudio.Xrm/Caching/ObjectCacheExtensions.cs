@@ -546,7 +546,7 @@ namespace Adxstudio.Xrm.Caching
 					{
 						var itemElement = doc.CreateElement("Item");
 						itemElement.SetAttribute("LogicalName", item.Entity.LogicalName);
-						itemElement.SetAttribute("Name", item.Entity.GetAttributeValueOrDefault("adx_name", String.Empty));
+						itemElement.SetAttribute("Name", item.Entity.GetAttributeValueOrDefault("adx_name", string.Empty));
 						itemElement.SetAttribute("Id", item.Entity.Id.ToString());
 
 						var cacheElement = doc.CreateElement("Cache");
@@ -576,7 +576,7 @@ namespace Adxstudio.Xrm.Caching
 			{
 				// Add link to the Expanded view with entity record details
 				var query = System.Web.HttpUtility.ParseQueryString(requestUrl.Query);
-				query[Web.Handlers.CacheFeedHandler.QueryKeys.Expanded] = Boolean.TrueString;
+				query[Web.Handlers.CacheFeedHandler.QueryKeys.Expanded] = bool.TrueString;
 				var uriBuilder = new UriBuilder(requestUrl.ToString()) { Query = query.ToString() };
 				var expandedView = doc.CreateElement("expandedView");
 				expandedView.InnerText = uriBuilder.ToString();

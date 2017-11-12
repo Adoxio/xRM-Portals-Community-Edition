@@ -34,8 +34,8 @@ namespace Adxstudio.Xrm.Core.Flighting
 			{
 				// Setting from the configuration manager overrides the hard-coded FCB
 				bool setting;
-				if (!String.IsNullOrEmpty(ConfigurationManager.AppSettings.Get(this.Name))
-				    && Boolean.TryParse(ConfigurationManager.AppSettings[this.Name], out setting))
+				if (!string.IsNullOrEmpty(ConfigurationManager.AppSettings.Get(this.Name))
+				    && bool.TryParse(ConfigurationManager.AppSettings[this.Name], out setting))
 				{
 					return setting;
 				}

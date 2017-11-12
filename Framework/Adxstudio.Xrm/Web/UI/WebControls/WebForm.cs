@@ -187,7 +187,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["PreviousButtonText"];
-				return String.IsNullOrWhiteSpace(text) ? WebFormFunctions.DefaultPreviousButtonText : text;
+				return string.IsNullOrWhiteSpace(text) ? WebFormFunctions.DefaultPreviousButtonText : text;
 			}
 			set
 			{
@@ -205,7 +205,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["NextButtonText"];
-				return String.IsNullOrWhiteSpace(text) ? WebFormFunctions.DefaultNextButtonText : text;
+				return string.IsNullOrWhiteSpace(text) ? WebFormFunctions.DefaultNextButtonText : text;
 			}
 			set
 			{
@@ -223,7 +223,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["SubmitButtonText"];
-				return String.IsNullOrWhiteSpace(text) ? WebFormFunctions.DefaultSubmitButtonText : text;
+				return string.IsNullOrWhiteSpace(text) ? WebFormFunctions.DefaultSubmitButtonText : text;
 			}
 			set
 			{
@@ -240,7 +240,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["SubmitButtonBusyText"];
-				return String.IsNullOrWhiteSpace(text) ? WebFormFunctions.DefaultSubmitButtonBusyText : text;
+				return string.IsNullOrWhiteSpace(text) ? WebFormFunctions.DefaultSubmitButtonBusyText : text;
 			}
 			set
 			{
@@ -314,7 +314,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			{
 				var text = (string)ViewState["SuccessMessage"];
 
-				return String.IsNullOrWhiteSpace(text) ? DefaultSuccessMessage : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultSuccessMessage : text;
 			}
 			set { ViewState["SuccessMessage"] = value; }
 		}
@@ -705,7 +705,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var editExpiredStateCode = webform.GetAttributeValue<int?>("adx_editexpiredstatecode");
 			var editExpiredStatusCode = webform.GetAttributeValue<int?>("adx_editexpiredstatuscode");
 			var localizedEditExpiredMessage = Localization.GetLocalizedString(webform.GetAttributeValue<string>("adx_editexpiredmessage"), LanguageCode);
-			var editExpiredMessage = String.IsNullOrWhiteSpace(localizedEditExpiredMessage) ? DefaultEditExpiredMessage : localizedEditExpiredMessage;
+			var editExpiredMessage = string.IsNullOrWhiteSpace(localizedEditExpiredMessage) ? DefaultEditExpiredMessage : localizedEditExpiredMessage;
 			var startNewSessionOnLoad = webform.GetAttributeValue<bool?>("adx_startnewsessiononload") ?? false;
 			StartNewSessionOnLoad = startNewSessionOnLoad;
 			Guid stepid;
@@ -1097,7 +1097,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			var nextStepIsRedirect = false;
 
-			HideFormOnSuccess = step.GetAttributeValue<Boolean?>("adx_hideformonsuccess") ?? true;
+			HideFormOnSuccess = step.GetAttributeValue<bool?>("adx_hideformonsuccess") ?? true;
 
 			SubmitButtonCssClass = stepObject.SubmitButtonCssClass;
 
@@ -1181,13 +1181,13 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var progressPosition = webform.GetAttributeValue<OptionSetValue>("adx_progressindicatorposition");
 			var progressControlPosition = string.Empty;
 
-			if (!String.IsNullOrWhiteSpace(FormCssClass)) formPanel.CssClass = FormCssClass;
+			if (!string.IsNullOrWhiteSpace(FormCssClass)) formPanel.CssClass = FormCssClass;
 
 			progressControlPosition = GetProgressControlPosition(progressPosition, progressControlPosition);
 
 			if (showProgress && PersistSessionHistory)
 			{
-				if (String.IsNullOrWhiteSpace(progressControlPosition) || progressControlPosition == "top" || progressControlPosition == "left" || progressControlPosition == "right")
+				if (string.IsNullOrWhiteSpace(progressControlPosition) || progressControlPosition == "top" || progressControlPosition == "left" || progressControlPosition == "right")
 				{
 					RenderProgressIndicator(context, webform, this);
 
@@ -1225,7 +1225,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			Controls.Add(formPanel);
 
-			if (!String.IsNullOrWhiteSpace(stepObject.TabName)) formView.TabName = stepObject.TabName;
+			if (!string.IsNullOrWhiteSpace(stepObject.TabName)) formView.TabName = stepObject.TabName;
 
 			RenderReferenceEntityForm(context, step, formPanel);
 
@@ -1513,7 +1513,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			var stepObject = new WebFormStepObject(webform, step, LanguageCode, context);
 
-			var hideFormOnSuccess = step.GetAttributeValue<Boolean?>("adx_hideformonsuccess") ?? true;
+			var hideFormOnSuccess = step.GetAttributeValue<bool?>("adx_hideformonsuccess") ?? true;
 
 			if (string.IsNullOrWhiteSpace(stepObject.UserControlPath)) throw new ApplicationException("adx_webformstep.adx_usercontrolpath must not be null.");
 
@@ -1528,7 +1528,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			var formPanel = new Panel { ID = "WebFormPanel" };
 
-			if (!String.IsNullOrWhiteSpace(FormCssClass)) { formPanel.CssClass = FormCssClass; }
+			if (!string.IsNullOrWhiteSpace(FormCssClass)) { formPanel.CssClass = FormCssClass; }
 
 			var showMovePreviousButton = false;
 
@@ -1644,7 +1644,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			if (showProgress && PersistSessionHistory)
 			{
-				if (String.IsNullOrWhiteSpace(progressControlPosition) || progressControlPosition == "top" || progressControlPosition == "left" || progressControlPosition == "right")
+				if (string.IsNullOrWhiteSpace(progressControlPosition) || progressControlPosition == "top" || progressControlPosition == "left" || progressControlPosition == "right")
 				{
 					RenderProgressIndicator(context, webform, this);
 
@@ -1757,7 +1757,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			progressControl.DataBind();
 		}
 
-		protected String GetContextName()
+		protected string GetContextName()
 		{
 			var portalConfig = PortalCrmConfigurationManager.GetPortalContextElement(PortalName);
 
@@ -1775,17 +1775,17 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var logicalName = startStep.GetAttributeValue<string>("adx_targetentitylogicalname");
 			var primaryKey = startStep.GetAttributeValue<string>("adx_targetentityprimarykeylogicalname");
 
-			if (String.IsNullOrWhiteSpace(startStep.GetAttributeValue<string>("adx_targetentitylogicalname")))
+			if (string.IsNullOrWhiteSpace(startStep.GetAttributeValue<string>("adx_targetentitylogicalname")))
 			{
 				throw new ApplicationException(ResourceManager.GetString("TargetEntity_LogicalName_Null_Exception"));
 			}
 
-			if (String.IsNullOrWhiteSpace(primaryKey))
+			if (string.IsNullOrWhiteSpace(primaryKey))
 			{
 				primaryKey = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, logicalName);
 			}
 
-			if (String.IsNullOrWhiteSpace(primaryKey))
+			if (string.IsNullOrWhiteSpace(primaryKey))
 			{
 				throw new ApplicationException(string.Format("Couldn't retrieve Primary Key Attribute name on entity {0}.", logicalName));
 			}
@@ -1819,7 +1819,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 							session = SessionHistoryProvider.GetSessionHistoryBySystemUser(context, webform.Id, portal.User.Id);
 							break;
 						default:
-							if (HttpContext.Current.User != null && !String.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
+							if (HttpContext.Current.User != null && !string.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
 							{
 								session = SessionHistoryProvider.GetSessionHistoryByUserIdentityName(context, webform.Id, HttpContext.Current.User.Identity.Name);
 							}
@@ -1864,7 +1864,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				throw new ApplicationException(ResourceManager.GetString("TargetEntity_LogicalName_Null_Exception"));
 			}
 
-			if (!String.IsNullOrWhiteSpace(logicalName) && String.IsNullOrWhiteSpace(primaryKey))
+			if (!string.IsNullOrWhiteSpace(logicalName) && string.IsNullOrWhiteSpace(primaryKey))
 			{
 				primaryKey = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, logicalName);
 			}
@@ -2117,7 +2117,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					{
 						throw new ApplicationException("Entity reference target entity logical name is null.");
 					}
-					primaryKey = String.IsNullOrWhiteSpace(referenceEntityDefinition.PrimaryKeyLogicalName) ? MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, logicalName) : referenceEntityDefinition.PrimaryKeyLogicalName;
+					primaryKey = string.IsNullOrWhiteSpace(referenceEntityDefinition.PrimaryKeyLogicalName) ? MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, logicalName) : referenceEntityDefinition.PrimaryKeyLogicalName;
 					if (string.IsNullOrWhiteSpace(primaryKey))
 					{
 						throw new ApplicationException(string.Format("Couldn't retrieve Primary Key Attribute name on entity {0}.", logicalName));
@@ -2141,7 +2141,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				return false;
 			}
 
-			if (String.IsNullOrWhiteSpace(primaryKeyAttributeLogicalName))
+			if (string.IsNullOrWhiteSpace(primaryKeyAttributeLogicalName))
 			{
 				primaryKeyAttributeLogicalName = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, entityLogicalName);
 			}
@@ -2185,14 +2185,14 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				return false;
 			}
 
-			if (String.IsNullOrWhiteSpace(targetEntityLogicalName))
+			if (string.IsNullOrWhiteSpace(targetEntityLogicalName))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_targetentitylogicalname must not be null.");
 
 				return false;
 			}
 
-			if (String.IsNullOrWhiteSpace(portalUserLookupAttributeName))
+			if (string.IsNullOrWhiteSpace(portalUserLookupAttributeName))
 			{
 				ADXTrace.Instance.TraceWarning(TraceCategory.Application, "adx_webformstep.adx_targetentityportaluserlookupattribute is null.");
 
@@ -2302,7 +2302,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			var entityLogicalName = step.GetAttributeValue<string>("adx_targetentitylogicalname");
 
-			if (String.IsNullOrWhiteSpace(entityLogicalName))
+			if (string.IsNullOrWhiteSpace(entityLogicalName))
 			{
 				throw new ApplicationException("adx_webformstep.adx_targetentitylogicalname is null.");
 			}
@@ -2376,7 +2376,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			var entityLogicalName = step.GetAttributeValue<string>("adx_targetentitylogicalname");
 
-			if (String.IsNullOrWhiteSpace(entityLogicalName))
+			if (string.IsNullOrWhiteSpace(entityLogicalName))
 			{
 				throw new ApplicationException("adx_webformstep.adx_targetentitylogicalname is null.");
 			}
@@ -2753,10 +2753,10 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			var existingQueryString = HttpContext.Current.Request.QueryString;
 			var redirectUrl = step.GetAttributeValue<string>("adx_redirecturl");
-			var appendExistingQueryString = step.GetAttributeValue<Boolean?>("adx_appendquerystring") ?? false;
+			var appendExistingQueryString = step.GetAttributeValue<bool?>("adx_appendquerystring") ?? false;
 			UrlBuilder url;
 
-			if (String.IsNullOrWhiteSpace(redirectUrl))
+			if (string.IsNullOrWhiteSpace(redirectUrl))
 			{
 				var page = context.RetrieveRelatedEntity(step, "adx_webformstep_redirectwebpage");
 
@@ -2781,13 +2781,13 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				url = new UrlBuilder(redirectUrl.StartsWith("http") ? redirectUrl : string.Format("https://{0}", redirectUrl));
 			}
 
-			var addquerystring = step.GetAttributeValue<Boolean?>("adx_redirecturlappendentityidquerystring") ?? false;
+			var addquerystring = step.GetAttributeValue<bool?>("adx_redirecturlappendentityidquerystring") ?? false;
 
 			if (addquerystring)
 			{
 				var queryStringParameterName = step.GetAttributeValue<string>("adx_redirecturlquerystringname");
 
-				if (!String.IsNullOrWhiteSpace(queryStringParameterName))
+				if (!string.IsNullOrWhiteSpace(queryStringParameterName))
 				{
 					var referenceEntityId = GetPreviousStepReferenceEntityID();
 					if (referenceEntityId == Guid.Empty)
@@ -2863,7 +2863,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				SessionHistoryProvider.DeactivateSessionHistory(context, CurrentSessionHistory.Id);
 			}
 
-			if (String.IsNullOrWhiteSpace(redirectUrl))
+			if (string.IsNullOrWhiteSpace(redirectUrl))
 			{
 				HttpContext.Current.Response.Redirect(url.PathWithQueryString);
 			}
@@ -2900,7 +2900,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			foreach (var item in metadata)
 			{
 				var attributeName = item.GetAttributeValue<string>("adx_attributelogicalname");
-				if (String.IsNullOrWhiteSpace(attributeName))
+				if (string.IsNullOrWhiteSpace(attributeName))
 				{
 					continue;
 				}
@@ -2932,7 +2932,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						try
 						{
 							var fromAttribute = item.GetAttributeValue<string>("adx_prepopulatefromattribute");
-							if (String.IsNullOrWhiteSpace(fromAttribute))
+							if (string.IsNullOrWhiteSpace(fromAttribute))
 							{
 								continue;
 							}
@@ -3120,7 +3120,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 								var optionSetValue = setValue;
 								listItem = control.Items.FindByValue(optionSetValue.Value.ToString(CultureInfo.InvariantCulture));
 							}
-							else if (value is String)
+							else if (value is string)
 							{
 								listItem = control.Items.FindByValue((string)value) ?? control.Items.FindByText((string)value);
 							}
@@ -3155,7 +3155,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 								var optionSetValue = setValue;
 								listItem = control.Items.FindByValue(optionSetValue.Value.ToString(CultureInfo.InvariantCulture));
 							}
-							else if (value is String)
+							else if (value is string)
 							{
 								listItem = control.Items.FindByValue((string)value) ?? control.Items.FindByText((string)value);
 							}
@@ -3342,13 +3342,13 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				var referenceEntityPrimaryKeyLogicalName = step.GetAttributeValue<string>("adx_referenceentityprimarykeylogicalname");
 				var primaryNameAttribute = string.Empty;
 
-				if (String.IsNullOrWhiteSpace(targetAttributeName))
+				if (string.IsNullOrWhiteSpace(targetAttributeName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_referenctargetlookupattributelogicalname must not be null.");
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(referenceEntityLogicalName))
+				if (string.IsNullOrWhiteSpace(referenceEntityLogicalName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_referenceentitylogicalname must not be null.");
 					return;
@@ -3423,12 +3423,12 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				{
 					if (text == string.Empty)
 					{
-						if (String.IsNullOrWhiteSpace(referenceEntityPrimaryKeyLogicalName))
+						if (string.IsNullOrWhiteSpace(referenceEntityPrimaryKeyLogicalName))
 						{
 							referenceEntityPrimaryKeyLogicalName = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, referenceEntityLogicalName);
 						}
 
-						if (String.IsNullOrWhiteSpace(referenceEntityPrimaryKeyLogicalName))
+						if (string.IsNullOrWhiteSpace(referenceEntityPrimaryKeyLogicalName))
 						{
 							ADXTrace.Instance.TraceError(TraceCategory.Application, string.Format("Error retrieving the Primary Key Attribute Name for '{0}'.", referenceEntityLogicalName));
 							return;
@@ -3501,30 +3501,30 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				var readOnlyFormName = step.GetAttributeValue<string>("adx_referenceentityreadonlyformname");
 				var referenceEntityStep = step.GetAttributeValue<EntityReference>("adx_referenceentitystep");
 
-				if (String.IsNullOrWhiteSpace(readOnlyFormName))
+				if (string.IsNullOrWhiteSpace(readOnlyFormName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_referenceentityreadonlyformname must not be null.");
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(targetAttributeName))
+				if (string.IsNullOrWhiteSpace(targetAttributeName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_referenctargetlookupattributelogicalname must not be null.");
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(referenceEntityLogicalName))
+				if (string.IsNullOrWhiteSpace(referenceEntityLogicalName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_referenceentitylogicalname must not be null.");
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(referenceEntityPrimaryKeyLogicalName))
+				if (string.IsNullOrWhiteSpace(referenceEntityPrimaryKeyLogicalName))
 				{
 					referenceEntityPrimaryKeyLogicalName = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, referenceEntityLogicalName);
 				}
 
-				if (String.IsNullOrWhiteSpace(referenceEntityPrimaryKeyLogicalName))
+				if (string.IsNullOrWhiteSpace(referenceEntityPrimaryKeyLogicalName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, string.Format("Error retrieving the Primary Key Attribute Name for '{0}'.", referenceEntityLogicalName));
 					return;
@@ -3631,7 +3631,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var portalContext = PortalCrmConfigurationManager.CreatePortalContext();
 			var referenceEntitySourceType = step.GetAttributeValue<OptionSetValue>("adx_referenceentitysourcetype");
 
-			if (String.IsNullOrWhiteSpace(targetAttributeName))
+			if (string.IsNullOrWhiteSpace(targetAttributeName))
 			{
 				ADXTrace.Instance.TraceInfo(TraceCategory.Application,
 					"Lookup Attribute Name not provided. No Entity Reference to set. AssociateEntity will be called during OnInserted event instead.");
@@ -3716,7 +3716,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						: GetPreviousStepReferenceEntityID();
 				}
 
-				if (!String.IsNullOrWhiteSpace(targetAttributeName) && !String.IsNullOrWhiteSpace(referenceEntityLogicalName) && id != Guid.Empty)
+				if (!string.IsNullOrWhiteSpace(targetAttributeName) && !string.IsNullOrWhiteSpace(referenceEntityLogicalName) && id != Guid.Empty)
 				{
 					values[targetAttributeName] = new EntityReference(referenceEntityLogicalName, id);
 				}
@@ -3828,7 +3828,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					}
 				}
 
-				if (String.IsNullOrWhiteSpace(keyName) && !String.IsNullOrWhiteSpace(entityName))
+				if (string.IsNullOrWhiteSpace(keyName) && !string.IsNullOrWhiteSpace(entityName))
 				{
 					keyName = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, entityName);
 				}
@@ -3856,7 +3856,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var relationshipName = step.GetAttributeValue<string>("adx_referenceentityrelationshipname") ?? string.Empty;
 			var referenceEntityStep = step.GetAttributeValue<EntityReference>("adx_referenceentitystep");
 
-			if (String.IsNullOrWhiteSpace(relationshipName))
+			if (string.IsNullOrWhiteSpace(relationshipName))
 			{
 				ADXTrace.Instance.TraceInfo(TraceCategory.Application, "Entity Relationship Name not provided. Entity Association not required.");
 				return;
@@ -3940,7 +3940,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(sourceEntityPrimaryKey))
+				if (string.IsNullOrWhiteSpace(sourceEntityPrimaryKey))
 				{
 					sourceEntityPrimaryKey = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, sourceEntityName);
 				}
@@ -3967,7 +3967,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(targetEntityPrimaryKey))
+				if (string.IsNullOrWhiteSpace(targetEntityPrimaryKey))
 				{
 					targetEntityPrimaryKey = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, targetEntityName);
 				}
@@ -4112,36 +4112,36 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var userIdentityNameAttributeName = step.GetAttributeValue<string>("adx_useridentitynameattributelogicalname");
 			var targetEntityLogicalName = step.GetAttributeValue<string>("adx_targetentitylogicalname");
 
-			if (String.IsNullOrWhiteSpace(targetEntityLogicalName))
+			if (string.IsNullOrWhiteSpace(targetEntityLogicalName))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_targetentitylogicalname must not be null.");
 
 				return;
 			}
 
-			if (String.IsNullOrWhiteSpace(userHostAddressAttributeName) && String.IsNullOrWhiteSpace(userIdentityNameAttributeName))
+			if (string.IsNullOrWhiteSpace(userHostAddressAttributeName) && string.IsNullOrWhiteSpace(userIdentityNameAttributeName))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, "LogUserInfoOnInserting", "adx_webformstep.adx_userhostaddressattributelogicalname is null. adx_webformstep.adx_useridentitynameattributelogicalname is null.");
 
 				return;
 			}
 
-			if (!String.IsNullOrWhiteSpace(userHostAddressAttributeName))
+			if (!string.IsNullOrWhiteSpace(userHostAddressAttributeName))
 			{
 				if (MetadataHelper.IsAttributeLogicalNameValid(context, targetEntityLogicalName, userHostAddressAttributeName))
 				{
-					if (!String.IsNullOrWhiteSpace(HttpContext.Current.Request.UserHostName))
+					if (!string.IsNullOrWhiteSpace(HttpContext.Current.Request.UserHostName))
 					{
 						e.Values[userHostAddressAttributeName] = HttpContext.Current.Request.UserHostName;
 					}
 				}
 			}
 
-			if (!String.IsNullOrWhiteSpace(userIdentityNameAttributeName))
+			if (!string.IsNullOrWhiteSpace(userIdentityNameAttributeName))
 			{
 				if (MetadataHelper.IsAttributeLogicalNameValid(context, targetEntityLogicalName, userIdentityNameAttributeName))
 				{
-					if (HttpContext.Current.User != null && !String.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
+					if (HttpContext.Current.User != null && !string.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
 					{
 						e.Values[userIdentityNameAttributeName] = HttpContext.Current.User.Identity.Name;
 					}
@@ -4159,36 +4159,36 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var userIdentityNameAttributeName = step.GetAttributeValue<string>("adx_useridentitynameattributelogicalname");
 			var targetEntityLogicalName = step.GetAttributeValue<string>("adx_targetentitylogicalname");
 
-			if (String.IsNullOrWhiteSpace(targetEntityLogicalName))
+			if (string.IsNullOrWhiteSpace(targetEntityLogicalName))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_targetentitylogicalname must not be null.");
 
 				return;
 			}
 
-			if (String.IsNullOrWhiteSpace(userHostAddressAttributeName) && String.IsNullOrWhiteSpace(userIdentityNameAttributeName))
+			if (string.IsNullOrWhiteSpace(userHostAddressAttributeName) && string.IsNullOrWhiteSpace(userIdentityNameAttributeName))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_userhostaddressattributelogicalname is null. adx_webformstep.adx_useridentitynameattributelogicalname is null.");
 
 				return;
 			}
 
-			if (!String.IsNullOrWhiteSpace(userHostAddressAttributeName))
+			if (!string.IsNullOrWhiteSpace(userHostAddressAttributeName))
 			{
 				if (MetadataHelper.IsAttributeLogicalNameValid(context, targetEntityLogicalName, userHostAddressAttributeName))
 				{
-					if (!String.IsNullOrWhiteSpace(HttpContext.Current.Request.UserHostName))
+					if (!string.IsNullOrWhiteSpace(HttpContext.Current.Request.UserHostName))
 					{
 						e.Values[userHostAddressAttributeName] = HttpContext.Current.Request.UserHostName;
 					}
 				}
 			}
 
-			if (!String.IsNullOrWhiteSpace(userIdentityNameAttributeName))
+			if (!string.IsNullOrWhiteSpace(userIdentityNameAttributeName))
 			{
 				if (MetadataHelper.IsAttributeLogicalNameValid(context, targetEntityLogicalName, userIdentityNameAttributeName))
 				{
-					if (HttpContext.Current.User != null && !String.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
+					if (HttpContext.Current.User != null && !string.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
 					{
 						e.Values[userIdentityNameAttributeName] = HttpContext.Current.User.Identity.Name;
 					}
@@ -4208,21 +4208,21 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				return;
 			}
 
-			if (String.IsNullOrWhiteSpace(targetEntityLogicalName))
+			if (string.IsNullOrWhiteSpace(targetEntityLogicalName))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_targetentitylogicalname must not be null.");
 
 				return;
 			}
 
-			if (String.IsNullOrWhiteSpace(autoNumberDefinitionName))
+			if (string.IsNullOrWhiteSpace(autoNumberDefinitionName))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_autonumberdefinitionname is null.");
 
 				return;
 			}
 
-			if (String.IsNullOrWhiteSpace(autoNumberAttributeLogicalName))
+			if (string.IsNullOrWhiteSpace(autoNumberAttributeLogicalName))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformstep.adx_autonumberattributelogicalname is null.");
 
@@ -4231,7 +4231,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			var autoNumber = RetrieveAutoNumber(autoNumberDefinitionName);
 
-			if (String.IsNullOrWhiteSpace(autoNumber))
+			if (string.IsNullOrWhiteSpace(autoNumber))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, "autoNumber returned from plugin request is null.");
 
@@ -4282,14 +4282,14 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			if (!associatePortalUser) return;
 
-			if (String.IsNullOrWhiteSpace(targetEntityLogicalName))
+			if (string.IsNullOrWhiteSpace(targetEntityLogicalName))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, ResourceManager.GetString("TargetEntity_LogicalName_Null_Exception"));
 
 				return;
 			}
 
-			if (String.IsNullOrWhiteSpace(portalUserLookupAttributeName))
+			if (string.IsNullOrWhiteSpace(portalUserLookupAttributeName))
 			{
 				ADXTrace.Instance.TraceWarning(TraceCategory.Application, "adx_webformstep.adx_targetentityportaluserlookupattribute is null.");
 
@@ -4384,7 +4384,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(primaryKey))
+				if (string.IsNullOrWhiteSpace(primaryKey))
 				{
 					primaryKey = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, logicalName);
 				}
@@ -4496,7 +4496,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			foreach (var item in metadata)
 			{
 				var attributeName = item.GetAttributeValue<string>("adx_attributelogicalname");
-				if (String.IsNullOrWhiteSpace(attributeName))
+				if (string.IsNullOrWhiteSpace(attributeName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformmetadata.adx_attributelogicalname is null.");
 					continue;
@@ -4621,7 +4621,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			foreach (var item in metadata)
 			{
 				var attributeName = item.GetAttributeValue<string>("adx_attributelogicalname");
-				if (String.IsNullOrWhiteSpace(attributeName))
+				if (string.IsNullOrWhiteSpace(attributeName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformmetadata.adx_attributelogicalname is null.");
 					continue;
@@ -4725,7 +4725,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			foreach (var item in metadata)
 			{
 				var attributeName = item.GetAttributeValue<string>("adx_attributelogicalname");
-				if (String.IsNullOrWhiteSpace(attributeName))
+				if (string.IsNullOrWhiteSpace(attributeName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_webformmetadata.adx_attributelogicalname is null.");
 					continue;
@@ -4778,7 +4778,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						try
 						{
 							var fromAttribute = item.GetAttributeValue<string>("adx_onsavefromattribute");
-							if (String.IsNullOrWhiteSpace(fromAttribute))
+							if (string.IsNullOrWhiteSpace(fromAttribute))
 							{
 								return null;
 							}
@@ -5059,7 +5059,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var entityLogicalName = step.GetAttributeValue<string>("adx_targetentitylogicalname");
 			var entityPrimaryKeyLogicalName = step.GetAttributeValue<string>("adx_targetentityprimarykeylogicalname");
 
-			if (!String.IsNullOrWhiteSpace(entityLogicalName) && String.IsNullOrWhiteSpace(entityPrimaryKeyLogicalName))
+			if (!string.IsNullOrWhiteSpace(entityLogicalName) && string.IsNullOrWhiteSpace(entityPrimaryKeyLogicalName))
 			{
 				entityPrimaryKeyLogicalName = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, entityLogicalName);
 			}
@@ -5104,7 +5104,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			return item.PreviousStepID;
 		}
 
-		protected void UpdateStepHistoryIsActive(Entity step, Boolean isActive)
+		protected void UpdateStepHistoryIsActive(Entity step, bool isActive)
 		{
 			if (step == null)
 			{
@@ -5132,7 +5132,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			}
 		}
 
-		protected void UpdateStepHistory(Entity step, Guid previousStepId, Guid? recordID, string entityLogicalName, string entityPrimaryKeyLogicalName, Boolean isActive)
+		protected void UpdateStepHistory(Entity step, Guid previousStepId, Guid? recordID, string entityLogicalName, string entityPrimaryKeyLogicalName, bool isActive)
 		{
 			if (step == null)
 			{
@@ -5357,7 +5357,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			steps.Add(new ProgressStep
 			{
-				Title = String.IsNullOrWhiteSpace(localizedTitle) ? step.GetAttributeValue<string>("adx_name") ?? "Step" : localizedTitle,
+				Title = string.IsNullOrWhiteSpace(localizedTitle) ? step.GetAttributeValue<string>("adx_name") ?? "Step" : localizedTitle,
 				Index = userStepIndex,
 				IsActive = currentIndex == stepIndex,
 				IsCompleted = currentIndex > stepIndex
@@ -5423,7 +5423,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 							var localizedTitle1 = Localization.GetLocalizedString(step.GetAttributeValue<string>("adx_title"), languageCode);
 							steps.Add(new ProgressStep
 							{
-								Title = String.IsNullOrWhiteSpace(localizedTitle1) ? step.GetAttributeValue<string>("adx_name") ?? "Step" : localizedTitle1,
+								Title = string.IsNullOrWhiteSpace(localizedTitle1) ? step.GetAttributeValue<string>("adx_name") ?? "Step" : localizedTitle1,
 								Index = userStepIndex,
 								IsActive = currentIndex == stepIndex,
 								IsCompleted = currentIndex > stepIndex
@@ -5435,7 +5435,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 							var localizedTitle2 = Localization.GetLocalizedString(step.GetAttributeValue<string>("adx_title"), languageCode);
 							steps.Add(new ProgressStep
 							{
-								Title = String.IsNullOrWhiteSpace(localizedTitle2) ? step.GetAttributeValue<string>("adx_name") ?? "Step" : localizedTitle2,
+								Title = string.IsNullOrWhiteSpace(localizedTitle2) ? step.GetAttributeValue<string>("adx_name") ?? "Step" : localizedTitle2,
 								Index = userStepIndex,
 								IsActive = currentIndex == stepIndex,
 								IsCompleted = currentIndex > stepIndex
@@ -5451,7 +5451,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 							var localizedTitle3 = Localization.GetLocalizedString(step.GetAttributeValue<string>("adx_title"), languageCode);
 							steps.Add(new ProgressStep
 							{
-								Title = String.IsNullOrWhiteSpace(localizedTitle3) ? step.GetAttributeValue<string>("adx_name") ?? "Step" : localizedTitle3,
+								Title = string.IsNullOrWhiteSpace(localizedTitle3) ? step.GetAttributeValue<string>("adx_name") ?? "Step" : localizedTitle3,
 								Index = userStepIndex,
 								IsActive = currentIndex == stepIndex,
 								IsCompleted = currentIndex > stepIndex

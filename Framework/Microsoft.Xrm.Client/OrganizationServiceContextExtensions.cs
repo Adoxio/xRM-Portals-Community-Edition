@@ -40,7 +40,7 @@ namespace Microsoft.Xrm.Client
 		/// <param name="context"></param>
 		/// <param name="entity"></param>
 		/// <param name="includeRelatedEntities"></param>
-		public static T AttachClone<T>(this OrganizationServiceContext context, T entity, Boolean includeRelatedEntities = false)
+		public static T AttachClone<T>(this OrganizationServiceContext context, T entity, bool includeRelatedEntities = false)
 			where T : Entity
 		{
 			entity.ThrowOnNull("entity");
@@ -56,7 +56,7 @@ namespace Microsoft.Xrm.Client
 		/// <param name="context"></param>
 		/// <param name="entity"></param>
 		/// <param name="includeRelatedEntities"></param>
-		public static T MergeClone<T>(this OrganizationServiceContext context, T entity, Boolean includeRelatedEntities = false)
+		public static T MergeClone<T>(this OrganizationServiceContext context, T entity, bool includeRelatedEntities = false)
 			where T : Entity
 		{
 			entity.ThrowOnNull("entity");

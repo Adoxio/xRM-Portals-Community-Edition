@@ -308,7 +308,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				throw new ApplicationException("Entity Name (adx_entityname) attribute on Entity List (adx_entitylist) is null or empty. Please specify the logical name of the entity.");
 			}
 
-			if (!String.IsNullOrWhiteSpace(entityName) && String.IsNullOrWhiteSpace(primaryKeyName))
+			if (!string.IsNullOrWhiteSpace(entityName) && string.IsNullOrWhiteSpace(primaryKeyName))
 			{
 				primaryKeyName = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(serviceContext, entityName);
 			}

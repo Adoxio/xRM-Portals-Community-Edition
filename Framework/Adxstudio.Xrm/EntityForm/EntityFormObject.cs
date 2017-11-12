@@ -106,9 +106,9 @@ namespace Adxstudio.Xrm.EntityForm
 			ShowOwnerFields = entityform.GetAttributeValue<bool?>("adx_showownerfields") ?? false;
 			ShowUnsupportedFields = entityform.GetAttributeValue<bool?>("adx_showunsupportedfields") ?? false;
 			ToolTipEnabled = entityform.GetAttributeValue<bool?>("adx_tooltipenabled") ?? false;
-			AutoGenerateStepsFromTabs = entityform.GetAttributeValue<Boolean?>("adx_autogeneratesteps") ?? false;
-			ForceAllFieldsRequired = entityform.GetAttributeValue<Boolean?>("adx_forceallfieldsrequired") ?? false;
-			HideFormOnSuccess = entityform.GetAttributeValue<Boolean?>("adx_hideformonsuccess") ?? true;
+			AutoGenerateStepsFromTabs = entityform.GetAttributeValue<bool?>("adx_autogeneratesteps") ?? false;
+			ForceAllFieldsRequired = entityform.GetAttributeValue<bool?>("adx_forceallfieldsrequired") ?? false;
+			HideFormOnSuccess = entityform.GetAttributeValue<bool?>("adx_hideformonsuccess") ?? true;
 			ValidationGroup = entityform.GetAttributeValue<string>("adx_validationgroup") ?? string.Empty;
 			ValidationSummaryLinksEnabled = entityform.GetAttributeValue<bool?>("adx_validationsummarylinksenabled") ?? true;
 			
@@ -128,7 +128,7 @@ namespace Adxstudio.Xrm.EntityForm
 			AttachFileSizeErrorMessage = Localization.GetLocalizedString(entityform.GetAttributeValue<string>("adx_attachfilesizeerrormessage"), languageCode);
 			AttachFileRequired = entityform.GetAttributeValue<bool?>("adx_attachfilerequired") ?? false;
 			LocalizedAttachFileLabel = Localization.GetLocalizedString(entityform.GetAttributeValue<string>("adx_attachfilelabel"), languageCode);
-			AttachFileLabel = String.IsNullOrWhiteSpace(LocalizedAttachFileLabel) ? EntityFormFunctions.DefaultAttachFileLabel : LocalizedAttachFileLabel;
+			AttachFileLabel = string.IsNullOrWhiteSpace(LocalizedAttachFileLabel) ? EntityFormFunctions.DefaultAttachFileLabel : LocalizedAttachFileLabel;
 			AttachFileRequiredErrorMessage = Localization.GetLocalizedString(entityform.GetAttributeValue<string>("adx_attachfilerequirederrormessage"), languageCode);
 			AttachFileStorageLocation = entityform.GetAttributeValue<OptionSetValue>("adx_attachfilestoragelocation");
             AttachFileSaveOption = entityform.GetAttributeValue<OptionSetValue>("adx_attachfilesaveoption");
@@ -142,13 +142,13 @@ namespace Adxstudio.Xrm.EntityForm
 			SuccessMessage = Localization.GetLocalizedString(entityform.GetAttributeValue<string>("adx_successmessage"), languageCode);
 			Instructions = Localization.GetLocalizedString(entityform.GetAttributeValue<string>("adx_instructions"), languageCode);
 
-			PreviousButtonCssClass = String.IsNullOrWhiteSpace(EntityformPreviousButtonCssClass) ? (String.IsNullOrWhiteSpace(PreviousButtonCssClass) ? EntityFormFunctions.DefaultPreviousButtonCssClass : PreviousButtonCssClass) : EntityformPreviousButtonCssClass;
-			NextButtonCssClass = String.IsNullOrWhiteSpace(EntityformNextButtonCssClass) ? (String.IsNullOrWhiteSpace(NextButtonCssClass) ? EntityFormFunctions.DefaultNextButtonCssClass : NextButtonCssClass) : EntityformNextButtonCssClass;
-			SubmitButtonCssClass = String.IsNullOrWhiteSpace(EntityformSubmitButtonCssClass) ? (String.IsNullOrWhiteSpace(SubmitButtonCssClass) ? EntityFormFunctions.DefaultSubmitButtonCssClass : SubmitButtonCssClass) : EntityformSubmitButtonCssClass;
-			PreviousButtonText = String.IsNullOrWhiteSpace(LocalizedPreviousButtonText) ? (String.IsNullOrWhiteSpace(PreviousButtonText) ? EntityFormFunctions.DefaultPreviousButtonText : PreviousButtonText) : LocalizedPreviousButtonText;
-			NextButtonText = String.IsNullOrWhiteSpace(LocalizedNextButtonText) ? (String.IsNullOrWhiteSpace(NextButtonText) ? EntityFormFunctions.DefaultNextButtonText : NextButtonText) : LocalizedNextButtonText;
-			SubmitButtonText = String.IsNullOrWhiteSpace(LocalizedSubmitButtonText) ? (String.IsNullOrWhiteSpace(SubmitButtonText) ? EntityFormFunctions.DefaultSubmitButtonText : SubmitButtonText) : LocalizedSubmitButtonText;
-			SubmitButtonBusyText = String.IsNullOrWhiteSpace(LocalizedSubmitButtonBusyText) ? (String.IsNullOrWhiteSpace(SubmitButtonBusyText) ? EntityFormFunctions.DefaultSubmitButtonBusyText : SubmitButtonBusyText) : LocalizedSubmitButtonBusyText;
+			PreviousButtonCssClass = string.IsNullOrWhiteSpace(EntityformPreviousButtonCssClass) ? (string.IsNullOrWhiteSpace(PreviousButtonCssClass) ? EntityFormFunctions.DefaultPreviousButtonCssClass : PreviousButtonCssClass) : EntityformPreviousButtonCssClass;
+			NextButtonCssClass = string.IsNullOrWhiteSpace(EntityformNextButtonCssClass) ? (string.IsNullOrWhiteSpace(NextButtonCssClass) ? EntityFormFunctions.DefaultNextButtonCssClass : NextButtonCssClass) : EntityformNextButtonCssClass;
+			SubmitButtonCssClass = string.IsNullOrWhiteSpace(EntityformSubmitButtonCssClass) ? (string.IsNullOrWhiteSpace(SubmitButtonCssClass) ? EntityFormFunctions.DefaultSubmitButtonCssClass : SubmitButtonCssClass) : EntityformSubmitButtonCssClass;
+			PreviousButtonText = string.IsNullOrWhiteSpace(LocalizedPreviousButtonText) ? (string.IsNullOrWhiteSpace(PreviousButtonText) ? EntityFormFunctions.DefaultPreviousButtonText : PreviousButtonText) : LocalizedPreviousButtonText;
+			NextButtonText = string.IsNullOrWhiteSpace(LocalizedNextButtonText) ? (string.IsNullOrWhiteSpace(NextButtonText) ? EntityFormFunctions.DefaultNextButtonText : NextButtonText) : LocalizedNextButtonText;
+			SubmitButtonText = string.IsNullOrWhiteSpace(LocalizedSubmitButtonText) ? (string.IsNullOrWhiteSpace(SubmitButtonText) ? EntityFormFunctions.DefaultSubmitButtonText : SubmitButtonText) : LocalizedSubmitButtonText;
+			SubmitButtonBusyText = string.IsNullOrWhiteSpace(LocalizedSubmitButtonBusyText) ? (string.IsNullOrWhiteSpace(SubmitButtonBusyText) ? EntityFormFunctions.DefaultSubmitButtonBusyText : SubmitButtonBusyText) : LocalizedSubmitButtonBusyText;
 
 			EntityFormMetadata = entityform.GetRelatedEntities(context, "adx_entityformmetadata_entityform");
 

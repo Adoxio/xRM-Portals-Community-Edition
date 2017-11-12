@@ -820,7 +820,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 		/// <summary>
 		/// Tooltip text of the control.
 		/// </summary>
-		public new String ToolTip
+		public new string ToolTip
 		{
 			get; private set;
 		}

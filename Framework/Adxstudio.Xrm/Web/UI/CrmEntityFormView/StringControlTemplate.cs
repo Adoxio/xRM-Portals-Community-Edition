@@ -40,7 +40,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 		private ValidatorDisplay ValidatorDisplay
 		{
-			get { return String.IsNullOrWhiteSpace(ValidationText) ? ValidatorDisplay.None : ValidatorDisplay.Dynamic; }
+			get { return string.IsNullOrWhiteSpace(ValidationText) ? ValidatorDisplay.None : ValidatorDisplay.Dynamic; }
 		}
 
 		protected override void InstantiateControlIn(Control container)
@@ -97,7 +97,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ControlToValidate = ControlID,
 					ValidationGroup = ValidationGroup,
 					Display = ValidatorDisplay,
-					ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.RequiredFieldValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("Required")) ? ResourceManager.GetString("Required_Field_Error").FormatWith(Metadata.Label) : Metadata.Messages["Required"].FormatWith(Metadata.Label) : Metadata.RequiredFieldValidationErrorMessage)),
+					ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.RequiredFieldValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("Required")) ? ResourceManager.GetString("Required_Field_Error").FormatWith(Metadata.Label) : Metadata.Messages["Required"].FormatWith(Metadata.Label) : Metadata.RequiredFieldValidationErrorMessage)),
 					Text = Metadata.ValidationText,
 				});
 			}
@@ -110,7 +110,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ControlToValidate = ControlID,
 					ValidationGroup = ValidationGroup,
 					Display = ValidatorDisplay.None,
-					ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.GeolocationValidatorErrorMessage) ? ResourceManager.GetString("Invalid_Error").FormatWith(Metadata.Label) : Metadata.GeolocationValidatorErrorMessage))
+					ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.GeolocationValidatorErrorMessage) ? ResourceManager.GetString("Invalid_Error").FormatWith(Metadata.Label) : Metadata.GeolocationValidatorErrorMessage))
 				};
 
 				var bingLookup = new BingMapLookup();
@@ -127,7 +127,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ID = string.Format("RegularExpressionValidator{0}", ControlID),
 					ControlToValidate = ControlID,
 					ValidationGroup = ValidationGroup,
-					ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.ValidationRegularExpressionErrorMessage) ? ResourceManager.GetString("Invalid_Error").FormatWith(Metadata.Label) : Metadata.ValidationRegularExpressionErrorMessage)),
+					ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.ValidationRegularExpressionErrorMessage) ? ResourceManager.GetString("Invalid_Error").FormatWith(Metadata.Label) : Metadata.ValidationRegularExpressionErrorMessage)),
 					Text = "*",
 					ValidationExpression = Metadata.ValidationRegularExpression
 				});

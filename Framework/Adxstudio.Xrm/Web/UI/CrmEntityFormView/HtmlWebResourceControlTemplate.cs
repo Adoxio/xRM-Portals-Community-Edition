@@ -44,7 +44,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					context.CreateQuery("webresource").FirstOrDefault(
 						wr => wr.GetAttributeValue<string>("name") == Metadata.WebResourceUrl);
 
-				if (webResource == null || String.IsNullOrWhiteSpace(webResource.GetAttributeValue<string>("content")))
+				if (webResource == null || string.IsNullOrWhiteSpace(webResource.GetAttributeValue<string>("content")))
 				{
 					var placeholder = new HtmlGenericControl("literal") { ID = Metadata.ControlID, Visible = Enabled };
 

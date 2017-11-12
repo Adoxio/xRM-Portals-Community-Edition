@@ -99,7 +99,7 @@ namespace Site.Areas.Blogs.MasterPages
 
 			if (BlogSearchFilters.Visible && BlogSearchFilterOptions.SelectedValue == "blog" && TryGetBlogScope(out blogId))
 			{
-				urlBuilder.QueryString.Set("filter", String.Format("adx_blogid:@{0}", blogId));
+				urlBuilder.QueryString.Set("filter", string.Format("adx_blogid:@{0}", blogId));
 			}
 
 			Response.Redirect(urlBuilder.PathWithQueryString);

@@ -10,7 +10,7 @@ using Microsoft.Xrm.Client.Runtime;
 namespace Microsoft.Xrm.Client
 {
 	/// <summary>
-	/// Helper methods on the <see cref="String"/> class.
+	/// Helper methods on the <see cref="string"/> class.
 	/// </summary>
 	public static class StringExtensions
 	{

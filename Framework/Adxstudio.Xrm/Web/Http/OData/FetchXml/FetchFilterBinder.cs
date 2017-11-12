@@ -69,7 +69,7 @@ namespace Adxstudio.Xrm.Web.Http.OData.FetchXml
 				}
 			}
 
-			throw new NotSupportedException(String.Format("Query Nodes of type {0} aren't supported.", node.Kind));
+			throw new NotSupportedException(string.Format("Query Nodes of type {0} aren't supported.", node.Kind));
 		}
 
 		private static Condition BindSingleValueFunctionCallNode(SingleValueFunctionCallNode singleValueFunctionCallNode)

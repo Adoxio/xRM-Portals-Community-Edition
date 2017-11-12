@@ -42,9 +42,9 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				ID = string.Format("PreviousButton{0}", container.ID),
 				CommandName = "Previous",
-				Text = String.IsNullOrWhiteSpace(_previousButtonText) ? DefaultPreviousButtonText : _previousButtonText,
+				Text = string.IsNullOrWhiteSpace(_previousButtonText) ? DefaultPreviousButtonText : _previousButtonText,
 				CausesValidation = false,
-				CssClass = String.IsNullOrWhiteSpace(_previousButtonCssClass) ? DefaultPreviousButtonCssClass : _previousButtonCssClass
+				CssClass = string.IsNullOrWhiteSpace(_previousButtonCssClass) ? DefaultPreviousButtonCssClass : _previousButtonCssClass
 			};
 
 			if (string.IsNullOrEmpty(previousButton.CssClass) || previousButton.CssClass == "button next" || previousButton.CssClass == "button previous"

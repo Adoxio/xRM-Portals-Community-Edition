@@ -64,7 +64,7 @@ namespace Microsoft.Xrm.Client.Services.Samples
 			return ExecuteRegistrationRequest(url, request);
 		}
 
-		public static ClientCredentials RegisterDevice(Boolean persist)
+		public static ClientCredentials RegisterDevice(bool persist)
 		{
 			var persistValue = PersistToFile;
 

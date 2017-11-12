@@ -136,7 +136,7 @@ namespace Adxstudio.Xrm.Commerce
 							.Select(e => new Discount(e.Id, e.GetAttributeValue<string>("adx_code"), e.GetAttributeValue<string>("adx_name"), 
 								e.GetAttributeValue<OptionSetValue>("adx_scope") == null ? 0 : e.GetAttributeValue<OptionSetValue>("adx_scope").Value,
 								e.GetAttributeValue<OptionSetValue>("adx_type") == null ? 0 : e.GetAttributeValue<OptionSetValue>("adx_type").Value,
-								e.GetAttributeValue<OptionSetValue>("adx_type") == null ? 0 : (e.GetAttributeValue<OptionSetValue>("adx_type").Value == (int)DiscountType.Amount) ? QuoteFunctions.GetDecimalFromMoney(e, "adx_amount") : e.GetAttributeValue<Decimal?>("adx_percentage") ?? 0))
+								e.GetAttributeValue<OptionSetValue>("adx_type") == null ? 0 : (e.GetAttributeValue<OptionSetValue>("adx_type").Value == (int)DiscountType.Amount) ? QuoteFunctions.GetDecimalFromMoney(e, "adx_amount") : e.GetAttributeValue<decimal?>("adx_percentage") ?? 0))
 							.ToArray();
 
 			return new Purchasable(quote, items, discounts, RequiresShipping);
@@ -284,7 +284,7 @@ namespace Adxstudio.Xrm.Commerce
 							.Select(e => new Discount(e.Id, e.GetAttributeValue<string>("adx_code"), e.GetAttributeValue<string>("adx_name"),
 								e.GetAttributeValue<OptionSetValue>("adx_scope") == null ? 0 : e.GetAttributeValue<OptionSetValue>("adx_scope").Value,
 								e.GetAttributeValue<OptionSetValue>("adx_type") == null ? 0 : e.GetAttributeValue<OptionSetValue>("adx_type").Value,
-								e.GetAttributeValue<OptionSetValue>("adx_type") == null ? 0 : (e.GetAttributeValue<OptionSetValue>("adx_type").Value == (int)DiscountType.Amount) ? QuoteFunctions.GetDecimalFromMoney(e, "adx_amount") : e.GetAttributeValue<Decimal?>("adx_percentage") ?? 0))
+								e.GetAttributeValue<OptionSetValue>("adx_type") == null ? 0 : (e.GetAttributeValue<OptionSetValue>("adx_type").Value == (int)DiscountType.Amount) ? QuoteFunctions.GetDecimalFromMoney(e, "adx_amount") : e.GetAttributeValue<decimal?>("adx_percentage") ?? 0))
 							.ToArray();
 
 			return new PurchaseableItem(

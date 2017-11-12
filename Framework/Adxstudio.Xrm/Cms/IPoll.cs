@@ -17,11 +17,11 @@ namespace Adxstudio.Xrm.Cms
 
 		Guid Id { get; }
 
-        String Name { get; }
+        string Name { get; }
 		
         IEnumerable<IPollOption> Options { get; set; }
 
-		String Question { get; }
+		string Question { get; }
 
         string SubmitButtonLabel { get; }
 

@@ -22,7 +22,7 @@ namespace Adxstudio.Xrm.Cms.Security
 		{
 			if (!TryAssert(context, website, fromState, toState))
 			{
-				throw new SecurityException(String.Format("Security assertion for transition from state {0} to {1} failed.",
+				throw new SecurityException(string.Format("Security assertion for transition from state {0} to {1} failed.",
 					fromState.GetAttributeValue<string>("adx_name"), toState.GetAttributeValue<string>("adx_name")));
 			}
 		}
@@ -31,7 +31,7 @@ namespace Adxstudio.Xrm.Cms.Security
 		{
 			if (!TryAssert(context, website, fromStateId, toStateId))
 			{
-				throw new SecurityException(String.Format("Security assertion for transition from state {0} to {1} failed.",
+				throw new SecurityException(string.Format("Security assertion for transition from state {0} to {1} failed.",
 					fromStateId, toStateId));
 			}
 		}

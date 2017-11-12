@@ -153,7 +153,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 
 		public static bool IsNull(Expression expression)
 		{
-			return (expression as Object) == null;
+			return (expression as object) == null;
 		}
 
 		public override string ToString()
@@ -1311,18 +1311,18 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 			switch (attributeTypeCode)
 			{
 				case AttributeTypeCode.BigInt:
-					if (expressionValue != null && !(expressionValue is Int64 | expressionValue is Double))
+					if (expressionValue != null && !(expressionValue is long | expressionValue is double))
 					{
 						throw new InvalidOperationException(string.Format("Attribute {0} specified in the expression is expecting a {1}. The value provided isn't valid.", attributeName, attributeTypeCode));
 					}
 					testValue = expressionValue == null ? (object)null : Convert.ToInt64(expressionValue);
 					break;
 				case AttributeTypeCode.Boolean:
-					if (expressionValue != null && !(expressionValue is Boolean))
+					if (expressionValue != null && !(expressionValue is bool))
 					{
 						throw new InvalidOperationException(string.Format("Attribute {0} specified in the expression is expecting a {1}. The value provided isn't valid.", attributeName, attributeTypeCode));
 					}
-					testValue = expressionValue == null ? (object)null : (Boolean)expressionValue;
+					testValue = expressionValue == null ? (object)null : (bool)expressionValue;
 					break;
 				case AttributeTypeCode.Customer:
 					var entityReference = EvaluateEntity.Attributes.ContainsKey(attributeName) ? (EntityReference)EvaluateEntity.Attributes[attributeName] : null;

@@ -56,7 +56,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 		private ValidatorDisplay ValidatorDisplay
 		{
-			get { return String.IsNullOrWhiteSpace(ValidationText) ? ValidatorDisplay.None : ValidatorDisplay.Dynamic; }
+			get { return string.IsNullOrWhiteSpace(ValidationText) ? ValidatorDisplay.None : ValidatorDisplay.Dynamic; }
 		}
 
 		protected override void InstantiateControlIn(Control container)
@@ -106,7 +106,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ControlToValidate = ControlID,
 					ValidationGroup = ValidationGroup,
 					Display = ValidatorDisplay,
-					ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.RequiredFieldValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("required")) ? ResourceManager.GetString("Required_Field_Error").FormatWith(Metadata.Label) : Metadata.Messages["required"].FormatWith(Metadata.Label) : Metadata.RequiredFieldValidationErrorMessage)),
+					ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.RequiredFieldValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("required")) ? ResourceManager.GetString("Required_Field_Error").FormatWith(Metadata.Label) : Metadata.Messages["required"].FormatWith(Metadata.Label) : Metadata.RequiredFieldValidationErrorMessage)),
 					Text = Metadata.ValidationText,
 				});
 			}
@@ -243,7 +243,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					continue;
 				}
 
-				var padding = HttpUtility.HtmlDecode(String.Concat(Enumerable.Repeat("&nbsp;-&nbsp;", depth)));
+				var padding = HttpUtility.HtmlDecode(string.Concat(Enumerable.Repeat("&nbsp;-&nbsp;", depth)));
 
 				dropDown.Items.Add(new ListItem(string.Format("{0}{1}", padding, child.GetAttributeValue<string>("title")), child.Id.ToString()));
 

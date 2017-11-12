@@ -82,7 +82,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 				ID = string.Format("EmailFormatValidator{0}", ControlID),
 				ControlToValidate = ControlID,
 				ValidationGroup = ValidationGroup,
-				ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.ValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("email")) ? ResourceManager.GetString("Invalid_Email_Address_Error").FormatWith(Metadata.Label) : Metadata.Messages["email"].FormatWith(Metadata.Label) : Metadata.ValidationErrorMessage)),
+				ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.ValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("email")) ? ResourceManager.GetString("Invalid_Email_Address_Error").FormatWith(Metadata.Label) : Metadata.Messages["email"].FormatWith(Metadata.Label) : Metadata.ValidationErrorMessage)),
 				Text = "*",
 				ValidateEmptyText = false,
 			};

@@ -52,10 +52,10 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				ID = string.Format("UpdateButton{0}", container.ID),
 				CommandName = "Update",
-				Text = String.IsNullOrWhiteSpace(_submitButtonText) ? DefaultUpdateButtonText : _submitButtonText,
+				Text = string.IsNullOrWhiteSpace(_submitButtonText) ? DefaultUpdateButtonText : _submitButtonText,
 				ValidationGroup = _validationGroup,
 				CausesValidation = true,
-				CssClass = String.IsNullOrWhiteSpace(_submitButtonCssClass) ? WebControls.CrmEntityFormView.DefaultSubmitButtonCssClass : _submitButtonCssClass,
+				CssClass = string.IsNullOrWhiteSpace(_submitButtonCssClass) ? WebControls.CrmEntityFormView.DefaultSubmitButtonCssClass : _submitButtonCssClass,
 				OnClientClick = "javascript:if(typeof Page_ClientValidate === 'function'){if(Page_ClientValidate()){clearIsDirty();}}else{clearIsDirty();}"
 			};
 

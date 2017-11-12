@@ -152,7 +152,7 @@ namespace Adxstudio.Xrm.Search.Index
 						{
 							Attribute = entityAttribute,
 							Operator = Microsoft.Xrm.Sdk.Query.ConditionOperator.In,
-							Values = entityIds.Cast<Object>().ToList()
+							Values = entityIds.Cast<object>().ToList()
 						},
 					}
 			};
@@ -184,7 +184,7 @@ namespace Adxstudio.Xrm.Search.Index
 							{
 								Attribute = "adx_webpageid",
 								Operator = Microsoft.Xrm.Sdk.Query.ConditionOperator.In,
-								Values = descendantLocalizedWebPagesGuids.Cast<Object>().ToList()
+								Values = descendantLocalizedWebPagesGuids.Cast<object>().ToList()
 							},
 						}
 					};
@@ -206,7 +206,7 @@ namespace Adxstudio.Xrm.Search.Index
 							{
 								Attribute = "adx_webpageid",
 								Operator = Microsoft.Xrm.Sdk.Query.ConditionOperator.In,
-								Values = descendantRootWebPagesGuids.Cast<Object>().ToList()
+								Values = descendantRootWebPagesGuids.Cast<object>().ToList()
 							},
 						}
 					};

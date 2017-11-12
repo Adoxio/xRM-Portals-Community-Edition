@@ -1162,7 +1162,7 @@ namespace Adxstudio.Xrm.Notes
 
 			if (matchers.Any())
 			{
-				return new Regex(string.Format("^{0}$", String.Join("|", matchers)));
+				return new Regex(string.Format("^{0}$", string.Join("|", matchers)));
 			}
 
 			throw new Exception("Invalid file types in IAnnotationSettings.AcceptMimeTypes");

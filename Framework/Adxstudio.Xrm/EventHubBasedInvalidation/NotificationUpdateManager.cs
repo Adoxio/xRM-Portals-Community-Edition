@@ -22,9 +22,9 @@ namespace Adxstudio.Xrm.EventHubBasedInvalidation
 		private static readonly string FromCacheSubscription = "FromCacheSubscription";
 
 		private static volatile NotificationUpdateManager instance;
-		private static object syncRoot = new Object();
-		private static object mutexLock = new Object();
-		private static object metadataFlagLock = new Object();
+		private static object syncRoot = new object();
+		private static object mutexLock = new object();
+		private static object metadataFlagLock = new object();
 		private bool metadataFlag;
 		// Construct the dictionary with the desired concurrencyLevel and initialCapacity(Recommended Prime Number)
 		private ConcurrentDictionary<string, bool> portalUsedEntities = new ConcurrentDictionary<string, bool>(Environment.ProcessorCount * 2, 10009);
@@ -48,7 +48,7 @@ namespace Adxstudio.Xrm.EventHubBasedInvalidation
 			string timestamp;
 			if (!timeStampTable.TryGetValue(entityName, out timestamp))
 			{
-				timestamp = String.Empty;
+				timestamp = string.Empty;
 			}
 
 			ADXTrace.Instance.TraceInfo(TraceCategory.Application, string.Format("Timestamp for entity {0} {1}", entityName, timestamp));

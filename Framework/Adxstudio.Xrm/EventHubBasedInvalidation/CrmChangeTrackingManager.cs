@@ -92,7 +92,7 @@ namespace Adxstudio.Xrm.EventHubBasedInvalidation
 
             foreach (KeyValuePair<string, string> entity in updatedEntites)
             {
-                if (entity.Value == String.Empty || entity.Value == null)
+                if (entity.Value == string.Empty || entity.Value == null)
                 {
                     QueryExpression query = new QueryExpression()
                     {

@@ -141,7 +141,7 @@ namespace SafeHtml
 			byte* rgbTmp = null;
 
 			// Set newHtml to a blank string in case we encounter a failure
-			newHtml = String.Empty;
+			newHtml = string.Empty;
 
 			// Early exit if the existing Html is null or an empty string.
 			// The native call below doesn't return when the existing Html is an empty string.

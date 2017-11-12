@@ -50,10 +50,10 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				ID = string.Format("NextButton{0}", container.ID),
 				CommandName = "Next",
-				Text = String.IsNullOrWhiteSpace(_nextButtonText) ? DefaultNextButtonText : _nextButtonText,
+				Text = string.IsNullOrWhiteSpace(_nextButtonText) ? DefaultNextButtonText : _nextButtonText,
 				ValidationGroup = _validationGroup,
 				CausesValidation = true,
-				CssClass = String.IsNullOrWhiteSpace(_nextButtonCssClass) ? DefaultNextButtonCssClass : _nextButtonCssClass
+				CssClass = string.IsNullOrWhiteSpace(_nextButtonCssClass) ? DefaultNextButtonCssClass : _nextButtonCssClass
 			};
 
 			if (string.IsNullOrEmpty(nextButton.CssClass) || nextButton.CssClass == "button next" || nextButton.CssClass == "button submit"

@@ -22,8 +22,8 @@ namespace Adxstudio.Xrm.Performance
 		{
 			AggregatesInMilliseconds = new double[Enum.GetNames(typeof(PerformanceMarkerArea)).Length];
 			FirstTimestamp = DateTime.MaxValue;
-			RequestId = String.Empty;
-			SessionId = String.Empty;
+			RequestId = string.Empty;
+			SessionId = string.Empty;
 		}
 
 
@@ -52,9 +52,9 @@ namespace Adxstudio.Xrm.Performance
 		{
 			if (timestamp < FirstTimestamp)
 				FirstTimestamp = timestamp;
-			if (!String.IsNullOrEmpty(requestId))
+			if (!string.IsNullOrEmpty(requestId))
 				RequestId = requestId;
-			if (!String.IsNullOrEmpty(sessionId))
+			if (!string.IsNullOrEmpty(sessionId))
 				SessionId = sessionId;
 		}
 	}

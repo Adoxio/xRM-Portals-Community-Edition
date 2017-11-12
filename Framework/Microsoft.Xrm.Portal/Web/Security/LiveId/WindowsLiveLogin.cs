@@ -1264,7 +1264,7 @@ namespace Microsoft.Xrm.Portal.Web.Security.LiveId
 			/// Gets the string representation of all the offers/actions for which 
 			/// the user granted consent.
 			/// </summary>
-			public String OffersString { get { return offersString; } }
+			public string OffersString { get { return offersString; } }
 
 			/// <summary>
 			/// Sets the offers/actions for which user granted consent.
@@ -1282,7 +1282,7 @@ namespace Microsoft.Xrm.Portal.Web.Security.LiveId
 				this.offersString = string.Empty;
 				this.offers = new ArrayList();
 
-				string[] offersList = offers.Split(new Char[] { ';' });
+				string[] offersList = offers.Split(new char[] { ';' });
 
 				foreach (string offer in offersList)
 				{
@@ -2247,7 +2247,7 @@ namespace Microsoft.Xrm.Portal.Web.Security.LiveId
 
 			NameValueCollection pairs = new NameValueCollection();
 
-			string[] kvs = input.Split(new Char[] { '&' });
+			string[] kvs = input.Split(new char[] { '&' });
 			foreach (string kv in kvs)
 			{
 				int separator = kv.IndexOf('=');

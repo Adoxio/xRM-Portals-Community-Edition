@@ -52,7 +52,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 		private ValidatorDisplay ValidatorDisplay
 		{
-			get { return String.IsNullOrWhiteSpace(ValidationText) ? ValidatorDisplay.None : ValidatorDisplay.Dynamic; }
+			get { return string.IsNullOrWhiteSpace(ValidationText) ? ValidatorDisplay.None : ValidatorDisplay.Dynamic; }
 		}
 
 		protected override void InstantiateControlIn(Control container)
@@ -81,7 +81,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				Get = () =>
 				{
-					var selected = new List<String>();
+					var selected = new List<string>();
 
 					for (int i = 0, j = checkboxList.Items.Count - 1; i <= j; i++)
 					{
@@ -91,7 +91,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 						}
 					}
 
-					var stringSelected = String.Join(",", selected.ToArray());
+					var stringSelected = string.Join(",", selected.ToArray());
 
 					return stringSelected;
 				},
@@ -130,7 +130,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ControlToValidate = ControlID,
 					ValidationGroup = ValidationGroup,
 					Display = ValidatorDisplay,
-					ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.RequiredFieldValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("required")) ? ResourceManager.GetString("Required_Field_Error").FormatWith(Metadata.Label) : Metadata.Messages["required"].FormatWith(Metadata.Label) : Metadata.RequiredFieldValidationErrorMessage)),
+					ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.RequiredFieldValidationErrorMessage) ? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("required")) ? ResourceManager.GetString("Required_Field_Error").FormatWith(Metadata.Label) : Metadata.Messages["required"].FormatWith(Metadata.Label) : Metadata.RequiredFieldValidationErrorMessage)),
 					Text = Metadata.ValidationText,
 				});
 			}

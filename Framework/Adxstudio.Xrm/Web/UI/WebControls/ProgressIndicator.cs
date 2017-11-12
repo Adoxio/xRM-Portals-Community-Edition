@@ -30,9 +30,9 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			get
 			{
-				var text = (String)ViewState["IndexDataPropertyName"];
+				var text = (string)ViewState["IndexDataPropertyName"];
 
-				return String.IsNullOrWhiteSpace(text) ? "Index" : text;
+				return string.IsNullOrWhiteSpace(text) ? "Index" : text;
 			}
 			set
 			{
@@ -49,9 +49,9 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			get
 			{
-				var text = (String)ViewState["TitleDataPropertyName"];
+				var text = (string)ViewState["TitleDataPropertyName"];
 
-				return String.IsNullOrWhiteSpace(text) ? "Title" : text;
+				return string.IsNullOrWhiteSpace(text) ? "Title" : text;
 			}
 			set
 			{
@@ -68,9 +68,9 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			get
 			{
-				var text = (String)ViewState["ActiveDataPropertyName"];
+				var text = (string)ViewState["ActiveDataPropertyName"];
 
-				return String.IsNullOrWhiteSpace(text) ? "IsActive" : text;
+				return string.IsNullOrWhiteSpace(text) ? "IsActive" : text;
 			}
 			set
 			{
@@ -87,9 +87,9 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			get
 			{
-				var text = (String)ViewState["CompletedDataPropertyName"];
+				var text = (string)ViewState["CompletedDataPropertyName"];
 
-				return String.IsNullOrWhiteSpace(text) ? "IsCompleted" : text;
+				return string.IsNullOrWhiteSpace(text) ? "IsCompleted" : text;
 			}
 			set
 			{
@@ -106,9 +106,9 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			get
 			{
-				var text = (String)ViewState["Position"];
+				var text = (string)ViewState["Position"];
 
-				return String.IsNullOrWhiteSpace(text) ? string.Empty : text;
+				return string.IsNullOrWhiteSpace(text) ? string.Empty : text;
 			}
 			set
 			{
@@ -147,9 +147,9 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			get
 			{
-				var text = (String)ViewState["Type"];
+				var text = (string)ViewState["Type"];
 
-				return String.IsNullOrWhiteSpace(text) ? "title" : text;
+				return string.IsNullOrWhiteSpace(text) ? "title" : text;
 			}
 			set
 			{
@@ -166,9 +166,9 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			get
 			{
-				var text = (String)ViewState["NumericPrefix"];
+				var text = (string)ViewState["NumericPrefix"];
 
-				return String.IsNullOrWhiteSpace(text) ? "Step" : text;
+				return string.IsNullOrWhiteSpace(text) ? "Step" : text;
 			}
 			set
 			{

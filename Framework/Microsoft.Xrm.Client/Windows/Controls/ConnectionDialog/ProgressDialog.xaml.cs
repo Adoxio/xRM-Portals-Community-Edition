@@ -58,7 +58,7 @@ namespace Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog
 		///<summary>
 		/// Sets a value that indicates whether the progress bar reports generic progress with a repeating pattern or reports progress based on the Value property.
 		///</summary>
-		public Boolean Indeterminate
+		public bool Indeterminate
 		{
 			set
 			{

@@ -8,7 +8,7 @@ namespace Adxstudio.Xrm
 	using System;
 
 	/// <summary>
-	/// Helper methods on the <see cref="System.String"/>/> class.
+	/// Helper methods on the <see cref="string"/>/> class.
 	/// </summary>
 	public static class StringExtensions
 	{

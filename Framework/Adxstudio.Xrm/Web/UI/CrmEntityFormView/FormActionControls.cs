@@ -153,7 +153,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				ID = nextButtonID,
 				CommandName = "Next",
-				Text = String.IsNullOrWhiteSpace(viewActionLink.Label) ? viewActionLink.Label : "Next",
+				Text = string.IsNullOrWhiteSpace(viewActionLink.Label) ? viewActionLink.Label : "Next",
 				ValidationGroup = validationGroup,
 				CausesValidation = true,
 				CssClass = viewActionLink.ButtonCssClass
@@ -191,7 +191,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			{
 				ID = previousButtonID,
 				CommandName = "Previous",
-				Text = String.IsNullOrWhiteSpace(viewActionLink.Label) ? viewActionLink.Label : "Previous",
+				Text = string.IsNullOrWhiteSpace(viewActionLink.Label) ? viewActionLink.Label : "Previous",
 				ValidationGroup = validationGroup,
 				CausesValidation = false,
 				CssClass = viewActionLink.ButtonCssClass,

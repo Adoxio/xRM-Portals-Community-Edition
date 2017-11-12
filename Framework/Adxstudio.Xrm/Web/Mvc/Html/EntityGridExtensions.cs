@@ -930,7 +930,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 					var filteredColumnDisplayName =
 						layout.Columns.Where(c => c.LogicalName == filterAttributeName).Select(c => c.Name).FirstOrDefault();
 
-					if (!String.IsNullOrEmpty(filteredColumnDisplayName))
+					if (!string.IsNullOrEmpty(filteredColumnDisplayName))
 					{
 						defaultFilterDisplayNameChanged = true;
 						defaultFilterDisplayName = string.Format(defaultFilterDisplayName, filteredColumnDisplayName);
@@ -967,11 +967,11 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 			container.MergeAttribute("data-select-mode", selectMode.ToString());
 			container.MergeAttribute("data-column-width-style", columnWidthStyle.ToString());
 
-			if (!String.IsNullOrEmpty(filterAttributeName))
+			if (!string.IsNullOrEmpty(filterAttributeName))
 			{
 				if (!defaultFilterDisplayNameChanged)
 				{
-					defaultFilterDisplayName = String.Empty;
+					defaultFilterDisplayName = string.Empty;
 				}
 				container.MergeAttribute("data-toggle-filter-display-name", defaultFilterDisplayName);
 			}

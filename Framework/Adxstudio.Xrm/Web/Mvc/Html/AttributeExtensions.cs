@@ -391,7 +391,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 		{
 			if (entity == null)
 			{
-				return new HtmlString(String.Empty);
+				return new HtmlString(string.Empty);
 			}
 
 			var attribute = entity.GetAttribute(logicalName);

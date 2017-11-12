@@ -23,6 +23,6 @@ namespace Adxstudio.Xrm.Cms
 
 		void SubmitPoll(IPoll poll, IPollOption pollOption);
 
-		Boolean HasUserVoted(IPoll poll);
+		bool HasUserVoted(IPoll poll);
     }
 }

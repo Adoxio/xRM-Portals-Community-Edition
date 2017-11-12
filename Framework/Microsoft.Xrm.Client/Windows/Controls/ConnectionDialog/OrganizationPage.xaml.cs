@@ -90,7 +90,7 @@ namespace Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog
 			Connect(connectionString);
 		}
 
-		private Boolean IsInputValid()
+		private bool IsInputValid()
 		{
 			return cmbOrganizationName.SelectedItem != null && !string.IsNullOrEmpty(cmbOrganizationName.SelectedItem.ToString());
 		}

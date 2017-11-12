@@ -181,7 +181,7 @@ namespace Site.Areas.Opportunities.Pages
 
 		protected void SelectedIndexChanged(object sender, EventArgs e)
 		{
-			if (!String.IsNullOrEmpty(Account_dropdown.SelectedValue))
+			if (!string.IsNullOrEmpty(Account_dropdown.SelectedValue))
 			{
 				createOpp.Visible = true;
 				CreateCustomerButton.Visible = false;
@@ -239,7 +239,7 @@ namespace Site.Areas.Opportunities.Pages
 
 			var productsList = new List<Entity>();
 
-			if (!String.IsNullOrEmpty(opportunityProductsFromLead))
+			if (!string.IsNullOrEmpty(opportunityProductsFromLead))
 			{
 				var products = XrmContext.CreateQuery("product");
 

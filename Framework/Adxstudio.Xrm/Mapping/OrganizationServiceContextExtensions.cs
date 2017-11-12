@@ -40,8 +40,8 @@ namespace Adxstudio.Xrm.Mapping
 								: GeoHelpers.EarthRadiusInMiles;
 
 			var returnEnumerable = from c in query.ToList()
-								   let latitude = c.GetAttributeValue<Double>(entityLatitudeAttributeName)
-								   let longitude = c.GetAttributeValue<Double>(entityLongitudeAttributeName)
+								   let latitude = c.GetAttributeValue<double>(entityLatitudeAttributeName)
+								   let longitude = c.GetAttributeValue<double>(entityLongitudeAttributeName)
 								   let distance =
 									   earthRadius * 2 *
 									   Math.Asin(
@@ -77,8 +77,8 @@ namespace Adxstudio.Xrm.Mapping
 								: GeoHelpers.EarthRadiusInMiles;
 
 			var returnEnumerable = from c in query
-								   let latitude = c.GetAttributeValue<Double>(entityLatitudeAttributeName)
-								   let longitude = c.GetAttributeValue<Double>(entityLongitudeAttributeName)
+								   let latitude = c.GetAttributeValue<double>(entityLatitudeAttributeName)
+								   let longitude = c.GetAttributeValue<double>(entityLongitudeAttributeName)
 								   let distance =
 									   earthRadius * 2 *
 									   Math.Asin(

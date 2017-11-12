@@ -66,7 +66,7 @@ namespace Site.Areas.Government.Pages
 
 			ProfileDataSource.FetchXml = _userFetchXmlFormat.FormatWith(Contact.Id);
 
-			ProfileAlertInstructions.Visible = Contact.GetAttributeValue<Boolean?>("adx_profilealert") ?? false;
+			ProfileAlertInstructions.Visible = Contact.GetAttributeValue<bool?>("adx_profilealert") ?? false;
 
 			if (IsPostBack)
 			{

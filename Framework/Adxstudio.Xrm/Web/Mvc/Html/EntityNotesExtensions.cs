@@ -193,7 +193,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				var json = JsonConvert.SerializeObject(attachmentSettings);
 				container.MergeAttribute("data-attachmentsettings", Convert.ToBase64String(MachineKey.Protect(Encoding.UTF8.GetBytes(json), "Secure Notes Configuration").ToArray()));
 
-				fileAcceptString = String.Format("{0},{1}", attachmentSettings.AcceptMimeTypes, attachmentSettings.AcceptExtensionTypes);
+				fileAcceptString = string.Format("{0},{1}", attachmentSettings.AcceptMimeTypes, attachmentSettings.AcceptExtensionTypes);
 				container.MergeAttribute("data-add-accept-types", fileAcceptString);
 			}
 			container.MergeAttribute("data-url-get", serviceUrlGet);
@@ -856,7 +856,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 					</div>
 					{{#if ViewFields.modifiedon}}
 						{{#if_not_eq ViewFields.modifiedon ViewFields.createdon}}
-							<div class=""modifiedon"">" + String.Format(DefaultTimelineModifiedOnFieldLabel, "{{#dateTimeFormatter ViewFields.modifiedon}}") + @"{{this}}{{/dateTimeFormatter}}</div>
+							<div class=""modifiedon"">" + string.Format(DefaultTimelineModifiedOnFieldLabel, "{{#dateTimeFormatter ViewFields.modifiedon}}") + @"{{this}}{{/dateTimeFormatter}}</div>
 						{{/if_not_eq}}
 					{{/if}}
 				</div>
@@ -888,7 +888,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 					</div>
 					{{#if ViewFields.modifiedon}}
 						{{#if_not_eq ViewFields.modifiedon ViewFields.createdon}}
-							<div class=""modifiedon"">" + String.Format(DefaultTimelineModifiedOnFieldLabel, "{{#dateTimeFormatter ViewFields.modifiedon}}") + @"{{this}}{{/dateTimeFormatter}}</div>
+							<div class=""modifiedon"">" + string.Format(DefaultTimelineModifiedOnFieldLabel, "{{#dateTimeFormatter ViewFields.modifiedon}}") + @"{{this}}{{/dateTimeFormatter}}</div>
 						{{/if_not_eq}}
 					{{/if}}
 				</div>
@@ -898,7 +898,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				<div class=""subject""><b>{{ViewFields.subject}}</b></div>
 				<div class=""description"">{{{ViewFields.description}}}</div>
 				{{#if PostedByName}}
-					<div class=""createdby text-muted"">" + String.Format(DefaultTimelineCreatedByFieldLabel, "{{PostedByName}}") + @"</div>
+					<div class=""createdby text-muted"">" + string.Format(DefaultTimelineCreatedByFieldLabel, "{{PostedByName}}") + @"</div>
 				{{/if}}
 			</div>
 		{{/if_eq}}
@@ -934,7 +934,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 					</div>
 					{{#if ViewFields.modifiedon}}
 						{{#if_not_eq ViewFields.modifiedon ViewFields.createdon}}
-							<div class=""modifiedon"">" + String.Format(DefaultTimelineModifiedOnFieldLabel, "{{#dateTimeFormatter ViewFields.modifiedon}}") + @"{{this}}{{/dateTimeFormatter}}</div>
+							<div class=""modifiedon"">" + string.Format(DefaultTimelineModifiedOnFieldLabel, "{{#dateTimeFormatter ViewFields.modifiedon}}") + @"{{this}}{{/dateTimeFormatter}}</div>
 						{{/if_not_eq}}
 					{{/if}}
 				</div>
@@ -952,7 +952,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 				</div>
 				<div class=""description"">{{{ViewFields.description}}}</div>
 				{{#if PostedByName}}
-					<div class=""createdby text-muted"">" + String.Format(DefaultTimelineCreatedByFieldLabel, "{{PostedByName}}") + @"</div>
+					<div class=""createdby text-muted"">" + string.Format(DefaultTimelineCreatedByFieldLabel, "{{PostedByName}}") + @"</div>
 				{{/if}}
 				{{#attachments ViewFields.activityid ViewFields.activitytypecode}}
 				{{/attachments}}
@@ -967,7 +967,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Html
 					</div>
 					{{#if ViewFields.modifiedon}}
 						{{#if_not_eq ViewFields.modifiedon ViewFields.createdon}}
-							<div class=""modifiedon"">" + String.Format(DefaultTimelineModifiedOnFieldLabel, "{{#dateTimeFormatter ViewFields.modifiedon}}") + @"{{this}}{{/dateTimeFormatter}}</div>
+							<div class=""modifiedon"">" + string.Format(DefaultTimelineModifiedOnFieldLabel, "{{#dateTimeFormatter ViewFields.modifiedon}}") + @"{{this}}{{/dateTimeFormatter}}</div>
 						{{/if_not_eq}}
 					{{/if}}
 				</div>

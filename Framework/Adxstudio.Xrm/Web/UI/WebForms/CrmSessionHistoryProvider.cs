@@ -125,7 +125,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 						systemUserId = portalContext.User.Id;
 						break;
 					default:
-						if (HttpContext.Current.User == null || String.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
+						if (HttpContext.Current.User == null || string.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
 						{
 							throw new ApplicationException(string.Format("The user entity type {0} isn't supported.", portalContext.User.LogicalName));
 						}
@@ -140,12 +140,12 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 				}
 			}
 
-			if (HttpContext.Current.User != null && !String.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
+			if (HttpContext.Current.User != null && !string.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
 			{
 				userIdentityName = HttpContext.Current.User.Identity.Name;
 			}
 
-			if (!String.IsNullOrWhiteSpace(HttpContext.Current.Request.UserHostName))
+			if (!string.IsNullOrWhiteSpace(HttpContext.Current.Request.UserHostName))
 			{
 				userHostName = HttpContext.Current.Request.UserHostName;
 			}
@@ -403,19 +403,19 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 				webFormSession.Attributes["adx_systemuser"] = new EntityReference("systemuser", sessionHistory.SystemUserId);
 			}
 
-			if (!String.IsNullOrWhiteSpace(sessionHistory.AnonymousIdentification))
+			if (!string.IsNullOrWhiteSpace(sessionHistory.AnonymousIdentification))
 			{
 				webFormSession.Attributes["adx_anonymousidentification"] = sessionHistory.AnonymousIdentification;
 			}
 
 			webFormSession.Attributes["adx_stephistory"] = ConvertListToJsonString(sessionHistory.StepHistory);
 
-			if (!String.IsNullOrWhiteSpace(sessionHistory.UserHostAddress))
+			if (!string.IsNullOrWhiteSpace(sessionHistory.UserHostAddress))
 			{
 				webFormSession.Attributes["adx_userhostaddress"] = sessionHistory.UserHostAddress;
 			}
 
-			if (!String.IsNullOrWhiteSpace(sessionHistory.UserIdentityName))
+			if (!string.IsNullOrWhiteSpace(sessionHistory.UserIdentityName))
 			{
 				webFormSession.Attributes["adx_useridentityname"] = sessionHistory.UserIdentityName;
 			}
@@ -461,7 +461,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 			context.SetState(1, 2, webFormSession.ToEntityReference());
 		}
 
-		private static String ConvertListToJsonString(List<SessionHistory.Step> history)
+		private static string ConvertListToJsonString(List<SessionHistory.Step> history)
 		{
 			var stream = new MemoryStream();
 			var serialiser = new DataContractJsonSerializer(typeof(List<SessionHistory.Step>));

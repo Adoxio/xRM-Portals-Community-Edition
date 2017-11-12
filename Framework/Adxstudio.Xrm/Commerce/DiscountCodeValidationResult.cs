@@ -106,7 +106,7 @@ namespace Adxstudio.Xrm.Commerce
 
 			if (orderScopedDiscounts.Any())
 			{
-				var discountPercentage = quote.GetAttributeValue<Decimal?>("discountpercentage") ?? 0;
+				var discountPercentage = quote.GetAttributeValue<decimal?>("discountpercentage") ?? 0;
 				var discountAmount = GetDecimalFromMoney(quote, "discountamount");
 				var newDiscountPercentage = discountPercentage;
 				var newDiscountAmount = discountAmount;
@@ -143,7 +143,7 @@ namespace Adxstudio.Xrm.Commerce
 					switch (typeOption.Value)
 					{
 						case (int)DiscountType.Percentage:
-							percentage = discount.GetAttributeValue<Decimal?>("adx_percentage") ?? 0;
+							percentage = discount.GetAttributeValue<decimal?>("adx_percentage") ?? 0;
 							break;
 						case (int)DiscountType.Amount:
 							amount = GetDecimalFromMoney(discount, "adx_amount");
@@ -291,7 +291,7 @@ namespace Adxstudio.Xrm.Commerce
 							switch (typeOption.Value)
 							{
 								case (int)DiscountType.Percentage:
-									var percentage = discount.GetAttributeValue<Decimal?>("adx_percentage") ?? 0;
+									var percentage = discount.GetAttributeValue<decimal?>("adx_percentage") ?? 0;
 									if (percentage > 0 && baseAmount > 0)
 									{
 										amount = baseAmount * percentage / 100;

@@ -72,7 +72,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					continue;
 				}
 
-				var padding = HttpUtility.HtmlDecode(String.Concat(Enumerable.Repeat("&nbsp;-&nbsp;", depth)));
+				var padding = HttpUtility.HtmlDecode(string.Concat(Enumerable.Repeat("&nbsp;-&nbsp;", depth)));
 
 				Items.Add(new ListItem(string.Format("{0}{1}", padding, child.GetAttributeValue<string>("title")), child.Id.ToString()));
 

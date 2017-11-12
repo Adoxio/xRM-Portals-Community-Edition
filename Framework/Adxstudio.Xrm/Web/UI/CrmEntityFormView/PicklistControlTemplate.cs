@@ -65,7 +65,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 
 		private ValidatorDisplay ValidatorDisplay
 		{
-			get { return String.IsNullOrWhiteSpace(ValidationText) ? ValidatorDisplay.None : ValidatorDisplay.Dynamic; }
+			get { return string.IsNullOrWhiteSpace(ValidationText) ? ValidatorDisplay.None : ValidatorDisplay.Dynamic; }
 		}
 		
 		protected override bool LabelIsAssociated
@@ -189,7 +189,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ValidationGroup = ValidationGroup,
 					Display = ValidatorDisplay,
 					ErrorMessage =
-						ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.RequiredFieldValidationErrorMessage)
+						ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.RequiredFieldValidationErrorMessage)
 							? (Metadata.Messages == null || !Metadata.Messages.ContainsKey("required"))
 								? ResourceManager.GetString("Required_Field_Error").FormatWith(Metadata.Label)
 								: Metadata.Messages["required"].FormatWith(Metadata.Label)

@@ -24,7 +24,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 		{
 			public Guid FormId { get; set; }
 
-			public String EntityName { get; set; }
+			public string EntityName { get; set; }
 
 			public QuickFormId(string entityName, Guid formId)
 			{

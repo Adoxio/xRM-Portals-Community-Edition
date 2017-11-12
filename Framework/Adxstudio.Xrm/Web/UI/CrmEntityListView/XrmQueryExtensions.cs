@@ -68,9 +68,9 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
 			return ContainsPropertyValueEqual(propertyName1, propertyName2, enumerable.Skip(1), parameter, orElse);
 		}
 
-		private static Expression PropertyValueEqual(Expression parameter, string crmPropertyName, String value)
+		private static Expression PropertyValueEqual(Expression parameter, string crmPropertyName, string value)
 		{
-			var methodCall = Expression.Call(parameter, "GetAttributeValue", new[] { typeof(String) },
+			var methodCall = Expression.Call(parameter, "GetAttributeValue", new[] { typeof(string) },
 				Expression.Constant(crmPropertyName));
 
 			return Expression.Equal(methodCall, Expression.Constant(value));

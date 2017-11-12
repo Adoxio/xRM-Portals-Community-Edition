@@ -97,7 +97,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 					ID = string.Format("StackRankValidator{0}", ControlID),
 					ControlToValidate = ControlID,
 					ValidationGroup = ValidationGroup,
-					ErrorMessage = ValidationSummaryMarkup((String.IsNullOrWhiteSpace(Metadata.RankOrderNoTiesValidationErrorMessage) ? ResourceManager.GetString("RankOrderNoTies_Validation_ErrorMessage") : Metadata.RankOrderNoTiesValidationErrorMessage)),
+					ErrorMessage = ValidationSummaryMarkup((string.IsNullOrWhiteSpace(Metadata.RankOrderNoTiesValidationErrorMessage) ? ResourceManager.GetString("RankOrderNoTies_Validation_ErrorMessage") : Metadata.RankOrderNoTiesValidationErrorMessage)),
 					Text = "*",
 					CssClass = "validator-text"
 				};
@@ -120,7 +120,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			};
 		}
 
-		protected static Boolean IsRankValid(int value, string id, Control container, string groupname)
+		protected static bool IsRankValid(int value, string id, Control container, string groupname)
 		{
 			foreach (Control control in container.Controls)
 			{
@@ -153,7 +153,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityFormView
 			return true;
 		}
 
-		protected static Boolean RankOrderHasTie(int value, Control control)
+		protected static bool RankOrderHasTie(int value, Control control)
 		{
 			if (control is TextBox)
 			{

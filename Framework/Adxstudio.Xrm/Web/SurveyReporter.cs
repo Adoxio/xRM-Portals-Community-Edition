@@ -222,7 +222,7 @@ namespace Adxstudio.Xrm.Web
 							== question.GetAttributeValue<Guid?>("adx_surveytextareaquestionid"))
 						{
 							writer.RenderBeginTag(HtmlTextWriterTag.Td);
-							if (String.IsNullOrEmpty(ans.GetAttributeValue<string>("adx_answer")))
+							if (string.IsNullOrEmpty(ans.GetAttributeValue<string>("adx_answer")))
 							{
 								writer.Write(@"&nbsp;");
 							}

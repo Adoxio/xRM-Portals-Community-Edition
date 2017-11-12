@@ -76,7 +76,7 @@ namespace Adxstudio.Xrm.Text
 				? precision.ToString(CultureInfo.CurrentCulture)
 				: precision.ToString(formatProvider);
 
-			return value.ToString(Math.Abs(pow - 0) < Double.Epsilon ? "F0" : "F" + precisionString) + " " + _units[(int)pow];
+			return value.ToString(Math.Abs(pow - 0) < double.Epsilon ? "F0" : "F" + precisionString) + " " + _units[(int)pow];
 		}
 	}
 }

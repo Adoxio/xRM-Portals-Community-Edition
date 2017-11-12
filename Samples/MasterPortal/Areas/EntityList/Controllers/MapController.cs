@@ -121,9 +121,9 @@ namespace Site.Areas.EntityList.Controllers
 					new MapNode(s.Item1.Id, string.Empty,
 						s.Item1.GetAttributeValue<string>(titleFieldName),
 						s.Item1.GetAttributeValue<string>(descriptionFieldName),
-						s.Item1.GetAttributeValue<Double?>(latitudeFieldName) ?? 0,
-						s.Item1.GetAttributeValue<Double?>(longitudeFieldName) ?? 0,
-						string.Format("{0},{1}", s.Item1.GetAttributeValue<Double?>(latitudeFieldName) ?? 0, s.Item1.GetAttributeValue<Double?>(longitudeFieldName) ?? 0),
+						s.Item1.GetAttributeValue<double?>(latitudeFieldName) ?? 0,
+						s.Item1.GetAttributeValue<double?>(longitudeFieldName) ?? 0,
+						string.Format("{0},{1}", s.Item1.GetAttributeValue<double?>(latitudeFieldName) ?? 0, s.Item1.GetAttributeValue<double?>(longitudeFieldName) ?? 0),
 						Math.Round(s.Item2, 1), pushpinImageUrl, pushpinImageHeight, pushpinImageWidth)).ToList();
 			}
 

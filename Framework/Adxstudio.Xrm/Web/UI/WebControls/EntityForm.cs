@@ -154,7 +154,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["PreviousButtonText"];
-				return String.IsNullOrWhiteSpace(text) ? EntityFormFunctions.DefaultPreviousButtonText : text;
+				return string.IsNullOrWhiteSpace(text) ? EntityFormFunctions.DefaultPreviousButtonText : text;
 			}
 			set { ViewState["PreviousButtonText"] = value; }
 		}
@@ -166,7 +166,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["NextButtonText"];
-				return String.IsNullOrWhiteSpace(text) ? EntityFormFunctions.DefaultNextButtonText : text;
+				return string.IsNullOrWhiteSpace(text) ? EntityFormFunctions.DefaultNextButtonText : text;
 			}
 			set { ViewState["NextButtonText"] = value; }
 		}
@@ -178,7 +178,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["SubmitButtonText"];
-				return String.IsNullOrWhiteSpace(text) ? EntityFormFunctions.DefaultSubmitButtonText : text;
+				return string.IsNullOrWhiteSpace(text) ? EntityFormFunctions.DefaultSubmitButtonText : text;
 			}
 			set { ViewState["SubmitButtonText"] = value; }
 		}
@@ -192,7 +192,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			get
 			{
 				var text = (string)ViewState["SubmitButtonBusyText"];
-				return String.IsNullOrWhiteSpace(text) ? EntityFormFunctions.DefaultSubmitButtonBusyText : text;
+				return string.IsNullOrWhiteSpace(text) ? EntityFormFunctions.DefaultSubmitButtonBusyText : text;
 			}
 			set { ViewState["SubmitButtonBusyText"] = value; }
 		}
@@ -219,7 +219,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			{
 				var text = (string)ViewState["ReadAccessDeniedSnippetName"];
 
-				return String.IsNullOrWhiteSpace(text) ? DefaultReadAccessDeniedSnippetName : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultReadAccessDeniedSnippetName : text;
 			}
 			set
 			{
@@ -238,7 +238,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			{
 				var text = (string)ViewState["WriteAccessDeniedSnippetName"];
 
-				return String.IsNullOrWhiteSpace(text) ? DefaultWriteAccessDeniedSnippetName : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultWriteAccessDeniedSnippetName : text;
 			}
 			set
 			{
@@ -257,7 +257,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			{
 				var text = (string)ViewState["CreateAccessDeniedSnippetName"];
 
-				return String.IsNullOrWhiteSpace(text) ? DefaultCreateAccessDeniedSnippetName : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultCreateAccessDeniedSnippetName : text;
 			}
 			set
 			{
@@ -348,7 +348,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			{
 				var text = (string)ViewState["SuccessMessage"];
 
-				return String.IsNullOrWhiteSpace(text) ? DefaultSuccessMessage : text;
+				return string.IsNullOrWhiteSpace(text) ? DefaultSuccessMessage : text;
 			}
 			set { ViewState["SuccessMessage"] = value; }
 		}
@@ -762,7 +762,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			var accept = string.IsNullOrWhiteSpace(formObject.AttachFileAccept) && string.IsNullOrWhiteSpace(acceptExtensionTypes)
 				? "*/*"
-				: String.Join(",", formObject.AttachFileAccept, acceptExtensionTypes);
+				: string.Join(",", formObject.AttachFileAccept, acceptExtensionTypes);
 
 			var maxFileSize = formObject.AttachFileRestrictSize && formObject.AttachFileMaxSize.HasValue
 				? Convert.ToUInt64(formObject.AttachFileMaxSize) << 10 : (ulong?)null;
@@ -972,7 +972,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			return navBar;
 		}
 
-		protected String GetContextName()
+		protected string GetContextName()
 		{
 			var portalConfig = PortalCrmConfigurationManager.GetPortalContextElement(PortalName);
 
@@ -993,7 +993,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				throw new ApplicationException("adx_entityform.adx_entityname must not be null.");
 			}
 
-			if (!String.IsNullOrWhiteSpace(logicalName) && String.IsNullOrWhiteSpace(primaryKey))
+			if (!string.IsNullOrWhiteSpace(logicalName) && string.IsNullOrWhiteSpace(primaryKey))
 			{
 				primaryKey = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, logicalName);
 			}
@@ -1383,10 +1383,10 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 		{
 			var existingQueryString = HttpContext.Current.Request.QueryString;
 			var redirectUrl = entityform.GetAttributeValue<string>("adx_redirecturl");
-			var appendExistingQueryString = entityform.GetAttributeValue<Boolean?>("adx_appendquerystring") ?? false;
+			var appendExistingQueryString = entityform.GetAttributeValue<bool?>("adx_appendquerystring") ?? false;
 			UrlBuilder url;
 
-			if (String.IsNullOrWhiteSpace(redirectUrl))
+			if (string.IsNullOrWhiteSpace(redirectUrl))
 			{
 				var pageReference = entityform.GetAttributeValue<EntityReference>("adx_redirectwebpage");
 
@@ -1422,7 +1422,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				url = new UrlBuilder(redirectUrl.StartsWith("http") ? redirectUrl : string.Format("https://{0}", redirectUrl));
 			}
 
-			var addquerystring = entityform.GetAttributeValue<Boolean?>("adx_redirecturlappendentityidquerystring") ?? false;
+			var addquerystring = entityform.GetAttributeValue<bool?>("adx_redirecturlappendentityidquerystring") ?? false;
 
 			if (addquerystring)
 			{
@@ -1516,7 +1516,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				}
 			}
 
-			if (String.IsNullOrWhiteSpace(redirectUrl))
+			if (string.IsNullOrWhiteSpace(redirectUrl))
 			{
 				HttpContext.Current.Response.Redirect(url.PathWithQueryString);
 			}
@@ -1540,7 +1540,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			foreach (var item in metadata)
 			{
 				var attributeName = item.GetAttributeValue<string>("adx_attributelogicalname");
-				if (String.IsNullOrWhiteSpace(attributeName))
+				if (string.IsNullOrWhiteSpace(attributeName))
 				{
 					continue;
 				}
@@ -1572,7 +1572,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						try
 						{
 							var fromAttribute = item.GetAttributeValue<string>("adx_prepopulatefromattribute");
-							if (String.IsNullOrWhiteSpace(fromAttribute))
+							if (string.IsNullOrWhiteSpace(fromAttribute))
 							{
 								continue;
 							}
@@ -1730,7 +1730,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 								var optionSetValue = setValue;
 								listItem = control.Items.FindByValue(optionSetValue.Value.ToString(CultureInfo.InvariantCulture));
 							}
-							else if (value is String)
+							else if (value is string)
 							{
 								listItem = control.Items.FindByValue((string)value) ?? control.Items.FindByText((string)value);
 							}
@@ -1759,7 +1759,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 								var optionSetValue = setValue;
 								listItem = control.Items.FindByValue(optionSetValue.Value.ToString(CultureInfo.InvariantCulture));
 							}
-							else if (value is String)
+							else if (value is string)
 							{
 								listItem = control.Items.FindByValue((string)value) ?? control.Items.FindByText((string)value);
 							}
@@ -1935,7 +1935,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			foreach (var item in metadata)
 			{
 				var attributeName = item.GetAttributeValue<string>("adx_attributelogicalname");
-				if (String.IsNullOrWhiteSpace(attributeName))
+				if (string.IsNullOrWhiteSpace(attributeName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_entityformmetadata.adx_attributelogicalname is null.");
 					continue;
@@ -1992,7 +1992,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						try
 						{
 							var fromAttribute = item.GetAttributeValue<string>("adx_onsavefromattribute");
-							if (String.IsNullOrWhiteSpace(fromAttribute))
+							if (string.IsNullOrWhiteSpace(fromAttribute))
 							{
 								return null;
 							}
@@ -2052,13 +2052,13 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				var referenceQueryStringValue = HttpContext.Current.Request[entityform.ReferenceQueryStringName];
 				var primaryNameAttribute = string.Empty;
 
-				if (String.IsNullOrWhiteSpace(entityform.TargetAttributeName))
+				if (string.IsNullOrWhiteSpace(entityform.TargetAttributeName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_entityform.adx_referenctargetlookupattributelogicalname must not be null.");
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(entityform.ReferenceEntityLogicalName))
+				if (string.IsNullOrWhiteSpace(entityform.ReferenceEntityLogicalName))
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_entityform.adx_referenceentitylogicalname must not be null.");
 					return;
@@ -2102,12 +2102,12 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 				{
 					if (text == string.Empty)
 					{
-						if (String.IsNullOrWhiteSpace(entityform.ReferenceEntityPrimaryKeyLogicalName))
+						if (string.IsNullOrWhiteSpace(entityform.ReferenceEntityPrimaryKeyLogicalName))
 						{
 							entityform.ReferenceEntityPrimaryKeyLogicalName = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, entityform.ReferenceEntityLogicalName);
 						}
 
-						if (String.IsNullOrWhiteSpace(entityform.ReferenceEntityPrimaryKeyLogicalName))
+						if (string.IsNullOrWhiteSpace(entityform.ReferenceEntityPrimaryKeyLogicalName))
 						{
 							ADXTrace.Instance.TraceError(TraceCategory.Application, string.Format("Error retrieving the Primary Key Attribute Name for '{0}'.", entityform.ReferenceEntityLogicalName));
 							return;
@@ -2169,7 +2169,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			var portalContext = PortalCrmConfigurationManager.CreatePortalContext();
 			var referenceEntitySourceType = entityform.GetAttributeValue<OptionSetValue>("adx_referenceentitysourcetype"); //NEED TO ADD ATTRIBUTE VALUE
 
-			if (String.IsNullOrWhiteSpace(targetAttributeName))
+			if (string.IsNullOrWhiteSpace(targetAttributeName))
 			{
 				ADXTrace.Instance.TraceInfo(TraceCategory.Application, "Entity Relationship Name is provided. No Entity Reference to set. AssociateEntity will be called during OnInserted event instead.");
 				return;
@@ -2185,7 +2185,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						var referenceQueryStringName = entityform.GetAttributeValue<string>("adx_referencequerystringname") ?? string.Empty;
 						var referenceQueryStringValue = HttpContext.Current.Request[referenceQueryStringName];
 
-						if (String.IsNullOrEmpty(referenceQueryStringValue) && HttpContext.Current.Request["refentity"] == referenceEntityLogicalName)
+						if (string.IsNullOrEmpty(referenceQueryStringValue) && HttpContext.Current.Request["refentity"] == referenceEntityLogicalName)
 						{
 							referenceQueryStringValue = HttpContext.Current.Request["refid"];
 						}
@@ -2246,7 +2246,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 						break;
 				}
 
-				if (!String.IsNullOrWhiteSpace(targetAttributeName) && !String.IsNullOrWhiteSpace(referenceEntityLogicalName) && id != Guid.Empty)
+				if (!string.IsNullOrWhiteSpace(targetAttributeName) && !string.IsNullOrWhiteSpace(referenceEntityLogicalName) && id != Guid.Empty)
 				{
 					values[targetAttributeName] = new EntityReference(referenceEntityLogicalName, id);
 				}
@@ -2354,13 +2354,13 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 
 			if (!bAssociatePortalUser) return;
 
-			if (String.IsNullOrWhiteSpace(targetEntityLogicalName))
+			if (string.IsNullOrWhiteSpace(targetEntityLogicalName))
 			{
 				ADXTrace.Instance.TraceError(TraceCategory.Application, "adx_entityform.adx_entityname must not be null.");
 				return;
 			}
 
-			if (String.IsNullOrWhiteSpace(portalUserLookupAttributeName))
+			if (string.IsNullOrWhiteSpace(portalUserLookupAttributeName))
 			{
 				ADXTrace.Instance.TraceWarning(TraceCategory.Application, "adx_entityform.adx_targetentityportaluserlookupattribute is null.");
 				return;
@@ -2445,7 +2445,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(primaryKey))
+				if (string.IsNullOrWhiteSpace(primaryKey))
 				{
 					primaryKey = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, logicalName);
 				}

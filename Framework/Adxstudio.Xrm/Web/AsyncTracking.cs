@@ -42,7 +42,7 @@ namespace Adxstudio.Xrm.Web
 			context.Items["AsyncTrackingEnabled"] = new object();
 		}
 
-		public static IAsyncResult BeginRequestAsync(Object source, EventArgs e, AsyncCallback cb, Object state)
+		public static IAsyncResult BeginRequestAsync(object source, EventArgs e, AsyncCallback cb, object state)
 		{
 			if (!IsTrackable)
 			{

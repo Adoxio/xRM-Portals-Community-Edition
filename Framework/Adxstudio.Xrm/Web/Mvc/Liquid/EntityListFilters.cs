@@ -28,7 +28,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 	{
 		public static string CurrentSort(string sortExpression, string attribute)
 		{
-			if (String.IsNullOrEmpty(sortExpression) || String.IsNullOrEmpty(attribute))
+			if (string.IsNullOrEmpty(sortExpression) || string.IsNullOrEmpty(attribute))
 			{
 				return null;
 			}
@@ -40,17 +40,17 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 		public static string ReverseSort(string sortDirection)
 		{
-			if (String.IsNullOrEmpty(sortDirection))
+			if (string.IsNullOrEmpty(sortDirection))
 			{
 				return null;
 			}
 
-			if (String.Equals(sortDirection.Trim(), "asc", StringComparison.InvariantCultureIgnoreCase))
+			if (string.Equals(sortDirection.Trim(), "asc", StringComparison.InvariantCultureIgnoreCase))
 			{
 				return "DESC";
 			}
 
-			if (String.Equals(sortDirection.Trim(), "desc", StringComparison.InvariantCultureIgnoreCase))
+			if (string.Equals(sortDirection.Trim(), "desc", StringComparison.InvariantCultureIgnoreCase))
 			{
 				return "ASC";
 			}
@@ -60,7 +60,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 
 		public static IEnumerable<FilterOptionGroupDrop> Metafilters(EntityListDrop entityList, string query = null, EntityViewDrop entityView = null)
 		{
-			if (entityList == null || String.IsNullOrWhiteSpace(entityList.FilterDefinition))
+			if (entityList == null || string.IsNullOrWhiteSpace(entityList.FilterDefinition))
 			{
 				return Enumerable.Empty<FilterOptionGroupDrop>();
 			}
@@ -104,7 +104,7 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 				return Enumerable.Empty<FilterOptionGroupDrop>();
 			}
 
-			var currentFilters = String.IsNullOrWhiteSpace(query)
+			var currentFilters = string.IsNullOrWhiteSpace(query)
 				? new NameValueCollection()
 				: HttpUtility.ParseQueryString(query);
 

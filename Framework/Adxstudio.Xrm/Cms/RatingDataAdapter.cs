@@ -80,7 +80,7 @@ namespace Adxstudio.Xrm.Cms
 
 		public IRating SelectVisitorRating(string visitorID)
 		{
-			if (String.IsNullOrEmpty(visitorID)) return null;
+			if (string.IsNullOrEmpty(visitorID)) return null;
 
 			var serviceContext = Dependencies.GetServiceContext();
 
@@ -180,7 +180,7 @@ namespace Adxstudio.Xrm.Cms
 				{
 					var newRatingEntity = new Entity(FeedbackMetadataAttributes.RatingEntityName);
 
-					if (!String.IsNullOrEmpty(visitorID))
+					if (!string.IsNullOrEmpty(visitorID))
 					{
 						newRatingEntity.Attributes[FeedbackMetadataAttributes.VisitorAttributeName] = visitorID;
 					}

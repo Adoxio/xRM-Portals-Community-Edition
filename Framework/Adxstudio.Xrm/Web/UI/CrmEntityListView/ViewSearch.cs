@@ -75,7 +75,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
             get
             {
                 return string.IsNullOrWhiteSpace(_buttonLabel)
-                    ? String.Format(buttonLabelConstant, ResourceManager.GetString("Search_DefaultText"))
+                    ? string.Format(buttonLabelConstant, ResourceManager.GetString("Search_DefaultText"))
                     : _buttonLabel;
             }
             set { _buttonLabel = value; }
@@ -106,7 +106,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
             TooltipText = tooltipText;
             ButtonLabel = !string.IsNullOrWhiteSpace(buttonLabel)
                 ? buttonLabel
-                : String.Format(buttonLabelConstant, ResourceManager.GetString("Search_DefaultText"));
+                : string.Format(buttonLabelConstant, ResourceManager.GetString("Search_DefaultText"));
         }
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace Adxstudio.Xrm.Web.UI.CrmEntityListView
             TooltipText = !string.IsNullOrWhiteSpace(tooltipText)
                 ? tooltipText 
                 : "";
-            ButtonLabel = String.Format(buttonLabelConstant, ResourceManager.GetString("Search_DefaultText"));
+            ButtonLabel = string.Format(buttonLabelConstant, ResourceManager.GetString("Search_DefaultText"));
         }
     }
 }

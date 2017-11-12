@@ -119,9 +119,9 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 			ShowUnsupportedFields = step.GetAttributeValue<bool?>("adx_showunsupportedfields") ?? false;
 			ToolTipEnabled = step.GetAttributeValue<bool?>("adx_tooltipenabled") ?? false;
 
-			AutoGenerateStepsFromTabs = step.GetAttributeValue<Boolean?>("adx_autogeneratesteps") ?? false;
+			AutoGenerateStepsFromTabs = step.GetAttributeValue<bool?>("adx_autogeneratesteps") ?? false;
 
-			ForceAllFieldsRequired = step.GetAttributeValue<Boolean?>("adx_forceallfieldsrequired") ?? false;
+			ForceAllFieldsRequired = step.GetAttributeValue<bool?>("adx_forceallfieldsrequired") ?? false;
 
 			ValidationGroup = step.GetAttributeValue<string>("adx_validationgroup") ?? string.Empty;
 			ValidationSummaryLinksEnabled = step.GetAttributeValue<bool?>("adx_validationsummarylinksenabled") ?? true;
@@ -145,7 +145,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 			AttachFileSizeErrorMessage = Localization.GetLocalizedString(step.GetAttributeValue<string>("adx_attachfilesizeerrormessage"), languageCode);
 			AttachFileRequired = step.GetAttributeValue<bool?>("adx_attachfilerequired") ?? false;
 			LocalizedAttachFileLabel = Localization.GetLocalizedString(step.GetAttributeValue<string>("adx_attachfilelabel"), languageCode);
-			AttachFileLabel = String.IsNullOrWhiteSpace(LocalizedAttachFileLabel) ? WebFormFunctions.DefaultAttachFileLabel : LocalizedAttachFileLabel;
+			AttachFileLabel = string.IsNullOrWhiteSpace(LocalizedAttachFileLabel) ? WebFormFunctions.DefaultAttachFileLabel : LocalizedAttachFileLabel;
 			AttachFileRequiredErrorMessage = Localization.GetLocalizedString(step.GetAttributeValue<string>("adx_attachfilerequirederrormessage"), languageCode);
 			AttachFileStorageLocation = step.GetAttributeValue<OptionSetValue>("adx_attachfilestoragelocation");
 
@@ -161,17 +161,17 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 			SuccessMessage = Localization.GetLocalizedString(step.GetAttributeValue<string>("adx_successmessage"), languageCode);
 			Instructions = Localization.GetLocalizedString(step.GetAttributeValue<string>("adx_instructions"), languageCode);
 
-			PreviousButtonCssClass = String.IsNullOrWhiteSpace(stepPreviousButtonCssClass) ? (String.IsNullOrWhiteSpace(PreviousButtonCssClass) ? WebFormFunctions.DefaultPreviousButtonCssClass : PreviousButtonCssClass) : stepPreviousButtonCssClass;
-			NextButtonCssClass = String.IsNullOrWhiteSpace(stepNextButtonCssClass) ? (String.IsNullOrWhiteSpace(NextButtonCssClass) ? WebFormFunctions.DefaultNextButtonCssClass : NextButtonCssClass) : stepNextButtonCssClass;
-			SubmitButtonCssClass = String.IsNullOrWhiteSpace(stepSubmitButtonCssClass) ? (String.IsNullOrWhiteSpace(SubmitButtonCssClass) ? WebFormFunctions.DefaultSubmitButtonCssClass : SubmitButtonCssClass) : stepSubmitButtonCssClass;
+			PreviousButtonCssClass = string.IsNullOrWhiteSpace(stepPreviousButtonCssClass) ? (string.IsNullOrWhiteSpace(PreviousButtonCssClass) ? WebFormFunctions.DefaultPreviousButtonCssClass : PreviousButtonCssClass) : stepPreviousButtonCssClass;
+			NextButtonCssClass = string.IsNullOrWhiteSpace(stepNextButtonCssClass) ? (string.IsNullOrWhiteSpace(NextButtonCssClass) ? WebFormFunctions.DefaultNextButtonCssClass : NextButtonCssClass) : stepNextButtonCssClass;
+			SubmitButtonCssClass = string.IsNullOrWhiteSpace(stepSubmitButtonCssClass) ? (string.IsNullOrWhiteSpace(SubmitButtonCssClass) ? WebFormFunctions.DefaultSubmitButtonCssClass : SubmitButtonCssClass) : stepSubmitButtonCssClass;
 
 			ConfirmOnExit = webform.GetAttributeValue<bool?>("adx_savechangeswarningonclose") ?? false;
 			ConfirmOnExitMessage = Localization.GetLocalizedString(webform.GetAttributeValue<string>("adx_savechangeswarningmessage"), languageCode);
 
-			PreviousButtonText = String.IsNullOrWhiteSpace(LocalizedPreviousButtonText) ? (String.IsNullOrWhiteSpace(PreviousButtonText) ? WebFormFunctions.DefaultPreviousButtonText : PreviousButtonText) : LocalizedPreviousButtonText;
-			NextButtonText = String.IsNullOrWhiteSpace(LocalizedNextButtonText) ? (String.IsNullOrWhiteSpace(NextButtonText) ? WebFormFunctions.DefaultNextButtonText : NextButtonText) : LocalizedNextButtonText;
-			SubmitButtonText = String.IsNullOrWhiteSpace(LocalizedSubmitButtonText) ? (String.IsNullOrWhiteSpace(SubmitButtonText) ? WebFormFunctions.DefaultSubmitButtonText : SubmitButtonText) : LocalizedSubmitButtonText;
-			SubmitButtonBusyText = String.IsNullOrWhiteSpace(LocalizedSubmitButtonBusyText) ? (String.IsNullOrWhiteSpace(SubmitButtonBusyText) ? WebFormFunctions.DefaultSubmitButtonBusyText : SubmitButtonBusyText) : LocalizedSubmitButtonBusyText;
+			PreviousButtonText = string.IsNullOrWhiteSpace(LocalizedPreviousButtonText) ? (string.IsNullOrWhiteSpace(PreviousButtonText) ? WebFormFunctions.DefaultPreviousButtonText : PreviousButtonText) : LocalizedPreviousButtonText;
+			NextButtonText = string.IsNullOrWhiteSpace(LocalizedNextButtonText) ? (string.IsNullOrWhiteSpace(NextButtonText) ? WebFormFunctions.DefaultNextButtonText : NextButtonText) : LocalizedNextButtonText;
+			SubmitButtonText = string.IsNullOrWhiteSpace(LocalizedSubmitButtonText) ? (string.IsNullOrWhiteSpace(SubmitButtonText) ? WebFormFunctions.DefaultSubmitButtonText : SubmitButtonText) : LocalizedSubmitButtonText;
+			SubmitButtonBusyText = string.IsNullOrWhiteSpace(LocalizedSubmitButtonBusyText) ? (string.IsNullOrWhiteSpace(SubmitButtonBusyText) ? WebFormFunctions.DefaultSubmitButtonBusyText : SubmitButtonBusyText) : LocalizedSubmitButtonBusyText;
 
 			MovePreviousPermitted = step.GetAttributeValue<bool?>("adx_movepreviouspermitted") ?? true;
 

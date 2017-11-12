@@ -94,7 +94,7 @@ namespace Site.Areas.Events.Pages
 
 			if (schedule != null)
 			{
-				EventDate.Text = String.Format("{0:r}", schedule.GetAttributeValue<DateTime>("adx_starttime"));
+				EventDate.Text = string.Format("{0:r}", schedule.GetAttributeValue<DateTime>("adx_starttime"));
 			}
 		}
 

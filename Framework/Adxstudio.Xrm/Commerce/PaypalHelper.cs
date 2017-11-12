@@ -113,7 +113,7 @@ namespace Adxstudio.Xrm.Commerce
 		{
 			var paypalBaseUrl = xrm.ServiceContext.GetSiteSettingValueByName(xrm.Website, "Ecommerce/Paypal/PaypalBaseUrl");
 
-			if (String.IsNullOrWhiteSpace(paypalBaseUrl))
+			if (string.IsNullOrWhiteSpace(paypalBaseUrl))
 			{
 				paypalBaseUrl = SandboxURL;
 			}
@@ -297,7 +297,7 @@ namespace Adxstudio.Xrm.Commerce
 			{
 				Details = new Dictionary<string, string>();
 
-				if (String.IsNullOrWhiteSpace(response))
+				if (string.IsNullOrWhiteSpace(response))
 				{
 					Status = PaymentDataTransferStatus.Unknown;
 

@@ -170,7 +170,7 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 			{
 				var value = parameters[match.Groups["parameter"].Value];
 				var res = value == null ? match.Value : value.ToString();
-			    return HttpUtility.HtmlDecode(res ?? String.Empty);
+			    return HttpUtility.HtmlDecode(res ?? string.Empty);
 			});
 		}
 

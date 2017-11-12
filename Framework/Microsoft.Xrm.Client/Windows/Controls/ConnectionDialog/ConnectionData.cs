@@ -330,7 +330,7 @@ namespace Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog
 		/// <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext"/> that provides a format context. </param><param name="destinationType">A <see cref="T:System.Type"/> that represents the type you want to convert to. </param>
 		public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
 		{
-			return (destinationType.Equals(typeof(String)));
+			return (destinationType.Equals(typeof(string)));
 		}
 
 		/// <summary>
@@ -342,7 +342,7 @@ namespace Microsoft.Xrm.Client.Windows.Controls.ConnectionDialog
 		/// <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext"/> that provides a format context. </param><param name="culture">A <see cref="T:System.Globalization.CultureInfo"/>. If null is passed, the current culture is assumed. </param><param name="value">The <see cref="T:System.Object"/> to convert. </param><param name="destinationType">The <see cref="T:System.Type"/> to convert the <paramref name="value"/> parameter to. </param><exception cref="T:System.ArgumentNullException">The <paramref name="destinationType"/> parameter is null. </exception><exception cref="T:System.NotSupportedException">The conversion cannot be performed. </exception>
 		public override object ConvertTo(ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType)
 		{
-			if (!destinationType.Equals(typeof(String)))
+			if (!destinationType.Equals(typeof(string)))
 			{
 				throw new ArgumentException(@"Can only convert to string.", "destinationType");
 			}

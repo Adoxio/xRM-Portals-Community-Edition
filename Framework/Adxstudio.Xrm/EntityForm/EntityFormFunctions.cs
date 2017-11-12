@@ -291,7 +291,7 @@ namespace Adxstudio.Xrm.EntityForm
 			var targetEntityName = entityform.GetAttributeValue<string>("adx_referenceentitylogicalname");
 			var relationshipName = entityform.GetAttributeValue<string>("adx_referenceentityrelationshipname") ?? string.Empty;
 
-			if (String.IsNullOrWhiteSpace(relationshipName))
+			if (string.IsNullOrWhiteSpace(relationshipName))
 			{
 				ADXTrace.Instance.TraceInfo(TraceCategory.Application, "Entity Relationship Name not provided. Entity Association not required.");
 				return;
@@ -331,7 +331,7 @@ namespace Adxstudio.Xrm.EntityForm
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(sourceEntityPrimaryKey))
+				if (string.IsNullOrWhiteSpace(sourceEntityPrimaryKey))
 				{
 					sourceEntityPrimaryKey = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, sourceEntityName);
 				}
@@ -358,7 +358,7 @@ namespace Adxstudio.Xrm.EntityForm
 					return;
 				}
 
-				if (String.IsNullOrWhiteSpace(targetEntityPrimaryKey))
+				if (string.IsNullOrWhiteSpace(targetEntityPrimaryKey))
 				{
 					targetEntityPrimaryKey = MetadataHelper.GetEntityPrimaryKeyAttributeLogicalName(context, targetEntityName);
 				}
@@ -387,7 +387,7 @@ namespace Adxstudio.Xrm.EntityForm
 
 		internal static void CalculateValueOpportunity()
 		{
-			if (String.IsNullOrEmpty(HttpContext.Current.Request["refid"])) return;
+			if (string.IsNullOrEmpty(HttpContext.Current.Request["refid"])) return;
 
 			var targetEntityId = HttpContext.Current.Request["refid"];
 
@@ -400,7 +400,7 @@ namespace Adxstudio.Xrm.EntityForm
 
 			if (!Guid.TryParse(targetEntityId, out id)) return;
 
-			if (String.IsNullOrEmpty(HttpContext.Current.Request["refentity"])) return;
+			if (string.IsNullOrEmpty(HttpContext.Current.Request["refentity"])) return;
 
 			var entityReference = new EntityReference(HttpContext.Current.Request["refentity"], id);
 

@@ -94,12 +94,12 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 		{
 			var sb = new StringBuilder();
 
-			foreach (String name in parameters)
+			foreach (string name in parameters)
 			{
-				sb.Append(String.Concat(name, "=", System.Web.HttpUtility.UrlEncode(parameters[name]), "&"));
+				sb.Append(string.Concat(name, "=", System.Web.HttpUtility.UrlEncode(parameters[name]), "&"));
 			}
 			
-			return sb.Length > 0 ? sb.ToString(0, sb.Length - 1) : String.Empty;
+			return sb.Length > 0 ? sb.ToString(0, sb.Length - 1) : string.Empty;
 		}
 	}
 }

@@ -28,7 +28,7 @@ namespace Adxstudio.Xrm.Web.UI.WebForms
 		protected internal string PortalName;
 		protected internal string ValidationGroup;
 		protected internal string PostBackUrl;
-		protected internal Boolean SetEntityReference;
+		protected internal bool SetEntityReference;
 		protected internal string EntityReferenceRelationshipName;
 		protected internal string EntityReferenceTargetEntityName;
 		protected internal string EntityReferenceTargetEntityPrimaryKeyName;

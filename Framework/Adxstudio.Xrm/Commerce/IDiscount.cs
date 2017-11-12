@@ -12,7 +12,7 @@ namespace Adxstudio.Xrm.Commerce
 	/// </summary>
 	public interface IDiscount
 	{
-		Decimal Amount { get; }
+		decimal Amount { get; }
 
 		string Code { get; }
 
