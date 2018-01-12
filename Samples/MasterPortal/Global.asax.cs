@@ -26,14 +26,16 @@ namespace Site
 	using Adxstudio.Xrm.Web.Mvc;
 	using Microsoft.Xrm.Portal.Configuration;
 	using Adxstudio.Xrm.AspNet.Cms;
+    using System.Net;
 
-	public class Global : HttpApplication
+    public class Global : HttpApplication
 	{
 		private static bool _setupRunning;
 
 		void Application_Start(object sender, EventArgs e)
 		{
-			AntiForgeryConfig.CookieName = "__RequestVerificationToken"; // static name as its dependent on the ajax handler.
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11;
+            AntiForgeryConfig.CookieName = "__RequestVerificationToken"; // static name as its dependent on the ajax handler.
 			MvcHandler.DisableMvcResponseHeader = true;
 			_setupRunning = SetupConfig.ApplicationStart();
 
