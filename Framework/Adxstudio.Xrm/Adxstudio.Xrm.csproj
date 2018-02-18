@@ -51,7 +51,7 @@
     <Prefer32Bit>false</Prefer32Bit>
     <NoWarn>1591,1573</NoWarn>
     <RunCodeAnalysis>false</RunCodeAnalysis>
-    <LangVersion>6</LangVersion>
+    <LangVersion>default</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -64,6 +64,7 @@
     <Prefer32Bit>false</Prefer32Bit>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <DocumentationFile>bin\Release\Adxstudio.Xrm.XML</DocumentationFile>
+    <LangVersion>default</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AntiXssLibrary">

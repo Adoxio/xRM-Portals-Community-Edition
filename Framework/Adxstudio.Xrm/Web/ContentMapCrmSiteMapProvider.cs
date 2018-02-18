@@ -450,12 +450,18 @@ namespace Adxstudio.Xrm.Web
 			return GetNode(map, page, HttpStatusCode.OK, provider);
 		}
 
-		protected virtual CrmSiteMapNode GetNode(ContentMap map, WebPageNode page, HttpStatusCode statusCode, IContentMapEntityUrlProvider provider, bool includeReturnUrl = false)
+		protected virtual CrmSiteMapNode GetNode(ContentMap map, WebPageNode webPageNode, HttpStatusCode statusCode, IContentMapEntityUrlProvider provider, bool includeReturnUrl = false)
 		{
-			if (HttpContext.Current.GetContextLanguageInfo().IsCrmMultiLanguageEnabled)
-			{ 
-				ADXTrace.Instance.TraceInfo(TraceCategory.Monitoring, string.Format("SiteMapProvider.GetNode Lang:{0} ", page.IsRoot != false ? "root" : page.WebPageLanguage.PortalLanguage.Code));
+			var contextLanguageInfo = HttpContext.Current.GetContextLanguageInfo();
+
+			WebPageNode GetLanguageNode()
+			{
+				ADXTrace.Instance.TraceInfo(TraceCategory.Monitoring, string.Format("SiteMapProvider.GetNode Lang:{0} ", webPageNode.IsRoot != false ? "root" : webPageNode.WebPageLanguage.PortalLanguage.Code));
+				var languageNode = webPageNode.LanguageContentPages.FirstOrDefault(p => p.WebPageLanguage.PortalLanguage.Code == contextLanguageInfo.ContextLanguage.Code);
+				return languageNode ?? webPageNode;
 			}
+
+			var page = contextLanguageInfo.IsCrmMultiLanguageEnabled ? GetLanguageNode() : webPageNode;
 
 			var template = page.PageTemplate;
 
