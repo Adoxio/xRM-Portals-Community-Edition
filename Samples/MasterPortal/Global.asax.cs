@@ -11,7 +11,7 @@ namespace Site
 	using System.Globalization;
 	using System.Linq;
 	using System.Net;
-    using System.Text;
+	using System.Text;
 	using System.Web;
 	using System.Web.Configuration;
 	using System.Web.Helpers;
@@ -34,11 +34,11 @@ namespace Site
 
 		void Application_Start(object sender, EventArgs e)
 		{
-            // Mainly created to disable the use of Ssl v3 which is no longer supported by the Organization Service
-            // Now the Security Protocols to support can be set on the appSettings configuration section.
-            ServicePointManager.SecurityProtocol = GetSecurityProtocolFromConfigurationOrDefault();
+			// Mainly created to disable the use of Ssl v3 which is no longer supported by the Organization Service
+			// Now the Security Protocols to support can be set on the appSettings configuration section.
+			ServicePointManager.SecurityProtocol = GetSecurityProtocolFromConfigurationOrDefault();
 
-            AntiForgeryConfig.CookieName = "__RequestVerificationToken"; // static name as its dependent on the ajax handler.
+			AntiForgeryConfig.CookieName = "__RequestVerificationToken"; // static name as its dependent on the ajax handler.
 			MvcHandler.DisableMvcResponseHeader = true;
 			_setupRunning = SetupConfig.ApplicationStart();
 
