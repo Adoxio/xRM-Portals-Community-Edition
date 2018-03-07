@@ -47,6 +47,8 @@ The following system requirements are additional to those listed in `Self-hosted
 
 - TLS 1.2 needs to be enabled on older operating systems when connecting to Dynamics 365 CE Online 9.0. Refer to the [Enable TLS 1.2 and 1.1 support on older operating systems](https://github.com/Adoxio/xRM-Portals-Community-Edition/wiki/Enable-TLS-1.2-and-1.1-support-on-older-operating-systems) wiki page for full instructions.
 
+- File system permissions need to be set for general functionality and search indexing to work. Refer to the [File System Permissions](https://github.com/Adoxio/xRM-Portals-Community-Edition/wiki/File-System-Permissions) wiki page for full instructions.
+
 ## Support
 
 There are two primary methods of obtaining support for this project:
