@@ -10,6 +10,7 @@ namespace Site
 	using System.Configuration;
 	using System.Globalization;
 	using System.Linq;
+	using System.Net;
 	using System.Text;
 	using System.Web;
 	using System.Web.Configuration;
@@ -33,6 +34,10 @@ namespace Site
 
 		void Application_Start(object sender, EventArgs e)
 		{
+			// Mainly created to disable the use of Ssl v3 which is no longer supported by the Organization Service
+			// Now the Security Protocols to support can be set on the appSettings configuration section.
+			ServicePointManager.SecurityProtocol = GetSecurityProtocolFromConfigurationOrDefault();
+
 			AntiForgeryConfig.CookieName = "__RequestVerificationToken"; // static name as its dependent on the ajax handler.
 			MvcHandler.DisableMvcResponseHeader = true;
 			_setupRunning = SetupConfig.ApplicationStart();
@@ -234,6 +239,28 @@ namespace Site
 			}
 
 			return portalContext.Website == null ? null : portalContext.Website.Id.ToString();
+		}
+
+		protected SecurityProtocolType GetSecurityProtocolFromConfigurationOrDefault()
+		{
+			SecurityProtocolType securityProtocolType = SecurityProtocolType.SystemDefault;
+
+			var appSetting = ConfigurationManager.AppSettings["system:SecurityProtocol"];
+
+			if (string.IsNullOrWhiteSpace(appSetting))
+			{
+				return securityProtocolType;
+			}
+
+			var values = appSetting.Split(new[] { "|", ",", ";" }, StringSplitOptions.RemoveEmptyEntries);
+
+			for (var i = 0; i < values.Length; i++)
+			{
+				var parsedValue = (SecurityProtocolType)Enum.Parse(typeof(SecurityProtocolType), values[i]);
+				securityProtocolType = i == 0 ? parsedValue : securityProtocolType | parsedValue;
+			}
+
+			return securityProtocolType;
 		}
 	}
 }
