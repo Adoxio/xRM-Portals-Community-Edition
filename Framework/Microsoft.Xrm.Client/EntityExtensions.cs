@@ -749,11 +749,19 @@ namespace Microsoft.Xrm.Client
 
 		private static T GetRelatedEntity<T>(OrganizationServiceContext context, Entity entity, Relationship relationship) where T : Entity
 		{
-			if (!context.IsAttached(entity) && entity.RelatedEntities.Contains(relationship))
+			if (!context.IsAttached(entity))
 			{
 				// clear out the existing related entities
+				if (entity.RelatedEntities.Contains(relationship))
+				{
+					entity.RelatedEntities.Remove(relationship);
+				}
 
-				entity.RelatedEntities.Remove(relationship);
+				// handle entity already being attached before calling entity.GetRelatedEntity
+				if (context.GetAttachedEntities().FirstOrDefault(e => e.Id == entity.Id) is Entity attached)
+				{
+					entity = attached;
+				}
 			}
 
 			context.LoadProperty(entity, relationship);
