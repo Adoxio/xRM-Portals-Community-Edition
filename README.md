@@ -1,12 +1,18 @@
 # xRM Portals Community Edition
 
-xRM Portals Community Edition is a fork of the open source release of [Microsoft Dynamics 365 Customer Engagement Portals](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365) version 8.3. It continues from the [announced one-time release of Portals source code](https://roadmap.dynamics.com/?i=e2f80f10-118c-e711-8118-3863bb36dd08#) made available on the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=55789) under the MIT license.
+xRM Portals Community Edition is a fork of the open source release of [Portal Capabilities for Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365) version 8.3. It continues from the [announced one-time release of Portals source code](https://roadmap.dynamics.com/?i=e2f80f10-118c-e711-8118-3863bb36dd08#) made available on the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=55789) under the MIT license.
 
 xRM Portals Community Edition enables portal deployments for Dynamics 365 online and on-premises environments, and allows developers to customize the code to suit their specific business needs.
 
 ## Objectives
 
-xRM Portals Community Edition is a project led by [Adoxio](https://www.adoxio.com/) with contributions by the community to provide a way of upgrading from [Adxstudio Portals 7](https://community.adxstudio.com/products/adxstudio-portals/releases/adxstudio-portals-7/) to a supported version of portals, and that allows for the ability to migrate over to Microsoft's hosted offering of [Microsoft Dynamics 365 Customer Engagement Portals](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365).
+xRM Portals Community Edition is a project led by [Adoxio](https://www.adoxio.com/) with contributions by the community to provide a way of upgrading from [Adxstudio Portals 7](https://community.adxstudio.com/products/adxstudio-portals/releases/adxstudio-portals-7/) to this supported version of portals, and that provides a migration path to Microsoft's hosted offering of [Portal Capabilities for Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365).
+
+This version is locked to the features as of the 8.3 version of code that Microsoft released. Maintaining feature parity with Microsoft's version is not an objective for this project, and new features that Microsoft adds to the online version are not going to be implemented in this project. At present, changes are focused on bug fixes and general supportability.
+ 
+**New portal implementations should use Microsoft's software as a service version. This project is primarily intended for those who are already using Adxstudio Portals and want to perform the relatively smaller efforts needed to use this supported project while taking more time to migrate their existing applications to [Portal Capabilities for Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365).**
+
+Using Microsoft's online version should be the primary goal of existing and new users, and using this version is primarily intended for those with special circumstances where they need to stay on premise for a longer time period while preparing to move online. We understand that there will be varying reasons to use this version, but Microsoft's offering is the recommended long term solution that we recommend.
 
 ## Building
 
