@@ -318,16 +318,18 @@ namespace Adxstudio.Xrm.Owin.Security.Saml2
 				ForceAuthn = options.ForceAuthn,
 				NameIdPolicy = options.NameIdPolicy,
 
+                //Comment out because AuthnContextClassRef not supported in ESAS/Shibboleth Identity Provider  
+                /*
 				RequestedAuthnContext = new RequestedAuthnContext
 				{
 					Comparison = options.Comparison,
 					AuthnContextClassRef = options.AuthnContextClassRef,
 				},
-
+                */
 				Issuer = new EndpointReference(issuer),
 				Destination = new EndpointAddress(destination),
 				AssertionConsumerServiceUrl = new EndpointAddress(assertionConsumerServiceUrl)
-			});
+			}, options.SigningCertificate); //Sign SAML AuthnRequest
 
 			var redirectLocation = redirectBinding.RedirectLocation.AbsoluteUri;
 
