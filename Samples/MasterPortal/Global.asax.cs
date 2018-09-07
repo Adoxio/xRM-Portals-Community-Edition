@@ -91,8 +91,12 @@ namespace Site
 			{
 				case "roles":
 					return GetVaryByRolesString(context);
+				case "roles;language":
+					return string.Format("{0}{1}", GetVaryByRolesString(context), GetVaryByLanguageString());
 				case "roles;website":
 					return GetVaryByRolesAndWebsiteString(context);
+				case "roles;website;language":
+					return string.Format("{0}{1}", GetVaryByRolesAndWebsiteString(context), GetVaryByLanguageString());
 				case "user":
 					return GetVaryByUserString(context);
 				case "user;website":
