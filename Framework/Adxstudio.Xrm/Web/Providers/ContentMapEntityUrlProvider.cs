@@ -53,6 +53,7 @@ namespace Adxstudio.Xrm.Web.Providers
 			switch (entity.LogicalName)
 			{
 				case "adx_weblink":
+					return string.IsNullOrWhiteSpace(path.ExternalUrl) ? ContextLanguageInfo.PrependLanguageCode(path) : path;
 				case "adx_webpage":
 					return ContextLanguageInfo.PrependLanguageCode(path);
 			}
