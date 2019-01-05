@@ -204,15 +204,6 @@ namespace Site.Areas.Account.Models
 							// Contact does not exist or login is disabled
 							result = IdentityResult.Failed(this.loginManager.IdentityErrors.InvalidInvitationCode().Description);
 						}
-
-						if (!result.Succeeded)
-						{
-							var urlHelper = this.GetUrlHelper();
-
-							this.loginManager.AddErrors(result);
-
-							this.loginManager.HttpContext.Response.Redirect(urlHelper.Action("RedeemInvitation", "Login", new { InvitationCode = invitationCode }));
-						}
 					}
 
 					if (result.Succeeded)
