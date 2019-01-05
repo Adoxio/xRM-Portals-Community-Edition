@@ -3,11 +3,10 @@
   Licensed under the MIT License. See License.txt in the project root for license information.
 */
 
-extern alias MSDataServicesClient;
-
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Data.Services.Client;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net;
@@ -35,7 +34,6 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Xrm.Client;
 using Microsoft.Xrm.Sdk;
-using MSDataServicesClient::System.Data.Services.Client;
 using Site.Areas.Account.Models;
 using Site.Areas.Account.ViewModels;
 using Site.Areas.AccountManagement;

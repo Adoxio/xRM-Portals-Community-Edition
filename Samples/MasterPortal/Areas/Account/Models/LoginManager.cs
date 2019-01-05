@@ -5,39 +5,37 @@
 
 namespace Site.Areas.Account.Models
 {
-	extern alias MSDataServicesClient;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Net;
+    using System.Net.Mail;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using System.Web;
+    using System.Web.Caching;
+    using System.Web.Mvc;
+    using System.Web.WebPages;
+    using AccountManagement;
+    using Adxstudio.Xrm;
+    using Adxstudio.Xrm.AspNet.Cms;
+    using Adxstudio.Xrm.AspNet.Identity;
+    using Adxstudio.Xrm.Resources;
+    using Adxstudio.Xrm.Web;
+    using Adxstudio.Xrm.AspNet.Mvc;
+    using Adxstudio.Xrm.Configuration;
+    using Adxstudio.Xrm.Services;
+    using Microsoft.AspNet.Identity;
+    using Microsoft.AspNet.Identity.Owin;
+    using Microsoft.Owin.Security;
+    using Microsoft.Xrm.Sdk;
+    using Microsoft.Xrm.Client;
+    using System.Data.Services.Client;
 
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Net;
-	using System.Net.Mail;
-	using System.Threading;
-	using System.Threading.Tasks;
-	using System.Web;
-	using System.Web.Caching;
-	using System.Web.Mvc;
-	using System.Web.WebPages;
-	using AccountManagement;
-	using Adxstudio.Xrm;
-	using Adxstudio.Xrm.AspNet.Cms;
-	using Adxstudio.Xrm.AspNet.Identity;
-	using Adxstudio.Xrm.Resources;
-	using Adxstudio.Xrm.Web;
-	using Adxstudio.Xrm.AspNet.Mvc;
-	using Adxstudio.Xrm.Configuration;
-	using Adxstudio.Xrm.Services;
-	using MSDataServicesClient::System.Data.Services.Client;
-	using Microsoft.AspNet.Identity;
-	using Microsoft.AspNet.Identity.Owin;
-	using Microsoft.Owin.Security;
-	using Microsoft.Xrm.Sdk;
-	using Microsoft.Xrm.Client;
-
-	/// <summary>
-	/// Validating the Registration details
-	/// </summary>
-	public class LoginManager
+    /// <summary>
+    /// Validating the Registration details
+    /// </summary>
+    public class LoginManager
 	{
 		/// <summary>
 		/// Initializes a new instance of the <see cref="LoginManager" /> class.
