@@ -14,6 +14,16 @@ This version is locked to the features as of the 8.3 version of code that Micros
 
 Using Microsoft's online version should be the primary goal of existing and new users, and using this version is primarily intended for those with special circumstances where they need to stay on premise for a longer time period while preparing to move online. We understand that there will be varying reasons to use this version, but Microsoft's offering is the recommended long term solution that we recommend.
 
+## Disclaimers
+
+This project is licensed under the [MIT license](https://opensource.org/licenses/MIT), which provides access to the source code free of charge and without warranty of any kind.
+
+Adoxio has not performed a detailed audit or testing of the source code after its release by Microsoft.
+
+This project only contains the source code for the portal web application and its dependent class libraries. The associated Dynamics 365 solutions were not included by Microsoft as part of the one-time open source release - as such we are unable to fix issues or make changes to behavior of components contained within the solutions, including any and all components such as schema, plugins, and web resources.
+
+Some users have observed poor application performance and scalability with this codebase compared to their prior experience with Adxstudio Portals v7. Before using this code in a production setting it would be advisable to perform adequate testing to ensure it meets your performance needs.
+
 ## Building
 
 To build the project, ensure that you have [Git](https://git-scm.com/downloads) installed to obtain the source code, and [Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/welcome-to-visual-studio) installed to compile the source code.
