@@ -82,7 +82,7 @@ namespace Adxstudio.Xrm.Web.Handlers
 			}
 
 			var blobClient = storageAccount.CreateCloudBlobClient();
-			var blob = blobClient.GetBlobReferenceFromServer(new Uri(_blobAddress));
+			var blob = blobClient.GetBlobReferenceFromServer(new Uri(blobClient.BaseUri + _blobAddress));
 
 			var accessSignature = blob.GetSharedAccessSignature(new SharedAccessBlobPolicy
 			{
