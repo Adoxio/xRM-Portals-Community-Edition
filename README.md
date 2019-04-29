@@ -65,6 +65,8 @@ The following system requirements are additional to those listed in `Self-hosted
 
 - File system permissions need to be set for general functionality and search indexing to work. Refer to the [File System Permissions](https://github.com/Adoxio/xRM-Portals-Community-Edition/wiki/File-System-Permissions) wiki page for full instructions.
 
+- A machine key should be added to the web.config file to ensure cryptographic operations always use the same settings rather than using auto-generated encryption keys (e.g. when hosted a web farm or after application restarts). This can be accomplished using IIS Manager as described in the MSDN blog post [Easiest way to generate MachineKey](https://blogs.msdn.microsoft.com/amb/2012/07/31/easiest-way-to-generate-machinekey/). Adxstudio Portals 7.x used the validation method `SHA1` and the encryption method `AES`.
+
 ## Support
 
 There are two primary methods of obtaining support for this project:
