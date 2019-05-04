@@ -672,7 +672,13 @@ namespace Adxstudio.Xrm.Web.UI.WebControls
 							Converters = new List<JsonConverter> { new JsonConfiguration.GuidConverter() },
 							Binder = new ActionSerializationBinder()
 						});
-				}
+
+                    var submitAction = formActionMetadata.Actions.FirstOrDefault(a => a is SubmitAction);
+                    if (submitAction != null)
+                    {
+                        SuccessMessage = Localization.GetLocalizedString(submitAction.SuccessMessage, LanguageCode);
+                    }
+                }
 				catch (Exception e)
 				{
 					ADXTrace.Instance.TraceError(TraceCategory.Application, e.ToString());
