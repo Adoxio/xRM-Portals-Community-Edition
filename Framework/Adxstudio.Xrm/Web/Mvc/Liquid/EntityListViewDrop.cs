@@ -21,6 +21,42 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 			if (view == null) throw new ArgumentNullException("view");
 
 			View = view;
+			
+			var portalViewContext = portalLiquidContext.PortalViewContext;
+            if (portalViewContext != null)
+            {
+                var entityListRef = portalViewContext.Entity.GetAttribute("adx_entitylist")?.Value as EntityReference;
+                if (entityListRef != null)
+                {
+                    var entityList = portalLiquidContext.PortalOrganizationService.Retrieve("adx_entitylist", entityListRef.Id,
+                        new ColumnSet("adx_settings"));
+
+                    if (!string.IsNullOrWhiteSpace(entityList.GetAttributeValue<string>("adx_settings")))
+                    {
+                        try
+                        {
+                            var gridMetadataConfiguration = JsonConvert.DeserializeObject<GridMetadata>(entityList.GetAttributeValue<string>("adx_settings"),
+                                new JsonSerializerSettings
+                                {
+                                    ContractResolver = JsonConfigurationContractResolver.Instance,
+                                    TypeNameHandling = TypeNameHandling.Objects,
+                                    Converters = new List<JsonConverter> { new GuidConverter() },
+                                    Binder = new ActionSerializationBinder()
+                                });
+
+                            _columns = new Lazy<EntityListViewColumnDrop[]>(
+                                () => View.Columns.Select(e => new EntityListViewColumnDrop(this, e, gridMetadataConfiguration.ColumnOverrides)).ToArray(),
+                                LazyThreadSafetyMode.None);
+
+                            return;
+                        }
+                        catch (Exception e)
+                        {
+                            ADXTrace.Instance.TraceError(TraceCategory.Application, e.ToString());
+                        }
+                    }
+                }
+            }
 
 			_columns = new Lazy<EntityListViewColumnDrop[]>(() => View.Columns.Select(e => new EntityListViewColumnDrop(this, e)).ToArray(), LazyThreadSafetyMode.None);
 		}

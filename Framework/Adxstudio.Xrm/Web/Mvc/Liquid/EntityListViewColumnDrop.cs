@@ -10,13 +10,34 @@ namespace Adxstudio.Xrm.Web.Mvc.Liquid
 {
 	public class EntityListViewColumnDrop : PortalDrop
 	{
-		public EntityListViewColumnDrop(IPortalLiquidContext portalLiquidContext, SavedQueryView.ViewColumn column)
+		public EntityListViewColumnDrop(IPortalLiquidContext portalLiquidContext, SavedQueryView.ViewColumn column, List<UI.JsonConfiguration.ViewColumn> overridenColumns = null)
 			: base(portalLiquidContext)
 		{
 			if (column == null) throw new ArgumentNullException("column");
 
-			Column = column;
+			if(overridenColumns == null || overridenColumns?.Count == 0)
+			{
+				Column = column;
+			}
+			else
+			{
+				var o = overridenColumns.FirstOrDefault(c =>
+					c.AttributeLogicalName == column.LogicalName);
+				if (o != null)
+				{
+					column.Name = o.DisplayName;
 
+					if (o.Width != 0)
+					{
+						column.Width = o.Width;
+					}
+				}
+				else
+				{
+					Column = column;
+				}
+			}
+			
 			SortAscending = Column.LogicalName + " ASC";
 			SortDescending = Column.LogicalName + " DESC";
 		}
