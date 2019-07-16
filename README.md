@@ -84,3 +84,7 @@ This project accepts community contributions through GitHub, following the [inbo
 > Whenever you make a contribution to a repository containing notice of a license, you license your contribution under the same terms, and you agree that you have the right to license your contribution under those terms.
 
 Please submit one pull request per issue so that we can easily identify and review the changes.
+
+### Acceptable Bug fixes
+
+Bug fixes will only be accepted if they are **not** reproducable in the online portals version. In other words, if a bug exists in this project and in online portals, it must first be fixed in the online version before a fix will be included in this project. Pull requests for bug fixes can be made, but will be left open until the bug is confirmed to be fixed in online portals. This position is necessary because a bug fix that introduces a behavioral difference with online portals would effectively become a breaking change and compromise the migration path for users of this project to the online version, because users would become depend on the fixed behavior in this project that would then stop working after migrating.
