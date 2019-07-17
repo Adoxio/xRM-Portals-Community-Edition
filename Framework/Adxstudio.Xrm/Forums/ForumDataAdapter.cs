@@ -355,7 +355,9 @@ namespace Adxstudio.Xrm.Forums
 
 			// Update forum count but skip cache invalidation.
 			(serviceContext as IOrganizationService).ExecuteUpdate(forumUpdate, RequestFlag.ByPassCacheInvalidation);
-			
+			serviceContext.DeleteObject(thread);
+			serviceContext.SaveChanges();
+
 			if (FeatureCheckHelper.IsFeatureEnabled(FeatureNames.TelemetryFeatureUsage))
 			{
 				PortalFeatureTrace.TraceInstance.LogFeatureUsage(FeatureTraceCategory.Forum, HttpContext.Current, "delete_forum_thread", 1, forumThread, "delete");
