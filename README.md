@@ -4,6 +4,8 @@ xRM Portals Community Edition is a fork of the open source release of [Portal Ca
 
 xRM Portals Community Edition enables portal deployments for Dynamics 365 online and on-premises environments, and allows developers to customize the code to suit their specific business needs.
 
+**This project is no longer actively maintained. For more information please read: [The end of xRM Portals Community Edition](https://alanmervitz.com/2020/12/31/the-end-of-xrm-portals-community-edition/).**
+
 ## Objectives
 
 xRM Portals Community Edition is a project led by [Adoxio](https://www.adoxio.com/) with contributions by the community to provide a way of upgrading from [Adxstudio Portals 7](https://community.adxstudio.com/products/adxstudio-portals/releases/adxstudio-portals-7/) to this supported version of portals, and that provides a migration path to Microsoft's hosted offering of [Portal Capabilities for Microsoft Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/administer-manage-portal-dynamics-365).
